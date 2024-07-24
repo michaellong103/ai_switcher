@@ -1,4 +1,4 @@
-# ./assistants/as_configs/exclusion_AI.py
+# ./assistants/as_configs/exclusion_AI.json
 {
   "static_init_content": "",
   "system_message": {
@@ -8,5 +8,5 @@
   "initial_message": "Let's sort through these trials to see if any match your needs",
   "model": "gpt-4-turbo",
   "temperature": 1,
-  "top_p": 1,
+  "top_p": 1
 }

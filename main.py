@@ -6,7 +6,9 @@ import os
 from colorama import Fore, Style, init
 from assistants.assistant_factory import create_assistant
 from router.conversation_router import ConversationRouter
-from assistants.testing_assistant import TestingAssistant
+from assistants.lunch.lunch_assistant import LunchAssistant  # Corrected import path
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'assistants')))
 
 init(autoreset=True)
 
@@ -25,8 +27,8 @@ logging.basicConfig(
 def main(assistant_type):
     logging.info(f"Creating assistant of type: {assistant_type}")
     medical_assistant = create_assistant(assistant_type="medical", model='gpt-3.5-turbo', temperature=1, top_p=1)
-    testing_assistant = create_assistant(assistant_type="testing", model='gpt-3.5-turbo', temperature=1, top_p=1)
-    router = ConversationRouter([medical_assistant, testing_assistant])
+    lunch_assistant = create_assistant(assistant_type="lunch", model='gpt-3.5-turbo', temperature=1, top_p=1)
+    router = ConversationRouter([medical_assistant, lunch_assistant])
 
     if hasattr(medical_assistant, 'get_initial_message'):
         initial_message = medical_assistant.get_initial_message()

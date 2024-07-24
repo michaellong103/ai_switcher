@@ -1,8 +1,8 @@
-# ./assistants/testing_assistant.py
+# ./assistants/lunch/lunch_assistant.py
 
-from .concrete_assistant import ConcreteAssistant
+from assistants.concrete_assistant import ConcreteAssistant  # Corrected import path
 
-class TestingAssistant(ConcreteAssistant):
+class LunchAssistant(ConcreteAssistant):
     def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
         system_message = {
             "role": "system",

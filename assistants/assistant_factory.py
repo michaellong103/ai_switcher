@@ -1,8 +1,8 @@
 # ./assistants/assistant_factory.py
 
 from .concrete_assistant import ConcreteAssistant
-from .medical_assistant import MedicalAssistant
-from .testing_assistant import TestingAssistant
+from .medical.medical_assistant import MedicalAssistant  # Corrected import path
+from .lunch.lunch_assistant import LunchAssistant  # Ensure lunch assistant path is also correct
 import logging
 
 def create_assistant(assistant_type="default", system_message=None, model='default-model', temperature=0.7, top_p=0.9):
