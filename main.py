@@ -13,6 +13,22 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'assi
 init(autoreset=True)
 
 log_directory = "logs"
+
+def delete_logs():
+    """Delete log files in the log directory."""
+    if os.path.exists(log_directory):
+        for log_file in os.listdir(log_directory):
+            file_path = os.path.join(log_directory, log_file)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+                    print(f"Deleted log file: {file_path}")
+            except Exception as e:
+                print(f"Failed to delete {file_path}. Reason: {e}")
+
+# Delete logs at startup
+delete_logs()
+
 if not os.path.exists(log_directory):
     os.makedirs(log_directory)
 
@@ -23,7 +39,6 @@ logging.basicConfig(
         logging.FileHandler(f"{log_directory}/app.log")
     ]
 )
-
 def main(assistant_type):
     logging.info(f"Creating assistant of type: {assistant_type}")
     medical_assistant = create_assistant(assistant_type="medical", model='gpt-3.5-turbo', temperature=1, top_p=1)
