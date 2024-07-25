@@ -2,10 +2,12 @@ import re
 import json
 import logging
 
+# Load the conditions from the JSON file
 with open('assistants/medical/conditions_incomplete.json', 'r') as f:
     conditions_data = json.load(f)
     conditions = conditions_data['conditions']
 
+# Compile the necessary patterns
 incomplete_keywords_pattern = re.compile(r'\bincomplete\b|\bmissing\b|\bmore info needed\b', re.IGNORECASE)
 special_characters_pattern = re.compile(r'[!@#$%^&*()?":{}|<>]')
 square_brackets_pattern = re.compile(r'\[\s*\]')
@@ -76,16 +78,21 @@ def is_complete_response(response):
     }
 
     for field, match in fields.items():
-        if not match or not match.group(1).strip():
+        field_value = match.group(1).strip() if match else ""
+        logging.info(f"Validating field {field}: {field_value}")
+
+        if not field_value:
             logging.warning(f"Empty field found: {field}")
             return False
-        if not check_special_characters(match.group(1)):
-            logging.warning(f"Special character found in field {field}: {match.group(1)}")
+        if not check_special_characters(field_value):
+            logging.warning(f"Special character found in field {field}: {field_value}")
             return False
 
     if debug_grid_match:
         latitude = debug_grid_match.group(1).strip()
         longitude = debug_grid_match.group(2).strip()
+        logging.info(f"Validating Debug Grid - Latitude: {latitude}, Longitude: {longitude}")
+
         if not check_special_characters(latitude) or not check_special_characters(longitude):
             logging.warning("Special character found in Debug Grid")
             return False
