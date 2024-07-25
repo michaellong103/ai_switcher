@@ -1,13 +1,12 @@
+# ./assistants/medical/validator_utils.py
 import re
 import json
 import logging
 
-# Load the conditions from the JSON file
 with open('assistants/medical/conditions_incomplete.json', 'r') as f:
     conditions_data = json.load(f)
     conditions = conditions_data['conditions']
 
-# Compile the necessary patterns
 incomplete_keywords_pattern = re.compile(r'\bincomplete\b|\bmissing\b|\bmore info needed\b', re.IGNORECASE)
 special_characters_pattern = re.compile(r'[!@#$%^&*()?":{}|<>]')
 square_brackets_pattern = re.compile(r'\[\s*\]')

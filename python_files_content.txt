@@ -1,0 +1,1061 @@
+# ./API_actions/api_query.py
+
+import sys
+import os
+import json
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
+
+from api_client import query_clinical_trials, query_clinical_trial_by_nct
+from api_json_handler import read_json, write_json
+
+def process_api_response(api_response):
+    # Extract required information from API response
+    if isinstance(api_response, dict) and 'studies' in api_response:
+        studies = api_response['studies']
+    elif isinstance(api_response, list):
+        studies = api_response
+    else:
+        studies = []
+
+    num_trials = len(studies)
+    trial_names = [study.get('brief_title', 'N/A') for study in studies]
+    nct_numbers = [study.get('nct_id', 'N/A') for study in studies]
+
+    stats = {
+        "number_of_trials": num_trials,
+        "trial_names": trial_names,
+        "nct_numbers": ",".join(nct_numbers)
+    }
+
+    return stats
+
+def main(input_file, output_file):
+    print(f"Reading from: {input_file}")  # Debug print
+    print(f"Writing to: {output_file}")   # Debug print
+
+    # Read input JSON
+    input_data = read_json(input_file)
+    
+    if 'nct_number' in input_data:
+        # Query a single clinical trial based on NCT number
+        api_response = query_clinical_trial_by_nct(input_data['nct_number'])
+    else:
+        # Query multiple clinical trials
+        api_response = query_clinical_trials(input_data)
+
+    # Process API response to extract statistics
+    stats = process_api_response(api_response)
+
+    # Write the stats to the output JSON
+    write_json(stats, output_file)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: python api_query.py <input_file> <output_file>")
+        sys.exit(1)
+
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
+    main(input_file, output_file)
+# ./API_actions/tests/test_api_client.py
+
+import unittest
+from unittest.mock import patch
+from api_actions.api_client import query_clinical_trials, query_clinical_trial_by_nct
+
+class TestApiClient(unittest.TestCase):
+    @patch('api_actions.api_client.requests.post')
+    @patch('api_actions.api_client.time.sleep', return_value=None)  # Mock time.sleep to avoid delay in tests
+    def test_query_clinical_trials(self, mock_sleep, mock_post):
+        mock_response = mock_post.return_value
+        mock_response.json.return_value = {"key": "value"}
+
+        details = {
+            'Age': '50', 
+            'Gender': 'Female', 
+            'Medical Condition': 'Triple Negative Breast Cancer', 
+            'Location': 'Seattle, WA'
+        }
+        response = query_clinical_trials(details)
+        self.assertEqual(response, {"key": "value"})
+        mock_sleep.assert_called_once_with(1)  # Ensure the sleep was called
+
+    @patch('api_actions.api_client.requests.get')
+    @patch('api_actions.api_client.time.sleep', return_value=None)  # Mock time.sleep to avoid delay in tests
+    def test_query_clinical_trial_by_nct(self, mock_sleep, mock_get):
+        mock_response = mock_get.return_value
+        mock_response.json.return_value = {"key": "value"}
+
+        nct_number = "NCT12345678"
+        response = query_clinical_trial_by_nct(nct_number)
+        self.assertEqual(response, {"key": "value"})
+        mock_sleep.assert_called_once_with(1)  # Ensure the sleep was called
+
+if __name__ == '__main__':
+    unittest.main()
+# ./API_actions/tests/test_api_json_handler.py
+
+import unittest
+import json
+from api_actions.api_json_handler import read_json, write_json
+
+class TestJsonHandler(unittest.TestCase):
+    def test_read_json(self):
+        with open('test_input.json', 'w') as file:
+            json.dump({"key": "value"}, file)
+
+        data = read_json('test_input.json')
+        self.assertEqual(data, {"key": "value"})
+
+    def test_write_json(self):
+        data = {"key": "value"}
+        write_json(data, 'test_output.json')
+
+        with open('test_output.json', 'r') as file:
+            result = json.load(file)
+        
+        self.assertEqual(result, data)
+
+if __name__ == '__main__':
+    unittest.main()
+# ./API_actions/tests/test_api_query.py
+
+import unittest
+from unittest.mock import patch, mock_open
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
+
+from api_query import main as query_main
+
+class TestQueryAPI(unittest.TestCase):
+
+    @patch('builtins.open', new_callable=mock_open, read_data='{"nct_number": "NCT12345678"}')
+    @patch('api_client.query_clinical_trial_by_nct')
+    @patch('api_json_handler.write_json')
+    def test_query_clinical_trial_by_nct_main(self, mock_write_json, mock_query_clinical_trial_by_nct, mock_file):
+        mock_query_clinical_trial_by_nct.return_value = {
+            "studies": [
+                {"brief_title": "Trial 1", "nct_id": "NCT12345678"},
+                {"brief_title": "Trial 2", "nct_id": "NCT87654321"}
+            ]
+        }
+
+        input_file = 'input_test_nct.json'
+        output_file = 'output_test.json'
+
+        query_main(input_file, output_file)
+
+        expected_stats = {
+            "number_of_trials": 2,
+            "trial_names": ["Trial 1", "Trial 2"],
+            "nct_numbers": "NCT12345678,NCT87654321"
+        }
+        mock_write_json.assert_called_once_with(expected_stats, output_file)
+
+    @patch('builtins.open', new_callable=mock_open, read_data='{"Age": "50", "Gender": "Female", "Medical Condition": "Triple Negative Breast Cancer", "Location": "Seattle, WA"}')
+    @patch('api_client.query_clinical_trials')
+    @patch('api_json_handler.write_json')
+    def test_query_clinical_trials_main(self, mock_write_json, mock_query_clinical_trials, mock_file):
+        mock_query_clinical_trials.return_value = [
+            {"brief_title": "Trial 1", "nct_id": "NCT12345678"},
+            {"brief_title": "Trial 2", "nct_id": "NCT87654321"}
+        ]
+
+        input_file = 'input_test_multiple.json'
+        output_file = 'output_test.json'
+
+        query_main(input_file, output_file)
+
+        expected_stats = {
+            "number_of_trials": 2,
+            "trial_names": ["Trial 1", "Trial 2"],
+            "nct_numbers": "NCT12345678,NCT87654321"
+        }
+        mock_write_json.assert_called_once_with(expected_stats, output_file)
+
+if __name__ == '__main__':
+    unittest.main()
+# ./API_actions/api_json_handler.py
+
+import json
+
+def read_json(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
+
+def write_json(data, file_path):
+    with open(file_path, 'w') as file:
+        json.dump(data, file, indent=4)
+# ./API_actions/api_config.py
+
+API_ENDPOINT_CLINICAL_TRIALS = "https://clinicaltrials.gov/api/v2/studies"
+# ./API_actions/api_client.py
+
+import requests
+import time
+import logging
+from api_config import API_ENDPOINT_CLINICAL_TRIALS
+from urllib.parse import urlencode
+
+class ClinicalTrialsAPI:
+    def __init__(self, page_size=200, status_filter="RECRUITING|NOT_YET_RECRUITING|AVAILABLE"):
+        self.page_size = page_size
+        self.status_filter = status_filter
+
+    def send_query_to_clinicaltrials(self, details, distance):
+        details["Distance"] = str(distance)
+        all_studies = []
+        cursor = None
+
+        while True:
+            query_url = self.construct_query_url(details, self.status_filter, self.page_size, cursor)
+
+            response = requests.get(query_url)
+            if response.status_code == 200:
+                data = response.json()
+                studies = data.get('studies', [])
+                all_studies.extend(studies)
+
+                cursor = data.get('nextCursor')
+                if not cursor:
+                    break
+            else:
+                logging.error(f"Error {response.status_code}: {response.text}")
+                break
+
+            # Ensure at least a 1 second pause between API calls
+            time.sleep(1)
+
+        return all_studies
+
+    def construct_query_url(self, details, status_filter, page_size, cursor=None):
+        condition = details.get("Medical Condition", "")
+        gender = details.get("Gender", "").lower()
+        latitude = details.get("Latitude", "")
+        longitude = details.get("Longitude", "")
+        distance = details.get("Distance", "100")
+
+        geo_filter = f"distance({latitude},{longitude},{distance})"
+
+        query_params = {
+            "format": "json",
+            "query.cond": condition,
+            "filter.geo": geo_filter,
+            "aggFilters": f"sex:{gender[0]}",
+            "filter.overallStatus": status_filter,
+            "pageSize": page_size
+        }
+
+        if cursor:
+            query_params["nextCursor"] = cursor
+
+        query_string = urlencode(query_params, safe="(),|")
+        query_url = f"{API_ENDPOINT_CLINICAL_TRIALS}?{query_string}"
+        
+        return query_url
+
+def query_clinical_trials(details):
+    api = ClinicalTrialsAPI()
+    return api.send_query_to_clinicaltrials(details, details.get("Distance", 100))
+
+def query_clinical_trial_by_nct(nct_number):
+    url = f"{API_ENDPOINT_CLINICAL_TRIALS}/{nct_number}?format=json"
+    headers = {
+        'Content-Type': 'application/json'
+    }
+    
+    # Ensure at least a 1 second pause between API calls
+    time.sleep(1)
+    
+    response = requests.get(url, headers=headers)
+    return response.json()
+# ./config.py
+import os
+
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY', 'sk-proj-EtqOVSzBg9hjVpTj6J3hT3BlbkFJGqzDX97GDYm7L5lweRPW')  # Replace with your actual OpenAI API key
+API_URL = "https://api.openai.com/v1/chat/completions"
+
+headers = {
+    "Content-Type": "application/json",
+    "Authorization": f"Bearer {OPENAI_API_KEY}"
+}
+# ./assistants/lunch/__init__.py
+
+# ./assistants/lunch/lunch_assistant.py
+
+from assistants.concrete_assistant import ConcreteAssistant  # Corrected import path
+
+class LunchAssistant(ConcreteAssistant):
+    def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
+        system_message = {
+            "role": "system",
+            "content": (
+                "You are a friendly assistant helping users decide on what to have for lunch.\n\n"
+                "Requirements:\n\n"
+                "- Suggest a variety of cuisines.\n"
+                "- Ask about dietary restrictions.\n"
+                "- Provide healthy options.\n"
+                "- Offer suggestions based on time of day.\n"
+                "- Be polite and engaging."
+            )
+        }
+        self.initial_message = "Hello! I'm here to help you decide what to have for lunch. Do you have any dietary restrictions?"
+        super().__init__(system_message, model, temperature, top_p)
+
+    def get_initial_message(self):
+        return self.initial_message
+# ./assistants/__init__.py
+
+# ./assistants/assistant_factory.py
+
+from .concrete_assistant import ConcreteAssistant
+from .medical.medical_assistant import MedicalAssistant  # Corrected import path
+from .lunch.lunch_assistant import LunchAssistant  # Ensure lunch assistant path is also correct
+import logging
+
+def create_assistant(assistant_type="default", system_message=None, model='default-model', temperature=0.7, top_p=0.9):
+    logging.info(f"Creating assistant with type: {assistant_type}")
+    
+    if not system_message:
+        system_message = {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        }
+
+    if assistant_type == "medical":
+        logging.info("Creating MedicalAssistant")
+        return MedicalAssistant(model, temperature, top_p)
+    elif assistant_type == "testing":
+        logging.info("Creating TestingAssistant")
+        return TestingAssistant(model, temperature, top_p)
+    
+    logging.info("Creating ConcreteAssistant")
+    return ConcreteAssistant(system_message, model, temperature, top_p)
+# ./assistants/medical/system_message.py
+
+system_message = {
+    "role": "system",
+    "content": """You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.
+
+Requirements
+
+- Always validate that the location exists. If it does not, suggest other locations.
+- Only show trials in the USA.
+- Always validate that the condition is an actual medical condition and provide alternatives if it is not.
+- Politely keep the conversation on tasks about clinical trials.
+- Always make sure that the condition is specific enough (yes: Triple-Negative Breast Cancer, no: Breast Cancer; yes: Ductal Adenocarcinoma, no: Prostate Cancer).
+- Always make sure the latitude and longitude are derived from the location requirements.
+- Ensure that the requirements make sense (yes: Age 34, no: Age 201). Politely remind the user that the information might not be accurate and ask if they would want to change it.
+- Ensure that prompts and interactions align with ethical guidelines, especially concerning sensitive medical information.
+- Avoid reinforcing biases and ensure inclusivity in the provided options and responses.
+- Adapt prompts dynamically based on the user's responses to gather all necessary details effectively.
+- Maintain a polite and empathetic tone throughout the interaction.
+- Acknowledge the user's condition and express a willingness to help.
+- If the user provides unclear or incomplete information, ask follow-up questions to clarify.
+- Confirm each piece of information iteratively to avoid misunderstandings.
+- Confirm all collected details with the user before starting the search.
+- Verify that provided information, such as age, is within reasonable and plausible ranges.
+- Politely remind the user about any potentially inaccurate information and ask if they would like to correct it.
+- Derive the latitude and longitude from the provided location to ensure geographical accuracy in a debug statement (Debug Grid: [(latitude, longitude)]) in the last response.
+- Ensure that the medical condition is specified clearly and precisely.
+- Prompt the user to provide more details if the initial condition is too broad.
+- Always validate that the specified location exists.
+- Do not use numbered lists; always use bullet point lists.
+- If the location is unclear or does not exist, suggest alternative nearby locations.
+- After age, gender, location, and condition are provided, validate with a (y/n).
+- GPT’s job is complete once the user has confirmed this information. Do not attempt to find trials.
+- Only possible answers for gender are (male, female). Explain that while we respect all genders, the database is limited in its ability to go outside older categories.
+- If a location mistake is made, provide a few other plausible alternatives.
+- The search must be focused on a city, state location (example: Tampa, FL).
+- Location must always be formatted as (full city name, two-letter state abbreviation).
+
+Prompt Template
+
+Assistant: Thank you for the information. Let's confirm the details:
+
+- Age: [Age]
+- Gender: [Gender]
+- Medical Condition: [Medical Condition]
+- Location: [Location] (City, two-letter state abbreviation)
+Does this look correct? (y/n)
+
+Assistant: Great, I will now look for trials with these characteristics.
+
+- Age: [Age]
+- Gender: [Gender]
+- Medical Condition: [Medical Condition]
+- Location: [Location]
+- Debug Grid: [(latitude, longitude)]
+I will now search for trials that match this profile.
+
+Example 1:
+
+Assistant: Hello! I'm here to help you find clinical trials. Could you please provide the following information: your age, medical condition, city and state (e.g., Tampa, FL), and your gender?
+User: I am 45 years old, have Non-Small Cell Lung Cancer, live in Seattle, WA, and my gender is male.
+
+Assistant: Thank you. Let's confirm the details:
+
+- Age: 45
+- Gender: Male
+- Medical Condition: Non-Small Cell Lung Cancer
+- Location: Seattle, WA
+Does this look correct? (y/n)
+...waiting for user input...
+
+User: Yes.
+
+Assistant: Great, I will now look for trials with these characteristics.
+
+- Age: 45
+- Gender: Male
+- Medical Condition: Non-Small Cell Lung Cancer
+- Location: Seattle, WA
+- Debug Grid: [(47.6062, -122.3321)]
+I will now search for trials that match this profile.
+
+Example 5:
+
+Assistant: Hello! I'm here to help you find clinical trials. Could you please provide the following information: your age, medical condition, city and state (e.g., Tampa, FL), and your gender?
+User: F Los Angeles Breast Cancer.
+
+Assistant: Thank you. Just to clarify, could you please provide your age?
+
+User: I am 38 years old.
+
+Assistant: Thank you. And to ensure we find the most relevant clinical trials, could you please specify the type of breast cancer? For example:
+
+- Lung Cancer
+- Breast Cancer
+- Skin Cancer
+- Prostate Cancer
+- Testicular Cancer
+- Other (please specify)
+User: Breast Cancer.
+
+Assistant: Thank you. To ensure we find the most relevant clinical trials, could you please specify the type of breast cancer? For example:
+
+- Triple Negative Breast Cancer
+- HER2 Positive Breast Cancer
+- Hormone Receptor Positive Breast Cancer
+User: Triple Negative Breast Cancer.
+
+Assistant: Thank you. Let's confirm the details:
+
+- Age: 38
+- Gender: Female
+- Medical Condition: Triple Negative Breast Cancer
+- Location: Los Angeles, CA
+Does this look correct? (y/n)
+...waiting for user input...
+
+User: Yes.
+
+Assistant: Great, I will now look for trials with these characteristics.
+
+- Age: 38
+- Gender: Female
+- Medical Condition: Triple Negative Breast Cancer
+- Location: Los Angeles, CA
+- Debug Grid: [(34.0522, -118.2437)]
+I will now search for trials that match this profile.
+
+Example 6:
+
+Assistant: Hello! I'm here to help you find clinical trials. Could you please provide the following information: your age, medical condition, city and state (e.g., Tampa, FL), and your gender?
+User: I am 50 years old, have Rheumatoid Arthritis, live in Washington, and my gender is female.
+
+Assistant: Thank you. Just to clarify, Washington can refer to Washington, D.C., or the state of Washington. Could you please specify the city and state in the format: full city name, two-letter state abbreviation (e.g., Seattle, WA or Washington, D.C.)?
+
+User: Oh, I mean Seattle, WA.
+
+Assistant: Thank you. Let's confirm the details:
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Rheumatoid Arthritis
+- Location: Seattle, WA
+Does this look correct? (y/n)
+...waiting for user input...
+
+User: Yes.
+
+Assistant: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Rheumatoid Arthritis
+- Location: Seattle, WA
+- Debug Grid: [(47.6062, -122.3321)]
+I will now search for trials that match this profile.
+
+Example 7:
+
+Assistant: Hello! I'm here to help you find clinical trials. Could you please provide the following information: your age, medical condition, city and state (e.g., Tampa, FL), and your gender?
+User: I am 45 years old, have Type 2 Diabetes Mellitus, live in Smithville, and my gender is male.
+
+Assistant: Thank you. There are several places named Smithville in the USA. Could you please specify the city and state in the format: full city name, two-letter state abbreviation? For example:
+
+- Smithville, TX
+- Smithville, MO
+- Smithville, TN
+- Smithville, NJ
+- Other (please specify the state)
+User: I mean Smithville, TX.
+
+Assistant: Thank you. Let's confirm the details:
+
+- Age: 45
+- Gender: Male
+- Medical Condition: Type 2 Diabetes Mellitus
+- Location: Smithville, TX
+Does this look correct? (y/n)
+...waiting for user input...
+
+User: Yes.
+
+Assistant: Great, I will now look for trials with these characteristics.
+
+- Age: 45
+- Gender: Male
+- Medical Condition: Type 2 Diabetes Mellitus
+- Location: Smithville, TX
+- Debug Grid: [(30.0080, -97.1597)]
+I will now search for trials that match this profile.
+
+Example 8:
+
+Assistant: Hello! I'm here to help you find clinical trials. Could you please provide the following information: your age, medical condition, city and state (e.g., Tampa, FL), and your gender?
+User: I am 45 years old, have Type 2 Diabetes Mellitus, live in Smithville, and my gender is male.
+
+Assistant: Thank you. There are several places named Smithville in the USA. Could you please specify the city and state in the format: full city name, two-letter state abbreviation? For example:
+
+- Smithville, TX
+- Smithville, MO
+- Smithville, TN
+- Smithville, NJ
+- Other (please specify the state)
+User: I mean Smithville, TX.
+
+Assistant: Thank you. Let's confirm the details:
+
+- Age: 45
+- Gender: Male
+- Medical Condition: Type 2 Diabetes Mellitus
+- Location: Smithville, TX
+Does this look correct? (y/n)
+...waiting for user input...
+
+User: Yes.
+
+Assistant: Great, I will now look for trials with these characteristics.
+
+- Age: 45
+- Gender: Male
+- Medical Condition: Type 2 Diabetes Mellitus
+- Location: Smithville, TX
+- Debug Grid: [(30.0080, -97.1597)]
+I will now search for trials that match this profile."""
+}
+# ./assistants/medical/validator_utils.py
+import re
+import json
+import logging
+
+with open('assistants/medical/conditions_incomplete.json', 'r') as f:
+    conditions_data = json.load(f)
+    conditions = conditions_data['conditions']
+
+incomplete_keywords_pattern = re.compile(r'\bincomplete\b|\bmissing\b|\bmore info needed\b', re.IGNORECASE)
+special_characters_pattern = re.compile(r'[!@#$%^&*()?":{}|<>]')
+square_brackets_pattern = re.compile(r'\[\s*\]')
+
+def validate_medical_condition(response):
+    """
+    Validates if the medical condition is in the predefined list of common medical conditions.
+    
+    Parameters:
+    response (str): The response text to be checked.
+    
+    Returns:
+    str: A message indicating whether more information is needed or if the field passes.
+    """
+    # Extract the medical condition from the response
+    condition_match = re.search(r'Medical Condition:\s*([^\n]+)', response)
+    
+    if condition_match:
+        condition = condition_match.group(1).strip()
+        if condition in conditions:
+            return "The medical condition needs to be more specific."
+        else:
+            return "The data will be submitted with this criteria to find applicable trials."
+    return "The medical condition needs to be completed."
+
+def check_special_characters(value):
+    """
+    Check if the provided value contains any special characters.
+    
+    Parameters:
+    value (str): The value to be checked.
+    
+    Returns:
+    bool: True if no special characters are found, False otherwise.
+    """
+    return not bool(special_characters_pattern.search(value))
+
+def is_complete_response(response):
+    """
+    Check if the response is complete based on the absence of incomplete keywords,
+    special characters, and empty fields.
+    
+    Parameters:
+    response (str): The response text to be checked.
+    
+    Returns:
+    bool: True if the response is complete, False otherwise.
+    """
+    # Check if any incomplete keyword is present in the response
+    keyword_match = incomplete_keywords_pattern.search(response)
+    if keyword_match:
+        logging.warning(f"Incomplete keyword found: {keyword_match.group()}")
+        return False
+
+    # Extract individual fields
+    age_match = re.search(r'Age:\s*(\d+)', response)
+    gender_match = re.search(r'Gender:\s*(\w+)', response)
+    condition_match = re.search(r'Medical Condition:\s*([^\n]+)', response)
+    location_match = re.search(r'Location:\s*([^\n]+)', response)
+    debug_grid_match = re.search(r'Debug Grid:\s*\[\(([^,]+),\s*([^)]+)\)\]', response)
+
+    # Check for empty fields and special characters
+    fields = {
+        "Age": age_match,
+        "Gender": gender_match,
+        "Medical Condition": condition_match,
+        "Location": location_match
+    }
+
+    for field, match in fields.items():
+        field_value = match.group(1).strip() if match else ""
+        logging.info(f"Validating field {field}: {field_value}")
+
+        if not field_value:
+            logging.warning(f"Empty field found: {field}")
+            return False
+        if not check_special_characters(field_value):
+            logging.warning(f"Special character found in field {field}: {field_value}")
+            return False
+
+    if debug_grid_match:
+        latitude = debug_grid_match.group(1).strip()
+        longitude = debug_grid_match.group(2).strip()
+        logging.info(f"Validating Debug Grid - Latitude: {latitude}, Longitude: {longitude}")
+
+        if not check_special_characters(latitude) or not check_special_characters(longitude):
+            logging.warning("Special character found in Debug Grid")
+            return False
+
+    return True
+# ./assistants/medical/medical_assistant.py
+import logging
+import os
+import json
+from colorama import Fore
+from assistants.concrete_assistant import ConcreteAssistant  # Updated import path
+from assistants.create_dynamic_assistant import create_dynamic_assistant  # Updated import path
+from .medical_assistant_actions import MedicalAssistantActions  # Import the new actions class
+from .system_message import system_message  # Import the system message
+from .details_extractor import extract_details  # Import the extract details function
+from .validator_utils import validate_medical_condition, is_complete_response  # Corrected import path
+
+class MedicalAssistant(ConcreteAssistant):
+    def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
+        self.initial_message = "We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location"
+        super().__init__(system_message, model, temperature, top_p)
+
+    def get_initial_message(self):
+        return self.initial_message
+
+    def get_response(self, user_input):
+        if user_input.lower() == "switch_to_lunch":
+            return "switch_to_lunch"
+        
+        actions = MedicalAssistantActions()
+        action_response = actions.handle_actions(user_input)
+        if action_response:
+            return self.modify_response(action_response)
+        response = super().get_response(user_input)
+        return self.modify_response(response)
+
+    def modify_response(self, response):
+        if "Does this look correct? (y/n)" in response:
+            print("Validating Assistant Output")
+            logging.info("Validating Assistant Output")
+
+        if "I will now search for trials that match this profile." in response:
+            logging.info("Validating Assistant Output")
+
+            if not is_complete_response(response):
+                logging.warning("Incomplete response received")
+                print(f"{Fore.RED}The response is incomplete or invalid. Please provide the necessary details again.{Fore.RESET}")
+                return response  # Early return if the response is incomplete
+            
+            medical_condition_status = validate_medical_condition(response)  # Corrected function call
+            print(f"{Fore.MAGENTA}Validation result: {medical_condition_status}{Fore.RESET}")
+            
+            if medical_condition_status:
+                if medical_condition_status == "The data will be submitted with this criteria to find applicable trials.":
+                    details = extract_details(response)
+                    if details:
+                        logging.info("User details collected successfully")
+
+                        # Delete details.json if it exists
+                        if os.path.exists('details.json'):
+                            os.remove('details.json')
+                        
+                        # Create details.json with the content from extracted_details
+                        with open('details.json', 'w') as json_file:
+                            json.dump(details, json_file, indent=4)
+
+                        response += f"\nYep, correct. Here is the response:\n{response}"
+                        return response  # Return the modified response
+                else:
+                    response = self.get_response(medical_condition_status)
+                    print(f"{Fore.BLUE}Assistant: {Fore.RESET}{response}")
+                    return response
+
+        return response
+# ./assistants/medical/__init__.py
+
+# ./assistants/medical/medical_assistant_actions.py
+
+class MedicalAssistantActions:
+    def handle_actions(self, user_input):
+        if user_input.lower() == "i need lunch":
+            return "switch_to_lunch"
+        return None
+
+    def create_and_switch_to_dynamic_assistant(self):
+        config_path = "./assistants/as_configs/exclusion_AI.json"
+        additional_data_path = "./JSON/sort_debug_exclusion.json"
+        try:
+            dynamic_assistant = create_dynamic_assistant(config_path, additional_data_path)
+            return dynamic_assistant
+        except RuntimeError as e:
+            return f"Failed to create dynamic assistant: {e}"
+# ./assistants/medical/response_validator.py
+
+from validator_utils import validate_medical_condition, is_complete_response
+
+def main():
+    # Example responses
+    response_with_common_condition = """- Age: 50
+    - Gender: Female
+    - Medical Condition: Common Cold
+    - Location: Los Angeles, CA
+    - Debug Grid: [(34.0522, -118.2437)]
+    
+    I will now search for trials that match this profile."""
+
+    response_with_uncommon_condition = """- Age: 50
+    - Gender: Female
+    - Medical Condition: Rare Disease
+    - Location: Los Angeles, CA
+    - Debug Grid: [(34.0522, -118.2437)]
+    
+    I will now search for trials that match this profile."""
+
+    response_with_no_condition = """- Age: 50
+    - Gender: Female
+    - Location: Los Angeles, CA
+    - Debug Grid: [(34.0522, -118.2437)]
+    
+    I will now search for trials that match this profile."""
+
+    # Validate the responses
+    validation_result_1 = validate_medical_condition(response_with_common_condition)
+    validation_result_2 = validate_medical_condition(response_with_uncommon_condition)
+    validation_result_3 = validate_medical_condition(response_with_no_condition)
+
+    print(f"Validation result for common condition: {validation_result_1}")
+    print(f"Validation result for uncommon condition: {validation_result_2}")
+    print(f"Validation result for no condition: {validation_result_3}")
+
+if __name__ == "__main__":
+    main()
+# ./assistants/medical/details_extractor.py
+
+import re
+
+def extract_details(text):
+    details = {}
+    age_match = re.search(r'Age:\s*(\d+)', text)
+    gender_match = re.search(r'Gender:\s*(\w+)', text)
+    condition_match = re.search(r'Medical Condition:\s*([^\n]+)', text)
+    location_match = re.search(r'Location:\s*([^\n]+)', text)
+    debug_grid_match = re.search(r'Debug Grid:\s*\[\(([^,]+),\s*([^)]+)\)\]', text)
+
+    if age_match:
+        details['Age'] = age_match.group(1)
+    if gender_match:
+        details['Gender'] = gender_match.group(1)
+    if condition_match:
+        details['Medical Condition'] = condition_match.group(1)
+    if location_match:
+        details['Location'] = location_match.group(1)
+    if debug_grid_match:
+        details['Latitude'] = debug_grid_match.group(1)
+        details['Longitude'] = debug_grid_match.group(2)
+    
+    return details
+# ./assistants/medical/test_save_details.py
+import json
+import os
+
+details = {
+    "Age": "45",
+    "Gender": "Female",
+    "Medical Condition": "Non-Small Cell Lung Cancer",
+    "Location": "Seattle, WA",
+    "Latitude": "47.6062",
+    "Longitude": "-122.3321"
+}
+
+try:
+    os.makedirs('assistants/medical', exist_ok=True)
+    with open('details.json', 'w') as json_file:
+        json.dump(details, json_file, indent=4)
+    print("Details saved to details.json")
+except Exception as e:
+    print(f"Failed to save details to JSON: {e}")
+# ./assistants/base_assistant.py
+
+import requests
+import time
+import logging
+from colorama import Fore
+from config import API_URL, headers
+
+class BaseAssistant:
+    def __init__(self, system_message, model, temperature, top_p):
+        if not system_message or not isinstance(system_message, dict) or 'role' not in system_message or 'content' not in system_message:
+            raise ValueError("System message must be a dict with 'role' and 'content' fields.")
+        self.system_message = system_message
+        self.model = model
+        self.temperature = temperature
+        self.top_p = top_p
+        self.conversation_history = [self.system_message]
+        logging.info(f"Initialized BaseAssistant with system_message: {self.system_message}")
+
+    def get_response(self, user_input):
+        self.conversation_history.append({"role": "user", "content": user_input})
+        logging.info(f"Updated conversation_history: {self.conversation_history}")
+
+        max_retries = 5
+        retry_delay = 1  # Initial delay in seconds
+        assistant_message = "I'm sorry, I'm currently experiencing issues. Please try again later."
+
+        for attempt in range(max_retries):
+            try:
+                payload = {
+                    "model": self.model,
+                    "messages": self.conversation_history,
+                    "temperature": self.temperature,
+                    "top_p": self.top_p
+                }
+                logging.info(f"Sending request to OpenAI API: {payload}")
+                response = requests.post(API_URL, headers=headers, json=payload)
+                response.raise_for_status()
+                completion = response.json()
+                assistant_message = completion['choices'][0]['message']['content']
+                logging.info(f"Received response from OpenAI API: {assistant_message}")
+                break  # Break out of the retry loop if successful
+            except requests.exceptions.HTTPError as e:
+                if response.status_code == 429:
+                    error_content = response.json()
+                    if error_content['error']['code'] == 'insufficient_quota':
+                        logging.error(f"Quota exceeded: {error_content['error']['message']}")
+                        return assistant_message  # Exit the loop if quota is exceeded
+                    logging.warning(f"Rate limit exceeded. Retrying in {retry_delay} seconds...")
+                    time.sleep(retry_delay)
+                    retry_delay *= 2  # Exponential backoff
+                elif response.status_code == 404:
+                    logging.error(f"404 Not Found: The endpoint does not exist. Please check the API URL.")
+                    return assistant_message
+                else:
+                    logging.error(f"HTTP Error: {e}")
+                    logging.error(f"Response content: {response.content}")
+                    logging.error(f"Request payload: {payload}")
+                    assistant_message = f"An error occurred: {e}"
+                    break  # Break out of the retry loop on other errors
+            except Exception as e:
+                logging.error(f"Exception: {e}")
+                assistant_message = f"An error occurred: {e}"
+                break  # Break out of the retry loop on other exceptions
+
+        self.conversation_history.append({"role": "assistant", "content": assistant_message})
+        return assistant_message
+# ./assistants/concrete_assistant.py
+
+from .base_assistant import BaseAssistant
+
+class ConcreteAssistant(BaseAssistant):
+    def respond(self, user_input):
+        return self.get_response(user_input)
+# ./assistants/create_dynamic_assistant.py
+
+import json
+import requests
+import logging
+from .concrete_assistant import ConcreteAssistant
+
+def create_dynamic_assistant(config_path, additional_data_path):
+    try:
+        # Load dynamic assistant configuration
+        logging.info(f"Attempting to open config file at: {config_path}")
+        with open(config_path, 'r') as config_file:
+            config_content = config_file.read()
+            logging.info(f"Config file content: {config_content}")
+            config = json.loads(config_content)
+
+        # Load additional data
+        logging.info(f"Attempting to open additional data file at: {additional_data_path}")
+        with open(additional_data_path, 'r') as additional_data_file:
+            additional_data_content = additional_data_file.read()
+            logging.info(f"Additional data file content: {additional_data_content}")
+            additional_data = json.loads(additional_data_content)
+        
+        # Log the additional data for debugging
+        logging.info(f"Additional data: {additional_data}")
+
+        # Integrate the additional data into the system message
+        config["system_message"]["content"] += f"\n\nAdditional Data:\n{json.dumps(additional_data, indent=2)}"
+
+        # Create the dynamic assistant
+        dynamic_assistant = ConcreteAssistant(
+            system_message=config["system_message"],
+            model=config["model"],
+            temperature=config["temperature"],
+            top_p=config["top_p"]
+        )
+        return dynamic_assistant
+    except requests.exceptions.RequestException as e:
+        logging.error(f"RequestException: {e}")
+        raise RuntimeError(f"Failed to create dynamic assistant: {e}")
+    except json.JSONDecodeError as e:
+        logging.error(f"JSONDecodeError: {e}")
+        raise RuntimeError(f"Failed to create dynamic assistant: {e}")
+    except Exception as e:
+        logging.error(f"Exception: {e}")
+        raise RuntimeError(f"Failed to create dynamic assistant: {e}")
+# ./tests/__init__.py
+
+# ./main.py
+
+import sys
+import logging
+import os
+from colorama import Fore, Style, init
+from assistants.assistant_factory import create_assistant
+from router.conversation_router import ConversationRouter
+from assistants.lunch.lunch_assistant import LunchAssistant  # Corrected import path
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'assistants')))
+
+init(autoreset=True)
+
+log_directory = "logs"
+
+def delete_logs():
+    """Delete log files in the log directory."""
+    if os.path.exists(log_directory):
+        for log_file in os.listdir(log_directory):
+            file_path = os.path.join(log_directory, log_file)
+            try:
+                if os.path.isfile(file_path):
+                    os.unlink(file_path)
+                    print(f"Deleted log file: {file_path}")
+            except Exception as e:
+                print(f"Failed to delete {file_path}. Reason: {e}")
+
+delete_logs()
+
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler(f"{log_directory}/app.log")
+    ]
+)
+def main(assistant_type):
+    logging.info(f"Creating assistant of type: {assistant_type}")
+    medical_assistant = create_assistant(assistant_type="medical", model='gpt-3.5-turbo', temperature=1, top_p=1)
+    lunch_assistant = create_assistant(assistant_type="lunch", model='gpt-3.5-turbo', temperature=1, top_p=1)
+    router = ConversationRouter([medical_assistant, lunch_assistant])
+
+    if hasattr(medical_assistant, 'get_initial_message'):
+        initial_message = medical_assistant.get_initial_message()
+        print(f"{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} {initial_message}")
+    else:
+        print(f"{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} Hello! How can I assist you today? (type 'exit' to end the conversation)")
+
+    while True:
+        user_input = input(f"{Fore.LIGHTGREEN_EX}You: {Style.RESET_ALL}")
+        if user_input.lower() == 'exit':
+            print(f"{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} Goodbye!")
+            break
+        response = router.route(user_input)
+        print(f"{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} {response}")
+        logging.info(f"User input: {user_input}")
+        logging.info(f"Assistant response: {response}")
+
+if __name__ == '__main__':
+    # Set default assistant type to "medical" if no argument is provided
+    assistant_type = "medical" if len(sys.argv) < 2 else sys.argv[1]
+    logging.info(f"Running main with assistant_type: {assistant_type}")
+    main(assistant_type)
+# ./router/conversation_router.py
+
+from assistants.lunch.lunch_assistant import LunchAssistant  # Ensure lunch assistant path is correct
+from assistants.medical.medical_assistant import MedicalAssistant  # Corrected import path
+from assistants.concrete_assistant import ConcreteAssistant
+
+class ConversationRouter:
+    def __init__(self, assistants):
+        self.assistants = assistants
+        self.current_assistant = assistants[0]
+
+    def route(self, message):
+        response = self.current_assistant.respond(message)
+        if response == "switch_to_lunch":
+            self.switch_to_lunch_assistant()
+            response = "Assistant switched to Lunch Assistant for lunch recommendations."
+        elif response == "switch_to_dynamic":
+            self.switch_to_dynamic_assistant()
+            response = "Let's talk about trials that might suit you."
+        if response is None:
+            response = "No response from the assistant."
+        return response
+
+    def switch_to_lunch_assistant(self):
+        for assistant in self.assistants:
+            if isinstance(assistant, LunchAssistant):
+                self.current_assistant = assistant
+                break
+
+    def switch_to_dynamic_assistant(self):
+        for assistant in self.assistants:
+            if isinstance(assistant, MedicalAssistant):
+                dynamic_assistant = assistant.create_and_switch_to_dynamic_assistant()
+                if isinstance(dynamic_assistant, ConcreteAssistant):
+                    self.current_assistant = dynamic_assistant
+                    break
+                else:
+                    print(dynamic_assistant)  # Prints the error message if dynamic assistant creation fails
+# ./router/__init__.py
+

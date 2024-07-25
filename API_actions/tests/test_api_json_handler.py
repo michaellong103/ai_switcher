@@ -1,4 +1,4 @@
-# ./API_actions/tests/test_api_json_handler.py
+# ./tests/test_api_json_handler.py
 
 import unittest
 import json

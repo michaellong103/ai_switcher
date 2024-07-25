@@ -1,4 +1,4 @@
-# ./API_actions/api_json_handler.py
+# ./api_json_handler.py
 
 import json
 

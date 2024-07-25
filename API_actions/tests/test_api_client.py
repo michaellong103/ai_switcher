@@ -1,4 +1,4 @@
-# ./API_actions/tests/test_api_client.py
+# ./tests/test_api_client.py
 
 import unittest
 from unittest.mock import patch
