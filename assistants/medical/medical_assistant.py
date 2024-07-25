@@ -1,5 +1,3 @@
-# ./assistants/medical/medical_assistant.py
-
 import logging
 import os
 import json
@@ -9,8 +7,7 @@ from assistants.create_dynamic_assistant import create_dynamic_assistant  # Upda
 from .medical_assistant_actions import MedicalAssistantActions  # Import the new actions class
 from .system_message import system_message  # Import the system message
 from .details_extractor import extract_details  # Import the extract details function
-from .validator_utils import validate_medical_condition, is_complete_response
-
+from .validator_utils import validate_medical_condition, is_complete_response  # Corrected import path
 
 class MedicalAssistant(ConcreteAssistant):
     def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
@@ -32,7 +29,13 @@ class MedicalAssistant(ConcreteAssistant):
         return self.modify_response(response)
 
     def modify_response(self, response):
+        if "Does this look correct? (y/n)" in response:
+            print("Validating Assistant Output")
+            logging.info("Validating Assistant Output")
+
         if "I will now search for trials that match this profile." in response:
+            logging.info("Validating Assistant Output")
+
             if not is_complete_response(response):
                 logging.warning("Incomplete response received")
                 print(f"{Fore.RED}The response is incomplete or invalid. Please provide the necessary details again.{Fore.RESET}")
