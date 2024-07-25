@@ -26,7 +26,6 @@ def delete_logs():
             except Exception as e:
                 print(f"Failed to delete {file_path}. Reason: {e}")
 
-# Delete logs at startup
 delete_logs()
 
 if not os.path.exists(log_directory):
