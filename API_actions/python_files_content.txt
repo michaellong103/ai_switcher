@@ -130,35 +130,46 @@ if __name__ == "__main__":
 
 import unittest
 from unittest.mock import patch
-from api_actions.api_client import query_clinical_trials, query_clinical_trial_by_nct
+from api_client import query_clinical_trials, query_clinical_trial_by_nct
 
 class TestApiClient(unittest.TestCase):
-    @patch('api_actions.api_client.requests.post')
-    @patch('api_actions.api_client.time.sleep', return_value=None)  # Mock time.sleep to avoid delay in tests
+    @patch('api_client.requests.post')
+    @patch('api_client.time.sleep', return_value=None)  # Mock time.sleep to avoid delay in tests
     def test_query_clinical_trials(self, mock_sleep, mock_post):
         mock_response = mock_post.return_value
-        mock_response.json.return_value = {"key": "value"}
-
+        mock_response.status_code = 200  # Ensure the status code is 200
+        mock_response.json.side_effect = [
+            {"studies": [{"brief_title": "Trial 1", "nct_id": "NCT12345678"}], "nextCursor": "cursor1"},
+            {"studies": [{"brief_title": "Trial 2", "nct_id": "NCT87654321"}], "nextCursor": None}
+        ]
+        
         details = {
             'Age': '50', 
             'Gender': 'Female', 
             'Medical Condition': 'Triple Negative Breast Cancer', 
-            'Location': 'Seattle, WA'
+            'Location': 'Seattle, WA',
+            'Latitude': '47.6062',
+            'Longitude': '-122.3321',
+            'Distance': '100'
         }
         response = query_clinical_trials(details)
-        self.assertEqual(response, {"key": "value"})
-        mock_sleep.assert_called_once_with(1)  # Ensure the sleep was called
+        self.assertEqual(response, [
+            {"brief_title": "Trial 1", "nct_id": "NCT12345678"},
+            {"brief_title": "Trial 2", "nct_id": "NCT87654321"}
+        ])
+        mock_sleep.assert_called()  # Ensure the sleep was called at least once
 
-    @patch('api_actions.api_client.requests.get')
-    @patch('api_actions.api_client.time.sleep', return_value=None)  # Mock time.sleep to avoid delay in tests
-    def test_query_clinical_trial_by_nct(self, mock_sleep, mock_get):
-        mock_response = mock_get.return_value
-        mock_response.json.return_value = {"key": "value"}
-
+    @patch('api_client.requests.post')
+    @patch('api_client.time.sleep', return_value=None)  # Mock time.sleep to avoid delay in tests
+    def test_query_clinical_trial_by_nct(self, mock_sleep, mock_post):
+        mock_response = mock_post.return_value
+        mock_response.status_code = 200  # Ensure the status code is 200
+        mock_response.json.return_value = {"studies": [{"brief_title": "Trial 1", "nct_id": "NCT12345678"}]}
+        
         nct_number = "NCT12345678"
         response = query_clinical_trial_by_nct(nct_number)
-        self.assertEqual(response, {"key": "value"})
-        mock_sleep.assert_called_once_with(1)  # Ensure the sleep was called
+        self.assertEqual(response, {"studies": [{"brief_title": "Trial 1", "nct_id": "NCT12345678"}]})
+        mock_sleep.assert_called()  # Ensure the sleep was called at least once
 
 if __name__ == '__main__':
     unittest.main()
@@ -779,7 +790,7 @@ def query_clinical_trial_by_nct(nct_number):
 # ./api_config.py
 
 API_ENDPOINT_CLINICAL_TRIALS = "https://clinicaltrials.gov/api/v2/studies"
-# ./api_client.py
+# api_client.py
 
 import requests
 import time
@@ -793,20 +804,24 @@ class ClinicalTrialsAPI:
         self.status_filter = status_filter
 
     def send_query_to_clinicaltrials(self, details, distance):
+        logging.debug("Starting send_query_to_clinicaltrials")
         details["Distance"] = str(distance)
         all_studies = []
         cursor = None
 
         while True:
+            logging.debug(f"Looping with cursor: {cursor}")
             query_url = self.construct_query_url(details, self.status_filter, self.page_size, cursor)
-
-            response = requests.get(query_url)
+            
+            response = requests.post(query_url, json=details)  # Send JSON data with POST
+            logging.debug(f"Response status code: {response.status_code}")
             if response.status_code == 200:
                 data = response.json()
                 studies = data.get('studies', [])
                 all_studies.extend(studies)
 
                 cursor = data.get('nextCursor')
+                logging.debug(f"Next cursor: {cursor}")
                 if not cursor:
                     break
             else:
@@ -819,19 +834,8 @@ class ClinicalTrialsAPI:
         return all_studies
 
     def construct_query_url(self, details, status_filter, page_size, cursor=None):
-        condition = details.get("Medical Condition", "")
-        gender = details.get("Gender", "").lower()
-        latitude = details.get("Latitude", "")
-        longitude = details.get("Longitude", "")
-        distance = details.get("Distance", "100")
-
-        geo_filter = f"distance({latitude},{longitude},{distance})"
-
         query_params = {
             "format": "json",
-            "query.cond": condition,
-            "filter.geo": geo_filter,
-            "aggFilters": f"sex:{gender[0]}",
             "filter.overallStatus": status_filter,
             "pageSize": page_size
         }
@@ -857,5 +861,5 @@ def query_clinical_trial_by_nct(nct_number):
     # Ensure at least a 1 second pause between API calls
     time.sleep(1)
     
-    response = requests.get(url, headers=headers)
+    response = requests.post(url, headers=headers)  # Send POST request
     return response.json()

@@ -1,4 +1,4 @@
-# ./api_client.py
+# api_client.py
 
 import requests
 import time
@@ -12,20 +12,24 @@ class ClinicalTrialsAPI:
         self.status_filter = status_filter
 
     def send_query_to_clinicaltrials(self, details, distance):
+        logging.debug("Starting send_query_to_clinicaltrials")
         details["Distance"] = str(distance)
         all_studies = []
         cursor = None
 
         while True:
+            logging.debug(f"Looping with cursor: {cursor}")
             query_url = self.construct_query_url(details, self.status_filter, self.page_size, cursor)
-
-            response = requests.get(query_url)
+            
+            response = requests.post(query_url, json=details)  # Send JSON data with POST
+            logging.debug(f"Response status code: {response.status_code}")
             if response.status_code == 200:
                 data = response.json()
                 studies = data.get('studies', [])
                 all_studies.extend(studies)
 
                 cursor = data.get('nextCursor')
+                logging.debug(f"Next cursor: {cursor}")
                 if not cursor:
                     break
             else:
@@ -38,19 +42,8 @@ class ClinicalTrialsAPI:
         return all_studies
 
     def construct_query_url(self, details, status_filter, page_size, cursor=None):
-        condition = details.get("Medical Condition", "")
-        gender = details.get("Gender", "").lower()
-        latitude = details.get("Latitude", "")
-        longitude = details.get("Longitude", "")
-        distance = details.get("Distance", "100")
-
-        geo_filter = f"distance({latitude},{longitude},{distance})"
-
         query_params = {
             "format": "json",
-            "query.cond": condition,
-            "filter.geo": geo_filter,
-            "aggFilters": f"sex:{gender[0]}",
             "filter.overallStatus": status_filter,
             "pageSize": page_size
         }
@@ -76,5 +69,5 @@ def query_clinical_trial_by_nct(nct_number):
     # Ensure at least a 1 second pause between API calls
     time.sleep(1)
     
-    response = requests.get(url, headers=headers)
+    response = requests.post(url, headers=headers)  # Send POST request
     return response.json()
