@@ -1,0 +1,23 @@
+[
+    {
+        "trialName": "Phase III Trial of Neoadjuvant Durvalumab (NSC 778709) Plus Chemotherapy Versus Chemotherapy Alone for Adults With MammaPrint Ultrahigh (MP2) Hormone Receptor (HR) Positive / Human Epidermal Growth Factor Receptor (HER2) Negative Stage II-III Breast Cancer",
+        "nctNumber": "NCT06058377",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE3"
+        ],
+        "primaryCompletionDate": {
+            "date": "2026-05-31",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2026-05-31",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2023-11-27",
+        "startDateType": "ACTUAL",
+        "durationDays": 916,
+        "daysUntilEnd": 673
+    }
+]
