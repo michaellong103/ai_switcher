@@ -1,24 +1,13 @@
-# api_query.py
+# ./api_query.py
 
 import sys
 import os
 import json
 import logging
+import asyncio
 
-# Initialize logging configuration
-logging.basicConfig(
-    level=logging.CRITICAL,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('api_query.log'),
-        logging.StreamHandler()
-    ]
-)
-
-# Ensure the path is set for imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 
-# Import necessary functions from other modules
 from api_client import query_clinical_trials, query_clinical_trial_by_nct
 from api_json_handler import read_json, write_json
 from data_cleaning import clean_study_data, extract_clinical_trial_info, filter_exclusion_criteria_and_write, save_all_study_data
@@ -74,7 +63,7 @@ def clear_log_file(log_file='query_log.json'):
     # Clear the log file at the beginning of the script
     open(log_file, 'w').close()
 
-def main(input_file, output_file):
+async def main(input_file, output_file):
     logging.info(f"Reading from: {input_file}")
     logging.info(f"Writing to: {output_file}")
 
@@ -89,11 +78,11 @@ def main(input_file, output_file):
     if 'nct_number' in input_data:
         # Query a single clinical trial based on NCT number
         logging.info("Querying single clinical trial by NCT number")
-        api_response = query_clinical_trial_by_nct(input_data['nct_number'])
+        api_response = await query_clinical_trial_by_nct(input_data['nct_number'])
     else:
         # Query multiple clinical trials
         logging.info("Querying multiple clinical trials")
-        api_response = query_clinical_trials(input_data)
+        api_response = await query_clinical_trials(input_data)
 
     logging.debug(f"API response: {api_response}")
 
@@ -125,4 +114,4 @@ if __name__ == "__main__":
 
     input_file = sys.argv[1]
     output_file = sys.argv[2]
-    main(input_file, output_file)
+    asyncio.run(main(input_file, output_file))

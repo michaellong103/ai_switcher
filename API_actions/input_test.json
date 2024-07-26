@@ -2,10 +2,18 @@
   "Distance": 10,
   "PageSize": 150,
   "MaxDistance": 500,
+  "last_query_results": {
+    "Trial Condition": "Triple Negative Breast Cancer",
+    "Location": "distance(distance(34.0522, -118.2437)",
+    "Age": "50",
+    "Sex": "F",
+    "Search Distance": "10) miles",
+    "Results": 29
+  },
   "Age": "50",
   "Gender": "Female",
-  "Medical Condition": "Hormone Receptor Positive Breast Cancer",
-  "Location": "Tulsa, OK",
-  "Latitude": "36.1540",
-  "Longitude": "-95.9928"
+  "Medical Condition": "Triple Negative Breast Cancer",
+  "Location": "Los Angeles, CA",
+  "Latitude": "34.0522",
+  "Longitude": "-118.2437"
 }
