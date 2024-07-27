@@ -1,3 +1,4 @@
+# ./assistants/medical/medical_assistant.py
 import logging
 import os
 import json
@@ -51,6 +52,29 @@ class MedicalAssistant(ConcreteAssistant):
             logging.error(f"Script Errors:\n {stderr.decode()}")
 
         return process.returncode, stdout.decode()
+    
+    async def run_query_stats(self):
+        # Resolve the path to query_stats.py
+        query_stats_script = os.path.abspath(os.path.join('tools', 'query_stats.py'))
+
+        process = await asyncio.create_subprocess_exec(
+            'python', query_stats_script,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE
+        )
+
+        # Wait for the process to complete and capture output
+        stdout, stderr = await process.communicate()
+
+        if process.returncode == 0:
+            logging.info("query_stats.py completed successfully.")
+        else:
+            logging.error(f"query_stats.py failed with return code {process.returncode}.")
+
+        if stderr:
+            logging.error(f"Script Errors:\n {stderr.decode()}")
+
+        return process.returncode, stdout.decode()
 
     def modify_response(self, response):
         if "Does this look correct? (y/n)" in response:
@@ -94,6 +118,10 @@ class MedicalAssistant(ConcreteAssistant):
                             result_code, result_output = asyncio.run(self.call_async_caller(input_file_path, output_file_path))
                             logging.info(f"Script output: {result_output}")
                             response += f"\nScript ran successfully. Output:\n{result_output}"
+                            result_code, result_output = asyncio.run(self.run_query_stats())
+                            logging.info(f"query_stats.py output: {result_output}")
+                            response += f"\nquery_stats.py ran successfully. Output:\n{result_output}"
+                      
                         except Exception as e:
                             logging.error(f"Error running async_caller_program: {e}")
                             response += f"\nError running async_caller_program: {e}"
