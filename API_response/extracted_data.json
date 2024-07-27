@@ -19,7 +19,7 @@
         "startDate": "2022-12-07",
         "startDateType": "ACTUAL",
         "durationDays": 1211,
-        "daysUntilEnd": 613
+        "daysUntilEnd": 612
     },
     {
         "trialName": "IIT2021-01-Shiao-CSF1Ri: Reinvigorating TNBC Response to Immunotherapy With Combination Myeloid Inhibition and Radiation",
@@ -40,7 +40,7 @@
         "startDate": "2023-11-17",
         "startDateType": "ACTUAL",
         "durationDays": 745,
-        "daysUntilEnd": 492
+        "daysUntilEnd": 491
     },
     {
         "trialName": "A Phase 1a, Dose Escalation, Safety and Tolerability Study of NX-1607, a Casitas B-lineage Lymphoma Proto-oncogene (CBL-B) Inhibitor, in Adults With Advanced Malignancies, With Phase 1b Expansion in Select Tumor Types",
@@ -61,7 +61,7 @@
         "startDate": "2021-09-29",
         "startDateType": "ACTUAL",
         "durationDays": 1613,
-        "daysUntilEnd": 581
+        "daysUntilEnd": 580
     },
     {
         "trialName": "A Tissue Collection Study in Patients Who Respond to Immune Checkpoint Inhibitors to Identify Targets of Tumor-Reactive T Cells.",
@@ -80,7 +80,7 @@
         "startDate": "2021-02-26",
         "startDateType": "ACTUAL",
         "durationDays": 1396,
-        "daysUntilEnd": 149
+        "daysUntilEnd": 148
     },
     {
         "trialName": "A Phase 1 Study of NM32-2668 (Anti-ROR1/CD3/Anti-HSA Tri-Specific Antibody) in Adult Patients With Selected Advanced Solid Tumors",
@@ -101,7 +101,7 @@
         "startDate": "2024-05-01",
         "startDateType": "ACTUAL",
         "durationDays": 1339,
-        "daysUntilEnd": 1252
+        "daysUntilEnd": 1251
     },
     {
         "trialName": "A Phase 2, Multicenter, Open-Label Basket Study of Navicixizumab Monotherapy or in Combination With Paclitaxel or Irinotecan in Patients With Select Advanced Solid Tumors",
@@ -122,7 +122,7 @@
         "startDate": "2022-08-05",
         "startDateType": "ACTUAL",
         "durationDays": 863,
-        "daysUntilEnd": 141
+        "daysUntilEnd": 140
     },
     {
         "trialName": "A Phase 1-2 Dose-escalation and Expansion Study of ST316 in Subjects With Selected Advanced Unresectable and Metastatic Solid Tumors",
@@ -143,7 +143,7 @@
         "startDate": "2023-06-05",
         "startDateType": "ACTUAL",
         "durationDays": 1456,
-        "daysUntilEnd": 1038
+        "daysUntilEnd": 1037
     },
     {
         "trialName": "A Single Arm Phase 2 Study of Peri-Operative Immune Checkpoint Inhibition and Cryoablation in Women With Hormone Receptor-Negative, HER2-Negative Early Stage/Resectable Breast Cancer.",
@@ -164,7 +164,7 @@
         "startDate": "2019-11-12",
         "startDateType": "ACTUAL",
         "durationDays": 3124,
-        "daysUntilEnd": 1405
+        "daysUntilEnd": 1404
     },
     {
         "trialName": "A Phase II, Multicenter, Randomized, Double-Blind Study of Tobemstomig/RO7247669 Combined With Nab-Paclitaxel Compared With Pembrolizumab Combined With Nab-Paclitaxel in Participants With Previously Untreated, PD-L1-Positive, Locally-Advanced Unresectable or Metastatic Triple-Negative Breast Cancer",
@@ -185,7 +185,7 @@
         "startDate": "2023-07-18",
         "startDateType": "ACTUAL",
         "durationDays": 955,
-        "daysUntilEnd": 580
+        "daysUntilEnd": 579
     },
     {
         "trialName": "An Open-label, Multicenter, Multicohort, Phase 2 Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)",
@@ -206,7 +206,7 @@
         "startDate": "2020-03-09",
         "startDateType": "ACTUAL",
         "durationDays": 2396,
-        "daysUntilEnd": 795
+        "daysUntilEnd": 794
     },
     {
         "trialName": "A Phase 1, First-in-Human, Dose-Finding and Expansion Study to Evaluate the Safety, Tolerability, Pharmacokinetics, and Activity of XmAb\u00ae808 in Combination With Pembrolizumab in Selected Advanced Solid Tumors",
@@ -227,7 +227,7 @@
         "startDate": "2022-12-14",
         "startDateType": "ACTUAL",
         "durationDays": 1813,
-        "daysUntilEnd": 1222
+        "daysUntilEnd": 1221
     },
     {
         "trialName": "Shorter Anthracycline-Free Chemo Immunotherapy Adapted to Pathological Response in Early Triple Negative Breast Cancer (SCARLET), A Randomized Phase III Study",
@@ -248,7 +248,7 @@
         "startDate": "2023-09-15",
         "startDateType": "ACTUAL",
         "durationDays": 3486,
-        "daysUntilEnd": 3170
+        "daysUntilEnd": 3169
     },
     {
         "trialName": "Phase 1/2 Safety and Efficacy Study of NUV-868 as Monotherapy and in Combination With Olaparib or Enzalutamide in Adult Patients With Advanced Solid Tumors",
@@ -270,7 +270,7 @@
         "startDate": "2022-03-29",
         "startDateType": "ACTUAL",
         "durationDays": 1678,
-        "daysUntilEnd": 827
+        "daysUntilEnd": 826
     },
     {
         "trialName": "Increasing Access to Genetic Testing in Underserved Patients Using a Multilingual Conversational Agent",
@@ -291,7 +291,7 @@
         "startDate": "2024-07-01",
         "startDateType": "ESTIMATED",
         "durationDays": 1095,
-        "daysUntilEnd": 1069
+        "daysUntilEnd": 1068
     },
     {
         "trialName": "A Phase I/II Study Evaluating the Safety and Efficacy of Ivermectin in Combination With Balstilimab in Patients With Metastatic Triple Negative Breast Cancer With Expansion Cohort in PD-L1 Negative TNBC",
@@ -313,7 +313,7 @@
         "startDate": "2023-10-13",
         "startDateType": "ACTUAL",
         "durationDays": 1084,
-        "daysUntilEnd": 796
+        "daysUntilEnd": 795
     },
     {
         "trialName": "A Phase 1 Study of HMBD-002-V4C26 (HMBD-002), a Monoclonal Antibody Targeting VISTA, as Monotherapy and Combined With Pembrolizumab, in Patients With Advanced Solid Malignancies",
@@ -334,7 +334,7 @@
         "startDate": "2022-01-01",
         "startDateType": "ACTUAL",
         "durationDays": 1096,
-        "daysUntilEnd": 158
+        "daysUntilEnd": 157
     },
     {
         "trialName": "A Phase 1/2 Study of BMS-986449 Alone and in Combination With Nivolumab in Participants With Advanced Solid Tumors",
@@ -356,7 +356,7 @@
         "startDate": "2023-06-06",
         "startDateType": "ACTUAL",
         "durationDays": 1486,
-        "daysUntilEnd": 1069
+        "daysUntilEnd": 1068
     },
     {
         "trialName": "A Dose Finding Phase 1 of Sarilumab Plus Capecitabine in HER2/Neu-Negative Metastatic Breast Cancer and a Single-arm, Historically-controlled Phase 2 Study of Sarilumab Plus Capecitabine in Stage I-III Triple Negative Breast Cancer With High-Risk Residual Disease (EMPOWER)",
@@ -378,7 +378,7 @@
         "startDate": "2020-09-26",
         "startDateType": "ACTUAL",
         "durationDays": 2229,
-        "daysUntilEnd": 829
+        "daysUntilEnd": 828
     },
     {
         "trialName": "OptimICE-PCR: De-Escalation of Therapy in Early-Stage TNBC Patients Who Achieve pCR After Neoadjuvant Chemotherapy With Checkpoint Inhibitor Therapy",
@@ -399,7 +399,7 @@
         "startDate": "2023-05-10",
         "startDateType": "ACTUAL",
         "durationDays": 3674,
-        "daysUntilEnd": 3230
+        "daysUntilEnd": 3229
     },
     {
         "trialName": "A Phase III, Open-label, Randomised Study of Neoadjuvant Datopotamab Deruxtecan (Dato-DXd) Plus Durvalumab Followed by Adjuvant Durvalumab With or Without Chemotherapy Versus Neoadjuvant Pembrolizumab Plus Chemotherapy Followed by Adjuvant Pembrolizumab With or Without Chemotherapy for the Treatment of Adult Patients With Previously Untreated Triple-Negative or Hormone Receptor-low/HER2-negative Breast Cancer (D926QC00001; TROPION-Breast04)",
@@ -420,7 +420,7 @@
         "startDate": "2023-11-14",
         "startDateType": "ACTUAL",
         "durationDays": 2479,
-        "daysUntilEnd": 2223
+        "daysUntilEnd": 2222
     },
     {
         "trialName": "I-SPY Trial (Investigation of Serial Studies to Predict Your Therapeutic Response With Imaging And moLecular Analysis 2)",
@@ -441,7 +441,7 @@
         "startDate": "2010-03-01",
         "startDateType": "ACTUAL",
         "durationDays": 7945,
-        "daysUntilEnd": 2683
+        "daysUntilEnd": 2682
     },
     {
         "trialName": "A Dose-Escalation and Expansion Study of the Safety and Pharmacokinetics of XB002 as Single-Agent and Combination Therapy in Subjects With Inoperable Locally Advanced or Metastatic Solid Tumors",
@@ -462,7 +462,7 @@
         "startDate": "2021-06-07",
         "startDateType": "ACTUAL",
         "durationDays": 1218,
-        "daysUntilEnd": 72
+        "daysUntilEnd": 71
     },
     {
         "trialName": "A Phase 1/2 Safety and Efficacy Dose Escalation / Dose Expansion Study of a CAB-ROR2-ADC, Alone and in Combination With a PD-1 Inhibitor, in Patients With Advanced Solid Tumors (Ph1) and Melanoma and NSCLC Patients (Ph2)",
@@ -484,7 +484,7 @@
         "startDate": "2018-06-27",
         "startDateType": "ACTUAL",
         "durationDays": 2743,
-        "daysUntilEnd": 521
+        "daysUntilEnd": 520
     },
     {
         "trialName": "Phase 1, Two-part, Multicenter, Open-label, Multiple Dose, First-in-human Study of DS-1062a in Subjects With Advanced Solid Tumors (TROPION-PanTumor01)",
@@ -505,7 +505,7 @@
         "startDate": "2018-01-31",
         "startDateType": "ACTUAL",
         "durationDays": 2527,
-        "daysUntilEnd": 158
+        "daysUntilEnd": 157
     },
     {
         "trialName": "A Phase 3 Open-label, Randomised Study of Datopotamab Deruxtecan (DatoDXd) With or Without Durvalumab Versus Investigator's Choice of Therapy in Patients With Stage I-III Triple-negative Breast Cancer Who Have Residual Invasive Disease in the Breast and/or Axillary Lymph Nodes at Surgical Resection Following Neoadjuvant Systemic Therapy (TROPION-Breast03)",
@@ -526,7 +526,7 @@
         "startDate": "2022-11-28",
         "startDateType": "ACTUAL",
         "durationDays": 2676,
-        "daysUntilEnd": 2069
+        "daysUntilEnd": 2068
     },
     {
         "trialName": "A Phase 1/2 Study of BMS-986340 as Monotherapy and in Combination With Nivolumab or Docetaxel in Participants With Advanced Solid Tumors",
@@ -548,7 +548,7 @@
         "startDate": "2021-05-27",
         "startDateType": "ACTUAL",
         "durationDays": 1937,
-        "daysUntilEnd": 780
+        "daysUntilEnd": 779
     },
     {
         "trialName": "Phase Ib Clinical Trial of Autologous Anti-NY-ESO-1 TCR-Engineered T Cells in Patients With Relapsed/Refractory Locally Advanced or Metastatic NY-ESO-1-Expressing Triple Negative Breast Cancer",
@@ -569,7 +569,7 @@
         "startDate": "2024-08-01",
         "startDateType": "ESTIMATED",
         "durationDays": 1095,
-        "daysUntilEnd": 1100
+        "daysUntilEnd": 1099
     },
     {
         "trialName": "A Randomized, Open-label, Phase 3 Study of Adjuvant Sacituzumab Govitecan and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy",
@@ -590,7 +590,7 @@
         "startDate": "2022-12-12",
         "startDateType": "ACTUAL",
         "durationDays": 3154,
-        "daysUntilEnd": 2561
+        "daysUntilEnd": 2560
     },
     {
         "trialName": "A Phase 2a, Single-arm, Multi-center, Open-label Study of Neoadjuvant INBRX-106 (Hexavalent OX40 Agonist) in Combination With Pembrolizumab as a Chemotherapy-sparing Regimen for Stage II TNBC Patients",
@@ -611,6 +611,6 @@
         "startDate": "2024-08",
         "startDateType": "ESTIMATED",
         "durationDays": 1765,
-        "daysUntilEnd": 1770
+        "daysUntilEnd": 1769
     }
 ]

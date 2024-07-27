@@ -3,12 +3,12 @@ import logging
 import os
 import json
 from colorama import Fore
-from assistants.concrete_assistant import ConcreteAssistant  # Updated import path
-from assistants.create_dynamic_assistant import create_dynamic_assistant  # Updated import path
-from .medical_assistant_actions import MedicalAssistantActions  # Import the new actions class
-from .system_message import system_message  # Import the system message
-from .details_extractor import extract_details  # Import the extract details function
-from .validator_utils import validate_medical_condition, is_complete_response  # Corrected import path
+from assistants.concrete_assistant import ConcreteAssistant
+from assistants.create_dynamic_assistant import create_dynamic_assistant
+from .medical_assistant_actions import MedicalAssistantActions
+from .system_message import system_message
+from .details_extractor import extract_details
+from .validator_utils import validate_medical_condition, is_complete_response
 
 class MedicalAssistant(ConcreteAssistant):
     def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
@@ -42,7 +42,7 @@ class MedicalAssistant(ConcreteAssistant):
                 print(f"{Fore.RED}The response is incomplete or invalid. Please provide the necessary details again.{Fore.RESET}")
                 return response  # Early return if the response is incomplete
             
-            medical_condition_status = validate_medical_condition(response)  # Corrected function call
+            medical_condition_status = validate_medical_condition(response)
             print(f"{Fore.MAGENTA}Validation result: {medical_condition_status}{Fore.RESET}")
             
             if medical_condition_status:
@@ -51,12 +51,18 @@ class MedicalAssistant(ConcreteAssistant):
                     if details:
                         logging.info("User details collected successfully")
 
-                        # Delete details.json if it exists
-                        if os.path.exists('details.json'):
-                            os.remove('details.json')
-                        
+                        # Ensure the directory exists
+                        os.makedirs('API_actions', exist_ok=True)
+
+                        # Define the file path
+                        file_path = 'API_actions/input.json'
+
+                        # Delete the file if it exists
+                        if os.path.exists(file_path):
+                            os.remove(file_path)
+
                         # Create details.json with the content from extracted_details
-                        with open('details.json', 'w') as json_file:
+                        with open(file_path, 'w') as json_file:
                             json.dump(details, json_file, indent=4)
 
                         response += f"\nYep, correct. Here is the response:\n{response}"
