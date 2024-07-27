@@ -1,4 +1,4 @@
-# ./API_actions/process_api_response.py
+# ./process_api_response.py
 
 import sys
 import os

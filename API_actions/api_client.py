@@ -1,4 +1,4 @@
-# ./API_actions/api_client.py
+# ./api_client.py
 
 import httpx
 import asyncio

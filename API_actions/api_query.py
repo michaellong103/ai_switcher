@@ -1,4 +1,4 @@
-# ./API_actions/api_query.py
+# ./api_query.py
 
 import sys
 import os

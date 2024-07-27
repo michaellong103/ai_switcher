@@ -1,7 +1,7 @@
-# ./assistants/medical/medical_assistant.py
 import logging
 import os
 import json
+import asyncio
 from colorama import Fore
 from assistants.concrete_assistant import ConcreteAssistant
 from assistants.create_dynamic_assistant import create_dynamic_assistant
@@ -29,6 +29,29 @@ class MedicalAssistant(ConcreteAssistant):
         response = super().get_response(user_input)
         return self.modify_response(response)
 
+    async def call_async_caller(self, input_file, output_file):
+        # Resolve the path to async_caller_program.py
+        async_caller_script = os.path.abspath(os.path.join('API_actions', 'async_caller_program.py'))
+
+        process = await asyncio.create_subprocess_exec(
+            'python', async_caller_script, input_file, output_file,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE
+        )
+
+        # Wait for the process to complete and capture output
+        stdout, stderr = await process.communicate()
+
+        if process.returncode == 0:
+            logging.info("async_caller_program.py completed successfully.")
+        else:
+            logging.error(f"async_caller_program.py failed with return code {process.returncode}.")
+
+        if stderr:
+            logging.error(f"Script Errors:\n {stderr.decode()}")
+
+        return process.returncode, stdout.decode()
+
     def modify_response(self, response):
         if "Does this look correct? (y/n)" in response:
             print("Validating Assistant Output")
@@ -54,18 +77,27 @@ class MedicalAssistant(ConcreteAssistant):
                         # Ensure the directory exists
                         os.makedirs('API_actions', exist_ok=True)
 
-                        # Define the file path
-                        file_path = 'API_actions/input.json'
+                        # Define the file paths
+                        input_file_path = 'API_actions/input.json'
+                        output_file_path = 'API_response/output_final_big.json'
 
-                        # Delete the file if it exists
-                        if os.path.exists(file_path):
-                            os.remove(file_path)
+                        # Delete the input file if it exists
+                        if os.path.exists(input_file_path):
+                            os.remove(input_file_path)
 
-                        # Create details.json with the content from extracted_details
-                        with open(file_path, 'w') as json_file:
+                        # Write details to input.json
+                        with open(input_file_path, 'w') as json_file:
                             json.dump(details, json_file, indent=4)
 
-                        response += f"\nYep, correct. Here is the response:\n{response}"
+                        # Run async_caller_program.py using call_async_caller
+                        try:
+                            result_code, result_output = asyncio.run(self.call_async_caller(input_file_path, output_file_path))
+                            logging.info(f"Script output: {result_output}")
+                            response += f"\nScript ran successfully. Output:\n{result_output}"
+                        except Exception as e:
+                            logging.error(f"Error running async_caller_program: {e}")
+                            response += f"\nError running async_caller_program: {e}"
+
                         return response  # Return the modified response
                 else:
                     response = self.get_response(medical_condition_status)

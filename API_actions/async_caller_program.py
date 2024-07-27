@@ -1,4 +1,3 @@
-# ./API_actions/async_caller_program.py
 import asyncio
 import subprocess
 import json
@@ -6,6 +5,7 @@ import os
 import sys
 import logging
 
+# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 async def call_api_query(input_file, output_file):
@@ -13,8 +13,11 @@ async def call_api_query(input_file, output_file):
         logging.error(f"Error: The input file '{input_file}' does not exist.")
         return 1, None
 
+    # Resolve the path to api_query.py relative to the current script's directory
+    api_query_script = os.path.abspath(os.path.join(os.path.dirname(__file__), 'api_query.py'))
+
     process = await asyncio.create_subprocess_exec(
-        'python', 'api_query.py', input_file, output_file,
+        'python', api_query_script, input_file, output_file,
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE
     )
@@ -27,11 +30,9 @@ async def call_api_query(input_file, output_file):
     else:
         logging.error(f"api_query.py failed with return code {process.returncode}.")
 
-    # Output the captured stderr (if any)
     if stderr:
         logging.error(f"Script Errors:\n {stderr.decode()}")
 
-    # Try to parse the API response from the stdout
     try:
         api_response = json.loads(stdout.decode())
     except json.JSONDecodeError:

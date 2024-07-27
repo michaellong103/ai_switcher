@@ -1,4 +1,4 @@
-# ./API_actions/python_files_content.py
+# ./python_files_content.py
 
 import sys
 import os
