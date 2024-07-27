@@ -63,7 +63,7 @@ def clear_log_file(log_file='query_log.json'):
     # Clear the log file at the beginning of the script
     open(log_file, 'w').close()
 
-async def main(input_file, output_file):
+async def async_main(input_file, output_file):
     logging.info(f"Reading from: {input_file}")
     logging.info(f"Writing to: {output_file}")
 
@@ -71,9 +71,13 @@ async def main(input_file, output_file):
     clear_log_file()
 
     # Read input JSON
-    logging.debug("Reading input JSON")
-    input_data = read_json(input_file)
-    logging.debug(f"Input data: {input_data}")
+    try:
+        logging.debug("Reading input JSON")
+        input_data = read_json(input_file)
+        logging.debug(f"Input data: {input_data}")
+    except FileNotFoundError:
+        print(f"Error: The input file '{input_file}' does not exist.")
+        return None
 
     if 'nct_number' in input_data:
         # Query a single clinical trial based on NCT number
@@ -107,6 +111,14 @@ async def main(input_file, output_file):
     filter_exclusion_criteria_and_write(cleaned_data, output_dir)
     save_all_study_data(api_response, output_dir)
 
+    return api_response
+
+def main(input_file, output_file):
+    api_response = asyncio.run(async_main(input_file, output_file))
+    if api_response is not None:
+        print(json.dumps(api_response, indent=4))
+    return api_response
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
         print("Usage: python api_query.py <input_file> <output_file>")
@@ -114,4 +126,4 @@ if __name__ == "__main__":
 
     input_file = sys.argv[1]
     output_file = sys.argv[2]
-    asyncio.run(main(input_file, output_file))
+    main(input_file, output_file)
