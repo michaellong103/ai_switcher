@@ -9,6 +9,7 @@ from .medical_assistant_actions import MedicalAssistantActions
 from .system_message import system_message
 from .details_extractor import extract_details
 from .validator_utils import validate_medical_condition, is_complete_response
+from .async_caller import call_async_caller  # Import the function from the new file
 
 class MedicalAssistant(ConcreteAssistant):
     def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
@@ -28,29 +29,6 @@ class MedicalAssistant(ConcreteAssistant):
             return self.modify_response(action_response)
         response = super().get_response(user_input)
         return self.modify_response(response)
-
-    async def call_async_caller(self, input_file, output_file):
-        # Resolve the path to async_caller_program.py
-        async_caller_script = os.path.abspath(os.path.join('API_actions', 'async_caller_program.py'))
-
-        process = await asyncio.create_subprocess_exec(
-            'python', async_caller_script, input_file, output_file,
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-
-        # Wait for the process to complete and capture output
-        stdout, stderr = await process.communicate()
-
-        if process.returncode == 0:
-            logging.info("async_caller_program.py completed successfully.")
-        else:
-            logging.error(f"async_caller_program.py failed with return code {process.returncode}.")
-
-        if stderr:
-            logging.error(f"Script Errors:\n {stderr.decode()}")
-
-        return process.returncode, stdout.decode()
 
     def modify_response(self, response):
         if "Does this look correct? (y/n)" in response:
@@ -91,7 +69,7 @@ class MedicalAssistant(ConcreteAssistant):
 
                         # Run async_caller_program.py using call_async_caller
                         try:
-                            result_code, result_output = asyncio.run(self.call_async_caller(input_file_path, output_file_path))
+                            result_code, result_output = asyncio.run(call_async_caller(input_file_path, output_file_path))
                             logging.info(f"Script output: {result_output}")
                             response += f"\nScript ran successfully. Output:\n{result_output}"
                         except Exception as e:
