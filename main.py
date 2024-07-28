@@ -6,7 +6,9 @@ import os
 from colorama import Fore, Style, init
 from assistants.assistant_factory import create_assistant
 from router.conversation_router import ConversationRouter
-from assistants.lunch.lunch_assistant import LunchAssistant  # Corrected import path
+from assistants.lunch.lunch_assistant import LunchAssistant
+from assistants.medical.medical_assistant import MedicalAssistant
+from assistants.concrete_assistant import ConcreteAssistant
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'assistants')))
 

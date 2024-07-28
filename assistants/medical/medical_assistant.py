@@ -13,22 +13,31 @@ from .validator_utils import validate_medical_condition, is_complete_response
 
 class MedicalAssistant(ConcreteAssistant):
     def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
-        self.initial_message = "We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location"
-        super().__init__(system_message, model, temperature, top_p)
+            logging.info("Initializing MedicalAssistant with model: %s, temperature: %f, top_p: %f", model, temperature, top_p)
+            self.initial_message = "We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location"
+            super().__init__(system_message, model, temperature, top_p)
+            logging.info("MedicalAssistant initialized with initial_message: %s", self.initial_message)
 
     def get_initial_message(self):
+        logging.info("get_initial_message called")
         return self.initial_message
 
-    def get_response(self, user_input):
+    def respond(self, user_input):
+        logging.info("respond called with user_input: %s", user_input)
         if user_input.lower() == "switch_to_lunch":
+            logging.info("Switch to LunchAssistant requested")
             return "switch_to_lunch"
-        
         actions = MedicalAssistantActions()
         action_response = actions.handle_actions(user_input)
+        logging.info("Action response: %s", action_response)
         if action_response:
-            return self.modify_response(action_response)
+            modified_response = self.modify_response(action_response)
+            logging.info("Modified action response: %s", modified_response)
+            return modified_response
         response = super().get_response(user_input)
-        return self.modify_response(response)
+        modified_response = self.modify_response(response)
+        logging.info("Modified super response: %s", modified_response)
+        return modified_response
 
     async def call_async_caller(self, input_file, output_file):
         # Resolve the path to async_caller_program.py

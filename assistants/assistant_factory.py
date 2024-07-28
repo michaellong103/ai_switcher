@@ -1,7 +1,7 @@
 # ./assistants/assistant_factory.py
 
 from .concrete_assistant import ConcreteAssistant
-from .medical.medical_assistant import MedicalAssistant  # Corrected import path
+from .medical.medical_assistant import MedicalAssistant
 from .lunch.lunch_assistant import LunchAssistant  # Ensure lunch assistant path is also correct
 import logging
 
@@ -17,6 +17,9 @@ def create_assistant(assistant_type="default", system_message=None, model='defau
     if assistant_type == "medical":
         logging.info("Creating MedicalAssistant")
         return MedicalAssistant(model, temperature, top_p)
+    elif assistant_type == "lunch":
+        logging.info("Creating LunchAssistant")
+        return LunchAssistant()
     elif assistant_type == "testing":
         logging.info("Creating TestingAssistant")
         return TestingAssistant(model, temperature, top_p)
