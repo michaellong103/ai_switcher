@@ -1,6 +1,7 @@
-# interface_generator.py
+# ./interfaces/interface_generator.py
 
 import json
+import logging
 from .palette import CYAN, YELLOW, RESET_COLOR
 
 def banner(text):
