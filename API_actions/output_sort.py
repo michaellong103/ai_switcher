@@ -1,4 +1,4 @@
-# output_sort.py
+# ./API_actions/output_sort.py
 
 import logging
 import json
@@ -8,7 +8,6 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from display_in_terminal.main import main as display_main
 
-# Configure logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 display_types = ["condensed", "detailed", "questions"]
