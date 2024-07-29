@@ -33,12 +33,31 @@ delete_logs()
 if not os.path.exists(log_directory):
     os.makedirs(log_directory)
 
+class TruncateFormatter(logging.Formatter):
+    def __init__(self, fmt=None, datefmt=None, style='%', max_length=100):
+        super().__init__(fmt=fmt, datefmt=datefmt, style=style)
+        self.max_length = max_length
+
+    def format(self, record):
+        original_message = record.getMessage()
+        if len(original_message) > self.max_length:
+            truncated_message = original_message[:self.max_length] + '...'
+            record.msg = truncated_message
+        return super().format(record)
+
+log_directory = "logs"  # Replace with your actual log directory path
+
+formatter = TruncateFormatter(
+    fmt='%(asctime)s - %(levelname)s - %(message)s',
+    max_length=400  # Set the maximum length for log messages
+)
+
+file_handler = logging.FileHandler(f"{log_directory}/app.log")
+file_handler.setFormatter(formatter)
+
 logging.basicConfig(
     level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler(f"{log_directory}/app.log")
-    ]
+    handlers=[file_handler]
 )
 def main(assistant_type):
     logging.info(f"Creating assistant of type: {assistant_type}")
