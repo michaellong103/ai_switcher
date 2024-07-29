@@ -39,11 +39,17 @@ class TruncateFormatter(logging.Formatter):
         self.max_length = max_length
 
     def format(self, record):
-        original_message = record.getMessage()
+        # Format the message using the parent class format method
+        original_message = super().format(record)
+        
+        # Truncate the message if it exceeds the max_length
         if len(original_message) > self.max_length:
             truncated_message = original_message[:self.max_length] + '...'
-            record.msg = truncated_message
-        return super().format(record)
+            record.message = truncated_message
+        else:
+            record.message = original_message
+        
+        return record.message
 
 log_directory = "logs"  # Replace with your actual log directory path
 
@@ -56,9 +62,10 @@ file_handler = logging.FileHandler(f"{log_directory}/app.log")
 file_handler.setFormatter(formatter)
 
 logging.basicConfig(
-    level=logging.INFO,
+    level=logging.DEBUG,
     handlers=[file_handler]
 )
+
 def main(assistant_type):
     logging.info(f"Creating assistant of type: {assistant_type}")
     medical_assistant = create_assistant(assistant_type="medical", model='gpt-3.5-turbo', temperature=1, top_p=1)

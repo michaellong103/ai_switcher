@@ -6,7 +6,7 @@ import os
 import sys
 import logging
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 async def call_api_query(input_file, output_file):
     if not os.path.exists(input_file):
@@ -16,29 +16,30 @@ async def call_api_query(input_file, output_file):
     # Resolve the path to api_query.py relative to the current script's directory
     api_query_script = os.path.abspath(os.path.join(os.path.dirname(__file__), 'api_query.py'))
 
-    process = await asyncio.create_subprocess_exec(
-        'python', api_query_script, input_file, output_file,
-        stdout=asyncio.subprocess.PIPE,
-        stderr=asyncio.subprocess.PIPE
-    )
-
-    # Wait for the process to complete and capture output
-    stdout, stderr = await process.communicate()
-
-    if process.returncode == 0:
-        logging.info("api_query.py completed successfully.")
-    else:
-        logging.error(f"api_query.py failed with return code {process.returncode}.")
-
-    if stderr:
-        logging.error(f"Script Errors:\n {stderr.decode()}")
-
     try:
-        api_response = json.loads(stdout.decode())
-    except json.JSONDecodeError:
-        api_response = None
+        process = await asyncio.create_subprocess_exec(
+            'python', api_query_script, input_file, output_file,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE
+        )
 
-    return process.returncode, api_response
+        # Wait for the process to complete and capture output
+        stdout, stderr = await process.communicate()
+
+        logging.debug(f"stdout: {stdout.decode()}")
+        logging.debug(f"stderr: {stderr.decode()}")
+
+        if process.returncode == 0:
+            logging.info("api_query.py completed successfully.")
+        else:
+            logging.error(f"api_query.py failed with return code {process.returncode}.")
+            logging.error(f"Error output: {stderr.decode()}")
+
+        return process.returncode, stdout.decode()
+
+    except Exception as e:
+        logging.error(f"Exception occurred while running api_query.py: {e}", exc_info=True)
+        return 1, None
 
 async def main(input_file, output_file):
     return_code, api_response = await call_api_query(input_file, output_file)

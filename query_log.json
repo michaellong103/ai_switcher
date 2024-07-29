@@ -22,52 +22,6 @@
             "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/NSABP B-63)"
         ],
         "nct_numbers": "NCT05325866,NCT05846789,NCT05194072,NCT04849364,NCT03821935,NCT05902988,NCT04225117,NCT05812807,NCT05633654",
-        "missing_dates": [
-            [
-                "NCT05325866",
-                "N/A",
-                "N/A"
-            ],
-            [
-                "NCT05846789",
-                "N/A",
-                "N/A"
-            ],
-            [
-                "NCT05194072",
-                "N/A",
-                "N/A"
-            ],
-            [
-                "NCT04849364",
-                "N/A",
-                "N/A"
-            ],
-            [
-                "NCT03821935",
-                "N/A",
-                "N/A"
-            ],
-            [
-                "NCT05902988",
-                "N/A",
-                "N/A"
-            ],
-            [
-                "NCT04225117",
-                "N/A",
-                "N/A"
-            ],
-            [
-                "NCT05812807",
-                "N/A",
-                "N/A"
-            ],
-            [
-                "NCT05633654",
-                "N/A",
-                "N/A"
-            ]
-        ]
+        "missing_dates": []
     }
 }
