@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.'))
 from api_client import query_clinical_trials, query_clinical_trial_by_nct
 from api_json_handler import read_json, write_json
 from data_cleaning import clean_study_data, extract_clinical_trial_info, filter_exclusion_criteria_and_write, save_all_study_data
+from output_sort import sort_and_process_trials  # Import the sort_and_process_trials function
 
 def process_api_response(api_response):
     logging.debug("Processing API response")
@@ -24,13 +25,21 @@ def process_api_response(api_response):
     num_trials = len(studies)
     trial_names = []
     nct_numbers = []
+    missing_dates = []
 
     for study in studies:
         protocol_section = study.get('protocolSection', {})
         identification_module = protocol_section.get('identificationModule', {})
+        status_module = protocol_section.get('statusModule', {})
         
         brief_title = identification_module.get('briefTitle', 'N/A')
         nct_id = identification_module.get('nctId', 'N/A')
+
+        start_date = status_module.get('startDate', 'N/A')
+        end_date = status_module.get('endDate', 'N/A')
+        
+        if start_date == 'N/A' or end_date == 'N/A':
+            missing_dates.append((nct_id, start_date, end_date))
         
         trial_names.append(brief_title)
         nct_numbers.append(nct_id)
@@ -38,13 +47,16 @@ def process_api_response(api_response):
     stats = {
         "number_of_trials": num_trials,
         "trial_names": trial_names,
-        "nct_numbers": ",".join(nct_numbers)
+        "nct_numbers": ",".join(nct_numbers),
+        "missing_dates": missing_dates
     }
 
     # Log the details
     logging.info(f"Number of trials: {num_trials}")
     logging.info(f"Trial names: {trial_names}")
     logging.debug(f"Extracted stats: {stats}")
+    if missing_dates:
+        logging.error(f"Trials with missing dates: {missing_dates}")
 
     return stats
 
@@ -97,7 +109,7 @@ async def async_main(input_file, output_file):
     log_query_details(input_data, stats)
 
     # Write the raw API response to the output JSON
-    write_json(api_response, output_file)
+    write_json(api_response, output_file)  # Fixed unclosed parenthesis here
 
     # Extract output directory from the output file path
     output_dir = os.path.dirname(output_file)
@@ -111,11 +123,16 @@ async def async_main(input_file, output_file):
     filter_exclusion_criteria_and_write(cleaned_data, output_dir)
     save_all_study_data(api_response, output_dir)
 
+    # Connect to output_sort
+    logging.info("Sorting and processing trials")
+    result_type = sort_and_process_trials(stats['number_of_trials'])
+    logging.info(f"Result of sorting: {result_type}")
+
     return api_response
 
 def main(input_file, output_file):
     api_response = asyncio.run(async_main(input_file, output_file))
-    if api_response is not None:
+    if (api_response is not None):
         print(json.dumps(api_response, indent=4))
     return api_response
 

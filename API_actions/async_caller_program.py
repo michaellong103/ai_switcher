@@ -1,3 +1,4 @@
+# ./async_caller_program.py
 import asyncio
 import subprocess
 import json
@@ -5,7 +6,6 @@ import os
 import sys
 import logging
 
-# Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 async def call_api_query(input_file, output_file):

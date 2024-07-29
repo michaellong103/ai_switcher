@@ -19,28 +19,7 @@
         "startDate": "2022-09-23",
         "startDateType": "ACTUAL",
         "durationDays": 1768,
-        "daysUntilEnd": 1093
-    },
-    {
-        "trialName": "A Phase 1 First-in Human, Multi-Center, Open Label Dose-Escalation Study to Determine the Safety, Tolerability, Pharmacokinetics and RP2D of Livmoniplimab (ABBV-151) as a Single Agent and in Combination With Budigalimab (ABBV-181) in Subjects With Locally Advanced or Metastatic Solid Tumors",
-        "nctNumber": "NCT03821935",
-        "status": "RECRUITING",
-        "studyType": "INTERVENTIONAL",
-        "studyPhases": [
-            "PHASE1"
-        ],
-        "primaryCompletionDate": {
-            "date": "2027-06-23",
-            "type": "ESTIMATED"
-        },
-        "completionDate": {
-            "date": "2027-06-23",
-            "type": "ESTIMATED"
-        },
-        "startDate": "2019-02-21",
-        "startDateType": "ACTUAL",
-        "durationDays": 3044,
-        "daysUntilEnd": 1059
+        "daysUntilEnd": 1092
     },
     {
         "trialName": "A Phase II Trial of Carboplatin +/- Tocilizumab as Initial Therapy for Metastatic Triple Negative and ER-low Breast Cancers",
@@ -61,28 +40,7 @@
         "startDate": "2024-07",
         "startDateType": "ESTIMATED",
         "durationDays": 883,
-        "daysUntilEnd": 855
-    },
-    {
-        "trialName": "An Open-label, Multicenter, Multicohort, Phase 2 Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)",
-        "nctNumber": "NCT04225117",
-        "status": "RECRUITING",
-        "studyType": "INTERVENTIONAL",
-        "studyPhases": [
-            "PHASE2"
-        ],
-        "primaryCompletionDate": {
-            "date": "2026-09-30",
-            "type": "ESTIMATED"
-        },
-        "completionDate": {
-            "date": "2026-09-30",
-            "type": "ESTIMATED"
-        },
-        "startDate": "2020-03-09",
-        "startDateType": "ACTUAL",
-        "durationDays": 2396,
-        "daysUntilEnd": 793
+        "daysUntilEnd": 854
     },
     {
         "trialName": "A Phase 1 Study of SGN-B7H4V in Advanced Solid Tumors",
@@ -103,7 +61,7 @@
         "startDate": "2022-01-12",
         "startDateType": "ACTUAL",
         "durationDays": 1845,
-        "daysUntilEnd": 916
+        "daysUntilEnd": 915
     },
     {
         "trialName": "A Phase II Circulating Tumor DNA Enriched, Genomically Directed Post-neoadjuvant Trial for Patients With Residual Triple Negative Breast Cancer (PERSEVERE)",
@@ -124,28 +82,28 @@
         "startDate": "2021-08-24",
         "startDateType": "ACTUAL",
         "durationDays": 4543,
-        "daysUntilEnd": 3473
+        "daysUntilEnd": 3472
     },
     {
-        "trialName": "OptimICE-PCR: De-Escalation of Therapy in Early-Stage TNBC Patients Who Achieve pCR After Neoadjuvant Chemotherapy With Checkpoint Inhibitor Therapy",
-        "nctNumber": "NCT05812807",
+        "trialName": "A Phase 1 First-in Human, Multi-Center, Open Label Dose-Escalation Study to Determine the Safety, Tolerability, Pharmacokinetics and RP2D of Livmoniplimab (ABBV-151) as a Single Agent and in Combination With Budigalimab (ABBV-181) in Subjects With Locally Advanced or Metastatic Solid Tumors",
+        "nctNumber": "NCT03821935",
         "status": "RECRUITING",
         "studyType": "INTERVENTIONAL",
         "studyPhases": [
-            "PHASE3"
+            "PHASE1"
         ],
         "primaryCompletionDate": {
-            "date": "2033-05-31",
+            "date": "2027-06-23",
             "type": "ESTIMATED"
         },
         "completionDate": {
-            "date": "2033-05-31",
+            "date": "2027-06-23",
             "type": "ESTIMATED"
         },
-        "startDate": "2023-05-10",
+        "startDate": "2019-02-21",
         "startDateType": "ACTUAL",
-        "durationDays": 3674,
-        "daysUntilEnd": 3228
+        "durationDays": 3044,
+        "daysUntilEnd": 1058
     },
     {
         "trialName": "A Phase I/II Study of VLS-1488 (an Oral KIF18A Inhibitor) in Subjects With Advanced Cancer",
@@ -167,7 +125,49 @@
         "startDate": "2023-10-18",
         "startDateType": "ACTUAL",
         "durationDays": 957,
-        "daysUntilEnd": 672
+        "daysUntilEnd": 671
+    },
+    {
+        "trialName": "An Open-label, Multicenter, Multicohort, Phase 2 Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)",
+        "nctNumber": "NCT04225117",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE2"
+        ],
+        "primaryCompletionDate": {
+            "date": "2026-09-30",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2026-09-30",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2020-03-09",
+        "startDateType": "ACTUAL",
+        "durationDays": 2396,
+        "daysUntilEnd": 792
+    },
+    {
+        "trialName": "OptimICE-PCR: De-Escalation of Therapy in Early-Stage TNBC Patients Who Achieve pCR After Neoadjuvant Chemotherapy With Checkpoint Inhibitor Therapy",
+        "nctNumber": "NCT05812807",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE3"
+        ],
+        "primaryCompletionDate": {
+            "date": "2033-05-31",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2033-05-31",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2023-05-10",
+        "startDateType": "ACTUAL",
+        "durationDays": 3674,
+        "daysUntilEnd": 3227
     },
     {
         "trialName": "A Randomized, Open-label, Phase 3 Study of Adjuvant Sacituzumab Govitecan and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy",
@@ -188,6 +188,6 @@
         "startDate": "2022-12-12",
         "startDateType": "ACTUAL",
         "durationDays": 3154,
-        "daysUntilEnd": 2559
+        "daysUntilEnd": 2558
     }
 ]
