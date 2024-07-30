@@ -1,10 +1,12 @@
-# ./API_actions/api_client.py
-
 import httpx
 import asyncio
 import logging
+import os
+import json
 from api_config import API_ENDPOINT_CLINICAL_TRIALS
 from urllib.parse import urlencode
+
+STATE_FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'config_state.json')
 
 class ClinicalTrialsAPI:
     def __init__(self, page_size=200, status_filter="RECRUITING|NOT_YET_RECRUITING|AVAILABLE"):
@@ -20,6 +22,9 @@ class ClinicalTrialsAPI:
             while True:
                 query_url = self.construct_query_url(details, self.status_filter, self.page_size, cursor)
                 
+                # Save the last query URL to the state file
+                self.save_last_query_url(query_url)
+
                 response = await client.get(query_url)
                 if response.status_code == 200:
                     data = response.json()
@@ -63,6 +68,23 @@ class ClinicalTrialsAPI:
         query_url = f"{API_ENDPOINT_CLINICAL_TRIALS}?{query_string}"
         
         return query_url
+
+    def save_last_query_url(self, query_url):
+        try:
+            if os.path.exists(STATE_FILE_PATH):
+                with open(STATE_FILE_PATH, 'r') as state_file:
+                    state_data = json.load(state_file)
+            else:
+                state_data = {}
+
+            state_data['last_clinical_trials_api_url'] = query_url
+
+            with open(STATE_FILE_PATH, 'w') as state_file:
+                json.dump(state_data, state_file, indent=4)
+            
+            logging.info(f"Saved last query URL to state file: {query_url}")
+        except Exception as e:
+            logging.error(f"Error saving last query URL to state file: {e}")
 
 async def query_clinical_trials(details):
     api = ClinicalTrialsAPI()

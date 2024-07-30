@@ -1,12 +1,34 @@
 # ./API_actions/async_tasks.py
+
+
 import os
 import logging
+import json
 from api_client import query_clinical_trials, query_clinical_trial_by_nct
 from api_json_handler import read_json, write_json
 from response_processor import process_api_response
 from log_utils import log_query_details, clear_log_file
 from data_cleaning import clean_study_data, extract_clinical_trial_info, filter_exclusion_criteria_and_write, save_all_study_data
 from output_sort import sort_and_process_trials
+
+STATE_FILE_PATH = os.path.join(os.path.dirname(__file__), '..', 'config_state.json')
+
+def save_stats_to_state_file(stats):
+    try:
+        if os.path.exists(STATE_FILE_PATH):
+            with open(STATE_FILE_PATH, 'r') as state_file:
+                state_data = json.load(state_file)
+        else:
+            state_data = {}
+
+        state_data['stats'] = stats
+
+        with open(STATE_FILE_PATH, 'w') as state_file:
+            json.dump(state_data, state_file, indent=4)
+
+        logging.info(f"Saved stats to state file: {stats}")
+    except Exception as e:
+        logging.error(f"Error saving stats to state file: {e}")
 
 async def async_main(input_file, output_file):
     logging.info(f"Reading from: {input_file}")
@@ -39,6 +61,9 @@ async def async_main(input_file, output_file):
         log_query_details(input_data, stats)
         write_json(api_response, output_file)
 
+        # Save stats to config_state.json
+        save_stats_to_state_file(stats)
+
         output_dir = os.path.dirname(output_file)
         logging.debug(f"Output directory: {output_dir}")
 
@@ -58,3 +83,4 @@ async def async_main(input_file, output_file):
     except Exception as e:
         logging.error(f"Error in async_main: {e}", exc_info=True)
         return None
+

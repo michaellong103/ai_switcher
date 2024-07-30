@@ -25,7 +25,7 @@ def update_state_with_input(input_file):
             state_data = {}
 
         # Update the state with the current API call
-        state_data["current_api_call"] = input_data
+        state_data["current_api_params"] = input_data
 
         # Save the updated state back to the state file
         with open(STATE_FILE_PATH, 'w') as state_file:
