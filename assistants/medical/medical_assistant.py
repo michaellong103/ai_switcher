@@ -125,11 +125,7 @@ class MedicalAssistant(ConcreteAssistant):
                         # Run async_caller_program.py using call_async_caller
                         try:
                             result_code, result_output = asyncio.run(self.call_async_caller(input_file_path, output_file_path))
-                            logging.info(f"Script output: {result_output}")
-                            response += f"\nScript ran successfully. Output:\n{result_output}"
-                            result_code, result_output = asyncio.run(self.run_query_stats())
-                            logging.info(f"query_stats.py output: {result_output}")
-                            response += f"\nquery_stats.py ran successfully. Output:\n{result_output}"
+                     
                       
                         except Exception as e:
                             logging.error(f"Error running async_caller_program: {e}")

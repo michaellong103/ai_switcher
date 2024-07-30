@@ -4,8 +4,6 @@ import sys
 import os
 import logging
 
-STATE_FILE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'config_state.json'))
-
 logger = logging.getLogger(__name__)
 
 def increase_radius(config_file):
@@ -19,13 +17,15 @@ def increase_radius(config_file):
         with open(config_file, 'r') as file:
             config = json.load(file)
         
+        # Ensure location exists in the configuration
+        location = config.get("current_api_params", {}).get("Location", "unknown location")
+        
         # Increase the radius by 50 miles
-        current_radius = config.get("distance", 0)
+        current_radius = config.get("current_radius_for_search", 0)
         new_radius = current_radius + 50
-        config["distance"] = new_radius
+        config["current_radius_for_search"] = new_radius
         
         # Print the location and the new search radius
-        location = config.get("current_api_params", {}).get("Location", "unknown location")
         print(f"Location: {location}")
         print(f"Increasing search radius to {new_radius} miles.")
         logger.info(f"Radius increased from {current_radius} miles to {new_radius} miles for {location}.")
