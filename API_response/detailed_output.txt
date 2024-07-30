@@ -1,8 +1,0 @@
-[96m========================================
-Detailed Trials: (1 trials)
-========================================[0m
-
-[96mMK-7684A With or Without Other Anticancer Therapies in Participants With Selected Solid Tumors (MK-7684A-005) (KEYVIBE-005)[0m
-The purpose of this study is to determine the safety, tolerability, and preliminary efficacy of pembrolizumab/vibostolimab co-formulation (MK-7684A) with or without other anticancer therapies in participants with selected advanced solid tumors. The primary hypothesis is that pembrolizumab/vibostolimab co-formulation is superior to pembrolizumab alone in terms of objective response rate or progression-free survival in participants with cervical cancer.
-[93mNCT05007106[0m, Anchorage, Alaska, United States
-

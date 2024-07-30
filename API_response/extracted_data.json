@@ -1,23 +1,193 @@
 [
     {
-        "trialName": "A Multicenter, Open-label, Phase 2 Basket Study of MK-7684A, a Co-formation of Vibostolimab (MK-7684) With Pembrolizumab (MK-3475), With or Without Other Anticancer Therapies in Participants With Selected Solid Tumors",
-        "nctNumber": "NCT05007106",
+        "trialName": "A Phase 1b/2, Multicenter, Open-label Basket Study Evaluating the Safety and Efficacy of Bemarituzumab Monotherapy in Solid Tumors With FGFR2b Overexpression (FORTITUDE-301)",
+        "nctNumber": "NCT05325866",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE1",
+            "PHASE2"
+        ],
+        "primaryCompletionDate": {
+            "date": "2025-10-05",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2027-07-27",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2022-09-23",
+        "startDateType": "ACTUAL",
+        "durationDays": 1768,
+        "daysUntilEnd": 1091
+    },
+    {
+        "trialName": "A Phase II Trial of Carboplatin +/- Tocilizumab as Initial Therapy for Metastatic Triple Negative and ER-low Breast Cancers",
+        "nctNumber": "NCT05846789",
         "status": "RECRUITING",
         "studyType": "INTERVENTIONAL",
         "studyPhases": [
             "PHASE2"
         ],
         "primaryCompletionDate": {
-            "date": "2027-02-22",
+            "date": "2026-12",
             "type": "ESTIMATED"
         },
         "completionDate": {
-            "date": "2027-02-22",
+            "date": "2026-12",
             "type": "ESTIMATED"
         },
-        "startDate": "2021-09-16",
+        "startDate": "2024-07",
+        "startDateType": "ESTIMATED",
+        "durationDays": 883,
+        "daysUntilEnd": 853
+    },
+    {
+        "trialName": "A Phase 1 First-in Human, Multi-Center, Open Label Dose-Escalation Study to Determine the Safety, Tolerability, Pharmacokinetics and RP2D of Livmoniplimab (ABBV-151) as a Single Agent and in Combination With Budigalimab (ABBV-181) in Subjects With Locally Advanced or Metastatic Solid Tumors",
+        "nctNumber": "NCT03821935",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE1"
+        ],
+        "primaryCompletionDate": {
+            "date": "2027-06-23",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2027-06-23",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2019-02-21",
         "startDateType": "ACTUAL",
-        "durationDays": 1985,
-        "daysUntilEnd": 936
+        "durationDays": 3044,
+        "daysUntilEnd": 1057
+    },
+    {
+        "trialName": "An Open-label, Multicenter, Multicohort, Phase 2 Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)",
+        "nctNumber": "NCT04225117",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE2"
+        ],
+        "primaryCompletionDate": {
+            "date": "2026-09-30",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2026-09-30",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2020-03-09",
+        "startDateType": "ACTUAL",
+        "durationDays": 2396,
+        "daysUntilEnd": 791
+    },
+    {
+        "trialName": "A Phase 1 Study of SGN-B7H4V in Advanced Solid Tumors",
+        "nctNumber": "NCT05194072",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE1"
+        ],
+        "primaryCompletionDate": {
+            "date": "2025-06-30",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2027-01-31",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2022-01-12",
+        "startDateType": "ACTUAL",
+        "durationDays": 1845,
+        "daysUntilEnd": 914
+    },
+    {
+        "trialName": "A Phase II Circulating Tumor DNA Enriched, Genomically Directed Post-neoadjuvant Trial for Patients With Residual Triple Negative Breast Cancer (PERSEVERE)",
+        "nctNumber": "NCT04849364",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE2"
+        ],
+        "primaryCompletionDate": {
+            "date": "2029-01-31",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2034-01-31",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2021-08-24",
+        "startDateType": "ACTUAL",
+        "durationDays": 4543,
+        "daysUntilEnd": 3471
+    },
+    {
+        "trialName": "A Phase I/II Study of VLS-1488 (an Oral KIF18A Inhibitor) in Subjects With Advanced Cancer",
+        "nctNumber": "NCT05902988",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE1",
+            "PHASE2"
+        ],
+        "primaryCompletionDate": {
+            "date": "2025-12",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2026-06",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2023-10-18",
+        "startDateType": "ACTUAL",
+        "durationDays": 957,
+        "daysUntilEnd": 670
+    },
+    {
+        "trialName": "OptimICE-PCR: De-Escalation of Therapy in Early-Stage TNBC Patients Who Achieve pCR After Neoadjuvant Chemotherapy With Checkpoint Inhibitor Therapy",
+        "nctNumber": "NCT05812807",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE3"
+        ],
+        "primaryCompletionDate": {
+            "date": "2033-05-31",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2033-05-31",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2023-05-10",
+        "startDateType": "ACTUAL",
+        "durationDays": 3674,
+        "daysUntilEnd": 3226
+    },
+    {
+        "trialName": "A Randomized, Open-label, Phase 3 Study of Adjuvant Sacituzumab Govitecan and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy",
+        "nctNumber": "NCT05633654",
+        "status": "RECRUITING",
+        "studyType": "INTERVENTIONAL",
+        "studyPhases": [
+            "PHASE3"
+        ],
+        "primaryCompletionDate": {
+            "date": "2027-06",
+            "type": "ESTIMATED"
+        },
+        "completionDate": {
+            "date": "2031-08",
+            "type": "ESTIMATED"
+        },
+        "startDate": "2022-12-12",
+        "startDateType": "ACTUAL",
+        "durationDays": 3154,
+        "daysUntilEnd": 2557
     }
 ]

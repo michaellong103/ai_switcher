@@ -12,17 +12,19 @@ from interfaces.interface_generator import condensed_trials, detailed_trials, qu
 
 def find_output_directory():
     possible_paths = [
-        'API_response', '/API_response', '../API_response', '../../API_response',
-        'API_response/', '/API_response/', '../API_response/', '../../API_response/'
+      '../API_response'
     ]
     
     for path in possible_paths:
         abs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), path))
+        print(f"Checking: {abs_path}")
         if os.path.exists(abs_path):
+            print(f"Using existing directory: {abs_path}")
             return abs_path
     
     # If none of the paths exist, create the first one
     abs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), possible_paths[0]))
+    print(f"None of the paths exist. Creating directory: {abs_path}")
     os.makedirs(abs_path)
     return abs_path
 
