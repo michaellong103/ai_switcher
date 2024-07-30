@@ -1,15 +1,30 @@
-# ./display_in_terminal/main.py
+# display_in_terminal/main.py
 
 import argparse
 import json
 import os
 import sys
 
-# Add the parent directory and the display_in_terminal directory to the Python path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 
 from interfaces.interface_generator import condensed_trials, detailed_trials, question_format
+
+def find_output_directory():
+    possible_paths = [
+        'API_response', '/API_response', '../API_response', '../../API_response',
+        'API_response/', '/API_response/', '../API_response/', '../../API_response/'
+    ]
+    
+    for path in possible_paths:
+        abs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), path))
+        if os.path.exists(abs_path):
+            return abs_path
+    
+    # If none of the paths exist, create the first one
+    abs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), possible_paths[0]))
+    os.makedirs(abs_path)
+    return abs_path
 
 def main(display_type, json_path):
     with open(json_path, 'r') as file:
@@ -24,7 +39,13 @@ def main(display_type, json_path):
     elif display_type == "questions":
         output = question_format(trials)
 
-    print(output)
+    output_dir = find_output_directory()
+
+    output_file_path = os.path.join(output_dir, f"{display_type}_output.txt")
+    with open(output_file_path, 'w') as output_file:
+        output_file.write(output)
+
+    print(f"Output saved to {output_file_path}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate formatted trial information from a JSON file.")

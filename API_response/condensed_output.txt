@@ -1,0 +1,31 @@
+[96m========================================
+Condensed Trials: (9 trials)
+========================================[0m
+
+[96mA Study Evaluating Bemarituzumab in Solid Tumors With Fibroblast Growth Factor Receptor 2b (FGFR2b) Overexpression[0m
+[93mNCT05325866[0m, Duarte, California, United States
+
+[96mPhase II Trial of Carboplatin +/- Tocilizumab for Metastatic Triple Negative and ER-low Breast Cancers[0m
+[93mNCT05846789[0m, Carmel, Indiana, United States
+
+[96mStudy to Determine the Safety, Tolerability, Pharmacokinetics and Recommended Phase 2 Dose (RP2D) of Livmoniplimab (ABBV-151) as a Single Agent and in Combination With Budigalimab (ABBV-181) in Participants With Locally Advanced or Metastatic Solid Tumors[0m
+[93mNCT03821935[0m, New Haven, Connecticut, United States
+
+[96mA Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)[0m
+[93mNCT04225117[0m, Tucson, Arizona, United States
+
+[96mA Study of SGN-B7H4V in Advanced Solid Tumors[0m
+[93mNCT05194072[0m, Aurora, Colorado, United States
+
+[96mCirculating Tumor DNA Enriched, Genomically Directed Post-neoadjuvant Trial for Patients With Residual Triple Negative Breast Cancer[0m
+[93mNCT04849364[0m, Birmingham, Alabama, United States
+
+[96mA Phase I/II Study of VLS-1488 in Subjects With Advanced Cancer[0m
+[93mNCT05902988[0m, Aurora, Colorado, United States
+
+[96mPembrolizumab vs. Observation in People With Triple-negative Breast Cancer Who Had a Pathologic Complete Response After Chemotherapy Plus Pembrolizumab[0m
+[93mNCT05812807[0m, Birmingham, Alabama, United States
+
+[96mStudy of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/NSABP B-63)[0m
+[93mNCT05633654[0m, Birmingham, Alabama, United States
+
