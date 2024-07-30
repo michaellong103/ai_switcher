@@ -8,3 +8,9 @@ headers = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {OPENAI_API_KEY}"
 }
+
+init_variables = {
+    "distance": 100,
+    "maxTrial": 20,
+    "minTrial": 5
+}

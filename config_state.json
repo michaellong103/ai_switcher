@@ -1,0 +1,14 @@
+{
+    "current_api_params": {},
+    "current_radius_for_search": 100,
+    "current_question": "",
+    "last_clinical_trials_api_url": "",
+    "current_api_call": {
+        "Age": "50",
+        "Gender": "Female",
+        "Medical Condition": "Triple-Negative Breast Cancer",
+        "Location": "Indianapolis, IN",
+        "Latitude": "39.7684",
+        "Longitude": "-86.1581"
+    }
+}
