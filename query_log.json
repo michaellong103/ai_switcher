@@ -2,16 +2,18 @@
     "query_details": {
         "Age": "50",
         "Gender": "Female",
-        "Medical Condition": "Monogenic Diabetes",
-        "Location": "Indianapolis, IN",
-        "Latitude": "39.7684",
-        "Longitude": "-86.1581",
+        "Medical Condition": "Triple-Negative Breast Cancer",
+        "Location": "Tulsa, OK",
+        "Latitude": "36.1540",
+        "Longitude": "-95.9928",
         "Distance": "100"
     },
     "stats": {
-        "number_of_trials": 0,
-        "trial_names": [],
-        "nct_numbers": "",
+        "number_of_trials": 1,
+        "trial_names": [
+            "MK-7684A With or Without Other Anticancer Therapies in Participants With Selected Solid Tumors (MK-7684A-005) (KEYVIBE-005)"
+        ],
+        "nct_numbers": "NCT05007106",
         "missing_dates": []
     }
 }

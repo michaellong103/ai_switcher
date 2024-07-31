@@ -1,1 +1,2533 @@
-[]
+[
+    {
+        "protocolSection": {
+            "identificationModule": {
+                "nctId": "NCT05007106",
+                "orgStudyIdInfo": {
+                    "id": "7684A-005"
+                },
+                "secondaryIdInfos": [
+                    {
+                        "id": "MK-7684A-005",
+                        "type": "OTHER",
+                        "domain": "Merck"
+                    },
+                    {
+                        "id": "jRCT2031210335",
+                        "type": "REGISTRY",
+                        "domain": "jRCT"
+                    },
+                    {
+                        "id": "KEYVIBE-005",
+                        "type": "OTHER",
+                        "domain": "Merck"
+                    },
+                    {
+                        "id": "2023-505284-36",
+                        "type": "OTHER",
+                        "domain": "EU CT"
+                    },
+                    {
+                        "id": "2021-001009-56",
+                        "type": "EUDRACT_NUMBER"
+                    }
+                ],
+                "organization": {
+                    "fullName": "Merck Sharp & Dohme LLC",
+                    "class": "INDUSTRY"
+                },
+                "briefTitle": "MK-7684A With or Without Other Anticancer Therapies in Participants With Selected Solid Tumors (MK-7684A-005) (KEYVIBE-005)",
+                "officialTitle": "A Multicenter, Open-label, Phase 2 Basket Study of MK-7684A, a Co-formation of Vibostolimab (MK-7684) With Pembrolizumab (MK-3475), With or Without Other Anticancer Therapies in Participants With Selected Solid Tumors"
+            },
+            "statusModule": {
+                "statusVerifiedDate": "2024-07",
+                "overallStatus": "RECRUITING",
+                "expandedAccessInfo": {
+                    "hasExpandedAccess": false
+                },
+                "startDateStruct": {
+                    "date": "2021-09-16",
+                    "type": "ACTUAL"
+                },
+                "primaryCompletionDateStruct": {
+                    "date": "2027-02-22",
+                    "type": "ESTIMATED"
+                },
+                "completionDateStruct": {
+                    "date": "2027-02-22",
+                    "type": "ESTIMATED"
+                },
+                "studyFirstSubmitDate": "2021-08-10",
+                "studyFirstSubmitQcDate": "2021-08-10",
+                "studyFirstPostDateStruct": {
+                    "date": "2021-08-16",
+                    "type": "ACTUAL"
+                },
+                "lastUpdateSubmitDate": "2024-07-10",
+                "lastUpdatePostDateStruct": {
+                    "date": "2024-07-12",
+                    "type": "ACTUAL"
+                }
+            },
+            "sponsorCollaboratorsModule": {
+                "responsibleParty": {
+                    "type": "SPONSOR"
+                },
+                "leadSponsor": {
+                    "name": "Merck Sharp & Dohme LLC",
+                    "class": "INDUSTRY"
+                }
+            },
+            "oversightModule": {
+                "oversightHasDmc": false,
+                "isFdaRegulatedDrug": true,
+                "isFdaRegulatedDevice": false
+            },
+            "descriptionModule": {
+                "briefSummary": "The purpose of this study is to determine the safety, tolerability, and preliminary efficacy of pembrolizumab/vibostolimab co-formulation (MK-7684A) with or without other anticancer therapies in participants with selected advanced solid tumors. The primary hypothesis is that pembrolizumab/vibostolimab co-formulation is superior to pembrolizumab alone in terms of objective response rate or progression-free survival in participants with cervical cancer."
+            },
+            "conditionsModule": {
+                "conditions": [
+                    "Uterine Cervical Neoplasms",
+                    "Endometrial Neoplasms",
+                    "Squamous Cell Carcinoma of Head and Neck",
+                    "Gallbladder Neoplasms",
+                    "Cholangiocarcinoma",
+                    "Esophageal Neoplasms",
+                    "Triple Negative Breast Neoplasms",
+                    "Hepatocellular Carcinoma",
+                    "Urinary Bladder Neoplasms",
+                    "Ovarian Neoplasms",
+                    "Stomach Neoplasms"
+                ],
+                "keywords": [
+                    "Programmed Cell Death-1 (PD1, PD-1)",
+                    "Programmed Death-Ligand 1 (PDL1, PD-L1)"
+                ]
+            },
+            "designModule": {
+                "studyType": "INTERVENTIONAL",
+                "phases": [
+                    "PHASE2"
+                ],
+                "designInfo": {
+                    "allocation": "RANDOMIZED",
+                    "interventionModel": "PARALLEL",
+                    "interventionModelDescription": "Participants with locally recurrent unresectable or metastatic cervical cancer whose tumors express programmed cell death 1 ligand 1 (PD-LI) and have a combined positive score (CPS) \u22651 will be randomly assigned to treatment with either pembrolizumab/vibostolimab co-formulation or pembrolizumab only. The other study intervention arms will be assigned to participants depending on the selected cancer type.",
+                    "primaryPurpose": "TREATMENT",
+                    "maskingInfo": {
+                        "masking": "NONE"
+                    }
+                },
+                "enrollmentInfo": {
+                    "count": 610,
+                    "type": "ESTIMATED"
+                }
+            },
+            "armsInterventionsModule": {
+                "armGroups": [
+                    {
+                        "label": "Pembrolizumab/Vibostolimab Co-Formulation",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab/vibostolimab (coformulation of 200 mg pembrolizumab and 200 mg vibostolimab) via intravenous (IV) infusion every 3 weeks (Q3W) up to 35 cycles.",
+                        "interventionNames": [
+                            "Biological: Pembrolizumab/Vibostolimab Co-Formulation"
+                        ]
+                    },
+                    {
+                        "label": "Pembrolizumab",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab 200 mg via IV infusion Q3W up to 35 cycles.",
+                        "interventionNames": [
+                            "Biological: Pembrolizumab"
+                        ]
+                    },
+                    {
+                        "label": "Pembrolizumab/Vibostolimab Co-Formulation + Lenvatinib (Endometrial Cancer Cohort)",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab/vibostolimab (coformulation of 200 mg pembrolizumab and 200 mg vibostolimab) via intravenous IV infusion Q3W up to 35 cycles, plus lenvatinib 20 mg once daily (qd) up to 45 cycles.",
+                        "interventionNames": [
+                            "Biological: Pembrolizumab/Vibostolimab Co-Formulation",
+                            "Drug: Lenvatinib"
+                        ]
+                    },
+                    {
+                        "label": "Pembrolizumab/Vibostolimab Co-Formulation + Lenvatinib (Hepatocellular Cancer Cohort)",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab/vibostolimab (coformulation of 200 mg pembrolizumab and 200 mg vibostolimab) via intravenous IV infusion Q3W up to 35 cycles, plus lenvatinib 12 mg (body weight \\[BW\\] \u226560 kg) or lenvatinib 8 mg (BW \\<60 kg) qd up to 45 cycles",
+                        "interventionNames": [
+                            "Biological: Pembrolizumab/Vibostolimab Co-Formulation",
+                            "Drug: Lenvatinib"
+                        ]
+                    },
+                    {
+                        "label": "Pembrolizumab/Vibostolimab + 5-Fluorouracil + Cisplatin",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab/vibostolimab (coformulation of 200 mg pembrolizumab and 200 mg vibostolimab) via IV infusion Q3W, plus 5-fluorouracil (5-FU), plus Cisplatin as background therapy.",
+                        "interventionNames": [
+                            "Biological: Pembrolizumab/Vibostolimab Co-Formulation",
+                            "Drug: 5-Fluorouracil",
+                            "Drug: Cisplatin"
+                        ]
+                    },
+                    {
+                        "label": "Pembrolizumab/Vibostolimab Co-Formulation + Paclitaxel",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab/vibostolimab (coformulation of 200 mg pembrolizumab and 200 mg vibostolimab) via IV infusion Q3W up to 35 cycles, plus paclitaxel as background therapy until meeting discontinuation criteria.",
+                        "interventionNames": [
+                            "Biological: Pembrolizumab/Vibostolimab Co-Formulation",
+                            "Drug: Paclitaxel"
+                        ]
+                    },
+                    {
+                        "label": "Pembrolizumab/Vibostolimab Co-Formulation + Gemcitabine/Cisplatin",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab/vibostolimab (coformulation of 200 mg pembrolizumab and 200 mg vibostolimab) via IV infusion Q3W up to 35 cycles, plus gemcitabine (until disease progression or unacceptable toxicity) and cisplatin (up to 8 cycles) as background therapy.",
+                        "interventionNames": [
+                            "Drug: Cisplatin",
+                            "Drug: Gemcitabine"
+                        ]
+                    },
+                    {
+                        "label": "Pembrolizumab/Vibostolimab Co-Formulation+ Carboplatin/Paclitaxel/Bevacizumab",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab/vibostolimab (coformulation of 200 mg pembrolizumab and 200 mg vibostolimab) via IV infusion Q3W up to 35 cycles, plus carboplatin, paclitaxel, and bevacizumab as local standard of care (SOC) background therapy.",
+                        "interventionNames": [
+                            "Drug: Paclitaxel",
+                            "Drug: Carboplatin",
+                            "Drug: Docetaxel",
+                            "Drug: Bevacizumab"
+                        ]
+                    },
+                    {
+                        "label": "Pembrolizumab/Vibostolimab Co-Formulation + Capecitabine/Oxaliplatin",
+                        "type": "EXPERIMENTAL",
+                        "description": "Participants receive pembrolizumab/vibostolimab (coformulation of 200 mg pembrolizumab and 200 mg vibostolimab) via IV infusion Q3W up to 35 cycles, plus capecitabine and oxaliplatin as background therapy.",
+                        "interventionNames": [
+                            "Drug: Capecitabine",
+                            "Drug: Oxaliplatin"
+                        ]
+                    }
+                ],
+                "interventions": [
+                    {
+                        "type": "BIOLOGICAL",
+                        "name": "Pembrolizumab/Vibostolimab Co-Formulation",
+                        "description": "Pembrolizumab 200 mg plus vibostolimab 200 mg administered via IV infusion Q3W",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab + 5-Fluorouracil + Cisplatin",
+                            "Pembrolizumab/Vibostolimab Co-Formulation",
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Lenvatinib (Endometrial Cancer Cohort)",
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Lenvatinib (Hepatocellular Cancer Cohort)",
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Paclitaxel"
+                        ],
+                        "otherNames": [
+                            "MK-7684A"
+                        ]
+                    },
+                    {
+                        "type": "BIOLOGICAL",
+                        "name": "Pembrolizumab",
+                        "description": "Pembrolizumab 200 mg administered via IV infusion Q3W.",
+                        "armGroupLabels": [
+                            "Pembrolizumab"
+                        ],
+                        "otherNames": [
+                            "MK-3475",
+                            "KEYTRUDA\u00ae"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Lenvatinib",
+                        "description": "Lenvatinib 20 mg, 12 mg, or 8 mg (dependent on cancer type and body weight) administered via oral capsule QD",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Lenvatinib (Endometrial Cancer Cohort)",
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Lenvatinib (Hepatocellular Cancer Cohort)"
+                        ],
+                        "otherNames": [
+                            "Lenvima",
+                            "E7080",
+                            "MK-7902"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "5-Fluorouracil",
+                        "description": "5-FU 800 mg/m\\^2/day administered via continuous IV infusion on each of days 1 to 5 Q3W for up to 35 cycles",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab + 5-Fluorouracil + Cisplatin"
+                        ],
+                        "otherNames": [
+                            "5-FU",
+                            "Fluracil"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Cisplatin",
+                        "description": "Cisplatin administered via IV infusion",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab + 5-Fluorouracil + Cisplatin",
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Gemcitabine/Cisplatin"
+                        ],
+                        "otherNames": [
+                            "Platinol",
+                            "cis Platinum"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Paclitaxel",
+                        "description": "Paclitaxel administered via IV infusion at investigator's choice of dose",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Paclitaxel",
+                            "Pembrolizumab/Vibostolimab Co-Formulation+ Carboplatin/Paclitaxel/Bevacizumab"
+                        ],
+                        "otherNames": [
+                            "Taxol",
+                            "Abraxane",
+                            "Anzatax"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Gemcitabine",
+                        "description": "Gemcitabine administered via IV infusion on Day 1 and Day 8 of each 3-week cycle, until PD or unacceptable toxicity",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Gemcitabine/Cisplatin"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Carboplatin",
+                        "description": "Carboplatin administered via IV infusion at investigator's choice of dose and frequency",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab Co-Formulation+ Carboplatin/Paclitaxel/Bevacizumab"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Docetaxel",
+                        "description": "For participants who cannot receive paclitaxel due to hypersensitivity or adverse event (AE), docetaxel administered via IV infusion Q3W, Day 1 of each cycle for up to 5 cycles",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab Co-Formulation+ Carboplatin/Paclitaxel/Bevacizumab"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Bevacizumab",
+                        "description": "Bevacizumab (or biosimilars such as MVASI\u00ae, Zirabev\u00ae, Aybintio\u00ae, ALYMSYS\u00ae, Abevmy\u00ae, Onbevezy\u00ae, Vegzelma\u00ae) administered via IV infusion Q3W; Day 1 of each 3-week cycle for up to 15 cycles",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab Co-Formulation+ Carboplatin/Paclitaxel/Bevacizumab"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Capecitabine",
+                        "description": "Capecitabine administered via oral tablet twice daily on Days 1 to 14 of each cycle (Q3W) for up to 35 cycles",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Capecitabine/Oxaliplatin"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "Oxaliplatin",
+                        "description": "Oxaliplatin administered via IV infusion Q3W up to 35 cycles",
+                        "armGroupLabels": [
+                            "Pembrolizumab/Vibostolimab Co-Formulation + Capecitabine/Oxaliplatin"
+                        ]
+                    }
+                ]
+            },
+            "outcomesModule": {
+                "primaryOutcomes": [
+                    {
+                        "measure": "Objective Response Rate (ORR) per Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 as Assessed by Blinded Independent Central Review (BICR)",
+                        "description": "ORR is defined as the percentage of participants who have a Complete Response (CR: Disappearance of all target lesions) or a Partial Response (PR: At least a 30% decrease in the sum of diameters of target lesions) per RECIST 1.1. The percentage of participants who experience a CR or PR as assessed by blinded independent central review based on RECIST 1.1 will be presented.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "Progression-Free Survival (PFS) per RECIST 1.1 as Assessed by BICR",
+                        "description": "PFS is defined as the time from randomization to the first documented progressive disease (PD) or death due to any cause, whichever occurs first. Per RECIST 1.1, PD is defined as \u226520% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of \u22655 mm. The appearance of one or more new lesions is also considered PD. PFS as assessed by BICR will be presented.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "ORR per RECIST 1.1 as Assessed by Investigator in Participants with Selected Solid Tumors",
+                        "description": "ORR is defined as the percentage of participants who have a CR (Disappearance of all target lesions) or a PR (At least a 30% decrease in the sum of diameters of target lesions) per RECIST 1.1. The percentage of participants who experience a CR or PR as assessed by investigator based on RECIST 1.1 will be presented.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "PFS per RECIST 1.1 as Assessed by Investigator at 9 months",
+                        "description": "PFS is defined as the time from randomization to the first documented progressive disease (PD) or death due to any cause, whichever occurs first. Per RECIST 1.1, PD is defined as \u226520% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of \u22655 mm. The appearance of one or more new lesions is also considered PD.",
+                        "timeFrame": "9 months"
+                    },
+                    {
+                        "measure": "PFS per RECIST 1.1 as Assessed by Investigator at 12 months",
+                        "description": "PFS is defined as the time from randomization to the first documented progressive disease (PD) or death due to any cause, whichever occurs first. Per RECIST 1.1, PD is defined as \u226520% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of \u22655 mm. The appearance of one or more new lesions is also considered PD.",
+                        "timeFrame": "12 months"
+                    }
+                ],
+                "secondaryOutcomes": [
+                    {
+                        "measure": "Overall Survival (OS)",
+                        "description": "OS is defined as the time from randomization to death due to any cause.",
+                        "timeFrame": "Up to approximately 5.5 years"
+                    },
+                    {
+                        "measure": "PFS per RECIST 1.1 as Assessed by Investigator",
+                        "description": "PFS is defined as the time from first dose of study treatment to the first documented progressive disease (PD) or death due to any cause, whichever occurs first. Per RECIST 1.1, PD is defined as \u226520% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of \u22655 mm. The appearance of one or more new lesions is also considered PD. PFS as assessed by investigator will be presented.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "Duration of Response (DOR) per RECIST 1.1 as Assessed by BICR",
+                        "description": "For participants who demonstrate a confirmed CR (disappearance of all target lesions) or confirmed PR (at least a 30% decrease in the sum of diameters of target lesions) per RECIST 1.1, DOR is defined as the time from first documented evidence of CR or PR until PD or death. Per RECIST 1.1, PD is defined as at least a 20% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also have demonstrated an absolute increase of at least 5 mm. The appearance of one or more new lesions is also considered PD. The DOR as assessed by BICR will be presented.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "DOR per RECIST 1.1 as Assessed by Investigator",
+                        "description": "For participants who demonstrate a confirmed CR (disappearance of all target lesions) or confirmed PR (at least a 30% decrease in the sum of diameters of target lesions) per RECIST 1.1, DOR is defined as the time from first documented evidence of CR or PR until PD or death. Per RECIST 1.1, PD is defined as at least a 20% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also have demonstrated an absolute increase of at least 5 mm. The appearance of one or more new lesions is also considered PD. The DOR as assessed by investigator will be presented.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "ORR per RECIST 1.1 as Assessed by Investigator",
+                        "description": "ORR is defined as the percentage of participants who have a CR (Disappearance of all target lesions) or a PR (At least a 30% decrease in the sum of diameters of target lesions) per RECIST 1.1. The percentage of participants who experience a CR or PR as assessed by investigator based on RECIST 1.1 will be presented.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "PFS per RECIST 1.1 as Assessed by Investigator in Participants with Cervical Cancer",
+                        "description": "PFS is defined as the time from first dose of study treatment to the first documented progressive disease (PD) or death due to any cause, whichever occurs first. Per RECIST 1.1, PD is defined as \u226520% increase in the sum of diameters of target lesions. In addition to the relative increase of 20%, the sum must also demonstrate an absolute increase of \u22655 mm. The appearance of one or more new lesions is also considered PD. PFS as assessed by investigator will be presented.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "Change from Baseline in Global Health Status/Quality of Life Score (European Organisation for Research and Treatment of Cancer Quality-of-Life Questionnaire Core 30 [EORTC QLQ-C30] Items 29 and 30)",
+                        "description": "The EORTC QLQ-C30 is a questionnaire to assess the overall quality of life of cancer patients. Participant responses to the questions \"How would you rate your overall health during the past week?\" and \"How would you rate your overall quality of life during the past week?\" are scored on a 7-point scale (1= Very poor to 7=Excellent). Using linear transformation, raw scores are standardized, so that scores range from 0 to 100. A higher score indicates a better overall health status. The change from baseline in EORTC QLQ-C30 Items 29 and 30 combined score will be presented.",
+                        "timeFrame": "Baseline and up to approximately 2 years"
+                    },
+                    {
+                        "measure": "Change from Baseline in Physical Functioning Score (EORTC QLQ-C30 Items 1-5)",
+                        "description": "The EORTC QLQ-C30 is a questionnaire to assess the overall quality of life of cancer patients. Participant responses to 5 questions about their physical functioning are scored on a 4-point scale (1=Not at All to 4=Very Much). Using linear transformation, raw scores are standardized, so that scores range from 0 to 100. A higher score indicates a better quality of life. The change from baseline in Physical Functioning (EORTC QLQ-C30 Items 1-5) score will be presented.",
+                        "timeFrame": "Baseline and up to approximately 2 years"
+                    },
+                    {
+                        "measure": "Number of Participants Who Experienced One or More Adverse Events (AEs)",
+                        "description": "An AE is defined as any unfavorable and unintended sign including an abnormal laboratory finding, symptom or disease associated with the use of a medical treatment or procedure, regardless of whether it is considered related to the medical treatment or procedure, that occurs during the course of the study.",
+                        "timeFrame": "Up to approximately 2 years"
+                    },
+                    {
+                        "measure": "Number of Participants Who Discontinued Study Intervention Due to an AE",
+                        "description": "An AE is defined as any unfavorable and unintended sign including an abnormal laboratory finding, symptom or disease associated with the use of a medical treatment or procedure, regardless of whether it is considered related to the medical treatment or procedure, that occurs during the course of the study.",
+                        "timeFrame": "Up to approximately 2 years"
+                    }
+                ]
+            },
+            "eligibilityModule": {
+                "eligibilityCriteria": "Inclusion Criteria:\n\n* One of the following histologically or cytologically confirmed, advanced (unresectable or metastatic) solid tumors:\n\n  * Squamous cell carcinoma, adenosquamous carcinoma, or adenocarcinoma of the cervix\n  * Endometrial cancer\n  * Head and neck squamous cell carcinoma (HNSCC)\n  * Unresectable biliary adenocarcinoma (gallbladder or biliary tree \\[intrahepatic or extrahepatic\\] cholangiocarcinoma)\n  * Adenocarcinoma or squamous cell carcinoma of the esophagus or advanced/metastatic Siewert type 1 adenocarcinoma of the gastroesophageal junction (GEJ).\n  * Triple-negative breast cancer (TNBC)\n  * Hepatocellular carcinoma (HCC)\n  * Urothelial carcinoma of the renal pelvis, ureter, bladder, or urethra\n  * Ovarian cancer\n  * Gastric cancer\n* Measurable disease per RECIST v1.1 as assessed by BICR or local site investigator.\n* Adequately controlled blood pressure (BP) with or without antihypertensive medications.\n* Human immunodeficiency virus (HIV)-infected participants must have well controlled HIV on anti-retroviral therapy (ART).\n* Male participants must agree to follow contraceptive guidance.\n* Female participants are not pregnant or breastfeeding, not a woman of child-bearing potential (WOCBP) or is a WOCBP and agrees to follow contraceptive guidance.\n* Adequate organ function.\n\nExclusion Criteria:\n\n* History of a second malignancy, unless potentially curative treatment has been completed with no evidence of malignancy for 3 years.\n* Prior therapy with anti-programmed cell-death (PD-1), anti-PD-L1, anti-PD-L2, or anti-T-cell immunoreceptor with Ig and ITIM domains (TIGIT) agent.\n* Prior systemic anticancer therapy including investigational agents within 4 weeks before randomization/allocation.\n* Received a live or live-attenuated vaccine within 30 days before the first dose of study intervention. Administration of killed vaccines are allowed.\n* Diagnosis of immunodeficiency or is receiving chronic systemic steroid therapy or any other form of immunosuppressive therapy within 7 days before the first dose of study medication.\n* Active autoimmune disease that has required systemic treatment in past 2 years.\n* Active infection requiring systemic therapy.\n* Concurrent active hepatitis B and hepatitis C virus infection.\n* History of allogenic tissue/solid organ transplant.\n* Previous treatment with lenvatinib (for participants who will receive lenvatinib in their assigned treatment arm).\n* Has clinically significant cardiovascular disease within 12 months from first dose of study intervention.",
+                "healthyVolunteers": false,
+                "sex": "ALL",
+                "minimumAge": "18 Years",
+                "stdAges": [
+                    "ADULT",
+                    "OLDER_ADULT"
+                ]
+            },
+            "contactsLocationsModule": {
+                "centralContacts": [
+                    {
+                        "name": "Toll Free Number",
+                        "role": "CONTACT",
+                        "phone": "1-888-577-8839",
+                        "email": "Trialsites@merck.com"
+                    }
+                ],
+                "overallOfficials": [
+                    {
+                        "name": "Medical Director",
+                        "affiliation": "Merck Sharp & Dohme LLC",
+                        "role": "STUDY_DIRECTOR"
+                    }
+                ],
+                "locations": [
+                    {
+                        "facility": "Alaska Womens Cancer Care ( Site 1016)",
+                        "status": "RECRUITING",
+                        "city": "Anchorage",
+                        "state": "Alaska",
+                        "zip": "99508",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "907-562-4673"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 61.21806,
+                            "lon": -149.90028
+                        }
+                    },
+                    {
+                        "facility": "City of Hope Comprehensive Cancer Center ( Site 1001)",
+                        "status": "COMPLETED",
+                        "city": "Duarte",
+                        "state": "California",
+                        "zip": "91010",
+                        "country": "United States",
+                        "geoPoint": {
+                            "lat": 34.13945,
+                            "lon": -117.97729
+                        }
+                    },
+                    {
+                        "facility": "University of California, Irvine (UCI) Health - UC Irvine Me-Chao Family Comprehensive Cancer Cente",
+                        "status": "COMPLETED",
+                        "city": "Orange",
+                        "state": "California",
+                        "zip": "92868-3201",
+                        "country": "United States",
+                        "geoPoint": {
+                            "lat": 33.78779,
+                            "lon": -117.85311
+                        }
+                    },
+                    {
+                        "facility": "Karmanos Cancer Institute ( Site 1007)",
+                        "status": "RECRUITING",
+                        "city": "Detroit",
+                        "state": "Michigan",
+                        "zip": "48201",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "800-527-6266"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 42.33143,
+                            "lon": -83.04575
+                        }
+                    },
+                    {
+                        "facility": "Memorial Sloan Kettering - Basking Ridge ( Site 1023)",
+                        "status": "RECRUITING",
+                        "city": "Basking Ridge",
+                        "state": "New Jersey",
+                        "zip": "07920",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "646-888-6950"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.70621,
+                            "lon": -74.54932
+                        }
+                    },
+                    {
+                        "facility": "Memorial Sloan Kettering - Monmouth ( Site 1022)",
+                        "status": "RECRUITING",
+                        "city": "Middletown",
+                        "state": "New Jersey",
+                        "zip": "07748",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "646-888-6950"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.39652,
+                            "lon": -74.09211
+                        }
+                    },
+                    {
+                        "facility": "Memorial Sloan Kettering - Bergen ( Site 1025)",
+                        "status": "RECRUITING",
+                        "city": "Montvale",
+                        "state": "New Jersey",
+                        "zip": "07645",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "646-888-6950"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 41.04676,
+                            "lon": -74.02292
+                        }
+                    },
+                    {
+                        "facility": "Memorial Sloan Kettering- Commack ( Site 1021)",
+                        "status": "RECRUITING",
+                        "city": "Commack",
+                        "state": "New York",
+                        "zip": "11725",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "646-888-6950"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.84288,
+                            "lon": -73.29289
+                        }
+                    },
+                    {
+                        "facility": "Memorial Sloan Kettering - Westchester ( Site 1020)",
+                        "status": "RECRUITING",
+                        "city": "Harrison",
+                        "state": "New York",
+                        "zip": "10604",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "646-888-6950"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.96899,
+                            "lon": -73.71263
+                        }
+                    },
+                    {
+                        "facility": "Memorial Sloan Kettering Cancer Center ( Site 1002)",
+                        "status": "RECRUITING",
+                        "city": "New York",
+                        "state": "New York",
+                        "zip": "10065",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "646-888-6950"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.71427,
+                            "lon": -74.00597
+                        }
+                    },
+                    {
+                        "facility": "Memorial Sloan Kettering - Nassau ( Site 1026)",
+                        "status": "RECRUITING",
+                        "city": "Uniondale",
+                        "state": "New York",
+                        "zip": "11553",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "646-888-6950"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.70038,
+                            "lon": -73.59291
+                        }
+                    },
+                    {
+                        "facility": "Oklahoma Cancer Specialists and Research Institute, LLC ( Site 1024)",
+                        "status": "RECRUITING",
+                        "city": "Tulsa",
+                        "state": "Oklahoma",
+                        "zip": "74146",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "918-505-3200"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 36.15398,
+                            "lon": -95.99277
+                        }
+                    },
+                    {
+                        "facility": "Sanford Cancer Center-Gynecologic Oncology ( Site 1015)",
+                        "status": "RECRUITING",
+                        "city": "Sioux Falls",
+                        "state": "South Dakota",
+                        "zip": "57104",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "605-376-4905"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 43.54997,
+                            "lon": -96.70033
+                        }
+                    },
+                    {
+                        "facility": "Houston Methodist Hospital ( Site 1017)",
+                        "status": "RECRUITING",
+                        "city": "Houston",
+                        "state": "Texas",
+                        "zip": "77030",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "713-441-6616"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 29.76328,
+                            "lon": -95.36327
+                        }
+                    },
+                    {
+                        "facility": "Kingston Health Sciences Centre-Kingston General Hospital Site ( Site 1051)",
+                        "status": "ACTIVE_NOT_RECRUITING",
+                        "city": "Kingston",
+                        "state": "Ontario",
+                        "zip": "K7L 2V7",
+                        "country": "Canada",
+                        "geoPoint": {
+                            "lat": 44.22976,
+                            "lon": -76.48101
+                        }
+                    },
+                    {
+                        "facility": "Princess Margaret Cancer Centre ( Site 1056)",
+                        "status": "ACTIVE_NOT_RECRUITING",
+                        "city": "Toronto",
+                        "state": "Ontario",
+                        "zip": "M5G 2M9",
+                        "country": "Canada",
+                        "geoPoint": {
+                            "lat": 43.70011,
+                            "lon": -79.4163
+                        }
+                    },
+                    {
+                        "facility": "James Lind Centro de Investigacion del Cancer ( Site 1404)",
+                        "status": "RECRUITING",
+                        "city": "Temuco",
+                        "state": "Araucania",
+                        "zip": "4800827",
+                        "country": "Chile",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+56961064692"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": -38.73965,
+                            "lon": -72.59842
+                        }
+                    },
+                    {
+                        "facility": "FALP-UIDO ( Site 1401)",
+                        "status": "RECRUITING",
+                        "city": "Santiago",
+                        "state": "Region M. De Santiago",
+                        "zip": "7500921",
+                        "country": "Chile",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+56939263055"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": -33.45694,
+                            "lon": -70.64827
+                        }
+                    },
+                    {
+                        "facility": "Oncovida ( Site 1405)",
+                        "status": "RECRUITING",
+                        "city": "Santiago",
+                        "state": "Region M. De Santiago",
+                        "zip": "7510032",
+                        "country": "Chile",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+56961064692"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": -33.45694,
+                            "lon": -70.64827
+                        }
+                    },
+                    {
+                        "facility": "Bradfordhill-Clinical Area ( Site 1402)",
+                        "status": "RECRUITING",
+                        "city": "Santiago",
+                        "state": "Region M. De Santiago",
+                        "zip": "8420383",
+                        "country": "Chile",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+56961064692"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": -33.45694,
+                            "lon": -70.64827
+                        }
+                    },
+                    {
+                        "facility": "Fundacion Colombiana de Cancerolog\u00eda Clinica Vida ( Site 1422)",
+                        "status": "RECRUITING",
+                        "city": "Medellin",
+                        "state": "Antioquia",
+                        "zip": "050030",
+                        "country": "Colombia",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+573126867004"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 6.25184,
+                            "lon": -75.56359
+                        }
+                    },
+                    {
+                        "facility": "Clinica de la Costa S.A.S. ( Site 1421)",
+                        "status": "RECRUITING",
+                        "city": "Barranquilla",
+                        "state": "Atlantico",
+                        "zip": "080020",
+                        "country": "Colombia",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+575 3369999"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 10.96854,
+                            "lon": -74.78132
+                        }
+                    },
+                    {
+                        "facility": "Instituto Nacional de Cancerolog\u00eda-Clinical Oncology ( Site 1425)",
+                        "status": "RECRUITING",
+                        "city": "Bogot\u00e1",
+                        "state": "Cundinamarca",
+                        "zip": "111511",
+                        "country": "Colombia",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "573125199934"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 4.60971,
+                            "lon": -74.08175
+                        }
+                    },
+                    {
+                        "facility": "Oncologos del Occidente ( Site 1424)",
+                        "status": "RECRUITING",
+                        "city": "Pereira",
+                        "state": "Risaralda",
+                        "zip": "661001",
+                        "country": "Colombia",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+57 6 3310712 Ext. 417"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 4.81333,
+                            "lon": -75.69611
+                        }
+                    },
+                    {
+                        "facility": "Fundaci\u00f3n Cardiovascular de Colombia ( Site 1423)",
+                        "status": "RECRUITING",
+                        "city": "Piedecuesta",
+                        "state": "Santander",
+                        "zip": "681017",
+                        "country": "Colombia",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "573215433439"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 6.98789,
+                            "lon": -73.04953
+                        }
+                    },
+                    {
+                        "facility": "Centre Georges Fran\u00e7ois Leclerc ( Site 1155)",
+                        "status": "RECRUITING",
+                        "city": "Dijon",
+                        "state": "Cote-d Or",
+                        "zip": "21079",
+                        "country": "France",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "03 45 34 80 68"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 47.31667,
+                            "lon": 5.01667
+                        }
+                    },
+                    {
+                        "facility": "Institut Regional du Cancer Montpellier ( Site 1157)",
+                        "status": "RECRUITING",
+                        "city": "Montpellier",
+                        "state": "Herault",
+                        "zip": "34298",
+                        "country": "France",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "33467612304"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 43.61092,
+                            "lon": 3.87723
+                        }
+                    },
+                    {
+                        "facility": "Gustave Roussy-medicine departement ( Site 1153)",
+                        "status": "RECRUITING",
+                        "city": "Villejuif",
+                        "state": "Paris",
+                        "zip": "94800",
+                        "country": "France",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "33142114571"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 48.7939,
+                            "lon": 2.35992
+                        }
+                    },
+                    {
+                        "facility": "CENTRE LEON BERARD-Medical oncology ( Site 1151)",
+                        "status": "RECRUITING",
+                        "city": "Lyon",
+                        "state": "Rhone-Alpes",
+                        "zip": "69373 Cedex 08",
+                        "country": "France",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "33478782935"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 45.74848,
+                            "lon": 4.84669
+                        }
+                    },
+                    {
+                        "facility": "Sainte Catherine Institut du Cancer Avignon Provence-Oncologie m\u00e9dicale ( Site 1156)",
+                        "status": "RECRUITING",
+                        "city": "Avignon",
+                        "state": "Vaucluse",
+                        "zip": "84000",
+                        "country": "France",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "33490276397"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 43.94834,
+                            "lon": 4.80892
+                        }
+                    },
+                    {
+                        "facility": "Institut Curie ( Site 1152)",
+                        "status": "RECRUITING",
+                        "city": "Paris",
+                        "zip": "75248",
+                        "country": "France",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "33144324086"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 48.85341,
+                            "lon": 2.3488
+                        }
+                    },
+                    {
+                        "facility": "Universitaetsklinikum Heidelberg-Nationales Centrum f\u00fcr Tumorerkrankungen ( Site 1180)",
+                        "status": "RECRUITING",
+                        "city": "Heidelberg",
+                        "state": "Baden-Wurttemberg",
+                        "zip": "69120",
+                        "country": "Germany",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+4962215636051"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 49.40768,
+                            "lon": 8.69079
+                        }
+                    },
+                    {
+                        "facility": "Universitaetsklinikum Tuebingen-Department of Internal Medicine VIII - Medical Oncology, ECTU, Pne",
+                        "status": "COMPLETED",
+                        "city": "T\u00fcbingen",
+                        "state": "Baden-Wurttemberg",
+                        "zip": "72076",
+                        "country": "Germany",
+                        "geoPoint": {
+                            "lat": 48.52266,
+                            "lon": 9.05222
+                        }
+                    },
+                    {
+                        "facility": "Klinikum der Universit\u00e4t M\u00fcnchen Gro\u00dfhadern ( Site 1176)",
+                        "status": "RECRUITING",
+                        "city": "M\u00fcnchen",
+                        "state": "Bayern",
+                        "zip": "81337",
+                        "country": "Germany",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+4989 4400 75250"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 48.13743,
+                            "lon": 11.57549
+                        }
+                    },
+                    {
+                        "facility": "Universitaetsklinikum Duesseldorf-Gastroenterology, Hepatology and Infectiology ( Site 1172)",
+                        "status": "RECRUITING",
+                        "city": "D\u00fcsseldorf",
+                        "state": "Nordrhein-Westfalen",
+                        "zip": "40225",
+                        "country": "Germany",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+492118117820"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 51.22172,
+                            "lon": 6.77616
+                        }
+                    },
+                    {
+                        "facility": "Charite Universit\u00e4tsmedizin Berlin Campus Benjamin Franklin ( Site 1171)",
+                        "status": "RECRUITING",
+                        "city": "Berlin",
+                        "zip": "12203",
+                        "country": "Germany",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+49 30 84450"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 52.52437,
+                            "lon": 13.41053
+                        }
+                    },
+                    {
+                        "facility": "Rambam Health Care Campus-Oncology ( Site 1141)",
+                        "status": "RECRUITING",
+                        "city": "Haifa",
+                        "zip": "3109601",
+                        "country": "Israel",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+ 972 4 7776724"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 32.81841,
+                            "lon": 34.9885
+                        }
+                    },
+                    {
+                        "facility": "Hadassah Medical Center-Oncology ( Site 1142)",
+                        "status": "RECRUITING",
+                        "city": "Jerusalem",
+                        "zip": "9112001",
+                        "country": "Israel",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+ 972 2 6776760"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 31.76904,
+                            "lon": 35.21633
+                        }
+                    },
+                    {
+                        "facility": "Sheba Medical Center-ONCOLOGY ( Site 1144)",
+                        "status": "RECRUITING",
+                        "city": "Ramat Gan",
+                        "zip": "5265601",
+                        "country": "Israel",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+ 972 3 5302243"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 32.08227,
+                            "lon": 34.81065
+                        }
+                    },
+                    {
+                        "facility": "Sourasky Medical Center-Oncology ( Site 1143)",
+                        "status": "RECRUITING",
+                        "city": "Tel Aviv",
+                        "zip": "6423906",
+                        "country": "Israel",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+ 972 3 6973082"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 32.08088,
+                            "lon": 34.78057
+                        }
+                    },
+                    {
+                        "facility": "Fondazione Policlinico Universitario Agostino Gemelli IRCCS -Ginecologia Oncologica ( Site 1136)",
+                        "status": "RECRUITING",
+                        "city": "Roma",
+                        "state": "Lazio",
+                        "zip": "00168",
+                        "country": "Italy",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "390630158545"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 41.89193,
+                            "lon": 12.51133
+                        }
+                    },
+                    {
+                        "facility": "Ospedale San Raffaele-Oncologia Medica ( Site 1135)",
+                        "status": "RECRUITING",
+                        "city": "Milano",
+                        "state": "Lombardia",
+                        "zip": "20132",
+                        "country": "Italy",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+390226436523"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 45.46427,
+                            "lon": 9.18951
+                        }
+                    },
+                    {
+                        "facility": "Istituto Clinico Humanitas-U.O di Oncologia medica ed Ematologia ( Site 1138)",
+                        "status": "RECRUITING",
+                        "city": "Rozzano",
+                        "state": "Milano",
+                        "zip": "20089",
+                        "country": "Italy",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+39 02 69517533"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 45.38193,
+                            "lon": 9.1559
+                        }
+                    },
+                    {
+                        "facility": "Istituto Europeo di Oncologia IRCCS-Divisione di Sviluppo di Nuovi Farmaci per Terapie Innovative (",
+                        "status": "COMPLETED",
+                        "city": "Milano",
+                        "zip": "20141",
+                        "country": "Italy",
+                        "geoPoint": {
+                            "lat": 45.46427,
+                            "lon": 9.18951
+                        }
+                    },
+                    {
+                        "facility": "Istituto Nazionale Tumori IRCCS Fondazione Pascale-S.C. Sperimentazioni Cliniche ( Site 1134)",
+                        "status": "RECRUITING",
+                        "city": "Napoli",
+                        "zip": "80131",
+                        "country": "Italy",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "00393331891929"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.85216,
+                            "lon": 14.26811
+                        }
+                    },
+                    {
+                        "facility": "Aichi Cancer Center Hospital ( Site 1324)",
+                        "status": "RECRUITING",
+                        "city": "Nagoya",
+                        "state": "Aichi",
+                        "zip": "464-8681",
+                        "country": "Japan",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+81-52-762-6111"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 35.18147,
+                            "lon": 136.90641
+                        }
+                    },
+                    {
+                        "facility": "National Cancer Center Hospital East ( Site 1321)",
+                        "status": "RECRUITING",
+                        "city": "Kashiwa",
+                        "state": "Chiba",
+                        "zip": "277-8577",
+                        "country": "Japan",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+81-4-7133-1111"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 35.86224,
+                            "lon": 139.97732
+                        }
+                    },
+                    {
+                        "facility": "Osaka International Cancer Institute ( Site 1323)",
+                        "status": "RECRUITING",
+                        "city": "Osaka",
+                        "zip": "541-8567",
+                        "country": "Japan",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+81-6-6945-1181"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 34.69374,
+                            "lon": 135.50218
+                        }
+                    },
+                    {
+                        "facility": "National Cancer Center Hospital ( Site 1322)",
+                        "status": "RECRUITING",
+                        "city": "Tokyo",
+                        "zip": "104-0045",
+                        "country": "Japan",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+81-3-3542-2511"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 35.6895,
+                            "lon": 139.69171
+                        }
+                    },
+                    {
+                        "facility": "Seoul National University Hospital-Internal Medicine ( Site 1312)",
+                        "status": "ACTIVE_NOT_RECRUITING",
+                        "city": "Seoul",
+                        "zip": "03080",
+                        "country": "Korea, Republic of",
+                        "geoPoint": {
+                            "lat": 37.566,
+                            "lon": 126.9784
+                        }
+                    },
+                    {
+                        "facility": "Severance Hospital, Yonsei University Health System-Medical oncology ( Site 1311)",
+                        "status": "RECRUITING",
+                        "city": "Seoul",
+                        "zip": "03722",
+                        "country": "Korea, Republic of",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+82-2-2228-8132"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 37.566,
+                            "lon": 126.9784
+                        }
+                    },
+                    {
+                        "facility": "Asan Medical Center ( Site 1313)",
+                        "status": "RECRUITING",
+                        "city": "Seoul",
+                        "zip": "05505",
+                        "country": "Korea, Republic of",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+82-2-3010-0491"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 37.566,
+                            "lon": 126.9784
+                        }
+                    },
+                    {
+                        "facility": "Nederlands Kanker Instituut - Antoni van Leeuwenhoek - NKI-AVL ( Site 1121)",
+                        "status": "RECRUITING",
+                        "city": "Amsterdam",
+                        "state": "Noord-Holland",
+                        "zip": "1066CX",
+                        "country": "Netherlands",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+31205122446"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 52.37403,
+                            "lon": 4.88969
+                        }
+                    },
+                    {
+                        "facility": "Erasmus Medisch Centrum-Medical Oncology ( Site 1122)",
+                        "status": "RECRUITING",
+                        "city": "Rotterdam",
+                        "state": "Zuid-Holland",
+                        "zip": "3015 GD",
+                        "country": "Netherlands",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+31107034897"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 51.9225,
+                            "lon": 4.47917
+                        }
+                    },
+                    {
+                        "facility": "Narodowy Instytut Onkologii im. Marii Sklodowskiej-Curie - P-Oddzial Badan Wczesnych Faz ( Site 1101",
+                        "status": "RECRUITING",
+                        "city": "Warszawa",
+                        "state": "Mazowieckie",
+                        "zip": "02-781",
+                        "country": "Poland",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+48 22 546 33 81"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 52.22977,
+                            "lon": 21.01178
+                        }
+                    },
+                    {
+                        "facility": "Uniwersyteckie Centrum Kliniczne-Early Clinical Trials Unit ( Site 1103)",
+                        "status": "RECRUITING",
+                        "city": "Gdansk",
+                        "state": "Pomorskie",
+                        "zip": "80-952",
+                        "country": "Poland",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+48 695 802 353"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 54.35205,
+                            "lon": 18.64637
+                        }
+                    },
+                    {
+                        "facility": "Szpital Wojew\u00f3dzki im. Mikoaja Kopernika w Koszalinie-Oddzial Dzienny Chemioterapii ( Site 1104)",
+                        "status": "RECRUITING",
+                        "city": "Koszalin",
+                        "state": "Zachodniopomorskie",
+                        "zip": "75-581",
+                        "country": "Poland",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "48502204953"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 54.19438,
+                            "lon": 16.17222
+                        }
+                    },
+                    {
+                        "facility": "Instituto Catalan de Oncologia - Hospital Duran i Reynals-Medical Oncology ( Site 1113)",
+                        "status": "RECRUITING",
+                        "city": "Hospitalet",
+                        "state": "Barcelona",
+                        "zip": "08907",
+                        "country": "Spain",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "932607294"
+                            }
+                        ]
+                    },
+                    {
+                        "facility": "Hospital Universitario Ram\u00f3n y Cajal-Medical Oncology ( Site 1111)",
+                        "status": "RECRUITING",
+                        "city": "Madrid",
+                        "state": "Madrid, Comunidad De",
+                        "zip": "28034",
+                        "country": "Spain",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+34 913368263"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.4165,
+                            "lon": -3.70256
+                        }
+                    },
+                    {
+                        "facility": "HOSPITAL UNIVERSITARIO QUIRONSALUD MADRID-ONCOLOGIA MEDICA ( Site 1117)",
+                        "status": "RECRUITING",
+                        "city": "Pozuelo de Alarcon",
+                        "state": "Madrid",
+                        "zip": "28223",
+                        "country": "Spain",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "34914521987"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.43293,
+                            "lon": -3.81338
+                        }
+                    },
+                    {
+                        "facility": "Clinica Universidad de Navarra-Medical Oncology ( Site 1118)",
+                        "status": "RECRUITING",
+                        "city": "Madrid",
+                        "zip": "28027",
+                        "country": "Spain",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "913531920"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.4165,
+                            "lon": -3.70256
+                        }
+                    },
+                    {
+                        "facility": "HOSPITAL UNIVERSITARIO VIRGEN DEL ROCIO ( Site 1114)",
+                        "status": "RECRUITING",
+                        "city": "Sevilla",
+                        "zip": "41013",
+                        "country": "Spain",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+34955013068"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 37.38283,
+                            "lon": -5.97317
+                        }
+                    },
+                    {
+                        "facility": "NATIONAL CHENG-KUNG UNI. HOSP.-clinical trial center ( Site 1302)",
+                        "status": "RECRUITING",
+                        "city": "Tainan",
+                        "zip": "704",
+                        "country": "Taiwan",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+886-6-2353535"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 22.99083,
+                            "lon": 120.21333
+                        }
+                    },
+                    {
+                        "facility": "National Taiwan University Hospital-Oncology ( Site 1301)",
+                        "status": "RECRUITING",
+                        "city": "Taipei",
+                        "zip": "10002",
+                        "country": "Taiwan",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "886-2-23123456"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 25.04776,
+                            "lon": 121.53185
+                        }
+                    },
+                    {
+                        "facility": "Mackay Memorial Hospital ( Site 1305)",
+                        "status": "RECRUITING",
+                        "city": "Taipei",
+                        "zip": "10449",
+                        "country": "Taiwan",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+886 2 2543 3535"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 25.04776,
+                            "lon": 121.53185
+                        }
+                    },
+                    {
+                        "facility": "Chang Gung Medical Foundation-Linkou Branch ( Site 1304)",
+                        "status": "RECRUITING",
+                        "city": "Taoyuan",
+                        "zip": "333",
+                        "country": "Taiwan",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "886-3-3281200"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 24.95233,
+                            "lon": 121.20193
+                        }
+                    },
+                    {
+                        "facility": "Istanbul Universitesi Cerrahpasa ( Site 1203)",
+                        "status": "ACTIVE_NOT_RECRUITING",
+                        "city": "Istanbul- Fatih",
+                        "state": "Istanbul",
+                        "zip": "34098",
+                        "country": "Turkey"
+                    },
+                    {
+                        "facility": "Baskent University Dr. Turgut Noyan Research and Training Center ( Site 1201)",
+                        "status": "RECRUITING",
+                        "city": "Adana",
+                        "zip": "01250",
+                        "country": "Turkey",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+903223444445"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 37.00167,
+                            "lon": 35.32889
+                        }
+                    },
+                    {
+                        "facility": "Hacettepe Universitesi-oncology hospital ( Site 1209)",
+                        "status": "ACTIVE_NOT_RECRUITING",
+                        "city": "Ankara",
+                        "zip": "06230",
+                        "country": "Turkey",
+                        "geoPoint": {
+                            "lat": 39.91987,
+                            "lon": 32.85427
+                        }
+                    },
+                    {
+                        "facility": "Ankara City Hospital-Medical Oncology ( Site 1202)",
+                        "status": "ACTIVE_NOT_RECRUITING",
+                        "city": "Ankara",
+                        "zip": "06800",
+                        "country": "Turkey",
+                        "geoPoint": {
+                            "lat": 39.91987,
+                            "lon": 32.85427
+                        }
+                    },
+                    {
+                        "facility": "Trakya University-Medical Oncology ( Site 1207)",
+                        "status": "RECRUITING",
+                        "city": "Edirne",
+                        "zip": "22030",
+                        "country": "Turkey",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "90 284 235 76 41"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 41.67719,
+                            "lon": 26.55597
+                        }
+                    },
+                    {
+                        "facility": "Acibadem Universitesi Atakent Hastanesi ( Site 1208)",
+                        "status": "RECRUITING",
+                        "city": "Istanbul",
+                        "zip": "34303",
+                        "country": "Turkey",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "+905324634021"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 41.01384,
+                            "lon": 28.94966
+                        }
+                    },
+                    {
+                        "facility": "TC Saglik Bakanligi Goztepe Prof. Dr. Suleyman Yalcin Sehir Hastanesi-oncology ( Site 1204)",
+                        "status": "RECRUITING",
+                        "city": "Istanbul",
+                        "zip": "34722",
+                        "country": "Turkey",
+                        "contacts": [
+                            {
+                                "name": "Study Coordinator",
+                                "role": "CONTACT",
+                                "phone": "90 216 606 52 00"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 41.01384,
+                            "lon": 28.94966
+                        }
+                    }
+                ]
+            },
+            "referencesModule": {
+                "seeAlsoLinks": [
+                    {
+                        "label": "Merck Clinical Trials Information",
+                        "url": "https://www.merckclinicaltrials.com/"
+                    },
+                    {
+                        "label": "Plain Language Summary",
+                        "url": "https://trialstransparency.merckclinicaltrials.com/Study.aspx?id=7684A-005&kw=7684A-005"
+                    }
+                ]
+            },
+            "ipdSharingStatementModule": {
+                "ipdSharing": "YES",
+                "description": "http://engagezone.msd.com/doc/ProcedureAccessClinicalTrialData.pdf",
+                "url": "http://engagezone.msd.com/ds_documentation.php"
+            }
+        },
+        "derivedSection": {
+            "miscInfoModule": {
+                "versionHolder": "2024-07-31"
+            },
+            "conditionBrowseModule": {
+                "meshes": [
+                    {
+                        "id": "D000002277",
+                        "term": "Carcinoma"
+                    },
+                    {
+                        "id": "D000009369",
+                        "term": "Neoplasms"
+                    },
+                    {
+                        "id": "D000018281",
+                        "term": "Cholangiocarcinoma"
+                    },
+                    {
+                        "id": "D000001943",
+                        "term": "Breast Neoplasms"
+                    },
+                    {
+                        "id": "D000010051",
+                        "term": "Ovarian Neoplasms"
+                    },
+                    {
+                        "id": "D000013274",
+                        "term": "Stomach Neoplasms"
+                    },
+                    {
+                        "id": "D000004938",
+                        "term": "Esophageal Neoplasms"
+                    },
+                    {
+                        "id": "D000077195",
+                        "term": "Squamous Cell Carcinoma of Head and Neck"
+                    },
+                    {
+                        "id": "D000001749",
+                        "term": "Urinary Bladder Neoplasms"
+                    },
+                    {
+                        "id": "D000002583",
+                        "term": "Uterine Cervical Neoplasms"
+                    },
+                    {
+                        "id": "D000016889",
+                        "term": "Endometrial Neoplasms"
+                    },
+                    {
+                        "id": "D000064726",
+                        "term": "Triple Negative Breast Neoplasms"
+                    },
+                    {
+                        "id": "D000005706",
+                        "term": "Gallbladder Neoplasms"
+                    }
+                ],
+                "ancestors": [
+                    {
+                        "id": "D000009375",
+                        "term": "Neoplasms, Glandular and Epithelial"
+                    },
+                    {
+                        "id": "D000009370",
+                        "term": "Neoplasms by Histologic Type"
+                    },
+                    {
+                        "id": "D000002294",
+                        "term": "Carcinoma, Squamous Cell"
+                    },
+                    {
+                        "id": "D000000230",
+                        "term": "Adenocarcinoma"
+                    },
+                    {
+                        "id": "D000004067",
+                        "term": "Digestive System Neoplasms"
+                    },
+                    {
+                        "id": "D000009371",
+                        "term": "Neoplasms by Site"
+                    },
+                    {
+                        "id": "D000004066",
+                        "term": "Digestive System Diseases"
+                    },
+                    {
+                        "id": "D000001941",
+                        "term": "Breast Diseases"
+                    },
+                    {
+                        "id": "D000012871",
+                        "term": "Skin Diseases"
+                    },
+                    {
+                        "id": "D000004701",
+                        "term": "Endocrine Gland Neoplasms"
+                    },
+                    {
+                        "id": "D000010049",
+                        "term": "Ovarian Diseases"
+                    },
+                    {
+                        "id": "D000000291",
+                        "term": "Adnexal Diseases"
+                    },
+                    {
+                        "id": "D000005831",
+                        "term": "Genital Diseases, Female"
+                    },
+                    {
+                        "id": "D000052776",
+                        "term": "Female Urogenital Diseases"
+                    },
+                    {
+                        "id": "D000005261",
+                        "term": "Female Urogenital Diseases and Pregnancy Complications"
+                    },
+                    {
+                        "id": "D000091642",
+                        "term": "Urogenital Diseases"
+                    },
+                    {
+                        "id": "D000005833",
+                        "term": "Genital Neoplasms, Female"
+                    },
+                    {
+                        "id": "D000014565",
+                        "term": "Urogenital Neoplasms"
+                    },
+                    {
+                        "id": "D000091662",
+                        "term": "Genital Diseases"
+                    },
+                    {
+                        "id": "D000004700",
+                        "term": "Endocrine System Diseases"
+                    },
+                    {
+                        "id": "D000006058",
+                        "term": "Gonadal Disorders"
+                    },
+                    {
+                        "id": "D000005770",
+                        "term": "Gastrointestinal Neoplasms"
+                    },
+                    {
+                        "id": "D000005767",
+                        "term": "Gastrointestinal Diseases"
+                    },
+                    {
+                        "id": "D000013272",
+                        "term": "Stomach Diseases"
+                    },
+                    {
+                        "id": "D000006258",
+                        "term": "Head and Neck Neoplasms"
+                    },
+                    {
+                        "id": "D000004935",
+                        "term": "Esophageal Diseases"
+                    },
+                    {
+                        "id": "D000014571",
+                        "term": "Urologic Neoplasms"
+                    },
+                    {
+                        "id": "D000001745",
+                        "term": "Urinary Bladder Diseases"
+                    },
+                    {
+                        "id": "D000014570",
+                        "term": "Urologic Diseases"
+                    },
+                    {
+                        "id": "D000052801",
+                        "term": "Male Urogenital Diseases"
+                    },
+                    {
+                        "id": "D000014594",
+                        "term": "Uterine Neoplasms"
+                    },
+                    {
+                        "id": "D000002577",
+                        "term": "Uterine Cervical Diseases"
+                    },
+                    {
+                        "id": "D000014591",
+                        "term": "Uterine Diseases"
+                    },
+                    {
+                        "id": "D000001661",
+                        "term": "Biliary Tract Neoplasms"
+                    },
+                    {
+                        "id": "D000001660",
+                        "term": "Biliary Tract Diseases"
+                    },
+                    {
+                        "id": "D000005705",
+                        "term": "Gallbladder Diseases"
+                    }
+                ],
+                "browseLeaves": [
+                    {
+                        "id": "M5220",
+                        "name": "Breast Neoplasms",
+                        "asFound": "Breast Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M5534",
+                        "name": "Carcinoma",
+                        "asFound": "Carcinoma",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M5550",
+                        "name": "Carcinoma, Squamous Cell",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M1689",
+                        "name": "Squamous Cell Carcinoma of Head and Neck",
+                        "asFound": "Squamous Cell Carcinoma of Head and Neck",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M20426",
+                        "name": "Cholangiocarcinoma",
+                        "asFound": "Cholangiocarcinoma",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M9613",
+                        "name": "Carcinoma, Hepatocellular",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5030",
+                        "name": "Urinary Bladder Neoplasms",
+                        "asFound": "Urinary Bladder Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M5830",
+                        "name": "Uterine Cervical Neoplasms",
+                        "asFound": "Uterine Cervical Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M12974",
+                        "name": "Ovarian Neoplasms",
+                        "asFound": "Ovarian Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M6845",
+                        "name": "Death",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M16064",
+                        "name": "Stomach Neoplasms",
+                        "asFound": "Stomach Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M19235",
+                        "name": "Endometrial Neoplasms",
+                        "asFound": "Endometrial Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M8088",
+                        "name": "Esophageal Neoplasms",
+                        "asFound": "Esophageal Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M30373",
+                        "name": "Triple Negative Breast Neoplasms",
+                        "asFound": "Triple Negative Breast Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M8824",
+                        "name": "Gallbladder Neoplasms",
+                        "asFound": "Gallbladder Neoplasms",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M12320",
+                        "name": "Neoplasms, Glandular and Epithelial",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M12315",
+                        "name": "Neoplasms by Histologic Type",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M3585",
+                        "name": "Adenocarcinoma",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M7256",
+                        "name": "Digestive System Neoplasms",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M8886",
+                        "name": "Gastrointestinal Neoplasms",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M8883",
+                        "name": "Gastrointestinal Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M7255",
+                        "name": "Digestive System Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5218",
+                        "name": "Breast Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M15674",
+                        "name": "Skin Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M7863",
+                        "name": "Endocrine Gland Neoplasms",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M12972",
+                        "name": "Ovarian Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M3643",
+                        "name": "Adnexal Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M8943",
+                        "name": "Genital Diseases, Female",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M2876",
+                        "name": "Genital Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M2875",
+                        "name": "Urogenital Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M27093",
+                        "name": "Female Urogenital Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M14127",
+                        "name": "Pregnancy Complications",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M8399",
+                        "name": "Female Urogenital Diseases and Pregnancy Complications",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M8945",
+                        "name": "Genital Neoplasms, Female",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M17315",
+                        "name": "Urogenital Neoplasms",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M7862",
+                        "name": "Endocrine System Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M9163",
+                        "name": "Gonadal Disorders",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M16062",
+                        "name": "Stomach Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M9348",
+                        "name": "Head and Neck Neoplasms",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M8085",
+                        "name": "Esophageal Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M17320",
+                        "name": "Urologic Neoplasms",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5026",
+                        "name": "Urinary Bladder Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M17319",
+                        "name": "Urologic Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M27095",
+                        "name": "Male Urogenital Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M17342",
+                        "name": "Uterine Neoplasms",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5825",
+                        "name": "Uterine Cervical Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M17339",
+                        "name": "Uterine Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M4947",
+                        "name": "Biliary Tract Neoplasms",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M4946",
+                        "name": "Biliary Tract Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M8823",
+                        "name": "Gallbladder Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "T755",
+                        "name": "Bile Duct Cancer",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "T4352",
+                        "name": "Ovarian Cancer",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "T5486",
+                        "name": "Stomach Cancer",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "T2141",
+                        "name": "Esophageal Cancer",
+                        "asFound": "Esophageal Neoplasms",
+                        "relevance": "HIGH"
+                    }
+                ],
+                "browseBranches": [
+                    {
+                        "abbrev": "BC04",
+                        "name": "Neoplasms"
+                    },
+                    {
+                        "abbrev": "BC17",
+                        "name": "Skin and Connective Tissue Diseases"
+                    },
+                    {
+                        "abbrev": "All",
+                        "name": "All Conditions"
+                    },
+                    {
+                        "abbrev": "BC06",
+                        "name": "Digestive System Diseases"
+                    },
+                    {
+                        "abbrev": "BXS",
+                        "name": "Urinary Tract, Sexual Organs, and Pregnancy Conditions"
+                    },
+                    {
+                        "abbrev": "BC19",
+                        "name": "Gland and Hormone Related Diseases"
+                    },
+                    {
+                        "abbrev": "BC23",
+                        "name": "Symptoms and General Pathology"
+                    },
+                    {
+                        "abbrev": "Rare",
+                        "name": "Rare Diseases"
+                    }
+                ]
+            },
+            "interventionBrowseModule": {
+                "meshes": [
+                    {
+                        "id": "D000077143",
+                        "term": "Docetaxel"
+                    },
+                    {
+                        "id": "D000068258",
+                        "term": "Bevacizumab"
+                    },
+                    {
+                        "id": "D000016190",
+                        "term": "Carboplatin"
+                    },
+                    {
+                        "id": "D000093542",
+                        "term": "Gemcitabine"
+                    },
+                    {
+                        "id": "C000582435",
+                        "term": "Pembrolizumab"
+                    },
+                    {
+                        "id": "D000069287",
+                        "term": "Capecitabine"
+                    },
+                    {
+                        "id": "D000077150",
+                        "term": "Oxaliplatin"
+                    },
+                    {
+                        "id": "D000005472",
+                        "term": "Fluorouracil"
+                    },
+                    {
+                        "id": "C000531958",
+                        "term": "Lenvatinib"
+                    }
+                ],
+                "ancestors": [
+                    {
+                        "id": "D000000970",
+                        "term": "Antineoplastic Agents"
+                    },
+                    {
+                        "id": "D000050257",
+                        "term": "Tubulin Modulators"
+                    },
+                    {
+                        "id": "D000050256",
+                        "term": "Antimitotic Agents"
+                    },
+                    {
+                        "id": "D000050258",
+                        "term": "Mitosis Modulators"
+                    },
+                    {
+                        "id": "D000045504",
+                        "term": "Molecular Mechanisms of Pharmacological Action"
+                    },
+                    {
+                        "id": "D000074322",
+                        "term": "Antineoplastic Agents, Immunological"
+                    },
+                    {
+                        "id": "D000020533",
+                        "term": "Angiogenesis Inhibitors"
+                    },
+                    {
+                        "id": "D000043924",
+                        "term": "Angiogenesis Modulating Agents"
+                    },
+                    {
+                        "id": "D000006133",
+                        "term": "Growth Substances"
+                    },
+                    {
+                        "id": "D000045505",
+                        "term": "Physiological Effects of Drugs"
+                    },
+                    {
+                        "id": "D000006131",
+                        "term": "Growth Inhibitors"
+                    },
+                    {
+                        "id": "D000000964",
+                        "term": "Antimetabolites, Antineoplastic"
+                    },
+                    {
+                        "id": "D000000963",
+                        "term": "Antimetabolites"
+                    },
+                    {
+                        "id": "D000082082",
+                        "term": "Immune Checkpoint Inhibitors"
+                    },
+                    {
+                        "id": "D000007166",
+                        "term": "Immunosuppressive Agents"
+                    },
+                    {
+                        "id": "D000007155",
+                        "term": "Immunologic Factors"
+                    },
+                    {
+                        "id": "D000047428",
+                        "term": "Protein Kinase Inhibitors"
+                    },
+                    {
+                        "id": "D000004791",
+                        "term": "Enzyme Inhibitors"
+                    }
+                ],
+                "browseLeaves": [
+                    {
+                        "id": "M1674",
+                        "name": "Oxaliplatin",
+                        "asFound": "Prospective",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M8600",
+                        "name": "Fluorouracil",
+                        "asFound": "Outcomes",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M6182",
+                        "name": "Cisplatin",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M246",
+                        "name": "Bevacizumab",
+                        "asFound": "Non-",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M349416",
+                        "name": "Pembrolizumab",
+                        "asFound": "Label",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M18650",
+                        "name": "Carboplatin",
+                        "asFound": "System",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M19537",
+                        "name": "Paclitaxel",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M2985",
+                        "name": "Gemcitabine",
+                        "asFound": "Mg/kg",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M377",
+                        "name": "Capecitabine",
+                        "asFound": "200",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M1668",
+                        "name": "Docetaxel",
+                        "asFound": "Management",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M353738",
+                        "name": "Lenvatinib",
+                        "asFound": "Approved",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M231",
+                        "name": "Albumin-Bound Paclitaxel",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M26197",
+                        "name": "Tubulin Modulators",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M26196",
+                        "name": "Antimitotic Agents",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M1346",
+                        "name": "Antineoplastic Agents, Immunological",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M22318",
+                        "name": "Angiogenesis Inhibitors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M9231",
+                        "name": "Growth Inhibitors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M4281",
+                        "name": "Antimetabolites",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M2342",
+                        "name": "Immune Checkpoint Inhibitors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M10212",
+                        "name": "Immunosuppressive Agents",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M10201",
+                        "name": "Immunologic Factors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M25820",
+                        "name": "Protein Kinase Inhibitors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M7951",
+                        "name": "Enzyme Inhibitors",
+                        "relevance": "LOW"
+                    }
+                ],
+                "browseBranches": [
+                    {
+                        "abbrev": "ANeo",
+                        "name": "Antineoplastic Agents"
+                    },
+                    {
+                        "abbrev": "All",
+                        "name": "All Drugs and Chemicals"
+                    }
+                ]
+            }
+        },
+        "hasResults": false
+    }
+]

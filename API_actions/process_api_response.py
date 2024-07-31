@@ -1,36 +1,42 @@
 # ./API_actions/process_api_response.py
-
-import sys
-import os
-import json
 import logging
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
-
-from api_client import query_clinical_trials, query_clinical_trial_by_nct
-from api_json_handler import read_json, write_json
-
 def process_api_response(api_response):
-    # Extract required information from API response
-    if isinstance(api_response, dict) and 'studies' in api_response:
-        studies = api_response['studies']
-    elif isinstance(api_response, list):
-        studies = api_response
-    else:
+    logging.debug("Processing API response")
+    try:
         studies = []
+        if isinstance(api_response, dict) and 'studies' in api_response:
+            studies = api_response['studies']
+        elif isinstance(api_response, list):
+            studies = api_response
 
-    num_trials = len(studies)
-    trial_names = [study.get('brief_title', 'N/A') for study in studies]
-    nct_numbers = [study.get('nct_id', 'N/A') for study in studies]
+        num_trials = len(studies)
+        trial_names = []
+        nct_numbers = []
 
-    stats = {
-        "number_of_trials": num_trials,
-        "trial_names": trial_names,
-        "nct_numbers": ",".join(nct_numbers)
-    }
+        for study in studies:
+            protocol_section = study.get('protocolSection', {})
+            identification_module = protocol_section.get('identificationModule', {})
+            
+            brief_title = identification_module.get('briefTitle', 'N/A')
+            nct_id = identification_module.get('nctId', 'N/A')
+            
+            trial_names.append(brief_title)
+            nct_numbers.append(nct_id)
 
-    # Log the details
-    logging.info(f"Number of trials: {num_trials}")
-    logging.info(f"Trial names: {trial_names}")
+        stats = {
+            "number_of_trials": num_trials,
+            "trial_names": trial_names,
+            "nct_numbers": ",".join(nct_numbers)
+        }
 
-    return stats
+        # Log the details
+        logging.info(f"Number of trials: {num_trials}")
+        logging.info(f"Trial names: {trial_names}")
+        logging.info(f"NCT numbers: {nct_numbers}")
+
+        return stats
+
+    except Exception as e:
+        logging.error(f"Error processing API response: {e}", exc_info=True)
+        return {}

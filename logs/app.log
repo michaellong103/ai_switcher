@@ -1,130 +1,120 @@
-2024-07-30 14:33:17,437 - INFO - Running main with assistant_type: medical
-2024-07-30 14:33:17,437 - INFO - Creating assistant of type: medical
-2024-07-30 14:33:17,437 - INFO - Creating assistant with type: medical
-2024-07-30 14:33:17,437 - INFO - Creating MedicalAssistant
-2024-07-30 14:33:17,437 - INFO - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
-2024-07-30 14:33:17,437 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that...
-2024-07-30 14:33:17,437 - INFO - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
-2024-07-30 14:33:17,437 - INFO - Creating assistant with type: lunch
-2024-07-30 14:33:17,438 - INFO - Creating LunchAssistant
-2024-07-30 14:33:17,438 - INFO - Initializing LunchAssistant
-2024-07-30 14:33:17,438 - INFO - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
-2024-07-30 14:33:17,438 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
-2024-07-30 14:33:17,438 - INFO - Initial assistant: MedicalAssistant
-2024-07-30 14:33:17,438 - INFO - get_initial_message called
-2024-07-30 14:33:24,504 - INFO - respond called with user_input: 50 female Monogenic Diabetes in Indianapolis Indiana
-2024-07-30 14:33:24,505 - INFO - Action response: None
-2024-07-30 14:33:24,505 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-07-30 14:33:24,505 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-07-30 14:33:24,543 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-07-30 14:33:26,044 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-07-30 14:33:26,045 - INFO - Received response from OpenAI API: Assistant: Thank you for providing that information. Just to clarify, Monogenic Diabetes is a genetic form of diabetes that results from a change in a single gene. 
-
-Could you please confirm the following details:
+2024-07-31 10:21:29,080 - INFO - Running main with assistant_type: medical
+2024-07-31 10:21:29,080 - INFO - Creating assistant of type: medical
+2024-07-31 10:21:29,080 - INFO - Creating assistant with type: medical
+2024-07-31 10:21:29,080 - INFO - Creating MedicalAssistant
+2024-07-31 10:21:29,080 - INFO - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
+2024-07-31 10:21:29,081 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that...
+2024-07-31 10:21:29,081 - INFO - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
+2024-07-31 10:21:29,081 - INFO - Creating assistant with type: lunch
+2024-07-31 10:21:29,081 - INFO - Creating LunchAssistant
+2024-07-31 10:21:29,081 - INFO - Initializing LunchAssistant
+2024-07-31 10:21:29,081 - INFO - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
+2024-07-31 10:21:29,081 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
+2024-07-31 10:21:29,081 - INFO - Initial assistant: MedicalAssistant
+2024-07-31 10:21:29,081 - INFO - get_initial_message called
+2024-07-31 10:21:33,626 - INFO - respond called with user_input: 50 female triple-negative breast cancer in Tulsa Oklahoma
+2024-07-31 10:21:33,626 - INFO - Action response: None
+2024-07-31 10:21:33,627 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
+2024-07-31 10:21:33,627 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
+2024-07-31 10:21:33,637 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-07-31 10:21:34,982 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-07-31 10:21:34,985 - INFO - Received response from OpenAI API: Assistant: Thank you for providing that information. Just to confirm:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-Does this look correc...
-2024-07-30 14:33:26,048 - INFO - Validating Assistant Output
-2024-07-30 14:33:26,048 - INFO - Modified super response: Assistant: Thank you for providing that information. Just to clarify, Monogenic Diabetes is a genetic form of diabetes that results from a change in a single gene. 
-
-Could you please confirm the following details:
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
 Does this look correct? (y/n)
-2024-07-30 14:33:26,048 - INFO - Response from MedicalAssistant: Assistant: Thank you for providing that information. Just to clarify, Monogenic Diabetes is a genetic form of diabetes that results from a change in a single gene. 
-
-Could you please confirm the following details:
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-Does this look correct? ...
-2024-07-30 14:33:26,048 - INFO - Assistant response after routing: Assistant: Thank you for providing that information. Just to clarify, Monogenic Diabetes is a genetic form of diabetes that results from a change in a single gene. 
-
-Could you please confirm the following details:
+2024-07-31 10:21:34,987 - INFO - Validating Assistant Output
+2024-07-31 10:21:34,987 - INFO - Modified super response: Assistant: Thank you for providing that information. Just to confirm:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-Does this look correct...
-2024-07-30 14:33:26,048 - INFO - User input: 50 female Monogenic Diabetes in Indianapolis Indiana
-2024-07-30 14:33:26,048 - INFO - Assistant response: Assistant: Thank you for providing that information. Just to clarify, Monogenic Diabetes is a genetic form of diabetes that results from a change in a single gene. 
-
-Could you please confirm the following details:
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
 Does this look correct? (y/n)
-2024-07-30 14:33:27,372 - INFO - respond called with user_input: y
-2024-07-30 14:33:27,372 - INFO - Action response: None
-2024-07-30 14:33:27,372 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-07-30 14:33:27,372 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-07-30 14:33:27,374 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-07-30 14:33:28,484 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-07-30 14:33:28,485 - INFO - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
+2024-07-31 10:21:34,987 - INFO - Response from MedicalAssistant: Assistant: Thank you for providing that information. Just to confirm:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
+Does this look correct? (y/n)
+2024-07-31 10:21:34,987 - INFO - Assistant response after routing: Assistant: Thank you for providing that information. Just to confirm:
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
+Does this look correct? (y/n)
+2024-07-31 10:21:34,988 - INFO - User input: 50 female triple-negative breast cancer in Tulsa Oklahoma
+2024-07-31 10:21:34,988 - INFO - Assistant response: Assistant: Thank you for providing that information. Just to confirm:
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
+Does this look correct? (y/n)
+2024-07-31 10:21:35,967 - INFO - respond called with user_input: y
+2024-07-31 10:21:35,968 - INFO - Action response: None
+2024-07-31 10:21:35,968 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
+2024-07-31 10:21:35,968 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
+2024-07-31 10:21:35,970 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-07-31 10:21:37,305 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-07-31 10:21:37,322 - INFO - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
+- Debug Grid: [(36.1540, -95.9928)]
 I will now search for trials that match this profile.
-2024-07-30 14:33:28,486 - INFO - Validating Assistant Output
-2024-07-30 14:33:28,487 - INFO - Validating field Age: 50
-2024-07-30 14:33:28,487 - INFO - Validating field Gender: Female
-2024-07-30 14:33:28,487 - INFO - Validating field Medical Condition: Monogenic Diabetes
-2024-07-30 14:33:28,487 - INFO - Validating field Location: Indianapolis, IN
-2024-07-30 14:33:28,487 - INFO - Validating Debug Grid - Latitude: 39.7684, Longitude: -86.1581
-2024-07-30 14:33:28,487 - INFO - User details collected successfully
-2024-07-30 14:33:28,488 - DEBUG - Using selector: KqueueSelector
-2024-07-30 14:33:29,048 - INFO - async_caller_program.py completed successfully.
-2024-07-30 14:33:29,048 - ERROR - Script Errors:
- 2024-07-30 14:33:28,693 - DEBUG - Using selector: KqueueSelector
-2024-07-30 14:33:29,033 - DEBUG - stdout: 
-2024-07-30 14:33:29,033 - DEBUG - stderr: Traceback (most recent call last):
-  File "/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_actions/api_query.py", line 11, in <module>
-    from async_tasks import async_main
-Impor...
-2024-07-30 14:33:29,049 - INFO - Modified super response: Great, I will now look for trials with these characteristics.
+2024-07-31 10:21:37,324 - INFO - Validating Assistant Output
+2024-07-31 10:21:37,325 - INFO - Validating field Age: 50
+2024-07-31 10:21:37,325 - INFO - Validating field Gender: Female
+2024-07-31 10:21:37,325 - INFO - Validating field Medical Condition: Triple-Negative Breast Cancer
+2024-07-31 10:21:37,325 - INFO - Validating field Location: Tulsa, OK
+2024-07-31 10:21:37,326 - INFO - Validating Debug Grid - Latitude: 36.1540, Longitude: -95.9928
+2024-07-31 10:21:37,326 - INFO - User details collected successfully
+2024-07-31 10:21:37,326 - DEBUG - Using selector: KqueueSelector
+2024-07-31 10:21:38,108 - INFO - async_caller_program.py completed successfully.
+2024-07-31 10:21:38,109 - ERROR - Script Errors:
+ 2024-07-31 10:21:37,455 - DEBUG - Using selector: KqueueSelector
+2024-07-31 10:21:38,087 - DEBUG - stdout: State updated with current API call from API_actions/input.json
+Number of trials found: 1
+Few trials found. Detailed output.
+Checking: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response
+Using existing directory: /Use...
+2024-07-31 10:21:38,110 - INFO - Modified super response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
+- Debug Grid: [(36.1540, -95.9928)]
 I will now search for trials that match this profile.
-2024-07-30 14:33:29,049 - INFO - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
+2024-07-31 10:21:38,110 - INFO - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
+- Debug Grid: [(36.1540, -95.9928)]
 I will now search for trials that match this profile.
-2024-07-30 14:33:29,049 - INFO - Assistant response after routing: Great, I will now look for trials with these characteristics.
+2024-07-31 10:21:38,110 - INFO - Assistant response after routing: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
+- Debug Grid: [(36.1540, -95.9928)]
 I will now search for trials that match this profile.
-2024-07-30 14:33:29,049 - INFO - User input: y
-2024-07-30 14:33:29,049 - INFO - Assistant response: Great, I will now look for trials with these characteristics.
+2024-07-31 10:21:38,110 - INFO - User input: y
+2024-07-31 10:21:38,111 - INFO - Assistant response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: Tulsa, OK
+- Debug Grid: [(36.1540, -95.9928)]
 I will now search for trials that match this profile.
