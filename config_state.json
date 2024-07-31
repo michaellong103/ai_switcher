@@ -1,19 +1,18 @@
 {
     "current_question": "",
-    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&filter.geo=distance(36.1540,-95.9928,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
+    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Monogenic+Diabetes&filter.geo=distance(39.7684,-86.1581,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
     "current_api_params": {
         "Age": "50",
         "Gender": "Female",
-        "Medical Condition": "Triple-Negative Breast Cancer",
-        "Location": "Tulsa, OK",
-        "Latitude": "36.1540",
-        "Longitude": "-95.9928"
+        "Medical Condition": "Monogenic Diabetes",
+        "Location": "Indianapolis, IN",
+        "Latitude": "39.7684",
+        "Longitude": "-86.1581"
     },
     "stats": {
-        "number_of_trials": 1,
-        "trial_names": [
-            "MK-7684A With or Without Other Anticancer Therapies in Participants With Selected Solid Tumors (MK-7684A-005) (KEYVIBE-005)"
-        ],
-        "nct_numbers": "NCT05007106"
-    }
+        "number_of_trials": 0,
+        "trial_names": [],
+        "nct_numbers": ""
+    },
+    "current_radius_for_search": 150
 }

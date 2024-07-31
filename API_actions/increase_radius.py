@@ -1,6 +1,6 @@
 # ./API_actions/increase_radius.py
+
 import json
-import sys
 import os
 import logging
 
@@ -41,6 +41,7 @@ def increase_radius(config_file):
         logger.error(f"An unexpected error occurred: {e}", exc_info=True)
 
 if __name__ == "__main__":
+    import sys
     if len(sys.argv) != 2:
         print("Usage: python increase_radius.py <config_file>")
         sys.exit(1)

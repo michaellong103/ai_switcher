@@ -1,12 +1,12 @@
-# ./API_actions/output_sort.py
+# output_sort.py
 import logging
 import json
 import sys
 import os
-import subprocess
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from display_in_terminal.main import main as display_main
+from increase_radius import increase_radius  # Import the increase_radius function
 
 display_types = ["condensed", "detailed", "questions"]
 json_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../API_response/output_final_big.json'))
@@ -15,7 +15,7 @@ STATE_FILE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 
 logger = logging.getLogger(__name__)
 
 def sort_and_process_trials(num_trials):
-    # Log the number of trials found
+    """Sort and process trials based on the number of trials found."""
     logger.info(f"Number of trials found: {num_trials}")
     print(f"Number of trials found: {num_trials}")
 
@@ -27,17 +27,8 @@ def sort_and_process_trials(num_trials):
     elif num_trials == 0:
         logger.info("No trials found. Number of trials is 0.")
         print("No trials found. Number of trials is 0.")
-        # Call increase_radius.py to increase the radius by 50 miles
-        try:
-            result = subprocess.run(['python', 'API_actions/increase_radius.py', STATE_FILE_PATH], check=True, capture_output=True, text=True)
-            logger.info("Radius increased successfully.")
-            print(result.stdout)
-            if result.stderr:
-                print(f"stderr: {result.stderr}")
-        except subprocess.CalledProcessError as e:
-            logger.error(f"Failed to increase radius: {e}")
-            print(f"Failed to increase radius: {e}")
-            print(f"stderr: {e.stderr}")
+        # Increase the radius directly
+        increase_radius(STATE_FILE_PATH)
         return 'none_found'
 
     elif 1 <= num_trials <= 5:
@@ -57,16 +48,9 @@ def sort_and_process_trials(num_trials):
         print("No sort worked. The number of trials does not make sense.")
         return 'error'
 
-if __name__ == "__main__":
-    logger.info("Starting output_sort.py")
-
-    if len(sys.argv) != 2:
-        logger.error("Usage: python output_sort.py <stats_file>")
-        print("Usage: python output_sort.py <stats_file>")
-        sys.exit(1)
-
-    stats_file = sys.argv[1]
-    logger.debug(f"Stats file provided: {stats_file}")
+def main(stats_file):
+    """Main function to process the stats file and sort trials."""
+    logger.info(f"Starting output_sort.py with stats_file: {stats_file}")
 
     if not os.path.exists(stats_file):
         logger.error(f"Error: The stats file '{stats_file}' does not exist.")
@@ -74,16 +58,12 @@ if __name__ == "__main__":
         sys.exit(1)
 
     try:
-        logger.info(f"Opening stats file: {stats_file}")
         with open(stats_file, 'r') as file:
             stats = json.load(file)
-            logger.debug(f"Stats content: {stats}")
-
         num_trials = stats.get('number_of_trials', 0)
         logger.info(f"Sorting and processing {num_trials} trials")
         result_type = sort_and_process_trials(num_trials)
         logger.debug(f"Result type: {result_type}")
-
     except json.JSONDecodeError as e:
         logger.error(f"JSON decoding error: {e}")
         print(f"JSON decoding error: {e}")
@@ -93,4 +73,11 @@ if __name__ == "__main__":
         print(f"An unexpected error occurred: {e}")
         sys.exit(1)
 
-    logger.info("Completed output_sort.py")
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        logger.error("Usage: python output_sort.py <stats_file>")
+        print("Usage: python output_sort.py <stats_file>")
+        sys.exit(1)
+    
+    stats_file = sys.argv[1]
+    main(stats_file)
