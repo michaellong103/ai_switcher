@@ -1,166 +1,18 @@
-2024-07-31 13:36:35,440 - INFO - Running main with assistant_type: medical
-2024-07-31 13:36:35,440 - INFO - Creating assistant of type: medical
-2024-07-31 13:36:35,440 - INFO - Creating assistant with type: medical
-2024-07-31 13:36:35,440 - INFO - Creating MedicalAssistant
-2024-07-31 13:36:35,440 - INFO - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
-2024-07-31 13:36:35,440 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that...
-2024-07-31 13:36:35,441 - INFO - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
-2024-07-31 13:36:35,441 - INFO - Creating assistant with type: lunch
-2024-07-31 13:36:35,441 - INFO - Creating LunchAssistant
-2024-07-31 13:36:35,441 - INFO - Initializing LunchAssistant
-2024-07-31 13:36:35,441 - INFO - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
-2024-07-31 13:36:35,441 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
-2024-07-31 13:36:35,441 - INFO - Initial assistant: MedicalAssistant
-2024-07-31 13:36:35,441 - INFO - get_initial_message called
-2024-07-31 13:36:42,439 - INFO - respond called with user_input: 50 female Monogenic Diabetes in Indianapolis Indiana
-2024-07-31 13:36:42,439 - INFO - Action response: None
-2024-07-31 13:36:42,439 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-07-31 13:36:42,439 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-07-31 13:36:42,449 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-07-31 13:36:43,580 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-07-31 13:36:43,581 - INFO - Received response from OpenAI API: Thank you for providing that information. Just to confirm, could you please clarify the specific type of Monogenic Diabetes you have? Some examples include:
-
-- Neonatal Diabetes
-- Maturity-Onset Diabetes of the Young (MODY)
-- Other (please specify)
-
-Could you please specify the precise type for accurate clinical trial matching?
-2024-07-31 13:36:43,583 - INFO - Modified super response: Thank you for providing that information. Just to confirm, could you please clarify the specific type of Monogenic Diabetes you have? Some examples include:
-
-- Neonatal Diabetes
-- Maturity-Onset Diabetes of the Young (MODY)
-- Other (please specify)
-
-Could you please specify the precise type for accurate clinical trial matching?
-2024-07-31 13:36:43,584 - INFO - Response from MedicalAssistant: Thank you for providing that information. Just to confirm, could you please clarify the specific type of Monogenic Diabetes you have? Some examples include:
-
-- Neonatal Diabetes
-- Maturity-Onset Diabetes of the Young (MODY)
-- Other (please specify)
-
-Could you please specify the precise type for accurate clinical trial matching?
-2024-07-31 13:36:43,584 - INFO - Assistant response after routing: Thank you for providing that information. Just to confirm, could you please clarify the specific type of Monogenic Diabetes you have? Some examples include:
-
-- Neonatal Diabetes
-- Maturity-Onset Diabetes of the Young (MODY)
-- Other (please specify)
-
-Could you please specify the precise type for accurate clinical trial matching?
-2024-07-31 13:36:43,584 - INFO - User input: 50 female Monogenic Diabetes in Indianapolis Indiana
-2024-07-31 13:36:43,584 - INFO - Assistant response: Thank you for providing that information. Just to confirm, could you please clarify the specific type of Monogenic Diabetes you have? Some examples include:
-
-- Neonatal Diabetes
-- Maturity-Onset Diabetes of the Young (MODY)
-- Other (please specify)
-
-Could you please specify the precise type for accurate clinical trial matching?
-2024-07-31 13:36:46,169 - INFO - respond called with user_input: 50 female Monogenic Diabetes in Indianapolis Indiana
-2024-07-31 13:36:46,169 - INFO - Action response: None
-2024-07-31 13:36:46,169 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-07-31 13:36:46,169 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-07-31 13:36:46,171 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-07-31 13:36:47,358 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-07-31 13:36:47,359 - INFO - Received response from OpenAI API: Thank you for the clarification. Let's confirm the details:
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-Does this look correct? (y/n)
-2024-07-31 13:36:47,361 - INFO - Validating Assistant Output
-2024-07-31 13:36:47,361 - INFO - Modified super response: Thank you for the clarification. Let's confirm the details:
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-Does this look correct? (y/n)
-2024-07-31 13:36:47,361 - INFO - Response from MedicalAssistant: Thank you for the clarification. Let's confirm the details:
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-Does this look correct? (y/n)
-2024-07-31 13:36:47,361 - INFO - Assistant response after routing: Thank you for the clarification. Let's confirm the details:
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-Does this look correct? (y/n)
-2024-07-31 13:36:47,361 - INFO - User input: 50 female Monogenic Diabetes in Indianapolis Indiana
-2024-07-31 13:36:47,361 - INFO - Assistant response: Thank you for the clarification. Let's confirm the details:
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-Does this look correct? (y/n)
-2024-07-31 13:36:48,886 - INFO - respond called with user_input: y
-2024-07-31 13:36:48,886 - INFO - Action response: None
-2024-07-31 13:36:48,886 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-07-31 13:36:48,886 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-07-31 13:36:48,888 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-07-31 13:36:50,229 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-07-31 13:36:50,230 - INFO - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
-I will now search for trials that match this profile.
-2024-07-31 13:36:50,231 - INFO - Validating Assistant Output
-2024-07-31 13:36:50,232 - INFO - Validating field Age: 50
-2024-07-31 13:36:50,232 - INFO - Validating field Gender: Female
-2024-07-31 13:36:50,232 - INFO - Validating field Medical Condition: Monogenic Diabetes
-2024-07-31 13:36:50,232 - INFO - Validating field Location: Indianapolis, IN
-2024-07-31 13:36:50,232 - INFO - Validating Debug Grid - Latitude: 39.7684, Longitude: -86.1581
-2024-07-31 13:36:50,232 - INFO - User details collected successfully
-2024-07-31 13:36:50,233 - DEBUG - Using selector: KqueueSelector
-2024-07-31 13:36:50,912 - INFO - async_caller_program.py completed successfully.
-2024-07-31 13:36:50,912 - ERROR - Script Errors:
- 2024-07-31 13:36:50,393 - DEBUG - Using selector: KqueueSelector
-2024-07-31 13:36:50,896 - DEBUG - stdout: State updated with current API call from API_actions/input.json
-Number of trials found: 0
-No trials found. Number of trials is 0.
-Location: Indianapolis, IN
-Increasing search radius to 150 miles.
-[]
-State updated with stats
-
-2024-07-31 13:36:5...
-2024-07-31 13:36:50,912 - INFO - Modified super response: Great, I will now look for trials with these characteristics.
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
-I will now search for trials that match this profile.
-2024-07-31 13:36:50,912 - INFO - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
-I will now search for trials that match this profile.
-2024-07-31 13:36:50,912 - INFO - Assistant response after routing: Great, I will now look for trials with these characteristics.
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
-I will now search for trials that match this profile.
-2024-07-31 13:36:50,913 - INFO - User input: y
-2024-07-31 13:36:50,913 - INFO - Assistant response: Great, I will now look for trials with these characteristics.
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Monogenic Diabetes
-- Location: Indianapolis, IN
-- Debug Grid: [(39.7684, -86.1581)]
-I will now search for trials that match this profile.
+2024-08-01 06:45:10,350 - INFO - Running main with assistant_type: medical
+2024-08-01 06:45:10,350 - INFO - Creating assistant of type: medical
+2024-08-01 06:45:10,350 - INFO - Creating assistant with type: medical
+2024-08-01 06:45:10,350 - INFO - Creating MedicalAssistant
+2024-08-01 06:45:10,350 - INFO - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
+2024-08-01 06:45:10,350 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that...
+2024-08-01 06:45:10,350 - INFO - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
+2024-08-01 06:45:10,350 - INFO - Creating assistant with type: lunch
+2024-08-01 06:45:10,350 - INFO - Creating LunchAssistant
+2024-08-01 06:45:10,350 - INFO - Initializing LunchAssistant
+2024-08-01 06:45:10,351 - INFO - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
+2024-08-01 06:45:10,351 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
+2024-08-01 06:45:10,351 - INFO - Initial assistant: MedicalAssistant
+2024-08-01 06:45:10,351 - INFO - get_initial_message called
+2024-08-01 06:45:17,396 - INFO - Switching to Terminal Message Printer
+2024-08-01 06:45:17,396 - INFO - Current assistant set to: TerminalMessagePrinter
+2024-08-01 06:45:17,396 - INFO - User input: 50 female Monogenic Diabetes in Indianapolis Indiana
+2024-08-01 06:45:17,396 - INFO - Assistant response: Terminal message: No trials found. Switching to terminal message printer.

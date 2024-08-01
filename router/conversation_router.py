@@ -3,14 +3,34 @@ import logging
 from assistants.lunch.lunch_assistant import LunchAssistant
 from assistants.medical.medical_assistant import MedicalAssistant
 from assistants.concrete_assistant import ConcreteAssistant
+import os
+
+class TerminalMessagePrinter:
+    def respond(self, message):
+        return f"Terminal message: {message}"
 
 class ConversationRouter:
     def __init__(self, assistants):
         self.assistants = assistants
         self.current_assistant = assistants[0]
+        self.terminal_printer = TerminalMessagePrinter()
         logging.info(f"Initial assistant: {type(self.current_assistant).__name__}")
+        self.notification_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'router_notification.txt'))
+
+    def check_notifications(self):
+        if os.path.exists(self.notification_file):
+            with open(self.notification_file, 'r') as file:
+                message = file.read()
+            os.remove(self.notification_file)
+            return message
+        return None
 
     def route(self, message):
+        notification_message = self.check_notifications()
+        if notification_message:
+            self.switch_to_terminal_printer()
+            return self.current_assistant.respond(notification_message)
+
         response = self.current_assistant.respond(message)
         logging.info(f"Response from {type(self.current_assistant).__name__}: {response}")
         
@@ -22,6 +42,10 @@ class ConversationRouter:
             self.switch_to_dynamic_assistant()
             response = "Let's talk about trials that might suit you."
             logging.info(f"Assistant switched to: {type(self.current_assistant).__name__}")
+        elif response == "switch_to_terminal":
+            self.switch_to_terminal_printer()
+            response = "Switched to terminal message printer."
+            logging.info("Switched to terminal message printer.")
         
         if response is None:
             response = "No response from the assistant."
@@ -54,3 +78,8 @@ class ConversationRouter:
                 else:
                     logging.error("Failed to create dynamic assistant")
         logging.error("Dynamic Medical Assistant not found. Switching failed.")
+
+    def switch_to_terminal_printer(self):
+        logging.info("Switching to Terminal Message Printer")
+        self.current_assistant = self.terminal_printer
+        logging.info(f"Current assistant set to: {type(self.current_assistant).__name__}")

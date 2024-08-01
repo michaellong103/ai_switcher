@@ -1,4 +1,4 @@
-# output_sort.py
+# ./API_actions/output_sort.py
 import logging
 import json
 import sys
@@ -13,6 +13,12 @@ json_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../API_resp
 STATE_FILE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'config_state.json'))
 
 logger = logging.getLogger(__name__)
+
+def notify_router(message):
+    notification_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'router_notification.txt'))
+    with open(notification_file, 'w') as file:
+        file.write(message)
+    logger.info(f"Router notification sent: {message}")
 
 def sort_and_process_trials(num_trials):
     """Sort and process trials based on the number of trials found."""
@@ -29,6 +35,7 @@ def sort_and_process_trials(num_trials):
         print("No trials found. Number of trials is 0.")
         # Increase the radius directly
         increase_radius(STATE_FILE_PATH)
+        notify_router("No trials found. Switching to terminal message printer.")
         return 'none_found'
 
     elif 1 <= num_trials <= 5:
