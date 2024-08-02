@@ -2,10 +2,10 @@
     "query_details": {
         "Age": "50",
         "Gender": "Female",
-        "Medical Condition": "Monogenic Diabetes",
-        "Location": "Indianapolis, IN",
-        "Latitude": "39.7684",
-        "Longitude": "-86.1581",
+        "Medical Condition": "Upper Respiratory Infection",
+        "Location": "Tulsa, OK",
+        "Latitude": "36.1540",
+        "Longitude": "-95.9928",
         "Distance": "100"
     },
     "stats": {

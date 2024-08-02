@@ -1,12 +1,14 @@
 # ./API_actions/output_sort.py
+
 import logging
 import json
 import sys
 import os
+from API_actions.event_manager import EventManager
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from display_in_terminal.main import main as display_main
-from increase_radius import increase_radius  # Import the increase_radius function
+from increase_radius import increase_radius
 
 display_types = ["condensed", "detailed", "questions"]
 json_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../API_response/output_final_big.json'))
@@ -14,11 +16,21 @@ STATE_FILE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 
 
 logger = logging.getLogger(__name__)
 
-def notify_router(message):
-    notification_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'router_notification.txt'))
-    with open(notification_file, 'w') as file:
-        file.write(message)
-    logger.info(f"Router notification sent: {message}")
+event_manager = EventManager()
+
+def notify_no_trials_found():
+    # This function will be called when no trials are found
+    print("No trials found. Switching to terminal message printer.")
+    logger.info("No trials found. Triggering 'no_trials_found' event.")
+
+event_manager.register('no_trials_found', notify_no_trials_found)
+
+def create_zero_result_file():
+    """Creates a file named zero_result.txt when no trials are found."""
+    zero_result_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'zero_result.txt'))
+    with open(zero_result_file_path, 'w') as file:
+        file.write("No clinical trials found for the given criteria.")
+    logger.info("Created zero_result.txt as no trials were found.")
 
 def sort_and_process_trials(num_trials):
     """Sort and process trials based on the number of trials found."""
@@ -33,9 +45,14 @@ def sort_and_process_trials(num_trials):
     elif num_trials == 0:
         logger.info("No trials found. Number of trials is 0.")
         print("No trials found. Number of trials is 0.")
-        # Increase the radius directly
-        increase_radius(STATE_FILE_PATH)
-        notify_router("No trials found. Switching to terminal message printer.")
+        create_zero_result_file()  # Create zero_result.txt
+        
+        # Log before notifying
+        logger.info("Triggering 'no_trials_found' event.")
+        
+        # Trigger the 'no_trials_found' event
+        event_manager.notify('no_trials_found')
+        
         return 'none_found'
 
     elif 1 <= num_trials <= 5:

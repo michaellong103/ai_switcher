@@ -2,30 +2,30 @@
 Condensed Trials: (9 trials)
 ========================================[0m
 
-[96mA Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight[0m
-[93mNCT05929066[0m, Phoenix, Arizona, United States
-
-[96mTArgeting Type 1 Diabetes Using POLyamines (TADPOL)[0m
-[93mNCT05594563[0m, Aurora, Colorado, United States
+[96mA Research Study to Compare a New Medicine Oral Semaglutide to a Dummy Medicine in Children and Teenagers With Type 2 Diabetes[0m
+[93mNCT04596631[0m, Birmingham, Alabama, United States
 
 [96mElectronic Diabetes Tune-Up Group (eDTU) for African Americans[0m
 [93mNCT06321029[0m, Indianapolis, Indiana, United States
 
-[96mJanus Kinase (JAK) Inhibitors to Preserve C-Peptide Production in New Onset Type 1 Diabetes (T1D)[0m
-[93mNCT05743244[0m, Orange, California, United States
+[96mTArgeting Type 1 Diabetes Using POLyamines (TADPOL)[0m
+[93mNCT05594563[0m, Aurora, Colorado, United States
+
+[96mA Study of Retatrutide (LY3437943) in Participants Who Have Obesity or Overweight[0m
+[93mNCT05929066[0m, Phoenix, Arizona, United States
 
 [96mA Study of Tirzepatide (LY3298176) in Participants With Overweight or Obesity and Chronic Kidney Disease With or Without Type 2 Diabetes[0m
 [93mNCT05536804[0m, Northridge, California, United States
 
-[96mTeplizumab in Pediatric Stage 2 Type 1 Diabetes[0m
-[93mNCT05757713[0m, San Francisco, California, United States
+[96mJanus Kinase (JAK) Inhibitors to Preserve C-Peptide Production in New Onset Type 1 Diabetes (T1D)[0m
+[93mNCT05743244[0m, Orange, California, United States
 
 [96mA Study of Retatrutide (LY3437943) in Participants With Type 2 Diabetes Mellitus Who Have Obesity or Overweight[0m
 [93mNCT05929079[0m, Anniston, Alabama, United States
 
-[96mA Research Study to Compare a New Medicine Oral Semaglutide to a Dummy Medicine in Children and Teenagers With Type 2 Diabetes[0m
-[93mNCT04596631[0m, Birmingham, Alabama, United States
-
 [96mEvaluation of the Efficacy and Safety of DMR Using the Revita® in Subjects With Inadequately Controlled Type 2 Diabetes[0m
 [93mNCT04419779[0m, Phoenix, Arizona, United States
+
+[96mTeplizumab in Pediatric Stage 2 Type 1 Diabetes[0m
+[93mNCT05757713[0m, San Francisco, California, United States
 

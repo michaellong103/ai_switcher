@@ -1,8 +1,9 @@
 # ./assistants/medical/medical_assistant.py
+
 import logging
 import os
 import json
-import asyncio
+import subprocess
 from colorama import Fore
 from assistants.concrete_assistant import ConcreteAssistant
 from assistants.create_dynamic_assistant import create_dynamic_assistant
@@ -13,10 +14,10 @@ from .validator_utils import validate_medical_condition, is_complete_response
 
 class MedicalAssistant(ConcreteAssistant):
     def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
-            logging.info("Initializing MedicalAssistant with model: %s, temperature: %f, top_p: %f", model, temperature, top_p)
-            self.initial_message = "We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location"
-            super().__init__(system_message, model, temperature, top_p)
-            logging.info("MedicalAssistant initialized with initial_message: %s", self.initial_message)
+        logging.info("Initializing MedicalAssistant with model: %s, temperature: %f, top_p: %f", model, temperature, top_p)
+        self.initial_message = "We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location"
+        super().__init__(system_message, model, temperature, top_p)
+        logging.info("MedicalAssistant initialized with initial_message: %s", self.initial_message)
 
     def get_initial_message(self):
         logging.info("get_initial_message called")
@@ -39,51 +40,34 @@ class MedicalAssistant(ConcreteAssistant):
         logging.info("Modified super response: %s", modified_response)
         return modified_response
 
-    async def call_async_caller(self, input_file, output_file):
-        # Resolve the path to async_caller_program.py
-        async_caller_script = os.path.abspath(os.path.join('API_actions', 'async_caller_program.py'))
-
-        process = await asyncio.create_subprocess_exec(
-            'python', async_caller_script, input_file, output_file,
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
+    def call_subprocess(self, script_path, *args):
+        # Run a subprocess and capture its output
+        process = subprocess.run(
+            ['python', script_path, *args],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
         )
 
-        # Wait for the process to complete and capture output
-        stdout, stderr = await process.communicate()
-
         if process.returncode == 0:
-            logging.info("async_caller_program.py completed successfully.")
+            logging.info(f"{os.path.basename(script_path)} completed successfully.")
         else:
-            logging.error(f"async_caller_program.py failed with return code {process.returncode}.")
+            logging.error(f"{os.path.basename(script_path)} failed with return code {process.returncode}.")
 
-        if stderr:
-            logging.error(f"Script Errors:\n {stderr.decode()}")
+        if process.stderr:
+            logging.error(f"Script Errors:\n {process.stderr}")
 
-        return process.returncode, stdout.decode()
+        return process.returncode, process.stdout
+
+    def call_sync_caller(self, input_file, output_file):
+        # Resolve the path to async_caller_program.py
+        caller_script = os.path.abspath(os.path.join('API_actions', 'async_caller_program.py'))
+        return self.call_subprocess(caller_script, input_file, output_file)
     
-    async def run_query_stats(self):
+    def run_query_stats(self):
         # Resolve the path to query_stats.py
         query_stats_script = os.path.abspath(os.path.join('tools', 'query_stats.py'))
-
-        process = await asyncio.create_subprocess_exec(
-            'python', query_stats_script,
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-
-        # Wait for the process to complete and capture output
-        stdout, stderr = await process.communicate()
-
-        if process.returncode == 0:
-            logging.info("query_stats.py completed successfully.")
-        else:
-            logging.error(f"query_stats.py failed with return code {process.returncode}.")
-
-        if stderr:
-            logging.error(f"Script Errors:\n {stderr.decode()}")
-
-        return process.returncode, stdout.decode()
+        return self.call_subprocess(query_stats_script)
 
     def modify_response(self, response):
         if "Does this look correct? (y/n)" in response:
@@ -122,14 +106,13 @@ class MedicalAssistant(ConcreteAssistant):
                         with open(input_file_path, 'w') as json_file:
                             json.dump(details, json_file, indent=4)
 
-                        # Run async_caller_program.py using call_async_caller
+                        # Run sync_caller_program.py using call_sync_caller
                         try:
-                            result_code, result_output = asyncio.run(self.call_async_caller(input_file_path, output_file_path))
-                     
+                            result_code, result_output = self.call_sync_caller(input_file_path, output_file_path)
                       
                         except Exception as e:
-                            logging.error(f"Error running async_caller_program: {e}")
-                            response += f"\nError running async_caller_program: {e}"
+                            logging.error(f"Error running sync_caller_program: {e}")
+                            response += f"\nError running sync_caller_program: {e}"
 
                         return response  # Return the modified response
                 else:
