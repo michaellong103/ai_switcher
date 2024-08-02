@@ -3,7 +3,7 @@
 import logging
 import os
 import json
-from colorama import Fore
+from colorama import Fore, Style
 from assistants.concrete_assistant import ConcreteAssistant
 from assistants.create_dynamic_assistant import create_dynamic_assistant
 from .medical_assistant_actions import MedicalAssistantActions
@@ -12,6 +12,7 @@ from .details_extractor import extract_details
 from .validator_utils import validate_medical_condition, is_complete_response
 
 from API_actions.async_caller_program import process_async_caller
+from API_actions.output_sort import sort_and_process_trials  # Import the function
 from tools.query_stats import process_query_stats
 
 class MedicalAssistant(ConcreteAssistant):
@@ -90,7 +91,30 @@ class MedicalAssistant(ConcreteAssistant):
                         # Call the function directly
                         try:
                             result_code, result_output = self.call_sync_caller(input_file_path, output_file_path)
-                      
+
+                            # Display the initial confirmation message before starting the search
+                            confirmation_message = (
+                                f"Great, I will now look for trials with these characteristics.\n\n"
+                                f"- Age: {details['Age']}\n"
+                                f"- Gender: {details['Gender']}\n"
+                                f"- Medical Condition: {details['Medical Condition']}\n"
+                                f"- Location: {details['Location']}\n"
+                                f"- Debug Grid: [{details.get('Latitude', 'N/A')}, {details.get('Longitude', 'N/A')}]\n"
+                                f"I will now search for trials that match this profile."
+                            )
+                            print(f"{Fore.BLUE}Assistant: {Fore.RESET}{confirmation_message}")
+
+                            # NEW: Call sort_and_process_trials function
+                            with open(output_file_path, 'r') as stats_file:
+                                stats = json.load(stats_file)
+                                num_trials = stats.get('number_of_trials', 0)
+
+                                # Directly call sort_and_process_trials to output messages in sequence
+                                sort_result_text = sort_and_process_trials(
+                                    num_trials, details['Location'], details.get('Distance', 100)
+                                )
+                                logging.info(f"Sort and process result: {sort_result_text}")
+
                         except Exception as e:
                             logging.error(f"Error running sync_caller_program: {e}")
                             response += f"\nError running sync_caller_program: {e}"

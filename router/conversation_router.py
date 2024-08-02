@@ -5,7 +5,6 @@ from assistants.lunch.lunch_assistant import LunchAssistant
 from assistants.medical.medical_assistant import MedicalAssistant
 from assistants.concrete_assistant import ConcreteAssistant
 import os
-from API_actions.event_manager import EventManager
 
 class TerminalMessagePrinter:
     def respond(self, message):
@@ -18,12 +17,6 @@ class ConversationRouter:
         self.terminal_printer = TerminalMessagePrinter()
         logging.info(f"Initial assistant: {type(self.current_assistant).__name__}")
         self.notification_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'router_notification.txt'))
-
-        # Create an instance of the EventManager
-        self.event_manager = EventManager()
-
-        # Register the router to listen for the 'no_trials_found' event
-        self.event_manager.register('no_trials_found', self.switch_to_terminal_printer)
 
     def check_notifications(self):
         if os.path.exists(self.notification_file):
@@ -91,4 +84,3 @@ class ConversationRouter:
         logging.info("Switching to Terminal Message Printer")
         self.current_assistant = self.terminal_printer
         logging.info(f"Current assistant set to: {type(self.current_assistant).__name__}")
-

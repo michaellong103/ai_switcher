@@ -1,145 +1,192 @@
-2024-08-02 08:47:10,222 - INFO - Running main with assistant_type: medical
-2024-08-02 08:47:10,222 - INFO - Creating assistant of type: medical
-2024-08-02 08:47:10,222 - INFO - Creating assistant with type: medical
-2024-08-02 08:47:10,222 - INFO - Creating MedicalAssistant
-2024-08-02 08:47:10,223 - INFO - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
-2024-08-02 08:47:10,223 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that...
-2024-08-02 08:47:10,223 - INFO - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
-2024-08-02 08:47:10,223 - INFO - Creating assistant with type: lunch
-2024-08-02 08:47:10,223 - INFO - Creating LunchAssistant
-2024-08-02 08:47:10,223 - INFO - Initializing LunchAssistant
-2024-08-02 08:47:10,223 - INFO - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
-2024-08-02 08:47:10,223 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
-2024-08-02 08:47:10,223 - INFO - Initial assistant: MedicalAssistant
-2024-08-02 08:47:10,223 - INFO - get_initial_message called
-2024-08-02 08:47:18,728 - INFO - respond called with user_input: 50 female triple-negative breast cancer in Tulsa Oklahoma
-2024-08-02 08:47:18,728 - INFO - Action response: None
-2024-08-02 08:47:18,729 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-08-02 08:47:18,729 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-08-02 08:47:18,737 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-08-02 08:47:20,344 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-08-02 08:47:20,357 - INFO - Received response from OpenAI API: Assistant: Thank you for providing the information. Just to clarify, Tulsa is in Oklahoma. 
+2024-08-02 11:32:50,252 - INFO - Running main with assistant_type: medical
+2024-08-02 11:32:50,252 - INFO - Creating assistant of type: medical
+2024-08-02 11:32:50,252 - INFO - Creating assistant with type: medical
+2024-08-02 11:32:50,252 - INFO - Creating MedicalAssistant
+2024-08-02 11:32:50,252 - INFO - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
+2024-08-02 11:32:50,253 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that...
+2024-08-02 11:32:50,253 - INFO - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
+2024-08-02 11:32:50,253 - INFO - Creating assistant with type: lunch
+2024-08-02 11:32:50,253 - INFO - Creating LunchAssistant
+2024-08-02 11:32:50,253 - INFO - Initializing LunchAssistant
+2024-08-02 11:32:50,253 - INFO - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
+2024-08-02 11:32:50,253 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
+2024-08-02 11:32:50,254 - INFO - Initial assistant: MedicalAssistant
+2024-08-02 11:32:50,254 - INFO - get_initial_message called
+2024-08-02 11:32:58,014 - INFO - respond called with user_input: 50 female upper respiratory infections in Indianapolis Indiana
+2024-08-02 11:32:58,015 - INFO - Action response: None
+2024-08-02 11:32:58,016 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
+2024-08-02 11:32:58,016 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
+2024-08-02 11:32:58,047 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-08-02 11:32:59,558 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-02 11:32:59,560 - INFO - Received response from OpenAI API: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
 
-Could you please confirm the following details:
+- Sinusitis
+- Pharyngitis
+- Bronchitis
+- Pneumonia
+- Other (please specify)
+
+This will help us find more accurate an...
+2024-08-02 11:32:59,563 - INFO - Modified super response: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
+
+- Sinusitis
+- Pharyngitis
+- Bronchitis
+- Pneumonia
+- Other (please specify)
+
+This will help us find more accurate and relevant...
+2024-08-02 11:32:59,564 - INFO - Response from MedicalAssistant: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
+
+- Sinusitis
+- Pharyngitis
+- Bronchitis
+- Pneumonia
+- Other (please specify)
+
+This will help us find more accurate and r...
+2024-08-02 11:32:59,564 - INFO - Assistant response after routing: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
+
+- Sinusitis
+- Pharyngitis
+- Bronchitis
+- Pneumonia
+- Other (please specify)
+
+This will help us find more accurate and...
+2024-08-02 11:32:59,564 - INFO - User input: 50 female upper respiratory infections in Indianapolis Indiana
+2024-08-02 11:32:59,564 - INFO - Assistant response: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
+
+- Sinusitis
+- Pharyngitis
+- Bronchitis
+- Pneumonia
+- Other (please specify)
+
+This will help us find more accurate and relevant clin...
+2024-08-02 11:33:03,638 - INFO - respond called with user_input: Pharyngitis
+2024-08-02 11:33:03,638 - INFO - Action response: None
+2024-08-02 11:33:03,639 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
+2024-08-02 11:33:03,639 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
+2024-08-02 11:33:03,641 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-08-02 11:33:04,917 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-02 11:33:04,918 - INFO - Received response from OpenAI API: Thank you for specifying pharyngitis. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 08:47:20,360 - INFO - Validating Assistant Output
-2024-08-02 08:47:20,360 - INFO - Modified super response: Assistant: Thank you for providing the information. Just to clarify, Tulsa is in Oklahoma. 
-
-Could you please confirm the following details:
+2024-08-02 11:33:04,922 - INFO - Validating Assistant Output
+2024-08-02 11:33:04,922 - INFO - Modified super response: Thank you for specifying pharyngitis. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 08:47:20,360 - INFO - Response from MedicalAssistant: Assistant: Thank you for providing the information. Just to clarify, Tulsa is in Oklahoma. 
-
-Could you please confirm the following details:
+2024-08-02 11:33:04,922 - INFO - Response from MedicalAssistant: Thank you for specifying pharyngitis. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 08:47:20,360 - INFO - Assistant response after routing: Assistant: Thank you for providing the information. Just to clarify, Tulsa is in Oklahoma. 
-
-Could you please confirm the following details:
+2024-08-02 11:33:04,922 - INFO - Assistant response after routing: Thank you for specifying pharyngitis. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 08:47:20,360 - INFO - User input: 50 female triple-negative breast cancer in Tulsa Oklahoma
-2024-08-02 08:47:20,360 - INFO - Assistant response: Assistant: Thank you for providing the information. Just to clarify, Tulsa is in Oklahoma. 
-
-Could you please confirm the following details:
+2024-08-02 11:33:04,922 - INFO - User input: Pharyngitis
+2024-08-02 11:33:04,922 - INFO - Assistant response: Thank you for specifying pharyngitis. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 08:47:21,454 - INFO - respond called with user_input: y
-2024-08-02 08:47:21,454 - INFO - Action response: None
-2024-08-02 08:47:21,454 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-08-02 08:47:21,454 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-08-02 08:47:21,456 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-08-02 08:47:22,672 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-08-02 08:47:22,684 - INFO - Received response from OpenAI API: Great! I will now look for trials with these characteristics.
+2024-08-02 11:33:06,450 - INFO - respond called with user_input: y
+2024-08-02 11:33:06,450 - INFO - Action response: None
+2024-08-02 11:33:06,451 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
+2024-08-02 11:33:06,452 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
+2024-08-02 11:33:06,454 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-08-02 11:33:08,181 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-02 11:33:08,182 - INFO - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
-- Debug Grid: [(36.1540, -95.9928)]
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 08:47:22,685 - INFO - Validating Assistant Output
-2024-08-02 08:47:22,686 - INFO - Validating field Age: 50
-2024-08-02 08:47:22,686 - INFO - Validating field Gender: Female
-2024-08-02 08:47:22,686 - INFO - Validating field Medical Condition: Triple-Negative Breast Cancer
-2024-08-02 08:47:22,686 - INFO - Validating field Location: Tulsa, OK
-2024-08-02 08:47:22,686 - INFO - Validating Debug Grid - Latitude: 36.1540, Longitude: -95.9928
-2024-08-02 08:47:22,686 - INFO - User details collected successfully
-2024-08-02 08:47:22,689 - INFO - async_caller_program.py: Data processed successfully.
-2024-08-02 08:47:22,689 - INFO - Modified super response: Great! I will now look for trials with these characteristics.
+2024-08-02 11:33:08,185 - INFO - Validating Assistant Output
+2024-08-02 11:33:08,186 - INFO - Validating field Age: 50
+2024-08-02 11:33:08,186 - INFO - Validating field Gender: Female
+2024-08-02 11:33:08,186 - INFO - Validating field Medical Condition: Pharyngitis
+2024-08-02 11:33:08,186 - INFO - Validating field Location: Indianapolis, IN
+2024-08-02 11:33:08,186 - INFO - Validating Debug Grid - Latitude: 39.7684, Longitude: -86.1581
+2024-08-02 11:33:08,186 - INFO - User details collected successfully
+2024-08-02 11:33:08,191 - INFO - async_caller_program.py: Data processed successfully.
+2024-08-02 11:33:08,191 - INFO - Number of trials found: 0
+2024-08-02 11:33:08,192 - INFO - No trials found. Number of trials is 0.
+2024-08-02 11:33:08,194 - INFO - Created zero_result.txt as no trials were found.
+2024-08-02 11:33:08,194 - INFO - No trials found.
+2024-08-02 11:33:08,194 - INFO - Searching for trials in Indianapolis, IN at 100 miles...
+2024-08-02 11:33:10,225 - INFO - No trials found in Indianapolis, IN at 100 miles. Increasing distance...
+2024-08-02 11:33:10,225 - INFO - Searching for trials in Indianapolis, IN at 150 miles...
+2024-08-02 11:33:12,230 - INFO - No trials found in Indianapolis, IN at 150 miles. Increasing distance...
+2024-08-02 11:33:12,243 - INFO - Searching for trials in Indianapolis, IN at 200 miles...
+2024-08-02 11:33:14,247 - INFO - No trials found in Indianapolis, IN at 200 miles. Increasing distance...
+2024-08-02 11:33:14,247 - INFO - Searching for trials in Indianapolis, IN at 250 miles...
+2024-08-02 11:33:16,251 - INFO - No trials found in Indianapolis, IN at 250 miles. Increasing distance...
+2024-08-02 11:33:16,251 - INFO - Searching for trials in Indianapolis, IN at 300 miles...
+2024-08-02 11:33:18,255 - INFO - No trials found in Indianapolis, IN at 300 miles. Increasing distance...
+2024-08-02 11:33:18,261 - INFO - Searching for trials in Indianapolis, IN at 350 miles...
+2024-08-02 11:33:20,266 - INFO - No trials found in Indianapolis, IN at 350 miles. Increasing distance...
+2024-08-02 11:33:20,266 - INFO - Searching for trials in Indianapolis, IN at 400 miles...
+2024-08-02 11:33:22,269 - INFO - No trials found in Indianapolis, IN at 400 miles. Increasing distance...
+2024-08-02 11:33:22,269 - INFO - Searching for trials in Indianapolis, IN at 450 miles...
+2024-08-02 11:33:24,274 - INFO - No trials found in Indianapolis, IN at 450 miles. Increasing distance...
+2024-08-02 11:33:24,275 - INFO - Searching for trials in Indianapolis, IN at 500 miles...
+2024-08-02 11:33:26,277 - INFO - No trials found in Indianapolis, IN at 500 miles. Increasing distance...
+2024-08-02 11:33:26,278 - INFO - Searching for trials in Indianapolis, IN at 550 miles...
+2024-08-02 11:33:28,288 - INFO - No trials found in Indianapolis, IN at 550 miles. Increasing distance...
+2024-08-02 11:33:28,288 - INFO - Searching for trials in Indianapolis, IN at 600 miles...
+2024-08-02 11:33:30,289 - INFO - No trials found in Indianapolis, IN at 600 miles. Increasing distance...
+2024-08-02 11:33:30,293 - INFO - No trials found in Indianapolis, IN up to 600 miles.
+2024-08-02 11:33:30,293 - INFO - Sort and process result: No trials found in Indianapolis, IN up to 600 miles.
+2024-08-02 11:33:30,293 - INFO - Modified super response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
-- Debug Grid: [(36.1540, -95.9928)]
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 08:47:22,689 - INFO - Response from MedicalAssistant: Great! I will now look for trials with these characteristics.
+2024-08-02 11:33:30,293 - INFO - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
-- Debug Grid: [(36.1540, -95.9928)]
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 08:47:22,689 - INFO - Assistant response after routing: Great! I will now look for trials with these characteristics.
+2024-08-02 11:33:30,293 - INFO - Assistant response after routing: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
-- Debug Grid: [(36.1540, -95.9928)]
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 08:47:22,689 - INFO - User input: y
-2024-08-02 08:47:22,689 - INFO - Assistant response: Great! I will now look for trials with these characteristics.
+2024-08-02 11:33:30,293 - INFO - User input: y
+2024-08-02 11:33:30,293 - INFO - Assistant response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Tulsa, OK
-- Debug Grid: [(36.1540, -95.9928)]
+- Medical Condition: Pharyngitis
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 08:48:13,784 - INFO - respond called with user_input: switch_to_lunch
-2024-08-02 08:48:13,785 - INFO - Switch to LunchAssistant requested
-2024-08-02 08:48:13,785 - INFO - Response from MedicalAssistant: switch_to_lunch
-2024-08-02 08:48:13,785 - INFO - Attempting to switch to Lunch Assistant
-2024-08-02 08:48:13,785 - INFO - Checking assistant: MedicalAssistant
-2024-08-02 08:48:13,785 - INFO - Checking assistant: LunchAssistant
-2024-08-02 08:48:13,785 - INFO - Switching to Lunch Assistant
-2024-08-02 08:48:13,785 - INFO - Current assistant set to: LunchAssistant
-2024-08-02 08:48:13,785 - INFO - Assistant switched to: LunchAssistant
-2024-08-02 08:48:13,785 - INFO - Assistant response after routing: Assistant switched to Lunch Assistant for lunch recommendations.
-2024-08-02 08:48:13,785 - INFO - User input: switch_to_lunch
-2024-08-02 08:48:13,785 - INFO - Assistant response: Assistant switched to Lunch Assistant for lunch recommendations.
-2024-08-02 08:48:19,170 - INFO - LunchAssistant respond called with user_input: perfect!
-2024-08-02 08:48:19,171 - INFO - Updated conversation_history: [{'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}, {'role': 'user', 'content': 'perfect!'}...
-2024-08-02 08:48:19,171 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'},...
-2024-08-02 08:48:19,177 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-08-02 08:48:20,506 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-08-02 08:48:20,507 - INFO - Received response from OpenAI API: Great to hear that you're ready for some lunch suggestions! What type of cuisine are you in the mood for today? I can recommend a variety of options for you. Do you have any dietary restrictions I should be aware of, or are there any specific preferences you have in mind?
-2024-08-02 08:48:20,509 - INFO - LunchAssistant response: Great to hear that you're ready for some lunch suggestions! What type of cuisine are you in the mood for today? I can recommend a variety of options for you. Do you have any dietary restrictions I should be aware of, or are there any specific preferences you have in mind?
-2024-08-02 08:48:20,509 - INFO - Response from LunchAssistant: Great to hear that you're ready for some lunch suggestions! What type of cuisine are you in the mood for today? I can recommend a variety of options for you. Do you have any dietary restrictions I should be aware of, or are there any specific preferences you have in mind?
-2024-08-02 08:48:20,509 - INFO - Assistant response after routing: Great to hear that you're ready for some lunch suggestions! What type of cuisine are you in the mood for today? I can recommend a variety of options for you. Do you have any dietary restrictions I should be aware of, or are there any specific preferences you have in mind?
-2024-08-02 08:48:20,509 - INFO - User input: perfect!
-2024-08-02 08:48:20,509 - INFO - Assistant response: Great to hear that you're ready for some lunch suggestions! What type of cuisine are you in the mood for today? I can recommend a variety of options for you. Do you have any dietary restrictions I should be aware of, or are there any specific preferences you have in mind?
