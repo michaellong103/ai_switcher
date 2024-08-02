@@ -26,6 +26,7 @@ def no_trials_found(location, initial_distance):
     """
     Increases the search distance iteratively until it reaches 600 miles.
     If no trials are found at each step, a message is printed indicating the failure.
+    Updates the current_radius_for_search in config_state.json as the distance expands.
 
     Parameters:
     - location (str): The location where the trials are searched.
@@ -54,14 +55,43 @@ def no_trials_found(location, initial_distance):
             print(f"Trials found in {location} at {distance} miles.")
             return f"Trials found in {location} at {distance} miles."
 
+        # Update the search radius in the state file
+        update_search_radius_in_state_file(distance)
+
         logger.info(f"No trials found in {location} at {distance} miles. Increasing distance...")
         distance += 50
 
     # If no trials found even at max distance, log the result
-    final_message = f"No trials found in {location} up to {max_distance} miles."
+    final_message = f"No trials found in {location} up to {max_distance} miles.\n"
+    final_message += f"\n{MAROON}Consider modifying your search criteria, such as trying a different location or condition.{RESET}\n"
     logger.info(final_message)
     print(final_message)
     return final_message
+
+def update_search_radius_in_state_file(new_radius):
+    """
+    Updates the current_radius_for_search in config_state.json with the new_radius.
+
+    Parameters:
+    - new_radius (int): The new search radius to update in the state file.
+    """
+    try:
+        # Load the current state from the state file
+        with open(STATE_FILE_PATH, 'r') as state_file:
+            state_data = json.load(state_file)
+
+        # Update the current_radius_for_search
+        state_data['current_radius_for_search'] = new_radius
+
+        # Save the updated state back to the state file
+        with open(STATE_FILE_PATH, 'w') as state_file:
+            json.dump(state_data, state_file, indent=4)
+
+        logger.info(f"Updated current_radius_for_search to {new_radius} in config_state.json.")
+    except json.JSONDecodeError as e:
+        logger.error(f"JSON decoding error while updating radius: {e}")
+    except Exception as e:
+        logger.error(f"An unexpected error occurred while updating radius: {e}", exc_info=True)
 
 def simulate_search_for_trials(location, distance):
     """

@@ -1,192 +1,169 @@
-2024-08-02 11:32:50,252 - INFO - Running main with assistant_type: medical
-2024-08-02 11:32:50,252 - INFO - Creating assistant of type: medical
-2024-08-02 11:32:50,252 - INFO - Creating assistant with type: medical
-2024-08-02 11:32:50,252 - INFO - Creating MedicalAssistant
-2024-08-02 11:32:50,252 - INFO - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
-2024-08-02 11:32:50,253 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that...
-2024-08-02 11:32:50,253 - INFO - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
-2024-08-02 11:32:50,253 - INFO - Creating assistant with type: lunch
-2024-08-02 11:32:50,253 - INFO - Creating LunchAssistant
-2024-08-02 11:32:50,253 - INFO - Initializing LunchAssistant
-2024-08-02 11:32:50,253 - INFO - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
-2024-08-02 11:32:50,253 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
-2024-08-02 11:32:50,254 - INFO - Initial assistant: MedicalAssistant
-2024-08-02 11:32:50,254 - INFO - get_initial_message called
-2024-08-02 11:32:58,014 - INFO - respond called with user_input: 50 female upper respiratory infections in Indianapolis Indiana
-2024-08-02 11:32:58,015 - INFO - Action response: None
-2024-08-02 11:32:58,016 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-08-02 11:32:58,016 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-08-02 11:32:58,047 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-08-02 11:32:59,558 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-08-02 11:32:59,560 - INFO - Received response from OpenAI API: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
-
-- Sinusitis
-- Pharyngitis
-- Bronchitis
-- Pneumonia
-- Other (please specify)
-
-This will help us find more accurate an...
-2024-08-02 11:32:59,563 - INFO - Modified super response: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
-
-- Sinusitis
-- Pharyngitis
-- Bronchitis
-- Pneumonia
-- Other (please specify)
-
-This will help us find more accurate and relevant...
-2024-08-02 11:32:59,564 - INFO - Response from MedicalAssistant: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
-
-- Sinusitis
-- Pharyngitis
-- Bronchitis
-- Pneumonia
-- Other (please specify)
-
-This will help us find more accurate and r...
-2024-08-02 11:32:59,564 - INFO - Assistant response after routing: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
-
-- Sinusitis
-- Pharyngitis
-- Bronchitis
-- Pneumonia
-- Other (please specify)
-
-This will help us find more accurate and...
-2024-08-02 11:32:59,564 - INFO - User input: 50 female upper respiratory infections in Indianapolis Indiana
-2024-08-02 11:32:59,564 - INFO - Assistant response: Thank you for providing the information. Just to clarify, upper respiratory infections are a broad category. Could you please specify the specific condition related to your upper respiratory infection? For example:
-
-- Sinusitis
-- Pharyngitis
-- Bronchitis
-- Pneumonia
-- Other (please specify)
-
-This will help us find more accurate and relevant clin...
-2024-08-02 11:33:03,638 - INFO - respond called with user_input: Pharyngitis
-2024-08-02 11:33:03,638 - INFO - Action response: None
-2024-08-02 11:33:03,639 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-08-02 11:33:03,639 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-08-02 11:33:03,641 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-08-02 11:33:04,917 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-08-02 11:33:04,918 - INFO - Received response from OpenAI API: Thank you for specifying pharyngitis. Let's confirm the details:
+2024-08-02 11:50:45,665 - INFO - Running main with assistant_type: medical
+2024-08-02 11:50:45,665 - INFO - Creating assistant of type: medical
+2024-08-02 11:50:45,665 - INFO - Creating assistant with type: medical
+2024-08-02 11:50:45,665 - INFO - Creating MedicalAssistant
+2024-08-02 11:50:45,665 - INFO - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
+2024-08-02 11:50:45,665 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that...
+2024-08-02 11:50:45,665 - INFO - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
+2024-08-02 11:50:45,666 - INFO - Creating assistant with type: lunch
+2024-08-02 11:50:45,666 - INFO - Creating LunchAssistant
+2024-08-02 11:50:45,666 - INFO - Initializing LunchAssistant
+2024-08-02 11:50:45,666 - INFO - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
+2024-08-02 11:50:45,666 - INFO - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day.\n- Be polite and engaging.'}
+2024-08-02 11:50:45,666 - INFO - Initial assistant: MedicalAssistant
+2024-08-02 11:50:45,666 - INFO - get_initial_message called
+2024-08-02 11:50:55,231 - INFO - respond called with user_input: 50 female upper respiratory infections in Indianapolis Indiana
+2024-08-02 11:50:55,231 - INFO - Action response: None
+2024-08-02 11:50:55,231 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
+2024-08-02 11:50:55,232 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
+2024-08-02 11:50:55,241 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-08-02 11:50:57,412 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-02 11:50:57,413 - INFO - Received response from OpenAI API: Thank you for reaching out. Just to clarify, upper respiratory infections can cover various conditions such as viral or bacterial infections affecting the nose, sinuses, and throat. To ensure we find the most relevant clinical trials, could you please specify the exact condition related to your upper respiratory infection (e.g., S...
+2024-08-02 11:50:57,416 - INFO - Modified super response: Thank you for reaching out. Just to clarify, upper respiratory infections can cover various conditions such as viral or bacterial infections affecting the nose, sinuses, and throat. To ensure we find the most relevant clinical trials, could you please specify the exact condition related to your upper respiratory infection (e.g., Sinusitis, ...
+2024-08-02 11:50:57,416 - INFO - Response from MedicalAssistant: Thank you for reaching out. Just to clarify, upper respiratory infections can cover various conditions such as viral or bacterial infections affecting the nose, sinuses, and throat. To ensure we find the most relevant clinical trials, could you please specify the exact condition related to your upper respiratory infection (e.g., Sinu...
+2024-08-02 11:50:57,416 - INFO - Assistant response after routing: Thank you for reaching out. Just to clarify, upper respiratory infections can cover various conditions such as viral or bacterial infections affecting the nose, sinuses, and throat. To ensure we find the most relevant clinical trials, could you please specify the exact condition related to your upper respiratory infection (e.g., Si...
+2024-08-02 11:50:57,416 - INFO - User input: 50 female upper respiratory infections in Indianapolis Indiana
+2024-08-02 11:50:57,416 - INFO - Assistant response: Thank you for reaching out. Just to clarify, upper respiratory infections can cover various conditions such as viral or bacterial infections affecting the nose, sinuses, and throat. To ensure we find the most relevant clinical trials, could you please specify the exact condition related to your upper respiratory infection (e.g., Sinusitis, Rhini...
+2024-08-02 11:50:59,966 - INFO - respond called with user_input: 50 female upper respiratory infections in Indianapolis Indiana
+2024-08-02 11:50:59,967 - INFO - Action response: None
+2024-08-02 11:50:59,967 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
+2024-08-02 11:50:59,967 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
+2024-08-02 11:50:59,968 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-08-02 11:51:01,211 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-02 11:51:01,213 - INFO - Received response from OpenAI API: Thank you for providing the details. Let's confirm the information before proceeding:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 11:33:04,922 - INFO - Validating Assistant Output
-2024-08-02 11:33:04,922 - INFO - Modified super response: Thank you for specifying pharyngitis. Let's confirm the details:
+2024-08-02 11:51:01,215 - INFO - Validating Assistant Output
+2024-08-02 11:51:01,215 - INFO - Modified super response: Thank you for providing the details. Let's confirm the information before proceeding:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 11:33:04,922 - INFO - Response from MedicalAssistant: Thank you for specifying pharyngitis. Let's confirm the details:
+2024-08-02 11:51:01,215 - INFO - Response from MedicalAssistant: Thank you for providing the details. Let's confirm the information before proceeding:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 11:33:04,922 - INFO - Assistant response after routing: Thank you for specifying pharyngitis. Let's confirm the details:
+2024-08-02 11:51:01,215 - INFO - Assistant response after routing: Thank you for providing the details. Let's confirm the information before proceeding:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 11:33:04,922 - INFO - User input: Pharyngitis
-2024-08-02 11:33:04,922 - INFO - Assistant response: Thank you for specifying pharyngitis. Let's confirm the details:
+2024-08-02 11:51:01,215 - INFO - User input: 50 female upper respiratory infections in Indianapolis Indiana
+2024-08-02 11:51:01,215 - INFO - Assistant response: Thank you for providing the details. Let's confirm the information before proceeding:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 Does this look correct? (y/n)
-2024-08-02 11:33:06,450 - INFO - respond called with user_input: y
-2024-08-02 11:33:06,450 - INFO - Action response: None
-2024-08-02 11:33:06,451 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
-2024-08-02 11:33:06,452 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
-2024-08-02 11:33:06,454 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
-2024-08-02 11:33:08,181 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-2024-08-02 11:33:08,182 - INFO - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
+2024-08-02 11:51:03,152 - INFO - respond called with user_input: y
+2024-08-02 11:51:03,153 - INFO - Action response: None
+2024-08-02 11:51:03,153 - INFO - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA.\n- Always validate that the condition i...
+2024-08-02 11:51:03,153 - INFO - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other locations.\n- Only show trials in the USA....
+2024-08-02 11:51:03,154 - DEBUG - Starting new HTTPS connection (1): api.openai.com:443
+2024-08-02 11:51:05,263 - DEBUG - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-02 11:51:05,265 - INFO - Received response from OpenAI API: Great! I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 - Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 11:33:08,185 - INFO - Validating Assistant Output
-2024-08-02 11:33:08,186 - INFO - Validating field Age: 50
-2024-08-02 11:33:08,186 - INFO - Validating field Gender: Female
-2024-08-02 11:33:08,186 - INFO - Validating field Medical Condition: Pharyngitis
-2024-08-02 11:33:08,186 - INFO - Validating field Location: Indianapolis, IN
-2024-08-02 11:33:08,186 - INFO - Validating Debug Grid - Latitude: 39.7684, Longitude: -86.1581
-2024-08-02 11:33:08,186 - INFO - User details collected successfully
-2024-08-02 11:33:08,191 - INFO - async_caller_program.py: Data processed successfully.
-2024-08-02 11:33:08,191 - INFO - Number of trials found: 0
-2024-08-02 11:33:08,192 - INFO - No trials found. Number of trials is 0.
-2024-08-02 11:33:08,194 - INFO - Created zero_result.txt as no trials were found.
-2024-08-02 11:33:08,194 - INFO - No trials found.
-2024-08-02 11:33:08,194 - INFO - Searching for trials in Indianapolis, IN at 100 miles...
-2024-08-02 11:33:10,225 - INFO - No trials found in Indianapolis, IN at 100 miles. Increasing distance...
-2024-08-02 11:33:10,225 - INFO - Searching for trials in Indianapolis, IN at 150 miles...
-2024-08-02 11:33:12,230 - INFO - No trials found in Indianapolis, IN at 150 miles. Increasing distance...
-2024-08-02 11:33:12,243 - INFO - Searching for trials in Indianapolis, IN at 200 miles...
-2024-08-02 11:33:14,247 - INFO - No trials found in Indianapolis, IN at 200 miles. Increasing distance...
-2024-08-02 11:33:14,247 - INFO - Searching for trials in Indianapolis, IN at 250 miles...
-2024-08-02 11:33:16,251 - INFO - No trials found in Indianapolis, IN at 250 miles. Increasing distance...
-2024-08-02 11:33:16,251 - INFO - Searching for trials in Indianapolis, IN at 300 miles...
-2024-08-02 11:33:18,255 - INFO - No trials found in Indianapolis, IN at 300 miles. Increasing distance...
-2024-08-02 11:33:18,261 - INFO - Searching for trials in Indianapolis, IN at 350 miles...
-2024-08-02 11:33:20,266 - INFO - No trials found in Indianapolis, IN at 350 miles. Increasing distance...
-2024-08-02 11:33:20,266 - INFO - Searching for trials in Indianapolis, IN at 400 miles...
-2024-08-02 11:33:22,269 - INFO - No trials found in Indianapolis, IN at 400 miles. Increasing distance...
-2024-08-02 11:33:22,269 - INFO - Searching for trials in Indianapolis, IN at 450 miles...
-2024-08-02 11:33:24,274 - INFO - No trials found in Indianapolis, IN at 450 miles. Increasing distance...
-2024-08-02 11:33:24,275 - INFO - Searching for trials in Indianapolis, IN at 500 miles...
-2024-08-02 11:33:26,277 - INFO - No trials found in Indianapolis, IN at 500 miles. Increasing distance...
-2024-08-02 11:33:26,278 - INFO - Searching for trials in Indianapolis, IN at 550 miles...
-2024-08-02 11:33:28,288 - INFO - No trials found in Indianapolis, IN at 550 miles. Increasing distance...
-2024-08-02 11:33:28,288 - INFO - Searching for trials in Indianapolis, IN at 600 miles...
-2024-08-02 11:33:30,289 - INFO - No trials found in Indianapolis, IN at 600 miles. Increasing distance...
-2024-08-02 11:33:30,293 - INFO - No trials found in Indianapolis, IN up to 600 miles.
-2024-08-02 11:33:30,293 - INFO - Sort and process result: No trials found in Indianapolis, IN up to 600 miles.
-2024-08-02 11:33:30,293 - INFO - Modified super response: Great, I will now look for trials with these characteristics.
+2024-08-02 11:51:05,268 - INFO - Validating Assistant Output
+2024-08-02 11:51:05,268 - INFO - Validating field Age: 50
+2024-08-02 11:51:05,268 - INFO - Validating field Gender: Female
+2024-08-02 11:51:05,268 - INFO - Validating field Medical Condition: Upper Respiratory Infections
+2024-08-02 11:51:05,268 - INFO - Validating field Location: Indianapolis, IN
+2024-08-02 11:51:05,268 - INFO - Validating Debug Grid - Latitude: 39.7684, Longitude: -86.1581
+2024-08-02 11:51:05,268 - INFO - User details collected successfully
+2024-08-02 11:51:05,272 - INFO - async_caller_program.py: Data processed successfully.
+2024-08-02 11:51:05,272 - INFO - Number of trials found: 0
+2024-08-02 11:51:05,272 - INFO - No trials found. Number of trials is 0.
+2024-08-02 11:51:05,275 - INFO - Created zero_result.txt as no trials were found.
+2024-08-02 11:51:05,275 - INFO - No trials found.
+2024-08-02 11:51:05,275 - INFO - Searching for trials in Indianapolis, IN at 100 miles...
+2024-08-02 11:51:07,279 - INFO - Updated current_radius_for_search to 100 in config_state.json.
+2024-08-02 11:51:07,279 - INFO - No trials found in Indianapolis, IN at 100 miles. Increasing distance...
+2024-08-02 11:51:07,279 - INFO - Searching for trials in Indianapolis, IN at 150 miles...
+2024-08-02 11:51:09,284 - INFO - Updated current_radius_for_search to 150 in config_state.json.
+2024-08-02 11:51:09,284 - INFO - No trials found in Indianapolis, IN at 150 miles. Increasing distance...
+2024-08-02 11:51:09,284 - INFO - Searching for trials in Indianapolis, IN at 200 miles...
+2024-08-02 11:51:11,286 - INFO - Updated current_radius_for_search to 200 in config_state.json.
+2024-08-02 11:51:11,286 - INFO - No trials found in Indianapolis, IN at 200 miles. Increasing distance...
+2024-08-02 11:51:11,286 - INFO - Searching for trials in Indianapolis, IN at 250 miles...
+2024-08-02 11:51:13,290 - INFO - Updated current_radius_for_search to 250 in config_state.json.
+2024-08-02 11:51:13,290 - INFO - No trials found in Indianapolis, IN at 250 miles. Increasing distance...
+2024-08-02 11:51:13,290 - INFO - Searching for trials in Indianapolis, IN at 300 miles...
+2024-08-02 11:51:15,296 - INFO - Updated current_radius_for_search to 300 in config_state.json.
+2024-08-02 11:51:15,296 - INFO - No trials found in Indianapolis, IN at 300 miles. Increasing distance...
+2024-08-02 11:51:15,296 - INFO - Searching for trials in Indianapolis, IN at 350 miles...
+2024-08-02 11:51:17,299 - INFO - Updated current_radius_for_search to 350 in config_state.json.
+2024-08-02 11:51:17,299 - INFO - No trials found in Indianapolis, IN at 350 miles. Increasing distance...
+2024-08-02 11:51:17,299 - INFO - Searching for trials in Indianapolis, IN at 400 miles...
+2024-08-02 11:51:19,300 - INFO - Updated current_radius_for_search to 400 in config_state.json.
+2024-08-02 11:51:19,300 - INFO - No trials found in Indianapolis, IN at 400 miles. Increasing distance...
+2024-08-02 11:51:19,300 - INFO - Searching for trials in Indianapolis, IN at 450 miles...
+2024-08-02 11:51:21,303 - INFO - Updated current_radius_for_search to 450 in config_state.json.
+2024-08-02 11:51:21,303 - INFO - No trials found in Indianapolis, IN at 450 miles. Increasing distance...
+2024-08-02 11:51:21,303 - INFO - Searching for trials in Indianapolis, IN at 500 miles...
+2024-08-02 11:51:23,307 - INFO - Updated current_radius_for_search to 500 in config_state.json.
+2024-08-02 11:51:23,307 - INFO - No trials found in Indianapolis, IN at 500 miles. Increasing distance...
+2024-08-02 11:51:23,307 - INFO - Searching for trials in Indianapolis, IN at 550 miles...
+2024-08-02 11:51:25,312 - INFO - Updated current_radius_for_search to 550 in config_state.json.
+2024-08-02 11:51:25,312 - INFO - No trials found in Indianapolis, IN at 550 miles. Increasing distance...
+2024-08-02 11:51:25,312 - INFO - Searching for trials in Indianapolis, IN at 600 miles...
+2024-08-02 11:51:27,318 - INFO - Updated current_radius_for_search to 600 in config_state.json.
+2024-08-02 11:51:27,318 - INFO - No trials found in Indianapolis, IN at 600 miles. Increasing distance...
+2024-08-02 11:51:27,318 - INFO - No trials found in Indianapolis, IN up to 600 miles.
+
+Consider modifying your search criteria, such as trying a different location or condition.
+
+2024-08-02 11:51:27,318 - INFO - Sort and process result: No trials found in Indianapolis, IN up to 600 miles.
+
+Consider modifying your search criteria, such as trying a different location or condition.
+
+2024-08-02 11:51:27,318 - INFO - Modified super response: Great! I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 - Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 11:33:30,293 - INFO - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
+2024-08-02 11:51:27,318 - INFO - Response from MedicalAssistant: Great! I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 - Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 11:33:30,293 - INFO - Assistant response after routing: Great, I will now look for trials with these characteristics.
+2024-08-02 11:51:27,318 - INFO - Assistant response after routing: Great! I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 - Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
-2024-08-02 11:33:30,293 - INFO - User input: y
-2024-08-02 11:33:30,293 - INFO - Assistant response: Great, I will now look for trials with these characteristics.
+2024-08-02 11:51:27,319 - INFO - User input: y
+2024-08-02 11:51:27,319 - INFO - Assistant response: Great! I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Pharyngitis
+- Medical Condition: Upper Respiratory Infections
 - Location: Indianapolis, IN
 - Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
