@@ -1,4 +1,5 @@
 # ./API_actions/output_sort.py
+
 import logging
 import json
 import sys
@@ -6,7 +7,6 @@ import os
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from display_in_terminal.main import main as display_main
-from increase_radius import increase_radius  # Import the increase_radius function
 
 display_types = ["condensed", "detailed", "questions"]
 json_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../API_response/output_final_big.json'))
@@ -14,14 +14,7 @@ STATE_FILE_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 
 
 logger = logging.getLogger(__name__)
 
-def notify_router(message):
-    notification_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'router_notification.txt'))
-    with open(notification_file, 'w') as file:
-        file.write(message)
-    logger.info(f"Router notification sent: {message}")
-
 def sort_and_process_trials(num_trials):
-
     logger.info(f"Number of trials found: {num_trials}")
     print(f"Number of trials found: {num_trials}")
 
@@ -33,9 +26,6 @@ def sort_and_process_trials(num_trials):
     elif num_trials == 0:
         logger.info("No trials found. Number of trials is 0.")
         print("No trials found. Number of trials is 0.")
-        # Increase the radius directly
-        increase_radius(STATE_FILE_PATH)
-        notify_router("No trials found. Switching to terminal message printer.")
         return 'none_found'
 
     elif 1 <= num_trials <= 5:
@@ -56,7 +46,6 @@ def sort_and_process_trials(num_trials):
         return 'error'
 
 def main(stats_file):
-
     logger.info(f"Starting output_sort.py with stats_file: {stats_file}")
 
     if not os.path.exists(stats_file):

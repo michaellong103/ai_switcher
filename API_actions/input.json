@@ -1,8 +1,8 @@
 {
     "Age": "50",
     "Gender": "Female",
-    "Medical Condition": "Triple-Negative Breast Cancer",
-    "Location": "Indianapolis, IN",
-    "Latitude": "39.7684",
-    "Longitude": "-86.1581"
+    "Medical Condition": "Triple Negative Breast Cancer",
+    "Location": "Los Angeles, CA",
+    "Latitude": "34.0522",
+    "Longitude": "-118.2437"
 }
