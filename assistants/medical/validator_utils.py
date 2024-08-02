@@ -12,15 +12,7 @@ special_characters_pattern = re.compile(r'[!@#$%^&*()?":{}|<>]')
 square_brackets_pattern = re.compile(r'\[\s*\]')
 
 def validate_medical_condition(response):
-    """
-    Validates if the medical condition is in the predefined list of common medical conditions.
-    
-    Parameters:
-    response (str): The response text to be checked.
-    
-    Returns:
-    str: A message indicating whether more information is needed or if the field passes.
-    """
+
     # Extract the medical condition from the response
     condition_match = re.search(r'Medical Condition:\s*([^\n]+)', response)
     
@@ -33,28 +25,11 @@ def validate_medical_condition(response):
     return "The medical condition needs to be completed."
 
 def check_special_characters(value):
-    """
-    Check if the provided value contains any special characters.
-    
-    Parameters:
-    value (str): The value to be checked.
-    
-    Returns:
-    bool: True if no special characters are found, False otherwise.
-    """
+
     return not bool(special_characters_pattern.search(value))
 
 def is_complete_response(response):
-    """
-    Check if the response is complete based on the absence of incomplete keywords,
-    special characters, and empty fields.
-    
-    Parameters:
-    response (str): The response text to be checked.
-    
-    Returns:
-    bool: True if the response is complete, False otherwise.
-    """
+
     # Check if any incomplete keyword is present in the response
     keyword_match = incomplete_keywords_pattern.search(response)
     if keyword_match:

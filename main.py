@@ -17,7 +17,7 @@ init(autoreset=True)
 log_directory = "logs"
 
 def delete_logs():
-    """Delete log files in the log directory."""
+
     if os.path.exists(log_directory):
         for log_file in os.listdir(log_directory):
             file_path = os.path.join(log_directory, log_file)
@@ -54,7 +54,7 @@ class TruncateFormatter(logging.Formatter):
 log_directory = "logs"  # Replace with your actual log directory path
 
 formatter = TruncateFormatter(
-    fmt='%(asctime)s - %(levelname)s - %(message)s',
+    fmt='%(asctime)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s',
     max_length=400  # Set the maximum length for log messages
 )
 

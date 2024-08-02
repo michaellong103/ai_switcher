@@ -1,18 +1,28 @@
 {
     "current_question": "",
-    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Monogenic+Diabetes&filter.geo=distance(39.7684,-86.1581,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
+    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&filter.geo=distance(39.7684,-86.1581,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
     "current_api_params": {
         "Age": "50",
         "Gender": "Female",
-        "Medical Condition": "Monogenic Diabetes",
+        "Medical Condition": "Triple-Negative Breast Cancer",
         "Location": "Indianapolis, IN",
         "Latitude": "39.7684",
         "Longitude": "-86.1581"
     },
     "stats": {
-        "number_of_trials": 0,
-        "trial_names": [],
-        "nct_numbers": ""
+        "number_of_trials": 9,
+        "trial_names": [
+            "A Study Evaluating Bemarituzumab in Solid Tumors With Fibroblast Growth Factor Receptor 2b (FGFR2b) Overexpression",
+            "Phase II Trial of Carboplatin +/- Tocilizumab for Metastatic Triple Negative and ER-low Breast Cancers",
+            "Study to Determine the Safety, Tolerability, Pharmacokinetics and Recommended Phase 2 Dose (RP2D) of Livmoniplimab (ABBV-151) as a Single Agent and in Combination With Budigalimab (ABBV-181) in Participants With Locally Advanced or Metastatic Solid Tumors",
+            "A Study of SGN-B7H4V in Advanced Solid Tumors",
+            "A Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)",
+            "Circulating Tumor DNA Enriched, Genomically Directed Post-neoadjuvant Trial for Patients With Residual Triple Negative Breast Cancer",
+            "A Phase I/II Study of VLS-1488 in Subjects With Advanced Cancer",
+            "Pembrolizumab vs. Observation in People With Triple-negative Breast Cancer Who Had a Pathologic Complete Response After Chemotherapy Plus Pembrolizumab",
+            "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/NSABP B-63)"
+        ],
+        "nct_numbers": "NCT05325866,NCT05846789,NCT03821935,NCT05194072,NCT04225117,NCT04849364,NCT05902988,NCT05812807,NCT05633654"
     },
-    "current_radius_for_search": 350
+    "current_radius_for_search": 400
 }

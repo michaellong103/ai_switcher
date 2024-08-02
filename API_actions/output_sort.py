@@ -21,7 +21,7 @@ def notify_router(message):
     logger.info(f"Router notification sent: {message}")
 
 def sort_and_process_trials(num_trials):
-    """Sort and process trials based on the number of trials found."""
+
     logger.info(f"Number of trials found: {num_trials}")
     print(f"Number of trials found: {num_trials}")
 
@@ -56,7 +56,7 @@ def sort_and_process_trials(num_trials):
         return 'error'
 
 def main(stats_file):
-    """Main function to process the stats file and sort trials."""
+
     logger.info(f"Starting output_sort.py with stats_file: {stats_file}")
 
     if not os.path.exists(stats_file):

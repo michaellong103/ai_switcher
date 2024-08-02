@@ -4,7 +4,7 @@ import logging
 import os
 
 def extract_trial_info(node):
-    """Recursively extract 'nctId' and 'briefTitle' from the node."""
+
     nct_ids = []
     brief_titles = []
 
