@@ -1,4 +1,3 @@
-# ./API_actions/api_client.py
 import httpx
 import asyncio
 import logging
@@ -13,35 +12,55 @@ class ClinicalTrialsAPI:
     def __init__(self, page_size=200, status_filter="RECRUITING|NOT_YET_RECRUITING|AVAILABLE"):
         self.page_size = page_size
         self.status_filter = status_filter
+        self.logger = logging.getLogger(__name__)
 
     async def send_query_to_clinicaltrials(self, details, distance):
+        # Add logging to indicate the start of an API query
+        self.logger.info("Starting API query with parameters: %s", details)
+
         details["Distance"] = str(distance)
         all_studies = []
         cursor = None
 
         async with httpx.AsyncClient() as client:
             while True:
+                # Log the construction of the query URL
                 query_url = self.construct_query_url(details, self.status_filter, self.page_size, cursor)
-                
-                # Save the last query URL to the state file
-                self.save_last_query_url(query_url)
+                self.logger.debug("Constructed query URL: %s", query_url)
 
-                response = await client.get(query_url)
-                if response.status_code == 200:
-                    data = response.json()
-                    studies = data.get('studies', [])
-                    all_studies.extend(studies)
+                try:
+                    # Log the request being sent
+                    self.logger.info("Sending request to API: %s", query_url)
+                    response = await client.get(query_url)
 
-                    cursor = data.get('nextCursor')
-                    if not cursor:
+                    # Log the response status and content
+                    self.logger.debug("Received response with status code: %s", response.status_code)
+                    
+                    if response.status_code == 200:
+                        data = response.json()
+                        studies = data.get('studies', [])
+                        all_studies.extend(studies)
+
+                        cursor = data.get('nextCursor')
+                        if not cursor:
+                            break
+                    else:
+                        self.logger.error("Error %s: %s", response.status_code, response.text)
                         break
-                else:
-                    logging.error(f"Error {response.status_code}: {response.text}")
+
+                except httpx.HTTPStatusError as http_err:
+                    # Log HTTP errors
+                    self.logger.error("HTTP error occurred: %s", http_err)
+                    break
+                except Exception as err:
+                    # Log any other exceptions
+                    self.logger.error("An error occurred: %s", err, exc_info=True)
                     break
 
                 # Ensure at least a 1 second pause between API calls
                 await asyncio.sleep(1)
 
+        self.logger.info("API query completed. Number of studies retrieved: %d", len(all_studies))
         return all_studies
 
     def construct_query_url(self, details, status_filter, page_size, cursor=None):
@@ -67,7 +86,7 @@ class ClinicalTrialsAPI:
 
         query_string = urlencode(query_params, safe="(),|")
         query_url = f"{API_ENDPOINT_CLINICAL_TRIALS}?{query_string}"
-        
+
         return query_url
 
     def save_last_query_url(self, query_url):
@@ -98,8 +117,23 @@ async def query_clinical_trial_by_nct(nct_number):
     }
     
     async with httpx.AsyncClient() as client:
-        # Ensure at least a 1 second pause between API calls
-        await asyncio.sleep(1)
-        
-        response = await client.get(url, headers=headers)
-        return response.json()
+        try:
+            # Ensure at least a 1 second pause between API calls
+            await asyncio.sleep(1)
+
+            # Log the query being made
+            logging.info("Querying clinical trial by NCT number: %s", nct_number)
+            response = await client.get(url, headers=headers)
+
+            # Log the response status and data
+            logging.debug("Received response with status code: %s", response.status_code)
+
+            return response.json()
+
+        except httpx.HTTPStatusError as http_err:
+            # Log HTTP errors
+            logging.error("HTTP error occurred while querying by NCT number: %s", http_err)
+        except Exception as err:
+            # Log any other exceptions
+            logging.error("An error occurred while querying by NCT number: %s", err, exc_info=True)
+

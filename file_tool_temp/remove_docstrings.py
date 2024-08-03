@@ -1,4 +1,4 @@
-# ./remove_docstrings.py
+# ./file_tool_temp/remove_docstrings.py
 import os
 import re
 

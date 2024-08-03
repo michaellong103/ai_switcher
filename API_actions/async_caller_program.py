@@ -1,15 +1,17 @@
-# ./API_actions/async_caller_program.py
-
 import logging
 import os
 import json
 import sys
 
+# Configure logging to display messages to the console for debugging
+
+
 def simulate_api_query(input_file, output_file):
     """
     Simulates an API query and writes the result to an output file.
     """
-    logging.info(f"Simulating API query processing for input file: {input_file}")
+    logging.info("simulate_api_query called.")
+    logging.debug(f"Simulating API query processing for input file: {input_file}")
     
     # Simulate reading from the input file
     if not os.path.exists(input_file):
@@ -36,12 +38,15 @@ def simulate_api_query(input_file, output_file):
         }
     }
 
+    # Log the simulated response data
+    logging.debug(f"Simulated API response data: {json.dumps(response_data, indent=2)}")
+
     # Write the simulated response to the output file
     try:
         with open(output_file, 'w') as f:
             json.dump(response_data, f, indent=4)
             logging.info(f"API response successfully written to '{output_file}'")
-            logging.debug(f"API response data: {json.dumps(response_data, indent=2)}")
+            logging.debug(f"API response data written: {json.dumps(response_data, indent=2)}")
     except Exception as e:
         logging.error(f"Failed to write API response to output file '{output_file}': {e}")
         return False
