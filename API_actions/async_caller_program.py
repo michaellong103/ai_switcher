@@ -1,59 +1,63 @@
 # ./API_actions/async_caller_program.py
-import asyncio
-import subprocess
-import json
-import os
-import sys
+
 import logging
+import os
+import json
+import sys
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
-async def call_api_query(input_file, output_file):
-    if not os.path.exists(input_file):
-        logging.error(f"Error: The input file '{input_file}' does not exist.")
-        return 1, None
-
-    # Resolve the path to api_query.py relative to the current script's directory
-    api_query_script = os.path.abspath(os.path.join(os.path.dirname(__file__), 'api_query.py'))
-
-    try:
-        process = await asyncio.create_subprocess_exec(
-            'python', api_query_script, input_file, output_file,
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE
-        )
-
-        # Wait for the process to complete and capture output
-        stdout, stderr = await process.communicate()
-
-        logging.debug(f"stdout: {stdout.decode()}")
-        logging.debug(f"stderr: {stderr.decode()}")
-
-        if process.returncode == 0:
-            logging.info("api_query.py completed successfully.")
-        else:
-            logging.error(f"api_query.py failed with return code {process.returncode}.")
-            logging.error(f"Error output: {stderr.decode()}")
-
-        return process.returncode, stdout.decode()
-
-    except Exception as e:
-        logging.error(f"Exception occurred while running api_query.py: {e}", exc_info=True)
-        return 1, None
-
-async def main(input_file, output_file):
-    return_code, api_response = await call_api_query(input_file, output_file)
+def simulate_api_query(input_file, output_file):
+    """
+    Simulates an API query and writes the result to an output file.
+    """
+    logging.info(f"Simulating API query processing for input file: {input_file}")
     
-    if return_code == 0:
-        logging.info("The API call is complete, and the files have been written successfully.")
-        response_message = "Loading new data completed successfully."
-    else:
-        logging.error("There was an issue with the API call.")
-        if api_response is None:
-            logging.error("Failed to decode the API response as JSON.")
-        response_message = "Loading new data failed."
+    # Simulate reading from the input file
+    if not os.path.exists(input_file):
+        logging.error(f"Input file '{input_file}' does not exist.")
+        return False
+    
+    try:
+        with open(input_file, 'r') as f:
+            input_data = json.load(f)
+            logging.debug(f"Loaded input data: {json.dumps(input_data, indent=2)}")
+    except json.JSONDecodeError as e:
+        logging.error(f"Failed to decode JSON from input file '{input_file}': {e}")
+        return False
+    except Exception as e:
+        logging.error(f"An unexpected error occurred while reading input file '{input_file}': {e}")
+        return False
 
-    return response_message
+    # Simulate API response
+    response_data = {
+        "status": "success",
+        "data": {
+            "message": "This is a simulated API response",
+            "input_received": input_data
+        }
+    }
+
+    # Write the simulated response to the output file
+    try:
+        with open(output_file, 'w') as f:
+            json.dump(response_data, f, indent=4)
+            logging.info(f"API response successfully written to '{output_file}'")
+            logging.debug(f"API response data: {json.dumps(response_data, indent=2)}")
+    except Exception as e:
+        logging.error(f"Failed to write API response to output file '{output_file}': {e}")
+        return False
+
+    return True
+
+def call_api_query(input_file, output_file):
+    """
+    Calls the simulate_api_query function and handles logging.
+    """
+    logging.info(f"call_api_query called with input_file: {input_file}, output_file: {output_file}")
+    
+    if simulate_api_query(input_file, output_file):
+        logging.info("API query simulation completed successfully.")
+    else:
+        logging.error("API query simulation failed.")
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
@@ -62,6 +66,5 @@ if __name__ == "__main__":
 
     input_file = sys.argv[1]
     output_file = sys.argv[2]
-
-    response_message = asyncio.run(main(input_file, output_file))
-    print(response_message)
+    
+    call_api_query(input_file, output_file)

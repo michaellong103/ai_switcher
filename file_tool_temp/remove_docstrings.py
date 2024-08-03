@@ -1,3 +1,4 @@
+# ./remove_docstrings.py
 import os
 import re
 

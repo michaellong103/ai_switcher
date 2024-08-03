@@ -3,7 +3,6 @@
 import logging
 import os
 import json
-import subprocess
 from colorama import Fore
 from assistants.concrete_assistant import ConcreteAssistant
 from assistants.create_dynamic_assistant import create_dynamic_assistant
@@ -11,6 +10,8 @@ from .medical_assistant_actions import MedicalAssistantActions
 from .system_message import system_message
 from .details_extractor import extract_details
 from .validator_utils import validate_medical_condition, is_complete_response
+from API_actions.async_caller_program import call_api_query
+from tools.query_stats import count_trials
 
 class MedicalAssistant(ConcreteAssistant):
     def __init__(self, model='gpt-3.5-turbo', temperature=1, top_p=1):
@@ -40,64 +41,35 @@ class MedicalAssistant(ConcreteAssistant):
         logging.info("Modified super response: %s", modified_response)
         return modified_response
 
-    def call_async_caller(self, input_file, output_file):
-        # Resolve the path to async_caller_program.py
-        async_caller_script = os.path.abspath(os.path.join('API_actions', 'async_caller_program.py'))
+    def execute_api_query(self, input_file, output_file):
+        # Log the function call with input parameters
+        logging.info(f"Executing API query with input_file: {input_file}, output_file: {output_file}")
 
-        try:
-            # Run the async_caller_program.py synchronously
-            process = subprocess.run(
-                ['python', async_caller_script, input_file, output_file],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                check=True  # Raises CalledProcessError if the command fails
-            )
+        # Directly call the synchronous function
+        return_code, api_response = call_api_query(input_file, output_file)
 
-            stdout = process.stdout.decode()
-            stderr = process.stderr.decode()
-
-            if process.returncode == 0:
-                logging.info("async_caller_program.py completed successfully.")
-            else:
-                logging.error(f"async_caller_program.py failed with return code {process.returncode}.")
-
-            if stderr:
-                logging.error(f"Script Errors:\n {stderr}")
-
-            return process.returncode, stdout
-
-        except subprocess.CalledProcessError as e:
-            logging.error(f"Exception occurred while running async_caller_program.py: {e}")
-            return 1, str(e)
+        if return_code == 0:
+            logging.info("The API query is complete, and the files have been written successfully.")
+            return return_code, api_response
+        else:
+            logging.error("There was an issue with the API query.")
+            return return_code, api_response
 
     def run_query_stats(self):
-        # Resolve the path to query_stats.py
-        query_stats_script = os.path.abspath(os.path.join('tools', 'query_stats.py'))
-
         try:
-            # Run the query_stats.py synchronously
-            process = subprocess.run(
-                ['python', query_stats_script],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE,
-                check=True
-            )
+            logging.info("Running query_stats directly")
+            # Directly call the function to count trials
+            stats_summary = count_trials()
 
-            stdout = process.stdout.decode()
-            stderr = process.stderr.decode()
-
-            if process.returncode == 0:
-                logging.info("query_stats.py completed successfully.")
+            if stats_summary:
+                logging.info("query_stats completed successfully.")
+                return 0, stats_summary
             else:
-                logging.error(f"query_stats.py failed with return code {process.returncode}.")
+                logging.error("query_stats failed with errors.")
+                return 1, "Failed to complete query stats"
 
-            if stderr:
-                logging.error(f"Script Errors:\n {stderr}")
-
-            return process.returncode, stdout
-
-        except subprocess.CalledProcessError as e:
-            logging.error(f"Exception occurred while running query_stats.py: {e}")
+        except Exception as e:
+            logging.error(f"Exception occurred while running query_stats: {e}")
             return 1, str(e)
 
     def modify_response(self, response):
@@ -137,13 +109,13 @@ class MedicalAssistant(ConcreteAssistant):
                         with open(input_file_path, 'w') as json_file:
                             json.dump(details, json_file, indent=4)
 
-                        # Run async_caller_program.py using call_async_caller
+                        # Run API query using execute_api_query
                         try:
-                            result_code, result_output = self.call_async_caller(input_file_path, output_file_path)
+                            result_code, result_output = self.execute_api_query(input_file_path, output_file_path)
 
                         except Exception as e:
-                            logging.error(f"Error running async_caller_program: {e}")
-                            response += f"\nError running async_caller_program: {e}"
+                            logging.error(f"Error executing API query: {e}")
+                            response += f"\nError executing API query: {e}"
 
                         return response  # Return the modified response
                 else:

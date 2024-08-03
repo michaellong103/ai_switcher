@@ -2,46 +2,15 @@
     "current_api_params": {
         "Age": "50",
         "Gender": "Female",
-        "Medical Condition": "Triple Negative Breast Cancer",
-        "Location": "Los Angeles, CA",
-        "Latitude": "34.0522",
-        "Longitude": "-118.2437"
+        "Medical Condition": "Triple-Negative Breast Cancer",
+        "Location": "Tulsa, OK",
+        "Latitude": "36.1540",
+        "Longitude": "-95.9928"
     },
-    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple+Negative+Breast+Cancer&filter.geo=distance(34.0522,-118.2437,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
+    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&filter.geo=distance(36.1540,-95.9928,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
     "stats": {
-        "number_of_trials": 30,
-        "trial_names": [
-            "A Study of Tobemstomig + Nab-Paclitaxel Compared With Pembrolizumab + Nab-Paclitaxel in Participants With Previously Untreated, PD-L1-Positive, Locally-Advanced Unresectable or Metastatic Triple-Negative Breast Cancer",
-            "A Study of BMS-986449 With and Without Nivolumab in Participants With Advanced Solid Tumors",
-            "A Phase 1-2 of ST316 With Selected Advanced Unresectable and Metastatic Solid Tumors",
-            "A Study of NX-1607 in Adults With Advanced Malignancies",
-            "Peri-Operative Immune Checkpoint Inhibition and Cryoablation in Women With Triple-negative Breast Cancer",
-            "Reinvigorating TNBC Response to Immunotherapy With Combination Myeloid Inhibition and Radiation",
-            "A Dose Escalation and Dose Expansion Study of Intratumoral ONM-501 Alone and in Combination With Cemiplimab in Patients With Advanced Solid Tumors and Lymphomas.",
-            "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer",
-            "Phase 1, First-in-human, Dose-finding and Expansion Study to Evaluate XmAb\u00ae808 in Combination With Pembrolizumab in Advanced Solid Tumors",
-            "A Tissue Collection Study in Patients Who Respond to Immune Checkpoint Inhibitors to Identify Targets of Tumor-Reactive T Cells.",
-            "A Study of HMBD-002, a Monoclonal Antibody Targeting VISTA, as Monotherapy and Combined With Pembrolizumab",
-            "NM32-2668 in Adult Patients With Selected Advanced Solid Tumors",
-            "A Study of Navicixizumab Monotherapy or in Combination in Patients With Select Advanced Solid Tumors",
-            "PRO1184 for Advanced Solid Tumors",
-            "Ivermectin and Balstilimab for the Treatment of Metastatic Triple Negative Breast Cancer",
-            "A Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)",
-            "A Dose Finding Phase 1 of Sarilumab Plus Capecitabine in HER2/Neu-Negative Metastatic Breast Cancer and a Single-arm, Historically-controlled Phase 2 Study of Sarilumab Plus Capecitabine in Stage I-III Triple Negative Breast Cancer With High-Risk Residual Disease (EMPOWER)",
-            "Access to Genetic Testing in Underserved Patients With Cancer",
-            "NUV-868 as Monotherapy and in Combination With Olaparib or Enzalutamide in Adult Patients With Advanced Solid Tumors",
-            "Study of XB002 in Subjects With Solid Tumors (JEWEL-101)",
-            "A Phase III Randomised Study to Evaluate Dato-DXd and Durvalumab for Neoadjuvant/Adjuvant Treatment of Triple-Negative or Hormone Receptor-low/HER2-negative Breast Cancer",
-            "I-SPY TRIAL: Neoadjuvant and Personalized Adaptive Novel Agents to Treat Breast Cancer",
-            "First-in-human Study of DS-1062a for Advanced Solid Tumors (TROPION-PanTumor01)",
-            "A Study of BMS-986340 as Monotherapy and in Combination With Nivolumab or Docetaxel in Participants With Advanced Solid Tumors",
-            "CAB-ROR2-ADC Safety and Efficacy Study in Patients With TNBC or Head & Neck Cancer (Ph1) and NSCLC or Melanoma (Ph2)",
-            "A2-ESO-1 TCR-Engineered T Cells for Relapsed/Refractory Advanced or Metastatic NY-ESO-1 Overexpression Positive Triple Negative Breast Cancer",
-            "Pembrolizumab vs. Observation in People With Triple-negative Breast Cancer Who Had a Pathologic Complete Response After Chemotherapy Plus Pembrolizumab",
-            "A Study of Dato-DXd With or Without Durvalumab Versus Investigator's Choice of Therapy in Patients With Stage I-III Triple-negative Breast Cancer Without Pathological Complete Response Following Neoadjuvant Therapy (TROPION-Breast03)",
-            "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/NSABP B-63)",
-            "Neoadjuvant INBRX-106 (Hexavalent OX40 Agonist) in Combination With Pembrolizumab as a Chemotherapy-sparing Regimen for Stage II TNBC (Triple Negative Breast Cancer) Patients"
-        ],
-        "nct_numbers": "NCT05852691,NCT05888831,NCT05848739,NCT05107674,NCT03546686,NCT05491226,NCT06022029,NCT05929768,NCT05585034,NCT05230186,NCT05082610,NCT06299163,NCT05453825,NCT05579366,NCT05318469,NCT04225117,NCT04333706,NCT06422455,NCT05252390,NCT04925284,NCT06112379,NCT01042379,NCT03401385,NCT04895709,NCT03504488,NCT05989828,NCT05812807,NCT05629585,NCT05633654,NCT06353997"
+        "number_of_trials": 0,
+        "trial_names": [],
+        "nct_numbers": ""
     }
 }
