@@ -10,7 +10,7 @@ from .medical_assistant_actions import MedicalAssistantActions
 from .system_message import system_message
 from .details_extractor import extract_details
 from .validator_utils import validate_medical_condition, is_complete_response
-from API_actions.async_caller_program import call_api_query
+from API_query.clinical_trials_query import main as clinical_trials_query_main  # Import the main function
 from tools.query_stats import count_trials
 
 class MedicalAssistant(ConcreteAssistant):
@@ -41,21 +41,33 @@ class MedicalAssistant(ConcreteAssistant):
         logging.info("Modified super response: %s", modified_response)
         return modified_response
 
-    def execute_api_query(self, input_file, output_file):
+    def execute_api_query(self):
+        """
+        Execute the API query using the hardcoded input and output file paths.
+        """
+        # Define file paths
+        input_file_path = './API_query/input.json'
+        output_file_path = './API_response/output_final_big.json'
+
         # Log the function call with input parameters
-        logging.info(f"Executing API query with input_file: {input_file}, output_file: {output_file}")
+        logging.info(f"Executing API query with input_file: {input_file_path}, output_file: {output_file_path}")
 
-        # Directly call the synchronous function
-        return_code, api_response = call_api_query(input_file, output_file)
+        # Ensure the output directory exists
+        os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
 
-        if return_code == 0:
+        # Call the main function from clinical_trials_query with file paths
+        try:
+            clinical_trials_query_main(input_file_path, output_file_path)
             logging.info("The API query is complete, and the files have been written successfully.")
-            return return_code, api_response
-        else:
-            logging.error("There was an issue with the API query.")
-            return return_code, api_response
+            return 0, "API query executed successfully."
+        except Exception as e:
+            logging.error(f"There was an issue with the API query: {e}")
+            return 1, f"Error executing API query: {e}"
 
     def run_query_stats(self):
+        """
+        Run the query stats function to analyze trial data.
+        """
         try:
             logging.info("Running query_stats directly")
             # Directly call the function to count trials
@@ -73,6 +85,9 @@ class MedicalAssistant(ConcreteAssistant):
             return 1, str(e)
 
     def modify_response(self, response):
+        """
+        Modify and validate the assistant's response.
+        """
         if "Does this look correct? (y/n)" in response:
             print("Validating Assistant Output")
             logging.info("Validating Assistant Output")
@@ -95,11 +110,10 @@ class MedicalAssistant(ConcreteAssistant):
                         logging.info("User details collected successfully")
 
                         # Ensure the directory exists
-                        os.makedirs('API_actions', exist_ok=True)
+                        os.makedirs('./API_query', exist_ok=True)
 
-                        # Define the file paths
-                        input_file_path = 'API_actions/input.json'
-                        output_file_path = 'API_response/output_final_big.json'
+                        # Define the file path
+                        input_file_path = './API_query/input.json'
 
                         # Delete the input file if it exists
                         if os.path.exists(input_file_path):
@@ -111,8 +125,8 @@ class MedicalAssistant(ConcreteAssistant):
 
                         # Run API query using execute_api_query
                         try:
-                            result_code, result_output = self.execute_api_query(input_file_path, output_file_path)
-
+                            result_code, result_output = self.execute_api_query()
+                            response += f"\n{result_output}"
                         except Exception as e:
                             logging.error(f"Error executing API query: {e}")
                             response += f"\nError executing API query: {e}"

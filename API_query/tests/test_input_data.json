@@ -1,0 +1,218 @@
+[
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Triple-Negative Breast Cancer",
+    "Location": "Los Angeles, CA",
+    "Latitude": "34.0522",
+    "Longitude": "-118.2437"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Triple-Negative Breast Cancer",
+    "Location": "Indianapolis, IN",
+    "Latitude": "39.7684",
+    "Longitude": "-86.1581"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Triple-Negative Breast Cancer",
+    "Location": "Tulsa, OK",
+    "Latitude": "36.1539",
+    "Longitude": "-95.9928"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Diabetes 2",
+    "Location": "Indianapolis, IN",
+    "Latitude": "39.7684",
+    "Longitude": "-86.1581"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Diabetes 1",
+    "Location": "Indianapolis, IN",
+    "Latitude": "39.7684",
+    "Longitude": "-86.1581"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Upper Respiratory Infection",
+    "Location": "Indianapolis, IN",
+    "Latitude": "39.7684",
+    "Longitude": "-86.1581"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Upper Respiratory Infection",
+    "Location": "Tulsa, OK",
+    "Latitude": "36.1539",
+    "Longitude": "-95.9928"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Asthma",
+    "Location": "Chicago, IL",
+    "Latitude": "41.8781",
+    "Longitude": "-87.6298"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Hypertension",
+    "Location": "Houston, TX",
+    "Latitude": "29.7604",
+    "Longitude": "-95.3698"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Arthritis",
+    "Location": "Phoenix, AZ",
+    "Latitude": "33.4484",
+    "Longitude": "-112.0740"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "COPD",
+    "Location": "Philadelphia, PA",
+    "Latitude": "39.9526",
+    "Longitude": "-75.1652"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Chronic Kidney Disease",
+    "Location": "San Antonio, TX",
+    "Latitude": "29.4241",
+    "Longitude": "-98.4936"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Breast Cancer",
+    "Location": "San Diego, CA",
+    "Latitude": "32.7157",
+    "Longitude": "-117.1611"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Lung Cancer",
+    "Location": "Dallas, TX",
+    "Latitude": "32.7767",
+    "Longitude": "-96.7970"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Diabetes 2",
+    "Location": "San Jose, CA",
+    "Latitude": "37.3382",
+    "Longitude": "-121.8863"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Diabetes 1",
+    "Location": "Austin, TX",
+    "Latitude": "30.2672",
+    "Longitude": "-97.7431"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Upper Respiratory Infection",
+    "Location": "Jacksonville, FL",
+    "Latitude": "30.3322",
+    "Longitude": "-81.6557"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Hypertension",
+    "Location": "Fort Worth, TX",
+    "Latitude": "32.7555",
+    "Longitude": "-97.3308"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Asthma",
+    "Location": "Columbus, OH",
+    "Latitude": "39.9612",
+    "Longitude": "-82.9988"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Arthritis",
+    "Location": "Charlotte, NC",
+    "Latitude": "35.2271",
+    "Longitude": "-80.8431"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "COPD",
+    "Location": "San Francisco, CA",
+    "Latitude": "37.7749",
+    "Longitude": "-122.4194"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Chronic Kidney Disease",
+    "Location": "Indianapolis, IN",
+    "Latitude": "39.7684",
+    "Longitude": "-86.1581"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Breast Cancer",
+    "Location": "Seattle, WA",
+    "Latitude": "47.6062",
+    "Longitude": "-122.3321"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Lung Cancer",
+    "Location": "Denver, CO",
+    "Latitude": "39.7392",
+    "Longitude": "-104.9903"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Diabetes 2",
+    "Location": "Washington, D.C.",
+    "Latitude": "38.9072",
+    "Longitude": "-77.0369"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Diabetes 1",
+    "Location": "Boston, MA",
+    "Latitude": "42.3601",
+    "Longitude": "-71.0589"
+  },
+  {
+    "Age": "50",
+    "Gender": "Female",
+    "Medical Condition": "Upper Respiratory Infection",
+    "Location": "El Paso, TX",
+    "Latitude": "31.7619",
+    "Longitude": "-106.4850"
+  }
+]
