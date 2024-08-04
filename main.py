@@ -8,7 +8,7 @@ from router.conversation_router import ConversationRouter
 from assistants.lunch.lunch_assistant import LunchAssistant
 from assistants.medical.medical_assistant import MedicalAssistant
 from assistants.concrete_assistant import ConcreteAssistant
-from logging_config import configure_logging, delete_logs
+from logging_config import configure_logging, delete_logs, delete_items
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'assistants')))
 
@@ -43,6 +43,7 @@ if __name__ == '__main__':
     # Set default assistant type to "medical" if no argument is provided
     assistant_type = "medical" if len(sys.argv) < 2 else sys.argv[1]
     delete_logs()  # Delete old logs before starting
+    delete_items()  # Delete old logs before starting
     configure_logging()  # Set up logging to file
     logging.info(f"Running main with assistant_type: {assistant_type}")
     main(assistant_type)

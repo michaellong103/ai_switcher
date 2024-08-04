@@ -78,6 +78,34 @@ def delete_logs(log_directory="logs"):
                     print(f"Deleted log file: {file_path}")
             except Exception as e:
                 print(f"Failed to delete {file_path}. Reason: {e}")
+                
+def delete_items(target_directory="API_response", delete_dirs=False):
+    """
+    Deletes all files (and optionally directories) in the specified target directory.
+    
+    :param target_directory: Path to the directory where items should be deleted.
+    :param delete_dirs: Boolean flag indicating whether to delete directories as well.
+    """
+    logging.info(f"Cleaning up items in directory: {target_directory}")
+
+    # Check if the target directory exists
+    if os.path.exists(target_directory):
+        for item_name in os.listdir(target_directory):
+            item_path = os.path.join(target_directory, item_name)
+            
+            try:
+                # Delete files
+                if os.path.isfile(item_path):
+                    os.unlink(item_path)
+                    logging.info(f"Deleted file: {item_path}")
+                # Optionally delete directories
+                elif os.path.isdir(item_path) and delete_dirs:
+                    os.rmdir(item_path)
+                    logging.info(f"Deleted directory: {item_path}")
+            except Exception as e:
+                logging.error(f"Failed to delete {item_path}. Reason: {e}")
+    else:
+        logging.warning(f"Directory does not exist: {target_directory}")
 
 def configure_logging():
     """

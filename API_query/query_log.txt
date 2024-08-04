@@ -1,0 +1,24 @@
+2024-08-04 13:13:49,432 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-04 13:16:03,274 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-04 13:20:14,866 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-04 13:20:23,046 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-04 13:39:43,998 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-04 13:42:37,589 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-04 13:43:10,899 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-04 13:43:26,571 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------

@@ -1,0 +1,10 @@
+2024-08-04 13:17:33,516 - INFO - Cleaning up items in directory: API_response
+2024-08-04 13:17:33,517 - INFO - Deleted file: API_response/output_final_big.json
+2024-08-04 13:20:40,042 - INFO - Cleaning up items in directory: API_response
+2024-08-04 13:42:57,460 - INFO - Cleaning up items in directory: API_response
+2024-08-04 13:42:57,461 - INFO - Deleted file: API_response/output_final_big.json
+2024-08-04 13:43:43,364 - INFO - Cleaning up items in directory: API_response
+2024-08-04 13:44:20,468 - INFO - Cleaning up items in directory: API_response
+2024-08-04 13:44:20,469 - INFO - Deleted file: API_response/output_final_big.json
+2024-08-04 13:48:09,772 - INFO - Cleaning up items in directory: API_response
+2024-08-04 13:48:09,773 - INFO - Deleted file: API_response/output_final_big.json
