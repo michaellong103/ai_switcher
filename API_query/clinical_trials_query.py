@@ -10,10 +10,12 @@ try:
     # Attempt relative import for when running within a package
     from .query_logger import log_query
     from .update_config_state import update_config_state  # Import update_config_state
+    from .update_stats import update_stats  # Import update_stats
 except ImportError:
     # Fall back to absolute import if relative import fails
     from query_logger import log_query
     from update_config_state import update_config_state  # Import update_config_state
+    from update_stats import update_stats  # Import update_stats
 
 # Configure logging to output to both a file and standard output
 logging.basicConfig(
@@ -163,7 +165,6 @@ def main():
     output_file_path_1 = os.path.join(script_dir, "output.json")
     output_file_path_2 = os.path.join(script_dir, "..", "API_response", "finaloutput.json")
 
-
     # Log file paths
     logging.debug("Checking file paths...")
     
@@ -196,6 +197,7 @@ def main():
     config_file_path = os.path.join(script_dir, "..",  "config_state.json")
     
     update_config_state(input_data, config_file_path)
+    update_stats(input_data, config_file_path)
 
     # Fetch data
     clinical_trials_data = fetch_clinical_trials(query_url)
