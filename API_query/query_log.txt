@@ -419,3 +419,41 @@ Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negat
 2024-08-05 08:45:09,487 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
 2024-08-05 08:45:09,563 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
 2024-08-05 08:45:09,563 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-05 09:15:00,439 - INFO - Starting Clinical Trials Query Process
+2024-08-05 09:15:00,439 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-05 09:15:00,440 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-05 09:15:00,440 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-05 09:15:00,440 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-05 09:15:00,440 - INFO - Input data loaded successfully.
+2024-08-05 09:15:00,440 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-05 09:15:00,440 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+2024-08-05 09:15:00,441 - INFO - Config state updated successfully.
+2024-08-05 09:15:00,441 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+2024-08-05 09:15:00,852 - INFO - Data fetched successfully from the API.
+2024-08-05 09:15:00,866 - INFO - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+2024-08-05 09:15:00,866 - INFO - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+2024-08-05 09:15:00,866 - INFO - Stats section updated successfully.
+2024-08-05 09:15:00,912 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-05 09:15:00,957 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-05 09:15:00,957 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-05 09:23:10,142 - INFO - Starting Clinical Trials Query Process
+2024-08-05 09:23:10,143 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-05 09:23:10,143 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-05 09:23:10,143 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-05 09:23:10,143 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-05 09:23:10,143 - INFO - Input data loaded successfully.
+2024-08-05 09:23:10,143 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
+--------------------------------------------------------------------------------
+2024-08-05 09:23:10,143 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+2024-08-05 09:23:10,144 - INFO - Config state updated successfully.
+2024-08-05 09:23:10,144 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+2024-08-05 09:23:10,427 - INFO - Data fetched successfully from the API.
+2024-08-05 09:23:10,436 - INFO - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+2024-08-05 09:23:10,436 - INFO - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+2024-08-05 09:23:10,436 - INFO - Stats section updated successfully.
+2024-08-05 09:23:10,475 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-05 09:23:10,506 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-05 09:23:10,506 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json

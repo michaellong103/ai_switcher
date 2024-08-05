@@ -1,7 +1,8 @@
-# ./logging_config.py
+# logging_config.py
 
 import logging
 import os
+import json
 
 class TruncateFormatter(logging.Formatter):
     """
@@ -78,7 +79,7 @@ def delete_logs(log_directory="logs"):
                     print(f"Deleted log file: {file_path}")
             except Exception as e:
                 print(f"Failed to delete {file_path}. Reason: {e}")
-                
+
 def delete_items(target_directory="API_response", delete_dirs=False):
     """
     Deletes all files (and optionally directories) in the specified target directory.
@@ -106,6 +107,25 @@ def delete_items(target_directory="API_response", delete_dirs=False):
                 logging.error(f"Failed to delete {item_path}. Reason: {e}")
     else:
         logging.warning(f"Directory does not exist: {target_directory}")
+
+def reset_config_state(config_file_path="config_state.json"):
+    """
+    Resets the config_state.json file to an empty state.
+
+    :param config_file_path: Path to the config_state.json file.
+    """
+    empty_state = {
+        "current_api_params": {},
+        "last_clinical_trials_api_url": "",
+        "stats": {}
+    }
+
+    try:
+        with open(config_file_path, 'w') as config_file:
+            json.dump(empty_state, config_file, indent=4)
+        logging.info(f"Config state reset successfully: {config_file_path}")
+    except Exception as e:
+        logging.error(f"Failed to reset config state: {e}")
 
 def configure_logging():
     """

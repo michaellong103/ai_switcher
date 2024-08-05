@@ -17,7 +17,6 @@ except ImportError:
     from update_config_state import update_config_state  # Import update_config_state
     from update_stats import update_stats_from_response  # Import update_stats
 
-# Configure logging to output to both a file and standard output
 logging.basicConfig(
     level=logging.DEBUG,  # Set to DEBUG to capture detailed logs
     format='%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s',

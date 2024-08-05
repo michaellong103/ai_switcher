@@ -32,3 +32,12 @@
 2024-08-04 17:10:38,119 - INFO - Deleted file: API_response/finaloutput.json
 2024-08-04 17:12:00,522 - INFO - Cleaning up items in directory: API_response
 2024-08-04 17:12:00,523 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-05 08:56:40,989 - INFO - Cleaning up items in directory: API_response
+2024-08-05 08:56:40,991 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-05 09:15:07,329 - INFO - Cleaning up items in directory: API_response
+2024-08-05 09:15:07,329 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-05 09:58:43,247 - INFO - Cleaning up items in directory: API_response
+2024-08-05 09:58:43,248 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-05 10:00:31,574 - INFO - Cleaning up items in directory: API_response
+2024-08-05 10:00:31,575 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-05 10:00:31,575 - INFO - Config state reset successfully: config_state.json
