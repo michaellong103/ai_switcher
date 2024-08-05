@@ -2,6 +2,18 @@
 
 import json
 import os
+import logging
+import sys
+
+# Setup logging
+logging.basicConfig(
+    level=logging.DEBUG,  # Use DEBUG for more detailed output
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("clinical_trials_query.log"),
+        logging.StreamHandler(sys.stdout)
+    ]
+)
 
 def load_input(file_path):
     """
@@ -10,8 +22,18 @@ def load_input(file_path):
     :param file_path: Path to the input JSON file
     :return: Data extracted from the JSON file as a dictionary
     """
-    with open(file_path, 'r') as f:
-        return json.load(f)
+    if not os.path.exists(file_path):
+        logging.error(f"Input file not found: {file_path}")
+        raise FileNotFoundError(f"Input file not found: {file_path}")
+
+    try:
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+            logging.info(f"Input data loaded from {file_path}")
+            return data
+    except json.JSONDecodeError as e:
+        logging.error(f"JSON decode error: {e}")
+        raise
 
 def construct_query_url(data, radius=100):
     """
@@ -30,7 +52,7 @@ def construct_query_url(data, radius=100):
         "filter.overallStatus": "RECRUITING|NOT_YET_RECRUITING|AVAILABLE",
         "pageSize": 200
     }
-    
+
     query_url = f"{base_url}?{'&'.join(f'{key}={value}' for key, value in params.items())}"
     return query_url
 
@@ -69,15 +91,26 @@ def update_config_state(input_data, config_file_path):
     with open(config_file_path, 'w') as config_file:
         json.dump(config_data, config_file, indent=4)
 
-    print("Config state updated successfully.")
+    logging.info("Config state updated successfully.")
 
 def main():
-    # Paths for the input JSON file and config_state.json
-    input_file_path = "input.json"  # Ensure this file exists
-    config_file_path = os.path.join("..", "config_state.json")
+    # Calculate absolute paths based on the current script's location
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    input_file_path = os.path.join(script_dir, "input.json")
+
+    # Path for config_state.json
+    config_file_path = os.path.join(script_dir, "..", "config_state.json")
 
     # Load input data from the input JSON file
-    input_data = load_input(input_file_path)
+    try:
+        input_data = load_input(input_file_path)
+        logging.info("Input data loaded successfully.")
+    except FileNotFoundError as e:
+        logging.error(e)
+        sys.exit(1)
+    except json.JSONDecodeError as e:
+        logging.error(f"JSON decode error: {e}")
+        sys.exit(1)
 
     # Update the config state with the input data and query URL
     update_config_state(input_data, config_file_path)

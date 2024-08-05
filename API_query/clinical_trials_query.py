@@ -3,7 +3,6 @@
 import os
 import json
 import requests
-import argparse
 import sys
 import logging
 
@@ -16,10 +15,10 @@ except ImportError:
     from query_logger import log_query
     from update_config_state import update_config_state  # Import update_config_state
 
-# Set up logging configuration
+# Configure logging to output to both a file and standard output
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
+    level=logging.DEBUG,  # Set to DEBUG to capture detailed logs
+    format='%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s',
     handlers=[
         logging.FileHandler("clinical_trials_query.log"),
         logging.StreamHandler(sys.stdout)
@@ -132,6 +131,11 @@ def save_output(data, file_path):
     :param file_path: Path to the output JSON file
     """
     try:
+        # Only create directories if the path includes a directory
+        dir_name = os.path.dirname(file_path)
+        if dir_name:
+            os.makedirs(dir_name, exist_ok=True)
+
         with open(file_path, 'w') as f:
             json.dump(data, f, indent=2)
         logging.info(f"Data successfully saved to {file_path}")
@@ -139,8 +143,39 @@ def save_output(data, file_path):
         logging.error(f"Failed to write output data to {file_path}: {e}")
         raise
 
-def main(input_file_path, output_file_path):
+def check_file_path(file_path):
+    """
+    Check if the given file path exists and log the result.
+
+    :param file_path: Path to the file to check
+    """
+    if os.path.exists(file_path):
+        logging.info(f"The file '{file_path}' exists.")
+    else:
+        logging.error(f"The file '{file_path}' does not exist.")
+
+def main():
     logging.info("Starting Clinical Trials Query Process")
+    
+    # Hard-coded paths for the input and output JSON files
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    input_file_path = os.path.join(script_dir, "input.json")
+    output_file_path_1 = os.path.join(script_dir, "output.json")
+    output_file_path_2 = os.path.join(script_dir, "..", "API_response", "finaloutput.json")
+
+
+    # Log file paths
+    logging.debug("Checking file paths...")
+    
+    # Check each file path
+    logging.debug("Checking input file path...")
+    check_file_path(input_file_path)
+
+    logging.debug("Checking output file path 1...")
+    check_file_path(output_file_path_1)
+
+    logging.debug("Checking output file path 2...")
+    check_file_path(output_file_path_2)
     
     # Load input data
     try:
@@ -157,7 +192,9 @@ def main(input_file_path, output_file_path):
     query_url = construct_query_url(input_data)
 
     # Update the config state file with current API parameters and query URL
-    config_file_path = os.path.join("..", "config_state.json")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    config_file_path = os.path.join(script_dir, "..",  "config_state.json")
+    
     update_config_state(input_data, config_file_path)
 
     # Fetch data
@@ -167,18 +204,14 @@ def main(input_file_path, output_file_path):
         # Extract NCT IDs
         nct_ids = extract_nct_ids(clinical_trials_data)
 
-        # Save data to output
-        save_output(clinical_trials_data, output_file_path)
-        logging.info(f"Results saved to {output_file_path}")
+        # Save data to output files
+        save_output(clinical_trials_data, output_file_path_1)
+        save_output(clinical_trials_data, output_file_path_2)
+        logging.info(f"Results saved to {output_file_path_1} and {output_file_path_2}")
     else:
         logging.error("Failed to fetch clinical trials data.")
 
 if __name__ == "__main__":
-    # Set up argument parser
-    parser = argparse.ArgumentParser(description='Clinical Trials Query')
-    parser.add_argument('input_file', type=str, help='Path to the input JSON file')
-    parser.add_argument('output_file', type=str, help='Path to the output JSON file')
-    
-    # Parse arguments
-    args = parser.parse_args()
-    main(args.input_file, args.output_file)
+    logging.debug("Starting main function.")
+    main()
+    logging.debug("Finished executing main function.")

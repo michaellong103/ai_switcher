@@ -57,7 +57,7 @@ class MedicalAssistant(ConcreteAssistant):
 
         # Call the main function from clinical_trials_query with file paths
         try:
-            clinical_trials_query_main(input_file_path, output_file_path)
+            clinical_trials_query_main()
             logging.info("The API query is complete, and the files have been written successfully.")
             return 0, "API query executed successfully."
         except Exception as e:

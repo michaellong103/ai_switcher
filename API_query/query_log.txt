@@ -22,3 +22,315 @@ Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negat
 2024-08-04 13:43:26,571 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
 Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Indianapolis, IN', 'Latitude': '39.7684', 'Longitude': '-86.1581'}
 --------------------------------------------------------------------------------
+2024-08-04 16:11:43,611 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:11:43,612 - INFO - Input data loaded from input.json
+2024-08-04 16:11:43,612 - INFO - Input data loaded successfully.
+2024-08-04 16:11:43,612 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Tulsa, OK', 'Latitude': '36.1540', 'Longitude': '-95.9928'}
+--------------------------------------------------------------------------------
+2024-08-04 16:11:43,612 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+2024-08-04 16:11:43,612 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+2024-08-04 16:11:58,038 - ERROR - Timeout error occurred: HTTPSConnectionPool(host='clinicaltrials.gov', port=443): Read timed out. (read timeout=10)
+2024-08-04 16:11:58,039 - ERROR - Failed to fetch clinical trials data.
+2024-08-04 16:17:19,630 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:17:19,630 - INFO - Input data loaded from input.json
+2024-08-04 16:17:19,630 - INFO - Input data loaded successfully.
+2024-08-04 16:17:19,630 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Tulsa, OK', 'Latitude': '36.1540', 'Longitude': '-95.9928'}
+--------------------------------------------------------------------------------
+2024-08-04 16:17:19,630 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+2024-08-04 16:17:19,632 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+2024-08-04 16:17:20,027 - INFO - Data fetched successfully from the API.
+2024-08-04 16:17:20,029 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:17:20,029 - INFO - Data successfully saved to output.json
+2024-08-04 16:17:20,029 - INFO - Results saved to output.json
+2024-08-04 16:17:38,309 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:17:38,309 - INFO - Input data loaded from input.json
+2024-08-04 16:17:38,309 - INFO - Input data loaded successfully.
+2024-08-04 16:17:38,309 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Tulsa, OK', 'Latitude': '36.1540', 'Longitude': '-95.9928'}
+--------------------------------------------------------------------------------
+2024-08-04 16:17:38,309 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+2024-08-04 16:17:38,310 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+2024-08-04 16:17:38,656 - INFO - Data fetched successfully from the API.
+2024-08-04 16:17:38,658 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:17:38,658 - INFO - Data successfully saved to output.json
+2024-08-04 16:17:38,658 - INFO - Results saved to output.json
+2024-08-04 16:17:47,257 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:17:47,258 - INFO - Input data loaded from input.json
+2024-08-04 16:17:47,258 - INFO - Input data loaded successfully.
+2024-08-04 16:17:47,258 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Tulsa, OK', 'Latitude': '36.1540', 'Longitude': '-95.9928'}
+--------------------------------------------------------------------------------
+2024-08-04 16:17:47,258 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+2024-08-04 16:17:47,258 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(36.1540,-95.9928,10)
+2024-08-04 16:17:47,657 - INFO - Data fetched successfully from the API.
+2024-08-04 16:17:47,659 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:17:47,660 - INFO - Data successfully saved to output.json
+2024-08-04 16:17:47,660 - INFO - Results saved to output.json
+2024-08-04 16:18:59,524 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:18:59,525 - INFO - Input data loaded from input.json
+2024-08-04 16:18:59,525 - INFO - Input data loaded successfully.
+2024-08-04 16:18:59,525 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:18:59,525 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:18:59,525 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:19:00,358 - INFO - Data fetched successfully from the API.
+2024-08-04 16:19:00,379 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:19:00,466 - INFO - Data successfully saved to output.json
+2024-08-04 16:19:00,466 - INFO - Results saved to output.json
+2024-08-04 16:19:12,291 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:19:12,291 - INFO - Input data loaded from input.json
+2024-08-04 16:19:12,291 - INFO - Input data loaded successfully.
+2024-08-04 16:19:12,291 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:19:12,291 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:19:12,292 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:19:13,114 - INFO - Data fetched successfully from the API.
+2024-08-04 16:19:13,137 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:19:13,250 - INFO - Data successfully saved to output.json
+2024-08-04 16:19:13,250 - INFO - Results saved to output.json
+2024-08-04 16:21:21,431 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:21:21,431 - INFO - Input data loaded from input.json
+2024-08-04 16:21:21,431 - INFO - Input data loaded successfully.
+2024-08-04 16:21:21,431 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:21:21,432 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:21:21,432 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:21:22,243 - INFO - Data fetched successfully from the API.
+2024-08-04 16:21:22,265 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:21:22,385 - INFO - Data successfully saved to output.json
+2024-08-04 16:21:22,385 - INFO - Results saved to output.json
+2024-08-04 16:23:11,250 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:23:11,251 - INFO - Input data loaded from input.json
+2024-08-04 16:23:11,251 - INFO - Input data loaded successfully.
+2024-08-04 16:23:11,251 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437', 'Distannce': 20}
+--------------------------------------------------------------------------------
+2024-08-04 16:23:11,251 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:23:11,252 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:23:12,068 - INFO - Data fetched successfully from the API.
+2024-08-04 16:23:12,090 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:23:12,170 - INFO - Data successfully saved to output.json
+2024-08-04 16:23:12,170 - INFO - Results saved to output.json
+2024-08-04 16:23:59,649 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:23:59,649 - INFO - Input data loaded from input.json
+2024-08-04 16:23:59,649 - INFO - Input data loaded successfully.
+2024-08-04 16:23:59,649 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437', 'Distance': 20}
+--------------------------------------------------------------------------------
+2024-08-04 16:23:59,649 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:23:59,650 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:24:00,487 - INFO - Data fetched successfully from the API.
+2024-08-04 16:24:00,512 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:24:00,603 - INFO - Data successfully saved to output.json
+2024-08-04 16:24:00,603 - INFO - Results saved to output.json
+2024-08-04 16:31:06,812 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:31:06,812 - INFO - Input data loaded from input.json
+2024-08-04 16:31:06,812 - INFO - Input data loaded successfully.
+2024-08-04 16:31:06,812 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:31:06,813 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:31:06,813 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:31:07,692 - INFO - Data fetched successfully from the API.
+2024-08-04 16:31:07,713 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:31:07,713 - ERROR - Failed to write output data to output.json: [Errno 2] No such file or directory: ''
+2024-08-04 16:34:07,530 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:34:07,530 - INFO - Input data loaded from input.json
+2024-08-04 16:34:07,530 - INFO - Input data loaded successfully.
+2024-08-04 16:34:07,530 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:34:07,530 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:34:07,532 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:34:08,333 - INFO - Data fetched successfully from the API.
+2024-08-04 16:34:08,353 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:34:08,430 - INFO - Data successfully saved to output.json
+2024-08-04 16:34:08,508 - INFO - Data successfully saved to ../API_response/finaloutput.json
+2024-08-04 16:34:08,508 - INFO - Results saved to output.json and ../API_response/finaloutput.json
+2024-08-04 16:45:56,241 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:45:56,242 - INFO - The file 'input.json' exists.
+2024-08-04 16:45:56,242 - ERROR - The file 'output.json' does not exist.
+2024-08-04 16:45:56,242 - ERROR - The file '../API_response/finaloutput.json' does not exist.
+2024-08-04 16:45:56,243 - INFO - Input data loaded from input.json
+2024-08-04 16:45:56,243 - INFO - Input data loaded successfully.
+2024-08-04 16:45:56,243 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:45:56,243 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:45:56,244 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:45:56,959 - INFO - Data fetched successfully from the API.
+2024-08-04 16:45:56,982 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:45:57,069 - INFO - Data successfully saved to output.json
+2024-08-04 16:45:57,145 - INFO - Data successfully saved to ../API_response/finaloutput.json
+2024-08-04 16:45:57,145 - INFO - Results saved to output.json and ../API_response/finaloutput.json
+2024-08-04 16:51:20,956 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:51:20,957 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 16:51:20,957 - ERROR - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' does not exist.
+2024-08-04 16:51:20,957 - ERROR - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' does not exist.
+2024-08-04 16:51:20,958 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 16:51:20,958 - INFO - Input data loaded successfully.
+2024-08-04 16:51:20,958 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:51:20,958 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:51:20,959 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:51:21,732 - INFO - Data fetched successfully from the API.
+2024-08-04 16:51:21,755 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:51:21,842 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 16:51:21,918 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:51:21,918 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:52:38,834 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:52:38,834 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 16:52:38,835 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-04 16:52:38,835 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 16:52:38,835 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 16:52:38,835 - INFO - Input data loaded successfully.
+2024-08-04 16:52:38,835 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:52:38,836 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:52:38,837 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:52:39,739 - INFO - Data fetched successfully from the API.
+2024-08-04 16:52:39,760 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:52:39,836 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 16:52:39,911 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:52:39,911 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:54:01,043 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:54:01,043 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 16:54:01,043 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-04 16:54:01,043 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 16:54:01,043 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 16:54:01,043 - INFO - Input data loaded successfully.
+2024-08-04 16:54:01,043 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:54:01,043 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:54:01,044 - INFO - Config state updated successfully.
+2024-08-04 16:54:01,044 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:54:01,807 - INFO - Data fetched successfully from the API.
+2024-08-04 16:54:01,830 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:54:01,938 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 16:54:02,042 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:54:02,042 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:58:32,755 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:58:32,755 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 16:58:32,755 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-04 16:58:32,755 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 16:58:32,756 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 16:58:32,756 - INFO - Input data loaded successfully.
+2024-08-04 16:58:32,756 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:58:32,756 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:58:32,757 - INFO - Config state updated successfully.
+2024-08-04 16:58:32,757 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:58:33,586 - INFO - Data fetched successfully from the API.
+2024-08-04 16:58:33,608 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:58:33,687 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 16:58:33,762 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:58:33,762 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:58:43,374 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:58:43,374 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 16:58:43,374 - ERROR - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' does not exist.
+2024-08-04 16:58:43,374 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 16:58:43,375 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 16:58:43,375 - INFO - Input data loaded successfully.
+2024-08-04 16:58:43,375 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:58:43,375 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:58:43,376 - INFO - Config state updated successfully.
+2024-08-04 16:58:43,376 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:58:44,188 - INFO - Data fetched successfully from the API.
+2024-08-04 16:58:44,207 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:58:44,285 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 16:58:44,358 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:58:44,358 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:59:03,941 - INFO - Starting Clinical Trials Query Process
+2024-08-04 16:59:03,941 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 16:59:03,941 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-04 16:59:03,941 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 16:59:03,942 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 16:59:03,942 - INFO - Input data loaded successfully.
+2024-08-04 16:59:03,942 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 16:59:03,942 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:59:03,942 - INFO - Config state updated successfully.
+2024-08-04 16:59:03,942 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 16:59:04,703 - INFO - Data fetched successfully from the API.
+2024-08-04 16:59:04,734 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 16:59:04,828 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 16:59:04,918 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 16:59:04,918 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 17:05:08,138 - INFO - Starting Clinical Trials Query Process
+2024-08-04 17:05:08,139 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 17:05:08,139 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-04 17:05:08,139 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 17:05:08,139 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 17:05:08,139 - INFO - Input data loaded successfully.
+2024-08-04 17:05:08,140 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 17:05:08,140 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 17:05:08,140 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 17:05:08,946 - INFO - Data fetched successfully from the API.
+2024-08-04 17:05:08,967 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 17:05:09,052 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 17:05:09,133 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 17:05:09,133 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 17:05:32,695 - INFO - Starting Clinical Trials Query Process
+2024-08-04 17:05:32,695 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 17:05:32,695 - ERROR - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' does not exist.
+2024-08-04 17:05:32,695 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 17:05:32,696 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 17:05:32,696 - INFO - Input data loaded successfully.
+2024-08-04 17:05:32,696 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 17:05:32,696 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 17:05:32,696 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 17:05:33,450 - INFO - Data fetched successfully from the API.
+2024-08-04 17:05:33,473 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 17:05:33,563 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 17:05:33,639 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 17:05:33,639 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 17:06:37,022 - INFO - Starting Clinical Trials Query Process
+2024-08-04 17:06:37,022 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 17:06:37,022 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-04 17:06:37,022 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 17:06:37,023 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 17:06:37,023 - INFO - Input data loaded successfully.
+2024-08-04 17:06:37,023 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 17:06:37,023 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 17:06:37,025 - INFO - Config state updated successfully.
+2024-08-04 17:06:37,025 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 17:06:37,851 - INFO - Data fetched successfully from the API.
+2024-08-04 17:06:37,874 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 17:06:37,969 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 17:06:38,102 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 17:06:38,102 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 17:11:11,207 - INFO - Starting Clinical Trials Query Process
+2024-08-04 17:11:11,208 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-04 17:11:11,208 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-04 17:11:11,208 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-04 17:11:11,209 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-04 17:11:11,209 - INFO - Input data loaded successfully.
+2024-08-04 17:11:11,209 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'}
+--------------------------------------------------------------------------------
+2024-08-04 17:11:11,209 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 17:11:11,210 - INFO - Config state updated successfully.
+2024-08-04 17:11:11,210 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+2024-08-04 17:11:11,999 - INFO - Data fetched successfully from the API.
+2024-08-04 17:11:12,019 - WARNING - Query returned no studies or no NCT IDs found.
+2024-08-04 17:11:12,102 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-04 17:11:12,198 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-04 17:11:12,198 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
