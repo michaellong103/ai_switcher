@@ -10,12 +10,12 @@ try:
     # Attempt relative import for when running within a package
     from .query_logger import log_query
     from .update_config_state import update_config_state  # Import update_config_state
-    from .update_stats import update_stats  # Import update_stats
+    from .update_stats import update_stats_from_response  # Import update_stats
 except ImportError:
     # Fall back to absolute import if relative import fails
     from query_logger import log_query
     from update_config_state import update_config_state  # Import update_config_state
-    from update_stats import update_stats  # Import update_stats
+    from update_stats import update_stats_from_response  # Import update_stats
 
 # Configure logging to output to both a file and standard output
 logging.basicConfig(
@@ -115,8 +115,8 @@ def extract_nct_ids(response_data):
     # Traverse the response to extract NCT IDs
     if "studies" in response_data:
         for study in response_data["studies"]:
-            if "nctId" in study:
-                nct_ids.append(study["nctId"])
+            if "nctId" in study["protocolSection"]["identificationModule"]:
+                nct_ids.append(study["protocolSection"]["identificationModule"]["nctId"])
 
     if nct_ids:
         logging.info(f"Extracted NCT IDs: {', '.join(nct_ids)}")
@@ -193,18 +193,16 @@ def main():
     query_url = construct_query_url(input_data)
 
     # Update the config state file with current API parameters and query URL
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    config_file_path = os.path.join(script_dir, "..",  "config_state.json")
+    config_file_path = os.path.join(script_dir, "..", "config_state.json")
     
     update_config_state(input_data, config_file_path)
-    update_stats(input_data, config_file_path)
 
     # Fetch data
     clinical_trials_data = fetch_clinical_trials(query_url)
 
     if clinical_trials_data:
-        # Extract NCT IDs
-        nct_ids = extract_nct_ids(clinical_trials_data)
+        # Update stats with response data
+        update_stats_from_response(clinical_trials_data, config_file_path)
 
         # Save data to output files
         save_output(clinical_trials_data, output_file_path_1)

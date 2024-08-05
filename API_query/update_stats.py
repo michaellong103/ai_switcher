@@ -35,21 +35,49 @@ def load_config_state(config_file_path):
         logging.error(f"JSON decode error: {e}")
         raise
 
-def update_stats(config_data, number_of_trials, trial_names, nct_numbers):
+def update_stats_from_response(response_data, config_file_path):
     """
-    Update the stats section in the config data.
+    Update the stats section in the config_state.json file with data from the API response.
 
-    :param config_data: Existing config data as a dictionary
-    :param number_of_trials: Number of trials to update
-    :param trial_names: List of trial names to update
-    :param nct_numbers: String of NCT numbers to update
+    :param response_data: The JSON response data from the API
+    :param config_file_path: Path to the config_state.json file
     """
-    config_data["stats"] = {
-        "number_of_trials": number_of_trials,
-        "trial_names": trial_names,
-        "nct_numbers": nct_numbers
-    }
-    logging.info("Stats section updated successfully.")
+    try:
+        # Extract trial information from the API response
+        studies = response_data.get("studies", [])
+        number_of_trials = len(studies)
+        trial_names = []
+        nct_numbers = []
+
+        for study in studies:
+            try:
+                # Extract nctId and briefTitle for each study
+                nct_id = study["protocolSection"]["identificationModule"]["nctId"]
+                brief_title = study["protocolSection"]["identificationModule"]["briefTitle"]
+
+                nct_numbers.append(nct_id)
+                trial_names.append(brief_title)
+            except KeyError as e:
+                logging.warning(f"Missing expected key in study data: {e}")
+                continue
+
+        # Load the existing config data
+        config_data = load_config_state(config_file_path)
+
+        # Update the stats section in the config data
+        config_data["stats"] = {
+            "number_of_trials": number_of_trials,
+            "trial_names": trial_names,
+            "nct_numbers": ', '.join(nct_numbers)
+        }
+
+        # Save the updated config data back to the file
+        save_config_state(config_data, config_file_path)
+
+        logging.info("Stats section updated successfully.")
+    except Exception as e:
+        logging.error(f"Failed to update stats: {e}")
+        raise
 
 def save_config_state(config_data, config_file_path):
     """
@@ -71,26 +99,23 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_file_path = os.path.join(script_dir, "..", "config_state.json")
 
-    # Load existing config data
-    try:
-        config_data = load_config_state(config_file_path)
-        logging.info("Config data loaded successfully.")
-    except FileNotFoundError as e:
-        logging.error(e)
-        sys.exit(1)
-    except json.JSONDecodeError as e:
-        logging.error(f"JSON decode error: {e}")
-        sys.exit(1)
+    # Example response data, replace with actual API response
+    response_data = {
+      "studies": [
+        {
+          "protocolSection": {
+            "identificationModule": {
+              "nctId": "NCT05491226",
+              "briefTitle": "Reinvigorating TNBC Response to Immunotherapy With Combination Myeloid Inhibition and Radiation"
+            }
+          }
+        },
+        # Add more studies as needed
+      ]
+    }
 
-    # Update the stats section with new data
-    number_of_trials = 5  # Example value, replace with actual data
-    trial_names = ["Trial A", "Trial B", "Trial C", "Trial D", "Trial E"]  # Example list
-    nct_numbers = "NCT001, NCT002, NCT003, NCT004, NCT005"  # Example NCT numbers
-
-    update_stats(config_data, number_of_trials, trial_names, nct_numbers)
-
-    # Save the updated config data back to the file
-    save_config_state(config_data, config_file_path)
+    # Update the stats section with data from the response
+    update_stats_from_response(response_data, config_file_path)
 
 if __name__ == "__main__":
     main()

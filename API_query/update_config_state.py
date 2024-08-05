@@ -5,7 +5,6 @@ import os
 import logging
 import sys
 
-# Setup logging
 logging.basicConfig(
     level=logging.DEBUG,  # Use DEBUG for more detailed output
     format='%(asctime)s - %(levelname)s - %(message)s',
