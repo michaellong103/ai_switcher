@@ -1,8 +1,9 @@
-# main.py
+# ./API_response_processing/main.py
 
 import os
 import logging
-from typing import Dict
+import sys
+from typing import List, Dict, Any
 
 try:
     from .data_cleaning import clean_study_data, filter_exclusion_criteria_and_write
@@ -13,7 +14,8 @@ except ImportError:
     from data_extraction import extract_clinical_trial_info
     from file_utils import load_json_from_file, save_json_to_file
 
-def process_clinical_trials(input_json_file: str, output_dir: str):
+
+def process_clinical_trials(input_json_file: str, output_dir: str) -> None:
     """
     Processes clinical trial data by extracting and cleaning relevant information.
 
@@ -49,17 +51,39 @@ def process_clinical_trials(input_json_file: str, output_dir: str):
     all_data_file_path = os.path.join(output_dir, 'all_study_data.json')
     save_json_to_file(trials_data, all_data_file_path, "All data")
 
-if __name__ == "__main__":
-    # Hardcoded paths
-    input_json_file = "../API_response/finaloutput.json"
-    output_dir = "../API_response"
 
-    # Resolve absolute paths
+def main() -> None:
+    """
+    Main function to execute the clinical trials processing workflow.
+    """
+    # Set up logging configuration
+    logging.basicConfig(
+        level=logging.INFO,  # Set to DEBUG to see detailed logs
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler("api_response_processing.log"),
+            logging.StreamHandler(sys.stdout)
+        ]
+    )
+
+    # Define input and output paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_json_file = os.path.join(script_dir, input_json_file)
-    output_dir = os.path.join(script_dir, output_dir)
+    input_json_file = os.path.join(script_dir, "../API_response/finaloutput.json")
+    output_dir = os.path.join(script_dir, "../API_response")
 
-    # Set up logging
-    # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+    # Check if input JSON file exists
+    if not os.path.exists(input_json_file):
+        logging.error(f"Input JSON file not found: {input_json_file}")
+        sys.exit(1)
 
+    # Create output directory if it does not exist
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Start the processing
+    logging.info("Starting clinical trials data processing.")
     process_clinical_trials(input_json_file, output_dir)
+    logging.info("Completed clinical trials data processing.")
+
+
+if __name__ == "__main__":
+    main()

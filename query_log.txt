@@ -50,3 +50,14 @@
 2024-08-05 19:00:05,180 - INFO - Config state reset successfully: config_state.json
 2024-08-05 19:00:52,964 - INFO - Cleaning up items in directory: API_response
 2024-08-05 19:00:52,966 - INFO - Config state reset successfully: config_state.json
+2024-08-06 12:38:33,295 - INFO - Cleaning up items in directory: API_response
+2024-08-06 12:38:33,295 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-06 12:38:33,296 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-06 12:38:33,296 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-06 12:38:33,297 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-06 12:38:33,297 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-06 12:38:33,297 - INFO - Config state reset successfully: config_state.json
+2024-08-06 12:39:06,553 - INFO - Cleaning up items in directory: API_response
+2024-08-06 12:39:06,554 - INFO - Config state reset successfully: config_state.json
+2024-08-06 12:40:58,168 - INFO - Cleaning up items in directory: API_response
+2024-08-06 12:40:58,169 - INFO - Config state reset successfully: config_state.json

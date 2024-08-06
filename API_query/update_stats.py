@@ -1,4 +1,4 @@
-# ./update_stats.py
+# ./API_query/update_stats.py
 
 import json
 import os

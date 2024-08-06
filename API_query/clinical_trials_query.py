@@ -1,4 +1,4 @@
-# ./clinical_trials_query.py
+# ./API_query/clinical_trials_query.py
 
 import os
 import json
@@ -17,14 +17,13 @@ except ImportError:
     from update_config_state import update_config_state  # Import update_config_state
     from update_stats import update_stats_from_response  # Import update_stats
 
-logging.basicConfig(
-    level=logging.DEBUG,  # Set to DEBUG to capture detailed logs
-    format='%(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s',
-    handlers=[
-        logging.FileHandler("clinical_trials_query.log"),
-        logging.StreamHandler(sys.stdout)
-    ]
-)
+try:
+    # Import the main function from API_response_processing
+    from API_response_processing.main import main as process_api_response
+except ImportError:
+    from ..API_response_processing.main import main as process_api_response
+
+
 
 def load_input(file_path):
     """
@@ -207,6 +206,10 @@ def main():
         save_output(clinical_trials_data, output_file_path_1)
         save_output(clinical_trials_data, output_file_path_2)
         logging.info(f"Results saved to {output_file_path_1} and {output_file_path_2}")
+
+        # Execute the main function from API_response_processing
+        logging.info("Executing the API response processing.")
+        process_api_response()
     else:
         logging.error("Failed to fetch clinical trials data.")
 

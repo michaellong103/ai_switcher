@@ -1,0 +1,10 @@
+2024-08-06 12:28:01,082 - INFO - Starting clinical trials data processing.
+2024-08-06 12:28:01,091 - INFO - Loaded 9 trials from input file.
+2024-08-06 12:28:01,159 - INFO - Completed clinical trials data processing.
+2024-08-06 12:40:01,701 - INFO - Starting clinical trials data processing.
+2024-08-06 12:40:01,711 - INFO - Loaded 9 trials from input file.
+2024-08-06 12:40:01,771 - INFO - Completed clinical trials data processing.
+2024-08-06 12:40:35,201 - ERROR - Input JSON file not found: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/finaloutput.json
+2024-08-06 12:41:36,856 - INFO - Starting clinical trials data processing.
+2024-08-06 12:41:36,865 - INFO - Loaded 9 trials from input file.
+2024-08-06 12:41:36,931 - INFO - Completed clinical trials data processing.

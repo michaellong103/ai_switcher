@@ -1,4 +1,4 @@
-# ./update_config_state.py
+# ./API_query/update_config_state.py
 
 import json
 import os
