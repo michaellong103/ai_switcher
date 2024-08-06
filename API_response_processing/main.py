@@ -1,8 +1,8 @@
-# ./main.py
+# main.py
 
 import os
-import sys
 import logging
+from typing import Dict
 
 try:
     from .data_cleaning import clean_study_data, filter_exclusion_criteria_and_write
@@ -13,8 +13,7 @@ except ImportError:
     from data_extraction import extract_clinical_trial_info
     from file_utils import load_json_from_file, save_json_to_file
 
-
-def process_clinical_trials(input_json_file, output_dir):
+def process_clinical_trials(input_json_file: str, output_dir: str):
     """
     Processes clinical trial data by extracting and cleaning relevant information.
 
@@ -25,13 +24,17 @@ def process_clinical_trials(input_json_file, output_dir):
     # Load the trial data from the JSON file
     data = load_json_from_file(input_json_file)
 
+    if data is None:
+        logging.error("Failed to load data from the input JSON file.")
+        return
+
     # Ensure the data is structured correctly
     if 'studies' not in data:
         logging.error("The input JSON does not contain the 'studies' key.")
-        sys.exit(1)
+        return
 
     trials_data = data['studies']
-    logging.debug(f"Loaded {len(trials_data)} trials from input file.")
+    logging.info(f"Loaded {len(trials_data)} trials from input file.")
 
     # Extract information from the trial data
     extract_clinical_trial_info(trials_data, output_dir)
@@ -46,17 +49,17 @@ def process_clinical_trials(input_json_file, output_dir):
     all_data_file_path = os.path.join(output_dir, 'all_study_data.json')
     save_json_to_file(trials_data, all_data_file_path, "All data")
 
-
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("Usage: python main.py <input_json_file> <output_dir>")
-        sys.exit(1)
+    # Hardcoded paths
+    input_json_file = "../API_response/finaloutput.json"
+    output_dir = "../API_response"
 
-    # Dynamic path construction
+    # Resolve absolute paths
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    input_json_file = os.path.join(script_dir, sys.argv[1])
-    output_dir = os.path.join(script_dir, sys.argv[2])
+    input_json_file = os.path.join(script_dir, input_json_file)
+    output_dir = os.path.join(script_dir, output_dir)
 
-    logging.basicConfig(level=logging.DEBUG)
+    # Set up logging
+    # logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
     process_clinical_trials(input_json_file, output_dir)

@@ -1,139 +1,138 @@
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 10:00:31,575 - INFO - ai_switcher/main.py - Running main with assistant_type: medical
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 10:00:31,576 - INFO - ai_switcher/main.py - Creating assistant of type: medical
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:31,576 - INFO - assistants/assistant_factory.py - Creating assistant with type: medical
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:31,576 - INFO - assistants/assistant_factory.py - Creating MedicalAssistant
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:31,576 - INFO - medical/medical_assistant.py - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:31,576 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, s...
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:31,576 - INFO - medical/medical_assistant.py - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:31,576 - INFO - assistants/assistant_factory.py - Creating assistant with type: lunch
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:31,576 - INFO - assistants/assistant_factory.py - Creating LunchAssistant
-<span style='color:#FF33A6'>[lunch]</span> 2024-08-05 10:00:31,576 - INFO - lunch/lunch_assistant.py - Initializing LunchAssistant
-<span style='color:#FF33A6'>[lunch]</span> 2024-08-05 10:00:31,576 - INFO - lunch/lunch_assistant.py - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day....
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:31,576 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggesti...
-<span style='color:#FFC733'>[router]</span> 2024-08-05 10:00:31,576 - INFO - router/conversation_router.py - Initial assistant: MedicalAssistant
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:31,576 - INFO - medical/medical_assistant.py - get_initial_message called
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:41,695 - INFO - medical/medical_assistant.py - respond called with user_input: 50 female triple-negative breast cancer in Los Angeles, CA
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:41,696 - INFO - medical/medical_assistant.py - Action response: None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:41,696 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:41,696 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 10:00:41,705 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 10:00:44,318 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:44,320 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Assistant: Thank you for providing that information. Just to clarify, could you please confirm the following details:
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 19:00:52,967 - INFO - ai_switcher/main.py - Running main with assistant_type: medical
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 19:00:52,968 - INFO - ai_switcher/main.py - Creating assistant of type: medical
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:52,968 - INFO - assistants/assistant_factory.py - Creating assistant with type: medical
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:52,969 - INFO - assistants/assistant_factory.py - Creating MedicalAssistant
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:52,969 - INFO - medical/medical_assistant.py - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:52,969 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, s...
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:52,969 - INFO - medical/medical_assistant.py - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:52,970 - INFO - assistants/assistant_factory.py - Creating assistant with type: lunch
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:52,970 - INFO - assistants/assistant_factory.py - Creating LunchAssistant
+<span style='color:#FF33A6'>[lunch]</span> 2024-08-05 19:00:52,970 - INFO - lunch/lunch_assistant.py - Initializing LunchAssistant
+<span style='color:#FF33A6'>[lunch]</span> 2024-08-05 19:00:52,970 - INFO - lunch/lunch_assistant.py - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day....
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:52,970 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggesti...
+<span style='color:#FFC733'>[router]</span> 2024-08-05 19:00:52,971 - INFO - router/conversation_router.py - Initial assistant: MedicalAssistant
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:52,971 - INFO - medical/medical_assistant.py - get_initial_message called
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:54,254 - INFO - medical/medical_assistant.py - respond called with user_input: 50 female triple-negative breast cancer in Indianapolis Indiana
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:54,255 - INFO - medical/medical_assistant.py - Action response: None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:54,255 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:54,256 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 19:00:54,276 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 19:00:55,663 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:55,665 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Assistant: Thank you for providing that information. Just to clarify, triple-negative breast cancer is quite specific. Let's consider the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-Does this look correct? (y/n...
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:44,323 - INFO - medical/medical_assistant.py - Validating Assistant Output
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:44,323 - INFO - medical/medical_assistant.py - Modified super response: Assistant: Thank you for providing that information. Just to clarify, could you please confirm the following details:
+- Location: Indianapolis, I...
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:55,670 - INFO - medical/medical_assistant.py - Validating Assistant Output
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:55,670 - INFO - medical/medical_assistant.py - Modified super response: Assistant: Thank you for providing that information. Just to clarify, triple-negative breast cancer is quite specific. Let's consider the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-Does this look correct? (y/n)
-<span style='color:#FFC733'>[router]</span> 2024-08-05 10:00:44,323 - INFO - router/conversation_router.py - Response from MedicalAssistant: Assistant: Thank you for providing that information. Just to clarify, could you please confirm the following details:
+- Location: Indianapolis, IN
+Does this l...
+<span style='color:#FFC733'>[router]</span> 2024-08-05 19:00:55,670 - INFO - router/conversation_router.py - Response from MedicalAssistant: Assistant: Thank you for providing that information. Just to clarify, triple-negative breast cancer is quite specific. Let's consider the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-Does this look correct? (y/n)
-<span style='color:#FFC733'>[router]</span> 2024-08-05 10:00:44,323 - INFO - router/conversation_router.py - Assistant response after routing: Assistant: Thank you for providing that information. Just to clarify, could you please confirm the following details:
+- Location: Indianapolis, IN
+Does...
+<span style='color:#FFC733'>[router]</span> 2024-08-05 19:00:55,670 - INFO - router/conversation_router.py - Assistant response after routing: Assistant: Thank you for providing that information. Just to clarify, triple-negative breast cancer is quite specific. Let's consider the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-Does this look correct? (y/n)
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 10:00:44,323 - INFO - ai_switcher/main.py - User input: 50 female triple-negative breast cancer in Los Angeles, CA
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 10:00:44,323 - INFO - ai_switcher/main.py - Assistant response: Assistant: Thank you for providing that information. Just to clarify, could you please confirm the following details:
+- Location: Indianapolis, IN
+Do...
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 19:00:55,670 - INFO - ai_switcher/main.py - User input: 50 female triple-negative breast cancer in Indianapolis Indiana
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 19:00:55,670 - INFO - ai_switcher/main.py - Assistant response: Assistant: Thank you for providing that information. Just to clarify, triple-negative breast cancer is quite specific. Let's consider the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-Does this look correct? (y/n)
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:45,628 - INFO - medical/medical_assistant.py - respond called with user_input: y
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:45,629 - INFO - medical/medical_assistant.py - Action response: None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:45,629 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:45,629 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 10:00:45,631 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 10:00:47,492 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-05 10:00:47,505 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
+- Location: Indianapolis, IN
+Does this look correc...
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:56,870 - INFO - medical/medical_assistant.py - respond called with user_input: y
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:56,870 - INFO - medical/medical_assistant.py - Action response: None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:56,871 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:56,871 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 19:00:56,876 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 19:00:58,901 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-05 19:00:58,903 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this pr...
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:47,507 - INFO - medical/medical_assistant.py - Validating Assistant Output
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:47,507 - INFO - medical/validator_utils.py - Validating field Age: 50
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:47,507 - INFO - medical/validator_utils.py - Validating field Gender: Female
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:47,507 - INFO - medical/validator_utils.py - Validating field Medical Condition: Triple-Negative Breast Cancer
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:47,507 - INFO - medical/validator_utils.py - Validating field Location: Los Angeles, CA
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:47,507 - INFO - medical/validator_utils.py - Validating Debug Grid - Latitude: 34.0522, Longitude: -118.2437
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:47,508 - INFO - medical/medical_assistant.py - User details collected successfully
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:47,508 - INFO - medical/medical_assistant.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,508 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,508 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,508 - DEBUG - API_query/clinical_trials_query.py - Checking input file path...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,508 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,508 - DEBUG - API_query/clinical_trials_query.py - Checking output file path 1...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,508 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,509 - DEBUG - API_query/clinical_trials_query.py - Checking output file path 2...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,509 - ERROR - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' does not exist.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,509 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,509 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,509 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
-Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Tr...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,509 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,509 - INFO - API_query/update_config_state.py - Config state updated successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,509 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 10:00:47,511 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 10:00:47,733 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(34.0522,-118.2437,10) HTTP/1.1" 200 None
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,828 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,851 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,852 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,852 - INFO - API_query/update_stats.py - Stats section updated successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:47,937 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:48,048 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 10:00:48,048 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:48,051 - INFO - medical/medical_assistant.py - The API query is complete, and the files have been written successfully.
-<span style='color:#3357FF'>[medical]</span> 2024-08-05 10:00:48,051 - INFO - medical/medical_assistant.py - Modified super response: Great, I will now look for trials with these characteristics.
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:58,907 - INFO - medical/medical_assistant.py - Validating Assistant Output
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:58,908 - INFO - medical/validator_utils.py - Validating field Age: 50
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:58,908 - INFO - medical/validator_utils.py - Validating field Gender: Female
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:58,908 - INFO - medical/validator_utils.py - Validating field Medical Condition: Triple-Negative Breast Cancer
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:58,909 - INFO - medical/validator_utils.py - Validating field Location: Indianapolis, IN
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:58,909 - INFO - medical/validator_utils.py - Validating Debug Grid - Latitude: 39.7684, Longitude: -86.1581
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:58,909 - INFO - medical/medical_assistant.py - User details collected successfully
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:58,910 - INFO - medical/medical_assistant.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,910 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,911 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,911 - DEBUG - API_query/clinical_trials_query.py - Checking input file path...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,911 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,911 - DEBUG - API_query/clinical_trials_query.py - Checking output file path 1...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,911 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,911 - DEBUG - API_query/clinical_trials_query.py - Checking output file path 2...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,911 - ERROR - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' does not exist.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,912 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,912 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,912 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Tri...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,912 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,913 - INFO - API_query/update_config_state.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:58,913 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(39.7684,-86.1581,10)
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 19:00:58,917 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-05 19:00:59,186 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(39.7684,-86.1581,10) HTTP/1.1" 200 None
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:59,221 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:59,243 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:59,244 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:59,244 - INFO - API_query/update_stats.py - Stats section updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:59,337 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:59,436 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-05 19:00:59,436 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:59,437 - INFO - medical/medical_assistant.py - The API query is complete, and the files have been written successfully.
+<span style='color:#3357FF'>[medical]</span> 2024-08-05 19:00:59,438 - INFO - medical/medical_assistant.py - Modified super response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
 API qu...
-<span style='color:#FFC733'>[router]</span> 2024-08-05 10:00:48,051 - INFO - router/conversation_router.py - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
+<span style='color:#FFC733'>[router]</span> 2024-08-05 19:00:59,438 - INFO - router/conversation_router.py - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile....
-<span style='color:#FFC733'>[router]</span> 2024-08-05 10:00:48,052 - INFO - router/conversation_router.py - Assistant response after routing: Great, I will now look for trials with these characteristics.
+<span style='color:#FFC733'>[router]</span> 2024-08-05 19:00:59,438 - INFO - router/conversation_router.py - Assistant response after routing: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profil...
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 10:00:48,052 - INFO - ai_switcher/main.py - User input: y
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 10:00:48,053 - INFO - ai_switcher/main.py - Assistant response: Great, I will now look for trials with these characteristics.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 19:00:59,438 - INFO - ai_switcher/main.py - User input: y
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-05 19:00:59,438 - INFO - ai_switcher/main.py - Assistant response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
+- Location: Indianapolis, IN
+- Debug Grid: [(39.7684, -86.1581)]
 I will now search for trials that match this profile.
 API query execut...

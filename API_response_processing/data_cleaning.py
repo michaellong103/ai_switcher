@@ -2,6 +2,7 @@
 
 import os
 import re
+import logging
 
 try:
     from .date_utils import calculate_duration_days, calculate_days_until_end
@@ -9,7 +10,6 @@ try:
 except ImportError:
     from date_utils import calculate_duration_days, calculate_days_until_end
     from file_utils import save_json_to_file
-
 
 def split_eligibility_criteria(eligibility):
     """
@@ -37,7 +37,6 @@ def split_eligibility_criteria(eligibility):
 
     return criteria
 
-
 def clean_study_data(studies, output_dir):
     """
     Cleans and processes study data.
@@ -56,6 +55,17 @@ def clean_study_data(studies, output_dir):
         eligibility_criteria = study_info.get("eligibilityModule", {}).get("eligibilityCriteria", "")
 
         criteria = split_eligibility_criteria(eligibility_criteria)
+        status_module = study_info.get("statusModule", {})
+
+        # Access the correct date fields
+        start_date_str = status_module.get("startDateStruct", {}).get("date", "")
+        completion_date_str = status_module.get("completionDateStruct", {}).get("date", "")
+
+        if not start_date_str:
+            logging.warning(f"Missing start date for trial with NCT ID: {nct_id}. JSON path: statusModule.startDateStruct.date")
+        if not completion_date_str:
+            logging.warning(f"Missing completion date for trial with NCT ID: {nct_id}. JSON path: statusModule.completionDateStruct.date")
+
         cleaned_study = {
             "EligibilityCriteria": eligibility_criteria,
             "InclusionCriteria": criteria["InclusionCriteria"],
@@ -64,12 +74,11 @@ def clean_study_data(studies, output_dir):
             "Gender": study_info.get("eligibilityModule", {}).get("sex", ""),
             "MinimumAge": study_info.get("eligibilityModule", {}).get("minimumAge", ""),
             "NCTId": nct_id,
-            "startDate": study_info.get("statusModule", {}).get("startDateStruct", {}).get("startDate", ""),
-            "completionDate": study_info.get("statusModule", {}).get("completionDateStruct", {}).get("completionDate", "")
+            "startDate": start_date_str,
+            "completionDate": completion_date_str
         }
 
-        start_date_str = cleaned_study["startDate"]
-        completion_date_str = cleaned_study["completionDate"]
+        # Calculate duration and days until end
         cleaned_study["durationDays"] = calculate_duration_days(start_date_str, completion_date_str)
         cleaned_study["daysUntilEnd"] = calculate_days_until_end(completion_date_str)
 
@@ -78,7 +87,6 @@ def clean_study_data(studies, output_dir):
     cleaned_file_path = os.path.join(output_dir, 'cleaned_data.json')
     save_json_to_file(cleaned_studies, cleaned_file_path, "Cleaned data")
     return cleaned_studies
-
 
 def filter_exclusion_criteria_and_write(cleaned_data, output_dir):
     """
@@ -99,7 +107,6 @@ def filter_exclusion_criteria_and_write(cleaned_data, output_dir):
     filtered_file_path = os.path.join(output_dir, 'filtered_exclusion_data.json')
     save_json_to_file(filtered_data, filtered_file_path, "Filtered data")
 
-
 if __name__ == "__main__":
     import sys
     import json
@@ -112,6 +119,9 @@ if __name__ == "__main__":
     script_dir = os.path.dirname(os.path.abspath(__file__))
     input_json_file = os.path.join(script_dir, sys.argv[1])
     output_dir = os.path.join(script_dir, sys.argv[2])
+
+    # Disable logging output
+    logging.disable(logging.CRITICAL)
 
     with open(input_json_file, 'r') as file:
         trials_data = json.load(file)
