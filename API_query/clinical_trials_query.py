@@ -1,4 +1,4 @@
-# ./API_query/clinical_trials_query.py
+# clinical_trials_query.py
 
 import os
 import json
@@ -9,21 +9,22 @@ import logging
 try:
     # Attempt relative import for when running within a package
     from .query_logger import log_query
-    from .update_config_state import update_config_state  # Import update_config_state
-    from .update_stats import update_stats_from_response  # Import update_stats
+    from .update_config_state import update_config_state
+    from .update_stats import update_stats_from_response
 except ImportError:
     # Fall back to absolute import if relative import fails
     from query_logger import log_query
-    from update_config_state import update_config_state  # Import update_config_state
-    from update_stats import update_stats_from_response  # Import update_stats
+    from update_config_state import update_config_state
+    from update_stats import update_stats_from_response
 
 try:
     # Import the main function from API_response_processing
     from API_response_processing.main import main as process_api_response
+    # Import the main function from API_response_evaluation
+    from API_response_evaluation.main import main as evaluate_trials
 except ImportError:
     from ..API_response_processing.main import main as process_api_response
-
-
+    from ..API_response_evaluation.main import main as evaluate_trials
 
 def load_input(file_path):
     """
@@ -210,6 +211,11 @@ def main():
         # Execute the main function from API_response_processing
         logging.info("Executing the API response processing.")
         process_api_response()
+
+        # Execute the main function from API_response_evaluation
+        logging.info("Executing the API response evaluation.")
+        evaluate_trials()
+
     else:
         logging.error("Failed to fetch clinical trials data.")
 

@@ -21,7 +21,38 @@ class TruncateFormatter(logging.Formatter):
             "#FFC733",  # Yellow
             "#33FFF2",  # Cyan
             "#8D33FF",  # Purple
-            "#FF8233"   # Orange
+            "#FF8233",  # Orange
+            "#FFB533",  # Light Orange
+            "#33FF99",  # Light Green
+            "#3399FF",  # Light Blue
+            "#FF3399",  # Hot Pink
+            "#FFD433",  # Golden Yellow
+            "#33FFD1",  # Light Cyan
+            "#A833FF",  # Violet
+            "#FF5733",  # Coral
+            "#FFBD33",  # Amber
+            "#33FF66",  # Mint Green
+            "#33CCFF",  # Sky Blue
+            "#FF3366",  # Raspberry
+            "#FFDD33",  # Lemon Yellow
+            "#33FFE5",  # Aqua
+            "#C733FF",  # Lavender
+            "#FF6F33",  # Burnt Orange
+            "#FFA833",  # Apricot
+            "#33FF44",  # Lime Green
+            "#3385FF",  # Ocean Blue
+            "#FF3385",  # Magenta
+            "#FFF233",  # Canary Yellow
+            "#33FFFA",  # Turquoise
+            "#B833FF",  # Orchid
+            "#FF7733",  # Pumpkin
+            "#FF9433",  # Tangerine
+            "#33FFB5",  # Spring Green
+            "#337AFF",  # Azure
+            "#FF337A",  # Fuchsia
+            "#FFEA33",  # Sunflower Yellow
+            "#33FFEB",  # Teal
+            "#9A33FF",  # Amethyst
         ]
 
     def get_color_for_folder(self, folder_name):
