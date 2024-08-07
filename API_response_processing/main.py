@@ -8,10 +8,12 @@ from typing import List, Dict, Any
 try:
     from .data_cleaning import clean_study_data, filter_exclusion_criteria_and_write
     from .data_extraction import extract_clinical_trial_info
+    from .info_extraction import extract_condensed_info, extract_detailed_info  # Added imports
     from .file_utils import load_json_from_file, save_json_to_file
 except ImportError:
     from data_cleaning import clean_study_data, filter_exclusion_criteria_and_write
     from data_extraction import extract_clinical_trial_info
+    from info_extraction import extract_condensed_info, extract_detailed_info  # Added imports
     from file_utils import load_json_from_file, save_json_to_file
 
 
@@ -40,6 +42,12 @@ def process_clinical_trials(input_json_file: str, output_dir: str) -> None:
 
     # Extract information from the trial data
     extract_clinical_trial_info(trials_data, output_dir)
+
+    # Extract condensed information from the trial data
+    extract_condensed_info(trials_data, output_dir)  # Added condensed info extraction
+
+    # Extract detailed information from the trial data
+    extract_detailed_info(trials_data, output_dir)  # Added detailed info extraction
 
     # Clean the study data
     cleaned_data = clean_study_data(trials_data, output_dir)

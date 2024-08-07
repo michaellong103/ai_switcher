@@ -1,4 +1,4 @@
-# display_in_terminal/main.py
+# ./main.py
 
 import argparse
 import json
@@ -6,13 +6,11 @@ import os
 import sys
 import logging
 
-# Adjust the Python path for imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '.')))
 
 from interfaces.interface_generator import condensed_trials, detailed_trials, question_format
 
-# Initialize logging configuration
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def find_output_directory():
