@@ -1,8 +1,8 @@
 {
     "Age": "50",
     "Gender": "Female",
-    "Medical Condition": "Type 2 Diabetes Mellitus",
-    "Location": "Casper, WY",
-    "Latitude": "42.8501",
-    "Longitude": "-106.3252"
+    "Medical Condition": "Type 1 Diabetes",
+    "Location": "Indianapolis, IN",
+    "Latitude": "39.7684",
+    "Longitude": "-86.1581"
 }

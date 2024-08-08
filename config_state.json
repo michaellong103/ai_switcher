@@ -2,16 +2,29 @@
     "current_api_params": {
         "Age": "50",
         "Gender": "Female",
-        "Medical Condition": "Type 2 Diabetes Mellitus",
-        "Location": "Casper, WY",
-        "Latitude": "42.8501",
-        "Longitude": "-106.3252"
+        "Medical Condition": "Type 1 Diabetes",
+        "Location": "Indianapolis, IN",
+        "Latitude": "39.7684",
+        "Longitude": "-86.1581"
     },
-    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+2+Diabetes+Mellitus&filter.geo=distance(42.8501,-106.3252,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
+    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+1+Diabetes&filter.geo=distance(39.7684,-86.1581,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
     "stats": {
-        "number_of_trials": 0,
-        "trial_names": [],
-        "nct_numbers": ""
+        "number_of_trials": 12,
+        "trial_names": [
+            "Diabetes RElated to Acute Pancreatitis and Its Mechanisms",
+            "TrialNet Pathway to Prevention of T1D",
+            "Janus Kinase (JAK) Inhibitors to Preserve C-Peptide Production in New Onset Type 1 Diabetes (T1D)",
+            "Rituximab-pvvr and Abatacept vs Rituximab-pvvr Alone in New Onset Type 1 Diabetes",
+            "Teplizumab in Pediatric Stage 2 Type 1 Diabetes",
+            "Multi-center Trial in Adult and Pediatric Patients With Type 1 Diabetes Using Hybrid Closed Loop System and Control at Home",
+            "TArgeting Type 1 Diabetes Using POLyamines (TADPOL)",
+            "STOP-T1D Low-Dose (ATG)",
+            "Evaluation of the Efficacy and Safety of DMR Using the Revita\u00ae in Subjects With Inadequately Controlled Type 2 Diabetes",
+            "The Gut Microbiome in Type 1 Diabetes and Mechanism of Metformin Action",
+            "Type 1 Diabetes Extension Study",
+            "Diabetes RElated to Acute Pancreatitis and Its Mechanisms: Metabolic Outcomes Using Novel CGM Metrics"
+        ],
+        "nct_numbers": "NCT05197920, NCT00097292, NCT05743244, NCT03929601, NCT05757713, NCT02748018, NCT05594563, NCT04291703, NCT04419779, NCT05414409, NCT02734277, NCT06401577"
     },
-    "API_response_evaluation": "No trials"
+    "API_response_evaluation": "A lot of trials"
 }

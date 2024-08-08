@@ -1,4 +1,4 @@
-# ./display_in_terminal/main.py
+# ./main.py
 
 import argparse
 import json
@@ -41,15 +41,20 @@ def run_main(mode):
     Main function to display data in terminal based on the mode.
 
     Args:
-        mode (str): Mode to display data, either 'detailed' or 'condensed'.
+        mode (str): Mode to display data, either 'detailed', 'condensed', or 'questions'.
     """
     logging.info(f"run_main called with mode: {mode}")
 
+    # Determine the base directory of the script
+    base_dir = os.path.abspath(os.path.dirname(__file__))
+    
     # Determine the path based on the mode
     if mode == 'detailed':
-        file_path = '../API_response/detailed.json'
+        file_path = os.path.join(base_dir, '../API_response/detailed.json')
     elif mode == 'condensed':
-        file_path = '../API_response/condensed.json'
+        file_path = os.path.join(base_dir, '../API_response/condensed.json')
+    elif mode == 'questions':
+        file_path = os.path.join(base_dir, '../API_response/questions.json')
     else:
         logging.error(f"Invalid mode: {mode}")
         return
@@ -63,12 +68,23 @@ def run_main(mode):
         with open(file_path, 'r') as file:
             data = json.load(file)
             logging.info(f"Loaded data from {file_path}")
-            # Add logic to display data in terminal
-            print(json.dumps(data, indent=4))  # Example of displaying data
+
+            # Format data based on the mode
+            if mode == 'detailed':
+                output = detailed_trials(data)
+            elif mode == 'condensed':
+                output = condensed_trials(data)
+            elif mode == 'questions':
+                output = question_format(data)
+
+            # Display the formatted output
+            print(output)
+            
     except FileNotFoundError as e:
         logging.error(f"File not found: {file_path}. Error: {e}")
     except json.JSONDecodeError as e:
         logging.error(f"Failed to decode JSON from file: {file_path}. Error: {e}")
+
 
 def main():
     parser = argparse.ArgumentParser(description="Generate formatted trial information from a JSON file.")
@@ -80,6 +96,7 @@ def main():
     logging.info(f"Calling run_main with display_type={args.display_type}")
 
     run_main(args.display_type)
+
 
 if __name__ == "__main__":
     main()

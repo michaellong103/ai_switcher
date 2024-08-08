@@ -1,1 +1,62 @@
-[]
+[
+    {
+        "nctNumber": "NCT05197920",
+        "briefTitle": "Diabetes RElated to Acute Pancreatitis and Its Mechanisms",
+        "briefSummary": "The overriding objective of DREAM is to conduct a prospective longitudinal (36 months) observational clinical study to investigate the incidence, etiology, and pathophysiology of diabetes mellitus (DM) following acute pancreatitis (AP)."
+    },
+    {
+        "nctNumber": "NCT00097292",
+        "briefTitle": "TrialNet Pathway to Prevention of T1D",
+        "briefSummary": "Rationale:\n\nThe accrual of data from the laboratory and from epidemiologic and prevention trials has improved the understanding of the etiology and pathogenesis of type 1 diabetes mellitus (T1DM). Genetic and immunologic factors play a key role in the development of T1DM, and characterization of the early metabolic abnormalities in T1DM is steadily increasing. However, information regarding the natural history of T1DM remains incomplete. The TrialNet Natural History Study of the Development of T1DM (Pathway to Prevention Study) has been designed to clarify this picture, and in so doing, will contribute to the development and implementation of studies aimed at prevention of and early treatment in T1DM.\n\nPurpose:\n\nTrialNet is an international network dedicated to the study, prevention, and early treatment of type 1 diabetes. TrialNet sites are located throughout the United States, Canada, Finland, United Kingdom, Italy, Germany, Sweden, Australia, and New Zealand. TrialNet is dedicated to testing new approaches to the prevention of and early intervention for type 1 diabetes.\n\nThe goal of the TrialNet Natural History Study of the Development of Type 1 Diabetes is to enhance our understanding of the demographic, immunologic, and metabolic characteristics of individuals at risk for developing type 1 diabetes.\n\nThe Natural History Study will screen relatives of people with type 1 diabetes to identify those at risk for developing the disease. Relatives of people with type 1 diabetes have about a 5% percent chance of being positive for the antibodies associated with diabetes. TrialNet will identify adults and children at risk for developing diabetes by testing for the presence of these antibodies in the blood. A positive antibody test is an early indication that damage to insulin-secreting cells may have begun. If this test is positive, additional testing will be offered to determine the likelihood that a person may develop diabetes. Individuals with antibodies will be offered the opportunity for further testing to determine their risk of developing diabetes over the next 5 years and to receive close monitoring for the development of diabetes."
+    },
+    {
+        "nctNumber": "NCT05743244",
+        "briefTitle": "Janus Kinase (JAK) Inhibitors to Preserve C-Peptide Production in New Onset Type 1 Diabetes (T1D)",
+        "briefSummary": "A multi-center, placebo-controlled, double blind, 1:1:1 randomized control clinical trial testing two different JAK Inhibitors abrocitnib, ritlecitinib, and placebo in subjects with recent onset Stage 3 Type 1 Diabetes within 100 days of diagnosis."
+    },
+    {
+        "nctNumber": "NCT03929601",
+        "briefTitle": "Rituximab-pvvr and Abatacept vs Rituximab-pvvr Alone in New Onset Type 1 Diabetes",
+        "briefSummary": "The study is a two-arm, multicenter, double-blinded clinical trial testing sequential therapy with rituximab-pvvr followed by abatacept versus rituximab-pvvr alone in new onset T1D. The primary objective is to test whether the C-peptide response to a 2-hour mixed meal tolerance test, will be improved in participants with new onset T1D who are treated with Abatacept after Rituximab-pvvr compared to those treated with Rituximab-pvvr and placebo 24 months after enrollment."
+    },
+    {
+        "nctNumber": "NCT05757713",
+        "briefTitle": "Teplizumab in Pediatric Stage 2 Type 1 Diabetes",
+        "briefSummary": "The purpose of this study is to assess the safety and pharmacokinetics (PK) of teplizumab in participants with Stage 2 type 1 diabetes who are \\<8 years of age."
+    },
+    {
+        "nctNumber": "NCT02748018",
+        "briefTitle": "Multi-center Trial in Adult and Pediatric Patients With Type 1 Diabetes Using Hybrid Closed Loop System and Control at Home",
+        "briefSummary": "The purpose of this study is to evaluate the safety and effectiveness of the Hybrid Closed Loop system (HCL) in adult and pediatric patients with type 1 diabetes in the home setting. A diverse population of patients with type 1 diabetes will be studied. The study population will have a large range for duration of diabetes and glycemic control, as measured by glycosylated hemoglobin (A1C). They will be enrolled in the study regardless of their prior diabetes regimen, including using Multiple Daily Injections (MDI), Continuous Subcutaneous Insulin Infusion (CSII) or Sensor-Augmented Pump therapy (SAP)"
+    },
+    {
+        "nctNumber": "NCT05594563",
+        "briefTitle": "TArgeting Type 1 Diabetes Using POLyamines (TADPOL)",
+        "briefSummary": "The goal of this clinical trial is to test a drug known as DFMO in people with Type 1 Diabetes (T1D). The main question\\[s\\] it aims to answer are:\n\n* Does it reduce stress on the cells that make insulin?\n* Does it preserve what is left of the body's insulin production? Participants will take either DFMO or a placebo (looks like DFMO but has no active ingredients) two times a day for about 6 months. Participants will have 6 in person visits and 1 phone visit over a period of 12 months. Visits will include blood draws urine collection and other tests."
+    },
+    {
+        "nctNumber": "NCT04291703",
+        "briefTitle": "STOP-T1D Low-Dose (ATG)",
+        "briefSummary": "A multi-center, placebo-controlled, double blind, 2:1 randomized control clinical trial testing low-dose ATG vs. placebo in subjects with a 2 year 50% risk of progression to stage 3 T1D."
+    },
+    {
+        "nctNumber": "NCT04419779",
+        "briefTitle": "Evaluation of the Efficacy and Safety of DMR Using the Revita\u00ae in Subjects With Inadequately Controlled Type 2 Diabetes",
+        "briefSummary": "The Revita\u00ae system is being investigated to assess the efficacy of DMR versus Sham on improvement in Glycemic, Hepatic and Cardiovascular endpoints for patients with Type 2 Diabetes who are inadequately controlled on one or more glucose lowering agents. The purpose of this study is to demonstrate the efficacy and safety of the Fractyl DMR Procedure using the Revita\u00ae System compared to a sham. Subjects randomized to the DMR procedure will be followed per protocol till 48 weeks post treatment. Subjects in the Sham treatment arm will be offered cross over to receive the DMR treatment at 48 weeks and will be followed per protocol for 48 weeks post treatment."
+    },
+    {
+        "nctNumber": "NCT05414409",
+        "briefTitle": "The Gut Microbiome in Type 1 Diabetes and Mechanism of Metformin Action",
+        "briefSummary": "Obesity prevalence in persons with T1D has increased, which further complicates management and risk for complications. The proposed study is relevant to public health because it helps us understand the role of the gut microbiome in disease pathophysiology in T1D youth with obesity as well as potential mechanisms to modify disease."
+    },
+    {
+        "nctNumber": "NCT02734277",
+        "briefTitle": "Type 1 Diabetes Extension Study",
+        "briefSummary": "This is a multi-center, prospective, non-interventional study that focuses on the long- term effects following participation in selected ITN new-onset Type1 Diabetes Mellitus studies with immunomodulatory agents (T1DM, T1D).\n\nThis observational study will:\n\n* follow participants to determine how long they continue to produce insulin, and\n* will also assess how changes in the immune system over time relate to the ability to produce insulin.\n\nThis information could help design better therapies for type 1 diabetes in the future."
+    },
+    {
+        "nctNumber": "NCT06401577",
+        "briefTitle": "Diabetes RElated to Acute Pancreatitis and Its Mechanisms: Metabolic Outcomes Using Novel CGM Metrics",
+        "briefSummary": "The DREAM-ON study will investigate whether continuous glucose monitoring (CGM) is useful to predict risk for developing diabetes mellitus (DM) and pre-diabetes mellitus (PDM), the need for insulin therapy among those who develop DM, and to determine whether CGM can provide insight into the pathophysiology and DM subtype among participants who have experienced an episode of acute pancreatitis (AP). Thus, the results of the DREAM-ON study could inform future clinical practice guidelines for the management AP as well as potentially extending the licensing authorization for CGM to include use in patients with pancreatogenic (Type 3c) DM."
+    }
+]
