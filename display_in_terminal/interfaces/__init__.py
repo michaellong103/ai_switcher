@@ -1,2 +1,2 @@
-# ./interfaces/__init__.py
+# ./display_in_terminal/interfaces/__init__.py
 

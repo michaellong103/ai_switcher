@@ -1,4 +1,4 @@
-# ./query_logger.py
+# ./API_query/query_logger.py
 
 import logging
 import os

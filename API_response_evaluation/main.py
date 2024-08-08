@@ -1,15 +1,18 @@
-# ./main.py
+# ./API_response_evaluation/main.py
 
 import os
 import json
 import logging
 
-
+# Import the main functions from evaluate_trials with extensive logging
 try:
-    # Import the main function from API_response_processing
+    logging.debug("Attempting to import 'evaluate_trials' functions.")
     from evaluate_trials import load_config, load_trials_data, evaluate_number_of_trials
+    logging.info("Successfully imported 'evaluate_trials' functions from the same directory.")
 except ImportError:
+    logging.debug("Failed to import 'evaluate_trials' functions from the same directory. Attempting relative import.")
     from .evaluate_trials import load_config, load_trials_data, evaluate_number_of_trials
+    logging.info("Successfully imported 'evaluate_trials' functions using relative import.")
 
 def load_config_state(config_state_path):
     """
@@ -21,11 +24,15 @@ def load_config_state(config_state_path):
     Returns:
         dict: Configuration state data as a dictionary.
     """
+    logging.debug(f"Loading config state from: {config_state_path}")
     try:
         if os.path.exists(config_state_path):
             with open(config_state_path, 'r') as file:
-                return json.load(file)
+                config_state = json.load(file)
+                logging.info(f"Config state loaded successfully from {config_state_path}")
+                return config_state
         else:
+            logging.warning(f"Config state file does not exist: {config_state_path}. Returning default state.")
             # Return an empty structure if the file does not exist
             return {"current_api_params": {}, "last_clinical_trials_api_url": "", "stats": {}}
     except json.JSONDecodeError as e:
@@ -44,6 +51,7 @@ def update_config_state(config_state_path, trials, response):
     Returns:
         None
     """
+    logging.debug(f"Updating config state at: {config_state_path}")
     try:
         # Load the existing config state
         config_state = load_config_state(config_state_path)
@@ -64,6 +72,8 @@ def update_config_state(config_state_path, trials, response):
         print(f"Error: Unable to update the config state in '{config_state_path}'.")
 
 def main():
+    logging.info("Starting API response evaluation process")
+    
     # Calculate absolute paths based on the current script's location
     script_dir = os.path.dirname(os.path.abspath(__file__))
     config_file_path = os.path.join(script_dir, "config.json")
@@ -72,6 +82,7 @@ def main():
 
     # Load configuration settings
     try:
+        logging.debug(f"Loading configuration from: {config_file_path}")
         config = load_config(config_file_path)
         logging.info("Configuration loaded successfully.")
     except Exception as e:
@@ -81,6 +92,7 @@ def main():
 
     # Load trial data from finaloutput.json
     try:
+        logging.debug(f"Loading trials data from: {final_output_path}")
         trials = load_trials_data(final_output_path)
         logging.info(f"Loaded {len(trials)} trials from the final output file.")
     except FileNotFoundError as e:
@@ -93,12 +105,21 @@ def main():
         return
 
     # Evaluate the number of trials and print the result
-    response = evaluate_number_of_trials(trials, config)
-    print(response)
+    try:
+        logging.debug("Evaluating the number of trials")
+        response = evaluate_number_of_trials(trials, config)
+        logging.info("Evaluation completed successfully.")
+        print(response)
+    except Exception as e:
+        logging.error(f"Error during trial evaluation: {e}")
+        print("Error: Unable to evaluate the number of trials.")
+        return
 
     # Update the config_state.json with the evaluation response
+    logging.debug("Updating config state with evaluation response")
     update_config_state(config_state_path, trials, response)
 
 if __name__ == "__main__":
-    # Start the main process
+    logging.debug("Starting main function.")
     main()
+    logging.debug("Finished executing main function.")

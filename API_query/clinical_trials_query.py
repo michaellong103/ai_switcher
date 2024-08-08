@@ -1,4 +1,4 @@
-# clinical_trials_query.py
+# ./API_query/clinical_trials_query.py
 
 import os
 import json
@@ -6,12 +6,15 @@ import requests
 import sys
 import logging
 
+# Configure logging
+
 try:
     # Attempt relative import for when running within a package
     from .query_logger import log_query
     from .update_config_state import update_config_state
     from .update_stats import update_stats_from_response
-except ImportError:
+except ImportError as e:
+    logging.warning(f"Relative import failed: {e}")
     # Fall back to absolute import if relative import fails
     from query_logger import log_query
     from update_config_state import update_config_state
@@ -22,9 +25,10 @@ try:
     from API_response_processing.main import main as process_api_response
     # Import the main function from API_response_evaluation
     from API_response_evaluation.main import main as evaluate_trials
-except ImportError:
-    from ..API_response_processing.main import main as process_api_response
-    from ..API_response_evaluation.main import main as evaluate_trials
+except ImportError as e:
+    logging.warning(f"Initial import failed: {e}")
+    from .API_response_processing.main import main as process_api_response
+    from .API_response_evaluation.main import main as evaluate_trials
 
 def load_input(file_path):
     """
@@ -33,6 +37,7 @@ def load_input(file_path):
     :param file_path: Path to the input JSON file
     :return: Data extracted from the JSON file as a dictionary
     """
+    logging.debug(f"Loading input file from: {file_path}")
     if not os.path.exists(file_path):
         logging.error(f"Input file not found: {file_path}")
         raise FileNotFoundError(f"Input file not found: {file_path}")
@@ -54,6 +59,7 @@ def construct_query_url(data, default_radius=10):
     :param default_radius: Default radius for the location search in kilometers
     :return: Constructed query URL as a string
     """
+    logging.debug(f"Constructing query URL with data: {data} and default_radius: {default_radius}")
     # Determine the radius to use: from input data or default
     radius = data.get("Radius", default_radius)
 
@@ -109,6 +115,7 @@ def extract_nct_ids(response_data):
     :param response_data: The JSON response data from the API
     :return: List of NCT IDs found in the response
     """
+    logging.debug("Extracting NCT IDs from response data...")
     nct_ids = []
 
     # Traverse the response to extract NCT IDs
@@ -131,6 +138,7 @@ def save_output(data, file_path):
     :param data: Data to be saved
     :param file_path: Path to the output JSON file
     """
+    logging.debug(f"Saving output data to: {file_path}")
     try:
         # Only create directories if the path includes a directory
         dir_name = os.path.dirname(file_path)
@@ -150,6 +158,7 @@ def check_file_path(file_path):
 
     :param file_path: Path to the file to check
     """
+    logging.debug(f"Checking if file path exists: {file_path}")
     if os.path.exists(file_path):
         logging.info(f"The file '{file_path}' exists.")
     else:
@@ -215,7 +224,7 @@ def main():
         # Execute the main function from API_response_evaluation
         logging.info("Executing the API response evaluation.")
         evaluate_trials()
-
+        logging.info("Finished executing the API response evaluation.")
     else:
         logging.error("Failed to fetch clinical trials data.")
 

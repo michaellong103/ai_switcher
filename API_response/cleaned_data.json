@@ -1,15 +1,1 @@
-[
-    {
-        "EligibilityCriteria": "Inclusion Criteria:\n\n* \u2265 18 years of age\n* Presenting for a screening, surveillance, diagnostic, or therapeutic colonoscopy\n* Found to have:\n\na sessile serrated lesion or hyperplastic polyp \u2265 10 mm during procedure (Serrated Cohort) or a 10-19 mm conventional adenoma during procedure (Adenoma Cohort)\n\n* Ability to provide informed consent\n\nExclusion Criteria:\n\n* Pedunculated or semi-pedunculated polyps (as defined by Paris Classification type Ip or Isp)\n* Polyps confirmed to be anything other than sessile serrated lesion or hyperplastic polyp on histologic diagnosis (Serrated Cohort) or\n* Polyps confirmed to be anything other than conventional adenoma on histologic diagnosis (Adenoma Cohort)\n* Patients with Ulcerative Colitis or Crohn's disease\n* Polyps with features suggestive of submucosal invasion\n* Polyps that are not able to be removed endoscopically due to location (e.g. extending into appendiceal orifice or diverticulum)",
-        "InclusionCriteria": "* \u2265 18 years of age\n* Presenting for a screening, surveillance, diagnostic, or therapeutic colonoscopy\n* Found to have:\n\na sessile serrated lesion or hyperplastic polyp \u2265 10 mm during procedure (Serrated Cohort) or a 10-19 mm conventional adenoma during procedure (Adenoma Cohort)\n\n* Ability to provide informed consent",
-        "ExclusionCriteria": "* Pedunculated or semi-pedunculated polyps (as defined by Paris Classification type Ip or Isp)\n* Polyps confirmed to be anything other than sessile serrated lesion or hyperplastic polyp on histologic diagnosis (Serrated Cohort) or\n* Polyps confirmed to be anything other than conventional adenoma on histologic diagnosis (Adenoma Cohort)\n* Patients with Ulcerative Colitis or Crohn's disease\n* Polyps with features suggestive of submucosal invasion\n* Polyps that are not able to be removed endoscopically due to location (e.g. extending into appendiceal orifice or diverticulum)",
-        "HealthyVolunteers": false,
-        "Gender": "ALL",
-        "MinimumAge": "18 Years",
-        "NCTId": "NCT06462521",
-        "startDate": "2024-07",
-        "completionDate": "2026-01",
-        "durationDays": 549,
-        "daysUntilEnd": 511
-    }
-]
+[]

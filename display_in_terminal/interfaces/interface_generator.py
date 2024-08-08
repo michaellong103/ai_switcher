@@ -1,4 +1,4 @@
-# ./interfaces/interface_generator.py
+# ./display_in_terminal/interfaces/interface_generator.py
 
 import json
 import logging
@@ -9,21 +9,19 @@ def banner(text):
 
 def condensed_trials(trials):
     output = f"{banner(f'Condensed Trials: ({len(trials)} trials)')}\n\n"
-    for trial in trials:
-        title = trial['protocolSection']['identificationModule']['briefTitle']
-        nct_id = trial['protocolSection']['identificationModule']['nctId']
-        location = f"{trial['protocolSection']['contactsLocationsModule']['locations'][0]['city']}, {trial['protocolSection']['contactsLocationsModule']['locations'][0]['state']}, {trial['protocolSection']['contactsLocationsModule']['locations'][0]['country']}"
-        output += f"{CYAN}{title}{RESET_COLOR}\n{YELLOW}{nct_id}{RESET_COLOR}, {location}\n\n"
+    for i, trial in enumerate(trials, 1):
+        title = trial['briefTitle']
+        nct_id = trial['nctNumber']
+        output += f"{i}. {CYAN}{title}{RESET_COLOR}\n   {YELLOW}{nct_id}{RESET_COLOR}\n\n"
     return output
 
 def detailed_trials(trials):
     output = f"{banner(f'Detailed Trials: ({len(trials)} trials)')}\n\n"
-    for trial in trials:
-        title = trial['protocolSection']['identificationModule']['briefTitle']
-        description = trial['protocolSection']['descriptionModule']['briefSummary']
-        nct_id = trial['protocolSection']['identificationModule']['nctId']
-        location = f"{trial['protocolSection']['contactsLocationsModule']['locations'][0]['city']}, {trial['protocolSection']['contactsLocationsModule']['locations'][0]['state']}, {trial['protocolSection']['contactsLocationsModule']['locations'][0]['country']}"
-        output += f"{CYAN}{title}{RESET_COLOR}\n{description}\n{YELLOW}{nct_id}{RESET_COLOR}, {location}\n\n"
+    for i, trial in enumerate(trials, 1):
+        title = trial['briefTitle']
+        description = trial['briefSummary']
+        nct_id = trial['nctNumber']
+        output += f"{i}. {CYAN}{title}{RESET_COLOR}\n   {description}\n   {YELLOW}{nct_id}{RESET_COLOR}\n\n"
     return output
 
 def question_format(trials):
