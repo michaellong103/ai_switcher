@@ -1,4 +1,4 @@
-# ./API_query/clinical_trials_query.py
+# ./clinical_trials_query.py
 
 import os
 import json
@@ -6,7 +6,6 @@ import requests
 import sys
 import logging
 
-# Configure logging
 
 try:
     # Attempt relative import for when running within a package

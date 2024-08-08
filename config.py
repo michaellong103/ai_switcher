@@ -14,3 +14,5 @@ init_variables = {
     "maxTrial": 20,
     "minTrial": 5
 }
+
+start_distance = "10 miles"

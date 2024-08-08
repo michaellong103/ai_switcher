@@ -1,4 +1,4 @@
-# ./API_query/update_config_state.py
+# ./update_config_state.py
 
 import json
 import os
@@ -55,19 +55,21 @@ def construct_query_url(data, radius=100):
     query_url = f"{base_url}?{'&'.join(f'{key}={value}' for key, value in params.items())}"
     return query_url
 
-def update_config_state(input_data, config_file_path):
+def update_config_state(input_data, config_file_path, radius=100):
     """
-    Update the config_state.json file with current API parameters and query URL.
+    Update the config_state.json file with current API parameters, query URL, and radius.
 
     :param input_data: Data extracted from the input JSON file
     :param config_file_path: Path to the config_state.json file
+    :param radius: Radius for the location search in kilometers (default is 100 km)
     """
-    # Construct the query URL using input data
-    query_url = construct_query_url(input_data)
+    # Construct the query URL using input data and radius
+    query_url = construct_query_url(input_data, radius)
 
     # Define the data to be updated in the config state
     updated_data = {
         "current_api_params": input_data,
+        "search_radius_km": radius,  # Include the radius in the config state
         "last_clinical_trials_api_url": query_url,
         "stats": {
             "number_of_trials": 0,  # Placeholder, update with real data if available
@@ -90,7 +92,7 @@ def update_config_state(input_data, config_file_path):
     with open(config_file_path, 'w') as config_file:
         json.dump(config_data, config_file, indent=4)
 
-    logging.info("Config state updated successfully.")
+    print("Config state updated successfully.")
 
 def main():
     # Calculate absolute paths based on the current script's location

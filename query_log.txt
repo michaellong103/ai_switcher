@@ -554,3 +554,42 @@
 2024-08-08 15:06:20,074 - INFO - Deleted file: API_response/finaloutput.json
 2024-08-08 15:06:20,074 - INFO - Deleted file: API_response/cleaned_data.json
 2024-08-08 15:06:20,075 - INFO - Config state reset successfully: config_state.json
+2024-08-08 15:59:18,071 - WARNING - Relative import failed: No module named 'clinical_trials_query'
+2024-08-08 15:59:37,231 - INFO - Starting evaluate_trials.py
+2024-08-08 15:59:37,231 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 15:59:37,240 - INFO - Imported run_main from display_in_terminal.main
+2024-08-08 15:59:37,240 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-08 15:59:37,245 - INFO - Cleaning up items in directory: API_response
+2024-08-08 15:59:37,245 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-08 15:59:37,245 - INFO - Deleted file: API_response/condensed.json
+2024-08-08 15:59:37,245 - INFO - Deleted file: API_response/detailed.json
+2024-08-08 15:59:37,246 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-08 15:59:37,246 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-08 15:59:37,246 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-08 15:59:37,246 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-08 15:59:37,247 - INFO - Config state reset successfully: config_state.json
+2024-08-08 15:59:55,819 - WARNING - Relative import failed: No module named 'clinical_trials_query'
+2024-08-08 16:00:04,245 - WARNING - Relative import failed: No module named 'clinical_trials_query'
+2024-08-08 16:01:47,212 - WARNING - Relative import failed: cannot import name 'construct_query_url' from partially initialized module 'API_query.clinical_trials_query' (most likely due to a circular import) (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/clinical_trials_query.py)
+2024-08-08 16:01:47,212 - WARNING - Relative import failed: No module named 'clinical_trials_query'
+2024-08-08 16:02:03,530 - WARNING - Relative import failed: cannot import name 'construct_query_url' from partially initialized module 'API_query.clinical_trials_query' (most likely due to a circular import) (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/clinical_trials_query.py)
+2024-08-08 16:02:03,530 - WARNING - Relative import failed: No module named 'clinical_trials_query'
+2024-08-08 16:02:43,022 - INFO - Starting evaluate_trials.py
+2024-08-08 16:02:43,022 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 16:02:43,028 - INFO - Imported run_main from display_in_terminal.main
+2024-08-08 16:02:43,029 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-08 16:02:43,034 - INFO - Cleaning up items in directory: API_response
+2024-08-08 16:02:43,034 - INFO - Config state reset successfully: config_state.json
+2024-08-08 16:05:22,007 - INFO - Starting evaluate_trials.py
+2024-08-08 16:05:22,008 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 16:05:22,017 - INFO - Imported run_main from display_in_terminal.main
+2024-08-08 16:05:22,017 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-08 16:05:22,024 - INFO - Cleaning up items in directory: API_response
+2024-08-08 16:05:22,024 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-08 16:05:22,025 - INFO - Deleted file: API_response/condensed.json
+2024-08-08 16:05:22,025 - INFO - Deleted file: API_response/detailed.json
+2024-08-08 16:05:22,025 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-08 16:05:22,026 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-08 16:05:22,026 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-08 16:05:22,026 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-08 16:05:22,027 - INFO - Config state reset successfully: config_state.json
