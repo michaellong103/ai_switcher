@@ -606,3 +606,55 @@
 2024-08-08 18:01:18,282 - INFO - Deleted file: API_response/finaloutput.json
 2024-08-08 18:01:18,282 - INFO - Deleted file: API_response/cleaned_data.json
 2024-08-08 18:01:18,284 - INFO - Config state reset successfully: config_state.json
+2024-08-08 18:09:09,770 - INFO - Starting evaluate_trials.py
+2024-08-08 18:09:09,771 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 18:09:09,781 - INFO - Imported run_main from display_in_terminal.main
+2024-08-08 18:09:09,782 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-08 18:09:09,788 - INFO - Cleaning up items in directory: API_response
+2024-08-08 18:09:09,790 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-08 18:09:09,790 - INFO - Deleted file: API_response/condensed.json
+2024-08-08 18:09:09,790 - INFO - Deleted file: API_response/detailed.json
+2024-08-08 18:09:09,791 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-08 18:09:09,791 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-08 18:09:09,792 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-08 18:09:09,793 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-08 18:09:09,793 - INFO - Config state reset successfully: config_state.json
+2024-08-08 18:15:58,922 - INFO - Starting evaluate_trials.py
+2024-08-08 18:15:58,923 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 18:15:58,936 - INFO - Imported run_main from display_in_terminal.main
+2024-08-08 18:15:58,936 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-08 18:15:58,945 - INFO - Cleaning up items in directory: API_response
+2024-08-08 18:15:58,947 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-08 18:15:58,947 - INFO - Deleted file: API_response/condensed.json
+2024-08-08 18:15:58,948 - INFO - Deleted file: API_response/detailed.json
+2024-08-08 18:15:58,948 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-08 18:15:58,948 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-08 18:15:58,949 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-08 18:15:58,949 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-08 18:15:58,950 - INFO - Config state reset successfully: config_state.json
+2024-08-08 18:17:34,175 - INFO - Starting evaluate_trials.py
+2024-08-08 18:17:34,175 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 18:17:34,183 - INFO - Imported run_main from display_in_terminal.main
+2024-08-08 18:17:34,184 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-08 18:17:34,188 - INFO - Cleaning up items in directory: API_response
+2024-08-08 18:17:34,188 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-08 18:17:34,189 - INFO - Deleted file: API_response/condensed.json
+2024-08-08 18:17:34,189 - INFO - Deleted file: API_response/detailed.json
+2024-08-08 18:17:34,189 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-08 18:17:34,190 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-08 18:17:34,190 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-08 18:17:34,190 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-08 18:17:34,191 - INFO - Config state reset successfully: config_state.json
+2024-08-08 18:19:01,653 - INFO - Starting evaluate_trials.py
+2024-08-08 18:19:01,654 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 18:19:01,666 - INFO - Imported run_main from display_in_terminal.main
+2024-08-08 18:19:01,667 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-08 18:19:01,675 - INFO - Cleaning up items in directory: API_response
+2024-08-08 18:19:01,676 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-08 18:19:01,676 - INFO - Deleted file: API_response/condensed.json
+2024-08-08 18:19:01,677 - INFO - Deleted file: API_response/detailed.json
+2024-08-08 18:19:01,677 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-08 18:19:01,678 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-08 18:19:01,678 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-08 18:19:01,678 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-08 18:19:01,679 - INFO - Config state reset successfully: config_state.json

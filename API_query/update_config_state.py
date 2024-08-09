@@ -5,14 +5,6 @@ import os
 import logging
 import sys
 
-logging.basicConfig(
-    level=logging.DEBUG,  # Use DEBUG for more detailed output
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("clinical_trials_query.log"),
-        logging.StreamHandler(sys.stdout)
-    ]
-)
 
 def load_input(file_path):
     """

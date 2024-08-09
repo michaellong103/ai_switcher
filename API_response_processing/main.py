@@ -64,15 +64,6 @@ def main() -> None:
     """
     Main function to execute the clinical trials processing workflow.
     """
-    # Set up logging configuration
-    logging.basicConfig(
-        level=logging.INFO,  # Set to DEBUG to see detailed logs
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler("api_response_processing.log"),
-            logging.StreamHandler(sys.stdout)
-        ]
-    )
 
     # Define input and output paths
     script_dir = os.path.dirname(os.path.abspath(__file__))

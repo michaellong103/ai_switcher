@@ -64,12 +64,6 @@ if __name__ == "__main__":
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
 
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler(f"{log_directory}/count_trials.log")
-        ]
-    )
+ 
 
     count_trials()
