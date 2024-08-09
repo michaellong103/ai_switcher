@@ -1,8 +1,8 @@
 {
     "Age": "50",
     "Gender": "Female",
-    "Medical Condition": "Type 1 Gaucher Disease",
-    "Location": "New York, NY",
-    "Latitude": "40.7128",
-    "Longitude": "-74.0060"
+    "Medical Condition": "Gaucher Disease",
+    "Location": "Los Angeles, CA",
+    "Latitude": "34.0522",
+    "Longitude": "-118.2437"
 }

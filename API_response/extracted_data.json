@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "trialName": "Gaucher Disease Registry Protocol",
+        "nctNumber": "NCT00358943",
+        "statusVerifiedDate": "2024-04",
+        "overallStatus": "RECRUITING",
+        "startDate": "1991-04-01",
+        "primaryCompletionDate": "2034-01-31",
+        "completionDate": "2034-01-31",
+        "studyFirstSubmitDate": "2006-07-12",
+        "lastUpdateSubmitDate": "2024-04-15",
+        "startDateType": "ACTUAL",
+        "durationDays": 15646,
+        "daysUntilEnd": 3462
+    }
+]

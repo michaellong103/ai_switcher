@@ -1,1 +1,15 @@
-[]
+[
+    {
+        "EligibilityCriteria": "Inclusion Criteria:\n\nICGG Gaucher Registry\n\n* All patients with a confirmed diagnosis of Gaucher disease are eligible for inclusion in the Registry. Confirmed diagnosis is defined as a documented \u03b2-glucocerebrosidase deficiency and/or mutation in the \u03b2-glucocerebrosidase gene.\n* For all patients, appropriate patient authorization will be obtained.\n\nGaucher Pregnancy Sub-registry:\n\n* be enrolled in the ICGG Gaucher Registry.\n* be pregnant, or have been pregnant with appropriate medical documentation available.\n* provide a signed informed consent and authorization form(s) to participate in the Sub-Registry prior to any Sub-Registry-related data collection being performed.\n\nExclusion Criteria:\n\n- No exclusion criteria for participation in the ICGG Gaucher Registry and Sub-registry.",
+        "InclusionCriteria": "ICGG Gaucher Registry\n\n* All patients with a confirmed diagnosis of Gaucher disease are eligible for inclusion in the Registry. Confirmed diagnosis is defined as a documented \u03b2-glucocerebrosidase deficiency and/or mutation in the \u03b2-glucocerebrosidase gene.\n* For all patients, appropriate patient authorization will be obtained.\n\nGaucher Pregnancy Sub-registry:\n\n* be enrolled in the ICGG Gaucher Registry.\n* be pregnant, or have been pregnant with appropriate medical documentation available.\n* provide a signed informed consent and authorization form(s) to participate in the Sub-Registry prior to any Sub-Registry-related data collection being performed.",
+        "ExclusionCriteria": "- No exclusion criteria for participation in the ICGG Gaucher Registry and Sub-registry.",
+        "HealthyVolunteers": false,
+        "Gender": "ALL",
+        "MinimumAge": "",
+        "NCTId": "NCT00358943",
+        "startDate": "1991-04-01",
+        "completionDate": "2034-01-31",
+        "durationDays": 15646,
+        "daysUntilEnd": 3462
+    }
+]

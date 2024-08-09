@@ -2,17 +2,19 @@
     "current_api_params": {
         "Age": "50",
         "Gender": "Female",
-        "Medical Condition": "Type 1 Gaucher Disease",
-        "Location": "New York, NY",
-        "Latitude": "40.7128",
-        "Longitude": "-74.0060"
+        "Medical Condition": "Gaucher Disease",
+        "Location": "Los Angeles, CA",
+        "Latitude": "34.0522",
+        "Longitude": "-118.2437"
     },
-    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+1+Gaucher+Disease&filter.geo=distance(40.7128,-74.0060,100)&aggFilters=sex%3Af&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&pageSize=200",
+    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)",
     "stats": {
-        "number_of_trials": 0,
-        "trial_names": [],
-        "nct_numbers": ""
+        "number_of_trials": 1,
+        "trial_names": [
+            "International Collaborative Gaucher Group (ICGG) Gaucher Disease Registry & Pregnancy Sub-registry"
+        ],
+        "nct_numbers": "NCT00358943"
     },
-    "search_radius_km": 100,
-    "API_response_evaluation": "No trials"
+    "search_radius_km": 10,
+    "API_response_evaluation": "Few trials"
 }

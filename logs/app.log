@@ -1,179 +1,189 @@
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 16:05:22,028 - INFO - ai_switcher/main.py - Running main with assistant_type: medical
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 16:05:22,028 - INFO - ai_switcher/main.py - Creating assistant of type: medical
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:22,028 - INFO - assistants/assistant_factory.py - Creating assistant with type: medical
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:22,028 - INFO - assistants/assistant_factory.py - Creating MedicalAssistant
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:22,028 - INFO - medical/medical_assistant.py - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:22,028 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, s...
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:22,029 - INFO - medical/medical_assistant.py - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:22,029 - INFO - assistants/assistant_factory.py - Creating assistant with type: lunch
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:22,029 - INFO - assistants/assistant_factory.py - Creating LunchAssistant
-<span style='color:#FF33A6'>[lunch]</span> 2024-08-08 16:05:22,029 - INFO - lunch/lunch_assistant.py - Initializing LunchAssistant
-<span style='color:#FF33A6'>[lunch]</span> 2024-08-08 16:05:22,029 - INFO - lunch/lunch_assistant.py - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day....
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:22,029 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggesti...
-<span style='color:#FFC733'>[router]</span> 2024-08-08 16:05:22,029 - INFO - router/conversation_router.py - Initial assistant: MedicalAssistant
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:22,029 - INFO - medical/medical_assistant.py - get_initial_message called
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:30,798 - INFO - medical/medical_assistant.py - respond called with user_input: 50 female Gaucher disease in New York, NY
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:30,798 - INFO - medical/medical_assistant.py - Action response: None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:30,798 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:30,798 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 16:05:30,813 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 16:05:32,217 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:32,237 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Thank you for providing the information. Just to clarify, Gaucher disease is quite specific, but could you please confirm if you meant Type 1 Gaucher Disease?
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 18:01:18,286 - INFO - ai_switcher/main.py - Running main with assistant_type: medical
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 18:01:18,288 - INFO - ai_switcher/main.py - Creating assistant of type: medical
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:18,288 - INFO - assistants/assistant_factory.py - Creating assistant with type: medical
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:18,289 - INFO - assistants/assistant_factory.py - Creating MedicalAssistant
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:18,289 - INFO - medical/medical_assistant.py - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:18,290 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, s...
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:18,290 - INFO - medical/medical_assistant.py - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:18,291 - INFO - assistants/assistant_factory.py - Creating assistant with type: lunch
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:18,291 - INFO - assistants/assistant_factory.py - Creating LunchAssistant
+<span style='color:#FF33A6'>[lunch]</span> 2024-08-08 18:01:18,291 - INFO - lunch/lunch_assistant.py - Initializing LunchAssistant
+<span style='color:#FF33A6'>[lunch]</span> 2024-08-08 18:01:18,292 - INFO - lunch/lunch_assistant.py - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day....
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:18,292 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggesti...
+<span style='color:#FFC733'>[router]</span> 2024-08-08 18:01:18,292 - INFO - router/conversation_router.py - Initial assistant: MedicalAssistant
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:18,292 - INFO - medical/medical_assistant.py - get_initial_message called
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:26,341 - INFO - medical/medical_assistant.py - respond called with user_input: 50 female Gaucher disease in Los Angeles, CA
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:26,342 - INFO - medical/medical_assistant.py - Action response: None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:26,343 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:26,344 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 18:01:26,373 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 18:01:27,797 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:27,799 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Thank you for providing that information. Just to confirm:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, ...
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:32,240 - INFO - medical/medical_assistant.py - Validating Assistant Output
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:32,240 - INFO - medical/medical_assistant.py - Modified super response: Thank you for providing the information. Just to clarify, Gaucher disease is quite specific, but could you please confirm if you meant Type 1 Gaucher Disease?
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+Does this look correct? (y/n)
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:27,804 - INFO - medical/medical_assistant.py - Validating Assistant Output
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:27,804 - INFO - medical/medical_assistant.py - Modified super response: Thank you for providing that information. Just to confirm:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-Does this ...
-<span style='color:#FFC733'>[router]</span> 2024-08-08 16:05:32,240 - INFO - router/conversation_router.py - Response from MedicalAssistant: Thank you for providing the information. Just to clarify, Gaucher disease is quite specific, but could you please confirm if you meant Type 1 Gaucher Disease?
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+Does this look correct? (y/n)
+<span style='color:#FFC733'>[router]</span> 2024-08-08 18:01:27,804 - INFO - router/conversation_router.py - Response from MedicalAssistant: Thank you for providing that information. Just to confirm:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-Doe...
-<span style='color:#FFC733'>[router]</span> 2024-08-08 16:05:32,240 - INFO - router/conversation_router.py - Assistant response after routing: Thank you for providing the information. Just to clarify, Gaucher disease is quite specific, but could you please confirm if you meant Type 1 Gaucher Disease?
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+Does this look correct? (y/n)
+<span style='color:#FFC733'>[router]</span> 2024-08-08 18:01:27,804 - INFO - router/conversation_router.py - Assistant response after routing: Thank you for providing that information. Just to confirm:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-D...
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 16:05:32,240 - INFO - ai_switcher/main.py - User input: 50 female Gaucher disease in New York, NY
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 16:05:32,240 - INFO - ai_switcher/main.py - Assistant response: Thank you for providing the information. Just to clarify, Gaucher disease is quite specific, but could you please confirm if you meant Type 1 Gaucher Disease?
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+Does this look correct? (y/n)
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 18:01:27,804 - INFO - ai_switcher/main.py - User input: 50 female Gaucher disease in Los Angeles, CA
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 18:01:27,805 - INFO - ai_switcher/main.py - Assistant response: Thank you for providing that information. Just to confirm:
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-Does this look corre...
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:33,085 - INFO - medical/medical_assistant.py - respond called with user_input: y
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:33,086 - INFO - medical/medical_assistant.py - Action response: None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:33,086 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:33,086 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 16:05:33,089 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 16:05:34,408 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-08 16:05:34,414 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+Does this look correct? (y/n)
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:29,071 - INFO - medical/medical_assistant.py - respond called with user_input: y
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:29,071 - INFO - medical/medical_assistant.py - Action response: None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:29,072 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:29,073 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 18:01:29,076 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 18:01:30,517 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-08 18:01:30,518 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-- Debug Grid: [(40.7128, -74.0060)]
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+- Debug Grid: [(34.0522, -118.2437)]
 I will now search for trials that match this profile.
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,417 - INFO - medical/medical_assistant.py - Validating Assistant Output
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,418 - INFO - medical/validator_utils.py - Validating field Age: 50
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,418 - INFO - medical/validator_utils.py - Validating field Gender: Female
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,418 - INFO - medical/validator_utils.py - Validating field Medical Condition: Type 1 Gaucher Disease
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,418 - INFO - medical/validator_utils.py - Validating field Location: New York, NY
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,418 - INFO - medical/validator_utils.py - Validating Debug Grid - Latitude: 40.7128, Longitude: -74.0060
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,418 - INFO - medical/medical_assistant.py - User details collected successfully
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,419 - INFO - medical/medical_assistant.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,419 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,419 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - DEBUG - API_query/clinical_trials_query.py - Checking input file path...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - DEBUG - API_query/clinical_trials_query.py - Checking output file path 1...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - DEBUG - API_query/clinical_trials_query.py - Checking output file path 2...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - ERROR - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' does not exist.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,420 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,421 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,421 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,421 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Type 1 Gaucher Disease', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060'} and default_radius: 10
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,421 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+1+Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
-Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Type 1 Gau...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,421 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+1+Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,422 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+1+Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 16:05:34,424 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 16:05:34,669 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Type+1+Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(40.7128,-74.0060,10) HTTP/1.1" 200 None
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,670 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,673 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,673 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,674 - INFO - API_query/update_stats.py - Stats section updated successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,674 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,674 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,675 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,675 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,675 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,675 - INFO - API_query/clinical_trials_query.py - Executing the API response processing.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,676 - INFO - API_response_processing/main.py - Starting clinical trials data processing.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,676 - INFO - API_response_processing/main.py - Loaded 0 trials from input file.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,677 - DEBUG - API_response_processing/file_utils.py - Extracted data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/extracted_data.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,678 - DEBUG - API_response_processing/file_utils.py - Condensed data with brief titles saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/condensed.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,678 - DEBUG - API_response_processing/file_utils.py - Detailed data with brief titles and summaries saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/detailed.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,679 - DEBUG - API_response_processing/file_utils.py - Cleaned data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/cleaned_data.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,679 - DEBUG - API_response_processing/file_utils.py - Filtered data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/filtered_exclusion_data.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,680 - DEBUG - API_response_processing/file_utils.py - All data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/all_study_data.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 16:05:34,680 - INFO - API_response_processing/main.py - Completed clinical trials data processing.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,680 - INFO - API_query/clinical_trials_query.py - Executing the API response evaluation.
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,680 - INFO - API_response_evaluation/main.py - Starting API response evaluation process
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,680 - DEBUG - API_response_evaluation/main.py - Loading configuration from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/config.json
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,680 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_config function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,681 - INFO - API_response_evaluation/evaluate_trials.py - Configuration loaded successfully
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,681 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_config function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,681 - INFO - API_response_evaluation/main.py - Configuration loaded successfully.
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,681 - DEBUG - API_response_evaluation/main.py - Loading trials data from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../API_response/finaloutput.json
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,681 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_trials_data function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,682 - INFO - API_response_evaluation/evaluate_trials.py - Trial data loaded successfully
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,682 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_trials_data function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,682 - INFO - API_response_evaluation/main.py - Loaded 0 trials from the final output file.
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,682 - DEBUG - API_response_evaluation/main.py - Evaluating the number of trials
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,682 - INFO - API_response_evaluation/evaluate_trials.py - Starting evaluate_number_of_trials function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,682 - INFO - API_response_evaluation/evaluate_trials.py - Evaluation result: No trials
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,683 - INFO - API_response_evaluation/evaluate_trials.py - Finished evaluate_number_of_trials function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,683 - INFO - API_response_evaluation/main.py - Evaluation completed successfully.
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,683 - DEBUG - API_response_evaluation/main.py - Updating config state with evaluation response
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,683 - DEBUG - API_response_evaluation/main.py - Updating config state at: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,683 - DEBUG - API_response_evaluation/main.py - Loading config state from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,683 - INFO - API_response_evaluation/main.py - Config state loaded successfully from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 16:05:34,684 - INFO - API_response_evaluation/main.py - Config state updated successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 16:05:34,684 - INFO - API_query/clinical_trials_query.py - Finished executing the API response evaluation.
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,684 - INFO - medical/medical_assistant.py - The API query is complete, and the files have been written successfully.
-<span style='color:#3357FF'>[medical]</span> 2024-08-08 16:05:34,684 - INFO - medical/medical_assistant.py - Modified super response: Great, I will now look for trials with these characteristics.
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,523 - INFO - medical/medical_assistant.py - Validating Assistant Output
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,524 - INFO - medical/validator_utils.py - Validating field Age: 50
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,524 - INFO - medical/validator_utils.py - Validating field Gender: Female
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,525 - INFO - medical/validator_utils.py - Validating field Medical Condition: Gaucher Disease
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,525 - INFO - medical/validator_utils.py - Validating field Location: Los Angeles, CA
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,525 - INFO - medical/validator_utils.py - Validating Debug Grid - Latitude: 34.0522, Longitude: -118.2437
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,525 - INFO - medical/medical_assistant.py - User details collected successfully
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,526 - INFO - medical/medical_assistant.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,527 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,527 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,527 - DEBUG - API_query/clinical_trials_query.py - Checking input file path...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,527 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,527 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,527 - DEBUG - API_query/clinical_trials_query.py - Checking output file path 1...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,528 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,528 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,528 - DEBUG - API_query/clinical_trials_query.py - Checking output file path 2...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,528 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,528 - ERROR - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' does not exist.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,528 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,528 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,529 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,529 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Gaucher Disease', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'} and default_radius: 10
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,529 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Gaucher Disease'...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,529 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,531 - INFO - API_query/clinical_trials_query.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,531 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,10)
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 18:01:30,535 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-08 18:01:30,793 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(34.0522,-118.2437,10) HTTP/1.1" 200 None
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,798 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,805 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,806 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,806 - INFO - API_query/update_stats.py - Stats section updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,807 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,824 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,824 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,843 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,843 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,843 - INFO - API_query/clinical_trials_query.py - Executing the API response processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,844 - INFO - API_response_processing/main.py - Starting clinical trials data processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,847 - INFO - API_response_processing/main.py - Loaded 1 trials from input file.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,847 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT00358943
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,853 - DEBUG - API_response_processing/date_utils.py - Days until end date '2034-01-31': 3462
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,854 - DEBUG - API_response_processing/file_utils.py - Extracted data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/extracted_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,854 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT00358943
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,855 - DEBUG - API_response_processing/file_utils.py - Condensed data with brief titles saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/condensed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,856 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT00358943
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,856 - DEBUG - API_response_processing/file_utils.py - Detailed data with brief titles and summaries saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/detailed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,857 - DEBUG - API_response_processing/date_utils.py - Duration between '1991-04-01' and '2034-01-31' is 15646 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,858 - DEBUG - API_response_processing/date_utils.py - Days until end date '2034-01-31': 3462
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,858 - DEBUG - API_response_processing/file_utils.py - Cleaned data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/cleaned_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,859 - DEBUG - API_response_processing/file_utils.py - Filtered data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/filtered_exclusion_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,878 - DEBUG - API_response_processing/file_utils.py - All data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/all_study_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-08 18:01:30,878 - INFO - API_response_processing/main.py - Completed clinical trials data processing.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,878 - INFO - API_query/clinical_trials_query.py - Executing the API response evaluation.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,878 - INFO - API_response_evaluation/main.py - Starting API response evaluation process
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,879 - DEBUG - API_response_evaluation/main.py - Loading configuration from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/config.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,879 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,880 - INFO - API_response_evaluation/evaluate_trials.py - Configuration loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,880 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,880 - INFO - API_response_evaluation/main.py - Configuration loaded successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,880 - DEBUG - API_response_evaluation/main.py - Loading trials data from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../API_response/finaloutput.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,880 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,882 - INFO - API_response_evaluation/evaluate_trials.py - Trial data loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,883 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,883 - INFO - API_response_evaluation/main.py - Loaded 1 trials from the final output file.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,883 - DEBUG - API_response_evaluation/main.py - Evaluating the number of trials
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,883 - INFO - API_response_evaluation/evaluate_trials.py - Starting evaluate_number_of_trials function
+<span style='color:#33FF99'>[display_in_terminal]</span> 2024-08-08 18:01:30,883 - INFO - display_in_terminal/main.py - run_main called with mode: detailed
+<span style='color:#33FF99'>[display_in_terminal]</span> 2024-08-08 18:01:30,884 - INFO - display_in_terminal/main.py - Loaded data from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/display_in_terminal/../API_response/detailed.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,884 - INFO - API_response_evaluation/evaluate_trials.py - Evaluation result: Few trials
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,884 - INFO - API_response_evaluation/evaluate_trials.py - Finished evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,884 - INFO - API_response_evaluation/main.py - Evaluation completed successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,885 - DEBUG - API_response_evaluation/main.py - Updating config state with evaluation response
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,885 - DEBUG - API_response_evaluation/main.py - Updating config state at: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,885 - DEBUG - API_response_evaluation/main.py - Loading config state from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,886 - INFO - API_response_evaluation/main.py - Config state loaded successfully from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-08 18:01:30,887 - INFO - API_response_evaluation/main.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-08 18:01:30,887 - INFO - API_query/clinical_trials_query.py - Finished executing the API response evaluation.
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,888 - INFO - medical/medical_assistant.py - The API query is complete, and the files have been written successfully.
+<span style='color:#3357FF'>[medical]</span> 2024-08-08 18:01:30,888 - INFO - medical/medical_assistant.py - Modified super response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-- Debug Grid: [(40.7128, -74.0060)]
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+- Debug Grid: [(34.0522, -118.2437)]
 I will now search for trials that match this profile.
-API query execute...
-<span style='color:#FFC733'>[router]</span> 2024-08-08 16:05:34,684 - INFO - router/conversation_router.py - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
+API query executed s...
+<span style='color:#FFC733'>[router]</span> 2024-08-08 18:01:30,888 - INFO - router/conversation_router.py - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-- Debug Grid: [(40.7128, -74.0060)]
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+- Debug Grid: [(34.0522, -118.2437)]
 I will now search for trials that match this profile.
-API query ...
-<span style='color:#FFC733'>[router]</span> 2024-08-08 16:05:34,684 - INFO - router/conversation_router.py - Assistant response after routing: Great, I will now look for trials with these characteristics.
+API query exe...
+<span style='color:#FFC733'>[router]</span> 2024-08-08 18:01:30,888 - INFO - router/conversation_router.py - Assistant response after routing: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-- Debug Grid: [(40.7128, -74.0060)]
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+- Debug Grid: [(34.0522, -118.2437)]
 I will now search for trials that match this profile.
-API quer...
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 16:05:34,684 - INFO - ai_switcher/main.py - User input: y
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 16:05:34,685 - INFO - ai_switcher/main.py - Assistant response: Great, I will now look for trials with these characteristics.
+API query e...
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 18:01:30,888 - INFO - ai_switcher/main.py - User input: y
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-08 18:01:30,889 - INFO - ai_switcher/main.py - Assistant response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
-- Medical Condition: Type 1 Gaucher Disease
-- Location: New York, NY
-- Debug Grid: [(40.7128, -74.0060)]
+- Medical Condition: Gaucher Disease
+- Location: Los Angeles, CA
+- Debug Grid: [(34.0522, -118.2437)]
 I will now search for trials that match this profile.
-API query executed successf...
+API query executed successfull...

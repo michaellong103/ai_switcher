@@ -6,17 +6,14 @@ import requests
 import sys
 import logging
 
-
 try:
     # Attempt relative import for when running within a package
     from .query_logger import log_query
-    from .update_config_state import update_config_state
     from .update_stats import update_stats_from_response
 except ImportError as e:
     logging.warning(f"Relative import failed: {e}")
     # Fall back to absolute import if relative import fails
     from query_logger import log_query
-    from update_config_state import update_config_state
     from update_stats import update_stats_from_response
 
 try:
@@ -82,6 +79,43 @@ def construct_query_url(data, default_radius=10):
     logging.info(f"Constructed query URL: {query_url}")
 
     return query_url
+
+def update_config_state(input_data, config_file_path, query_url, radius):
+    """
+    Update the config_state.json file with current API parameters, query URL, and radius.
+
+    :param input_data: Data extracted from the input JSON file
+    :param config_file_path: Path to the config_state.json file
+    :param query_url: Constructed query URL
+    :param radius: Radius for the location search in kilometers (default is 10 km)
+    """
+    # Define the data to be updated in the config state
+    updated_data = {
+        "current_api_params": input_data,
+        "search_radius_km": radius,  # Include the radius in the config state
+        "last_clinical_trials_api_url": query_url,
+        "stats": {
+            "number_of_trials": 0,  # Placeholder, update with real data if available
+            "trial_names": [],      # Placeholder, update with real data if available
+            "nct_numbers": ""       # Placeholder, update with real data if available
+        }
+    }
+
+    # Load the existing config state if it exists
+    if os.path.exists(config_file_path):
+        with open(config_file_path, 'r') as config_file:
+            config_data = json.load(config_file)
+    else:
+        config_data = {}
+
+    # Update the config state with new data
+    config_data.update(updated_data)
+
+    # Write the updated config state back to the file
+    with open(config_file_path, 'w') as config_file:
+        json.dump(config_data, config_file, indent=4)
+
+    logging.info("Config state updated successfully.")
 
 def fetch_clinical_trials(query_url):
     """
@@ -202,7 +236,8 @@ def main():
     # Update the config state file with current API parameters and query URL
     config_file_path = os.path.join(script_dir, "..", "config_state.json")
     
-    update_config_state(input_data, config_file_path)
+    # Directly update the config state immediately after constructing the URL
+    update_config_state(input_data, config_file_path, query_url, input_data.get("Radius", 10))
 
     # Fetch data
     clinical_trials_data = fetch_clinical_trials(query_url)
