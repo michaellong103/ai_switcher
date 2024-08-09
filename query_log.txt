@@ -699,3 +699,160 @@
 2024-08-09 12:23:31,551 - WARNING - Initial import failed: No module named 'write_input_json'
 2024-08-09 12:23:39,687 - WARNING - Initial import failed: No module named 'write_input_json'
 2024-08-09 12:25:20,135 - WARNING - Initial import failed: No module named 'write_input_json'
+2024-08-09 14:59:29,320 - INFO - Starting evaluate_trials.py
+2024-08-09 14:59:29,320 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 14:59:29,327 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 14:59:29,327 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 14:59:29,336 - INFO - Cleaning up items in directory: API_response
+2024-08-09 14:59:29,336 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 14:59:29,336 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 14:59:29,337 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 14:59:29,337 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 14:59:29,337 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 14:59:29,337 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 14:59:29,337 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 14:59:29,338 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:06:40,343 - INFO - Starting evaluate_trials.py
+2024-08-09 15:06:40,344 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:06:40,355 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:06:40,356 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:06:40,365 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:06:40,365 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:10:28,084 - INFO - <span style='color:#FF5733'>[event_system]</span> Event system initialized
+2024-08-09 15:10:28,085 - INFO - Starting evaluate_trials.py
+2024-08-09 15:10:28,085 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:10:28,093 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:10:28,093 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:10:28,100 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:10:28,100 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 15:10:28,101 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 15:10:28,101 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 15:10:28,101 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 15:10:28,102 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 15:10:28,102 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 15:10:28,102 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 15:10:28,103 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:11:54,846 - INFO - > Event system initialized
+2024-08-09 15:11:54,846 - INFO - Starting evaluate_trials.py
+2024-08-09 15:11:54,846 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:11:54,853 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:11:54,853 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:11:54,858 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:11:54,858 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 15:11:54,859 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 15:11:54,859 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 15:11:54,859 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 15:11:54,859 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 15:11:54,859 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 15:11:54,860 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 15:11:54,860 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:15:07,600 - INFO - > Event system initialized
+2024-08-09 15:15:07,600 - INFO - Starting evaluate_trials.py
+2024-08-09 15:15:07,601 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:15:07,607 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:15:07,607 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:15:07,613 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:15:07,614 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 15:15:07,614 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 15:15:07,614 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 15:15:07,614 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 15:15:07,614 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 15:15:07,615 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 15:15:07,615 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 15:15:07,615 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:16:03,868 - INFO - > Event system initialized
+2024-08-09 15:16:03,869 - INFO - Starting evaluate_trials.py
+2024-08-09 15:16:03,869 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:16:03,876 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:16:03,876 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:16:03,881 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:16:03,881 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 15:16:03,882 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 15:16:03,882 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 15:16:03,882 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 15:16:03,883 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 15:16:03,884 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 15:16:03,884 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 15:16:03,886 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:24:36,983 - INFO - > Event system initialized
+2024-08-09 15:24:36,983 - INFO - Starting evaluate_trials.py
+2024-08-09 15:24:36,983 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:24:36,998 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:24:36,998 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:24:37,011 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:24:37,011 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 15:24:37,011 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 15:24:37,012 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 15:24:37,012 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 15:24:37,012 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 15:24:37,013 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 15:24:37,013 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 15:24:37,013 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:27:54,365 - INFO - > Event system initialized
+2024-08-09 15:27:54,366 - INFO - Starting evaluate_trials.py
+2024-08-09 15:27:54,366 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:27:54,381 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:27:54,381 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:28:33,526 - INFO - > Event system initialized
+2024-08-09 15:28:33,526 - INFO - Starting evaluate_trials.py
+2024-08-09 15:28:33,526 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:28:33,533 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:28:33,533 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:33:46,038 - INFO - > Event system initialized
+2024-08-09 15:33:46,038 - INFO - Starting evaluate_trials.py
+2024-08-09 15:33:46,038 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:33:46,048 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:33:46,048 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:33:46,056 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:33:46,056 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 15:33:46,057 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 15:33:46,057 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 15:33:46,057 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 15:33:46,057 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 15:33:46,057 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 15:33:46,058 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 15:33:46,058 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:36:10,431 - INFO - > Event system initialized
+2024-08-09 15:36:10,431 - INFO - Starting evaluate_trials.py
+2024-08-09 15:36:10,431 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:36:10,442 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:36:10,442 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:37:17,746 - INFO - > Event system initialized
+2024-08-09 15:37:17,747 - INFO - Starting evaluate_trials.py
+2024-08-09 15:37:17,747 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:37:17,752 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:37:17,752 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:38:22,974 - INFO - > Event system initialized
+2024-08-09 15:38:22,974 - INFO - Starting evaluate_trials.py
+2024-08-09 15:38:22,974 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:38:22,981 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:38:22,981 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:38:22,990 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-09 15:38:22,990 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-09 15:38:22,991 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-09 15:38:22,991 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:38:22,991 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 15:38:22,992 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 15:38:22,992 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 15:38:22,992 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 15:38:22,992 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 15:38:22,992 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 15:38:22,993 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 15:38:22,993 - INFO - Config state reset successfully: config_state.json
+2024-08-09 15:42:36,605 - INFO - > Event system initialized
+2024-08-09 15:42:36,605 - INFO - Starting evaluate_trials.py
+2024-08-09 15:42:36,605 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 15:42:36,624 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 15:42:36,624 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 15:42:36,642 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-09 15:42:36,642 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-09 15:42:36,642 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-09 15:42:36,643 - INFO - Cleaning up items in directory: API_response
+2024-08-09 15:42:36,643 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 15:42:36,643 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 15:42:36,644 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 15:42:36,644 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 15:42:36,644 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 15:42:36,645 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 15:42:36,645 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 15:42:36,645 - INFO - Config state reset successfully: config_state.json

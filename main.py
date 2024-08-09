@@ -9,6 +9,12 @@ from assistants.lunch.lunch_assistant import LunchAssistant
 from assistants.medical.medical_assistant import MedicalAssistant
 from assistants.concrete_assistant import ConcreteAssistant
 from logging_config import configure_logging, delete_logs, delete_items, reset_config_state
+
+from increase_radius_query.update_input_from_config import on_no_trials_found
+
+from event_system import event_system
+event_system.on('NO_TRIALS_FOUND', on_no_trials_found)
+
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'assistants')))
 init(autoreset=True)
 
@@ -31,6 +37,7 @@ def main(assistant_type):
         print(f'{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} {response}')
         logging.info(f'User input: {user_input}')
         logging.info(f'Assistant response: {response}')
+
 if __name__ == '__main__':
     assistant_type = 'medical' if len(sys.argv) < 2 else sys.argv[1]
     delete_logs()
