@@ -1,15 +1,13 @@
 # ./assistants/medical/details_extractor.py
-
 import re
 
 def extract_details(text):
     details = {}
-    age_match = re.search(r'Age:\s*(\d+)', text)
-    gender_match = re.search(r'Gender:\s*(\w+)', text)
-    condition_match = re.search(r'Medical Condition:\s*([^\n]+)', text)
-    location_match = re.search(r'Location:\s*([^\n]+)', text)
-    debug_grid_match = re.search(r'Debug Grid:\s*\[\(([^,]+),\s*([^)]+)\)\]', text)
-
+    age_match = re.search('Age:\\s*(\\d+)', text)
+    gender_match = re.search('Gender:\\s*(\\w+)', text)
+    condition_match = re.search('Medical Condition:\\s*([^\\n]+)', text)
+    location_match = re.search('Location:\\s*([^\\n]+)', text)
+    debug_grid_match = re.search('Debug Grid:\\s*\\[\\(([^,]+),\\s*([^)]+)\\)\\]', text)
     if age_match:
         details['Age'] = age_match.group(1)
     if gender_match:
@@ -21,5 +19,4 @@ def extract_details(text):
     if debug_grid_match:
         details['Latitude'] = debug_grid_match.group(1)
         details['Longitude'] = debug_grid_match.group(2)
-    
     return details

@@ -32,13 +32,5 @@ def question_format(trials):
 2. {CYAN}Phase 2 (moderate risk):{RESET_COLOR} These trials evaluate the effectiveness of the treatment and further assess its safety, involving a larger group of participants and providing preliminary data on how well the treatment works.
 3. {CYAN}Phase 3 (lower risk):{RESET_COLOR} These trials compare the new treatment to the current standard treatment, involving a large number of participants and providing comprehensive data on effectiveness while monitoring side effects on a larger scale.
 4. {CYAN}Phase 4 (lowest risk):{RESET_COLOR} These trials occur after the treatment has been approved for general use and aim to gather additional information on the treatment's long-term effectiveness and safety.
-"""
+"""  # Properly close the triple-quoted string here
     return output
-
-def generate_interfaces(trials_json):
-    trials = json.loads(trials_json)
-    condensed = condensed_trials(trials)
-    detailed = detailed_trials(trials)
-    questions = question_format(trials)
-    
-    return condensed, detailed, questions

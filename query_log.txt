@@ -658,3 +658,44 @@
 2024-08-08 18:19:01,678 - INFO - Deleted file: API_response/finaloutput.json
 2024-08-08 18:19:01,678 - INFO - Deleted file: API_response/cleaned_data.json
 2024-08-08 18:19:01,679 - INFO - Config state reset successfully: config_state.json
+2024-08-08 18:35:37,102 - INFO - Starting evaluate_trials.py
+2024-08-08 18:35:37,103 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 18:35:57,533 - INFO - Starting evaluate_trials.py
+2024-08-08 18:35:57,533 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 18:37:09,821 - INFO - Starting evaluate_trials.py
+2024-08-08 18:37:09,822 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 18:37:38,864 - INFO - Starting evaluate_trials.py
+2024-08-08 18:37:38,865 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 19:17:47,514 - INFO - Starting evaluate_trials.py
+2024-08-08 19:17:47,515 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-08 19:17:52,728 - INFO - Starting evaluate_trials.py
+2024-08-08 19:17:52,729 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 11:42:00,676 - INFO - Starting evaluate_trials.py
+2024-08-09 11:42:00,678 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 11:42:00,684 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 11:42:00,684 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 11:42:00,694 - INFO - Cleaning up items in directory: API_response
+2024-08-09 11:42:00,695 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 11:42:00,695 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 11:42:00,695 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 11:42:00,696 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 11:42:00,696 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 11:42:00,696 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 11:42:00,697 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 11:42:00,698 - INFO - Config state reset successfully: config_state.json
+2024-08-09 12:13:06,825 - INFO - Starting evaluate_trials.py
+2024-08-09 12:13:06,825 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 12:13:06,834 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 12:13:06,834 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 12:13:06,848 - INFO - Cleaning up items in directory: API_response
+2024-08-09 12:13:06,849 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 12:13:06,849 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 12:13:06,849 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 12:13:06,850 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 12:13:06,850 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 12:13:06,850 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 12:13:06,850 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 12:13:06,852 - INFO - Config state reset successfully: config_state.json
+2024-08-09 12:23:31,551 - WARNING - Initial import failed: No module named 'write_input_json'
+2024-08-09 12:23:39,687 - WARNING - Initial import failed: No module named 'write_input_json'
+2024-08-09 12:25:20,135 - WARNING - Initial import failed: No module named 'write_input_json'

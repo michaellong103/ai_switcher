@@ -1,5 +1,4 @@
 # ./display_json/palette.py
-
-CYAN = "\033[96m"
-YELLOW = "\033[93m"
-RESET_COLOR = "\033[0m"
+CYAN = '\x1b[96m'
+YELLOW = '\x1b[93m'
+RESET_COLOR = '\x1b[0m'
