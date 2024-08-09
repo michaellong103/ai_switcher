@@ -1,4 +1,5 @@
 # ./assistants/medical/medical_assistant.py
+
 import logging
 import os
 import json
@@ -9,7 +10,7 @@ from .medical_assistant_actions import MedicalAssistantActions
 from .system_message import system_message
 from .details_extractor import extract_details
 from .validator_utils import validate_medical_condition, is_complete_response
-from API_query.clinical_trials_query import main as clinical_trials_query_main
+from query_orchestrator import run_query_and_evaluate  # Import the query orchestrator
 from tools.query_stats import count_trials
 
 class MedicalAssistant(ConcreteAssistant):
@@ -43,13 +44,20 @@ class MedicalAssistant(ConcreteAssistant):
 
     def execute_api_query(self):
         input_file_path = './API_query/input.json'
-        output_file_path = './API_response/output_final_big.json'
-        logging.info(f'Executing API query with input_file: {input_file_path}, output_file: {output_file_path}')
-        os.makedirs(os.path.dirname(output_file_path), exist_ok=True)
+        config_file_path = './config_state.json'
+        output_file_path_1 = './API_query/output.json'
+        output_file_path_2 = './API_response/output_final_big.json'
+        
+        logging.info(f'Executing API query with input_file: {input_file_path}, output_file: {output_file_path_2}')
+        
         try:
-            clinical_trials_query_main()
-            logging.info('The API query is complete, and the files have been written successfully.')
-            return (0, 'API query executed successfully.')
+            success = run_query_and_evaluate(input_file_path, config_file_path, output_file_path_1, output_file_path_2)
+            if success:
+                logging.info('The API query is complete, and the files have been written successfully.')
+                return (0, 'API query executed successfully.')
+            else:
+                logging.error('Failed to execute API query.')
+                return (1, 'Failed to execute API query.')
         except Exception as e:
             logging.error(f'There was an issue with the API query: {e}')
             return (1, f'Error executing API query: {e}')

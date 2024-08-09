@@ -1735,3 +1735,67 @@ Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Type 1 Gauch
 2024-08-09 12:44:51,653 - INFO - Finished executing the API response evaluation.
 2024-08-09 12:44:51,653 - INFO - The API query is complete, and the files have been written successfully.
 2024-08-09 12:44:51,653 - INFO - API query executed successfully.
+2024-08-09 13:35:40,848 - INFO - Starting evaluate_trials.py
+2024-08-09 13:35:40,849 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 13:35:40,858 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 13:35:40,858 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 13:35:40,858 - INFO - Loading config state from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/config_state.json
+2024-08-09 13:35:40,859 - INFO - Using Distance from current_api_params: 60 km
+2024-08-09 13:35:40,859 - INFO - Radius increased to: 110 km (max: 500 km)
+2024-08-09 13:35:40,859 - INFO - Starting to write to input.json
+2024-08-09 13:35:40,859 - INFO - Data to be written: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Type 1 Gaucher Disease', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 110}
+2024-08-09 13:35:40,859 - INFO - Data successfully written to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:35:40,859 - INFO - Config state updated with new radius: 110 km
+2024-08-09 13:35:42,864 - INFO - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+2024-08-09 13:35:42,864 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:35:42,864 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+2024-08-09 13:35:42,864 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+2024-08-09 13:35:42,864 - INFO - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+2024-08-09 13:35:42,864 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:35:42,865 - INFO - Input data loaded successfully.
+2024-08-09 13:35:42,865 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+1+Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Type 1 Gaucher Disease', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 110}
+--------------------------------------------------------------------------------
+2024-08-09 13:35:42,865 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+1+Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
+2024-08-09 13:35:42,865 - INFO - Config state updated successfully.
+2024-08-09 13:35:42,865 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Type+1+Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
+2024-08-09 13:35:43,095 - INFO - Data fetched successfully from the API.
+2024-08-09 13:35:43,097 - INFO - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+2024-08-09 13:35:43,097 - INFO - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+2024-08-09 13:35:43,097 - INFO - Stats section updated successfully.
+2024-08-09 13:35:43,098 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+2024-08-09 13:35:43,099 - INFO - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-09 13:35:43,099 - INFO - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+2024-08-09 13:35:43,099 - INFO - Executing the API response processing.
+2024-08-09 13:35:43,099 - INFO - Starting clinical trials data processing.
+2024-08-09 13:35:43,099 - INFO - Loaded 0 trials from input file.
+2024-08-09 13:35:43,101 - INFO - Completed clinical trials data processing.
+2024-08-09 13:35:43,101 - INFO - Executing the API response evaluation.
+2024-08-09 13:35:43,101 - INFO - Starting API response evaluation process
+2024-08-09 13:35:43,101 - INFO - Starting load_config function
+2024-08-09 13:35:43,102 - INFO - Configuration loaded successfully
+2024-08-09 13:35:43,102 - INFO - Finished load_config function
+2024-08-09 13:35:43,102 - INFO - Configuration loaded successfully.
+2024-08-09 13:35:43,102 - INFO - Starting load_trials_data function
+2024-08-09 13:35:43,102 - INFO - Trial data loaded successfully
+2024-08-09 13:35:43,102 - INFO - Finished load_trials_data function
+2024-08-09 13:35:43,102 - INFO - Loaded 0 trials from the final output file.
+2024-08-09 13:35:43,102 - INFO - Starting evaluate_number_of_trials function
+2024-08-09 13:35:43,102 - INFO - Evaluation result: No trials
+2024-08-09 13:35:43,102 - INFO - Finished evaluate_number_of_trials function
+2024-08-09 13:35:43,102 - INFO - Evaluation completed successfully.
+2024-08-09 13:35:43,103 - INFO - Config state loaded successfully from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+2024-08-09 13:35:43,103 - INFO - Config state updated successfully.
+2024-08-09 13:35:43,103 - INFO - Finished executing the API response evaluation.
+2024-08-09 13:35:43,103 - INFO - The API query is complete, and the files have been written successfully.
+2024-08-09 13:35:43,103 - INFO - API query executed successfully.
+2024-08-09 13:51:12,191 - INFO - Loading config state from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/config_state.json
+2024-08-09 13:51:12,192 - INFO - Using Distance from search_radius_km: 13 km
+2024-08-09 13:51:12,192 - INFO - Radius increased to: 63 km (max: 500 km)
+2024-08-09 13:51:12,192 - INFO - Starting to write to input.json
+2024-08-09 13:51:12,192 - INFO - Data to be written: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+2024-08-09 13:51:12,193 - INFO - Data successfully written to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:12,193 - INFO - Config state updated with new radius: 63 km
+2024-08-09 13:51:14,195 - INFO - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+2024-08-09 13:51:14,196 - ERROR - There was an issue with the API query: main() missing 4 required positional arguments: 'input_file_path', 'config_file_path', 'output_file_path_1', and 'output_file_path_2'
+2024-08-09 13:51:14,196 - INFO - Error executing API query: main() missing 4 required positional arguments: 'input_file_path', 'config_file_path', 'output_file_path_1', and 'output_file_path_2'

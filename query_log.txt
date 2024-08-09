@@ -699,3 +699,311 @@
 2024-08-09 12:23:31,551 - WARNING - Initial import failed: No module named 'write_input_json'
 2024-08-09 12:23:39,687 - WARNING - Initial import failed: No module named 'write_input_json'
 2024-08-09 12:25:20,135 - WARNING - Initial import failed: No module named 'write_input_json'
+2024-08-09 13:36:26,018 - INFO - Starting evaluate_trials.py
+2024-08-09 13:36:26,018 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-09 13:36:26,025 - INFO - Imported run_main from display_in_terminal.main
+2024-08-09 13:36:26,026 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-09 13:36:26,035 - INFO - Cleaning up items in directory: API_response
+2024-08-09 13:36:26,035 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-09 13:36:26,036 - INFO - Deleted file: API_response/condensed.json
+2024-08-09 13:36:26,036 - INFO - Deleted file: API_response/detailed.json
+2024-08-09 13:36:26,036 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-09 13:36:26,036 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-09 13:36:26,036 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-09 13:36:26,037 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-09 13:36:26,037 - INFO - Config state reset successfully: config_state.json
+2024-08-09 13:46:00,875 - WARNING - Initial import failed: cannot import name 'main' from partially initialized module 'API_query.clinical_trials_query' (most likely due to a circular import) (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/clinical_trials_query.py)
+2024-08-09 13:46:11,404 - WARNING - Initial import failed: cannot import name 'main' from partially initialized module 'API_query.clinical_trials_query' (most likely due to a circular import) (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/clinical_trials_query.py)
+2024-08-09 13:51:35,567 - INFO - Running clinical trials query.
+2024-08-09 13:51:35,568 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:35,568 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:35,568 - INFO - Input data loaded successfully.
+2024-08-09 13:51:35,568 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:35,568 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:35,569 - INFO - Config state updated successfully.
+2024-08-09 13:51:35,569 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:35,796 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:35,798 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:35,799 - INFO - Increasing search radius to 60 km and retrying.
+2024-08-09 13:51:35,799 - INFO - Running clinical trials query.
+2024-08-09 13:51:35,799 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:35,799 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:35,799 - INFO - Input data loaded successfully.
+2024-08-09 13:51:35,799 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:35,799 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:35,800 - INFO - Config state updated successfully.
+2024-08-09 13:51:35,800 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:35,988 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:35,989 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:35,990 - INFO - Increasing search radius to 110 km and retrying.
+2024-08-09 13:51:35,990 - INFO - Running clinical trials query.
+2024-08-09 13:51:35,990 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:35,990 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:35,990 - INFO - Input data loaded successfully.
+2024-08-09 13:51:35,990 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:35,990 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:35,991 - INFO - Config state updated successfully.
+2024-08-09 13:51:35,991 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,184 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,187 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:36,187 - INFO - Increasing search radius to 160 km and retrying.
+2024-08-09 13:51:36,187 - INFO - Running clinical trials query.
+2024-08-09 13:51:36,187 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:36,187 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:36,187 - INFO - Input data loaded successfully.
+2024-08-09 13:51:36,187 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:36,187 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,188 - INFO - Config state updated successfully.
+2024-08-09 13:51:36,188 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,407 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,411 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:36,411 - INFO - Increasing search radius to 210 km and retrying.
+2024-08-09 13:51:36,411 - INFO - Running clinical trials query.
+2024-08-09 13:51:36,411 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:36,411 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:36,411 - INFO - Input data loaded successfully.
+2024-08-09 13:51:36,411 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:36,411 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,412 - INFO - Config state updated successfully.
+2024-08-09 13:51:36,412 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,650 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,653 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:36,653 - INFO - Increasing search radius to 260 km and retrying.
+2024-08-09 13:51:36,653 - INFO - Running clinical trials query.
+2024-08-09 13:51:36,653 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:36,653 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:36,653 - INFO - Input data loaded successfully.
+2024-08-09 13:51:36,654 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:36,654 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,654 - INFO - Config state updated successfully.
+2024-08-09 13:51:36,654 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,849 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,851 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:36,851 - INFO - Increasing search radius to 310 km and retrying.
+2024-08-09 13:51:36,851 - INFO - Running clinical trials query.
+2024-08-09 13:51:36,851 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:36,852 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:36,852 - INFO - Input data loaded successfully.
+2024-08-09 13:51:36,852 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:36,852 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:36,853 - INFO - Config state updated successfully.
+2024-08-09 13:51:36,853 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,052 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,054 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:37,054 - INFO - Increasing search radius to 360 km and retrying.
+2024-08-09 13:51:37,054 - INFO - Running clinical trials query.
+2024-08-09 13:51:37,054 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:37,054 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:37,054 - INFO - Input data loaded successfully.
+2024-08-09 13:51:37,054 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:37,054 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,055 - INFO - Config state updated successfully.
+2024-08-09 13:51:37,055 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,259 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,261 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:37,262 - INFO - Increasing search radius to 410 km and retrying.
+2024-08-09 13:51:37,263 - INFO - Running clinical trials query.
+2024-08-09 13:51:37,263 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:37,263 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:37,263 - INFO - Input data loaded successfully.
+2024-08-09 13:51:37,263 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:37,263 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,265 - INFO - Config state updated successfully.
+2024-08-09 13:51:37,265 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,460 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,462 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:37,462 - INFO - Increasing search radius to 460 km and retrying.
+2024-08-09 13:51:37,462 - INFO - Running clinical trials query.
+2024-08-09 13:51:37,462 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:37,462 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:37,462 - INFO - Input data loaded successfully.
+2024-08-09 13:51:37,462 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:37,462 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,463 - INFO - Config state updated successfully.
+2024-08-09 13:51:37,463 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,660 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,662 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:37,662 - INFO - Increasing search radius to 510 km and retrying.
+2024-08-09 13:51:37,663 - INFO - Running clinical trials query.
+2024-08-09 13:51:37,663 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:37,663 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:37,663 - INFO - Input data loaded successfully.
+2024-08-09 13:51:37,663 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:37,663 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,664 - INFO - Config state updated successfully.
+2024-08-09 13:51:37,664 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,862 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:37,864 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:37,864 - INFO - No trials found after maximum radius expansion. Exiting process.
+2024-08-09 13:51:48,433 - INFO - Running clinical trials query.
+2024-08-09 13:51:48,433 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:48,433 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:48,433 - INFO - Input data loaded successfully.
+2024-08-09 13:51:48,433 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:48,433 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:48,434 - INFO - Config state updated successfully.
+2024-08-09 13:51:48,434 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:48,651 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:48,653 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:48,654 - INFO - Increasing search radius to 60 km and retrying.
+2024-08-09 13:51:48,654 - INFO - Running clinical trials query.
+2024-08-09 13:51:48,654 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:48,654 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:48,654 - INFO - Input data loaded successfully.
+2024-08-09 13:51:48,654 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:48,654 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:48,655 - INFO - Config state updated successfully.
+2024-08-09 13:51:48,655 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:48,845 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:48,847 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:48,848 - INFO - Increasing search radius to 110 km and retrying.
+2024-08-09 13:51:48,848 - INFO - Running clinical trials query.
+2024-08-09 13:51:48,848 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:48,848 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:48,848 - INFO - Input data loaded successfully.
+2024-08-09 13:51:48,848 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:48,848 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:48,849 - INFO - Config state updated successfully.
+2024-08-09 13:51:48,849 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,037 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,039 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:49,039 - INFO - Increasing search radius to 160 km and retrying.
+2024-08-09 13:51:49,039 - INFO - Running clinical trials query.
+2024-08-09 13:51:49,039 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:49,039 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:49,039 - INFO - Input data loaded successfully.
+2024-08-09 13:51:49,039 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:49,039 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,040 - INFO - Config state updated successfully.
+2024-08-09 13:51:49,040 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,236 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,238 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:49,238 - INFO - Increasing search radius to 210 km and retrying.
+2024-08-09 13:51:49,238 - INFO - Running clinical trials query.
+2024-08-09 13:51:49,238 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:49,239 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:49,239 - INFO - Input data loaded successfully.
+2024-08-09 13:51:49,239 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:49,239 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,239 - INFO - Config state updated successfully.
+2024-08-09 13:51:49,239 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,426 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,429 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:49,429 - INFO - Increasing search radius to 260 km and retrying.
+2024-08-09 13:51:49,429 - INFO - Running clinical trials query.
+2024-08-09 13:51:49,429 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:49,429 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:49,429 - INFO - Input data loaded successfully.
+2024-08-09 13:51:49,430 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:49,430 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,430 - INFO - Config state updated successfully.
+2024-08-09 13:51:49,430 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,621 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,623 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:49,624 - INFO - Increasing search radius to 310 km and retrying.
+2024-08-09 13:51:49,624 - INFO - Running clinical trials query.
+2024-08-09 13:51:49,624 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:49,624 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:49,624 - INFO - Input data loaded successfully.
+2024-08-09 13:51:49,624 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:49,624 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,625 - INFO - Config state updated successfully.
+2024-08-09 13:51:49,625 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,811 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,813 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:49,813 - INFO - Increasing search radius to 360 km and retrying.
+2024-08-09 13:51:49,813 - INFO - Running clinical trials query.
+2024-08-09 13:51:49,813 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:49,813 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:49,813 - INFO - Input data loaded successfully.
+2024-08-09 13:51:49,814 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:49,814 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:49,814 - INFO - Config state updated successfully.
+2024-08-09 13:51:49,814 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,004 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,006 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:50,006 - INFO - Increasing search radius to 410 km and retrying.
+2024-08-09 13:51:50,006 - INFO - Running clinical trials query.
+2024-08-09 13:51:50,006 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:50,007 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:50,007 - INFO - Input data loaded successfully.
+2024-08-09 13:51:50,007 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:50,007 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,007 - INFO - Config state updated successfully.
+2024-08-09 13:51:50,007 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,202 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,204 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:50,204 - INFO - Increasing search radius to 460 km and retrying.
+2024-08-09 13:51:50,204 - INFO - Running clinical trials query.
+2024-08-09 13:51:50,205 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:50,205 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:50,205 - INFO - Input data loaded successfully.
+2024-08-09 13:51:50,205 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:50,205 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,205 - INFO - Config state updated successfully.
+2024-08-09 13:51:50,206 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,392 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,395 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:50,395 - INFO - Increasing search radius to 510 km and retrying.
+2024-08-09 13:51:50,395 - INFO - Running clinical trials query.
+2024-08-09 13:51:50,395 - INFO - Starting Clinical Trials Query Process
+2024-08-09 13:51:50,395 - INFO - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+2024-08-09 13:51:50,395 - INFO - Input data loaded successfully.
+2024-08-09 13:51:50,395 - INFO - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+Input Data: {'Age': '', 'Gender': '', 'Medical Condition': '', 'Location': '', 'Latitude': '', 'Longitude': '', 'Distance': 63}
+--------------------------------------------------------------------------------
+2024-08-09 13:51:50,395 - INFO - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,396 - INFO - Config state updated successfully.
+2024-08-09 13:51:50,396 - INFO - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,589 - ERROR - HTTP error occurred: 400 Client Error: Bad Request for url: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(,,10)
+2024-08-09 13:51:50,591 - ERROR - Failed to fetch clinical trials data.
+2024-08-09 13:51:50,591 - INFO - No trials found after maximum radius expansion. Exiting process.
+2024-08-09 13:52:14,814 - INFO - Cleaning up items in directory: API_response
+2024-08-09 13:52:14,815 - INFO - Config state reset successfully: config_state.json
+2024-08-09 13:56:39,419 - INFO - Cleaning up items in directory: API_response
+2024-08-09 13:56:39,419 - INFO - Config state reset successfully: config_state.json
+2024-08-09 14:01:46,287 - INFO - Cleaning up items in directory: API_response
+2024-08-09 14:01:46,288 - INFO - Deleted file: API_response/output_final_big.json
+2024-08-09 14:01:46,289 - INFO - Config state reset successfully: config_state.json

@@ -1,0 +1,136 @@
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-09 14:01:46,289 - INFO - ai_switcher/main.py - Running main with assistant_type: medical
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-09 14:01:46,289 - INFO - ai_switcher/main.py - Creating assistant of type: medical
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:46,289 - INFO - assistants/assistant_factory.py - Creating assistant with type: medical
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:46,289 - INFO - assistants/assistant_factory.py - Creating MedicalAssistant
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:46,289 - INFO - medical/medical_assistant.py - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:46,289 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, s...
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:46,289 - INFO - medical/medical_assistant.py - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:46,289 - INFO - assistants/assistant_factory.py - Creating assistant with type: lunch
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:46,289 - INFO - assistants/assistant_factory.py - Creating LunchAssistant
+<span style='color:#FF33A6'>[lunch]</span> 2024-08-09 14:01:46,289 - INFO - lunch/lunch_assistant.py - Initializing LunchAssistant
+<span style='color:#FF33A6'>[lunch]</span> 2024-08-09 14:01:46,290 - INFO - lunch/lunch_assistant.py - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day....
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:46,290 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggesti...
+<span style='color:#FFC733'>[router]</span> 2024-08-09 14:01:46,290 - INFO - router/conversation_router.py - Initial assistant: MedicalAssistant
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:46,290 - INFO - medical/medical_assistant.py - get_initial_message called
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:53,822 - INFO - medical/medical_assistant.py - respond called with user_input: 50 female Gaucher disease in New York, NY
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:53,823 - INFO - medical/medical_assistant.py - Action response: None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:53,823 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:53,823 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-09 14:01:53,832 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-09 14:01:55,445 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:55,458 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Thank you for sharing that information. Just to clarify, Gaucher Disease is quite specific, but to assist you better, could you please specify the type of Gaucher Disease you have?
+
+Also, could you please confirm the following details:
+
+- Age: 50
+- Gend...
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:55,460 - INFO - medical/medical_assistant.py - Validating Assistant Output
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:55,460 - INFO - medical/medical_assistant.py - Modified super response: Thank you for sharing that information. Just to clarify, Gaucher Disease is quite specific, but to assist you better, could you please specify the type of Gaucher Disease you have?
+
+Also, could you please confirm the following details:
+
+- Age: 50
+- Gender: Female
+- ...
+<span style='color:#FFC733'>[router]</span> 2024-08-09 14:01:55,460 - INFO - router/conversation_router.py - Response from MedicalAssistant: Thank you for sharing that information. Just to clarify, Gaucher Disease is quite specific, but to assist you better, could you please specify the type of Gaucher Disease you have?
+
+Also, could you please confirm the following details:
+
+- Age: 50
+- Gender: Fe...
+<span style='color:#FFC733'>[router]</span> 2024-08-09 14:01:55,460 - INFO - router/conversation_router.py - Assistant response after routing: Thank you for sharing that information. Just to clarify, Gaucher Disease is quite specific, but to assist you better, could you please specify the type of Gaucher Disease you have?
+
+Also, could you please confirm the following details:
+
+- Age: 50
+- Gender: ...
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-09 14:01:55,460 - INFO - ai_switcher/main.py - User input: 50 female Gaucher disease in New York, NY
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-09 14:01:55,460 - INFO - ai_switcher/main.py - Assistant response: Thank you for sharing that information. Just to clarify, Gaucher Disease is quite specific, but to assist you better, could you please specify the type of Gaucher Disease you have?
+
+Also, could you please confirm the following details:
+
+- Age: 50
+- Gender: Female
+- Medical Co...
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:56,768 - INFO - medical/medical_assistant.py - respond called with user_input: y
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:56,769 - INFO - medical/medical_assistant.py - Action response: None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:56,769 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:56,769 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-09 14:01:56,771 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-09 14:01:58,683 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-09 14:01:58,684 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Gaucher Disease
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
+I will now search for trials that match this profile.
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,686 - INFO - medical/medical_assistant.py - Validating Assistant Output
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,687 - INFO - medical/validator_utils.py - Validating field Age: 50
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,687 - INFO - medical/validator_utils.py - Validating field Gender: Female
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,687 - INFO - medical/validator_utils.py - Validating field Medical Condition: Gaucher Disease
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,687 - INFO - medical/validator_utils.py - Validating field Location: New York, NY
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,687 - INFO - medical/validator_utils.py - Validating Debug Grid - Latitude: 40.7128, Longitude: -74.0060
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,688 - INFO - medical/medical_assistant.py - User details collected successfully
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,688 - INFO - medical/medical_assistant.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-09 14:01:58,688 - INFO - ai_switcher/query_orchestrator.py - Running clinical trials query.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,688 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,689 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: ./API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,689 - INFO - API_query/clinical_trials_query.py - Input data loaded from ./API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,689 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,689 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Gaucher Disease', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060'} and default_radius: 10
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,689 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Gaucher Disease',...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,689 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,689 - INFO - API_query/clinical_trials_query.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,689 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,10)
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-09 14:01:58,691 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-09 14:01:58,879 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(40.7128,-74.0060,10) HTTP/1.1" 200 None
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,879 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,881 - INFO - API_query/update_stats.py - Config data loaded from ./config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,882 - INFO - API_query/update_stats.py - Config data saved to ./config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,882 - INFO - API_query/update_stats.py - Stats section updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,882 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: ./API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,883 - INFO - API_query/clinical_trials_query.py - Data successfully saved to ./API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,883 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,884 - INFO - API_query/clinical_trials_query.py - Data successfully saved to ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-09 14:01:58,884 - INFO - API_query/clinical_trials_query.py - Results saved to ./API_query/output.json and ./API_response/output_final_big.json
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,884 - INFO - medical/medical_assistant.py - The API query is complete, and the files have been written successfully.
+<span style='color:#3357FF'>[medical]</span> 2024-08-09 14:01:58,884 - INFO - medical/medical_assistant.py - Modified super response: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Gaucher Disease
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
+I will now search for trials that match this profile.
+API query executed succe...
+<span style='color:#FFC733'>[router]</span> 2024-08-09 14:01:58,884 - INFO - router/conversation_router.py - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Gaucher Disease
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
+I will now search for trials that match this profile.
+API query execute...
+<span style='color:#FFC733'>[router]</span> 2024-08-09 14:01:58,884 - INFO - router/conversation_router.py - Assistant response after routing: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Gaucher Disease
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
+I will now search for trials that match this profile.
+API query execu...
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-09 14:01:58,884 - INFO - ai_switcher/main.py - User input: y
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-09 14:01:58,884 - INFO - ai_switcher/main.py - Assistant response: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Gaucher Disease
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
+I will now search for trials that match this profile.
+API query executed successfully.
