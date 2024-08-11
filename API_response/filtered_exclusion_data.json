@@ -1,1 +1,6 @@
-[]
+[
+    {
+        "ExclusionCriteria": "1. Medically unstable conditions in any group as determined by the investigators.\n2. Concurrent disease; medical condition; or an extenuating circumstance that, in the opinion of the investigator, might compromise subject safety, study compliance, completion of the study, or the integrity of the data collected for the study.\n3. Women who are pregnant or lactating or of child-bearing age who are not using acceptable forms of contraception.\n4. History of asthma that is presently being treated.\n5. Patients enrolled in another interventional study.\n6. Allergy to N-acetylcysteine.\n7. Patients who cannot or are unwilling to have blood drawn.\n8. Inability to undergo MRI scanning, including but not limited to: unable to remain still in an MRI scanner for more than 30 minutes, claustrophobia, presence of paramagnetic substances or pacemakers in body, weight over 300 lbs.\n9. Unable to adhere to study protocol for whatever reason.",
+        "NCTId": "NCT02583672"
+    }
+]

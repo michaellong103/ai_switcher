@@ -72,7 +72,7 @@ def on_no_trials_found():
         if "Distance" in config_data.get("current_api_params", {}):
             config_data["current_api_params"]["Distance"] = new_radius
         else:
-            config_data["search_radius_km"] = new_radius
+            logging.info("config_data-current_api_params-Distance")
         
         with open(os.path.join(parent_dir, 'config_state.json'), 'w') as file:
             json.dump(config_data, file, indent=4)

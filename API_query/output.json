@@ -1,3 +1,654 @@
 {
-  "studies": []
+  "studies": [
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT02583672",
+          "orgStudyIdInfo": {
+            "id": "160003"
+          },
+          "secondaryIdInfos": [
+            {
+              "id": "U54NS065768",
+              "type": "NIH",
+              "link": "https://reporter.nih.gov/quickSearch/U54NS065768"
+            }
+          ],
+          "organization": {
+            "fullName": "University of Minnesota",
+            "class": "OTHER"
+          },
+          "briefTitle": "Role of Oxidative Stress and Inflammation in Type 1 Gaucher Disease (GD1)",
+          "officialTitle": "Role of Oxidative Stress and Inflammation in Type 1 Gaucher Disease (GD1): Potential Use of Antioxidant/Anti-inflammatory Medications"
+        },
+        "statusModule": {
+          "statusVerifiedDate": "2023-12",
+          "overallStatus": "RECRUITING",
+          "expandedAccessInfo": {
+            "hasExpandedAccess": false
+          },
+          "startDateStruct": {
+            "date": "2015-09",
+            "type": "ACTUAL"
+          },
+          "primaryCompletionDateStruct": {
+            "date": "2025-07-31",
+            "type": "ESTIMATED"
+          },
+          "completionDateStruct": {
+            "date": "2025-07-31",
+            "type": "ESTIMATED"
+          },
+          "studyFirstSubmitDate": "2015-08-21",
+          "studyFirstSubmitQcDate": "2015-10-20",
+          "studyFirstPostDateStruct": {
+            "date": "2015-10-22",
+            "type": "ESTIMATED"
+          },
+          "lastUpdateSubmitDate": "2023-12-21",
+          "lastUpdatePostDateStruct": {
+            "date": "2023-12-22",
+            "type": "ACTUAL"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "responsibleParty": {
+            "type": "SPONSOR"
+          },
+          "leadSponsor": {
+            "name": "University of Minnesota",
+            "class": "OTHER"
+          },
+          "collaborators": [
+            {
+              "name": "Rare Diseases Clinical Research Network",
+              "class": "NETWORK"
+            },
+            {
+              "name": "National Center for Advancing Translational Sciences (NCATS)",
+              "class": "NIH"
+            },
+            {
+              "name": "National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK)",
+              "class": "NIH"
+            },
+            {
+              "name": "National Institute of Neurological Disorders and Stroke (NINDS)",
+              "class": "NIH"
+            },
+            {
+              "name": "Lysosomal Disease Network",
+              "class": "OTHER"
+            }
+          ]
+        },
+        "oversightModule": {
+          "oversightHasDmc": true,
+          "isFdaRegulatedDrug": true,
+          "isFdaRegulatedDevice": false
+        },
+        "descriptionModule": {
+          "briefSummary": "The purpose of this study is to measure levels of blood and brain chemicals related to oxidative stress and inflammation in healthy volunteers and individuals with Type 1 Gaucher disease (GD1) to see if these levels are altered by GD1.",
+          "detailedDescription": "The investigators will also examine if there is a change in these blood and brain chemicals in GD1 patients after receiving oral N-acetylcysteine (\"NAC\"), which is available both as a prescription medication and as a dietary-supplement product, that has antioxidant and anti-inflammatory effects. Any changes the investigators may find in chemical levels may improve our understanding of the disease and could eventually lead to better treatment options. This is a multi-center study of approximately 50 people with Type 1 Gaucher disease (GD1) and healthy volunteers. Healthy volunteers will have 3 study visits over the course of 3 months. Procedures will include review of medical history, blood draws at each visit, and an MRI scan at the third visit. GD1 patients will have 7 study visits over the course of 9 months. Procedures include review of medical history, blood draws at each visit (multiple draws from an IV catheter at Visit 6), neurological exams, pain and fatigue questionnaires, and MRI scans (at Visits 3 and 6). In addition, GD1 patients will be given oral NAC at Visit 3, to begin taking twice a day for 90 days. All MRI scans will be done at the University of Minnesota in Minneapolis."
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Gaucher Disease Type 1"
+          ],
+          "keywords": [
+            "Gaucher Disease",
+            "GD1",
+            "N-acetylcysteine",
+            "glutathione",
+            "GSH"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE2"
+          ],
+          "designInfo": {
+            "allocation": "NA",
+            "interventionModel": "SINGLE_GROUP",
+            "primaryPurpose": "TREATMENT",
+            "maskingInfo": {
+              "masking": "NONE"
+            }
+          },
+          "enrollmentInfo": {
+            "count": 50,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "armGroups": [
+            {
+              "label": "N-acetylcysteine",
+              "type": "EXPERIMENTAL",
+              "description": "The first 10 GD1 subjects will take 1800mg NAC twice daily (3600mg/day) orally for approximately 90 days. An interim analysis will be performed to determine if this dose produces changes in systemic redox status and brain glutathione (GSH) levels. If no signal of a significant change is observed, the remaining 20 subjects will receive up to 3600 mg NAC orally twice a day (7200 mg/day).",
+              "interventionNames": [
+                "Drug: N-acetylcysteine"
+              ]
+            }
+          ],
+          "interventions": [
+            {
+              "type": "DRUG",
+              "name": "N-acetylcysteine",
+              "description": "1800mg NAC twice daily (3600mg/day) orally for approximately 90 days.",
+              "armGroupLabels": [
+                "N-acetylcysteine"
+              ],
+              "otherNames": [
+                "PharmaNAC"
+              ]
+            }
+          ]
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Change in subjects with Gaucher disease type 1, in concentration of glutathione in brain (\u03bcmol/g)",
+              "description": "The investigators will measure the concentration of glutathione (GSH) in the brains of subjects with Gaucher disease type 1 at 90 days after enrollment, which is the baseline measure. It will again be measured at 180 days after enrollment. These measures will be obtained using NMR spectroscopy (often referred to by the acronym \"MRS\"). The MRS study will take place over approximately 1.0 hour and will generate measurements of GSH levels from 2-3 brain regions. Scanning may be done in multiple sessions if needed, but will not exceed 1.5 total scanning hours.",
+              "timeFrame": "At 90 days and at 180 days"
+            }
+          ],
+          "secondaryOutcomes": [
+            {
+              "measure": "In healthy volunteers, determination of level of glutathione in brain (\u03bcmol/g)",
+              "description": "The investigators will measure the glutathione (GSH) level in the brains of healthy volunteers at 90 days after enrollment. This measure will be obtained using MRS. The MRS study will take place over approximately 1.0 hour and will generate measurements of GSH levels from 2-3 brain regions. Scanning may be done in multiple sessions if needed, but will not exceed 1.5 total scanning hours.",
+              "timeFrame": "90 Days After Enrollment"
+            },
+            {
+              "measure": "Change in subjects with Gaucher disease type 1, in concentration of glutathione in blood (\u03bcmol/g)",
+              "description": "Investigators will measure the glutathione concentration in the blood of subjects with Gaucher disease type 1, at baseline (enrollment), 45 days, 90 days, 120 days, 150 days, 180 days, and 270 days. Blood samples will be drawn and analyzed using liquid chromatography-tandem mass spectrometry (\"LC-MS\").",
+              "timeFrame": "Baseline, 45 days, 90 days, 120 days, 150 days, 180 days, and 270 days"
+            },
+            {
+              "measure": "Change in healthy volunteers, in concentration of glutathione in blood (\u03bcmol/g)",
+              "description": "Investigators will measure the concentration of glutathione in the blood of healthy volunteers at baseline, at 45 days, and at 90 days. Blood samples will be drawn and analyzed using LC-MS.",
+              "timeFrame": "Baseline, 45 days, and 90 days"
+            },
+            {
+              "measure": "Change in subjects with Gaucher disease type 1, in concentration of myo-inositol in brain (\u03bcmol/g)",
+              "description": "The investigators will measure the concentration of myo-inositol in brains of subjects with Gaucher disease type 1 at 90 days after enrollment, which is the baseline measure. It will again be measured at 180 days after enrollment. These measures will be obtained using MRS. The MRS study will take place over approximately 1.0 hour and will generate measurements of myo-inositol levels from 2-3 brain regions. Scanning may be done in multiple sessions if needed, but will not exceed 1.5 total scanning hours. These measures will be performed concurrently during the MRS scans being performed to measure GSH levels.",
+              "timeFrame": "At 90 days and at 180 days"
+            },
+            {
+              "measure": "In healthy volunteers, determine the concentration of myo-inositol in brain (\u03bcmol/g)",
+              "description": "The investigators will measure the concentration of myo-inositol in brains of healthy volunteers at 90 days after enrollment. This measure will be obtained using MRS. The MRS study will take place over approximately 1.0 hour and will generate measurements of myo-inositol levels from 2-3 brain regions. Scanning may be done in multiple sessions if needed, but will not exceed 1.5 total scanning hours. This measure will be performed concurrently during the MRS scan being performed to measure GSH level.",
+              "timeFrame": "90 Days After Enrollment"
+            },
+            {
+              "measure": "Change in subjects with Gaucher disease type 1, in concentration of TNF-alpha in plasma (pg/mL)",
+              "description": "The investigators will measure the concentration of TNF-alpha in blood of subjects with Gaucher disease type 1 at baseline (enrollment), 45 days, 90 days, 120 days, 150 days, 180 days, and 270 days. Blood samples will be drawn and analyzed using immunoassay for TNF-alpha.",
+              "timeFrame": "Baseline, 45 days, 90 days, 120 days, 150 days, 180 days, and 270 days"
+            },
+            {
+              "measure": "Change in healthy volunteers, in concentration of TNF-alpha in plasma (pg/mL)",
+              "description": "The investigators will measure the concentration of TNF-alpha in blood of healthy volunteers at baseline (enrollment), at 45 days, and at 90 days. Blood samples will be drawn and analyzed using immunoassay for TNF-alpha.",
+              "timeFrame": "Baseline, 45 days, and 90 days"
+            },
+            {
+              "measure": "Change in subjects with Gaucher disease type 1, in concentration of N-acetylcysteine (NAC) in blood (\u00b5g/ml)",
+              "description": "Investigators will measure NAC levels in the blood of subjects with Gaucher disease type 1, at 120 days after enrollment, 150 days, and 180 days. Blood samples will be drawn and analyzed using LC-MS.",
+              "timeFrame": "120 days, 150 days, and 180 days"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "Inclusion Criteria:\n\n1. All participants must be 18 years or older.\n2. All participants must understand and cooperate with requirements of the study in the opinion of the investigators and must be able to provide written informed consent.\n3. Individuals with GD1 who are medically stable for participation in the study in the opinion of the investigator.\n4. GD1 patients must be on a stable, specific ERT and/or SRT therapy at a specific dose (e.g. on a units/kg basis) for at least 2 years.\n5. GD1 patients who have had a change in therapy, i.e. a change in dose or switch from one drug to another, can be enrolled after at least 6 months have elapsed since the change and is considered stable in the opinion of the clinician providing care to the patient.\n6. Healthy subjects who will be frequency-matched for age.\n7. All participants must not have taken antioxidants coenzyme Q-10, vitamin C, or vitamin E for 3 weeks prior to the study and during the course of the study.\n\nExclusion Criteria:\n\n1. Medically unstable conditions in any group as determined by the investigators.\n2. Concurrent disease; medical condition; or an extenuating circumstance that, in the opinion of the investigator, might compromise subject safety, study compliance, completion of the study, or the integrity of the data collected for the study.\n3. Women who are pregnant or lactating or of child-bearing age who are not using acceptable forms of contraception.\n4. History of asthma that is presently being treated.\n5. Patients enrolled in another interventional study.\n6. Allergy to N-acetylcysteine.\n7. Patients who cannot or are unwilling to have blood drawn.\n8. Inability to undergo MRI scanning, including but not limited to: unable to remain still in an MRI scanner for more than 30 minutes, claustrophobia, presence of paramagnetic substances or pacemakers in body, weight over 300 lbs.\n9. Unable to adhere to study protocol for whatever reason.",
+          "healthyVolunteers": true,
+          "sex": "ALL",
+          "minimumAge": "18 Years",
+          "stdAges": [
+            "ADULT",
+            "OLDER_ADULT"
+          ]
+        },
+        "contactsLocationsModule": {
+          "centralContacts": [
+            {
+              "name": "Reena V. Kartha, Ph.D.",
+              "role": "CONTACT",
+              "phone": "612-626-2436",
+              "email": "rvkartha@umn.edu"
+            }
+          ],
+          "overallOfficials": [
+            {
+              "name": "Reena V. Kartha, PharmD",
+              "affiliation": "University of Minnesota",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "locations": [
+            {
+              "facility": "University of Minnesota",
+              "status": "RECRUITING",
+              "city": "Minneapolis",
+              "state": "Minnesota",
+              "zip": "55455",
+              "country": "United States",
+              "contacts": [
+                {
+                  "name": "Reena V. Kartha, PhD",
+                  "role": "CONTACT",
+                  "phone": "612-626-2436",
+                  "email": "rvkartha@umn.edu"
+                },
+                {
+                  "name": "Reena V. Kartha, PhD",
+                  "role": "PRINCIPAL_INVESTIGATOR"
+                }
+              ],
+              "geoPoint": {
+                "lat": 44.97997,
+                "lon": -93.26384
+              }
+            },
+            {
+              "facility": "New York University",
+              "status": "RECRUITING",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10016",
+              "country": "United States",
+              "contacts": [
+                {
+                  "name": "Heather Lau, MD",
+                  "role": "CONTACT",
+                  "phone": "212-263-8344",
+                  "email": "Heather.Lau@nyumc.org"
+                },
+                {
+                  "name": "Marissa Ferraris",
+                  "role": "CONTACT",
+                  "email": "marissa.ferraris@nyumc.org"
+                },
+                {
+                  "name": "Heather Lau, MD",
+                  "role": "PRINCIPAL_INVESTIGATOR"
+                }
+              ],
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            }
+          ]
+        },
+        "referencesModule": {
+          "references": [
+            {
+              "pmid": "26052837",
+              "type": "BACKGROUND",
+              "citation": "Zhou J, Coles LD, Kartha RV, Nash N, Mishra U, Lund TC, Cloyd JC. Intravenous Administration of Stable-Labeled N-Acetylcysteine Demonstrates an Indirect Mechanism for Boosting Glutathione and Improving Redox Status. J Pharm Sci. 2015 Aug;104(8):2619-26. doi: 10.1002/jps.24482. Epub 2015 Jun 5."
+            },
+            {
+              "pmid": "23018672",
+              "type": "BACKGROUND",
+              "citation": "Radtke KK, Coles LD, Mishra U, Orchard PJ, Holmay M, Cloyd JC. Interaction of N-acetylcysteine and cysteine in human plasma. J Pharm Sci. 2012 Dec;101(12):4653-9. doi: 10.1002/jps.23325. Epub 2012 Sep 27."
+            },
+            {
+              "pmid": "28940353",
+              "type": "BACKGROUND",
+              "citation": "Coles LD, Tuite PJ, Oz G, Mishra UR, Kartha RV, Sullivan KM, Cloyd JC, Terpstra M. Repeated-Dose Oral N-Acetylcysteine in Parkinson's Disease: Pharmacokinetics and Effect on Brain Glutathione and Oxidative Stress. J Clin Pharmacol. 2018 Feb;58(2):158-167. doi: 10.1002/jcph.1008. Epub 2017 Sep 22."
+            },
+            {
+              "pmid": "23860343",
+              "type": "RESULT",
+              "citation": "Holmay MJ, Terpstra M, Coles LD, Mishra U, Ahlskog M, Oz G, Cloyd JC, Tuite PJ. N-Acetylcysteine boosts brain and blood glutathione in Gaucher and Parkinson diseases. Clin Neuropharmacol. 2013 Jul-Aug;36(4):103-6. doi: 10.1097/WNF.0b013e31829ae713."
+            }
+          ],
+          "seeAlsoLinks": [
+            {
+              "label": "Lysosomal Disease Network, which funds this study",
+              "url": "http://www.lysosomaldiseasenetwork.org/"
+            },
+            {
+              "label": "University of Minnesota - Twin Cities, one of the two locations of this study",
+              "url": "https://twin-cities.umn.edu/"
+            },
+            {
+              "label": "The National Institutes of Health's Rare Diseases Clinical Research Network, which funds the Lysosomal Disease Network",
+              "url": "https://www.rarediseasesnetwork.org/"
+            },
+            {
+              "label": "Lysosomal Disease Network's page at Rare Diseases Clinical Research Network's site",
+              "url": "https://www.rarediseasesnetwork.org/LDN/"
+            }
+          ]
+        },
+        "ipdSharingStatementModule": {
+          "ipdSharing": "YES",
+          "description": "De-identified individual data is input to the NIH-funded Rare Diseases Clinical Research Network's Data Management \\& Coordinating Center (\"DMCC\"). Eventually this data will become part of the database of Genotypes and Phenotypes (\"dbGaP\"), which is part of the National Center for Biotechnology Information, U.S. National Library of Medicine."
+        }
+      },
+      "derivedSection": {
+        "miscInfoModule": {
+          "versionHolder": "2024-08-09"
+        },
+        "conditionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D000005776",
+              "term": "Gaucher Disease"
+            },
+            {
+              "id": "D000007249",
+              "term": "Inflammation"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D000010335",
+              "term": "Pathologic Processes"
+            },
+            {
+              "id": "D000013106",
+              "term": "Sphingolipidoses"
+            },
+            {
+              "id": "D000020140",
+              "term": "Lysosomal Storage Diseases, Nervous System"
+            },
+            {
+              "id": "D000020739",
+              "term": "Brain Diseases, Metabolic, Inborn"
+            },
+            {
+              "id": "D000001928",
+              "term": "Brain Diseases, Metabolic"
+            },
+            {
+              "id": "D000001927",
+              "term": "Brain Diseases"
+            },
+            {
+              "id": "D000002493",
+              "term": "Central Nervous System Diseases"
+            },
+            {
+              "id": "D000009422",
+              "term": "Nervous System Diseases"
+            },
+            {
+              "id": "D000008661",
+              "term": "Metabolism, Inborn Errors"
+            },
+            {
+              "id": "D000030342",
+              "term": "Genetic Diseases, Inborn"
+            },
+            {
+              "id": "D000008064",
+              "term": "Lipidoses"
+            },
+            {
+              "id": "D000008052",
+              "term": "Lipid Metabolism, Inborn Errors"
+            },
+            {
+              "id": "D000016464",
+              "term": "Lysosomal Storage Diseases"
+            },
+            {
+              "id": "D000008659",
+              "term": "Metabolic Diseases"
+            },
+            {
+              "id": "D000052439",
+              "term": "Lipid Metabolism Disorders"
+            }
+          ],
+          "browseLeaves": [
+            {
+              "id": "M10293",
+              "name": "Inflammation",
+              "asFound": "Inflammation",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M8891",
+              "name": "Gaucher Disease",
+              "asFound": "Gaucher Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M15904",
+              "name": "Sphingolipidoses",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M18871",
+              "name": "Lysosomal Storage Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5204",
+              "name": "Brain Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5205",
+              "name": "Brain Diseases, Metabolic",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M22498",
+              "name": "Brain Diseases, Metabolic, Inborn",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5742",
+              "name": "Central Nervous System Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11641",
+              "name": "Metabolism, Inborn Errors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M23686",
+              "name": "Genetic Diseases, Inborn",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11064",
+              "name": "Lipidoses",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11054",
+              "name": "Lipid Metabolism, Inborn Errors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11639",
+              "name": "Metabolic Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M27029",
+              "name": "Lipid Metabolism Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "T2449",
+              "name": "Gaucher Disease",
+              "asFound": "Gaucher Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "T2452",
+              "name": "Gaucher Disease Type 1",
+              "asFound": "Gaucher Disease Type 1",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "T5335",
+              "name": "Sphingolipidosis",
+              "relevance": "LOW"
+            }
+          ],
+          "browseBranches": [
+            {
+              "abbrev": "BC23",
+              "name": "Symptoms and General Pathology"
+            },
+            {
+              "abbrev": "All",
+              "name": "All Conditions"
+            },
+            {
+              "abbrev": "BC10",
+              "name": "Nervous System Diseases"
+            },
+            {
+              "abbrev": "BC16",
+              "name": "Diseases and Abnormalities at or Before Birth"
+            },
+            {
+              "abbrev": "BC18",
+              "name": "Nutritional and Metabolic Diseases"
+            },
+            {
+              "abbrev": "Rare",
+              "name": "Rare Diseases"
+            }
+          ]
+        },
+        "interventionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D000000111",
+              "term": "Acetylcysteine"
+            },
+            {
+              "id": "C000030905",
+              "term": "N-monoacetylcystine"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D000000998",
+              "term": "Antiviral Agents"
+            },
+            {
+              "id": "D000000890",
+              "term": "Anti-Infective Agents"
+            },
+            {
+              "id": "D000005100",
+              "term": "Expectorants"
+            },
+            {
+              "id": "D000019141",
+              "term": "Respiratory System Agents"
+            },
+            {
+              "id": "D000016166",
+              "term": "Free Radical Scavengers"
+            },
+            {
+              "id": "D000000975",
+              "term": "Antioxidants"
+            },
+            {
+              "id": "D000045504",
+              "term": "Molecular Mechanisms of Pharmacological Action"
+            },
+            {
+              "id": "D000020011",
+              "term": "Protective Agents"
+            },
+            {
+              "id": "D000045505",
+              "term": "Physiological Effects of Drugs"
+            },
+            {
+              "id": "D000000931",
+              "term": "Antidotes"
+            }
+          ],
+          "browseLeaves": [
+            {
+              "id": "M3475",
+              "name": "Acetylcysteine",
+              "asFound": "Newly Diagnosed",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M244107",
+              "name": "N-monoacetylcystine",
+              "asFound": "Ocular",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M4292",
+              "name": "Antioxidants",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4217",
+              "name": "Anti-Inflammatory Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4314",
+              "name": "Antiviral Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4214",
+              "name": "Anti-Infective Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M8243",
+              "name": "Expectorants",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M21137",
+              "name": "Respiratory System Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M21869",
+              "name": "Protective Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4250",
+              "name": "Antidotes",
+              "relevance": "LOW"
+            }
+          ],
+          "browseBranches": [
+            {
+              "abbrev": "Infe",
+              "name": "Anti-Infective Agents"
+            },
+            {
+              "abbrev": "Resp",
+              "name": "Respiratory System Agents"
+            },
+            {
+              "abbrev": "All",
+              "name": "All Drugs and Chemicals"
+            },
+            {
+              "abbrev": "Infl",
+              "name": "Anti-Inflammatory Agents"
+            }
+          ]
+        }
+      },
+      "hasResults": false
+    }
+  ]
 }
