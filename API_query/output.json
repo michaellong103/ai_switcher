@@ -649,6 +649,5438 @@
         }
       },
       "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05908656",
+          "orgStudyIdInfo": {
+            "id": "PIR17206"
+          },
+          "secondaryIdInfos": [
+            {
+              "id": "U1111-1280-8450",
+              "type": "REGISTRY",
+              "domain": "ICTRP"
+            }
+          ],
+          "organization": {
+            "fullName": "Sanofi",
+            "class": "INDUSTRY"
+          },
+          "briefTitle": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States (Project Searchlight)",
+          "officialTitle": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States"
+        },
+        "statusModule": {
+          "statusVerifiedDate": "2024-04",
+          "overallStatus": "RECRUITING",
+          "expandedAccessInfo": {
+            "hasExpandedAccess": false
+          },
+          "startDateStruct": {
+            "date": "2024-04-02",
+            "type": "ACTUAL"
+          },
+          "primaryCompletionDateStruct": {
+            "date": "2024-07-23",
+            "type": "ESTIMATED"
+          },
+          "completionDateStruct": {
+            "date": "2024-07-23",
+            "type": "ESTIMATED"
+          },
+          "studyFirstSubmitDate": "2023-06-08",
+          "studyFirstSubmitQcDate": "2023-06-08",
+          "studyFirstPostDateStruct": {
+            "date": "2023-06-18",
+            "type": "ACTUAL"
+          },
+          "lastUpdateSubmitDate": "2024-04-03",
+          "lastUpdatePostDateStruct": {
+            "date": "2024-04-05",
+            "type": "ACTUAL"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "responsibleParty": {
+            "type": "SPONSOR"
+          },
+          "leadSponsor": {
+            "name": "Sanofi",
+            "class": "INDUSTRY"
+          }
+        },
+        "oversightModule": {
+          "oversightHasDmc": false,
+          "isFdaRegulatedDrug": false,
+          "isFdaRegulatedDevice": false
+        },
+        "descriptionModule": {
+          "briefSummary": "This is a three-phase study comprising both retrospective and prospective components, as follows:\n\nPhase I: Deployment of Rare Disease Algorithm:\n\nA diagnostic screening algorithm was developed using advanced analytical methods to identify patients who have an increased likelihood of having Gaucher disease. This tool will be applied to a health system's electronic health records (EHR).\n\nThe top 50 active patients per healthcare system will be identified as \"highly ranked by the RDA\" and moved to Phase II. As three to four healthcare systems are expected to participate in this study, between 150 to 200 persons are expected to be identified and included in Phase II.\n\nPhase II: Retrospective review of medical records of highly ranked persons: The listing of persons highly-ranked by the RDA from phase I will be forwarded to the study team within each participating healthcare system. After reviewing the RDA reports and medical records of each highly ranked person, study site personnel will determine eligibility for Phase III based on the relevant selection criteria listed in the section below.\n\nPhase III: Prospective diagnostic testing: Eligible persons (or their parent/guardian) from Phase II will be contacted and asked to provide consent for inclusion into the study. After consent is received, blood samples will be collected and sent for Gaucher diagnostic testing. Because of overlap in clinical symptoms between Gaucher disease and acid sphingomyelinase deficiency (ASMD), patients will also receive diagnostic testing for ASMD. Results will be shared with study site personnel, who will subsequently inform the study subject (and/or their parent/guardian, where appropriate) of results. It is anticipated that participation of a typical subject will be less than 3 months."
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Gaucher Disease"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "NA"
+          ],
+          "designInfo": {
+            "allocation": "NA",
+            "interventionModel": "SINGLE_GROUP",
+            "primaryPurpose": "SCREENING",
+            "maskingInfo": {
+              "masking": "NONE"
+            }
+          },
+          "enrollmentInfo": {
+            "count": 105,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "armGroups": [
+            {
+              "label": "Persons with electronic health records suggestive of Gaucher disease",
+              "type": "OTHER",
+              "interventionNames": [
+                "Procedure: Investigational procedure"
+              ]
+            }
+          ],
+          "interventions": [
+            {
+              "type": "PROCEDURE",
+              "name": "Investigational procedure",
+              "description": "Subjects that consent will have a single blood draw either via a finger stick or via venous blood draw (blood will be placed on a 5 spot blood card) used to determine whether they have Gaucher Disease or ASMD",
+              "armGroupLabels": [
+                "Persons with electronic health records suggestive of Gaucher disease"
+              ]
+            }
+          ]
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "The proportion of persons with GD (including those with GD identified in Phase II and those previously undiagnosed who subsequently test positive for GD in Phase III) out of all persons highly ranked by the RDA",
+              "timeFrame": "Up to 3 months"
+            },
+            {
+              "measure": "The proportion of previously undiagnosed persons highly ranked by RDA who subsequently test positive for GD out of persons with GD identified in Phase II and III",
+              "timeFrame": "Up to 3 months"
+            }
+          ],
+          "secondaryOutcomes": [
+            {
+              "measure": "Characteristics include demographic information, alternative and concomitant diagnoses, treatments, and patterns of provider visits for the previously listed subgroups",
+              "timeFrame": "Up to 3 months"
+            },
+            {
+              "measure": "Relationship between RDA scores and the diagnostic yield; descriptive analyses including confusion matrices",
+              "timeFrame": "Up to 3 months"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "Inclusion Criteria:\n\n* Phase I (Model Deployment): All persons within the EHRs of the selected IDNs will be included in this stage.\n* Phase II (Case Ascertainment): The 150 to 200 persons with the highest RDA values (i.e., 50 per healthcare system) who are active (any documented interaction with the healthcare system in the previous 18 months) will be included in this stage.\n* Phase III (Diagnostic Testing): The subset of persons from Phase II who: (1) have not been diagnosed with GD or ASMD, and (2) have not had GD and ASMD conclusively ruled out, will be asked to provide consent to undergo diagnostic testing. Individuals who meet these criteria and who provide written informed consent (or those whose parents/guardians provide consent as appropriate) will be included in this stage.\n\nExclusion Criteria:\n\n* There are no exclusion criteria for Phase I or Phase II.\n* Phase III (Diagnostic Testing):\n\n  * Patient is unable/unwilling to provide informed consent for diagnostic testing, or\n  * Patient is no longer under the care of the IDN\n\nThe above information is not intended to contain all considerations relevant to a potential participation in a clinical trial.",
+          "healthyVolunteers": false,
+          "sex": "ALL",
+          "stdAges": [
+            "CHILD",
+            "ADULT",
+            "OLDER_ADULT"
+          ]
+        },
+        "contactsLocationsModule": {
+          "centralContacts": [
+            {
+              "name": "Trial Transparency email recommended (Toll free for US & Canada)",
+              "role": "CONTACT",
+              "phone": "800-633-1610",
+              "phoneExt": "ext option 6",
+              "email": "Contact-US@sanofi.com"
+            }
+          ],
+          "overallOfficials": [
+            {
+              "name": "Clinical Sciences & Operations",
+              "affiliation": "Sanofi",
+              "role": "STUDY_DIRECTOR"
+            }
+          ],
+          "locations": [
+            {
+              "facility": "University of Florida Site Number : 8400003",
+              "status": "RECRUITING",
+              "city": "Gainesville",
+              "state": "Florida",
+              "zip": "32610-3003",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 29.65163,
+                "lon": -82.32483
+              }
+            },
+            {
+              "facility": "Metropolitan Hospital Center Site Number : 8400001",
+              "status": "RECRUITING",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10029-7494",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            },
+            {
+              "facility": "Aurora Research Institute LLC Site Number : 8400002",
+              "status": "RECRUITING",
+              "city": "Milwaukee",
+              "state": "Wisconsin",
+              "zip": "53233-1306",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 43.0389,
+                "lon": -87.90647
+              }
+            }
+          ]
+        },
+        "ipdSharingStatementModule": {
+          "ipdSharing": "YES",
+          "description": "Qualified researchers may request access to patient level data and related study documents including the clinical study report, study protocol with any amendments, blank case report form, statistical analysis plan, and dataset specifications. Patient level data will be anonymized and study documents will be redacted to protect the privacy of trial participants. Further details on Sanofi's data sharing criteria, eligible studies, and process for requesting access can be found at: https://vivli.org"
+        }
+      },
+      "derivedSection": {
+        "miscInfoModule": {
+          "versionHolder": "2024-08-09"
+        },
+        "conditionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D000005776",
+              "term": "Gaucher Disease"
+            },
+            {
+              "id": "D000035583",
+              "term": "Rare Diseases"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D000020969",
+              "term": "Disease Attributes"
+            },
+            {
+              "id": "D000010335",
+              "term": "Pathologic Processes"
+            },
+            {
+              "id": "D000013106",
+              "term": "Sphingolipidoses"
+            },
+            {
+              "id": "D000020140",
+              "term": "Lysosomal Storage Diseases, Nervous System"
+            },
+            {
+              "id": "D000020739",
+              "term": "Brain Diseases, Metabolic, Inborn"
+            },
+            {
+              "id": "D000001928",
+              "term": "Brain Diseases, Metabolic"
+            },
+            {
+              "id": "D000001927",
+              "term": "Brain Diseases"
+            },
+            {
+              "id": "D000002493",
+              "term": "Central Nervous System Diseases"
+            },
+            {
+              "id": "D000009422",
+              "term": "Nervous System Diseases"
+            },
+            {
+              "id": "D000008661",
+              "term": "Metabolism, Inborn Errors"
+            },
+            {
+              "id": "D000030342",
+              "term": "Genetic Diseases, Inborn"
+            },
+            {
+              "id": "D000008064",
+              "term": "Lipidoses"
+            },
+            {
+              "id": "D000008052",
+              "term": "Lipid Metabolism, Inborn Errors"
+            },
+            {
+              "id": "D000016464",
+              "term": "Lysosomal Storage Diseases"
+            },
+            {
+              "id": "D000008659",
+              "term": "Metabolic Diseases"
+            },
+            {
+              "id": "D000052439",
+              "term": "Lipid Metabolism Disorders"
+            }
+          ],
+          "browseLeaves": [
+            {
+              "id": "M8891",
+              "name": "Gaucher Disease",
+              "asFound": "Gaucher Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M24518",
+              "name": "Rare Diseases",
+              "asFound": "Rare disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M22700",
+              "name": "Disease Attributes",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M15904",
+              "name": "Sphingolipidoses",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M18871",
+              "name": "Lysosomal Storage Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5204",
+              "name": "Brain Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5205",
+              "name": "Brain Diseases, Metabolic",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M22498",
+              "name": "Brain Diseases, Metabolic, Inborn",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5742",
+              "name": "Central Nervous System Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11641",
+              "name": "Metabolism, Inborn Errors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M23686",
+              "name": "Genetic Diseases, Inborn",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11064",
+              "name": "Lipidoses",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11054",
+              "name": "Lipid Metabolism, Inborn Errors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11639",
+              "name": "Metabolic Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M27029",
+              "name": "Lipid Metabolism Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "T2449",
+              "name": "Gaucher Disease",
+              "asFound": "Gaucher Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "T5335",
+              "name": "Sphingolipidosis",
+              "relevance": "LOW"
+            }
+          ],
+          "browseBranches": [
+            {
+              "abbrev": "BC10",
+              "name": "Nervous System Diseases"
+            },
+            {
+              "abbrev": "BC16",
+              "name": "Diseases and Abnormalities at or Before Birth"
+            },
+            {
+              "abbrev": "BC18",
+              "name": "Nutritional and Metabolic Diseases"
+            },
+            {
+              "abbrev": "All",
+              "name": "All Conditions"
+            },
+            {
+              "abbrev": "BC23",
+              "name": "Symptoms and General Pathology"
+            },
+            {
+              "abbrev": "Rare",
+              "name": "Rare Diseases"
+            }
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT00358943",
+          "orgStudyIdInfo": {
+            "id": "DIREGC07009"
+          },
+          "secondaryIdInfos": [
+            {
+              "id": "ICGG Gaucher Registry",
+              "type": "OTHER",
+              "domain": "Sanofi"
+            },
+            {
+              "id": "U1111-1295-5844",
+              "type": "REGISTRY",
+              "domain": "ICTRP"
+            }
+          ],
+          "organization": {
+            "fullName": "Sanofi",
+            "class": "INDUSTRY"
+          },
+          "briefTitle": "International Collaborative Gaucher Group (ICGG) Gaucher Disease Registry & Pregnancy Sub-registry",
+          "officialTitle": "Gaucher Disease Registry Protocol"
+        },
+        "statusModule": {
+          "statusVerifiedDate": "2024-04",
+          "overallStatus": "RECRUITING",
+          "expandedAccessInfo": {
+            "hasExpandedAccess": false
+          },
+          "startDateStruct": {
+            "date": "1991-04-01",
+            "type": "ACTUAL"
+          },
+          "primaryCompletionDateStruct": {
+            "date": "2034-01-31",
+            "type": "ESTIMATED"
+          },
+          "completionDateStruct": {
+            "date": "2034-01-31",
+            "type": "ESTIMATED"
+          },
+          "studyFirstSubmitDate": "2006-07-12",
+          "studyFirstSubmitQcDate": "2006-07-31",
+          "studyFirstPostDateStruct": {
+            "date": "2006-08-01",
+            "type": "ESTIMATED"
+          },
+          "lastUpdateSubmitDate": "2024-04-15",
+          "lastUpdatePostDateStruct": {
+            "date": "2024-04-17",
+            "type": "ACTUAL"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "responsibleParty": {
+            "type": "SPONSOR"
+          },
+          "leadSponsor": {
+            "name": "Genzyme, a Sanofi Company",
+            "class": "INDUSTRY"
+          }
+        },
+        "oversightModule": {
+          "oversightHasDmc": false
+        },
+        "descriptionModule": {
+          "briefSummary": "The ICGG Gaucher Registry is an ongoing, international multi-center, strictly observational program that tracks the routine clinical outcomes for patients with Gaucher disease, irrespective of treatment status. No experimental intervention is involved; patients in the Registry undergo clinical assessments and receive care as determined by the patient's treating physician.\n\nThe objectives of the Registry are:\n\n* To enhance understanding of the variability, progression, identification, and natural history of Gaucher disease, with the ultimate goal of better guiding and assessing therapeutic intervention.\n* To assist the Gaucher medical community with the development of recommendations for monitoring patients, and to provide reports on patient outcomes, to optimize patient care.\n* To characterize the Gaucher disease population.\n* To evaluate the long-term effectiveness of imiglucerase and of eliglustat.\n\nGaucher Pregnancy Sub-registry: The primary objective of this Sub-registry is to track pregnancy outcomes, including complications and infant growth, in all women with Gaucher disease during pregnancy, regardless of whether they receive disease-specific therapy. No experimental intervention is given; thus a patient will undergo clinical assessments and receive standard of care treatment as determined by the patient's physician.If a patient consents to this Sub-registry, information about the patient's medical and obstetric history, pregnancy, and birth will be collected, and, if a patient consents to data collection for her infant, data on infant growth through month 36 postpartum will be collected."
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Gaucher Disease",
+            "Cerebroside Lipidosis Syndrome",
+            "Glucocerebrosidase Deficiency Disease",
+            "Glucosylceramide Beta-Glucosidase Deficiency Disease"
+          ],
+          "keywords": [
+            "Gaucher Disease",
+            "Glucocerebrosidase Deficiency Disease"
+          ]
+        },
+        "designModule": {
+          "studyType": "OBSERVATIONAL",
+          "patientRegistry": true,
+          "targetDuration": "12 Months",
+          "designInfo": {
+            "observationalModel": "COHORT",
+            "timePerspective": "PROSPECTIVE"
+          },
+          "enrollmentInfo": {
+            "count": 12000,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "armGroups": [
+            {
+              "label": "Patients in ICGG Gaucher Registry",
+              "description": "No experimental intervention is given. A patient with Gaucher Disease will undergo clinical assessments and receive standard of care treatment as determined by the patient's physician."
+            },
+            {
+              "label": "Pregnant women with confirmed diagnosis of Gaucher disease",
+              "description": "No experimental intervention is given. Pregnant women with confirmed diagnosis of Gaucher disease who are participating in the ICGG Gaucher Registry and consented to participate in the Gaucher Pregnancy Sub-registry, regardless of whether she is receiving disease-specific therapy and irrespective of the commercial product with which she may be treated."
+            }
+          ]
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "ICGG Gaucher Registry: To provide the Gaucher medical community with recommendations for monitoring patients and to provide reports on patient outcomes to help optimize patient care",
+              "timeFrame": "42 years"
+            },
+            {
+              "measure": "Gaucher Pregnancy Sub-registry: To track pregnancy outcomes, including complications and infant growth, in all women with Gaucher disease during pregnancy, regardless of whether they receive disease-specific therapy, such as ERT with imiglucerase",
+              "timeFrame": "42 years"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "Inclusion Criteria:\n\nICGG Gaucher Registry\n\n* All patients with a confirmed diagnosis of Gaucher disease are eligible for inclusion in the Registry. Confirmed diagnosis is defined as a documented \u03b2-glucocerebrosidase deficiency and/or mutation in the \u03b2-glucocerebrosidase gene.\n* For all patients, appropriate patient authorization will be obtained.\n\nGaucher Pregnancy Sub-registry:\n\n* be enrolled in the ICGG Gaucher Registry.\n* be pregnant, or have been pregnant with appropriate medical documentation available.\n* provide a signed informed consent and authorization form(s) to participate in the Sub-Registry prior to any Sub-Registry-related data collection being performed.\n\nExclusion Criteria:\n\n- No exclusion criteria for participation in the ICGG Gaucher Registry and Sub-registry.",
+          "healthyVolunteers": false,
+          "sex": "ALL",
+          "stdAges": [
+            "CHILD",
+            "ADULT",
+            "OLDER_ADULT"
+          ],
+          "studyPopulation": "All patients with a confirmed diagnosis of Gaucher disease are eligible for inclusion in the ICGG Gaucher Registry.\n\nFor Gaucher Pregnancy Sub-registry: It is recommended that pregnancy data be collected on all eligible women regardless of infant enrollment. In the event of patients having multiple pregnancies, data collection for each individual pregnancy is encouraged for all women enrolled in this Sub-registry.",
+          "samplingMethod": "NON_PROBABILITY_SAMPLE"
+        },
+        "contactsLocationsModule": {
+          "centralContacts": [
+            {
+              "name": "Trial Transparency email recommended (Toll free number for US & Canada)",
+              "role": "CONTACT",
+              "phone": "800-633-1610",
+              "phoneExt": "option 6",
+              "email": "Contact-Us@sanofi.com"
+            },
+            {
+              "name": "ICGG Gaucher Registry HelpLine",
+              "role": "CONTACT",
+              "phone": "+1(617) 252-7500"
+            }
+          ],
+          "overallOfficials": [
+            {
+              "name": "Study Director",
+              "affiliation": "Genzyme, a Sanofi Company",
+              "role": "STUDY_DIRECTOR"
+            }
+          ],
+          "locations": [
+            {
+              "facility": "Phoenix Children's Hospital Site Number : 840003",
+              "status": "RECRUITING",
+              "city": "Phoenix",
+              "state": "Arizona",
+              "zip": "85013",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 33.44838,
+                "lon": -112.07404
+              }
+            },
+            {
+              "facility": "University of Arizona Site Number : 840015",
+              "status": "RECRUITING",
+              "city": "Tucson",
+              "state": "Arizona",
+              "zip": "85724",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 32.22174,
+                "lon": -110.92648
+              }
+            },
+            {
+              "facility": "Arkansas Childrens Hospital Site Number : 840109",
+              "status": "RECRUITING",
+              "city": "Little Rock",
+              "state": "Arkansas",
+              "zip": "72202",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 34.74648,
+                "lon": -92.28959
+              }
+            },
+            {
+              "facility": "University of Arkansas for Medical Sciences Site Number : 840113",
+              "status": "RECRUITING",
+              "city": "Little Rock",
+              "state": "Arkansas",
+              "zip": "72205",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 34.74648,
+                "lon": -92.28959
+              }
+            },
+            {
+              "facility": "Tower Hematology/Oncology Medical Group Site Number : 840056",
+              "status": "RECRUITING",
+              "city": "Beverly Hills",
+              "state": "California",
+              "zip": "90211",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 34.07362,
+                "lon": -118.40036
+              }
+            },
+            {
+              "facility": "University of California at Irvine Site Number : 840036",
+              "status": "RECRUITING",
+              "city": "Irvine",
+              "state": "California",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 33.66946,
+                "lon": -117.82311
+              }
+            },
+            {
+              "facility": "Southern California Permanente Medical Group Site Number : 840108",
+              "status": "RECRUITING",
+              "city": "Los Angeles",
+              "state": "California",
+              "zip": "90027",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 34.05223,
+                "lon": -118.24368
+              }
+            },
+            {
+              "facility": "USC Health Sciences Center Dept of Genetics Site Number : 840082",
+              "status": "RECRUITING",
+              "city": "Los Angeles",
+              "state": "California",
+              "zip": "90033",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 34.05223,
+                "lon": -118.24368
+              }
+            },
+            {
+              "facility": "Children's Hospital of Orange County Site Number : 840074",
+              "status": "RECRUITING",
+              "city": "Orange",
+              "state": "California",
+              "zip": "92868",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 33.78779,
+                "lon": -117.85311
+              }
+            },
+            {
+              "facility": "Stanford Unviersity MC Dept of Genetics Site Number : 840022",
+              "status": "RECRUITING",
+              "city": "Palo Alto",
+              "state": "California",
+              "zip": "94305",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 37.44188,
+                "lon": -122.14302
+              }
+            },
+            {
+              "facility": "UC Davis MIND Institute Site Number : 840010",
+              "status": "RECRUITING",
+              "city": "Sacramento",
+              "state": "California",
+              "zip": "95817",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 38.58157,
+                "lon": -121.4944
+              }
+            },
+            {
+              "facility": "Kaiser Permanente Hospital Site Number : 840042",
+              "status": "COMPLETED",
+              "city": "Sacramento",
+              "state": "California",
+              "zip": "95825",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 38.58157,
+                "lon": -121.4944
+              }
+            },
+            {
+              "facility": "Loma Linda University Children's Hospital Site Number : 840117",
+              "status": "RECRUITING",
+              "city": "San Bernardino",
+              "state": "California",
+              "zip": "92408",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 34.10834,
+                "lon": -117.28977
+              }
+            },
+            {
+              "facility": "University of California at San Diego Site Number : 840007",
+              "status": "COMPLETED",
+              "city": "San Diego",
+              "state": "California",
+              "zip": "92093",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 32.71533,
+                "lon": -117.15726
+              }
+            },
+            {
+              "facility": "University of California at San Francisco Site Number : 840051",
+              "status": "RECRUITING",
+              "city": "San Francisco",
+              "state": "California",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 37.77493,
+                "lon": -122.41942
+              }
+            },
+            {
+              "facility": "University of Colorado at Denver Genetics Site Number : 840068",
+              "status": "RECRUITING",
+              "city": "Aurora",
+              "state": "Colorado",
+              "zip": "80045",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.72943,
+                "lon": -104.83192
+              }
+            },
+            {
+              "facility": "Yale Site Number : 840047",
+              "status": "RECRUITING",
+              "city": "New Haven",
+              "state": "Connecticut",
+              "zip": "06520",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.30815,
+                "lon": -72.92816
+              }
+            },
+            {
+              "facility": "Children's National Medical Center Site Number : 840067",
+              "status": "RECRUITING",
+              "city": "Washington",
+              "state": "District of Columbia",
+              "zip": "20010",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 38.89511,
+                "lon": -77.03637
+              }
+            },
+            {
+              "facility": "University Hematology Oncology Site Number : 840075",
+              "status": "RECRUITING",
+              "city": "Coral Springs",
+              "state": "Florida",
+              "zip": "33065",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 26.27119,
+                "lon": -80.2706
+              }
+            },
+            {
+              "facility": "University of Florida Pediatrics Genetics Site Number : 840121",
+              "status": "RECRUITING",
+              "city": "Jacksonville",
+              "state": "Florida",
+              "zip": "32207",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 30.33218,
+                "lon": -81.65565
+              }
+            },
+            {
+              "facility": "The Atwal Clinic Site Number : 840112",
+              "status": "RECRUITING",
+              "city": "Jacksonville",
+              "state": "Florida",
+              "zip": "32216",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 30.33218,
+                "lon": -81.65565
+              }
+            },
+            {
+              "facility": "University Of Miami SOM Site Number : 840006",
+              "status": "RECRUITING",
+              "city": "Miami",
+              "state": "Florida",
+              "zip": "33136",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 25.77427,
+                "lon": -80.19366
+              }
+            },
+            {
+              "facility": "University of Florida-Genetics Site Number : 840096",
+              "status": "RECRUITING",
+              "city": "Tampa",
+              "state": "Florida",
+              "zip": "33606",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 27.94752,
+                "lon": -82.45843
+              }
+            },
+            {
+              "facility": "Pediatric Endocrine Associates Site Number : 840017",
+              "status": "RECRUITING",
+              "city": "Tampa",
+              "state": "Florida",
+              "zip": "33612",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 27.94752,
+                "lon": -82.45843
+              }
+            },
+            {
+              "facility": "Emory University School of Medicine- Human Genetics Site Number : 840060",
+              "status": "RECRUITING",
+              "city": "Decatur",
+              "state": "Georgia",
+              "zip": "30033",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 33.77483,
+                "lon": -84.29631
+              }
+            },
+            {
+              "facility": "Ann and Robert Lurie Children's Hospital Site Number : 840011",
+              "status": "RECRUITING",
+              "city": "Chicago",
+              "state": "Illinois",
+              "zip": "60611",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.85003,
+                "lon": -87.65005
+              }
+            },
+            {
+              "facility": "Ann and Robert Lurie Children's Hospital Site Number : 840013",
+              "status": "RECRUITING",
+              "city": "Chicago",
+              "state": "Illinois",
+              "zip": "60611",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.85003,
+                "lon": -87.65005
+              }
+            },
+            {
+              "facility": "Rush University Medical Center Genetics Site Number : 840079",
+              "status": "RECRUITING",
+              "city": "Chicago",
+              "state": "Illinois",
+              "zip": "60612",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.85003,
+                "lon": -87.65005
+              }
+            },
+            {
+              "facility": "Indianapolis University School of Medicine Site Number : 840027",
+              "status": "RECRUITING",
+              "city": "Indianapolis",
+              "state": "Indiana",
+              "zip": "46202",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.76838,
+                "lon": -86.15804
+              }
+            },
+            {
+              "facility": "University of Iowa Site Number : 840032",
+              "status": "RECRUITING",
+              "city": "Iowa City",
+              "state": "Iowa",
+              "zip": "52242",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.66113,
+                "lon": -91.53017
+              }
+            },
+            {
+              "facility": "University of Louisville- Genetics Site Number : 840030",
+              "status": "RECRUITING",
+              "city": "Louisville",
+              "state": "Kentucky",
+              "zip": "40202",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 38.25424,
+                "lon": -85.75941
+              }
+            },
+            {
+              "facility": "Tulane University Medical Center Site Number : 840001",
+              "status": "COMPLETED",
+              "city": "New Orleans",
+              "state": "Louisiana",
+              "zip": "70112",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 29.95465,
+                "lon": -90.07507
+              }
+            },
+            {
+              "facility": "Ochsner Medical Center Site Number : 840120",
+              "status": "RECRUITING",
+              "city": "New Orleans",
+              "state": "Louisiana",
+              "zip": "70121",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 29.95465,
+                "lon": -90.07507
+              }
+            },
+            {
+              "facility": "Maine Medical Center Pediatrics Site Number : 840064",
+              "status": "RECRUITING",
+              "city": "Portland",
+              "state": "Maine",
+              "zip": "04102",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 43.66147,
+                "lon": -70.25533
+              }
+            },
+            {
+              "facility": "John Hopkins Site Number : 840044",
+              "status": "RECRUITING",
+              "city": "Baltimore",
+              "state": "Maryland",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.29038,
+                "lon": -76.61219
+              }
+            },
+            {
+              "facility": "Massachusetts General Hospital-Genetics Site Number : 840062",
+              "status": "RECRUITING",
+              "city": "Boston",
+              "state": "Massachusetts",
+              "zip": "02114",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 42.35843,
+                "lon": -71.05977
+              }
+            },
+            {
+              "facility": "Boston Children's Hospital Site Number : 840092",
+              "status": "RECRUITING",
+              "city": "Boston",
+              "state": "Massachusetts",
+              "zip": "2115",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 42.35843,
+                "lon": -71.05977
+              }
+            },
+            {
+              "facility": "University of Michigan Pediatrics Site Number : 840107",
+              "status": "RECRUITING",
+              "city": "Ann Arbor",
+              "state": "Michigan",
+              "zip": "48109",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 42.27756,
+                "lon": -83.74088
+              }
+            },
+            {
+              "facility": "Children's Hospital of Michigan Site Number : 840066",
+              "status": "RECRUITING",
+              "city": "Detroit",
+              "state": "Michigan",
+              "zip": "48201",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 42.33143,
+                "lon": -83.04575
+              }
+            },
+            {
+              "facility": "Infusion Associates Site Number : 840050",
+              "status": "RECRUITING",
+              "city": "Grand Rapids",
+              "state": "Michigan",
+              "zip": "49525",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 42.96336,
+                "lon": -85.66809
+              }
+            },
+            {
+              "facility": "Children's Health Care Site Number : 840114",
+              "status": "RECRUITING",
+              "city": "Minneapolis",
+              "state": "Minnesota",
+              "zip": "55404",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 44.97997,
+                "lon": -93.26384
+              }
+            },
+            {
+              "facility": "Children's Hospital and Clinics of Minnesota Site Number : 840046",
+              "status": "RECRUITING",
+              "city": "Minneapolis",
+              "state": "Minnesota",
+              "zip": "55404",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 44.97997,
+                "lon": -93.26384
+              }
+            },
+            {
+              "facility": "University of Minnesota Medical Center Pediatrics Site Number : 840076",
+              "status": "RECRUITING",
+              "city": "Minneapolis",
+              "state": "Minnesota",
+              "zip": "55455",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 44.97997,
+                "lon": -93.26384
+              }
+            },
+            {
+              "facility": "University of Missouri Health System Department of Genetics Site Number : 840031",
+              "status": "RECRUITING",
+              "city": "Columibia",
+              "state": "Missouri",
+              "zip": "65212",
+              "country": "United States"
+            },
+            {
+              "facility": "Children's Mercy Hospital- Pediatrics Site Number : 840063",
+              "status": "COMPLETED",
+              "city": "Kansas City",
+              "state": "Missouri",
+              "zip": "64108",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.09973,
+                "lon": -94.57857
+              }
+            },
+            {
+              "facility": "Washington University of St. Louis Site Number : 840100",
+              "status": "RECRUITING",
+              "city": "Saint Louis",
+              "state": "Missouri",
+              "zip": "63110",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 38.62727,
+                "lon": -90.19789
+              }
+            },
+            {
+              "facility": "University of Nebraska Medical Center- Pediatrics Site Number : 840084",
+              "status": "RECRUITING",
+              "city": "Omaha",
+              "state": "Nebraska",
+              "zip": "68198",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.25626,
+                "lon": -95.94043
+              }
+            },
+            {
+              "facility": "Children's Specialty Center of Nevada Site Number : 840008",
+              "status": "RECRUITING",
+              "city": "Las Vegas",
+              "state": "Nevada",
+              "zip": "89109",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 36.17497,
+                "lon": -115.13722
+              }
+            },
+            {
+              "facility": "Joseph M. Sanzari Children's Hospital Site Number : 840101",
+              "status": "RECRUITING",
+              "city": "Hackensack",
+              "state": "New Jersey",
+              "zip": "07601",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.88593,
+                "lon": -74.04347
+              }
+            },
+            {
+              "facility": "Atlantic Health System Site Number : 840099",
+              "status": "RECRUITING",
+              "city": "Morristown",
+              "state": "New Jersey",
+              "zip": "07960",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.79677,
+                "lon": -74.48154
+              }
+            },
+            {
+              "facility": "St. Peter's University Hospital Site Number : 840016",
+              "status": "RECRUITING",
+              "city": "New Brunswick",
+              "state": "New Jersey",
+              "zip": "08901",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.48622,
+                "lon": -74.45182
+              }
+            },
+            {
+              "facility": "St. Joseph's Children's Hospital Site Number : 840057",
+              "status": "RECRUITING",
+              "city": "Paterson",
+              "state": "New Jersey",
+              "zip": "07503",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.91677,
+                "lon": -74.17181
+              }
+            },
+            {
+              "facility": "Northwell Health Site Number : 840102",
+              "status": "RECRUITING",
+              "city": "Manhasset",
+              "state": "New York",
+              "zip": "11030",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.79788,
+                "lon": -73.69957
+              }
+            },
+            {
+              "facility": "New York University School Of Medicine Site Number : 840040",
+              "status": "RECRUITING",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10016",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            },
+            {
+              "facility": "Metropolitan Hospital Center Site Number : 840110",
+              "status": "RECRUITING",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10029-7494",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            },
+            {
+              "facility": "Mt. Sinai School of Medicine Site Number : 840005",
+              "status": "RECRUITING",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10029",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            },
+            {
+              "facility": "Site Number : 840026",
+              "status": "RECRUITING",
+              "city": "New York",
+              "state": "New York",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            },
+            {
+              "facility": "University of Rochester Medical Center SOM Site Number : 840105",
+              "status": "RECRUITING",
+              "city": "Rochester",
+              "state": "New York",
+              "zip": "14642",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 43.15478,
+                "lon": -77.61556
+              }
+            },
+            {
+              "facility": "State University of New York Site Number : 840052",
+              "status": "RECRUITING",
+              "city": "Syracuse",
+              "state": "New York",
+              "zip": "13210",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 43.04812,
+                "lon": -76.14742
+              }
+            },
+            {
+              "facility": "New York Medical College Site Number : 840039",
+              "status": "RECRUITING",
+              "city": "Valhalla",
+              "state": "New York",
+              "zip": "10595",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.07482,
+                "lon": -73.77513
+              }
+            },
+            {
+              "facility": "Carolinas Medical Center Hospital Site Number : 840065",
+              "status": "RECRUITING",
+              "city": "Charlotte",
+              "state": "North Carolina",
+              "zip": "28232",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 35.22709,
+                "lon": -80.84313
+              }
+            },
+            {
+              "facility": "Duke University Medical Center Genetics Dept Site Number : 840037",
+              "status": "RECRUITING",
+              "city": "Durham",
+              "state": "North Carolina",
+              "zip": "27710",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 35.99403,
+                "lon": -78.89862
+              }
+            },
+            {
+              "facility": "UHCMC Site Number : 840119",
+              "status": "RECRUITING",
+              "city": "Cleveland",
+              "state": "Ohio",
+              "zip": "44106",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.4995,
+                "lon": -81.69541
+              }
+            },
+            {
+              "facility": "Cleveland Clinic Foundation Pediatrics Site Number : 840048",
+              "status": "RECRUITING",
+              "city": "Cleveland",
+              "state": "Ohio",
+              "zip": "44195",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.4995,
+                "lon": -81.69541
+              }
+            },
+            {
+              "facility": "Nationwide Children's Hospital Site Number : 840091",
+              "status": "RECRUITING",
+              "city": "Columbus",
+              "state": "Ohio",
+              "zip": "43205-2664",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.96118,
+                "lon": -82.99879
+              }
+            },
+            {
+              "facility": "LSD Data Registry Site LLC Site Number : 840094",
+              "status": "RECRUITING",
+              "city": "Dublin",
+              "state": "Ohio",
+              "zip": "43017",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.09923,
+                "lon": -83.11408
+              }
+            },
+            {
+              "facility": "Oregon Health & Science University Site Number : 840080",
+              "status": "RECRUITING",
+              "city": "Portland",
+              "state": "Oregon",
+              "zip": "97239",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 45.52345,
+                "lon": -122.67621
+              }
+            },
+            {
+              "facility": "Children's Hospital of Philadelphia HUP Medical Genetics Site Number : 840089",
+              "status": "RECRUITING",
+              "city": "Philadelphia",
+              "state": "Pennsylvania",
+              "zip": "19104",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.95233,
+                "lon": -75.16379
+              }
+            },
+            {
+              "facility": "Children's Hospital of Philadelphia Site Number : 840034",
+              "status": "RECRUITING",
+              "city": "Philadelphia",
+              "state": "Pennsylvania",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 39.95233,
+                "lon": -75.16379
+              }
+            },
+            {
+              "facility": "University of Pittsburgh Site Number : 840023",
+              "status": "RECRUITING",
+              "city": "Pittsburgh",
+              "state": "Pennsylvania",
+              "zip": "15224",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.44062,
+                "lon": -79.99589
+              }
+            },
+            {
+              "facility": "Rhode Island Hospital Genetics Site Number : 840053",
+              "status": "RECRUITING",
+              "city": "Providence",
+              "state": "Rhode Island",
+              "zip": "02903",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.82399,
+                "lon": -71.41283
+              }
+            },
+            {
+              "facility": "Greenwood Genetcs Site Number : 840055",
+              "status": "RECRUITING",
+              "city": "Greenville",
+              "state": "South Carolina",
+              "zip": "29605",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 34.85262,
+                "lon": -82.39401
+              }
+            },
+            {
+              "facility": "Vanderbilt University Hospital-Pediatrics Site Number : 840049",
+              "status": "RECRUITING",
+              "city": "Nashville",
+              "state": "Tennessee",
+              "zip": "38232",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 36.16589,
+                "lon": -86.78444
+              }
+            },
+            {
+              "facility": "Baylor Research Center Site Number : 840058",
+              "status": "RECRUITING",
+              "city": "Dallas",
+              "state": "Texas",
+              "zip": "75226",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 32.78306,
+                "lon": -96.80667
+              }
+            },
+            {
+              "facility": "Cook Children's Health Care System Site Number : 840024",
+              "status": "RECRUITING",
+              "city": "Fort Worth",
+              "state": "Texas",
+              "zip": "76104",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 32.72541,
+                "lon": -97.32085
+              }
+            },
+            {
+              "facility": "University of Utah Department of Medical Genetics Site Number : 840043",
+              "status": "RECRUITING",
+              "city": "Salt Lake City",
+              "state": "Utah",
+              "zip": "84132",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.76078,
+                "lon": -111.89105
+              }
+            },
+            {
+              "facility": "University of Virginia School of Medicine-Pediatrics Site Number : 840078",
+              "status": "RECRUITING",
+              "city": "Charlottesville",
+              "state": "Virginia",
+              "zip": "22908",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 38.02931,
+                "lon": -78.47668
+              }
+            },
+            {
+              "facility": "O&O Alpan, LLC Site Number : 840025",
+              "status": "RECRUITING",
+              "city": "Fairfax",
+              "state": "Virginia",
+              "zip": "22030",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 38.84622,
+                "lon": -77.30637
+              }
+            },
+            {
+              "facility": "Children's Hospital of the Kings Daughters Site Number : 840072",
+              "status": "RECRUITING",
+              "city": "Norfolk",
+              "state": "Virginia",
+              "zip": "23507",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 36.84681,
+                "lon": -76.28522
+              }
+            },
+            {
+              "facility": "Seattle Children's Hospital Site Number : 840028",
+              "status": "RECRUITING",
+              "city": "Seattle",
+              "state": "Washington",
+              "zip": "98105",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 47.60621,
+                "lon": -122.33207
+              }
+            },
+            {
+              "facility": "University Of Washington Medical Center Site Number : 840059",
+              "status": "RECRUITING",
+              "city": "Seattle",
+              "state": "Washington",
+              "zip": "98195",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 47.60621,
+                "lon": -122.33207
+              }
+            },
+            {
+              "facility": "Multicare Health System \u00bf Mary Bridge Childrens Hospital Site Number : 840115",
+              "status": "RECRUITING",
+              "city": "Tacoma",
+              "state": "Washington",
+              "zip": "98415",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 47.25288,
+                "lon": -122.44429
+              }
+            },
+            {
+              "facility": "Children's Hospital of Wisconsin-Pediatrics Site Number : 840054",
+              "status": "RECRUITING",
+              "city": "Milwaukee",
+              "state": "Wisconsin",
+              "zip": "53226",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 43.0389,
+                "lon": -87.90647
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150661",
+              "status": "RECRUITING",
+              "city": "Caba",
+              "state": "Buenos Aires",
+              "zip": "1425",
+              "country": "Argentina",
+              "geoPoint": {
+                "lat": -34.61315,
+                "lon": -58.37723
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 032003",
+              "status": "RECRUITING",
+              "city": "La Plata",
+              "state": "Buenos Aires",
+              "zip": "1900",
+              "country": "Argentina",
+              "geoPoint": {
+                "lat": -34.92145,
+                "lon": -57.95453
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151085",
+              "status": "RECRUITING",
+              "city": "Sarandi",
+              "state": "Buenos Aires",
+              "zip": "1123",
+              "country": "Argentina",
+              "geoPoint": {
+                "lat": -34.68324,
+                "lon": -58.35117
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 032012",
+              "status": "RECRUITING",
+              "city": "Buenos Aires",
+              "zip": "1425",
+              "country": "Argentina",
+              "geoPoint": {
+                "lat": -34.61315,
+                "lon": -58.37723
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154176",
+              "status": "COMPLETED",
+              "city": "Corrientes",
+              "zip": "3400",
+              "country": "Argentina",
+              "geoPoint": {
+                "lat": -27.4806,
+                "lon": -58.8341
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 032011",
+              "status": "RECRUITING",
+              "city": "C\u00f3rdoba",
+              "zip": "X5004FHP",
+              "country": "Argentina",
+              "geoPoint": {
+                "lat": -31.4135,
+                "lon": -64.18105
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151069",
+              "status": "RECRUITING",
+              "city": "Westmead",
+              "state": "New South Wales",
+              "zip": "2145",
+              "country": "Australia",
+              "geoPoint": {
+                "lat": -33.80383,
+                "lon": 150.98768
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151491",
+              "status": "RECRUITING",
+              "city": "Douglas",
+              "state": "Queensland",
+              "zip": "4814",
+              "country": "Australia",
+              "geoPoint": {
+                "lat": -37.03333,
+                "lon": 141.73333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151010",
+              "status": "RECRUITING",
+              "city": "Herston",
+              "state": "Queensland",
+              "zip": "4006",
+              "country": "Australia",
+              "geoPoint": {
+                "lat": -27.44453,
+                "lon": 153.01852
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151002",
+              "status": "RECRUITING",
+              "city": "Adelaide",
+              "state": "South Australia",
+              "zip": "5000",
+              "country": "Australia",
+              "geoPoint": {
+                "lat": -34.92866,
+                "lon": 138.59863
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151725",
+              "status": "RECRUITING",
+              "city": "Hobart",
+              "state": "Tasmania",
+              "zip": "7000",
+              "country": "Australia",
+              "geoPoint": {
+                "lat": -42.87936,
+                "lon": 147.32941
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151011",
+              "status": "RECRUITING",
+              "city": "Clayton",
+              "state": "Victoria",
+              "zip": "3168",
+              "country": "Australia",
+              "geoPoint": {
+                "lat": -37.91667,
+                "lon": 145.11667
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151008",
+              "status": "RECRUITING",
+              "city": "Parkville",
+              "state": "Victoria",
+              "zip": "3050",
+              "country": "Australia",
+              "geoPoint": {
+                "lat": -37.78333,
+                "lon": 144.95
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151015",
+              "status": "RECRUITING",
+              "city": "Murdoch",
+              "state": "Western Australia",
+              "zip": "6150",
+              "country": "Australia",
+              "geoPoint": {
+                "lat": -32.06987,
+                "lon": 115.83757
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150722",
+              "status": "RECRUITING",
+              "city": "Antwerpen",
+              "zip": "2020",
+              "country": "Belgium",
+              "geoPoint": {
+                "lat": 51.21989,
+                "lon": 4.40346
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150944",
+              "status": "RECRUITING",
+              "city": "Brussel",
+              "zip": "1090",
+              "country": "Belgium",
+              "geoPoint": {
+                "lat": 50.85045,
+                "lon": 4.34878
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 152345",
+              "status": "RECRUITING",
+              "city": "Brussel",
+              "zip": "1090",
+              "country": "Belgium",
+              "geoPoint": {
+                "lat": 50.85045,
+                "lon": 4.34878
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151796",
+              "status": "RECRUITING",
+              "city": "Bruxelles",
+              "zip": "1020",
+              "country": "Belgium",
+              "geoPoint": {
+                "lat": 50.85045,
+                "lon": 4.34878
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150517",
+              "status": "RECRUITING",
+              "city": "Bruxelles",
+              "zip": "1200",
+              "country": "Belgium",
+              "geoPoint": {
+                "lat": 50.85045,
+                "lon": 4.34878
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154285",
+              "status": "RECRUITING",
+              "city": "Edegem",
+              "zip": "2650",
+              "country": "Belgium",
+              "geoPoint": {
+                "lat": 51.15662,
+                "lon": 4.44504
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151134",
+              "status": "COMPLETED",
+              "city": "Gent",
+              "zip": "9000",
+              "country": "Belgium",
+              "geoPoint": {
+                "lat": 51.05,
+                "lon": 3.71667
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151668",
+              "status": "RECRUITING",
+              "city": "Leuven",
+              "zip": "3000",
+              "country": "Belgium",
+              "geoPoint": {
+                "lat": 50.87959,
+                "lon": 4.70093
+              }
+            },
+            {
+              "facility": "Hospital das Cl\u00ednicas da Universidade Federal do Paran\u00e1 - HCUFPR Site Number : 076010",
+              "status": "RECRUITING",
+              "city": "Curitiba",
+              "state": "Paran\u00e1",
+              "zip": "80060-150",
+              "country": "Brazil",
+              "geoPoint": {
+                "lat": -25.42778,
+                "lon": -49.27306
+              }
+            },
+            {
+              "facility": "Hospital De Clinicas De Porto Alegre Site Number : 076007",
+              "status": "RECRUITING",
+              "city": "Porto Alegre",
+              "state": "Rio Grande Do Sul",
+              "zip": "90035-003",
+              "country": "Brazil",
+              "geoPoint": {
+                "lat": -30.03306,
+                "lon": -51.23
+              }
+            },
+            {
+              "facility": "PUC Campinas - Sociedade Campineira de Educa\u00e7ao e Instru\u00e7ao Site Number : 076012",
+              "status": "RECRUITING",
+              "city": "Campinas",
+              "state": "S\u00e3o Paulo",
+              "zip": "13059-900",
+              "country": "Brazil",
+              "geoPoint": {
+                "lat": -22.90556,
+                "lon": -47.06083
+              }
+            },
+            {
+              "facility": "Faculdade de Medicina de Ribeirao Preto - USP Site Number : 076001",
+              "status": "RECRUITING",
+              "city": "Ribeirao Preto",
+              "state": "S\u00e3o Paulo",
+              "zip": "14048-900",
+              "country": "Brazil",
+              "geoPoint": {
+                "lat": -21.1775,
+                "lon": -47.81028
+              }
+            },
+            {
+              "facility": "Faculdade De Medicina - Unicamp Site Number : 076005",
+              "status": "RECRUITING",
+              "city": "Campinas",
+              "zip": "13083-220",
+              "country": "Brazil",
+              "geoPoint": {
+                "lat": -22.90556,
+                "lon": -47.06083
+              }
+            },
+            {
+              "facility": "HEMORIO - Instituto Estadual de Hematologia Arthur de Siqueira Cavalcanti Site Number : 076006",
+              "status": "RECRUITING",
+              "city": "Rio de Janeiro",
+              "zip": "20211030",
+              "country": "Brazil",
+              "geoPoint": {
+                "lat": -22.90278,
+                "lon": -43.2075
+              }
+            },
+            {
+              "facility": "Instituto de Gen\u00e9tica e Erros Inatos do Metabolismo - IGEIM Site Number : 076002",
+              "status": "RECRUITING",
+              "city": "S\u00e3o Paulo",
+              "zip": "04020-041",
+              "country": "Brazil",
+              "geoPoint": {
+                "lat": -23.5475,
+                "lon": -46.63611
+              }
+            },
+            {
+              "facility": "Hospital das Cl\u00ednicas da Faculdade de Medicina da USP Site Number : 076008",
+              "status": "RECRUITING",
+              "city": "S\u00e3o Paulo",
+              "zip": "05403-000",
+              "country": "Brazil",
+              "geoPoint": {
+                "lat": -23.5475,
+                "lon": -46.63611
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 100001",
+              "status": "RECRUITING",
+              "city": "Sofia",
+              "zip": "1680",
+              "country": "Bulgaria",
+              "geoPoint": {
+                "lat": 42.69751,
+                "lon": 23.32415
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151164",
+              "status": "RECRUITING",
+              "city": "Sofia",
+              "country": "Bulgaria",
+              "geoPoint": {
+                "lat": 42.69751,
+                "lon": 23.32415
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124014",
+              "status": "RECRUITING",
+              "city": "Calgary",
+              "state": "Alberta",
+              "zip": "T2M 0L6",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 51.05011,
+                "lon": -114.08529
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124002",
+              "status": "RECRUITING",
+              "city": "Edmonton",
+              "state": "Alberta",
+              "zip": "TG62B7",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 53.55014,
+                "lon": -113.46871
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124010",
+              "status": "RECRUITING",
+              "city": "Vancouver",
+              "state": "British Columbia",
+              "zip": "V5Z1M9",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 49.24966,
+                "lon": -123.11934
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124011",
+              "status": "RECRUITING",
+              "city": "Vancouver",
+              "state": "British Columbia",
+              "zip": "V6H3N1",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 49.24966,
+                "lon": -123.11934
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124019",
+              "status": "RECRUITING",
+              "city": "Winnipeg",
+              "state": "Manitoba",
+              "zip": "R3A1R9",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 49.8844,
+                "lon": -97.14704
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124022",
+              "status": "RECRUITING",
+              "city": "Moncton",
+              "state": "New Brunswick",
+              "zip": "E1C2Z3",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 46.09454,
+                "lon": -64.7965
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124024",
+              "status": "RECRUITING",
+              "city": "Kingston",
+              "state": "Ontario",
+              "zip": "K7L 2V7",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 44.22976,
+                "lon": -76.48101
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124021",
+              "status": "RECRUITING",
+              "city": "London",
+              "state": "Ontario",
+              "zip": "N6A 5W9",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 42.98339,
+                "lon": -81.23304
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124006",
+              "status": "RECRUITING",
+              "city": "Toronto",
+              "state": "Ontario",
+              "zip": "M5G 1X8",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 43.70011,
+                "lon": -79.4163
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124013",
+              "status": "RECRUITING",
+              "city": "Toronto",
+              "state": "Ontario",
+              "zip": "M5G1X5",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 43.70011,
+                "lon": -79.4163
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 124001",
+              "status": "RECRUITING",
+              "city": "Sherbrooke",
+              "state": "Quebec",
+              "zip": "J1H5N4",
+              "country": "Canada",
+              "geoPoint": {
+                "lat": 45.40008,
+                "lon": -71.89908
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 1910001",
+              "status": "RECRUITING",
+              "city": "Zagreb",
+              "zip": "10000",
+              "country": "Croatia",
+              "geoPoint": {
+                "lat": 45.81444,
+                "lon": 15.97798
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 1910002",
+              "status": "RECRUITING",
+              "city": "Zagreb",
+              "zip": "10000",
+              "country": "Croatia",
+              "geoPoint": {
+                "lat": 45.81444,
+                "lon": 15.97798
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 1910003",
+              "status": "RECRUITING",
+              "city": "Zagreb",
+              "zip": "10000",
+              "country": "Croatia",
+              "geoPoint": {
+                "lat": 45.81444,
+                "lon": 15.97798
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150809",
+              "status": "RECRUITING",
+              "city": "Praha 2",
+              "zip": "12808",
+              "country": "Czechia",
+              "geoPoint": {
+                "lat": 50.08804,
+                "lon": 14.42076
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151229",
+              "status": "RECRUITING",
+              "city": "K\u00f8benhavn \u00d8",
+              "zip": "2100",
+              "country": "Denmark",
+              "geoPoint": {
+                "lat": 55.67594,
+                "lon": 12.56553
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 2140001",
+              "status": "RECRUITING",
+              "city": "Santo Domingo",
+              "zip": "10101",
+              "country": "Dominican Republic",
+              "geoPoint": {
+                "lat": 18.50012,
+                "lon": -69.98857
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 5748",
+              "status": "RECRUITING",
+              "city": "Alexandria",
+              "country": "Egypt",
+              "geoPoint": {
+                "lat": 31.21564,
+                "lon": 29.95527
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 9889",
+              "status": "RECRUITING",
+              "city": "Ash Sharqia",
+              "country": "Egypt"
+            },
+            {
+              "facility": "Investigational Site Number : 9888",
+              "status": "RECRUITING",
+              "city": "Assuit",
+              "country": "Egypt",
+              "geoPoint": {
+                "lat": 27.18096,
+                "lon": 31.18368
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 8345",
+              "status": "RECRUITING",
+              "city": "Cairo",
+              "country": "Egypt",
+              "geoPoint": {
+                "lat": 30.06263,
+                "lon": 31.24967
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 9829",
+              "status": "RECRUITING",
+              "city": "Cairo",
+              "country": "Egypt",
+              "geoPoint": {
+                "lat": 30.06263,
+                "lon": 31.24967
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 9830",
+              "status": "RECRUITING",
+              "city": "Cairo",
+              "country": "Egypt",
+              "geoPoint": {
+                "lat": 30.06263,
+                "lon": 31.24967
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250015",
+              "status": "RECRUITING",
+              "city": "ANGERS Cedex 01",
+              "zip": "49033",
+              "country": "France",
+              "geoPoint": {
+                "lat": 47.46667,
+                "lon": -0.55
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250004",
+              "status": "RECRUITING",
+              "city": "Besancon",
+              "zip": "25030",
+              "country": "France",
+              "geoPoint": {
+                "lat": 47.24878,
+                "lon": 6.01815
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250008",
+              "status": "RECRUITING",
+              "city": "Bordeaux",
+              "zip": "33000",
+              "country": "France",
+              "geoPoint": {
+                "lat": 44.84044,
+                "lon": -0.5805
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250005",
+              "status": "RECRUITING",
+              "city": "Brest",
+              "zip": "29200",
+              "country": "France",
+              "geoPoint": {
+                "lat": 48.3903,
+                "lon": -4.48628
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250014",
+              "status": "RECRUITING",
+              "city": "BRON Cedex",
+              "zip": "69677",
+              "country": "France",
+              "geoPoint": {
+                "lat": 45.73333,
+                "lon": 4.91667
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250002",
+              "status": "RECRUITING",
+              "city": "Caen",
+              "zip": "14000",
+              "country": "France",
+              "geoPoint": {
+                "lat": 49.18585,
+                "lon": -0.35912
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250001",
+              "status": "RECRUITING",
+              "city": "CLICHY Cedex",
+              "zip": "92110",
+              "country": "France",
+              "geoPoint": {
+                "lat": 48.90018,
+                "lon": 2.30952
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250003",
+              "status": "RECRUITING",
+              "city": "Garches",
+              "zip": "92380",
+              "country": "France",
+              "geoPoint": {
+                "lat": 48.84226,
+                "lon": 2.18232
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250009",
+              "status": "RECRUITING",
+              "city": "LYON Cedex 03",
+              "zip": "69437",
+              "country": "France",
+              "geoPoint": {
+                "lat": 45.74848,
+                "lon": 4.84669
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 2500013",
+              "status": "RECRUITING",
+              "city": "Montpellier",
+              "zip": "34059",
+              "country": "France",
+              "geoPoint": {
+                "lat": 43.61092,
+                "lon": 3.87723
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250006",
+              "status": "RECRUITING",
+              "city": "NANTES Cedex 1",
+              "zip": "44093",
+              "country": "France",
+              "geoPoint": {
+                "lat": 47.21725,
+                "lon": -1.55336
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250010",
+              "status": "RECRUITING",
+              "city": "Paris",
+              "zip": "75015",
+              "country": "France",
+              "geoPoint": {
+                "lat": 48.85341,
+                "lon": 2.3488
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250012",
+              "status": "RECRUITING",
+              "city": "Rennes Cedex 2",
+              "zip": "35056",
+              "country": "France",
+              "geoPoint": {
+                "lat": 48.11198,
+                "lon": -1.67429
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250018",
+              "status": "RECRUITING",
+              "city": "Strasbourg",
+              "zip": "67091",
+              "country": "France",
+              "geoPoint": {
+                "lat": 48.58392,
+                "lon": 7.74553
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250017",
+              "status": "RECRUITING",
+              "city": "Toulouse",
+              "zip": "31027",
+              "country": "France",
+              "geoPoint": {
+                "lat": 43.60426,
+                "lon": 1.44367
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 250016",
+              "status": "RECRUITING",
+              "city": "TOURS Cedex 9",
+              "zip": "37044",
+              "country": "France",
+              "geoPoint": {
+                "lat": 47.38333,
+                "lon": 0.68333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151686",
+              "status": "RECRUITING",
+              "city": "Berlin",
+              "zip": "13353",
+              "country": "Germany",
+              "geoPoint": {
+                "lat": 52.52437,
+                "lon": 13.41053
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150783",
+              "status": "RECRUITING",
+              "city": "D\u00fcsseldorf",
+              "zip": "40225",
+              "country": "Germany",
+              "geoPoint": {
+                "lat": 51.22172,
+                "lon": 6.77616
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154150",
+              "status": "RECRUITING",
+              "city": "Gie\u00dfen",
+              "zip": "35392",
+              "country": "Germany",
+              "geoPoint": {
+                "lat": 50.58727,
+                "lon": 8.67554
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151369",
+              "status": "RECRUITING",
+              "city": "Hamburg",
+              "zip": "20099",
+              "country": "Germany",
+              "geoPoint": {
+                "lat": 53.57532,
+                "lon": 10.01534
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151368",
+              "status": "RECRUITING",
+              "city": "Hamburg",
+              "zip": "20246",
+              "country": "Germany",
+              "geoPoint": {
+                "lat": 53.57532,
+                "lon": 10.01534
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150031",
+              "status": "RECRUITING",
+              "city": "Mainz",
+              "zip": "55131",
+              "country": "Germany",
+              "geoPoint": {
+                "lat": 49.98419,
+                "lon": 8.2791
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150432",
+              "status": "RECRUITING",
+              "city": "Oberhausen",
+              "zip": "46045",
+              "country": "Germany",
+              "geoPoint": {
+                "lat": 51.47805,
+                "lon": 6.86251
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 300002",
+              "status": "RECRUITING",
+              "city": "Athens",
+              "zip": "11527",
+              "country": "Greece",
+              "geoPoint": {
+                "lat": 37.97945,
+                "lon": 23.71622
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 300004",
+              "status": "RECRUITING",
+              "city": "Athens",
+              "country": "Greece",
+              "geoPoint": {
+                "lat": 37.97945,
+                "lon": 23.71622
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 300003",
+              "status": "RECRUITING",
+              "city": "Patras",
+              "zip": "26500",
+              "country": "Greece",
+              "geoPoint": {
+                "lat": 38.24444,
+                "lon": 21.73444
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 300001",
+              "status": "RECRUITING",
+              "city": "Thessaloniki",
+              "zip": "54642",
+              "country": "Greece",
+              "geoPoint": {
+                "lat": 40.64361,
+                "lon": 22.93086
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 344001",
+              "status": "RECRUITING",
+              "city": "Kowloon",
+              "country": "Hong Kong",
+              "geoPoint": {
+                "lat": 22.31667,
+                "lon": 114.18333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 3480006",
+              "status": "RECRUITING",
+              "city": "Budapest",
+              "zip": "H-1097",
+              "country": "Hungary",
+              "geoPoint": {
+                "lat": 47.49801,
+                "lon": 19.03991
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 3480003",
+              "status": "RECRUITING",
+              "city": "L\u00e9tav\u00e9rtes",
+              "zip": "4281",
+              "country": "Hungary",
+              "geoPoint": {
+                "lat": 47.38333,
+                "lon": 21.9
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 3480007",
+              "status": "RECRUITING",
+              "city": "Ny\u00edregyh\u00e1za",
+              "zip": "4400",
+              "country": "Hungary",
+              "geoPoint": {
+                "lat": 47.95539,
+                "lon": 21.71671
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 3480008",
+              "status": "RECRUITING",
+              "city": "Sz\u00e9kesfeh\u00e9rv\u00e1r",
+              "zip": "8000",
+              "country": "Hungary",
+              "geoPoint": {
+                "lat": 47.18995,
+                "lon": 18.41034
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 356003",
+              "status": "RECRUITING",
+              "city": "Ahmedabad",
+              "zip": "380015",
+              "country": "India",
+              "geoPoint": {
+                "lat": 23.02579,
+                "lon": 72.58727
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 356004",
+              "status": "RECRUITING",
+              "city": "Jaipur",
+              "zip": "302015",
+              "country": "India",
+              "geoPoint": {
+                "lat": 26.91962,
+                "lon": 75.78781
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 356001",
+              "status": "RECRUITING",
+              "city": "Kolkata",
+              "zip": "700017",
+              "country": "India",
+              "geoPoint": {
+                "lat": 22.56263,
+                "lon": 88.36304
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 356005",
+              "status": "RECRUITING",
+              "city": "Mumbai",
+              "zip": "400025",
+              "country": "India",
+              "geoPoint": {
+                "lat": 19.07283,
+                "lon": 72.88261
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 3560006",
+              "status": "RECRUITING",
+              "city": "Secunderabad",
+              "zip": "500026",
+              "country": "India",
+              "geoPoint": {
+                "lat": 17.50427,
+                "lon": 78.54263
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 356002",
+              "status": "RECRUITING",
+              "city": "Vellore",
+              "zip": "632004",
+              "country": "India",
+              "geoPoint": {
+                "lat": 12.9184,
+                "lon": 79.13255
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 360001",
+              "status": "RECRUITING",
+              "city": "Jakarta",
+              "country": "Indonesia",
+              "geoPoint": {
+                "lat": -6.21462,
+                "lon": 106.84513
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 3760003",
+              "status": "RECRUITING",
+              "city": "Haifa",
+              "country": "Israel",
+              "geoPoint": {
+                "lat": 32.81841,
+                "lon": 34.9885
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 3760001",
+              "status": "RECRUITING",
+              "city": "Jerusalem",
+              "country": "Israel",
+              "geoPoint": {
+                "lat": 31.76904,
+                "lon": 35.21633
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 3760002",
+              "status": "RECRUITING",
+              "city": "Petach-Tikva",
+              "country": "Israel",
+              "geoPoint": {
+                "lat": 32.08707,
+                "lon": 34.88747
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380008",
+              "status": "RECRUITING",
+              "city": "Catania",
+              "zip": "95100",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 37.49223,
+                "lon": 15.07041
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380009",
+              "status": "COMPLETED",
+              "city": "Firenze",
+              "zip": "50134",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 43.77925,
+                "lon": 11.24626
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380006",
+              "status": "RECRUITING",
+              "city": "Genova",
+              "zip": "16147",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 44.40478,
+                "lon": 8.94438
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380004",
+              "status": "RECRUITING",
+              "city": "Milano",
+              "zip": "20122",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 45.46427,
+                "lon": 9.18951
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380005",
+              "status": "RECRUITING",
+              "city": "Modena",
+              "zip": "41126",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 44.64783,
+                "lon": 10.92539
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380002",
+              "status": "RECRUITING",
+              "city": "Monza (MB)",
+              "zip": "20900",
+              "country": "Italy"
+            },
+            {
+              "facility": "Investigational Site Number : 380011",
+              "status": "RECRUITING",
+              "city": "Monza",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 45.58005,
+                "lon": 9.27246
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380010",
+              "status": "RECRUITING",
+              "city": "Napoli",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 40.85216,
+                "lon": 14.26811
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380003",
+              "status": "RECRUITING",
+              "city": "Padova",
+              "zip": "35128",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 45.40797,
+                "lon": 11.88586
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380007",
+              "status": "RECRUITING",
+              "city": "Roma",
+              "zip": "00161",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 41.89193,
+                "lon": 12.51133
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 380001",
+              "status": "RECRUITING",
+              "city": "Udine",
+              "country": "Italy",
+              "geoPoint": {
+                "lat": 46.0693,
+                "lon": 13.23715
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153205",
+              "status": "COMPLETED",
+              "city": "Abeno-ku",
+              "state": "Osaka",
+              "zip": "545-8585",
+              "country": "Japan"
+            },
+            {
+              "facility": "Investigational Site Number : 153204",
+              "status": "RECRUITING",
+              "city": "Setagaya",
+              "state": "Tokyo",
+              "zip": "157-0074",
+              "country": "Japan",
+              "geoPoint": {
+                "lat": 35.64825,
+                "lon": 139.65376
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153203",
+              "status": "RECRUITING",
+              "city": "Yonago-shi",
+              "state": "Tottori",
+              "zip": "683-8504",
+              "country": "Japan",
+              "geoPoint": {
+                "lat": 35.43333,
+                "lon": 133.33333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153217",
+              "status": "RECRUITING",
+              "city": "Chiba",
+              "zip": "266-0007",
+              "country": "Japan",
+              "geoPoint": {
+                "lat": 35.6,
+                "lon": 140.11667
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 4000001",
+              "status": "RECRUITING",
+              "city": "Amman",
+              "zip": "261",
+              "country": "Jordan",
+              "geoPoint": {
+                "lat": 31.95522,
+                "lon": 35.94503
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153178",
+              "status": "RECRUITING",
+              "city": "Yangsan-si",
+              "state": "Gyeongsangnam-do",
+              "zip": "50612",
+              "country": "Korea, Republic of"
+            },
+            {
+              "facility": "Investigational Site Number : 154148",
+              "status": "RECRUITING",
+              "city": "Yangsan",
+              "state": "Gyeongsangnam-do",
+              "zip": "50612",
+              "country": "Korea, Republic of",
+              "geoPoint": {
+                "lat": 35.34199,
+                "lon": 129.03358
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153191",
+              "status": "RECRUITING",
+              "city": "Daejeon",
+              "country": "Korea, Republic of",
+              "geoPoint": {
+                "lat": 36.32139,
+                "lon": 127.41972
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153225",
+              "status": "RECRUITING",
+              "city": "Jeonnam",
+              "country": "Korea, Republic of"
+            },
+            {
+              "facility": "Investigational Site Number : 153180",
+              "status": "RECRUITING",
+              "city": "Seoul",
+              "zip": "03080",
+              "country": "Korea, Republic of",
+              "geoPoint": {
+                "lat": 37.566,
+                "lon": 126.9784
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153196",
+              "status": "RECRUITING",
+              "city": "Seoul",
+              "zip": "03080",
+              "country": "Korea, Republic of",
+              "geoPoint": {
+                "lat": 37.566,
+                "lon": 126.9784
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153192",
+              "status": "RECRUITING",
+              "city": "Seoul",
+              "zip": "04401",
+              "country": "Korea, Republic of",
+              "geoPoint": {
+                "lat": 37.566,
+                "lon": 126.9784
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151149",
+              "status": "RECRUITING",
+              "city": "Seoul",
+              "zip": "05505",
+              "country": "Korea, Republic of",
+              "geoPoint": {
+                "lat": 37.566,
+                "lon": 126.9784
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153212",
+              "status": "RECRUITING",
+              "city": "Seoul",
+              "country": "Korea, Republic of",
+              "geoPoint": {
+                "lat": 37.566,
+                "lon": 126.9784
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153222",
+              "status": "RECRUITING",
+              "city": "Seoul",
+              "country": "Korea, Republic of",
+              "geoPoint": {
+                "lat": 37.566,
+                "lon": 126.9784
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154225",
+              "status": "RECRUITING",
+              "city": "Kuwait",
+              "country": "Kuwait",
+              "geoPoint": {
+                "lat": 29.36972,
+                "lon": 47.97833
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 4220004",
+              "status": "RECRUITING",
+              "city": "Beirut",
+              "country": "Lebanon",
+              "geoPoint": {
+                "lat": 33.88894,
+                "lon": 35.49442
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 422001",
+              "status": "RECRUITING",
+              "city": "Beirut",
+              "country": "Lebanon",
+              "geoPoint": {
+                "lat": 33.88894,
+                "lon": 35.49442
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 422006",
+              "status": "RECRUITING",
+              "city": "Douris",
+              "country": "Lebanon",
+              "geoPoint": {
+                "lat": 33.98778,
+                "lon": 36.17917
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 4220002",
+              "status": "RECRUITING",
+              "city": "Hazmieh",
+              "country": "Lebanon"
+            },
+            {
+              "facility": "Investigational Site Number : 154237",
+              "status": "RECRUITING",
+              "city": "Vilnius",
+              "country": "Lithuania",
+              "geoPoint": {
+                "lat": 54.68916,
+                "lon": 25.2798
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 458001",
+              "status": "RECRUITING",
+              "city": "Jalan Pahang",
+              "zip": "50586",
+              "country": "Malaysia"
+            },
+            {
+              "facility": "Investigational Site Number : 458002",
+              "status": "RECRUITING",
+              "city": "Kuala Lumpur",
+              "zip": "59100",
+              "country": "Malaysia",
+              "geoPoint": {
+                "lat": 3.1412,
+                "lon": 101.68653
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150149",
+              "status": "COMPLETED",
+              "city": "Amsterdam",
+              "country": "Netherlands",
+              "geoPoint": {
+                "lat": 52.37403,
+                "lon": 4.88969
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154264",
+              "status": "RECRUITING",
+              "city": "Karachi",
+              "country": "Pakistan",
+              "geoPoint": {
+                "lat": 24.8608,
+                "lon": 67.0104
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154266",
+              "status": "RECRUITING",
+              "city": "Lahore",
+              "country": "Pakistan",
+              "geoPoint": {
+                "lat": 31.558,
+                "lon": 74.35071
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 604001",
+              "status": "RECRUITING",
+              "city": "Arequipa",
+              "country": "Peru",
+              "geoPoint": {
+                "lat": -16.39889,
+                "lon": -71.535
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 604002",
+              "status": "RECRUITING",
+              "city": "Callao",
+              "zip": "Callao02",
+              "country": "Peru",
+              "geoPoint": {
+                "lat": -12.05659,
+                "lon": -77.11814
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 608001",
+              "status": "RECRUITING",
+              "city": "Manila",
+              "zip": "1000",
+              "country": "Philippines",
+              "geoPoint": {
+                "lat": 14.6042,
+                "lon": 120.9822
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150575",
+              "status": "RECRUITING",
+              "city": "Warszawa",
+              "zip": "04-730",
+              "country": "Poland",
+              "geoPoint": {
+                "lat": 52.22977,
+                "lon": 21.01178
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 620003",
+              "status": "RECRUITING",
+              "city": "Coimbra",
+              "country": "Portugal",
+              "geoPoint": {
+                "lat": 40.20564,
+                "lon": -8.41955
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 620004",
+              "status": "RECRUITING",
+              "city": "Lisboa",
+              "zip": "1649-035",
+              "country": "Portugal",
+              "geoPoint": {
+                "lat": 38.71667,
+                "lon": -9.13333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 620009",
+              "status": "RECRUITING",
+              "city": "Ponta Delgada",
+              "zip": "9500-370",
+              "country": "Portugal",
+              "geoPoint": {
+                "lat": 37.73345,
+                "lon": -25.66698
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151188",
+              "status": "COMPLETED",
+              "city": "Cluj Napoca",
+              "zip": "400370",
+              "country": "Romania",
+              "geoPoint": {
+                "lat": 46.76667,
+                "lon": 23.6
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 642002",
+              "status": "RECRUITING",
+              "city": "Cluj Napoca",
+              "zip": "400370",
+              "country": "Romania",
+              "geoPoint": {
+                "lat": 46.76667,
+                "lon": 23.6
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 642001",
+              "status": "RECRUITING",
+              "city": "Cluj-Napoca",
+              "zip": "400006",
+              "country": "Romania",
+              "geoPoint": {
+                "lat": 46.76667,
+                "lon": 23.6
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 643001",
+              "status": "RECRUITING",
+              "city": "Moscow",
+              "country": "Russian Federation",
+              "geoPoint": {
+                "lat": 55.75222,
+                "lon": 37.61556
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 643002",
+              "status": "RECRUITING",
+              "city": "sait-Petersburg",
+              "country": "Russian Federation"
+            },
+            {
+              "facility": "Investigational Site Number : 682002",
+              "status": "RECRUITING",
+              "city": "Al Mubarraz",
+              "zip": "36424",
+              "country": "Saudi Arabia",
+              "geoPoint": {
+                "lat": 25.40768,
+                "lon": 49.59028
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 682003",
+              "status": "RECRUITING",
+              "city": "Jeddah",
+              "country": "Saudi Arabia",
+              "geoPoint": {
+                "lat": 21.54238,
+                "lon": 39.19797
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 682004",
+              "status": "RECRUITING",
+              "city": "Makkah",
+              "zip": "21955",
+              "country": "Saudi Arabia"
+            },
+            {
+              "facility": "Investigational Site Number : 688001",
+              "status": "RECRUITING",
+              "city": "Belgrade",
+              "zip": "11000",
+              "country": "Serbia",
+              "geoPoint": {
+                "lat": 44.80401,
+                "lon": 20.46513
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 688002",
+              "status": "RECRUITING",
+              "city": "Belgrade",
+              "zip": "11000",
+              "country": "Serbia",
+              "geoPoint": {
+                "lat": 44.80401,
+                "lon": 20.46513
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 688003",
+              "status": "RECRUITING",
+              "city": "Belgrade",
+              "zip": "11000",
+              "country": "Serbia",
+              "geoPoint": {
+                "lat": 44.80401,
+                "lon": 20.46513
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 688005",
+              "status": "RECRUITING",
+              "city": "Belgrade",
+              "zip": "11000",
+              "country": "Serbia",
+              "geoPoint": {
+                "lat": 44.80401,
+                "lon": 20.46513
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 688004",
+              "status": "RECRUITING",
+              "city": "Nis",
+              "country": "Serbia",
+              "geoPoint": {
+                "lat": 43.32472,
+                "lon": 21.90333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 702001",
+              "status": "RECRUITING",
+              "city": "Singapore",
+              "zip": "229899",
+              "country": "Singapore",
+              "geoPoint": {
+                "lat": 1.28967,
+                "lon": 103.85007
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 703001",
+              "status": "RECRUITING",
+              "city": "Bratislava",
+              "zip": "83340",
+              "country": "Slovakia",
+              "geoPoint": {
+                "lat": 48.14816,
+                "lon": 17.10674
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154138",
+              "status": "RECRUITING",
+              "city": "Johannesburg",
+              "zip": "2000",
+              "country": "South Africa",
+              "geoPoint": {
+                "lat": -26.20227,
+                "lon": 28.04363
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 710-003",
+              "status": "RECRUITING",
+              "city": "Johannesburg",
+              "country": "South Africa",
+              "geoPoint": {
+                "lat": -26.20227,
+                "lon": 28.04363
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150346",
+              "status": "RECRUITING",
+              "city": "Sandton",
+              "zip": "2196",
+              "country": "South Africa",
+              "geoPoint": {
+                "lat": -26.05524,
+                "lon": 28.05943
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153237",
+              "status": "RECRUITING",
+              "city": "Barcelona",
+              "zip": "08035",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 41.38879,
+                "lon": 2.15899
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154147",
+              "status": "RECRUITING",
+              "city": "Barcelona",
+              "zip": "08035",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 41.38879,
+                "lon": 2.15899
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154146",
+              "status": "COMPLETED",
+              "city": "La Coru\u00f1a",
+              "zip": "15006",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 43.37135,
+                "lon": -8.396
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154163",
+              "status": "RECRUITING",
+              "city": "Madrid",
+              "zip": "28007",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 40.4165,
+                "lon": -3.70256
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154236",
+              "status": "RECRUITING",
+              "city": "Madrid",
+              "zip": "28007",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 40.4165,
+                "lon": -3.70256
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151524",
+              "status": "RECRUITING",
+              "city": "Madrid",
+              "zip": "28034",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 40.4165,
+                "lon": -3.70256
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154199",
+              "status": "RECRUITING",
+              "city": "Madrid",
+              "zip": "28041",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 40.4165,
+                "lon": -3.70256
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154160",
+              "status": "RECRUITING",
+              "city": "Madrid",
+              "zip": "28046",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 40.4165,
+                "lon": -3.70256
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154119",
+              "status": "RECRUITING",
+              "city": "Madrid",
+              "zip": "28922",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 40.4165,
+                "lon": -3.70256
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154145",
+              "status": "RECRUITING",
+              "city": "Sabadell",
+              "zip": "08208",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 41.54329,
+                "lon": 2.10942
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154222",
+              "status": "RECRUITING",
+              "city": "Santiago de Compostela",
+              "zip": "15706",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 42.88052,
+                "lon": -8.54569
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153215",
+              "status": "RECRUITING",
+              "city": "Sevilla",
+              "zip": "41013",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 37.38283,
+                "lon": -5.97317
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153219",
+              "status": "RECRUITING",
+              "city": "Sevilla",
+              "zip": "41013",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 37.38283,
+                "lon": -5.97317
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154205",
+              "status": "RECRUITING",
+              "city": "Valencia",
+              "zip": "46009",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 39.46975,
+                "lon": -0.37739
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153213",
+              "status": "RECRUITING",
+              "city": "Vigo",
+              "zip": "36200",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 42.23282,
+                "lon": -8.72264
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154238",
+              "status": "RECRUITING",
+              "city": "Zaragoza",
+              "zip": "50006",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 41.65606,
+                "lon": -0.87734
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153216",
+              "status": "RECRUITING",
+              "city": "Zaragoza",
+              "zip": "50009",
+              "country": "Spain",
+              "geoPoint": {
+                "lat": 41.65606,
+                "lon": -0.87734
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154095",
+              "status": "RECRUITING",
+              "city": "Bor\u00e5s",
+              "zip": "50182",
+              "country": "Sweden",
+              "geoPoint": {
+                "lat": 57.72101,
+                "lon": 12.9401
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151726",
+              "status": "RECRUITING",
+              "city": "Malm\u00f6",
+              "zip": "20502",
+              "country": "Sweden",
+              "geoPoint": {
+                "lat": 55.60587,
+                "lon": 13.00073
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154092",
+              "status": "RECRUITING",
+              "city": "Norrk\u00f6ping",
+              "zip": "60182",
+              "country": "Sweden",
+              "geoPoint": {
+                "lat": 58.59419,
+                "lon": 16.1826
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 157045",
+              "status": "RECRUITING",
+              "city": "Bern",
+              "zip": "3010",
+              "country": "Switzerland",
+              "geoPoint": {
+                "lat": 46.94809,
+                "lon": 7.44744
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154093",
+              "status": "RECRUITING",
+              "city": "Chiayi",
+              "country": "Taiwan"
+            },
+            {
+              "facility": "Investigational Site Number : 152152",
+              "status": "RECRUITING",
+              "city": "Hualien",
+              "country": "Taiwan"
+            },
+            {
+              "facility": "Investigational Site Number : 152246",
+              "status": "RECRUITING",
+              "city": "Kaohsiung Hsien,",
+              "country": "Taiwan"
+            },
+            {
+              "facility": "Investigational Site Number : 152244",
+              "status": "RECRUITING",
+              "city": "Kaohsiung",
+              "zip": "807",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 22.61626,
+                "lon": 120.31333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151534",
+              "status": "RECRUITING",
+              "city": "New Taipei City",
+              "zip": "23142",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 25.01111,
+                "lon": 121.44583
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151500",
+              "status": "RECRUITING",
+              "city": "Putz City, Chia-yi",
+              "country": "Taiwan"
+            },
+            {
+              "facility": "Investigational Site Number : 151179",
+              "status": "RECRUITING",
+              "city": "Taichung City",
+              "zip": "404",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 24.1469,
+                "lon": 120.6839
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151181",
+              "status": "RECRUITING",
+              "city": "Taichung",
+              "zip": "00407",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 24.1469,
+                "lon": 120.6839
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153248",
+              "status": "RECRUITING",
+              "city": "Tainan",
+              "zip": "70403",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 22.99083,
+                "lon": 120.21333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 152153",
+              "status": "RECRUITING",
+              "city": "Tainan",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 22.99083,
+                "lon": 120.21333
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151182",
+              "status": "RECRUITING",
+              "city": "Taipei",
+              "zip": "10041",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 25.04776,
+                "lon": 121.53185
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 152321",
+              "status": "RECRUITING",
+              "city": "Taipei",
+              "zip": "10449",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 25.04776,
+                "lon": 121.53185
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 152226",
+              "status": "RECRUITING",
+              "city": "Taipei",
+              "country": "Taiwan",
+              "geoPoint": {
+                "lat": 25.04776,
+                "lon": 121.53185
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 153158",
+              "status": "RECRUITING",
+              "city": "Tao Yuan County",
+              "country": "Taiwan"
+            },
+            {
+              "facility": "Investigational Site Number : 764003",
+              "status": "RECRUITING",
+              "city": "Bangkok",
+              "zip": "10400",
+              "country": "Thailand",
+              "geoPoint": {
+                "lat": 13.75398,
+                "lon": 100.50144
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 764004",
+              "status": "RECRUITING",
+              "city": "Bangkok",
+              "zip": "10700",
+              "country": "Thailand",
+              "geoPoint": {
+                "lat": 13.75398,
+                "lon": 100.50144
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 764001",
+              "status": "RECRUITING",
+              "city": "Bangkok",
+              "country": "Thailand",
+              "geoPoint": {
+                "lat": 13.75398,
+                "lon": 100.50144
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 764005",
+              "status": "RECRUITING",
+              "city": "Khon Kaen",
+              "zip": "40002",
+              "country": "Thailand",
+              "geoPoint": {
+                "lat": 16.44671,
+                "lon": 102.833
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 792006",
+              "status": "RECRUITING",
+              "city": "Adana",
+              "zip": "01330",
+              "country": "Turkey",
+              "geoPoint": {
+                "lat": 37.00167,
+                "lon": 35.32889
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 792005",
+              "status": "RECRUITING",
+              "city": "Ankara",
+              "zip": "06100",
+              "country": "Turkey",
+              "geoPoint": {
+                "lat": 39.91987,
+                "lon": 32.85427
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 792001",
+              "status": "RECRUITING",
+              "city": "Ankara",
+              "country": "Turkey",
+              "geoPoint": {
+                "lat": 39.91987,
+                "lon": 32.85427
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 792002",
+              "status": "RECRUITING",
+              "city": "Ankara",
+              "country": "Turkey",
+              "geoPoint": {
+                "lat": 39.91987,
+                "lon": 32.85427
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 792004",
+              "status": "RECRUITING",
+              "city": "Istanbul",
+              "country": "Turkey",
+              "geoPoint": {
+                "lat": 41.01384,
+                "lon": 28.94966
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 792007",
+              "status": "RECRUITING",
+              "city": "Izmir",
+              "country": "Turkey",
+              "geoPoint": {
+                "lat": 38.41273,
+                "lon": 27.13838
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 792003",
+              "status": "RECRUITING",
+              "city": "Malatya",
+              "country": "Turkey",
+              "geoPoint": {
+                "lat": 38.35018,
+                "lon": 38.31667
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 7840001",
+              "status": "RECRUITING",
+              "city": "Dubai",
+              "country": "United Arab Emirates",
+              "geoPoint": {
+                "lat": 25.0657,
+                "lon": 55.17128
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151340",
+              "status": "RECRUITING",
+              "city": "Cambridge",
+              "state": "Cambridgeshire",
+              "zip": "CB50QQ",
+              "country": "United Kingdom",
+              "geoPoint": {
+                "lat": 52.2,
+                "lon": 0.11667
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 152287",
+              "status": "RECRUITING",
+              "city": "Birmingham",
+              "zip": "B152TH",
+              "country": "United Kingdom",
+              "geoPoint": {
+                "lat": 52.48142,
+                "lon": -1.89983
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154240",
+              "status": "RECRUITING",
+              "city": "Birmingham",
+              "zip": "B46NH",
+              "country": "United Kingdom",
+              "geoPoint": {
+                "lat": 52.48142,
+                "lon": -1.89983
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151123",
+              "status": "RECRUITING",
+              "city": "London",
+              "zip": "NW32QG",
+              "country": "United Kingdom",
+              "geoPoint": {
+                "lat": 51.50853,
+                "lon": -0.12574
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 151646",
+              "status": "RECRUITING",
+              "city": "London",
+              "zip": "WC1N3BG",
+              "country": "United Kingdom",
+              "geoPoint": {
+                "lat": 51.50853,
+                "lon": -0.12574
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150303",
+              "status": "RECRUITING",
+              "city": "London",
+              "zip": "WC1N3JH",
+              "country": "United Kingdom",
+              "geoPoint": {
+                "lat": 51.50853,
+                "lon": -0.12574
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 150455",
+              "status": "RECRUITING",
+              "city": "Manchester",
+              "zip": "m139wl",
+              "country": "United Kingdom",
+              "geoPoint": {
+                "lat": 53.48095,
+                "lon": -2.23743
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 152361",
+              "status": "RECRUITING",
+              "city": "Salford",
+              "zip": "M6 8HD",
+              "country": "United Kingdom",
+              "geoPoint": {
+                "lat": 53.48771,
+                "lon": -2.29042
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 154212",
+              "status": "RECRUITING",
+              "city": "Hanoi",
+              "country": "Vietnam",
+              "geoPoint": {
+                "lat": 21.0245,
+                "lon": 105.84117
+              }
+            },
+            {
+              "facility": "Investigational Site Number : 704002",
+              "status": "RECRUITING",
+              "city": "Ho Chi Minh City",
+              "zip": "700000",
+              "country": "Vietnam",
+              "geoPoint": {
+                "lat": 10.82302,
+                "lon": 106.62965
+              }
+            }
+          ]
+        },
+        "referencesModule": {
+          "references": [
+            {
+              "pmid": "28040394",
+              "type": "BACKGROUND",
+              "citation": "El-Beshlawy A, Tylki-Szymanska A, Vellodi A, Belmatoug N, Grabowski GA, Kolodny EH, Batista JL, Cox GF, Mistry PK. Long-term hematological, visceral, and growth outcomes in children with Gaucher disease type 3 treated with imiglucerase in the International Collaborative Gaucher Group Gaucher Registry. Mol Genet Metab. 2017 Jan-Feb;120(1-2):47-56. doi: 10.1016/j.ymgme.2016.12.001. Epub 2016 Dec 6."
+            },
+            {
+              "pmid": "28569047",
+              "type": "BACKGROUND",
+              "citation": "Mistry PK, Batista JL, Andersson HC, Balwani M, Burrow TA, Charrow J, Kaplan P, Khan A, Kishnani PS, Kolodny EH, Rosenbloom B, Scott CR, Weinreb N. Transformation in pretreatment manifestations of Gaucher disease type 1 during two decades of alglucerase/imiglucerase enzyme replacement therapy in the International Collaborative Gaucher Group (ICGG) Gaucher Registry. Am J Hematol. 2017 Sep;92(9):929-939. doi: 10.1002/ajh.24801. Epub 2017 Jul 7."
+            },
+            {
+              "pmid": "22976765",
+              "type": "BACKGROUND",
+              "citation": "Weinreb NJ, Goldblatt J, Villalobos J, Charrow J, Cole JA, Kerstenetzky M, vom Dahl S, Hollak C. Long-term clinical outcomes in type 1 Gaucher disease following 10 years of imiglucerase treatment. J Inherit Metab Dis. 2013 May;36(3):543-53. doi: 10.1007/s10545-012-9528-4. Epub 2012 Sep 14. Erratum In: J Inherit Metab Dis. 2014 Jan;37(1):147."
+            },
+            {
+              "pmid": "36054609",
+              "type": "DERIVED",
+              "citation": "Rosenbloom BE, Cappellini MD, Weinreb NJ, Dragosky M, Revel-Vilk S, Batista JL, Sekulic D, Mistry PK. Cancer risk and gammopathies in 2123 adults with Gaucher disease type 1 in the International Gaucher Group Gaucher Registry. Am J Hematol. 2022 Oct;97(10):1337-1347. doi: 10.1002/ajh.26675. Epub 2022 Aug 24."
+            },
+            {
+              "pmid": "33485799",
+              "type": "DERIVED",
+              "citation": "Weinreb NJ, Camelo JS Jr, Charrow J, McClain MR, Mistry P, Belmatoug N; International Collaborative Gaucher Group (ICGG) Gaucher Registry (NCT00358943) investigators. Gaucher disease type 1 patients from the ICGG Gaucher Registry sustain initial clinical improvements during twenty years of imiglucerase treatment. Mol Genet Metab. 2021 Feb;132(2):100-111. doi: 10.1016/j.ymgme.2020.12.295. Epub 2021 Jan 8."
+            },
+            {
+              "pmid": "26096743",
+              "type": "DERIVED",
+              "citation": "Weinreb NJ, Kaplan P. The history and accomplishments of the ICGG Gaucher registry. Am J Hematol. 2015 Jul;90 Suppl 1:S2-5. doi: 10.1002/ajh.24054. No abstract available."
+            },
+            {
+              "pmid": "26096740",
+              "type": "DERIVED",
+              "citation": "Buyers RP, Collin-Histed T. Foreword. Am J Hematol. 2015 Jul;90 Suppl 1:S1. doi: 10.1002/ajh.24053. No abstract available."
+            }
+          ]
+        }
+      },
+      "derivedSection": {
+        "miscInfoModule": {
+          "versionHolder": "2024-08-09",
+          "removedCountries": [
+            "China",
+            "Colombia"
+          ]
+        },
+        "conditionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D000005776",
+              "term": "Gaucher Disease"
+            },
+            {
+              "id": "D000008064",
+              "term": "Lipidoses"
+            },
+            {
+              "id": "D000003677",
+              "term": "Deficiency Diseases"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D000013106",
+              "term": "Sphingolipidoses"
+            },
+            {
+              "id": "D000020140",
+              "term": "Lysosomal Storage Diseases, Nervous System"
+            },
+            {
+              "id": "D000020739",
+              "term": "Brain Diseases, Metabolic, Inborn"
+            },
+            {
+              "id": "D000001928",
+              "term": "Brain Diseases, Metabolic"
+            },
+            {
+              "id": "D000001927",
+              "term": "Brain Diseases"
+            },
+            {
+              "id": "D000002493",
+              "term": "Central Nervous System Diseases"
+            },
+            {
+              "id": "D000009422",
+              "term": "Nervous System Diseases"
+            },
+            {
+              "id": "D000008661",
+              "term": "Metabolism, Inborn Errors"
+            },
+            {
+              "id": "D000030342",
+              "term": "Genetic Diseases, Inborn"
+            },
+            {
+              "id": "D000008052",
+              "term": "Lipid Metabolism, Inborn Errors"
+            },
+            {
+              "id": "D000016464",
+              "term": "Lysosomal Storage Diseases"
+            },
+            {
+              "id": "D000008659",
+              "term": "Metabolic Diseases"
+            },
+            {
+              "id": "D000052439",
+              "term": "Lipid Metabolism Disorders"
+            },
+            {
+              "id": "D000044342",
+              "term": "Malnutrition"
+            },
+            {
+              "id": "D000009748",
+              "term": "Nutrition Disorders"
+            }
+          ],
+          "browseLeaves": [
+            {
+              "id": "M16355",
+              "name": "Syndrome",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M8891",
+              "name": "Gaucher Disease",
+              "asFound": "Gaucher Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M6879",
+              "name": "Deficiency Diseases",
+              "asFound": "Deficiency Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M11064",
+              "name": "Lipidoses",
+              "asFound": "Lipidosis",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M15904",
+              "name": "Sphingolipidoses",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M18871",
+              "name": "Lysosomal Storage Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5204",
+              "name": "Brain Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5205",
+              "name": "Brain Diseases, Metabolic",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M22498",
+              "name": "Brain Diseases, Metabolic, Inborn",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5742",
+              "name": "Central Nervous System Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11641",
+              "name": "Metabolism, Inborn Errors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M23686",
+              "name": "Genetic Diseases, Inborn",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11054",
+              "name": "Lipid Metabolism, Inborn Errors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11639",
+              "name": "Metabolic Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M27029",
+              "name": "Lipid Metabolism Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M25306",
+              "name": "Malnutrition",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M12684",
+              "name": "Nutrition Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "T2449",
+              "name": "Gaucher Disease",
+              "asFound": "Gaucher Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "T2452",
+              "name": "Gaucher Disease Type 1",
+              "asFound": "Glucocerebrosidase Deficiency",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "T5335",
+              "name": "Sphingolipidosis",
+              "relevance": "LOW"
+            }
+          ],
+          "browseBranches": [
+            {
+              "abbrev": "BC23",
+              "name": "Symptoms and General Pathology"
+            },
+            {
+              "abbrev": "All",
+              "name": "All Conditions"
+            },
+            {
+              "abbrev": "BC10",
+              "name": "Nervous System Diseases"
+            },
+            {
+              "abbrev": "BC16",
+              "name": "Diseases and Abnormalities at or Before Birth"
+            },
+            {
+              "abbrev": "BC18",
+              "name": "Nutritional and Metabolic Diseases"
+            },
+            {
+              "abbrev": "Rare",
+              "name": "Rare Diseases"
+            }
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT05536388",
+          "orgStudyIdInfo": {
+            "id": "10-008"
+          },
+          "organization": {
+            "fullName": "New York Stem Cell Foundation Research Institute",
+            "class": "OTHER"
+          },
+          "briefTitle": "Drug Discovery for Parkinson's With Mutations in the GBA Gene",
+          "officialTitle": "Drug Discovery for Parkinson's With Mutations in the GBA Gene"
+        },
+        "statusModule": {
+          "statusVerifiedDate": "2024-07",
+          "overallStatus": "RECRUITING",
+          "expandedAccessInfo": {
+            "hasExpandedAccess": false
+          },
+          "startDateStruct": {
+            "date": "2022-07-15",
+            "type": "ACTUAL"
+          },
+          "primaryCompletionDateStruct": {
+            "date": "2025-07-15",
+            "type": "ESTIMATED"
+          },
+          "completionDateStruct": {
+            "date": "2025-07-15",
+            "type": "ESTIMATED"
+          },
+          "studyFirstSubmitDate": "2022-09-07",
+          "studyFirstSubmitQcDate": "2022-09-07",
+          "studyFirstPostDateStruct": {
+            "date": "2022-09-10",
+            "type": "ACTUAL"
+          },
+          "lastUpdateSubmitDate": "2024-07-26",
+          "lastUpdatePostDateStruct": {
+            "date": "2024-07-29",
+            "type": "ACTUAL"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "responsibleParty": {
+            "type": "SPONSOR"
+          },
+          "leadSponsor": {
+            "name": "New York Stem Cell Foundation Research Institute",
+            "class": "OTHER"
+          },
+          "collaborators": [
+            {
+              "name": "Silverstein Foundation",
+              "class": "UNKNOWN"
+            }
+          ]
+        },
+        "oversightModule": {
+          "oversightHasDmc": false,
+          "isFdaRegulatedDrug": false,
+          "isFdaRegulatedDevice": false
+        },
+        "descriptionModule": {
+          "briefSummary": "The New York Stem Cell Foundation (NYSCF) Research Institute is performing this research to accelerate Parkinson's disease research and drug development by using cells from the body (such as skin or blood cells) to make stem cells and other types of cells, conduct research on the samples, perform genetic testing, and/or store the samples for future use.\n\nThrough this research, researchers hope to identify future treatments or even cures for Parkinson's disease.",
+          "detailedDescription": "Researchers at the New York Stem Cell Foundation (NYSCF) Research Institute study diverse diseases, conditions, and traits by creating stem cells from biological samples. These \"pluripotent\" stem cells can become any cell in the human body, including cells that may be difficult, invasive, or impossible to obtain directly.\n\nAdditionally, researchers perform genetic testing to learn more about DNA, a material in most cells that contains instructions for the body's development and functions (such as traits like eye color and risk of certain diseases). A piece of DNA that determines the specific role of a cell is called a \"gene.\" If the instructions in a gene are abnormal, this can lead to disease.\n\nParticipation in the study involves: (1) completion of health questionnaires, (2) providing a skin and/or blood sample from which stem cells may be created, (3) collection of a saliva sample for genetic analysis, and (4) possible future follow-up to provide additional information or learn about other research studies.\n\nThis study is not a clinical trial."
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Parkinson Disease",
+            "Gaucher Disease",
+            "Healthy",
+            "GBA Gene Mutation"
+          ],
+          "keywords": [
+            "Parkinson Disease",
+            "GBA Gene Mutation"
+          ]
+        },
+        "designModule": {
+          "studyType": "OBSERVATIONAL",
+          "patientRegistry": false,
+          "designInfo": {
+            "observationalModel": "OTHER",
+            "timePerspective": "PROSPECTIVE"
+          },
+          "bioSpec": {
+            "retention": "SAMPLES_WITH_DNA",
+            "description": "Skin biopsy (2-3mm) and/or blood (up to 50 mL); saliva; excess/leftover biospecimens that were (or will be) collected for other purposes (e.g., medical procedure)"
+          },
+          "enrollmentInfo": {
+            "count": 60,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "armGroups": [
+            {
+              "label": "Parkinson's Disease",
+              "description": "Subjects in this group will have a diagnosis of Parkinson's disease with or without a known GBA gene mutation.",
+              "interventionNames": [
+                "Other: Biological Sample Collection"
+              ]
+            },
+            {
+              "label": "Gaucher Disease",
+              "description": "Subjects in this group with have a diagnosis of Gaucher disease with or without a known GBA gene mutation.",
+              "interventionNames": [
+                "Other: Biological Sample Collection"
+              ]
+            },
+            {
+              "label": "Healthy Control",
+              "description": "Subjects in this group will serve as healthy controls.",
+              "interventionNames": [
+                "Other: Biological Sample Collection"
+              ]
+            }
+          ],
+          "interventions": [
+            {
+              "type": "OTHER",
+              "name": "Biological Sample Collection",
+              "description": "Skin biopsy (2-3mm) and/or blood (up to 50 mL); saliva; excess/leftover biospecimens that were (or will be) collected for other purposes (e.g., medical procedure)",
+              "armGroupLabels": [
+                "Gaucher Disease",
+                "Healthy Control",
+                "Parkinson's Disease"
+              ],
+              "otherNames": [
+                "Biological sample collection for biobanking and research"
+              ]
+            }
+          ]
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Establishment of a diverse bank of biological samples, stem cell lines, derivatives, and associated information.",
+              "description": "Establish a robust disease signature using a cohort of PD and carefully matched control samples to screen a library of approximately 3,000 compounds to determine whether any compounds improve or reverse disease phenotypes.",
+              "timeFrame": "Baseline"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "Inclusion Criteria:\n\n* Age 18 years or older.\n* Diagnosis of Parkinson's disease, Gaucher disease, or healthy control.\n* Must provide written informed consent unless physical limitations preclude signing.\n\nExclusion Criteria:\n\n* For skin samples collected specifically for this study: history of keloid formation, coagulation disorder, allergy to the anesthetic, or anticoagulation use that precludes sample collection.\n* For blood samples collected specifically for this study: coagulation disorder or other medical condition(s) that increases the risks associated with blood collection.\n* For all prospective sample collections: Subjects who refuse to adhere to NYSCF's and/or a collection site's safety protocols will be excluded. Subjects with an AIDS diagnosis and CD4 count of less than 200 cells per microliter (mcL) of blood will be excluded due to increased risk of infection.",
+          "healthyVolunteers": true,
+          "sex": "ALL",
+          "minimumAge": "18 Years",
+          "stdAges": [
+            "ADULT",
+            "OLDER_ADULT"
+          ],
+          "studyPopulation": "Individuals with a diagnosis of one or more of the listed conditions.\n\nIndividuals without a condition to serve as healthy controls (a comparison group for those with conditions).",
+          "samplingMethod": "NON_PROBABILITY_SAMPLE"
+        },
+        "contactsLocationsModule": {
+          "centralContacts": [
+            {
+              "name": "Becca Wood",
+              "role": "CONTACT",
+              "phone": "212-927-1801",
+              "email": "clinicalresearch@nyscf.org"
+            }
+          ],
+          "overallOfficials": [
+            {
+              "name": "Laura Andres-Martin",
+              "affiliation": "New York Stem Cell Foundation Research Institute",
+              "role": "PRINCIPAL_INVESTIGATOR"
+            }
+          ],
+          "locations": [
+            {
+              "facility": "The New York Stem Cell Foundation Research Institute",
+              "status": "RECRUITING",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10019",
+              "country": "United States",
+              "contacts": [
+                {
+                  "name": "Becca Wood",
+                  "role": "CONTACT",
+                  "phone": "212-927-1801",
+                  "email": "clinicalresearch@nyscf.org"
+                },
+                {
+                  "name": "Laura Andres-Martin",
+                  "role": "PRINCIPAL_INVESTIGATOR"
+                }
+              ],
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            }
+          ]
+        },
+        "ipdSharingStatementModule": {
+          "ipdSharing": "NO"
+        }
+      },
+      "derivedSection": {
+        "miscInfoModule": {
+          "versionHolder": "2024-08-09"
+        },
+        "conditionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D000010300",
+              "term": "Parkinson Disease"
+            },
+            {
+              "id": "D000005776",
+              "term": "Gaucher Disease"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D000020734",
+              "term": "Parkinsonian Disorders"
+            },
+            {
+              "id": "D000001480",
+              "term": "Basal Ganglia Diseases"
+            },
+            {
+              "id": "D000001927",
+              "term": "Brain Diseases"
+            },
+            {
+              "id": "D000002493",
+              "term": "Central Nervous System Diseases"
+            },
+            {
+              "id": "D000009422",
+              "term": "Nervous System Diseases"
+            },
+            {
+              "id": "D000009069",
+              "term": "Movement Disorders"
+            },
+            {
+              "id": "D000080874",
+              "term": "Synucleinopathies"
+            },
+            {
+              "id": "D000019636",
+              "term": "Neurodegenerative Diseases"
+            },
+            {
+              "id": "D000013106",
+              "term": "Sphingolipidoses"
+            },
+            {
+              "id": "D000020140",
+              "term": "Lysosomal Storage Diseases, Nervous System"
+            },
+            {
+              "id": "D000020739",
+              "term": "Brain Diseases, Metabolic, Inborn"
+            },
+            {
+              "id": "D000001928",
+              "term": "Brain Diseases, Metabolic"
+            },
+            {
+              "id": "D000008661",
+              "term": "Metabolism, Inborn Errors"
+            },
+            {
+              "id": "D000030342",
+              "term": "Genetic Diseases, Inborn"
+            },
+            {
+              "id": "D000008064",
+              "term": "Lipidoses"
+            },
+            {
+              "id": "D000008052",
+              "term": "Lipid Metabolism, Inborn Errors"
+            },
+            {
+              "id": "D000016464",
+              "term": "Lysosomal Storage Diseases"
+            },
+            {
+              "id": "D000008659",
+              "term": "Metabolic Diseases"
+            },
+            {
+              "id": "D000052439",
+              "term": "Lipid Metabolism Disorders"
+            }
+          ],
+          "browseLeaves": [
+            {
+              "id": "M8891",
+              "name": "Gaucher Disease",
+              "asFound": "Gaucher Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M13213",
+              "name": "Parkinson Disease",
+              "asFound": "Parkinson's",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M22494",
+              "name": "Parkinsonian Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M25603",
+              "name": "Ganglion Cysts",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M16358",
+              "name": "Synovial Cyst",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4774",
+              "name": "Basal Ganglia Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5204",
+              "name": "Brain Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5742",
+              "name": "Central Nervous System Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M12029",
+              "name": "Movement Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M2217",
+              "name": "Synucleinopathies",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M21558",
+              "name": "Neurodegenerative Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M15904",
+              "name": "Sphingolipidoses",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M18871",
+              "name": "Lysosomal Storage Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5205",
+              "name": "Brain Diseases, Metabolic",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M22498",
+              "name": "Brain Diseases, Metabolic, Inborn",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11641",
+              "name": "Metabolism, Inborn Errors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M23686",
+              "name": "Genetic Diseases, Inborn",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11064",
+              "name": "Lipidoses",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11054",
+              "name": "Lipid Metabolism, Inborn Errors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11639",
+              "name": "Metabolic Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M27029",
+              "name": "Lipid Metabolism Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "T2449",
+              "name": "Gaucher Disease",
+              "asFound": "Gaucher Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "T5335",
+              "name": "Sphingolipidosis",
+              "relevance": "LOW"
+            }
+          ],
+          "browseBranches": [
+            {
+              "abbrev": "BC10",
+              "name": "Nervous System Diseases"
+            },
+            {
+              "abbrev": "BC16",
+              "name": "Diseases and Abnormalities at or Before Birth"
+            },
+            {
+              "abbrev": "BC18",
+              "name": "Nutritional and Metabolic Diseases"
+            },
+            {
+              "abbrev": "All",
+              "name": "All Conditions"
+            },
+            {
+              "abbrev": "BC04",
+              "name": "Neoplasms"
+            },
+            {
+              "abbrev": "BC17",
+              "name": "Skin and Connective Tissue Diseases"
+            },
+            {
+              "abbrev": "Rare",
+              "name": "Rare Diseases"
+            }
+          ]
+        }
+      },
+      "hasResults": false
+    },
+    {
+      "protocolSection": {
+        "identificationModule": {
+          "nctId": "NCT04127578",
+          "orgStudyIdInfo": {
+            "id": "J3Z-MC-OJAA formerly PRV-PD101"
+          },
+          "organization": {
+            "fullName": "Prevail Therapeutics",
+            "class": "INDUSTRY"
+          },
+          "briefTitle": "Phase 1/2a Clinical Trial of PR001 (LY3884961) in Patients With Parkinson's Disease With at Least One GBA1 Mutation (PROPEL)",
+          "officialTitle": "A Phase 1/2a Open-Label Ascending Dose Study to Evaluate the Safety and Effects of LY3884961 in Patients With Parkinson's Disease With at Least One GBA1 Mutation (PROPEL)"
+        },
+        "statusModule": {
+          "statusVerifiedDate": "2024-06",
+          "overallStatus": "RECRUITING",
+          "expandedAccessInfo": {
+            "hasExpandedAccess": false
+          },
+          "startDateStruct": {
+            "date": "2020-01-03",
+            "type": "ACTUAL"
+          },
+          "primaryCompletionDateStruct": {
+            "date": "2029-06",
+            "type": "ESTIMATED"
+          },
+          "completionDateStruct": {
+            "date": "2029-06",
+            "type": "ESTIMATED"
+          },
+          "studyFirstSubmitDate": "2019-10-14",
+          "studyFirstSubmitQcDate": "2019-10-14",
+          "studyFirstPostDateStruct": {
+            "date": "2019-10-15",
+            "type": "ACTUAL"
+          },
+          "lastUpdateSubmitDate": "2024-06-18",
+          "lastUpdatePostDateStruct": {
+            "date": "2024-06-21",
+            "type": "ACTUAL"
+          }
+        },
+        "sponsorCollaboratorsModule": {
+          "responsibleParty": {
+            "type": "SPONSOR"
+          },
+          "leadSponsor": {
+            "name": "Prevail Therapeutics",
+            "class": "INDUSTRY"
+          },
+          "collaborators": [
+            {
+              "name": "Eli Lilly and Company",
+              "class": "INDUSTRY"
+            }
+          ]
+        },
+        "oversightModule": {
+          "oversightHasDmc": true,
+          "isFdaRegulatedDrug": true,
+          "isFdaRegulatedDevice": false
+        },
+        "descriptionModule": {
+          "briefSummary": "Study J3Z-MC-OJAA is a Phase 1/2a, multicenter, open-label, ascending dose, first in-human study that will evaluate the safety of intracisternal LY3884961 administration in patients with moderate to severe Parkinson's disease with at least 1 pathogenic GBA1 mutation. Two dose level cohorts of LY3884961 are planned (Dose Level 1 and Dose Level 2). The duration of the study is 5 years. During the first year, patients will be evaluated for the effect of LY3884961 on safety, tolerability, immunogenicity, biomarkers, and clinical efficacy measures. Patients will continue to be followed for an additional 4 years to continue to monitor safety as well as selected biomarker and efficacy measures."
+        },
+        "conditionsModule": {
+          "conditions": [
+            "Parkinson Disease"
+          ],
+          "keywords": [
+            "Parkinson's Disease",
+            "GBA1 mutation",
+            "Glucocerebrosidase",
+            "PD-GBA",
+            "Parkinson's Disease Gene Therapy",
+            "AAV9",
+            "Gene Therapy",
+            "GBA",
+            "Gaucher Disease"
+          ]
+        },
+        "designModule": {
+          "studyType": "INTERVENTIONAL",
+          "phases": [
+            "PHASE1",
+            "PHASE2"
+          ],
+          "designInfo": {
+            "allocation": "NON_RANDOMIZED",
+            "interventionModel": "SEQUENTIAL",
+            "primaryPurpose": "TREATMENT",
+            "maskingInfo": {
+              "masking": "NONE"
+            }
+          },
+          "enrollmentInfo": {
+            "count": 20,
+            "type": "ESTIMATED"
+          }
+        },
+        "armsInterventionsModule": {
+          "armGroups": [
+            {
+              "label": "Dose Level 1",
+              "type": "EXPERIMENTAL",
+              "interventionNames": [
+                "Biological: LY3884961",
+                "Drug: Methylprednisolone",
+                "Drug: Sirolimus"
+              ]
+            },
+            {
+              "label": "Dose Level 2",
+              "type": "EXPERIMENTAL",
+              "interventionNames": [
+                "Biological: LY3884961",
+                "Drug: Methylprednisolone",
+                "Drug: Sirolimus"
+              ]
+            }
+          ],
+          "interventions": [
+            {
+              "type": "BIOLOGICAL",
+              "name": "LY3884961",
+              "description": "Participants will receive a single dose of LY3884961, administered intra-cisterna magna",
+              "armGroupLabels": [
+                "Dose Level 1",
+                "Dose Level 2"
+              ]
+            },
+            {
+              "type": "DRUG",
+              "name": "Methylprednisolone",
+              "description": "6 IV pulses administered as concomitant medication over 3 months",
+              "armGroupLabels": [
+                "Dose Level 1",
+                "Dose Level 2"
+              ]
+            },
+            {
+              "type": "DRUG",
+              "name": "Sirolimus",
+              "description": "Back-up treatment if corticosteroid is not well tolerated. Loading dose, followed by maintenance dose, followed by dose tapering; administered as concomitant medication",
+              "armGroupLabels": [
+                "Dose Level 1",
+                "Dose Level 2"
+              ]
+            }
+          ]
+        },
+        "outcomesModule": {
+          "primaryOutcomes": [
+            {
+              "measure": "Cumulative number of Treatment-Emergent Adverse Events (TEAEs) and Serious Adverse Events (SAEs)",
+              "timeFrame": "5 years"
+            },
+            {
+              "measure": "Incidence of procedure or treatment-emergent AEs measured by brain MRI, spine MRI and nerve conduction study (NCS)",
+              "timeFrame": "5 years"
+            },
+            {
+              "measure": "Treatment emergent immunogenicity of AAV9 in blood",
+              "timeFrame": "Thru month 24"
+            },
+            {
+              "measure": "Change from baseline in immunogenicity of AAV9 in blood",
+              "timeFrame": "Baseline and Month 24"
+            },
+            {
+              "measure": "Treatment emergent immunogenicity of GCase in blood",
+              "description": "GCase (glucocerebrosidase)",
+              "timeFrame": "Thru Month 24"
+            },
+            {
+              "measure": "Change from baseline in immunogenicity of GCase in blood",
+              "description": "GCase (glucocerebrosidase)",
+              "timeFrame": "Baseline and Months 24"
+            },
+            {
+              "measure": "Treatment emergent immunogenicity of Nfl in blood",
+              "description": "GCase (glucocerebrosidase)",
+              "timeFrame": "Thru Month 24"
+            },
+            {
+              "measure": "Change from baseline in immunogenicity of Nfl in blood",
+              "description": "GCase (glucocerebrosidase)",
+              "timeFrame": "Baseline and Month 24"
+            },
+            {
+              "measure": "Treatment emergent immunogenicity of AAV9 in CSF",
+              "timeFrame": "Thru Month 24"
+            },
+            {
+              "measure": "Change in immunogenicity of AAV9 in CSF",
+              "timeFrame": "Baseline and Month 12"
+            },
+            {
+              "measure": "Treatment emergent immunogenicity of GCase in CSF",
+              "timeFrame": "Thru Month 24"
+            },
+            {
+              "measure": "Change in immunogenicity of GCase in CSF",
+              "timeFrame": "Baseline, and Months 12"
+            }
+          ],
+          "secondaryOutcomes": [
+            {
+              "measure": "Change in glycolipid levels in blood",
+              "timeFrame": "Baseline, Days 7, 14, and 21, and Months 1, 1.5, 2, 3, 6, 9 and 12"
+            },
+            {
+              "measure": "Change in GCase levels",
+              "timeFrame": "Baseline, Days 7, 14, and 21, and Months 1, 1.5, 2, 3, 6, 9 and 12"
+            },
+            {
+              "measure": "GCase enzyme activity levels in blood",
+              "timeFrame": "Days 7, 14, and 21, and Months 1, 1.5, 2, 3, 6, 9 and 12"
+            },
+            {
+              "measure": "Change in glycolipid levels in CSF",
+              "timeFrame": "Baseline, and Months 2, 6, and 12"
+            },
+            {
+              "measure": "Change in GCase levels in CSF",
+              "timeFrame": "Baseline, and Months 2, 6, and 12"
+            },
+            {
+              "measure": "GCase enzyme activity levels in CSF",
+              "timeFrame": "Months 2, 6, and 12"
+            }
+          ]
+        },
+        "eligibilityModule": {
+          "eligibilityCriteria": "Inclusion Criteria:\n\n* Body weight range of \u226540 kg (88 lbs) to \u2264110 kg (242 lbs) and a body mass index (BMI) of 18 to 34 kg/m2.\n* Diagnosis of Parkinson's Disease (PD) per UK Parkinson's Disease Society Brain Bank Clinical Diagnostic Criteria.\n* Hoehn and Yahr Stage III-IV (as determined in Practically Defined OFF state).\n* Stable use of background medications at least 8 weeks prior to investigational product (IP) administration, including but not limited to those used for treatment of PD. Gaucher Disease-PD patients receiving GD treatments should be on a stable regimen of their ERT or substrate replacement therapy (SRT) medication for at least 3 months prior to screening.\n* At least 1 pathogenic GBA1 mutation confirmed by the central laboratory\n* Negative screening test for Mycobacterium tuberculosis (MTB), documented negative MTB test within 1 year prior to Screening, or clearance by an infectious disease specialist.\n* Patient and/or patient's legally authorized representative (LAR) has the ability to understand the purpose and risks of the study and provide written informed consent and authorization to use protected health information in accordance with national and local privacy regulations.\n* Patient has a reliable study partner/informant (e.g., family member, friend) willing and able to participate in the study as a source of information on the patient's health status and cognitive and functional abilities (including providing input into the rating scales). The study partner should have regular contact with the patient (in person or via phone/video communication). The study partner must sign a separate partner informed consent form (ICF) indicating that she/he understands the study requirements and is willing to participate and attend study visits requiring study partner input.\n* Women of nonchildbearing potential must be either surgically sterile or postmenopausal. Men and women of childbearing potential must use a highly effective method of contraception consistently and correctly for the duration of the study including the long-term follow-up. Individuals in an exclusively same sex relationship (as their preferred and usual lifestyle) are not required to use contraception.\n* Men must agree to abstain from sperm donation for the duration of the study, including long-term follow-up.\n* Women must agree to abstain from egg donation for the duration of the study, including long-term follow-up.\n* Women of childbearing potential cannot be pregnant or lactating/breastfeeding and must have a negative result for serum pregnancy test at Screening.\n* Patient is generally ambulatory, not dependent on walker or wheelchair\n* Patient is living in the community (i.e., not in nursing home); some levels of assisted living may be permitted at the discretion of the Investigator.\n* Pneumococcal and shingles vaccines are required within 10 years of Screening (allowed to be performed during Screening but must be given at least 4 weeks prior to start of the immunosuppressant treatment).\n* Patient is up to date with age and gender-appropriate cancer screening as per local standard of care based on Principal Investigator's (PI) judgment.\n\nExclusion Criteria:\n\n* Diagnosis of a significant CNS disease other than Parkinson's Disease (PD) that may be a cause for the patient's PD symptoms or may confound study objectives.\n* MoCA (Montreal Cognitive Assessment) score of \\<14\n* Spinal, cervical, or brain MRI/magnetic resonance angiography (MRA) indicating clinically significant abnormality, including evidence of prior hemorrhage, infarct \\>1 cm3 or \\>3 lacunar infarcts, or a structural abnormality deemed a contraindication to intracisternal injection.\n* Hypersensitivity or contraindications to corticosteroid and/or, sirolimus use (including but not limited to osteoporosis with vertebral fractures within 1 year prior to Screening, uncontrolled hypertension, poorly controlled diabetes, uncontrolled hyperlipidemia or hypercholesterolemia as per Investigator assessment.\n* Concomitant disease or condition within 6 months of Screening that could interfere with, or treatment of which might interfere with, the conduct of the study or that would, in the opinion of the Investigator, pose an unacceptable safety risk to the patient or interfere with the patient's ability to comply with study procedures; including, but not limited to the following:\n\n  1. Evidence of clinically significant liver pathology;\n  2. Unstable autoimmune disease; autoimmune disease requiring chronic immunosuppression;\n  3. Poorly controlled/not adequately managed diabetes (Screening glycosylated hemoglobin \\[HbA1C\\] \u2265 7%);\n  4. History of unstable angina, myocardial infarction, chronic heart failure (New York Heart Association Class III or IV), or clinically significant conduction abnormalities (e.g., unstable atrial fibrillation) within 1 year prior to Screening;\n  5. Clinically significant 12-lead electrocardiogram (ECG) abnormalities at Screening, as determined by the Investigator;\n  6. Uncontrolled hypertension;\n  7. History of cancer, including B-cell cancers, within 5 years of Screening with the exception of fully excised non-melanoma skin cancers, non-metastatic prostate cancer, and full treated ductal carcinoma in situ, provided it has been stable for at least 6 months;\n  8. History or current alcohol or drug abuse within 2 years of Screening;\n  9. Any current psychiatric diagnosis that may interfere with patient's ability to perform study procedures and all assessments;\n  10. At imminent risk of self-harm;\n  11. Any medical disorders that, in the opinion of the Investigator, could interfere with study-related procedures (including safe performance of lumbar puncture \\[LP\\] or intracisternal injection), such as prohibitive spinal diseases, bleeding diathesis, clinically significant coagulopathy,, thrombocytopenia, or increased intracranial pressure;\n  12. Documented stroke or transient ischemic attack within 1 year prior to Screening;\n  13. History of seizure or unexplained blackouts within 10 years prior to Screening;\n  14. Currently active infection or a severe infection (e.g., pneumonia, septicemia, central nervous system infections \\[e.g. meningitis, encephalitis\\]) within 12 weeks prior to Screening;\n  15. History of severe allergic or anaphylactic reactions. History of hypersensitivity to any inactive ingredient of the IP or protocol-required immunosuppressant medications.\n  16. Acute or chronic: hepatitis B (HBV); hepatitis C (HCV) infection must have completed curative antiviral treatment with HCV viral load below the limit of quantification or be HCV RNA negative due to prior treatment or natural resolution to be eligible for enrollment.\n* Clinically significant abnormalities in laboratory test results at Screening.\n* Participation within 3 months prior to Screening in another therapeutic investigational drug or device study with purported disease-modifying effects on PD, unless it can be documented that the patient received placebo.\n* History of deep brain stimulator placement, focused ultrasound, or surgery for PD\n* Any type of prior gene or cell therapy.\n* Immunizations (live vaccines) in the 4 weeks prior to Screening. Note: Pneumococcal and shingles vaccine administrations are allowed during the Screening period (patients not previously vaccinated should receive pneumococcal and/or shingles vaccine administration at least 4 weeks prior to initiation of Immunosuppression regimen).\n* Use of ambroxol within 8 weeks of dosing.\n* Use of blood thinners in the 2 weeks prior to Screening lumbar puncture (LP) or intra-cisterna magna (ICM) procedure, or the anticipated need to initiate blood thinners during the study. Antiplatelet therapies (e.g., prophylactic aspirin, clopidogrel) are acceptable if the patient is medically able to temporarily stop 48 hours to 7 days (depending on the antiplatelet medication used) prior to and at least 48 hours after intracisternal injection and lumbar puncture.\n* Contraindications or intolerance to imaging methods (MRI, MRA, CT, DaT-SPECT) inducing claustrophobia and/or intolerance to contrast agents used for MRI, MRA or CT.\n* Contraindications to general anesthesia or deep sedation.\n* Positive urine test for drugs of abuse (including opiates, benzodiazepines, amphetamines, cocaine, barbiturates, and phencyclidine) without prescription, at Screening and Day -1. Note: Use of medical marijuana is permitted provided the patient is on a stable regimen. It is also permitted if the patient resides in a state in which the recreational use of marijuana is legalized, so long as the patient does not meet drug abuse criteria (as defined in the Diagnostic and Statistical Manual of Mental Disorders Fifth Edition).\n* Patient is generally frail or has any medical condition, for which, in view of the Investigator, participation in the study would not be in the best interest of the patient or is likely to prohibit further participation during the study.\n\nOther protocol-defined inclusion/exclusion criteria may apply.",
+          "healthyVolunteers": false,
+          "sex": "ALL",
+          "minimumAge": "35 Years",
+          "maximumAge": "80 Years",
+          "stdAges": [
+            "ADULT",
+            "OLDER_ADULT"
+          ]
+        },
+        "contactsLocationsModule": {
+          "centralContacts": [
+            {
+              "name": "Prevail Therapeutics",
+              "role": "CONTACT",
+              "phone": "(917) 336-9310",
+              "email": "prevail.patients@lilly.com"
+            }
+          ],
+          "overallOfficials": [
+            {
+              "name": "Travis B. Lewis, MD, PhD",
+              "affiliation": "Prevail Therapeutics",
+              "role": "STUDY_DIRECTOR"
+            }
+          ],
+          "locations": [
+            {
+              "facility": "Rocky Mountain Clinical Research - CenExel - PPDS, 701 East Hampden Avenue Suite 510",
+              "status": "RECRUITING",
+              "city": "Englewood",
+              "state": "Colorado",
+              "zip": "80113-2776",
+              "country": "United States",
+              "contacts": [
+                {
+                  "name": "Shay Carney",
+                  "role": "CONTACT",
+                  "phone": "720-639-9331",
+                  "email": "s.carney@cenexel.com"
+                }
+              ],
+              "geoPoint": {
+                "lat": 39.64777,
+                "lon": -104.98776
+              }
+            },
+            {
+              "facility": "K2 Medical Research, 101 Southhall Lane, Suite 150",
+              "status": "RECRUITING",
+              "city": "Maitland",
+              "state": "Florida",
+              "zip": "32751-5669",
+              "country": "United States",
+              "contacts": [
+                {
+                  "name": "Mike Isaac",
+                  "role": "CONTACT",
+                  "phone": "321-204-9552",
+                  "email": "mike.isaac@k2med.com"
+                },
+                {
+                  "name": "Yakira Colon",
+                  "role": "CONTACT",
+                  "email": "yakira.colon@k2med.com"
+                }
+              ],
+              "geoPoint": {
+                "lat": 28.62778,
+                "lon": -81.36312
+              }
+            },
+            {
+              "facility": "PPD, 100 West Gore Street, Suite 202",
+              "status": "ACTIVE_NOT_RECRUITING",
+              "city": "Orlando",
+              "state": "Florida",
+              "zip": "32806",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 28.53834,
+                "lon": -81.37924
+              }
+            },
+            {
+              "facility": "Northwestern University Feinberg School of Medicine, Dept. of Neurology, Parkinson's Disease & Movement Disorders Center, 710 N. Lake Shore Drive, 11th Floor",
+              "status": "ACTIVE_NOT_RECRUITING",
+              "city": "Chicago",
+              "state": "Illinois",
+              "zip": "60611",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 41.85003,
+                "lon": -87.65005
+              }
+            },
+            {
+              "facility": "Mount Sinai Beth Israel, 10 Union Square East, Suite 5H",
+              "status": "COMPLETED",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10003",
+              "country": "United States",
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            },
+            {
+              "facility": "Joan and Sanford I. Weill Department of Medicine, 525 E 68th Street",
+              "status": "RECRUITING",
+              "city": "New York",
+              "state": "New York",
+              "zip": "10065",
+              "country": "United States",
+              "contacts": [
+                {
+                  "name": "Samuel Hochberger",
+                  "role": "CONTACT",
+                  "phone": "212-746-6580",
+                  "email": "sah4016@med.cornell.edu"
+                }
+              ],
+              "geoPoint": {
+                "lat": 40.71427,
+                "lon": -74.00597
+              }
+            },
+            {
+              "facility": "Hospital of the University of Pennsylvania, 330 S. 9th Street",
+              "status": "RECRUITING",
+              "city": "Philadelphia",
+              "state": "Pennsylvania",
+              "zip": "19107-6103",
+              "country": "United States",
+              "contacts": [
+                {
+                  "name": "Alexandria Oliver",
+                  "role": "CONTACT",
+                  "phone": "215-829-7104",
+                  "email": "alexandria.oliver@pennmedicine.upenn.edu"
+                }
+              ],
+              "geoPoint": {
+                "lat": 39.95233,
+                "lon": -75.16379
+              }
+            },
+            {
+              "facility": "Shaare Zedek Medical Center, 12 Shmuel Biet Street",
+              "status": "COMPLETED",
+              "city": "Jerusalem",
+              "zip": "91031",
+              "country": "Israel",
+              "geoPoint": {
+                "lat": 31.76904,
+                "lon": 35.21633
+              }
+            },
+            {
+              "facility": "Hadassah Medical Center, Hadassah Ein Kerem, Dept. of Neurology, P.O. Box 12000",
+              "status": "COMPLETED",
+              "city": "Jerusalem",
+              "zip": "91120",
+              "country": "Israel",
+              "geoPoint": {
+                "lat": 31.76904,
+                "lon": 35.21633
+              }
+            },
+            {
+              "facility": "Sheba Medical Center, Tel Hashomer",
+              "status": "COMPLETED",
+              "city": "Ramat Gan",
+              "zip": "52621",
+              "country": "Israel",
+              "geoPoint": {
+                "lat": 32.08227,
+                "lon": 34.81065
+              }
+            },
+            {
+              "facility": "Tel Aviv Sourasky Medical Center, 6 Weizmann St.",
+              "status": "COMPLETED",
+              "city": "Tel Aviv",
+              "zip": "64239",
+              "country": "Israel",
+              "geoPoint": {
+                "lat": 32.08088,
+                "lon": 34.78057
+              }
+            }
+          ]
+        },
+        "ipdSharingStatementModule": {
+          "ipdSharing": "NO"
+        }
+      },
+      "derivedSection": {
+        "miscInfoModule": {
+          "versionHolder": "2024-08-09"
+        },
+        "conditionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D000010300",
+              "term": "Parkinson Disease"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D000020734",
+              "term": "Parkinsonian Disorders"
+            },
+            {
+              "id": "D000001480",
+              "term": "Basal Ganglia Diseases"
+            },
+            {
+              "id": "D000001927",
+              "term": "Brain Diseases"
+            },
+            {
+              "id": "D000002493",
+              "term": "Central Nervous System Diseases"
+            },
+            {
+              "id": "D000009422",
+              "term": "Nervous System Diseases"
+            },
+            {
+              "id": "D000009069",
+              "term": "Movement Disorders"
+            },
+            {
+              "id": "D000080874",
+              "term": "Synucleinopathies"
+            },
+            {
+              "id": "D000019636",
+              "term": "Neurodegenerative Diseases"
+            }
+          ],
+          "browseLeaves": [
+            {
+              "id": "M8891",
+              "name": "Gaucher Disease",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M13213",
+              "name": "Parkinson Disease",
+              "asFound": "Parkinson's Disease",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M22494",
+              "name": "Parkinsonian Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M25603",
+              "name": "Ganglion Cysts",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M16358",
+              "name": "Synovial Cyst",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4774",
+              "name": "Basal Ganglia Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5204",
+              "name": "Brain Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M5742",
+              "name": "Central Nervous System Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M12029",
+              "name": "Movement Disorders",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M2217",
+              "name": "Synucleinopathies",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M21558",
+              "name": "Neurodegenerative Diseases",
+              "relevance": "LOW"
+            },
+            {
+              "id": "T2449",
+              "name": "Gaucher Disease",
+              "relevance": "LOW"
+            }
+          ],
+          "browseBranches": [
+            {
+              "abbrev": "BC10",
+              "name": "Nervous System Diseases"
+            },
+            {
+              "abbrev": "BC16",
+              "name": "Diseases and Abnormalities at or Before Birth"
+            },
+            {
+              "abbrev": "BC18",
+              "name": "Nutritional and Metabolic Diseases"
+            },
+            {
+              "abbrev": "All",
+              "name": "All Conditions"
+            },
+            {
+              "abbrev": "BC04",
+              "name": "Neoplasms"
+            },
+            {
+              "abbrev": "BC17",
+              "name": "Skin and Connective Tissue Diseases"
+            },
+            {
+              "abbrev": "Rare",
+              "name": "Rare Diseases"
+            }
+          ]
+        },
+        "interventionBrowseModule": {
+          "meshes": [
+            {
+              "id": "D000020123",
+              "term": "Sirolimus"
+            },
+            {
+              "id": "D000008775",
+              "term": "Methylprednisolone"
+            },
+            {
+              "id": "D000077555",
+              "term": "Methylprednisolone Acetate"
+            },
+            {
+              "id": "D000008776",
+              "term": "Methylprednisolone Hemisuccinate"
+            },
+            {
+              "id": "D000011239",
+              "term": "Prednisolone"
+            },
+            {
+              "id": "C000009935",
+              "term": "Prednisolone acetate"
+            },
+            {
+              "id": "C000021322",
+              "term": "Prednisolone hemisuccinate"
+            },
+            {
+              "id": "C000009022",
+              "term": "Prednisolone phosphate"
+            }
+          ],
+          "ancestors": [
+            {
+              "id": "D000000900",
+              "term": "Anti-Bacterial Agents"
+            },
+            {
+              "id": "D000000890",
+              "term": "Anti-Infective Agents"
+            },
+            {
+              "id": "D000000903",
+              "term": "Antibiotics, Antineoplastic"
+            },
+            {
+              "id": "D000000970",
+              "term": "Antineoplastic Agents"
+            },
+            {
+              "id": "D000000935",
+              "term": "Antifungal Agents"
+            },
+            {
+              "id": "D000007166",
+              "term": "Immunosuppressive Agents"
+            },
+            {
+              "id": "D000007155",
+              "term": "Immunologic Factors"
+            },
+            {
+              "id": "D000045505",
+              "term": "Physiological Effects of Drugs"
+            },
+            {
+              "id": "D000000893",
+              "term": "Anti-Inflammatory Agents"
+            },
+            {
+              "id": "D000000932",
+              "term": "Antiemetics"
+            },
+            {
+              "id": "D000001337",
+              "term": "Autonomic Agents"
+            },
+            {
+              "id": "D000018373",
+              "term": "Peripheral Nervous System Agents"
+            },
+            {
+              "id": "D000005765",
+              "term": "Gastrointestinal Agents"
+            },
+            {
+              "id": "D000005938",
+              "term": "Glucocorticoids"
+            },
+            {
+              "id": "D000006728",
+              "term": "Hormones"
+            },
+            {
+              "id": "D000006730",
+              "term": "Hormones, Hormone Substitutes, and Hormone Antagonists"
+            },
+            {
+              "id": "D000018696",
+              "term": "Neuroprotective Agents"
+            },
+            {
+              "id": "D000020011",
+              "term": "Protective Agents"
+            },
+            {
+              "id": "D000018931",
+              "term": "Antineoplastic Agents, Hormonal"
+            }
+          ],
+          "browseLeaves": [
+            {
+              "id": "M11749",
+              "name": "Methylprednisolone",
+              "asFound": "Limb",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M1833",
+              "name": "Methylprednisolone Acetate",
+              "asFound": "Limb",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M11750",
+              "name": "Methylprednisolone Hemisuccinate",
+              "asFound": "Limb",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M14120",
+              "name": "Prednisolone",
+              "asFound": "Limb",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M229449",
+              "name": "Prednisolone acetate",
+              "asFound": "Limb",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M211887",
+              "name": "Prednisolone hemisuccinate",
+              "asFound": "Limb",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M248881",
+              "name": "Prednisolone phosphate",
+              "asFound": "Limb",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M21960",
+              "name": "Sirolimus",
+              "asFound": "Healthy Volunteers",
+              "relevance": "HIGH"
+            },
+            {
+              "id": "M290",
+              "name": "Mometasone Furoate",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4222",
+              "name": "Anti-Bacterial Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4214",
+              "name": "Anti-Infective Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4224",
+              "name": "Antibiotics, Antitubercular",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M6252",
+              "name": "Clotrimazole",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M11796",
+              "name": "Miconazole",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4254",
+              "name": "Antifungal Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M10212",
+              "name": "Immunosuppressive Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M10201",
+              "name": "Immunologic Factors",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4217",
+              "name": "Anti-Inflammatory Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M4251",
+              "name": "Antiemetics",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M8881",
+              "name": "Gastrointestinal Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M9047",
+              "name": "Glucocorticoids",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M9789",
+              "name": "Hormones",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M9788",
+              "name": "Hormone Antagonists",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M20773",
+              "name": "Neuroprotective Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M21869",
+              "name": "Protective Agents",
+              "relevance": "LOW"
+            },
+            {
+              "id": "M20966",
+              "name": "Antineoplastic Agents, Hormonal",
+              "relevance": "LOW"
+            }
+          ],
+          "browseBranches": [
+            {
+              "abbrev": "Infl",
+              "name": "Anti-Inflammatory Agents"
+            },
+            {
+              "abbrev": "AnEm",
+              "name": "Antiemetics"
+            },
+            {
+              "abbrev": "NeuroAg",
+              "name": "Neuroprotective Agents"
+            },
+            {
+              "abbrev": "Gast",
+              "name": "Gastrointestinal Agents"
+            },
+            {
+              "abbrev": "All",
+              "name": "All Drugs and Chemicals"
+            },
+            {
+              "abbrev": "ANeo",
+              "name": "Antineoplastic Agents"
+            },
+            {
+              "abbrev": "Infe",
+              "name": "Anti-Infective Agents"
+            },
+            {
+              "abbrev": "AAll",
+              "name": "Anti-Allergic Agents"
+            },
+            {
+              "abbrev": "Derm",
+              "name": "Dermatologic Agents"
+            }
+          ]
+        }
+      },
+      "hasResults": false
     }
   ]
 }

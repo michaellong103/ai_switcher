@@ -56,6 +56,7 @@ def load_trials_data(final_output_path):
 
 def evaluate_number_of_trials(trials, config):
     logging.info('Starting evaluate_number_of_trials function')
+
     num_trials = len(trials)
     if num_trials == config['no_trials']:
         logging.info("No trials found, emitting NO_TRIALS_FOUND event.")

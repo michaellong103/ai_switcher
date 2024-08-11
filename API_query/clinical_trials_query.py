@@ -1,3 +1,4 @@
+# ./API_query/clinical_trials_query.py
 import os
 import json
 import requests
@@ -69,19 +70,27 @@ def construct_query_url(data, config_state, default_radius=start_distance):
     return query_url
 
 def update_config_state(input_data, config_file_path, query_url, radius):
+    # Define the updated data
     updated_data = {
         'current_api_params': input_data,
         'last_clinical_trials_api_url': query_url,
-        'stats': {'number_of_trials': 0, 'trial_names': [], 'nct_numbers': ''}
     }
+
+    # Load the existing config data from the file if it exists
     if os.path.exists(config_file_path):
         with open(config_file_path, 'r') as config_file:
             config_data = json.load(config_file)
     else:
         config_data = {}
-    config_data.update(updated_data)
+
+    # Update only the specific fields without touching 'stats'
+    config_data['current_api_params'] = updated_data['current_api_params']
+    config_data['last_clinical_trials_api_url'] = updated_data['last_clinical_trials_api_url']
+
+    # Save the updated config data back to the file
     with open(config_file_path, 'w') as config_file:
         json.dump(config_data, config_file, indent=4)
+    
     logging.info('Config state updated successfully.')
 
 def fetch_clinical_trials(query_url):
@@ -159,7 +168,6 @@ def main():
 
     config_state = load_config_state(config_file_path)  # Load the config state
     query_url = construct_query_url(input_data, config_state)
-    
     update_config_state(input_data, config_file_path, query_url, config_state.get('current_api_params', {}).get('Distance', start_distance))
     clinical_trials_data = fetch_clinical_trials(query_url)
     

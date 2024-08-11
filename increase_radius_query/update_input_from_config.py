@@ -83,10 +83,10 @@ def on_no_trials_found():
         increase_amount = new_radius - current_radius
         print(f"{city}, {new_radius} km radius increased by {increase_amount} km")
         
-        time.sleep(2)
+        # time.sleep(2)
         result_code, result_message = execute_api_query()
         logging.info(result_message)
-        event_system.emit('RE_EVALUATE_TRIALS')
+       
     else:
         logging.error("Failed to load data from config_state.json. Aborting the process.")
 

@@ -25,7 +25,7 @@ def construct_query_url(data, radius=100):
 
 def update_config_state(input_data, config_file_path, radius=100):
     query_url = construct_query_url(input_data, radius)
-    updated_data = {'current_api_params': input_data, 'search_radius_km': radius, 'last_clinical_trials_api_url': query_url, 'stats': {'number_of_trials': 0, 'trial_names': [], 'nct_numbers': ''}}
+    updated_data = {'current_api_params': input_data, 'search_radius_km': radius, 'last_clinical_trials_api_url': query_url, 'stats': {'number_of_trials': 888, 'trial_names': [], 'nct_numbers': ''}}
     if os.path.exists(config_file_path):
         with open(config_file_path, 'r') as config_file:
             config_data = json.load(config_file)
