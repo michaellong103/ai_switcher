@@ -6,19 +6,19 @@
         "Location": "New York, NY",
         "Latitude": "40.7128",
         "Longitude": "-74.0060",
-        "Distance": 413
+        "Distance": 213
     },
-    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,413)",
+    "last_clinical_trials_api_url": "https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Gaucher+Disease&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,213)",
     "stats": {
         "number_of_trials": 5,
         "trial_names": [
             "Role of Oxidative Stress and Inflammation in Type 1 Gaucher Disease (GD1)",
-            "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States (Project Searchlight)",
             "International Collaborative Gaucher Group (ICGG) Gaucher Disease Registry & Pregnancy Sub-registry",
+            "Phase 1/2a Clinical Trial of PR001 (LY3884961) in Patients With Parkinson's Disease With at Least One GBA1 Mutation (PROPEL)",
             "Drug Discovery for Parkinson's With Mutations in the GBA Gene",
-            "Phase 1/2a Clinical Trial of PR001 (LY3884961) in Patients With Parkinson's Disease With at Least One GBA1 Mutation (PROPEL)"
+            "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States (Project Searchlight)"
         ],
-        "nct_numbers": "NCT02583672, NCT05908656, NCT00358943, NCT05536388, NCT04127578"
+        "nct_numbers": "NCT02583672, NCT00358943, NCT04127578, NCT05536388, NCT05908656"
     },
     "API_response_evaluation": "No trials"
 }

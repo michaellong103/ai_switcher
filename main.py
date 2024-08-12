@@ -12,8 +12,7 @@ from logging_config import configure_logging, delete_logs, delete_items, reset_c
 
 from increase_radius_query.update_input_from_config import on_no_trials_found
 
-from event_system import event_system
-event_system.on('NO_TRIALS_FOUND', on_no_trials_found)
+
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'assistants')))
 init(autoreset=True)

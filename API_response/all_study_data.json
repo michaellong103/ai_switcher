@@ -327,7 +327,7 @@
         },
         "derivedSection": {
             "miscInfoModule": {
-                "versionHolder": "2024-08-09"
+                "versionHolder": "2024-08-12"
             },
             "conditionBrowseModule": {
                 "meshes": [
@@ -583,7 +583,7 @@
                     {
                         "id": "M244107",
                         "name": "N-monoacetylcystine",
-                        "asFound": "Ocular",
+                        "asFound": "Matrix",
                         "relevance": "HIGH"
                     },
                     {
@@ -643,412 +643,6 @@
                     {
                         "abbrev": "Infl",
                         "name": "Anti-Inflammatory Agents"
-                    }
-                ]
-            }
-        },
-        "hasResults": false
-    },
-    {
-        "protocolSection": {
-            "identificationModule": {
-                "nctId": "NCT05908656",
-                "orgStudyIdInfo": {
-                    "id": "PIR17206"
-                },
-                "secondaryIdInfos": [
-                    {
-                        "id": "U1111-1280-8450",
-                        "type": "REGISTRY",
-                        "domain": "ICTRP"
-                    }
-                ],
-                "organization": {
-                    "fullName": "Sanofi",
-                    "class": "INDUSTRY"
-                },
-                "briefTitle": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States (Project Searchlight)",
-                "officialTitle": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States"
-            },
-            "statusModule": {
-                "statusVerifiedDate": "2024-04",
-                "overallStatus": "RECRUITING",
-                "expandedAccessInfo": {
-                    "hasExpandedAccess": false
-                },
-                "startDateStruct": {
-                    "date": "2024-04-02",
-                    "type": "ACTUAL"
-                },
-                "primaryCompletionDateStruct": {
-                    "date": "2024-07-23",
-                    "type": "ESTIMATED"
-                },
-                "completionDateStruct": {
-                    "date": "2024-07-23",
-                    "type": "ESTIMATED"
-                },
-                "studyFirstSubmitDate": "2023-06-08",
-                "studyFirstSubmitQcDate": "2023-06-08",
-                "studyFirstPostDateStruct": {
-                    "date": "2023-06-18",
-                    "type": "ACTUAL"
-                },
-                "lastUpdateSubmitDate": "2024-04-03",
-                "lastUpdatePostDateStruct": {
-                    "date": "2024-04-05",
-                    "type": "ACTUAL"
-                }
-            },
-            "sponsorCollaboratorsModule": {
-                "responsibleParty": {
-                    "type": "SPONSOR"
-                },
-                "leadSponsor": {
-                    "name": "Sanofi",
-                    "class": "INDUSTRY"
-                }
-            },
-            "oversightModule": {
-                "oversightHasDmc": false,
-                "isFdaRegulatedDrug": false,
-                "isFdaRegulatedDevice": false
-            },
-            "descriptionModule": {
-                "briefSummary": "This is a three-phase study comprising both retrospective and prospective components, as follows:\n\nPhase I: Deployment of Rare Disease Algorithm:\n\nA diagnostic screening algorithm was developed using advanced analytical methods to identify patients who have an increased likelihood of having Gaucher disease. This tool will be applied to a health system's electronic health records (EHR).\n\nThe top 50 active patients per healthcare system will be identified as \"highly ranked by the RDA\" and moved to Phase II. As three to four healthcare systems are expected to participate in this study, between 150 to 200 persons are expected to be identified and included in Phase II.\n\nPhase II: Retrospective review of medical records of highly ranked persons: The listing of persons highly-ranked by the RDA from phase I will be forwarded to the study team within each participating healthcare system. After reviewing the RDA reports and medical records of each highly ranked person, study site personnel will determine eligibility for Phase III based on the relevant selection criteria listed in the section below.\n\nPhase III: Prospective diagnostic testing: Eligible persons (or their parent/guardian) from Phase II will be contacted and asked to provide consent for inclusion into the study. After consent is received, blood samples will be collected and sent for Gaucher diagnostic testing. Because of overlap in clinical symptoms between Gaucher disease and acid sphingomyelinase deficiency (ASMD), patients will also receive diagnostic testing for ASMD. Results will be shared with study site personnel, who will subsequently inform the study subject (and/or their parent/guardian, where appropriate) of results. It is anticipated that participation of a typical subject will be less than 3 months."
-            },
-            "conditionsModule": {
-                "conditions": [
-                    "Gaucher Disease"
-                ]
-            },
-            "designModule": {
-                "studyType": "INTERVENTIONAL",
-                "phases": [
-                    "NA"
-                ],
-                "designInfo": {
-                    "allocation": "NA",
-                    "interventionModel": "SINGLE_GROUP",
-                    "primaryPurpose": "SCREENING",
-                    "maskingInfo": {
-                        "masking": "NONE"
-                    }
-                },
-                "enrollmentInfo": {
-                    "count": 105,
-                    "type": "ESTIMATED"
-                }
-            },
-            "armsInterventionsModule": {
-                "armGroups": [
-                    {
-                        "label": "Persons with electronic health records suggestive of Gaucher disease",
-                        "type": "OTHER",
-                        "interventionNames": [
-                            "Procedure: Investigational procedure"
-                        ]
-                    }
-                ],
-                "interventions": [
-                    {
-                        "type": "PROCEDURE",
-                        "name": "Investigational procedure",
-                        "description": "Subjects that consent will have a single blood draw either via a finger stick or via venous blood draw (blood will be placed on a 5 spot blood card) used to determine whether they have Gaucher Disease or ASMD",
-                        "armGroupLabels": [
-                            "Persons with electronic health records suggestive of Gaucher disease"
-                        ]
-                    }
-                ]
-            },
-            "outcomesModule": {
-                "primaryOutcomes": [
-                    {
-                        "measure": "The proportion of persons with GD (including those with GD identified in Phase II and those previously undiagnosed who subsequently test positive for GD in Phase III) out of all persons highly ranked by the RDA",
-                        "timeFrame": "Up to 3 months"
-                    },
-                    {
-                        "measure": "The proportion of previously undiagnosed persons highly ranked by RDA who subsequently test positive for GD out of persons with GD identified in Phase II and III",
-                        "timeFrame": "Up to 3 months"
-                    }
-                ],
-                "secondaryOutcomes": [
-                    {
-                        "measure": "Characteristics include demographic information, alternative and concomitant diagnoses, treatments, and patterns of provider visits for the previously listed subgroups",
-                        "timeFrame": "Up to 3 months"
-                    },
-                    {
-                        "measure": "Relationship between RDA scores and the diagnostic yield; descriptive analyses including confusion matrices",
-                        "timeFrame": "Up to 3 months"
-                    }
-                ]
-            },
-            "eligibilityModule": {
-                "eligibilityCriteria": "Inclusion Criteria:\n\n* Phase I (Model Deployment): All persons within the EHRs of the selected IDNs will be included in this stage.\n* Phase II (Case Ascertainment): The 150 to 200 persons with the highest RDA values (i.e., 50 per healthcare system) who are active (any documented interaction with the healthcare system in the previous 18 months) will be included in this stage.\n* Phase III (Diagnostic Testing): The subset of persons from Phase II who: (1) have not been diagnosed with GD or ASMD, and (2) have not had GD and ASMD conclusively ruled out, will be asked to provide consent to undergo diagnostic testing. Individuals who meet these criteria and who provide written informed consent (or those whose parents/guardians provide consent as appropriate) will be included in this stage.\n\nExclusion Criteria:\n\n* There are no exclusion criteria for Phase I or Phase II.\n* Phase III (Diagnostic Testing):\n\n  * Patient is unable/unwilling to provide informed consent for diagnostic testing, or\n  * Patient is no longer under the care of the IDN\n\nThe above information is not intended to contain all considerations relevant to a potential participation in a clinical trial.",
-                "healthyVolunteers": false,
-                "sex": "ALL",
-                "stdAges": [
-                    "CHILD",
-                    "ADULT",
-                    "OLDER_ADULT"
-                ]
-            },
-            "contactsLocationsModule": {
-                "centralContacts": [
-                    {
-                        "name": "Trial Transparency email recommended (Toll free for US & Canada)",
-                        "role": "CONTACT",
-                        "phone": "800-633-1610",
-                        "phoneExt": "ext option 6",
-                        "email": "Contact-US@sanofi.com"
-                    }
-                ],
-                "overallOfficials": [
-                    {
-                        "name": "Clinical Sciences & Operations",
-                        "affiliation": "Sanofi",
-                        "role": "STUDY_DIRECTOR"
-                    }
-                ],
-                "locations": [
-                    {
-                        "facility": "University of Florida Site Number : 8400003",
-                        "status": "RECRUITING",
-                        "city": "Gainesville",
-                        "state": "Florida",
-                        "zip": "32610-3003",
-                        "country": "United States",
-                        "geoPoint": {
-                            "lat": 29.65163,
-                            "lon": -82.32483
-                        }
-                    },
-                    {
-                        "facility": "Metropolitan Hospital Center Site Number : 8400001",
-                        "status": "RECRUITING",
-                        "city": "New York",
-                        "state": "New York",
-                        "zip": "10029-7494",
-                        "country": "United States",
-                        "geoPoint": {
-                            "lat": 40.71427,
-                            "lon": -74.00597
-                        }
-                    },
-                    {
-                        "facility": "Aurora Research Institute LLC Site Number : 8400002",
-                        "status": "RECRUITING",
-                        "city": "Milwaukee",
-                        "state": "Wisconsin",
-                        "zip": "53233-1306",
-                        "country": "United States",
-                        "geoPoint": {
-                            "lat": 43.0389,
-                            "lon": -87.90647
-                        }
-                    }
-                ]
-            },
-            "ipdSharingStatementModule": {
-                "ipdSharing": "YES",
-                "description": "Qualified researchers may request access to patient level data and related study documents including the clinical study report, study protocol with any amendments, blank case report form, statistical analysis plan, and dataset specifications. Patient level data will be anonymized and study documents will be redacted to protect the privacy of trial participants. Further details on Sanofi's data sharing criteria, eligible studies, and process for requesting access can be found at: https://vivli.org"
-            }
-        },
-        "derivedSection": {
-            "miscInfoModule": {
-                "versionHolder": "2024-08-09"
-            },
-            "conditionBrowseModule": {
-                "meshes": [
-                    {
-                        "id": "D000005776",
-                        "term": "Gaucher Disease"
-                    },
-                    {
-                        "id": "D000035583",
-                        "term": "Rare Diseases"
-                    }
-                ],
-                "ancestors": [
-                    {
-                        "id": "D000020969",
-                        "term": "Disease Attributes"
-                    },
-                    {
-                        "id": "D000010335",
-                        "term": "Pathologic Processes"
-                    },
-                    {
-                        "id": "D000013106",
-                        "term": "Sphingolipidoses"
-                    },
-                    {
-                        "id": "D000020140",
-                        "term": "Lysosomal Storage Diseases, Nervous System"
-                    },
-                    {
-                        "id": "D000020739",
-                        "term": "Brain Diseases, Metabolic, Inborn"
-                    },
-                    {
-                        "id": "D000001928",
-                        "term": "Brain Diseases, Metabolic"
-                    },
-                    {
-                        "id": "D000001927",
-                        "term": "Brain Diseases"
-                    },
-                    {
-                        "id": "D000002493",
-                        "term": "Central Nervous System Diseases"
-                    },
-                    {
-                        "id": "D000009422",
-                        "term": "Nervous System Diseases"
-                    },
-                    {
-                        "id": "D000008661",
-                        "term": "Metabolism, Inborn Errors"
-                    },
-                    {
-                        "id": "D000030342",
-                        "term": "Genetic Diseases, Inborn"
-                    },
-                    {
-                        "id": "D000008064",
-                        "term": "Lipidoses"
-                    },
-                    {
-                        "id": "D000008052",
-                        "term": "Lipid Metabolism, Inborn Errors"
-                    },
-                    {
-                        "id": "D000016464",
-                        "term": "Lysosomal Storage Diseases"
-                    },
-                    {
-                        "id": "D000008659",
-                        "term": "Metabolic Diseases"
-                    },
-                    {
-                        "id": "D000052439",
-                        "term": "Lipid Metabolism Disorders"
-                    }
-                ],
-                "browseLeaves": [
-                    {
-                        "id": "M8891",
-                        "name": "Gaucher Disease",
-                        "asFound": "Gaucher Disease",
-                        "relevance": "HIGH"
-                    },
-                    {
-                        "id": "M24518",
-                        "name": "Rare Diseases",
-                        "asFound": "Rare disease",
-                        "relevance": "HIGH"
-                    },
-                    {
-                        "id": "M22700",
-                        "name": "Disease Attributes",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M15904",
-                        "name": "Sphingolipidoses",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M18871",
-                        "name": "Lysosomal Storage Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M5204",
-                        "name": "Brain Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M5205",
-                        "name": "Brain Diseases, Metabolic",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M22498",
-                        "name": "Brain Diseases, Metabolic, Inborn",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M5742",
-                        "name": "Central Nervous System Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M11641",
-                        "name": "Metabolism, Inborn Errors",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M23686",
-                        "name": "Genetic Diseases, Inborn",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M11064",
-                        "name": "Lipidoses",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M11054",
-                        "name": "Lipid Metabolism, Inborn Errors",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M11639",
-                        "name": "Metabolic Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M27029",
-                        "name": "Lipid Metabolism Disorders",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "T2449",
-                        "name": "Gaucher Disease",
-                        "asFound": "Gaucher Disease",
-                        "relevance": "HIGH"
-                    },
-                    {
-                        "id": "T5335",
-                        "name": "Sphingolipidosis",
-                        "relevance": "LOW"
-                    }
-                ],
-                "browseBranches": [
-                    {
-                        "abbrev": "BC10",
-                        "name": "Nervous System Diseases"
-                    },
-                    {
-                        "abbrev": "BC16",
-                        "name": "Diseases and Abnormalities at or Before Birth"
-                    },
-                    {
-                        "abbrev": "BC18",
-                        "name": "Nutritional and Metabolic Diseases"
-                    },
-                    {
-                        "abbrev": "All",
-                        "name": "All Conditions"
-                    },
-                    {
-                        "abbrev": "BC23",
-                        "name": "Symptoms and General Pathology"
-                    },
-                    {
-                        "abbrev": "Rare",
-                        "name": "Rare Diseases"
                     }
                 ]
             }
@@ -4542,7 +4136,7 @@
         },
         "derivedSection": {
             "miscInfoModule": {
-                "versionHolder": "2024-08-09",
+                "versionHolder": "2024-08-12",
                 "removedCountries": [
                     "China",
                     "Colombia"
@@ -4752,457 +4346,6 @@
                     {
                         "abbrev": "BC18",
                         "name": "Nutritional and Metabolic Diseases"
-                    },
-                    {
-                        "abbrev": "Rare",
-                        "name": "Rare Diseases"
-                    }
-                ]
-            }
-        },
-        "hasResults": false
-    },
-    {
-        "protocolSection": {
-            "identificationModule": {
-                "nctId": "NCT05536388",
-                "orgStudyIdInfo": {
-                    "id": "10-008"
-                },
-                "organization": {
-                    "fullName": "New York Stem Cell Foundation Research Institute",
-                    "class": "OTHER"
-                },
-                "briefTitle": "Drug Discovery for Parkinson's With Mutations in the GBA Gene",
-                "officialTitle": "Drug Discovery for Parkinson's With Mutations in the GBA Gene"
-            },
-            "statusModule": {
-                "statusVerifiedDate": "2024-07",
-                "overallStatus": "RECRUITING",
-                "expandedAccessInfo": {
-                    "hasExpandedAccess": false
-                },
-                "startDateStruct": {
-                    "date": "2022-07-15",
-                    "type": "ACTUAL"
-                },
-                "primaryCompletionDateStruct": {
-                    "date": "2025-07-15",
-                    "type": "ESTIMATED"
-                },
-                "completionDateStruct": {
-                    "date": "2025-07-15",
-                    "type": "ESTIMATED"
-                },
-                "studyFirstSubmitDate": "2022-09-07",
-                "studyFirstSubmitQcDate": "2022-09-07",
-                "studyFirstPostDateStruct": {
-                    "date": "2022-09-10",
-                    "type": "ACTUAL"
-                },
-                "lastUpdateSubmitDate": "2024-07-26",
-                "lastUpdatePostDateStruct": {
-                    "date": "2024-07-29",
-                    "type": "ACTUAL"
-                }
-            },
-            "sponsorCollaboratorsModule": {
-                "responsibleParty": {
-                    "type": "SPONSOR"
-                },
-                "leadSponsor": {
-                    "name": "New York Stem Cell Foundation Research Institute",
-                    "class": "OTHER"
-                },
-                "collaborators": [
-                    {
-                        "name": "Silverstein Foundation",
-                        "class": "UNKNOWN"
-                    }
-                ]
-            },
-            "oversightModule": {
-                "oversightHasDmc": false,
-                "isFdaRegulatedDrug": false,
-                "isFdaRegulatedDevice": false
-            },
-            "descriptionModule": {
-                "briefSummary": "The New York Stem Cell Foundation (NYSCF) Research Institute is performing this research to accelerate Parkinson's disease research and drug development by using cells from the body (such as skin or blood cells) to make stem cells and other types of cells, conduct research on the samples, perform genetic testing, and/or store the samples for future use.\n\nThrough this research, researchers hope to identify future treatments or even cures for Parkinson's disease.",
-                "detailedDescription": "Researchers at the New York Stem Cell Foundation (NYSCF) Research Institute study diverse diseases, conditions, and traits by creating stem cells from biological samples. These \"pluripotent\" stem cells can become any cell in the human body, including cells that may be difficult, invasive, or impossible to obtain directly.\n\nAdditionally, researchers perform genetic testing to learn more about DNA, a material in most cells that contains instructions for the body's development and functions (such as traits like eye color and risk of certain diseases). A piece of DNA that determines the specific role of a cell is called a \"gene.\" If the instructions in a gene are abnormal, this can lead to disease.\n\nParticipation in the study involves: (1) completion of health questionnaires, (2) providing a skin and/or blood sample from which stem cells may be created, (3) collection of a saliva sample for genetic analysis, and (4) possible future follow-up to provide additional information or learn about other research studies.\n\nThis study is not a clinical trial."
-            },
-            "conditionsModule": {
-                "conditions": [
-                    "Parkinson Disease",
-                    "Gaucher Disease",
-                    "Healthy",
-                    "GBA Gene Mutation"
-                ],
-                "keywords": [
-                    "Parkinson Disease",
-                    "GBA Gene Mutation"
-                ]
-            },
-            "designModule": {
-                "studyType": "OBSERVATIONAL",
-                "patientRegistry": false,
-                "designInfo": {
-                    "observationalModel": "OTHER",
-                    "timePerspective": "PROSPECTIVE"
-                },
-                "bioSpec": {
-                    "retention": "SAMPLES_WITH_DNA",
-                    "description": "Skin biopsy (2-3mm) and/or blood (up to 50 mL); saliva; excess/leftover biospecimens that were (or will be) collected for other purposes (e.g., medical procedure)"
-                },
-                "enrollmentInfo": {
-                    "count": 60,
-                    "type": "ESTIMATED"
-                }
-            },
-            "armsInterventionsModule": {
-                "armGroups": [
-                    {
-                        "label": "Parkinson's Disease",
-                        "description": "Subjects in this group will have a diagnosis of Parkinson's disease with or without a known GBA gene mutation.",
-                        "interventionNames": [
-                            "Other: Biological Sample Collection"
-                        ]
-                    },
-                    {
-                        "label": "Gaucher Disease",
-                        "description": "Subjects in this group with have a diagnosis of Gaucher disease with or without a known GBA gene mutation.",
-                        "interventionNames": [
-                            "Other: Biological Sample Collection"
-                        ]
-                    },
-                    {
-                        "label": "Healthy Control",
-                        "description": "Subjects in this group will serve as healthy controls.",
-                        "interventionNames": [
-                            "Other: Biological Sample Collection"
-                        ]
-                    }
-                ],
-                "interventions": [
-                    {
-                        "type": "OTHER",
-                        "name": "Biological Sample Collection",
-                        "description": "Skin biopsy (2-3mm) and/or blood (up to 50 mL); saliva; excess/leftover biospecimens that were (or will be) collected for other purposes (e.g., medical procedure)",
-                        "armGroupLabels": [
-                            "Gaucher Disease",
-                            "Healthy Control",
-                            "Parkinson's Disease"
-                        ],
-                        "otherNames": [
-                            "Biological sample collection for biobanking and research"
-                        ]
-                    }
-                ]
-            },
-            "outcomesModule": {
-                "primaryOutcomes": [
-                    {
-                        "measure": "Establishment of a diverse bank of biological samples, stem cell lines, derivatives, and associated information.",
-                        "description": "Establish a robust disease signature using a cohort of PD and carefully matched control samples to screen a library of approximately 3,000 compounds to determine whether any compounds improve or reverse disease phenotypes.",
-                        "timeFrame": "Baseline"
-                    }
-                ]
-            },
-            "eligibilityModule": {
-                "eligibilityCriteria": "Inclusion Criteria:\n\n* Age 18 years or older.\n* Diagnosis of Parkinson's disease, Gaucher disease, or healthy control.\n* Must provide written informed consent unless physical limitations preclude signing.\n\nExclusion Criteria:\n\n* For skin samples collected specifically for this study: history of keloid formation, coagulation disorder, allergy to the anesthetic, or anticoagulation use that precludes sample collection.\n* For blood samples collected specifically for this study: coagulation disorder or other medical condition(s) that increases the risks associated with blood collection.\n* For all prospective sample collections: Subjects who refuse to adhere to NYSCF's and/or a collection site's safety protocols will be excluded. Subjects with an AIDS diagnosis and CD4 count of less than 200 cells per microliter (mcL) of blood will be excluded due to increased risk of infection.",
-                "healthyVolunteers": true,
-                "sex": "ALL",
-                "minimumAge": "18 Years",
-                "stdAges": [
-                    "ADULT",
-                    "OLDER_ADULT"
-                ],
-                "studyPopulation": "Individuals with a diagnosis of one or more of the listed conditions.\n\nIndividuals without a condition to serve as healthy controls (a comparison group for those with conditions).",
-                "samplingMethod": "NON_PROBABILITY_SAMPLE"
-            },
-            "contactsLocationsModule": {
-                "centralContacts": [
-                    {
-                        "name": "Becca Wood",
-                        "role": "CONTACT",
-                        "phone": "212-927-1801",
-                        "email": "clinicalresearch@nyscf.org"
-                    }
-                ],
-                "overallOfficials": [
-                    {
-                        "name": "Laura Andres-Martin",
-                        "affiliation": "New York Stem Cell Foundation Research Institute",
-                        "role": "PRINCIPAL_INVESTIGATOR"
-                    }
-                ],
-                "locations": [
-                    {
-                        "facility": "The New York Stem Cell Foundation Research Institute",
-                        "status": "RECRUITING",
-                        "city": "New York",
-                        "state": "New York",
-                        "zip": "10019",
-                        "country": "United States",
-                        "contacts": [
-                            {
-                                "name": "Becca Wood",
-                                "role": "CONTACT",
-                                "phone": "212-927-1801",
-                                "email": "clinicalresearch@nyscf.org"
-                            },
-                            {
-                                "name": "Laura Andres-Martin",
-                                "role": "PRINCIPAL_INVESTIGATOR"
-                            }
-                        ],
-                        "geoPoint": {
-                            "lat": 40.71427,
-                            "lon": -74.00597
-                        }
-                    }
-                ]
-            },
-            "ipdSharingStatementModule": {
-                "ipdSharing": "NO"
-            }
-        },
-        "derivedSection": {
-            "miscInfoModule": {
-                "versionHolder": "2024-08-09"
-            },
-            "conditionBrowseModule": {
-                "meshes": [
-                    {
-                        "id": "D000010300",
-                        "term": "Parkinson Disease"
-                    },
-                    {
-                        "id": "D000005776",
-                        "term": "Gaucher Disease"
-                    }
-                ],
-                "ancestors": [
-                    {
-                        "id": "D000020734",
-                        "term": "Parkinsonian Disorders"
-                    },
-                    {
-                        "id": "D000001480",
-                        "term": "Basal Ganglia Diseases"
-                    },
-                    {
-                        "id": "D000001927",
-                        "term": "Brain Diseases"
-                    },
-                    {
-                        "id": "D000002493",
-                        "term": "Central Nervous System Diseases"
-                    },
-                    {
-                        "id": "D000009422",
-                        "term": "Nervous System Diseases"
-                    },
-                    {
-                        "id": "D000009069",
-                        "term": "Movement Disorders"
-                    },
-                    {
-                        "id": "D000080874",
-                        "term": "Synucleinopathies"
-                    },
-                    {
-                        "id": "D000019636",
-                        "term": "Neurodegenerative Diseases"
-                    },
-                    {
-                        "id": "D000013106",
-                        "term": "Sphingolipidoses"
-                    },
-                    {
-                        "id": "D000020140",
-                        "term": "Lysosomal Storage Diseases, Nervous System"
-                    },
-                    {
-                        "id": "D000020739",
-                        "term": "Brain Diseases, Metabolic, Inborn"
-                    },
-                    {
-                        "id": "D000001928",
-                        "term": "Brain Diseases, Metabolic"
-                    },
-                    {
-                        "id": "D000008661",
-                        "term": "Metabolism, Inborn Errors"
-                    },
-                    {
-                        "id": "D000030342",
-                        "term": "Genetic Diseases, Inborn"
-                    },
-                    {
-                        "id": "D000008064",
-                        "term": "Lipidoses"
-                    },
-                    {
-                        "id": "D000008052",
-                        "term": "Lipid Metabolism, Inborn Errors"
-                    },
-                    {
-                        "id": "D000016464",
-                        "term": "Lysosomal Storage Diseases"
-                    },
-                    {
-                        "id": "D000008659",
-                        "term": "Metabolic Diseases"
-                    },
-                    {
-                        "id": "D000052439",
-                        "term": "Lipid Metabolism Disorders"
-                    }
-                ],
-                "browseLeaves": [
-                    {
-                        "id": "M8891",
-                        "name": "Gaucher Disease",
-                        "asFound": "Gaucher Disease",
-                        "relevance": "HIGH"
-                    },
-                    {
-                        "id": "M13213",
-                        "name": "Parkinson Disease",
-                        "asFound": "Parkinson's",
-                        "relevance": "HIGH"
-                    },
-                    {
-                        "id": "M22494",
-                        "name": "Parkinsonian Disorders",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M25603",
-                        "name": "Ganglion Cysts",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M16358",
-                        "name": "Synovial Cyst",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M4774",
-                        "name": "Basal Ganglia Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M5204",
-                        "name": "Brain Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M5742",
-                        "name": "Central Nervous System Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M12029",
-                        "name": "Movement Disorders",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M2217",
-                        "name": "Synucleinopathies",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M21558",
-                        "name": "Neurodegenerative Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M15904",
-                        "name": "Sphingolipidoses",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M18871",
-                        "name": "Lysosomal Storage Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M5205",
-                        "name": "Brain Diseases, Metabolic",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M22498",
-                        "name": "Brain Diseases, Metabolic, Inborn",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M11641",
-                        "name": "Metabolism, Inborn Errors",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M23686",
-                        "name": "Genetic Diseases, Inborn",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M11064",
-                        "name": "Lipidoses",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M11054",
-                        "name": "Lipid Metabolism, Inborn Errors",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M11639",
-                        "name": "Metabolic Diseases",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "M27029",
-                        "name": "Lipid Metabolism Disorders",
-                        "relevance": "LOW"
-                    },
-                    {
-                        "id": "T2449",
-                        "name": "Gaucher Disease",
-                        "asFound": "Gaucher Disease",
-                        "relevance": "HIGH"
-                    },
-                    {
-                        "id": "T5335",
-                        "name": "Sphingolipidosis",
-                        "relevance": "LOW"
-                    }
-                ],
-                "browseBranches": [
-                    {
-                        "abbrev": "BC10",
-                        "name": "Nervous System Diseases"
-                    },
-                    {
-                        "abbrev": "BC16",
-                        "name": "Diseases and Abnormalities at or Before Birth"
-                    },
-                    {
-                        "abbrev": "BC18",
-                        "name": "Nutritional and Metabolic Diseases"
-                    },
-                    {
-                        "abbrev": "All",
-                        "name": "All Conditions"
-                    },
-                    {
-                        "abbrev": "BC04",
-                        "name": "Neoplasms"
-                    },
-                    {
-                        "abbrev": "BC17",
-                        "name": "Skin and Connective Tissue Diseases"
                     },
                     {
                         "abbrev": "Rare",
@@ -5649,7 +4792,7 @@
         },
         "derivedSection": {
             "miscInfoModule": {
-                "versionHolder": "2024-08-09"
+                "versionHolder": "2024-08-12"
             },
             "conditionBrowseModule": {
                 "meshes": [
@@ -5694,15 +4837,15 @@
                 ],
                 "browseLeaves": [
                     {
-                        "id": "M8891",
-                        "name": "Gaucher Disease",
-                        "relevance": "LOW"
-                    },
-                    {
                         "id": "M13213",
                         "name": "Parkinson Disease",
                         "asFound": "Parkinson's Disease",
                         "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M8891",
+                        "name": "Gaucher Disease",
+                        "relevance": "LOW"
                     },
                     {
                         "id": "M22494",
@@ -5761,16 +4904,16 @@
                         "name": "Nervous System Diseases"
                     },
                     {
+                        "abbrev": "All",
+                        "name": "All Conditions"
+                    },
+                    {
                         "abbrev": "BC16",
                         "name": "Diseases and Abnormalities at or Before Birth"
                     },
                     {
                         "abbrev": "BC18",
                         "name": "Nutritional and Metabolic Diseases"
-                    },
-                    {
-                        "abbrev": "All",
-                        "name": "All Conditions"
                     },
                     {
                         "abbrev": "BC04",
@@ -6075,6 +5218,863 @@
                     {
                         "abbrev": "Derm",
                         "name": "Dermatologic Agents"
+                    }
+                ]
+            }
+        },
+        "hasResults": false
+    },
+    {
+        "protocolSection": {
+            "identificationModule": {
+                "nctId": "NCT05536388",
+                "orgStudyIdInfo": {
+                    "id": "10-008"
+                },
+                "organization": {
+                    "fullName": "New York Stem Cell Foundation Research Institute",
+                    "class": "OTHER"
+                },
+                "briefTitle": "Drug Discovery for Parkinson's With Mutations in the GBA Gene",
+                "officialTitle": "Drug Discovery for Parkinson's With Mutations in the GBA Gene"
+            },
+            "statusModule": {
+                "statusVerifiedDate": "2024-07",
+                "overallStatus": "RECRUITING",
+                "expandedAccessInfo": {
+                    "hasExpandedAccess": false
+                },
+                "startDateStruct": {
+                    "date": "2022-07-15",
+                    "type": "ACTUAL"
+                },
+                "primaryCompletionDateStruct": {
+                    "date": "2025-07-15",
+                    "type": "ESTIMATED"
+                },
+                "completionDateStruct": {
+                    "date": "2025-07-15",
+                    "type": "ESTIMATED"
+                },
+                "studyFirstSubmitDate": "2022-09-07",
+                "studyFirstSubmitQcDate": "2022-09-07",
+                "studyFirstPostDateStruct": {
+                    "date": "2022-09-10",
+                    "type": "ACTUAL"
+                },
+                "lastUpdateSubmitDate": "2024-07-26",
+                "lastUpdatePostDateStruct": {
+                    "date": "2024-07-29",
+                    "type": "ACTUAL"
+                }
+            },
+            "sponsorCollaboratorsModule": {
+                "responsibleParty": {
+                    "type": "SPONSOR"
+                },
+                "leadSponsor": {
+                    "name": "New York Stem Cell Foundation Research Institute",
+                    "class": "OTHER"
+                },
+                "collaborators": [
+                    {
+                        "name": "Silverstein Foundation",
+                        "class": "UNKNOWN"
+                    }
+                ]
+            },
+            "oversightModule": {
+                "oversightHasDmc": false,
+                "isFdaRegulatedDrug": false,
+                "isFdaRegulatedDevice": false
+            },
+            "descriptionModule": {
+                "briefSummary": "The New York Stem Cell Foundation (NYSCF) Research Institute is performing this research to accelerate Parkinson's disease research and drug development by using cells from the body (such as skin or blood cells) to make stem cells and other types of cells, conduct research on the samples, perform genetic testing, and/or store the samples for future use.\n\nThrough this research, researchers hope to identify future treatments or even cures for Parkinson's disease.",
+                "detailedDescription": "Researchers at the New York Stem Cell Foundation (NYSCF) Research Institute study diverse diseases, conditions, and traits by creating stem cells from biological samples. These \"pluripotent\" stem cells can become any cell in the human body, including cells that may be difficult, invasive, or impossible to obtain directly.\n\nAdditionally, researchers perform genetic testing to learn more about DNA, a material in most cells that contains instructions for the body's development and functions (such as traits like eye color and risk of certain diseases). A piece of DNA that determines the specific role of a cell is called a \"gene.\" If the instructions in a gene are abnormal, this can lead to disease.\n\nParticipation in the study involves: (1) completion of health questionnaires, (2) providing a skin and/or blood sample from which stem cells may be created, (3) collection of a saliva sample for genetic analysis, and (4) possible future follow-up to provide additional information or learn about other research studies.\n\nThis study is not a clinical trial."
+            },
+            "conditionsModule": {
+                "conditions": [
+                    "Parkinson Disease",
+                    "Gaucher Disease",
+                    "Healthy",
+                    "GBA Gene Mutation"
+                ],
+                "keywords": [
+                    "Parkinson Disease",
+                    "GBA Gene Mutation"
+                ]
+            },
+            "designModule": {
+                "studyType": "OBSERVATIONAL",
+                "patientRegistry": false,
+                "designInfo": {
+                    "observationalModel": "OTHER",
+                    "timePerspective": "PROSPECTIVE"
+                },
+                "bioSpec": {
+                    "retention": "SAMPLES_WITH_DNA",
+                    "description": "Skin biopsy (2-3mm) and/or blood (up to 50 mL); saliva; excess/leftover biospecimens that were (or will be) collected for other purposes (e.g., medical procedure)"
+                },
+                "enrollmentInfo": {
+                    "count": 60,
+                    "type": "ESTIMATED"
+                }
+            },
+            "armsInterventionsModule": {
+                "armGroups": [
+                    {
+                        "label": "Parkinson's Disease",
+                        "description": "Subjects in this group will have a diagnosis of Parkinson's disease with or without a known GBA gene mutation.",
+                        "interventionNames": [
+                            "Other: Biological Sample Collection"
+                        ]
+                    },
+                    {
+                        "label": "Gaucher Disease",
+                        "description": "Subjects in this group with have a diagnosis of Gaucher disease with or without a known GBA gene mutation.",
+                        "interventionNames": [
+                            "Other: Biological Sample Collection"
+                        ]
+                    },
+                    {
+                        "label": "Healthy Control",
+                        "description": "Subjects in this group will serve as healthy controls.",
+                        "interventionNames": [
+                            "Other: Biological Sample Collection"
+                        ]
+                    }
+                ],
+                "interventions": [
+                    {
+                        "type": "OTHER",
+                        "name": "Biological Sample Collection",
+                        "description": "Skin biopsy (2-3mm) and/or blood (up to 50 mL); saliva; excess/leftover biospecimens that were (or will be) collected for other purposes (e.g., medical procedure)",
+                        "armGroupLabels": [
+                            "Gaucher Disease",
+                            "Healthy Control",
+                            "Parkinson's Disease"
+                        ],
+                        "otherNames": [
+                            "Biological sample collection for biobanking and research"
+                        ]
+                    }
+                ]
+            },
+            "outcomesModule": {
+                "primaryOutcomes": [
+                    {
+                        "measure": "Establishment of a diverse bank of biological samples, stem cell lines, derivatives, and associated information.",
+                        "description": "Establish a robust disease signature using a cohort of PD and carefully matched control samples to screen a library of approximately 3,000 compounds to determine whether any compounds improve or reverse disease phenotypes.",
+                        "timeFrame": "Baseline"
+                    }
+                ]
+            },
+            "eligibilityModule": {
+                "eligibilityCriteria": "Inclusion Criteria:\n\n* Age 18 years or older.\n* Diagnosis of Parkinson's disease, Gaucher disease, or healthy control.\n* Must provide written informed consent unless physical limitations preclude signing.\n\nExclusion Criteria:\n\n* For skin samples collected specifically for this study: history of keloid formation, coagulation disorder, allergy to the anesthetic, or anticoagulation use that precludes sample collection.\n* For blood samples collected specifically for this study: coagulation disorder or other medical condition(s) that increases the risks associated with blood collection.\n* For all prospective sample collections: Subjects who refuse to adhere to NYSCF's and/or a collection site's safety protocols will be excluded. Subjects with an AIDS diagnosis and CD4 count of less than 200 cells per microliter (mcL) of blood will be excluded due to increased risk of infection.",
+                "healthyVolunteers": true,
+                "sex": "ALL",
+                "minimumAge": "18 Years",
+                "stdAges": [
+                    "ADULT",
+                    "OLDER_ADULT"
+                ],
+                "studyPopulation": "Individuals with a diagnosis of one or more of the listed conditions.\n\nIndividuals without a condition to serve as healthy controls (a comparison group for those with conditions).",
+                "samplingMethod": "NON_PROBABILITY_SAMPLE"
+            },
+            "contactsLocationsModule": {
+                "centralContacts": [
+                    {
+                        "name": "Becca Wood",
+                        "role": "CONTACT",
+                        "phone": "212-927-1801",
+                        "email": "clinicalresearch@nyscf.org"
+                    }
+                ],
+                "overallOfficials": [
+                    {
+                        "name": "Laura Andres-Martin",
+                        "affiliation": "New York Stem Cell Foundation Research Institute",
+                        "role": "PRINCIPAL_INVESTIGATOR"
+                    }
+                ],
+                "locations": [
+                    {
+                        "facility": "The New York Stem Cell Foundation Research Institute",
+                        "status": "RECRUITING",
+                        "city": "New York",
+                        "state": "New York",
+                        "zip": "10019",
+                        "country": "United States",
+                        "contacts": [
+                            {
+                                "name": "Becca Wood",
+                                "role": "CONTACT",
+                                "phone": "212-927-1801",
+                                "email": "clinicalresearch@nyscf.org"
+                            },
+                            {
+                                "name": "Laura Andres-Martin",
+                                "role": "PRINCIPAL_INVESTIGATOR"
+                            }
+                        ],
+                        "geoPoint": {
+                            "lat": 40.71427,
+                            "lon": -74.00597
+                        }
+                    }
+                ]
+            },
+            "ipdSharingStatementModule": {
+                "ipdSharing": "NO"
+            }
+        },
+        "derivedSection": {
+            "miscInfoModule": {
+                "versionHolder": "2024-08-12"
+            },
+            "conditionBrowseModule": {
+                "meshes": [
+                    {
+                        "id": "D000010300",
+                        "term": "Parkinson Disease"
+                    },
+                    {
+                        "id": "D000005776",
+                        "term": "Gaucher Disease"
+                    }
+                ],
+                "ancestors": [
+                    {
+                        "id": "D000020734",
+                        "term": "Parkinsonian Disorders"
+                    },
+                    {
+                        "id": "D000001480",
+                        "term": "Basal Ganglia Diseases"
+                    },
+                    {
+                        "id": "D000001927",
+                        "term": "Brain Diseases"
+                    },
+                    {
+                        "id": "D000002493",
+                        "term": "Central Nervous System Diseases"
+                    },
+                    {
+                        "id": "D000009422",
+                        "term": "Nervous System Diseases"
+                    },
+                    {
+                        "id": "D000009069",
+                        "term": "Movement Disorders"
+                    },
+                    {
+                        "id": "D000080874",
+                        "term": "Synucleinopathies"
+                    },
+                    {
+                        "id": "D000019636",
+                        "term": "Neurodegenerative Diseases"
+                    },
+                    {
+                        "id": "D000013106",
+                        "term": "Sphingolipidoses"
+                    },
+                    {
+                        "id": "D000020140",
+                        "term": "Lysosomal Storage Diseases, Nervous System"
+                    },
+                    {
+                        "id": "D000020739",
+                        "term": "Brain Diseases, Metabolic, Inborn"
+                    },
+                    {
+                        "id": "D000001928",
+                        "term": "Brain Diseases, Metabolic"
+                    },
+                    {
+                        "id": "D000008661",
+                        "term": "Metabolism, Inborn Errors"
+                    },
+                    {
+                        "id": "D000030342",
+                        "term": "Genetic Diseases, Inborn"
+                    },
+                    {
+                        "id": "D000008064",
+                        "term": "Lipidoses"
+                    },
+                    {
+                        "id": "D000008052",
+                        "term": "Lipid Metabolism, Inborn Errors"
+                    },
+                    {
+                        "id": "D000016464",
+                        "term": "Lysosomal Storage Diseases"
+                    },
+                    {
+                        "id": "D000008659",
+                        "term": "Metabolic Diseases"
+                    },
+                    {
+                        "id": "D000052439",
+                        "term": "Lipid Metabolism Disorders"
+                    }
+                ],
+                "browseLeaves": [
+                    {
+                        "id": "M13213",
+                        "name": "Parkinson Disease",
+                        "asFound": "Parkinson's",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M8891",
+                        "name": "Gaucher Disease",
+                        "asFound": "Gaucher Disease",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M22494",
+                        "name": "Parkinsonian Disorders",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M25603",
+                        "name": "Ganglion Cysts",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M16358",
+                        "name": "Synovial Cyst",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M4774",
+                        "name": "Basal Ganglia Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5204",
+                        "name": "Brain Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5742",
+                        "name": "Central Nervous System Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M12029",
+                        "name": "Movement Disorders",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M2217",
+                        "name": "Synucleinopathies",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M21558",
+                        "name": "Neurodegenerative Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M15904",
+                        "name": "Sphingolipidoses",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M18871",
+                        "name": "Lysosomal Storage Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5205",
+                        "name": "Brain Diseases, Metabolic",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M22498",
+                        "name": "Brain Diseases, Metabolic, Inborn",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M11641",
+                        "name": "Metabolism, Inborn Errors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M23686",
+                        "name": "Genetic Diseases, Inborn",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M11064",
+                        "name": "Lipidoses",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M11054",
+                        "name": "Lipid Metabolism, Inborn Errors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M11639",
+                        "name": "Metabolic Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M27029",
+                        "name": "Lipid Metabolism Disorders",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "T2449",
+                        "name": "Gaucher Disease",
+                        "asFound": "Gaucher Disease",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "T5335",
+                        "name": "Sphingolipidosis",
+                        "relevance": "LOW"
+                    }
+                ],
+                "browseBranches": [
+                    {
+                        "abbrev": "BC10",
+                        "name": "Nervous System Diseases"
+                    },
+                    {
+                        "abbrev": "All",
+                        "name": "All Conditions"
+                    },
+                    {
+                        "abbrev": "BC16",
+                        "name": "Diseases and Abnormalities at or Before Birth"
+                    },
+                    {
+                        "abbrev": "BC18",
+                        "name": "Nutritional and Metabolic Diseases"
+                    },
+                    {
+                        "abbrev": "BC04",
+                        "name": "Neoplasms"
+                    },
+                    {
+                        "abbrev": "BC17",
+                        "name": "Skin and Connective Tissue Diseases"
+                    },
+                    {
+                        "abbrev": "Rare",
+                        "name": "Rare Diseases"
+                    }
+                ]
+            }
+        },
+        "hasResults": false
+    },
+    {
+        "protocolSection": {
+            "identificationModule": {
+                "nctId": "NCT05908656",
+                "orgStudyIdInfo": {
+                    "id": "PIR17206"
+                },
+                "secondaryIdInfos": [
+                    {
+                        "id": "U1111-1280-8450",
+                        "type": "REGISTRY",
+                        "domain": "ICTRP"
+                    }
+                ],
+                "organization": {
+                    "fullName": "Sanofi",
+                    "class": "INDUSTRY"
+                },
+                "briefTitle": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States (Project Searchlight)",
+                "officialTitle": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States"
+            },
+            "statusModule": {
+                "statusVerifiedDate": "2024-04",
+                "overallStatus": "RECRUITING",
+                "expandedAccessInfo": {
+                    "hasExpandedAccess": false
+                },
+                "startDateStruct": {
+                    "date": "2024-04-02",
+                    "type": "ACTUAL"
+                },
+                "primaryCompletionDateStruct": {
+                    "date": "2024-07-23",
+                    "type": "ESTIMATED"
+                },
+                "completionDateStruct": {
+                    "date": "2024-07-23",
+                    "type": "ESTIMATED"
+                },
+                "studyFirstSubmitDate": "2023-06-08",
+                "studyFirstSubmitQcDate": "2023-06-08",
+                "studyFirstPostDateStruct": {
+                    "date": "2023-06-18",
+                    "type": "ACTUAL"
+                },
+                "lastUpdateSubmitDate": "2024-04-03",
+                "lastUpdatePostDateStruct": {
+                    "date": "2024-04-05",
+                    "type": "ACTUAL"
+                }
+            },
+            "sponsorCollaboratorsModule": {
+                "responsibleParty": {
+                    "type": "SPONSOR"
+                },
+                "leadSponsor": {
+                    "name": "Sanofi",
+                    "class": "INDUSTRY"
+                }
+            },
+            "oversightModule": {
+                "oversightHasDmc": false,
+                "isFdaRegulatedDrug": false,
+                "isFdaRegulatedDevice": false
+            },
+            "descriptionModule": {
+                "briefSummary": "This is a three-phase study comprising both retrospective and prospective components, as follows:\n\nPhase I: Deployment of Rare Disease Algorithm:\n\nA diagnostic screening algorithm was developed using advanced analytical methods to identify patients who have an increased likelihood of having Gaucher disease. This tool will be applied to a health system's electronic health records (EHR).\n\nThe top 50 active patients per healthcare system will be identified as \"highly ranked by the RDA\" and moved to Phase II. As three to four healthcare systems are expected to participate in this study, between 150 to 200 persons are expected to be identified and included in Phase II.\n\nPhase II: Retrospective review of medical records of highly ranked persons: The listing of persons highly-ranked by the RDA from phase I will be forwarded to the study team within each participating healthcare system. After reviewing the RDA reports and medical records of each highly ranked person, study site personnel will determine eligibility for Phase III based on the relevant selection criteria listed in the section below.\n\nPhase III: Prospective diagnostic testing: Eligible persons (or their parent/guardian) from Phase II will be contacted and asked to provide consent for inclusion into the study. After consent is received, blood samples will be collected and sent for Gaucher diagnostic testing. Because of overlap in clinical symptoms between Gaucher disease and acid sphingomyelinase deficiency (ASMD), patients will also receive diagnostic testing for ASMD. Results will be shared with study site personnel, who will subsequently inform the study subject (and/or their parent/guardian, where appropriate) of results. It is anticipated that participation of a typical subject will be less than 3 months."
+            },
+            "conditionsModule": {
+                "conditions": [
+                    "Gaucher Disease"
+                ]
+            },
+            "designModule": {
+                "studyType": "INTERVENTIONAL",
+                "phases": [
+                    "NA"
+                ],
+                "designInfo": {
+                    "allocation": "NA",
+                    "interventionModel": "SINGLE_GROUP",
+                    "primaryPurpose": "SCREENING",
+                    "maskingInfo": {
+                        "masking": "NONE"
+                    }
+                },
+                "enrollmentInfo": {
+                    "count": 105,
+                    "type": "ESTIMATED"
+                }
+            },
+            "armsInterventionsModule": {
+                "armGroups": [
+                    {
+                        "label": "Persons with electronic health records suggestive of Gaucher disease",
+                        "type": "OTHER",
+                        "interventionNames": [
+                            "Procedure: Investigational procedure"
+                        ]
+                    }
+                ],
+                "interventions": [
+                    {
+                        "type": "PROCEDURE",
+                        "name": "Investigational procedure",
+                        "description": "Subjects that consent will have a single blood draw either via a finger stick or via venous blood draw (blood will be placed on a 5 spot blood card) used to determine whether they have Gaucher Disease or ASMD",
+                        "armGroupLabels": [
+                            "Persons with electronic health records suggestive of Gaucher disease"
+                        ]
+                    }
+                ]
+            },
+            "outcomesModule": {
+                "primaryOutcomes": [
+                    {
+                        "measure": "The proportion of persons with GD (including those with GD identified in Phase II and those previously undiagnosed who subsequently test positive for GD in Phase III) out of all persons highly ranked by the RDA",
+                        "timeFrame": "Up to 3 months"
+                    },
+                    {
+                        "measure": "The proportion of previously undiagnosed persons highly ranked by RDA who subsequently test positive for GD out of persons with GD identified in Phase II and III",
+                        "timeFrame": "Up to 3 months"
+                    }
+                ],
+                "secondaryOutcomes": [
+                    {
+                        "measure": "Characteristics include demographic information, alternative and concomitant diagnoses, treatments, and patterns of provider visits for the previously listed subgroups",
+                        "timeFrame": "Up to 3 months"
+                    },
+                    {
+                        "measure": "Relationship between RDA scores and the diagnostic yield; descriptive analyses including confusion matrices",
+                        "timeFrame": "Up to 3 months"
+                    }
+                ]
+            },
+            "eligibilityModule": {
+                "eligibilityCriteria": "Inclusion Criteria:\n\n* Phase I (Model Deployment): All persons within the EHRs of the selected IDNs will be included in this stage.\n* Phase II (Case Ascertainment): The 150 to 200 persons with the highest RDA values (i.e., 50 per healthcare system) who are active (any documented interaction with the healthcare system in the previous 18 months) will be included in this stage.\n* Phase III (Diagnostic Testing): The subset of persons from Phase II who: (1) have not been diagnosed with GD or ASMD, and (2) have not had GD and ASMD conclusively ruled out, will be asked to provide consent to undergo diagnostic testing. Individuals who meet these criteria and who provide written informed consent (or those whose parents/guardians provide consent as appropriate) will be included in this stage.\n\nExclusion Criteria:\n\n* There are no exclusion criteria for Phase I or Phase II.\n* Phase III (Diagnostic Testing):\n\n  * Patient is unable/unwilling to provide informed consent for diagnostic testing, or\n  * Patient is no longer under the care of the IDN\n\nThe above information is not intended to contain all considerations relevant to a potential participation in a clinical trial.",
+                "healthyVolunteers": false,
+                "sex": "ALL",
+                "stdAges": [
+                    "CHILD",
+                    "ADULT",
+                    "OLDER_ADULT"
+                ]
+            },
+            "contactsLocationsModule": {
+                "centralContacts": [
+                    {
+                        "name": "Trial Transparency email recommended (Toll free for US & Canada)",
+                        "role": "CONTACT",
+                        "phone": "800-633-1610",
+                        "phoneExt": "ext option 6",
+                        "email": "Contact-US@sanofi.com"
+                    }
+                ],
+                "overallOfficials": [
+                    {
+                        "name": "Clinical Sciences & Operations",
+                        "affiliation": "Sanofi",
+                        "role": "STUDY_DIRECTOR"
+                    }
+                ],
+                "locations": [
+                    {
+                        "facility": "University of Florida Site Number : 8400003",
+                        "status": "RECRUITING",
+                        "city": "Gainesville",
+                        "state": "Florida",
+                        "zip": "32610-3003",
+                        "country": "United States",
+                        "geoPoint": {
+                            "lat": 29.65163,
+                            "lon": -82.32483
+                        }
+                    },
+                    {
+                        "facility": "Metropolitan Hospital Center Site Number : 8400001",
+                        "status": "RECRUITING",
+                        "city": "New York",
+                        "state": "New York",
+                        "zip": "10029-7494",
+                        "country": "United States",
+                        "geoPoint": {
+                            "lat": 40.71427,
+                            "lon": -74.00597
+                        }
+                    },
+                    {
+                        "facility": "Aurora Research Institute LLC Site Number : 8400002",
+                        "status": "RECRUITING",
+                        "city": "Milwaukee",
+                        "state": "Wisconsin",
+                        "zip": "53233-1306",
+                        "country": "United States",
+                        "geoPoint": {
+                            "lat": 43.0389,
+                            "lon": -87.90647
+                        }
+                    }
+                ]
+            },
+            "ipdSharingStatementModule": {
+                "ipdSharing": "YES",
+                "description": "Qualified researchers may request access to patient level data and related study documents including the clinical study report, study protocol with any amendments, blank case report form, statistical analysis plan, and dataset specifications. Patient level data will be anonymized and study documents will be redacted to protect the privacy of trial participants. Further details on Sanofi's data sharing criteria, eligible studies, and process for requesting access can be found at: https://vivli.org"
+            }
+        },
+        "derivedSection": {
+            "miscInfoModule": {
+                "versionHolder": "2024-08-12"
+            },
+            "conditionBrowseModule": {
+                "meshes": [
+                    {
+                        "id": "D000005776",
+                        "term": "Gaucher Disease"
+                    },
+                    {
+                        "id": "D000035583",
+                        "term": "Rare Diseases"
+                    }
+                ],
+                "ancestors": [
+                    {
+                        "id": "D000020969",
+                        "term": "Disease Attributes"
+                    },
+                    {
+                        "id": "D000010335",
+                        "term": "Pathologic Processes"
+                    },
+                    {
+                        "id": "D000013106",
+                        "term": "Sphingolipidoses"
+                    },
+                    {
+                        "id": "D000020140",
+                        "term": "Lysosomal Storage Diseases, Nervous System"
+                    },
+                    {
+                        "id": "D000020739",
+                        "term": "Brain Diseases, Metabolic, Inborn"
+                    },
+                    {
+                        "id": "D000001928",
+                        "term": "Brain Diseases, Metabolic"
+                    },
+                    {
+                        "id": "D000001927",
+                        "term": "Brain Diseases"
+                    },
+                    {
+                        "id": "D000002493",
+                        "term": "Central Nervous System Diseases"
+                    },
+                    {
+                        "id": "D000009422",
+                        "term": "Nervous System Diseases"
+                    },
+                    {
+                        "id": "D000008661",
+                        "term": "Metabolism, Inborn Errors"
+                    },
+                    {
+                        "id": "D000030342",
+                        "term": "Genetic Diseases, Inborn"
+                    },
+                    {
+                        "id": "D000008064",
+                        "term": "Lipidoses"
+                    },
+                    {
+                        "id": "D000008052",
+                        "term": "Lipid Metabolism, Inborn Errors"
+                    },
+                    {
+                        "id": "D000016464",
+                        "term": "Lysosomal Storage Diseases"
+                    },
+                    {
+                        "id": "D000008659",
+                        "term": "Metabolic Diseases"
+                    },
+                    {
+                        "id": "D000052439",
+                        "term": "Lipid Metabolism Disorders"
+                    }
+                ],
+                "browseLeaves": [
+                    {
+                        "id": "M24518",
+                        "name": "Rare Diseases",
+                        "asFound": "Rare disease",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M8891",
+                        "name": "Gaucher Disease",
+                        "asFound": "Gaucher Disease",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "M22700",
+                        "name": "Disease Attributes",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M15904",
+                        "name": "Sphingolipidoses",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M18871",
+                        "name": "Lysosomal Storage Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5204",
+                        "name": "Brain Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5205",
+                        "name": "Brain Diseases, Metabolic",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M22498",
+                        "name": "Brain Diseases, Metabolic, Inborn",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M5742",
+                        "name": "Central Nervous System Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M11641",
+                        "name": "Metabolism, Inborn Errors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M23686",
+                        "name": "Genetic Diseases, Inborn",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M11064",
+                        "name": "Lipidoses",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M11054",
+                        "name": "Lipid Metabolism, Inborn Errors",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M11639",
+                        "name": "Metabolic Diseases",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "M27029",
+                        "name": "Lipid Metabolism Disorders",
+                        "relevance": "LOW"
+                    },
+                    {
+                        "id": "T2449",
+                        "name": "Gaucher Disease",
+                        "asFound": "Gaucher Disease",
+                        "relevance": "HIGH"
+                    },
+                    {
+                        "id": "T5335",
+                        "name": "Sphingolipidosis",
+                        "relevance": "LOW"
+                    }
+                ],
+                "browseBranches": [
+                    {
+                        "abbrev": "BC23",
+                        "name": "Symptoms and General Pathology"
+                    },
+                    {
+                        "abbrev": "All",
+                        "name": "All Conditions"
+                    },
+                    {
+                        "abbrev": "BC10",
+                        "name": "Nervous System Diseases"
+                    },
+                    {
+                        "abbrev": "BC16",
+                        "name": "Diseases and Abnormalities at or Before Birth"
+                    },
+                    {
+                        "abbrev": "BC18",
+                        "name": "Nutritional and Metabolic Diseases"
+                    },
+                    {
+                        "abbrev": "Rare",
+                        "name": "Rare Diseases"
                     }
                 ]
             }

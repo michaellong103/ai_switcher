@@ -64,7 +64,7 @@ def evaluate_number_of_trials(trials, config):
         result = 'No trials'
     elif num_trials < config['a_lot_of_trials']:
         result = 'Few trials'
-        run_main('detailed')
+        run_main('condensed')
     elif num_trials < config['too_many_trials']:
         result = 'A lot of trials'
         run_main('condensed')

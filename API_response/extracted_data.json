@@ -11,21 +11,7 @@
         "lastUpdateSubmitDate": "2023-12-21",
         "startDateType": "ACTUAL",
         "durationDays": 3621,
-        "daysUntilEnd": 353
-    },
-    {
-        "trialName": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States",
-        "nctNumber": "NCT05908656",
-        "statusVerifiedDate": "2024-04",
-        "overallStatus": "RECRUITING",
-        "startDate": "2024-04-02",
-        "primaryCompletionDate": "2024-07-23",
-        "completionDate": "2024-07-23",
-        "studyFirstSubmitDate": "2023-06-08",
-        "lastUpdateSubmitDate": "2024-04-03",
-        "startDateType": "ACTUAL",
-        "durationDays": 112,
-        "daysUntilEnd": -20
+        "daysUntilEnd": 352
     },
     {
         "trialName": "Gaucher Disease Registry Protocol",
@@ -39,21 +25,7 @@
         "lastUpdateSubmitDate": "2024-04-15",
         "startDateType": "ACTUAL",
         "durationDays": 15646,
-        "daysUntilEnd": 3459
-    },
-    {
-        "trialName": "Drug Discovery for Parkinson's With Mutations in the GBA Gene",
-        "nctNumber": "NCT05536388",
-        "statusVerifiedDate": "2024-07",
-        "overallStatus": "RECRUITING",
-        "startDate": "2022-07-15",
-        "primaryCompletionDate": "2025-07-15",
-        "completionDate": "2025-07-15",
-        "studyFirstSubmitDate": "2022-09-07",
-        "lastUpdateSubmitDate": "2024-07-26",
-        "startDateType": "ACTUAL",
-        "durationDays": 1096,
-        "daysUntilEnd": 337
+        "daysUntilEnd": 3458
     },
     {
         "trialName": "A Phase 1/2a Open-Label Ascending Dose Study to Evaluate the Safety and Effects of LY3884961 in Patients With Parkinson's Disease With at Least One GBA1 Mutation (PROPEL)",
@@ -67,6 +39,34 @@
         "lastUpdateSubmitDate": "2024-06-18",
         "startDateType": "ACTUAL",
         "durationDays": 3437,
-        "daysUntilEnd": 1754
+        "daysUntilEnd": 1753
+    },
+    {
+        "trialName": "Drug Discovery for Parkinson's With Mutations in the GBA Gene",
+        "nctNumber": "NCT05536388",
+        "statusVerifiedDate": "2024-07",
+        "overallStatus": "RECRUITING",
+        "startDate": "2022-07-15",
+        "primaryCompletionDate": "2025-07-15",
+        "completionDate": "2025-07-15",
+        "studyFirstSubmitDate": "2022-09-07",
+        "lastUpdateSubmitDate": "2024-07-26",
+        "startDateType": "ACTUAL",
+        "durationDays": 1096,
+        "daysUntilEnd": 336
+    },
+    {
+        "trialName": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States",
+        "nctNumber": "NCT05908656",
+        "statusVerifiedDate": "2024-04",
+        "overallStatus": "RECRUITING",
+        "startDate": "2024-04-02",
+        "primaryCompletionDate": "2024-07-23",
+        "completionDate": "2024-07-23",
+        "studyFirstSubmitDate": "2023-06-08",
+        "lastUpdateSubmitDate": "2024-04-03",
+        "startDateType": "ACTUAL",
+        "durationDays": 112,
+        "daysUntilEnd": -21
     }
 ]

@@ -81,9 +81,10 @@ def on_no_trials_found():
         # Add message displaying city, new radius, and increase amount
         city = location.split(",")[0] if location else "Unknown city"
         increase_amount = new_radius - current_radius
-        print(f"{city}, {new_radius} km radius increased by {increase_amount} km")
+        print(f"No trials within {current_radius} km of {city}. Expanding to {new_radius} km.")
         
-        # time.sleep(2)
+        time.sleep(2)
+        # print(f"Re-executing the API query with the updated search radius of {new_radius} km.")
         result_code, result_message = execute_api_query()
         logging.info(result_message)
        
