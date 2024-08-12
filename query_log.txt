@@ -1483,3 +1483,35 @@
 2024-08-12 08:26:50,515 - INFO - Deleted file: API_response/finaloutput.json
 2024-08-12 08:26:50,516 - INFO - Deleted file: API_response/cleaned_data.json
 2024-08-12 08:26:50,516 - INFO - Config state reset successfully: config_state.json
+2024-08-12 08:54:39,523 - INFO - > Event system initialized
+2024-08-12 08:54:39,524 - INFO - Starting evaluate_trials.py
+2024-08-12 08:54:39,524 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-12 08:54:39,533 - INFO - Imported run_main from display_in_terminal.main
+2024-08-12 08:54:39,533 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-12 08:54:39,540 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-12 08:54:39,540 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-12 08:54:39,541 - INFO - Cleaning up items in directory: API_response
+2024-08-12 08:54:39,541 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-12 08:54:39,541 - INFO - Deleted file: API_response/condensed.json
+2024-08-12 08:54:39,542 - INFO - Deleted file: API_response/detailed.json
+2024-08-12 08:54:39,543 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-12 08:54:39,543 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-12 08:54:39,544 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-12 08:54:39,544 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-12 08:54:39,544 - INFO - Config state reset successfully: config_state.json
+2024-08-12 08:57:32,440 - INFO - > Event system initialized
+2024-08-12 08:57:32,440 - INFO - Starting evaluate_trials.py
+2024-08-12 08:57:32,440 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-12 08:57:32,447 - INFO - Imported run_main from display_in_terminal.main
+2024-08-12 08:57:32,448 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-12 08:57:32,454 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-12 08:57:32,454 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-12 08:57:32,454 - INFO - Cleaning up items in directory: API_response
+2024-08-12 08:57:32,455 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-12 08:57:32,455 - INFO - Deleted file: API_response/condensed.json
+2024-08-12 08:57:32,455 - INFO - Deleted file: API_response/detailed.json
+2024-08-12 08:57:32,455 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-12 08:57:32,456 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-12 08:57:32,456 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-12 08:57:32,456 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-12 08:57:32,456 - INFO - Config state reset successfully: config_state.json
