@@ -1,9 +1,9 @@
+# ./main.py
 import os
 import sys
 import json
 import logging
 
-# Update sys.path to include the necessary directories for module imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__))))
 
 from load_data import load_data

@@ -72,10 +72,13 @@ def parse_date(date_str):
             return (datetime(year, month, 1) + timedelta(days=31)).replace(day=1) - timedelta(days=1)
         elif len(date_str) == 10:  # Format: YYYY-MM-DD
             return datetime.strptime(date_str, "%Y-%m-%d")
+        elif len(date_str.split()) == 3:  # Format: DD Month YYYY
+            return datetime.strptime(date_str, "%d %B %Y")
+        else:
+            print(f"Unrecognized date format: {date_str}")
     except ValueError as e:
         print(f"Error parsing date {date_str}: {e}")
     return None
-
 def calculate_date_span(trials):
     days_until_end_list = [trial["daysUntilEnd"] for trial in trials]
     return max(days_until_end_list) - min(days_until_end_list)

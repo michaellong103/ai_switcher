@@ -1,14 +1,10 @@
 # ./testing/find_output_data.py
-
 import os
 import json
+import unittest
+from unittest.mock import patch, mock_open
 
 def find_output_data(filename='output_data.json'):
-    """
-    Attempt to find the specified file in multiple possible locations.
-    Returns the data if the file is found, otherwise raises a FileNotFoundError.
-    """
-    # List of potential paths to check for the file
     possible_paths = [
         (filename, "filename,  # Current directory"),
         (os.path.join(os.path.dirname(__file__), filename), "os.path.join(os.path.dirname(__file__), filename),  # Same directory as the script"),
@@ -24,13 +20,15 @@ def find_output_data(filename='output_data.json'):
             with open(path, "r") as file:
                 return json.load(file)
     
-    # If the file is not found in any of the paths, raise an error
     raise FileNotFoundError(f"File {filename} not found in any of the expected locations.")
 
+class TestFindOutputData(unittest.TestCase):
+
+    @patch('builtins.open', new_callable=mock_open, read_data='{"key": "value"}')
+    @patch('os.path.exists', return_value=True)
+    def test_find_output_data(self, mock_exists, mock_open):
+        data = find_output_data('output_data.json')
+        self.assertEqual(data, {"key": "value"})
+
 if __name__ == "__main__":
-    try:
-        data = find_output_data()
-        print("File found and loaded successfully!")
-        print(json.dumps(data, indent=2))
-    except FileNotFoundError as e:
-        print(e)
+    unittest.main()
