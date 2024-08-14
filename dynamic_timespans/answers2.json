@@ -1,0 +1,103 @@
+{
+  "category": "dynamic_timespans",
+  "question": "Could you select a timeframe for the studies?",
+  "options": [
+    {
+      "code": "Group1",
+      "optionText": "These are a very short-term commitment that is scheduled to be completed between 11 months from today (approx) and 1 year 1 month from today (approx) approximately.",
+      "count": 12,
+      "percentage": 21.05,
+      "NCTNumbers": [
+        "NCT04969835",
+        "NCT05413421",
+        "NCT05304858",
+        "NCT04925284",
+        "NCT03568656",
+        "NCT04071236",
+        "NCT03866382",
+        "NCT05519449",
+        "NCT05032040",
+        "NCT04631744",
+        "NCT04986423",
+        "NCT04038502"
+      ]
+    },
+    {
+      "code": "Group2",
+      "optionText": "These are a very short-term commitment that is scheduled to be completed between 1 year 1 month from today (approx) and 1 year 7 months from today (approx) approximately.",
+      "count": 12,
+      "percentage": 21.05,
+      "NCTNumbers": [
+        "NCT05787587",
+        "NCT04314401",
+        "NCT05005728",
+        "NCT04898634",
+        "NCT04478279",
+        "NCT04787744",
+        "NCT04104893",
+        "NCT05958199",
+        "NCT05075577",
+        "NCT05107674",
+        "NCT05215574",
+        "NCT05588609"
+      ]
+    },
+    {
+      "code": "Group3",
+      "optionText": "These are a very short-term commitment that is scheduled to be completed between 1 year 9 months from today (approx) and 2 years 5 months from today (approx) approximately.",
+      "count": 11,
+      "percentage": 19.3,
+      "NCTNumbers": [
+        "NCT05176483",
+        "NCT03574571",
+        "NCT05067140",
+        "NCT03972657",
+        "NCT04585750",
+        "NCT04868604",
+        "NCT05413850",
+        "NCT05252390",
+        "NCT06395519",
+        "NCT04428788",
+        "NCT04691804"
+      ]
+    },
+    {
+      "code": "Group4",
+      "optionText": "These are a very short-term commitment that is scheduled to be completed between 2 years 7 months from today (approx) and 3 years 2 months from today (approx) approximately.",
+      "count": 11,
+      "percentage": 19.3,
+      "NCTNumbers": [
+        "NCT04662580",
+        "NCT06238479",
+        "NCT06267729",
+        "NCT05369000",
+        "NCT05884398",
+        "NCT05864144",
+        "NCT06457919",
+        "NCT03452774",
+        "NCT04506567",
+        "NCT05682443",
+        "NCT06334432"
+      ]
+    },
+    {
+      "code": "Group5",
+      "optionText": "These are a very short-term commitment that is scheduled to be completed between 3 years 3 months from today (approx) and 9 years 5 months from today (approx) approximately.",
+      "count": 11,
+      "percentage": 19.3,
+      "NCTNumbers": [
+        "NCT05743621",
+        "NCT04140526",
+        "NCT05917470",
+        "NCT04946370",
+        "NCT04221542",
+        "NCT06067841",
+        "NCT06347705",
+        "NCT06120491",
+        "NCT03678025",
+        "NCT04423211",
+        "NCT04513717"
+      ]
+    }
+  ]
+}

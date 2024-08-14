@@ -1,18 +1,21 @@
-# ./API_response_processing/main.py
+# ./main.py
 import os
 import logging
 import sys
 from typing import List, Dict, Any
+
 try:
     from .data_cleaning import clean_study_data, filter_exclusion_criteria_and_write
     from .data_extraction import extract_clinical_trial_info
     from .info_extraction import extract_condensed_info, extract_detailed_info
     from .file_utils import load_json_from_file, save_json_to_file
+    from .clinical_trial_processor import run_processing  # Importing run_processing
 except ImportError:
     from data_cleaning import clean_study_data, filter_exclusion_criteria_and_write
     from data_extraction import extract_clinical_trial_info
     from info_extraction import extract_condensed_info, extract_detailed_info
     from file_utils import load_json_from_file, save_json_to_file
+    from clinical_trial_processor import run_processing  # Importing run_processing
 
 def process_clinical_trials(input_json_file: str, output_dir: str) -> None:
     data = load_json_from_file(input_json_file)
@@ -41,7 +44,12 @@ def main() -> None:
         sys.exit(1)
     os.makedirs(output_dir, exist_ok=True)
     logging.info('Starting clinical trials data processing.')
+
+    # Run the processing from clinical_trial_processor
+    run_processing()
+
     process_clinical_trials(input_json_file, output_dir)
     logging.info('Completed clinical trials data processing.')
+
 if __name__ == '__main__':
     main()

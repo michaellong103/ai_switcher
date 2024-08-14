@@ -1,22 +1,174 @@
 [
     {
-        "nctNumber": "NCT02583672",
-        "briefTitle": "Role of Oxidative Stress and Inflammation in Type 1 Gaucher Disease (GD1)"
+        "nctNumber": "NCT05107674",
+        "briefTitle": "A Study of NX-1607 in Adults With Advanced Malignancies"
     },
     {
-        "nctNumber": "NCT00358943",
-        "briefTitle": "International Collaborative Gaucher Group (ICGG) Gaucher Disease Registry & Pregnancy Sub-registry"
+        "nctNumber": "NCT04443348",
+        "briefTitle": "Pre-op Pembro + Radiation Therapy in Breast Cancer (P-RAD)"
     },
     {
-        "nctNumber": "NCT04127578",
-        "briefTitle": "Phase 1/2a Clinical Trial of PR001 (LY3884961) in Patients With Parkinson's Disease With at Least One GBA1 Mutation (PROPEL)"
+        "nctNumber": "NCT03746431",
+        "briefTitle": "A Phase 1/2 Study of [225Ac]-FPI-1434 Injection"
     },
     {
-        "nctNumber": "NCT05536388",
-        "briefTitle": "Drug Discovery for Parkinson's With Mutations in the GBA Gene"
+        "nctNumber": "NCT03821935",
+        "briefTitle": "Study to Determine the Safety, Tolerability, Pharmacokinetics and Recommended Phase 2 Dose (RP2D) of Livmoniplimab (ABBV-151) as a Single Agent and in Combination With Budigalimab (ABBV-181) in Participants With Locally Advanced or Metastatic Solid Tumors"
     },
     {
-        "nctNumber": "NCT05908656",
-        "briefTitle": "Implementation and Evaluation of a Rare Disease Algorithm to Identify Persons at Risk of Gaucher Disease Using Data From Electronic Health Records (EHRs) in the United States (Project Searchlight)"
+        "nctNumber": "NCT05453825",
+        "briefTitle": "A Study of Navicixizumab Monotherapy or in Combination in Patients With Select Advanced Solid Tumors"
+    },
+    {
+        "nctNumber": "NCT05382286",
+        "briefTitle": "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice and Pembrolizumab in Patients With Previously Untreated, Locally Advanced Inoperable or Metastatic Triple-Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT04561362",
+        "briefTitle": "Study BT8009-100 in Subjects With Nectin-4 Expressing Advanced Malignancies"
+    },
+    {
+        "nctNumber": "NCT05852691",
+        "briefTitle": "A Study of Tobemstomig + Nab-Paclitaxel Compared With Pembrolizumab + Nab-Paclitaxel in Participants With Previously Untreated, PD-L1-Positive, Locally-Advanced Unresectable or Metastatic Triple-Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT05544929",
+        "briefTitle": "A Study of Safety and Efficacy of KFA115 Alone and in Combination With Pembrolizumab in Patients With Select Advanced Cancers"
+    },
+    {
+        "nctNumber": "NCT03709446",
+        "briefTitle": "Leflunomide in Previously Treated Metastatic Triple Negative Cancers"
+    },
+    {
+        "nctNumber": "NCT03606967",
+        "briefTitle": "Testing the Addition of an Individualized Vaccine to Durvalumab and Tremelimumab and Chemotherapy in Patients With Metastatic Triple Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT02977468",
+        "briefTitle": "Effects of MK-3475 (Pembrolizumab) on the Breast Tumor Microenvironment in Triple Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT06400472",
+        "briefTitle": "A Study of LY4170156 in Participants With Selected Advanced Solid Tumors"
+    },
+    {
+        "nctNumber": "NCT06246968",
+        "briefTitle": "A Study of Pembrolizumab and Cryoablation in People With Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT05377996",
+        "briefTitle": "A Study of XMT-1660 in Participants With Solid Tumors"
+    },
+    {
+        "nctNumber": "NCT05585034",
+        "briefTitle": "Phase 1, First-in-human, Dose-finding and Expansion Study to Evaluate XmAb\u00ae808 in Combination With Pembrolizumab in Advanced Solid Tumors"
+    },
+    {
+        "nctNumber": "NCT06099769",
+        "briefTitle": "A Study of Enzalutamide, Enzalutamide in Combination With Mifepristone, or Chemotherapy in People With Metastatic Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT04225117",
+        "briefTitle": "A Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)"
+    },
+    {
+        "nctNumber": "NCT05230186",
+        "briefTitle": "A Tissue Collection Study in Patients Who Respond to Immune Checkpoint Inhibitors to Identify Targets of Tumor-Reactive T Cells."
+    },
+    {
+        "nctNumber": "NCT02926690",
+        "briefTitle": "Safety Study of MELK Inhibitor to Treat Patients With Advanced Breast Cancer and Triple Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT06084481",
+        "briefTitle": "Study to Assess Adverse Events and Change in Disease Activity in Adult Participants With Select Advanced Solid Tumor Indications Receiving Intravenous (IV) ABBV-400"
+    },
+    {
+        "nctNumber": "NCT05629585",
+        "briefTitle": "A Study of Dato-DXd With or Without Durvalumab Versus Investigator's Choice of Therapy in Patients With Stage I-III Triple-negative Breast Cancer Without Pathological Complete Response Following Neoadjuvant Therapy (TROPION-Breast03)"
+    },
+    {
+        "nctNumber": "NCT03401385",
+        "briefTitle": "First-in-human Study of DS-1062a for Advanced Solid Tumors (TROPION-PanTumor01)"
+    },
+    {
+        "nctNumber": "NCT03808337",
+        "briefTitle": "Investigating the Effectiveness of Stereotactic Body Radiotherapy (SBRT) in Addition to Standard of Care Treatment for Cancer That Has Spread Beyond the Original Site of Disease"
+    },
+    {
+        "nctNumber": "NCT06238479",
+        "briefTitle": "A Study of LY4101174 in Participants With Recurrent, Advanced or Metastatic Solid Tumors"
+    },
+    {
+        "nctNumber": "NCT06103864",
+        "briefTitle": "A Phase III Study of Dato-DXd With or Without Durvalumab Compared With Investigator's Choice of Chemotherapy in Combination With Pembrolizumab in Patients With PD-L1 Positive Locally Recurrent Inoperable or Metastatic Triple-negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT05252390",
+        "briefTitle": "NUV-868 as Monotherapy and in Combination With Olaparib or Enzalutamide in Adult Patients With Advanced Solid Tumors"
+    },
+    {
+        "nctNumber": "NCT01042379",
+        "briefTitle": "I-SPY TRIAL: Neoadjuvant and Personalized Adaptive Novel Agents to Treat Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT06112379",
+        "briefTitle": "A Phase III Randomised Study to Evaluate Dato-DXd and Durvalumab for Neoadjuvant/Adjuvant Treatment of Triple-Negative or Hormone Receptor-low/HER2-negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT04683679",
+        "briefTitle": "A Study of Radiation Therapy With Pembrolizumab and Olaparib or Other Radiosensitizers in Women Who Have Triple-Negative or Hormone-Receptor Positive/Her2 Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT03165487",
+        "briefTitle": "Comparison of the Breast Tumor Microenvironment"
+    },
+    {
+        "nctNumber": "NCT05382299",
+        "briefTitle": "Study of Sacituzumab Govitecan-hziy Versus Treatment of Physician's Choice in Patients With Previously Untreated Locally Advanced Inoperable or Metastatic Triple-Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT04180371",
+        "briefTitle": "Study BT5528-100 in Patients With Advanced Solid Tumors Associated With EphA2 Expression"
+    },
+    {
+        "nctNumber": "NCT05809752",
+        "briefTitle": "A First in Human Dose Escalation of Dendritic Cell Vaccine (DCV)"
+    },
+    {
+        "nctNumber": "NCT04895709",
+        "briefTitle": "A Study of BMS-986340 as Monotherapy and in Combination With Nivolumab or Docetaxel in Participants With Advanced Solid Tumors"
+    },
+    {
+        "nctNumber": "NCT05812807",
+        "briefTitle": "Pembrolizumab vs. Observation in People With Triple-negative Breast Cancer Who Had a Pathologic Complete Response After Chemotherapy Plus Pembrolizumab"
+    },
+    {
+        "nctNumber": "NCT05902988",
+        "briefTitle": "A Phase I/II Study of VLS-1488 in Subjects With Advanced Cancer"
+    },
+    {
+        "nctNumber": "NCT03504488",
+        "briefTitle": "CAB-ROR2-ADC Safety and Efficacy Study in Patients With TNBC or Head & Neck Cancer (Ph1) and NSCLC or Melanoma (Ph2)"
+    },
+    {
+        "nctNumber": "NCT05570253",
+        "briefTitle": "A Study of SDX-7320 in Combination With Eribulin for People With Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT05633654",
+        "briefTitle": "Study of Sacituzumab Govitecan-hziy and Pembrolizumab Versus Treatment of Physician's Choice in Patients With Triple Negative Breast Cancer Who Have Residual Invasive Disease After Surgery and Neoadjuvant Therapy (ASCENT-05/AFT-65 OptimICE-RD/NSABP B-63)"
+    },
+    {
+        "nctNumber": "NCT05958199",
+        "briefTitle": "A Study of NPX267 for Subjects With Solid Tumors Known to Express HHLA2/B7-H7"
+    },
+    {
+        "nctNumber": "NCT05203445",
+        "briefTitle": "A Study of Olaparib and Pembrolizumab in People With Triple Negative Breast Cancer (TNBC) or Hormone Receptor-positive HER2-negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT05274451",
+        "briefTitle": "A Study to Investigate LYL797 in Adults With Solid Tumors"
     }
 ]

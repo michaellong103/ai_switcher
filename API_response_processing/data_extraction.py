@@ -1,4 +1,4 @@
-# ./API_response_processing/data_extraction.py
+# ./data_extraction.py
 import os
 from datetime import datetime
 import logging

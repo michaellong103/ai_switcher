@@ -1,0 +1,11 @@
+2024-08-13 08:47:43,185 - INFO - Too many trials were returned for the following API parameters:
+2024-08-13 08:47:43,185 - INFO -   Age: 50
+2024-08-13 08:47:43,185 - INFO -   Gender: Female
+2024-08-13 08:47:43,185 - INFO -   Medical Condition: Gaucher Disease
+2024-08-13 08:47:43,185 - INFO -   Location: New York, NY
+2024-08-13 08:47:43,185 - INFO -   Latitude: 40.7128
+2024-08-13 08:47:43,185 - INFO -   Longitude: -74.0060
+2024-08-13 08:47:43,185 - INFO -   Distance: 213
+2024-08-13 08:47:43,185 - INFO - 
+2024-08-13 08:47:43,188 - INFO - Based on the analysis, filtering by 'phase' might be more effective.
+2024-08-13 08:47:43,188 - INFO - Suggesting filtering by 'phase'.
