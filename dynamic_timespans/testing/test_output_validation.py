@@ -1,4 +1,4 @@
-# ./testing/test_output_validation.py
+# ./dynamic_timespans/testing/test_output_validation.py
 
 import unittest
 from compare_data import compare_sorted_data

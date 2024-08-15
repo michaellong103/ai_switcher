@@ -1,4 +1,4 @@
-# ./generate_answers_json.py
+# ./dynamic_timespans/generate_answers_json.py
 
 import json
 from calculate_data import parse_date 

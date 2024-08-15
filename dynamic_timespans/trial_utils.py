@@ -1,4 +1,4 @@
-# ./trial_utils.py
+# ./dynamic_timespans/trial_utils.py
 def get_all_nct_numbers(trials):
     nct_numbers = set()
     for trial in trials:

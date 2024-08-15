@@ -1,4 +1,4 @@
-# ./info_extraction.py
+# ./API_response_processing/info_extraction.py
 import os
 import logging
 try:

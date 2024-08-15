@@ -1,4 +1,4 @@
-# ./testing/test_compare_dates.py
+# ./dynamic_timespans/testing/test_compare_dates.py
 
 import sys
 import os

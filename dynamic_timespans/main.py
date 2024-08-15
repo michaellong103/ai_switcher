@@ -1,4 +1,5 @@
-# ./main.py
+# ./dynamic_timespans/main.py
+
 import os
 import sys
 import json
@@ -39,11 +40,17 @@ def main():
     calculated_data = calculate_group_data(groups)
     logging.info(f"Calculated additional data for {len(calculated_data)} groups.")
 
-    # Write the results to output_data.json
+    # Write the results to both output_data.json and times_question_output.json
     output_data_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'output_data.json'))
+    times_question_output_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'API_response', 'times_question_output.json'))
+
     with open(output_data_path, "w") as file:
         json.dump(calculated_data, file, indent=2)
         logging.info(f"Results written to {output_data_path}")
+
+    with open(times_question_output_path, "w") as file:
+        json.dump(calculated_data, file, indent=2)
+        logging.info(f"Results also written to {times_question_output_path}")
 
     # Generate JSON answers
     try:

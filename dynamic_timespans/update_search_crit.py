@@ -1,4 +1,4 @@
-# ./update_search_crit.py
+# ./dynamic_timespans/update_search_crit.py
 
 import json
 import os

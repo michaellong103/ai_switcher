@@ -1,4 +1,4 @@
-# ./json_utils.py
+# ./dynamic_timespans/json_utils.py
 import json
 
 def read_json(filename):

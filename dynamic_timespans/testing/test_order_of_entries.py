@@ -1,4 +1,4 @@
-# ./testing/test_order_of_entries.py
+# ./dynamic_timespans/testing/test_order_of_entries.py
 
 import unittest
 import json

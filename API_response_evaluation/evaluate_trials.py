@@ -5,22 +5,9 @@ from event_system import event_system
 
 logging.info('Starting evaluate_trials.py')
 
-try:
-    from .display_in_terminal.main import run_main
-    logging.info('Imported run_main from .display_in_terminal.main')
-except ImportError as e:
-    logging.error(f'Failed to import run_main from .display_in_terminal.main: {e}')
-    try:
-        from display_in_terminal.main import run_main
-        logging.info('Imported run_main from display_in_terminal.main')
-    except ImportError as e:
-        logging.error(f'Failed to import run_main from display_in_terminal.main: {e}')
-        try:
-            from ..display_in_terminal.main import run_main
-            logging.info('Imported run_main from ..display_in_terminal.main')
-        except ImportError as e:
-            logging.error(f'Failed to import run_main from ..display_in_terminal.main: {e}')
-            raise ImportError('Unable to import run_main from any known locations')
+# Import the sort_trials_data function
+from sorter_trials_to_ai.sort_data import sort_trials_data
+from display_in_terminal.main import run_main
 
 def load_config(config_path):
     logging.info('Starting load_config function')
@@ -70,6 +57,9 @@ def evaluate_number_of_trials(trials, config):
         run_main('condensed')
     else:
         result = 'Too many trials'
+        logging.info("Too many trials found, invoking sort_trials_data.")
+        sort_trials_data()  # Call the sort_trials_data function here
+
     logging.info(f'Evaluation result: {result}')
     logging.info('Finished evaluate_number_of_trials function')
     return result
@@ -86,6 +76,8 @@ def main():
         logging.info("Calling run_main with 'detailed'")
     elif evaluation_result == 'A lot of trials':
         logging.info("Calling run_main with 'condensed'")
+    elif evaluation_result == 'Too many trials':
+        logging.info("Too many trials detected. Additional processing may be needed.")
     logging.info('Finished executing evaluate_trials.py')
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-# ./testing/test_nct_comparison.py
+# ./dynamic_phases/dynamic_phases.py
 
 import os
 import argparse
@@ -83,7 +83,6 @@ def generate_phase_output(input_path, output_path, template_path):
     save_json_data(output_path, output_data)
     print(f"Phase question output saved to {output_path}")
 
-# Main block for script execution
 if __name__ == "__main__":
     # Set up argument parser
     parser = argparse.ArgumentParser(description="Generate phase question output from input data.")

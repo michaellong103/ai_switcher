@@ -1805,3 +1805,138 @@
 2024-08-15 10:38:17,657 - INFO - Deleted file: API_response/cleaned_data.json
 2024-08-15 10:38:17,657 - INFO - Deleted file: API_response/dynamic_questions_input.json
 2024-08-15 10:38:17,657 - INFO - Config state reset successfully: config_state.json
+2024-08-15 14:15:17,621 - INFO - > Event system initialized
+2024-08-15 14:15:17,622 - INFO - Starting evaluate_trials.py
+2024-08-15 14:15:17,622 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-15 14:15:17,628 - INFO - Imported run_main from display_in_terminal.main
+2024-08-15 14:15:17,629 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-15 14:15:17,634 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-15 14:15:17,634 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-15 14:15:17,635 - INFO - Cleaning up items in directory: API_response
+2024-08-15 14:15:17,638 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-15 14:15:17,638 - INFO - Deleted file: API_response/condensed.json
+2024-08-15 14:15:17,638 - INFO - Deleted file: API_response/detailed.json
+2024-08-15 14:15:17,639 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-15 14:15:17,639 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-15 14:15:17,640 - INFO - Deleted file: API_response/SearchQuestion.json
+2024-08-15 14:15:17,642 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-15 14:15:17,642 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-15 14:15:17,642 - INFO - Deleted file: API_response/dynamic_questions_input.json
+2024-08-15 14:15:17,643 - INFO - Deleted file: API_response/phase_question_output.json
+2024-08-15 14:15:17,643 - INFO - Config state reset successfully: config_state.json
+2024-08-15 14:36:18,678 - INFO - > Event system initialized
+2024-08-15 14:36:18,689 - WARNING - Initial import failed: cannot import name 'sort_trials_data' from 'sorter_trials_to_ai.sort_data' (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/sorter_trials_to_ai/sort_data.py)
+2024-08-15 14:46:24,633 - INFO - > Event system initialized
+2024-08-15 14:46:24,635 - WARNING - Initial import failed: No module named 'API_response_evaluation.sorter_trials_to_ai'
+2024-08-15 14:46:44,826 - INFO - > Event system initialized
+2024-08-15 14:46:44,826 - WARNING - Initial import failed: attempted relative import beyond top-level package
+2024-08-15 14:47:30,574 - INFO - > Event system initialized
+2024-08-15 14:47:30,574 - INFO - Starting evaluate_trials.py
+2024-08-15 14:47:30,574 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-15 14:47:30,584 - INFO - Imported run_main from display_in_terminal.main
+2024-08-15 14:47:30,584 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-15 14:47:30,590 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-15 14:47:30,590 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-15 14:47:30,591 - INFO - Cleaning up items in directory: API_response
+2024-08-15 14:47:30,592 - INFO - Config state reset successfully: config_state.json
+2024-08-15 14:47:41,512 - INFO - > Event system initialized
+2024-08-15 14:47:41,512 - INFO - Starting evaluate_trials.py
+2024-08-15 14:47:41,512 - WARNING - Initial import failed: No module named 'API_response_evaluation.sorter_trials_to_ai'
+2024-08-15 14:47:52,408 - INFO - > Event system initialized
+2024-08-15 14:47:52,408 - INFO - Starting evaluate_trials.py
+2024-08-15 14:47:52,408 - WARNING - Initial import failed: attempted relative import beyond top-level package
+2024-08-15 14:48:08,396 - INFO - > Event system initialized
+2024-08-15 14:48:08,397 - INFO - Starting evaluate_trials.py
+2024-08-15 14:48:08,406 - WARNING - Initial import failed: cannot import name 'sort_trials_data' from 'sorter_trials_to_ai.sort_data' (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/sorter_trials_to_ai/sort_data.py)
+2024-08-15 14:48:32,916 - INFO - > Event system initialized
+2024-08-15 14:48:32,916 - INFO - Starting evaluate_trials.py
+2024-08-15 14:48:32,917 - WARNING - Initial import failed: No module named 'API_response_evaluation.sorter_trials_to_ai'
+2024-08-15 14:48:41,752 - INFO - > Event system initialized
+2024-08-15 14:48:41,752 - INFO - Starting evaluate_trials.py
+2024-08-15 14:48:41,753 - ERROR - Failed to import run_main from .display_in_terminal.main: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-15 14:48:41,761 - INFO - Imported run_main from display_in_terminal.main
+2024-08-15 14:48:41,761 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-15 14:48:41,767 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-15 14:48:41,767 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-15 14:48:41,767 - INFO - Cleaning up items in directory: API_response
+2024-08-15 14:48:41,768 - INFO - Config state reset successfully: config_state.json
+2024-08-15 14:48:53,446 - INFO - > Event system initialized
+2024-08-15 14:48:53,446 - INFO - Starting evaluate_trials.py
+2024-08-15 14:48:53,455 - WARNING - Initial import failed: cannot import name 'sort_trials_data' from 'sorter_trials_to_ai.sort_data' (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/sorter_trials_to_ai/sort_data.py)
+2024-08-15 14:49:23,203 - INFO - > Event system initialized
+2024-08-15 14:49:23,203 - INFO - Starting evaluate_trials.py
+2024-08-15 14:49:23,209 - WARNING - Initial import failed: cannot import name 'sort_trials_data' from 'sorter_trials_to_ai.sort_data' (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/sorter_trials_to_ai/sort_data.py)
+2024-08-15 14:50:27,461 - INFO - > Event system initialized
+2024-08-15 14:50:27,461 - INFO - Starting evaluate_trials.py
+2024-08-15 14:50:27,462 - WARNING - Initial import failed: No module named 'API_response_evaluation.sorter_trials_to_ai'
+2024-08-15 14:50:37,438 - INFO - > Event system initialized
+2024-08-15 14:50:37,439 - INFO - Starting evaluate_trials.py
+2024-08-15 14:50:37,439 - WARNING - Initial import failed: attempted relative import beyond top-level package
+2024-08-15 14:51:07,017 - INFO - > Event system initialized
+2024-08-15 14:51:07,018 - INFO - Starting evaluate_trials.py
+2024-08-15 14:51:07,018 - WARNING - Initial import failed: No module named 'API_response_evaluation.sorter_trials_to_ai'
+2024-08-15 14:51:13,789 - INFO - > Event system initialized
+2024-08-15 14:51:13,789 - INFO - Starting evaluate_trials.py
+2024-08-15 14:51:13,789 - WARNING - Initial import failed: No module named 'API_response_evaluation.sorter_trials_to_ai'
+2024-08-15 14:52:51,893 - INFO - > Event system initialized
+2024-08-15 14:52:51,894 - INFO - Starting evaluate_trials.py
+2024-08-15 14:52:51,894 - WARNING - Initial import failed: attempted relative import beyond top-level package
+2024-08-15 14:52:56,797 - INFO - > Event system initialized
+2024-08-15 14:52:56,797 - INFO - Starting evaluate_trials.py
+2024-08-15 14:52:56,797 - WARNING - Initial import failed: No module named 'API_response_evaluation.display_in_terminal'
+2024-08-15 14:53:04,168 - INFO - > Event system initialized
+2024-08-15 14:53:04,168 - INFO - Starting evaluate_trials.py
+2024-08-15 14:53:04,176 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-15 14:53:04,183 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-15 14:53:04,183 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-15 14:53:04,183 - INFO - Cleaning up items in directory: API_response
+2024-08-15 14:53:04,184 - INFO - Config state reset successfully: config_state.json
+2024-08-15 14:53:20,812 - INFO - > Event system initialized
+2024-08-15 14:53:20,812 - INFO - Starting evaluate_trials.py
+2024-08-15 14:53:20,822 - WARNING - Initial import failed: cannot import name 'sort_trials_data' from 'sorter_trials_to_ai.sort_data' (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/sorter_trials_to_ai/sort_data.py)
+2024-08-15 14:53:31,838 - INFO - > Event system initialized
+2024-08-15 14:53:31,838 - INFO - Starting evaluate_trials.py
+2024-08-15 14:53:31,844 - WARNING - Initial import failed: cannot import name 'sort_trials_data' from 'sorter_trials_to_ai.sort_data' (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/sorter_trials_to_ai/sort_data.py)
+2024-08-15 14:55:19,828 - INFO - > Event system initialized
+2024-08-15 14:55:19,828 - INFO - Starting evaluate_trials.py
+2024-08-15 14:55:19,829 - WARNING - Initial import failed: No module named 'sorter_trials_to_ai.main'
+2024-08-15 14:56:06,556 - INFO - > Event system initialized
+2024-08-15 14:56:06,556 - INFO - Starting evaluate_trials.py
+2024-08-15 14:56:06,566 - WARNING - Initial import failed: cannot import name 'sort_trials_data' from 'sorter_trials_to_ai.sort_data' (/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/sorter_trials_to_ai/sort_data.py)
+2024-08-15 14:57:37,177 - INFO - > Event system initialized
+2024-08-15 14:57:37,177 - INFO - Starting evaluate_trials.py
+2024-08-15 14:57:37,196 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-15 14:57:37,214 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-15 14:57:37,214 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-15 14:57:37,215 - INFO - Cleaning up items in directory: API_response
+2024-08-15 14:57:37,216 - INFO - Config state reset successfully: config_state.json
+2024-08-15 15:00:54,315 - INFO - > Event system initialized
+2024-08-15 15:00:54,315 - INFO - Starting evaluate_trials.py
+2024-08-15 15:00:54,329 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-15 15:00:54,333 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-15 15:00:54,333 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-15 15:00:54,334 - INFO - Cleaning up items in directory: API_response
+2024-08-15 15:00:54,334 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-15 15:00:54,334 - INFO - Deleted file: API_response/condensed.json
+2024-08-15 15:00:54,335 - INFO - Deleted file: API_response/detailed.json
+2024-08-15 15:00:54,335 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-15 15:00:54,335 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-15 15:00:54,335 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-15 15:00:54,336 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-15 15:00:54,336 - INFO - Deleted file: API_response/dynamic_questions_input.json
+2024-08-15 15:00:54,336 - INFO - Config state reset successfully: config_state.json
+2024-08-15 15:03:49,139 - INFO - > Event system initialized
+2024-08-15 15:03:49,140 - INFO - Starting evaluate_trials.py
+2024-08-15 15:03:49,152 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-15 15:03:49,156 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-15 15:03:49,156 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-15 15:03:49,156 - INFO - Cleaning up items in directory: API_response
+2024-08-15 15:03:49,157 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-15 15:03:49,157 - INFO - Deleted file: API_response/condensed.json
+2024-08-15 15:03:49,157 - INFO - Deleted file: API_response/detailed.json
+2024-08-15 15:03:49,157 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-15 15:03:49,158 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-15 15:03:49,158 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-15 15:03:49,158 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-15 15:03:49,159 - INFO - Deleted file: API_response/dynamic_questions_input.json
+2024-08-15 15:03:49,159 - INFO - Config state reset successfully: config_state.json

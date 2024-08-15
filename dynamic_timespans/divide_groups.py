@@ -1,4 +1,4 @@
-# ./divide_groups.py
+# ./dynamic_timespans/divide_groups.py
 def divide_into_groups(trials):
     total_trials = len(trials)
     groups = []

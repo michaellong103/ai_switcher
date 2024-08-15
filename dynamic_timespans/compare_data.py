@@ -1,4 +1,4 @@
-# ./compare_data.py
+# ./dynamic_timespans/compare_data.py
 def compare_sorted_data(sorted_trials, original_trials):
     sorted_days_until_end = [trial["daysUntilEnd"] for trial in sorted_trials]
     original_days_until_end = [trial["daysUntilEnd"] for trial in original_trials]

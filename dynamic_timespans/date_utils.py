@@ -1,4 +1,4 @@
-# ./date_utils.py
+# ./dynamic_timespans/date_utils.py
 from datetime import datetime
 
 CURRENT_DATE = datetime(2024, 7, 16)

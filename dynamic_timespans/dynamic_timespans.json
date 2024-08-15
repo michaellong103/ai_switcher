@@ -4,76 +4,54 @@
   "options": [
     {
       "code": "Group1",
-      "optionText": " Approximated timeframe: 0 years to 1 year",
-      "count": 11,
-      "percentage": 25.58,
+      "optionText": " Approximated timeframe: 0 years to 2 years",
+      "count": 10,
+      "percentage": 34.48,
       "NCTNumbers": [
-        "NCT02926690",
-        "NCT04443348",
         "NCT05453825",
         "NCT05230186",
-        "NCT03606967",
-        "NCT04180371",
-        "NCT04683679",
-        "NCT03808337",
+        "NCT05082610",
         "NCT03401385",
-        "NCT04561362",
-        "NCT03504488"
+        "NCT05491226",
+        "NCT03504488",
+        "NCT05852691",
+        "NCT05107674",
+        "NCT05579366",
+        "NCT06022029"
       ]
     },
     {
       "code": "Group2",
-      "optionText": " Approximated timeframe: 1 year to 2 years",
-      "count": 11,
-      "percentage": 25.58,
+      "optionText": " Approximated timeframe: 2 years to 3 years",
+      "count": 10,
+      "percentage": 34.48,
       "NCTNumbers": [
-        "NCT02977468",
-        "NCT05958199",
-        "NCT05203445",
-        "NCT05544929",
-        "NCT05852691",
-        "NCT05107674",
-        "NCT05809752",
-        "NCT03746431",
-        "NCT05902988",
-        "NCT06084481",
-        "NCT05274451"
+        "NCT04225117",
+        "NCT05318469",
+        "NCT05252390",
+        "NCT04333706",
+        "NCT04895709",
+        "NCT05848739",
+        "NCT05888831",
+        "NCT06422455",
+        "NCT05989828",
+        "NCT05585034"
       ]
     },
     {
       "code": "Group3",
-      "optionText": " Approximated timeframe: 2 years to 3 years",
-      "count": 11,
-      "percentage": 25.58,
-      "NCTNumbers": [
-        "NCT04225117",
-        "NCT03709446",
-        "NCT05252390",
-        "NCT04895709",
-        "NCT03165487",
-        "NCT06246968",
-        "NCT05382286",
-        "NCT06238479",
-        "NCT06400472",
-        "NCT05377996",
-        "NCT05382299"
-      ]
-    },
-    {
-      "code": "Group4",
       "optionText": " Approximated timeframe: 3 years to 9 years",
-      "count": 10,
-      "percentage": 23.26,
+      "count": 9,
+      "percentage": 31.03,
       "NCTNumbers": [
-        "NCT03821935",
-        "NCT06099769",
-        "NCT05570253",
-        "NCT05585034",
-        "NCT06103864",
+        "NCT06299163",
+        "NCT03546686",
+        "NCT06353997",
         "NCT05629585",
         "NCT06112379",
         "NCT05633654",
         "NCT01042379",
+        "NCT05929768",
         "NCT05812807"
       ]
     }

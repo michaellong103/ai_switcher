@@ -1,4 +1,4 @@
-# ./testing/test_nct_comparison.py
+# ./dynamic_phases/testing/test_nct_comparison.py
 
 import unittest
 import json

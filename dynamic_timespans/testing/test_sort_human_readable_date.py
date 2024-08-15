@@ -1,9 +1,9 @@
+# ./dynamic_timespans/testing/test_sort_human_readable_date.py
 import unittest
 from datetime import datetime, timedelta
 import json
 import os
 
-# Define CURRENT_DATE based on the data's context
 CURRENT_DATE = datetime(2024, 7, 16)
 
 def sort_by_human_readable_date(trials):

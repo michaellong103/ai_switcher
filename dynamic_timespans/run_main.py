@@ -1,4 +1,4 @@
-# ./run_main.py
+# ./dynamic_timespans/run_main.py
 from main import main
 
 if __name__ == "__main__":

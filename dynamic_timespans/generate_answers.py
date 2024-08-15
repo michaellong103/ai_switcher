@@ -1,4 +1,4 @@
-# ./generate_answers.py
+# ./dynamic_timespans/generate_answers.py
 import json
 
 def read_output_data(filename):

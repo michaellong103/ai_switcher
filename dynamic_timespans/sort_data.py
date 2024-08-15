@@ -1,4 +1,4 @@
-# ./sort_data.py
+# ./dynamic_timespans/sort_data.py
 import logging
 
 def sort_by_days_until_end(trials):
