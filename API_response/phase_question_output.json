@@ -1,0 +1,79 @@
+{
+    "question": "Which phase are you interested in?",
+    "options": [
+        {
+            "percentage": 51.724137931034484,
+            "NCTNumbers": [
+                "NCT05848739",
+                "NCT05082610",
+                "NCT05107674",
+                "NCT04895709",
+                "NCT05318469",
+                "NCT05579366",
+                "NCT03401385",
+                "NCT05989828",
+                "NCT03504488",
+                "NCT04333706",
+                "NCT05888831",
+                "NCT05585034",
+                "NCT06022029",
+                "NCT06299163",
+                "NCT05252390"
+            ],
+            "NCTCount": 15,
+            "optionText": "Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.",
+            "total_after_elimination": null
+        },
+        {
+            "percentage": 48.275862068965516,
+            "NCTNumbers": [
+                "NCT04225117",
+                "NCT05852691",
+                "NCT05318469",
+                "NCT03546686",
+                "NCT04895709",
+                "NCT05579366",
+                "NCT06353997",
+                "NCT05453825",
+                "NCT03504488",
+                "NCT04333706",
+                "NCT01042379",
+                "NCT05888831",
+                "NCT05491226",
+                "NCT05252390"
+            ],
+            "NCTCount": 14,
+            "optionText": "Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.",
+            "total_after_elimination": null
+        },
+        {
+            "percentage": 17.24137931034483,
+            "NCTNumbers": [
+                "NCT05812807",
+                "NCT05929768",
+                "NCT05633654",
+                "NCT05629585",
+                "NCT06112379"
+            ],
+            "NCTCount": 5,
+            "optionText": "Phase 3 (lower risk): These trials compare the new treatment to the current standard.",
+            "total_after_elimination": null
+        },
+        {
+            "percentage": 3.4482758620689653,
+            "NCTNumbers": [
+                "NCT06422455"
+            ],
+            "NCTCount": 1,
+            "optionText": "Trials where phase is listed as N/A.",
+            "total_after_elimination": null
+        }
+    ],
+    "no_phase_entries": {
+        "count": 1,
+        "NCTNumbers": [
+            "NCT05230186"
+        ],
+        "description": "These studies do not have a phase listed."
+    }
+}

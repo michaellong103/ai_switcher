@@ -1,0 +1,30 @@
+{
+  "question_categories": [
+    {
+      "category": "studyPhases",
+      "question": "Which phase are you interested in?",
+      "options": [
+        {
+          "code": "PHASE1",
+          "optionText": "Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment."
+        },
+        {
+          "code": "PHASE2",
+          "optionText": "Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment."
+        },
+        {
+          "code": "PHASE3",
+          "optionText": "Phase 3 (lower risk): These trials compare the new treatment to the current standard."
+        },
+        {
+          "code": "PHASE4",
+          "optionText": "Phase 4 (lowest risk): These trials occur after the treatment has been approved."
+        },
+        {
+          "code": "NA",
+          "optionText": "Trials where phase is listed as N/A."
+        }
+      ]
+    }
+  ]
+}
