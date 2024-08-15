@@ -1,347 +1,726 @@
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 09:18:34,826 - INFO - ai_switcher/main.py - Running main with assistant_type: medical
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 09:18:34,827 - INFO - ai_switcher/main.py - Creating assistant of type: medical
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:34,827 - INFO - assistants/assistant_factory.py - Creating assistant with type: medical
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:34,827 - INFO - assistants/assistant_factory.py - Creating MedicalAssistant
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:34,827 - INFO - medical/medical_assistant.py - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:34,827 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, s...
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:34,827 - INFO - medical/medical_assistant.py - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:34,827 - INFO - assistants/assistant_factory.py - Creating assistant with type: lunch
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:34,827 - INFO - assistants/assistant_factory.py - Creating LunchAssistant
-<span style='color:#FF33A6'>[lunch]</span> 2024-08-15 09:18:34,827 - INFO - lunch/lunch_assistant.py - Initializing LunchAssistant
-<span style='color:#FF33A6'>[lunch]</span> 2024-08-15 09:18:34,827 - INFO - lunch/lunch_assistant.py - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day....
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:34,827 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggesti...
-<span style='color:#FFC733'>[router]</span> 2024-08-15 09:18:34,827 - INFO - router/conversation_router.py - Initial assistant: MedicalAssistant
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:34,828 - INFO - medical/medical_assistant.py - get_initial_message called
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:53,973 - INFO - medical/medical_assistant.py - respond called with user_input: 50 female triple-negative breast cancer in Los Angeles, CA
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:53,975 - INFO - medical/medical_assistant.py - Action response: None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:53,976 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:53,976 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 09:18:54,003 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 09:18:55,344 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:55,360 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Assistant: Thank you for providing that information. Let's confirm the details:
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:17,658 - INFO - ai_switcher/main.py - Running main with assistant_type: medical
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:17,658 - INFO - ai_switcher/main.py - Creating assistant of type: medical
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:17,658 - INFO - assistants/assistant_factory.py - Creating assistant with type: medical
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:17,658 - INFO - assistants/assistant_factory.py - Creating MedicalAssistant
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:17,658 - INFO - medical/medical_assistant.py - Initializing MedicalAssistant with model: gpt-3.5-turbo, temperature: 1.000000, top_p: 1.000000
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:17,658 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, s...
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:17,658 - INFO - medical/medical_assistant.py - MedicalAssistant initialized with initial_message: We need to sort through some questions to determine your eligibility for clinical trials. I will need age, condition, gender/sex, and location
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:17,658 - INFO - assistants/assistant_factory.py - Creating assistant with type: lunch
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:17,658 - INFO - assistants/assistant_factory.py - Creating LunchAssistant
+<span style='color:#FF33A6'>[lunch]</span> 2024-08-15 10:38:17,658 - INFO - lunch/lunch_assistant.py - Initializing LunchAssistant
+<span style='color:#FF33A6'>[lunch]</span> 2024-08-15 10:38:17,658 - INFO - lunch/lunch_assistant.py - LunchAssistant system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggestions based on time of day....
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:17,658 - INFO - assistants/base_assistant.py - Initialized BaseAssistant with system_message: {'role': 'system', 'content': 'You are a friendly assistant helping users decide on what to have for lunch.\n\nRequirements:\n\n- Suggest a variety of cuisines.\n- Ask about dietary restrictions.\n- Provide healthy options.\n- Offer suggesti...
+<span style='color:#FFC733'>[router]</span> 2024-08-15 10:38:17,659 - INFO - router/conversation_router.py - Initial assistant: MedicalAssistant
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:17,659 - INFO - medical/medical_assistant.py - get_initial_message called
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:18,593 - INFO - medical/medical_assistant.py - respond called with user_input: 50 female triple-negative breast cancer in New York, NY
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:18,593 - INFO - medical/medical_assistant.py - Action response: None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:18,593 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:18,593 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:18,602 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:19,883 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:19,884 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Assistant: Thank you for the information. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
+- Location: New York, NY
 Does this look correct? (y/n)
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:55,363 - INFO - medical/medical_assistant.py - Validating Assistant Output
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:55,363 - INFO - medical/medical_assistant.py - Modified super response: Assistant: Thank you for providing that information. Let's confirm the details:
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:19,886 - INFO - medical/medical_assistant.py - Validating Assistant Output
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:19,886 - INFO - medical/medical_assistant.py - Modified super response: Assistant: Thank you for the information. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
+- Location: New York, NY
 Does this look correct? (y/n)
-<span style='color:#FFC733'>[router]</span> 2024-08-15 09:18:55,363 - INFO - router/conversation_router.py - Response from MedicalAssistant: Assistant: Thank you for providing that information. Let's confirm the details:
+<span style='color:#FFC733'>[router]</span> 2024-08-15 10:38:19,886 - INFO - router/conversation_router.py - Response from MedicalAssistant: Assistant: Thank you for the information. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
+- Location: New York, NY
 Does this look correct? (y/n)
-<span style='color:#FFC733'>[router]</span> 2024-08-15 09:18:55,363 - INFO - router/conversation_router.py - Assistant response after routing: Assistant: Thank you for providing that information. Let's confirm the details:
+<span style='color:#FFC733'>[router]</span> 2024-08-15 10:38:19,886 - INFO - router/conversation_router.py - Assistant response after routing: Assistant: Thank you for the information. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
+- Location: New York, NY
 Does this look correct? (y/n)
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 09:18:55,363 - INFO - ai_switcher/main.py - User input: 50 female triple-negative breast cancer in Los Angeles, CA
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 09:18:55,363 - INFO - ai_switcher/main.py - Assistant response: Assistant: Thank you for providing that information. Let's confirm the details:
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:19,886 - INFO - ai_switcher/main.py - User input: 50 female triple-negative breast cancer in New York, NY
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:19,886 - INFO - ai_switcher/main.py - Assistant response: Assistant: Thank you for the information. Let's confirm the details:
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
+- Location: New York, NY
 Does this look correct? (y/n)
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:56,038 - INFO - medical/medical_assistant.py - respond called with user_input: y
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:56,038 - INFO - medical/medical_assistant.py - Action response: None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:56,039 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:56,039 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 09:18:56,040 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 09:18:57,410 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
-<span style='color:#33FF57'>[assistants]</span> 2024-08-15 09:18:57,423 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:21,685 - INFO - medical/medical_assistant.py - respond called with user_input: y
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:21,685 - INFO - medical/medical_assistant.py - Action response: None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:21,685 - INFO - assistants/base_assistant.py - Updated conversation_history: [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location exists. If it does not, suggest other loc...
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:21,686 - INFO - assistants/base_assistant.py - Sending request to OpenAI API: {'model': 'gpt-3.5-turbo', 'messages': [{'role': 'system', 'content': "You are a very polite medical assistant helping patients fill out forms in the proper format to find a clinical trial in the USA.\n\nRequirements\n\n- Always validate that the location e...
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:21,687 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): api.openai.com:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:23,674 - DEBUG - urllib3/connectionpool.py - https://api.openai.com:443 "POST /v1/chat/completions HTTP/1.1" 200 None
+<span style='color:#33FF57'>[assistants]</span> 2024-08-15 10:38:23,675 - INFO - assistants/base_assistant.py - Received response from OpenAI API: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
-I will now search for trials that match this pr...
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:57,425 - INFO - medical/medical_assistant.py - Validating Assistant Output
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:57,426 - INFO - medical/validator_utils.py - Validating field Age: 50
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:57,426 - INFO - medical/validator_utils.py - Validating field Gender: Female
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:57,426 - INFO - medical/validator_utils.py - Validating field Medical Condition: Triple-Negative Breast Cancer
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:57,426 - INFO - medical/validator_utils.py - Validating field Location: Los Angeles, CA
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:57,426 - INFO - medical/validator_utils.py - Validating Debug Grid - Latitude: 34.0522, Longitude: -118.2437
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:57,426 - INFO - medical/medical_assistant.py - User details collected successfully
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:57,428 - INFO - medical/medical_assistant.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,428 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,428 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - ERROR - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' does not exist.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,429 - DEBUG - API_query/clinical_trials_query.py - Loading config state from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,430 - INFO - API_query/clinical_trials_query.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,430 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'Los Angeles, CA', 'Latitude': '34.0522', 'Longitude': '-118.2437'} and radius: 13
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,430 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,13)
-Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Tr...
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,430 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,13)
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,431 - INFO - API_query/clinical_trials_query.py - Config state updated successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,431 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(34.0522,-118.2437,13)
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 09:18:57,433 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
-<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 09:18:57,697 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(34.0522,-118.2437,13) HTTP/1.1" 200 None
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,786 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,807 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,808 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,808 - INFO - API_query/update_stats.py - Stats section updated successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,808 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,890 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,890 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,968 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,968 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:57,968 - INFO - API_query/clinical_trials_query.py - Executing the API response processing.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:57,969 - INFO - API_response_processing/main.py - Starting clinical trials data processing.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,011 - DEBUG - API_response_processing/file_utils.py - Extracted clinical trial data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/dynamic_questions_input.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - INFO - API_response_processing/main.py - Loaded 29 trials from input file.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06022029
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-08-29': 743
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05107674
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-28': 561
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05888831
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-07-01': 1049
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05579366
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,029 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-04': 593
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05453825
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-15': 121
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05848739
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-05-31': 1018
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05852691
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-27': 560
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05929768
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/date_utils.py - Days until end date '2033-04': 3150
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05491226
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12-01': 472
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05318469
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,030 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-10': 776
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03546686
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/date_utils.py - Days until end date '2028-06': 1385
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05230186
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-23': 129
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04225117
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-09-30': 775
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06112379
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/date_utils.py - Days until end date '2030-08-28': 2203
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,031 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06422455
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,032 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-07-01': 1049
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,032 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05082610
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,032 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01': 138
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,032 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06299163
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,033 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-12-31': 1232
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,033 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05585034
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,034 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-12': 1202
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,034 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04333706
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,035 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-11-03': 809
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,035 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05629585
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,035 - DEBUG - API_response_processing/date_utils.py - Days until end date '2030-03-27': 2049
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,035 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05252390
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-11': 807
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT01042379
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/date_utils.py - Days until end date '2031-12': 2663
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05812807
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/date_utils.py - Days until end date '2033-05-31': 3210
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04895709
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-12-31': 867
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03401385
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01-01': 138
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03504488
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12-30': 501
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,036 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05989828
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,037 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-08-01': 1080
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,037 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05633654
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,037 - DEBUG - API_response_processing/date_utils.py - Days until end date '2031-08': 2541
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,037 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06353997
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,037 - DEBUG - API_response_processing/date_utils.py - Days until end date '2029-06': 1750
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/file_utils.py - Extracted data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/extracted_data.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06022029
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05107674
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05888831
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05579366
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05453825
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05848739
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05852691
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05929768
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05491226
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05318469
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03546686
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05230186
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04225117
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06112379
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06422455
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05082610
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06299163
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,039 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05585034
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04333706
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05629585
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05252390
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT01042379
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05812807
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04895709
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03401385
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03504488
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05989828
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05633654
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,040 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06353997
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/file_utils.py - Condensed data with brief titles saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/condensed.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06022029
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05107674
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05888831
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05579366
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05453825
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05848739
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05852691
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05929768
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05491226
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05318469
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03546686
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05230186
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04225117
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06112379
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06422455
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05082610
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,041 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06299163
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05585034
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04333706
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05629585
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05252390
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT01042379
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05812807
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04895709
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03401385
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03504488
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05989828
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05633654
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,042 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06353997
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,044 - DEBUG - API_response_processing/file_utils.py - Detailed data with brief titles and summaries saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/detailed.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,044 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-10-13' and '2026-08-29' is 1051 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,044 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-08-29': 743
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,045 - DEBUG - API_response_processing/date_utils.py - Duration between '2021-09-29' and '2026-02-28' is 1613 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,045 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-28': 561
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,045 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-06-06' and '2027-07-01' is 1486 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,045 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-07-01': 1049
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,045 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-12-07' and '2026-04' is 1211 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,046 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-04': 593
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,046 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-08-05' and '2024-12-15' is 863 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,046 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-15': 121
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,046 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-06-05' and '2027-05-31' is 1456 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,046 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-05-31': 1018
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,047 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-07-18' and '2026-02-27' is 955 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,047 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-27': 560
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,048 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-09-15' and '2033-04' is 3486 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,048 - DEBUG - API_response_processing/date_utils.py - Days until end date '2033-04': 3150
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,048 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-11-17' and '2025-12-01' is 745 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,048 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12-01': 472
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,049 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-10-13' and '2026-10' is 1084 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,049 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-10': 776
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,049 - DEBUG - API_response_processing/date_utils.py - Duration between '2019-11-12' and '2028-06' is 3124 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,049 - DEBUG - API_response_processing/date_utils.py - Days until end date '2028-06': 1385
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,050 - DEBUG - API_response_processing/date_utils.py - Duration between '2021-02-26' and '2024-12-23' is 1396 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,050 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-23': 129
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,051 - DEBUG - API_response_processing/date_utils.py - Duration between '2020-03-09' and '2026-09-30' is 2396 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,051 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-09-30': 775
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,051 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-11-14' and '2030-08-28' is 2479 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,051 - DEBUG - API_response_processing/date_utils.py - Days until end date '2030-08-28': 2203
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,051 - DEBUG - API_response_processing/date_utils.py - Duration between '2024-07-01' and '2027-07-01' is 1095 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,051 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-07-01': 1049
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,052 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-01-01' and '2025-01' is 1096 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,052 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01': 138
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,052 - DEBUG - API_response_processing/date_utils.py - Duration between '2024-05-01' and '2027-12-31' is 1339 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,052 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-12-31': 1232
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,052 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-12-14' and '2027-12' is 1813 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,052 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-12': 1202
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,072 - DEBUG - API_response_processing/date_utils.py - Duration between '2020-09-26' and '2026-11-03' is 2229 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,073 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-11-03': 809
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,075 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-11-28' and '2030-03-27' is 2676 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,076 - DEBUG - API_response_processing/date_utils.py - Days until end date '2030-03-27': 2049
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,077 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-03-29' and '2026-11' is 1678 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,077 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-11': 807
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,078 - DEBUG - API_response_processing/date_utils.py - Duration between '2010-03-01' and '2031-12' is 7945 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,078 - DEBUG - API_response_processing/date_utils.py - Days until end date '2031-12': 2663
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,080 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-05-10' and '2033-05-31' is 3674 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,081 - DEBUG - API_response_processing/date_utils.py - Days until end date '2033-05-31': 3210
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,081 - DEBUG - API_response_processing/date_utils.py - Duration between '2021-05-27' and '2026-12-31' is 2044 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,081 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-12-31': 867
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,085 - DEBUG - API_response_processing/date_utils.py - Duration between '2018-01-31' and '2025-01-01' is 2527 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,085 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01-01': 138
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,087 - DEBUG - API_response_processing/date_utils.py - Duration between '2018-06-27' and '2025-12-30' is 2743 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,087 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12-30': 501
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,106 - DEBUG - API_response_processing/date_utils.py - Duration between '2024-08-01' and '2027-08-01' is 1095 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,108 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-08-01': 1080
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,108 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-12-12' and '2031-08' is 3154 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,109 - DEBUG - API_response_processing/date_utils.py - Days until end date '2031-08': 2541
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,109 - DEBUG - API_response_processing/date_utils.py - Duration between '2024-08' and '2029-06' is 1765 days.
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,109 - DEBUG - API_response_processing/date_utils.py - Days until end date '2029-06': 1750
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,113 - DEBUG - API_response_processing/file_utils.py - Cleaned data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/cleaned_data.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,114 - DEBUG - API_response_processing/file_utils.py - Filtered data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/filtered_exclusion_data.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,216 - DEBUG - API_response_processing/file_utils.py - All data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/all_study_data.json'
-<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 09:18:58,217 - INFO - API_response_processing/main.py - Completed clinical trials data processing.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:58,217 - INFO - API_query/clinical_trials_query.py - Executing the API response evaluation.
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,217 - INFO - API_response_evaluation/main.py - Starting API response evaluation process
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,217 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_config function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,218 - INFO - API_response_evaluation/evaluate_trials.py - Configuration loaded successfully
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,218 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_config function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,218 - INFO - API_response_evaluation/main.py - Configuration loaded successfully.
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,218 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_trials_data function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,229 - INFO - API_response_evaluation/evaluate_trials.py - Trial data loaded successfully
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,229 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_trials_data function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,229 - INFO - API_response_evaluation/main.py - Loaded 29 trials from the final output file.
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,229 - INFO - API_response_evaluation/evaluate_trials.py - Starting evaluate_number_of_trials function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,230 - INFO - API_response_evaluation/evaluate_trials.py - Evaluation result: Too many trials
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,230 - INFO - API_response_evaluation/evaluate_trials.py - Finished evaluate_number_of_trials function
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,230 - INFO - API_response_evaluation/main.py - Evaluation completed successfully.
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,230 - INFO - API_response_evaluation/main.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
-<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 09:18:58,230 - INFO - API_response_evaluation/main.py - Config state updated successfully.
-<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 09:18:58,231 - INFO - API_query/clinical_trials_query.py - Finished executing the API response evaluation.
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:58,233 - INFO - medical/medical_assistant.py - The API query is complete, and the files have been written successfully.
-<span style='color:#3357FF'>[medical]</span> 2024-08-15 09:18:58,233 - INFO - medical/medical_assistant.py - Modified super response: Great, I will now look for trials with these characteristics.
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
-I will now search for trials that match this profile.
-API qu...
-<span style='color:#FFC733'>[router]</span> 2024-08-15 09:18:58,233 - INFO - router/conversation_router.py - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
-I will now search for trials that match this profile....
-<span style='color:#FFC733'>[router]</span> 2024-08-15 09:18:58,233 - INFO - router/conversation_router.py - Assistant response after routing: Great, I will now look for trials with these characteristics.
-
-- Age: 50
-- Gender: Female
-- Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
 I will now search for trials that match this profil...
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 09:18:58,233 - INFO - ai_switcher/main.py - User input: y
-<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 09:18:58,233 - INFO - ai_switcher/main.py - Assistant response: Great, I will now look for trials with these characteristics.
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:23,677 - INFO - medical/medical_assistant.py - Validating Assistant Output
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:23,678 - INFO - medical/validator_utils.py - Validating field Age: 50
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:23,678 - INFO - medical/validator_utils.py - Validating field Gender: Female
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:23,678 - INFO - medical/validator_utils.py - Validating field Medical Condition: Triple-Negative Breast Cancer
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:23,678 - INFO - medical/validator_utils.py - Validating field Location: New York, NY
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:23,678 - INFO - medical/validator_utils.py - Validating Debug Grid - Latitude: 40.7128, Longitude: -74.0060
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:23,678 - INFO - medical/medical_assistant.py - User details collected successfully
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:23,679 - INFO - medical/medical_assistant.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,679 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,679 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,679 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,679 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,679 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,679 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,679 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,679 - ERROR - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' does not exist.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,680 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,680 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,680 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,680 - DEBUG - API_query/clinical_trials_query.py - Loading config state from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,680 - INFO - API_query/clinical_trials_query.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,680 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060'} and radius: 13
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,680 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,13)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Tri...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,680 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,13)
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,681 - INFO - API_query/clinical_trials_query.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,681 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,13)
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:23,682 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:23,914 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(40.7128,-74.0060,13) HTTP/1.1" 200 None
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,918 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,921 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,922 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,922 - INFO - API_query/update_stats.py - Stats section updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,922 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,922 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,923 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,923 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,923 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,923 - INFO - API_query/clinical_trials_query.py - Executing the API response processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,923 - INFO - API_response_processing/main.py - Starting clinical trials data processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,924 - INFO - API_response_processing/main.py - Loaded 0 trials from input file.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,924 - DEBUG - API_response_processing/file_utils.py - Extracted data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/extracted_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,924 - DEBUG - API_response_processing/file_utils.py - Condensed data with brief titles saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/condensed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,925 - DEBUG - API_response_processing/file_utils.py - Detailed data with brief titles and summaries saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/detailed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,925 - DEBUG - API_response_processing/file_utils.py - Cleaned data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/cleaned_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,926 - DEBUG - API_response_processing/file_utils.py - Filtered data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/filtered_exclusion_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,926 - DEBUG - API_response_processing/file_utils.py - All data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/all_study_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:23,926 - INFO - API_response_processing/main.py - Completed clinical trials data processing.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:23,926 - INFO - API_query/clinical_trials_query.py - Executing the API response evaluation.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,926 - INFO - API_response_evaluation/main.py - Starting API response evaluation process
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,926 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,926 - INFO - API_response_evaluation/evaluate_trials.py - Configuration loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,926 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,926 - INFO - API_response_evaluation/main.py - Configuration loaded successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,927 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,927 - INFO - API_response_evaluation/evaluate_trials.py - Trial data loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,927 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,927 - INFO - API_response_evaluation/main.py - Loaded 0 trials from the final output file.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,927 - INFO - API_response_evaluation/evaluate_trials.py - Starting evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:23,927 - INFO - API_response_evaluation/evaluate_trials.py - No trials found, emitting NO_TRIALS_FOUND event.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:23,927 - INFO - ai_switcher/event_system.py - > Emitting event: NO_TRIALS_FOUND to 1 listener(s) with args: (), kwargs: {}
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,927 - INFO - increase_radius_query/update_input_from_config.py - Loading config state from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/config_state.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,927 - DEBUG - increase_radius_query/update_input_from_config.py - Config data loaded: {'current_api_params': {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060'}, 'last_clinical_trials_api_url': 'https://clinic...
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,927 - INFO - increase_radius_query/update_input_from_config.py - Using Distance from search_radius_km: 13 km
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,927 - INFO - increase_radius_query/update_input_from_config.py - Radius increased to: 63 km (max: 500 km)
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,927 - INFO - increase_radius_query/write_input_json.py - Starting to write to input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,927 - DEBUG - increase_radius_query/write_input_json.py - Target directory: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,927 - DEBUG - increase_radius_query/write_input_json.py - File path: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,927 - INFO - increase_radius_query/write_input_json.py - Data to be written: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 63}
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,928 - INFO - increase_radius_query/write_input_json.py - Data successfully written to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,928 - INFO - increase_radius_query/update_input_from_config.py - config_data-current_api_params-Distance
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:23,928 - INFO - increase_radius_query/update_input_from_config.py - Config state updated with new radius: 63 km
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:25,930 - INFO - increase_radius_query/update_input_from_config.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - DEBUG - API_query/clinical_trials_query.py - Loading config state from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/clinical_trials_query.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 63} and radius: 13
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,13)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Tri...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,931 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,13)
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,932 - INFO - API_query/clinical_trials_query.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:25,932 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,13)
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:25,933 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:26,139 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(40.7128,-74.0060,13) HTTP/1.1" 200 None
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,140 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,142 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,142 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,142 - INFO - API_query/update_stats.py - Stats section updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,142 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,142 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,142 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,143 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,143 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,143 - INFO - API_query/clinical_trials_query.py - Executing the API response processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,143 - INFO - API_response_processing/main.py - Starting clinical trials data processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,143 - INFO - API_response_processing/main.py - Loaded 0 trials from input file.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,143 - DEBUG - API_response_processing/file_utils.py - Extracted data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/extracted_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,144 - DEBUG - API_response_processing/file_utils.py - Condensed data with brief titles saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/condensed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,144 - DEBUG - API_response_processing/file_utils.py - Detailed data with brief titles and summaries saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/detailed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,144 - DEBUG - API_response_processing/file_utils.py - Cleaned data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/cleaned_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,144 - DEBUG - API_response_processing/file_utils.py - Filtered data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/filtered_exclusion_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,145 - DEBUG - API_response_processing/file_utils.py - All data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/all_study_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:26,145 - INFO - API_response_processing/main.py - Completed clinical trials data processing.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:26,145 - INFO - API_query/clinical_trials_query.py - Executing the API response evaluation.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,145 - INFO - API_response_evaluation/main.py - Starting API response evaluation process
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,145 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,145 - INFO - API_response_evaluation/evaluate_trials.py - Configuration loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,146 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,146 - INFO - API_response_evaluation/main.py - Configuration loaded successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,146 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,146 - INFO - API_response_evaluation/evaluate_trials.py - Trial data loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,146 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,146 - INFO - API_response_evaluation/main.py - Loaded 0 trials from the final output file.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,146 - INFO - API_response_evaluation/evaluate_trials.py - Starting evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:26,146 - INFO - API_response_evaluation/evaluate_trials.py - No trials found, emitting NO_TRIALS_FOUND event.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:26,146 - INFO - ai_switcher/event_system.py - > Emitting event: NO_TRIALS_FOUND to 1 listener(s) with args: (), kwargs: {}
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,146 - INFO - increase_radius_query/update_input_from_config.py - Loading config state from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/config_state.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,147 - DEBUG - increase_radius_query/update_input_from_config.py - Config data loaded: {'current_api_params': {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 63}, 'last_clinical_trials_api_url':...
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,147 - INFO - increase_radius_query/update_input_from_config.py - Using Distance from current_api_params: 63 km
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,147 - INFO - increase_radius_query/update_input_from_config.py - Radius increased to: 113 km (max: 500 km)
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,147 - INFO - increase_radius_query/write_input_json.py - Starting to write to input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,147 - DEBUG - increase_radius_query/write_input_json.py - Target directory: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,147 - DEBUG - increase_radius_query/write_input_json.py - File path: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,147 - INFO - increase_radius_query/write_input_json.py - Data to be written: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 113}
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,147 - INFO - increase_radius_query/write_input_json.py - Data successfully written to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:26,148 - INFO - increase_radius_query/update_input_from_config.py - Config state updated with new radius: 113 km
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,152 - INFO - increase_radius_query/update_input_from_config.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,152 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,153 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,153 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,153 - DEBUG - API_query/clinical_trials_query.py - Loading config state from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,153 - INFO - API_query/clinical_trials_query.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,153 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 113} and radius: 113
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,153 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,113)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Tr...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,153 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,113)
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,154 - INFO - API_query/clinical_trials_query.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,154 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,113)
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:28,156 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:28,368 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(40.7128,-74.0060,113) HTTP/1.1" 200 None
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,369 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,372 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,372 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,372 - INFO - API_query/update_stats.py - Stats section updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,372 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,373 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,373 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,373 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,373 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,373 - INFO - API_query/clinical_trials_query.py - Executing the API response processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,373 - INFO - API_response_processing/main.py - Starting clinical trials data processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,374 - INFO - API_response_processing/main.py - Loaded 0 trials from input file.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,374 - DEBUG - API_response_processing/file_utils.py - Extracted data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/extracted_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,374 - DEBUG - API_response_processing/file_utils.py - Condensed data with brief titles saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/condensed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,375 - DEBUG - API_response_processing/file_utils.py - Detailed data with brief titles and summaries saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/detailed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,375 - DEBUG - API_response_processing/file_utils.py - Cleaned data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/cleaned_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,375 - DEBUG - API_response_processing/file_utils.py - Filtered data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/filtered_exclusion_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,376 - DEBUG - API_response_processing/file_utils.py - All data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/all_study_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:28,376 - INFO - API_response_processing/main.py - Completed clinical trials data processing.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:28,376 - INFO - API_query/clinical_trials_query.py - Executing the API response evaluation.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/main.py - Starting API response evaluation process
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/evaluate_trials.py - Configuration loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/main.py - Configuration loaded successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/evaluate_trials.py - Trial data loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/main.py - Loaded 0 trials from the final output file.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,376 - INFO - API_response_evaluation/evaluate_trials.py - Starting evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:28,377 - INFO - API_response_evaluation/evaluate_trials.py - No trials found, emitting NO_TRIALS_FOUND event.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:28,377 - INFO - ai_switcher/event_system.py - > Emitting event: NO_TRIALS_FOUND to 1 listener(s) with args: (), kwargs: {}
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - INFO - increase_radius_query/update_input_from_config.py - Loading config state from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/config_state.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - DEBUG - increase_radius_query/update_input_from_config.py - Config data loaded: {'current_api_params': {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 113}, 'last_clinical_trials_api_url'...
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - INFO - increase_radius_query/update_input_from_config.py - Using Distance from current_api_params: 113 km
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - INFO - increase_radius_query/update_input_from_config.py - Radius increased to: 163 km (max: 500 km)
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - INFO - increase_radius_query/write_input_json.py - Starting to write to input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - DEBUG - increase_radius_query/write_input_json.py - Target directory: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - DEBUG - increase_radius_query/write_input_json.py - File path: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - INFO - increase_radius_query/write_input_json.py - Data to be written: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 163}
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,377 - INFO - increase_radius_query/write_input_json.py - Data successfully written to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:28,378 - INFO - increase_radius_query/update_input_from_config.py - Config state updated with new radius: 163 km
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,380 - INFO - increase_radius_query/update_input_from_config.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,380 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,380 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,380 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,380 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,380 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - DEBUG - API_query/clinical_trials_query.py - Loading config state from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - INFO - API_query/clinical_trials_query.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 163} and radius: 163
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,381 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,163)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Tr...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,382 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,163)
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,382 - INFO - API_query/clinical_trials_query.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,382 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,163)
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:30,384 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:30,608 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(40.7128,-74.0060,163) HTTP/1.1" 200 None
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,608 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,610 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,610 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,610 - INFO - API_query/update_stats.py - Stats section updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,610 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,610 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,611 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,611 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,611 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,611 - INFO - API_query/clinical_trials_query.py - Executing the API response processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,611 - INFO - API_response_processing/main.py - Starting clinical trials data processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,611 - INFO - API_response_processing/main.py - Loaded 0 trials from input file.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,611 - DEBUG - API_response_processing/file_utils.py - Extracted data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/extracted_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,612 - DEBUG - API_response_processing/file_utils.py - Condensed data with brief titles saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/condensed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,612 - DEBUG - API_response_processing/file_utils.py - Detailed data with brief titles and summaries saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/detailed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,612 - DEBUG - API_response_processing/file_utils.py - Cleaned data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/cleaned_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,612 - DEBUG - API_response_processing/file_utils.py - Filtered data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/filtered_exclusion_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,612 - DEBUG - API_response_processing/file_utils.py - All data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/all_study_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:30,612 - INFO - API_response_processing/main.py - Completed clinical trials data processing.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:30,612 - INFO - API_query/clinical_trials_query.py - Executing the API response evaluation.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,612 - INFO - API_response_evaluation/main.py - Starting API response evaluation process
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/evaluate_trials.py - Configuration loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/main.py - Configuration loaded successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/evaluate_trials.py - Trial data loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/main.py - Loaded 0 trials from the final output file.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/evaluate_trials.py - Starting evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:30,613 - INFO - API_response_evaluation/evaluate_trials.py - No trials found, emitting NO_TRIALS_FOUND event.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:30,613 - INFO - ai_switcher/event_system.py - > Emitting event: NO_TRIALS_FOUND to 1 listener(s) with args: (), kwargs: {}
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,613 - INFO - increase_radius_query/update_input_from_config.py - Loading config state from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/config_state.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,613 - DEBUG - increase_radius_query/update_input_from_config.py - Config data loaded: {'current_api_params': {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 163}, 'last_clinical_trials_api_url'...
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,613 - INFO - increase_radius_query/update_input_from_config.py - Using Distance from current_api_params: 163 km
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,613 - INFO - increase_radius_query/update_input_from_config.py - Radius increased to: 213 km (max: 500 km)
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,613 - INFO - increase_radius_query/write_input_json.py - Starting to write to input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,613 - DEBUG - increase_radius_query/write_input_json.py - Target directory: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,613 - DEBUG - increase_radius_query/write_input_json.py - File path: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,613 - INFO - increase_radius_query/write_input_json.py - Data to be written: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 213}
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,614 - INFO - increase_radius_query/write_input_json.py - Data successfully written to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:30,614 - INFO - increase_radius_query/update_input_from_config.py - Config state updated with new radius: 213 km
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:32,618 - INFO - increase_radius_query/update_input_from_config.py - Executing API query with input_file: ./API_query/input.json, output_file: ./API_response/output_final_big.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,618 - INFO - API_query/clinical_trials_query.py - Starting Clinical Trials Query Process
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,618 - DEBUG - API_query/clinical_trials_query.py - Checking file paths...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,618 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,618 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,618 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,618 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,619 - DEBUG - API_query/clinical_trials_query.py - Checking if file path exists: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,619 - INFO - API_query/clinical_trials_query.py - The file '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json' exists.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,619 - DEBUG - API_query/clinical_trials_query.py - Loading input file from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,619 - INFO - API_query/clinical_trials_query.py - Input data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/input.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,619 - INFO - API_query/clinical_trials_query.py - Input data loaded successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,619 - DEBUG - API_query/clinical_trials_query.py - Loading config state from: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,619 - INFO - API_query/clinical_trials_query.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,619 - DEBUG - API_query/clinical_trials_query.py - Constructing query URL with data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Triple-Negative Breast Cancer', 'Location': 'New York, NY', 'Latitude': '40.7128', 'Longitude': '-74.0060', 'Distance': 213} and radius: 213
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,620 - INFO - API_query/query_logger.py - Query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,213)
+Input Data: {'Age': '50', 'Gender': 'Female', 'Medical Condition': 'Tr...
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,620 - INFO - API_query/clinical_trials_query.py - Constructed query URL: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,213)
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,620 - INFO - API_query/clinical_trials_query.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:32,620 - INFO - API_query/clinical_trials_query.py - Fetching data from API: https://clinicaltrials.gov/api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING|NOT_YET_RECRUITING|AVAILABLE&filter.geo=distance(40.7128,-74.0060,213)
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:32,622 - DEBUG - urllib3/connectionpool.py - Starting new HTTPS connection (1): clinicaltrials.gov:443
+<span style='color:#33FFF2'>[urllib3]</span> 2024-08-15 10:38:32,875 - DEBUG - urllib3/connectionpool.py - https://clinicaltrials.gov:443 "GET /api/v2/studies?format=json&query.cond=Triple-Negative+Breast+Cancer&pageSize=200&filter.overallStatus=RECRUITING%7CNOT_YET_RECRUITING%7CAVAILABLE&filter.geo=distance(40.7128,-74.0060,213) HTTP/1.1" 200 None
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,027 - INFO - API_query/clinical_trials_query.py - Data fetched successfully from the API.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,054 - INFO - API_query/update_stats.py - Config data loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,055 - INFO - API_query/update_stats.py - Config data saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../config_state.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,055 - INFO - API_query/update_stats.py - Stats section updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,055 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,161 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,161 - DEBUG - API_query/clinical_trials_query.py - Saving output data to: /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,254 - INFO - API_query/clinical_trials_query.py - Data successfully saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,254 - INFO - API_query/clinical_trials_query.py - Results saved to /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/output.json and /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_query/../API_response/finaloutput.json
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,254 - INFO - API_query/clinical_trials_query.py - Executing the API response processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,255 - INFO - API_response_processing/main.py - Starting clinical trials data processing.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,301 - DEBUG - API_response_processing/file_utils.py - Extracted clinical trial data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/dynamic_questions_input.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,327 - INFO - API_response_processing/main.py - Loaded 43 trials from input file.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,327 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05107674
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-28': 561
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03746431
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-06': 654
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05453825
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-15': 121
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04561362
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12': 472
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05852691
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,328 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-27': 560
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05544929
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-20': 553
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03821935
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-06-23': 1041
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04443348
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12': 107
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05377996
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-05': 988
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06400472
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,329 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-04': 958
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT02977468
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12-31': 502
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06246968
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-01-29': 896
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06084481
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-07-01': 684
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03709446
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-10': 776
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06099769
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-10': 1141
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,330 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05382286
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-02': 899
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05230186
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-23': 129
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04225117
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-09-30': 775
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04683679
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01': 138
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06112379
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/date_utils.py - Days until end date '2030-08-28': 2203
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06238479
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-03-04': 930
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,331 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT06103864
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/date_utils.py - Days until end date '2029-04-23': 1711
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT02926690
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-08': -15
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03606967
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-31': 137
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05585034
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-12': 1202
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05958199
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-01': 503
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05382299
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-05': 988
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,332 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05629585
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/date_utils.py - Days until end date '2030-03-27': 2049
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03808337
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01': 138
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05252390
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-11': 807
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT01042379
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/date_utils.py - Days until end date '2031-12': 2663
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05809752
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-03': 562
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04180371
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-31': 137
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05902988
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,333 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-06': 654
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05812807
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/date_utils.py - Days until end date '2033-05-31': 3210
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT04895709
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-12-31': 867
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03401385
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01-01': 138
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03504488
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12-30': 501
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,334 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05203445
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-01': 503
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05570253
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-10': 1141
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05274451
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-09': 746
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT03165487
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-12-31': 867
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/data_extraction.py - Processing trial with NCT ID: NCT05633654
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,335 - DEBUG - API_response_processing/date_utils.py - Days until end date '2031-08': 2541
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/file_utils.py - Extracted data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/extracted_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05107674
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03746431
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05453825
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04561362
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05852691
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05544929
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03821935
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04443348
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05377996
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06400472
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT02977468
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06246968
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06084481
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03709446
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06099769
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05382286
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,337 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05230186
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04225117
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04683679
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06112379
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06238479
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT06103864
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT02926690
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03606967
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05585034
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05958199
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05382299
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05629585
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03808337
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05252390
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT01042379
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05809752
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04180371
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05902988
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05812807
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT04895709
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03401385
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,338 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03504488
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,339 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05203445
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,339 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05570253
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,339 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05274451
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,339 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT03165487
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,339 - DEBUG - API_response_processing/info_extraction.py - Condensing trial with NCT ID: NCT05633654
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,339 - DEBUG - API_response_processing/file_utils.py - Condensed data with brief titles saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/condensed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05107674
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03746431
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05453825
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04561362
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05852691
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05544929
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03821935
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04443348
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05377996
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06400472
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT02977468
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06246968
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06084481
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03709446
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06099769
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05382286
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05230186
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04225117
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04683679
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06112379
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,340 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06238479
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT06103864
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT02926690
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03606967
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05585034
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05958199
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05382299
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05629585
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03808337
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05252390
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT01042379
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05809752
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04180371
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05902988
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05812807
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT04895709
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03401385
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03504488
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05203445
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,341 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05570253
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,342 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05274451
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,342 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT03165487
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,342 - DEBUG - API_response_processing/info_extraction.py - Detailing trial with NCT ID: NCT05633654
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,343 - DEBUG - API_response_processing/file_utils.py - Detailed data with brief titles and summaries saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/detailed.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,343 - DEBUG - API_response_processing/date_utils.py - Duration between '2021-09-29' and '2026-02-28' is 1613 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,343 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-28': 561
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,344 - DEBUG - API_response_processing/date_utils.py - Duration between '2019-01-17' and '2026-06' is 2692 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,344 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-06': 654
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,344 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-08-05' and '2024-12-15' is 863 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,344 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-15': 121
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,344 - DEBUG - API_response_processing/date_utils.py - Duration between '2020-07-17' and '2025-12' is 1963 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,345 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12': 472
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,345 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-07-18' and '2026-02-27' is 955 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,345 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-27': 560
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,345 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-10-26' and '2026-02-20' is 1213 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,345 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-02-20': 553
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,346 - DEBUG - API_response_processing/date_utils.py - Duration between '2019-02-21' and '2027-06-23' is 3044 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,346 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-06-23': 1041
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,346 - DEBUG - API_response_processing/date_utils.py - Duration between '2020-12-16' and '2024-12' is 1446 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,347 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12': 107
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,347 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-08-15' and '2027-05' is 1720 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,347 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-05': 988
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,347 - DEBUG - API_response_processing/date_utils.py - Duration between '2024-05-06' and '2027-04' is 1060 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,347 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-04': 958
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,347 - DEBUG - API_response_processing/date_utils.py - Duration between '2017-10-25' and '2025-12-31' is 2989 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,347 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12-31': 502
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,348 - DEBUG - API_response_processing/date_utils.py - Duration between '2024-01-29' and '2027-01-29' is 1096 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,348 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-01-29': 896
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,348 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-11-09' and '2026-07-01' is 965 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,348 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-07-01': 684
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,348 - DEBUG - API_response_processing/date_utils.py - Duration between '2019-04-16' and '2026-10' is 2725 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,348 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-10': 776
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,349 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-10-18' and '2027-10' is 1444 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,349 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-10': 1141
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,349 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-07-25' and '2027-02' is 1652 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,349 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-02': 899
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,349 - DEBUG - API_response_processing/date_utils.py - Duration between '2021-02-26' and '2024-12-23' is 1396 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,349 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-23': 129
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,351 - DEBUG - API_response_processing/date_utils.py - Duration between '2020-03-09' and '2026-09-30' is 2396 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,351 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-09-30': 775
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,352 - DEBUG - API_response_processing/date_utils.py - Duration between '2021-04-21' and '2025-01' is 1351 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,352 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01': 138
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,352 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-11-14' and '2030-08-28' is 2479 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,352 - DEBUG - API_response_processing/date_utils.py - Days until end date '2030-08-28': 2203
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,352 - DEBUG - API_response_processing/date_utils.py - Duration between '2024-03-05' and '2027-03-04' is 1094 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,352 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-03-04': 930
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,353 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-11-23' and '2029-04-23' is 1978 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,353 - DEBUG - API_response_processing/date_utils.py - Days until end date '2029-04-23': 1711
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,353 - DEBUG - API_response_processing/date_utils.py - Duration between '2017-05-29' and '2024-08' is 2621 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,353 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-08': -15
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,354 - DEBUG - API_response_processing/date_utils.py - Duration between '2021-04-13' and '2024-12-31' is 1358 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,354 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-31': 137
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,354 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-12-14' and '2027-12' is 1813 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,354 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-12': 1202
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,354 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-07-21' and '2026-01' is 895 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,354 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-01': 503
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,355 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-07-20' and '2027-05' is 1746 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,355 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-05': 988
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,355 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-11-28' and '2030-03-27' is 2676 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,355 - DEBUG - API_response_processing/date_utils.py - Days until end date '2030-03-27': 2049
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,355 - DEBUG - API_response_processing/date_utils.py - Duration between '2019-01-16' and '2025-01' is 2177 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,356 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01': 138
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,356 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-03-29' and '2026-11' is 1678 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,356 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-11': 807
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,356 - DEBUG - API_response_processing/date_utils.py - Duration between '2010-03-01' and '2031-12' is 7945 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,357 - DEBUG - API_response_processing/date_utils.py - Days until end date '2031-12': 2663
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,357 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-08-22' and '2026-03' is 922 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,357 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-03': 562
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,357 - DEBUG - API_response_processing/date_utils.py - Duration between '2019-11-07' and '2024-12-31' is 1881 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,358 - DEBUG - API_response_processing/date_utils.py - Days until end date '2024-12-31': 137
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,358 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-10-18' and '2026-06' is 957 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,358 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-06': 654
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,358 - DEBUG - API_response_processing/date_utils.py - Duration between '2023-05-10' and '2033-05-31' is 3674 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,358 - DEBUG - API_response_processing/date_utils.py - Days until end date '2033-05-31': 3210
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,359 - DEBUG - API_response_processing/date_utils.py - Duration between '2021-05-27' and '2026-12-31' is 2044 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,359 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-12-31': 867
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,360 - DEBUG - API_response_processing/date_utils.py - Duration between '2018-01-31' and '2025-01-01' is 2527 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,360 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-01-01': 138
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,360 - DEBUG - API_response_processing/date_utils.py - Duration between '2018-06-27' and '2025-12-30' is 2743 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,360 - DEBUG - API_response_processing/date_utils.py - Days until end date '2025-12-30': 501
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,360 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-01-31' and '2026-01' is 1431 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,360 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-01': 503
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,361 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-10-03' and '2027-10' is 1824 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,361 - DEBUG - API_response_processing/date_utils.py - Days until end date '2027-10': 1141
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,361 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-03-29' and '2026-09' is 1617 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,361 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-09': 746
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,361 - DEBUG - API_response_processing/date_utils.py - Duration between '2017-09-28' and '2026-12-31' is 3381 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,361 - DEBUG - API_response_processing/date_utils.py - Days until end date '2026-12-31': 867
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,362 - DEBUG - API_response_processing/date_utils.py - Duration between '2022-12-12' and '2031-08' is 3154 days.
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,362 - DEBUG - API_response_processing/date_utils.py - Days until end date '2031-08': 2541
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,366 - DEBUG - API_response_processing/file_utils.py - Cleaned data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/cleaned_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,367 - DEBUG - API_response_processing/file_utils.py - Filtered data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/filtered_exclusion_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,473 - DEBUG - API_response_processing/file_utils.py - All data saved to '/Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_processing/../API_response/all_study_data.json'
+<span style='color:#FF8233'>[API_response_processing]</span> 2024-08-15 10:38:33,474 - INFO - API_response_processing/main.py - Completed clinical trials data processing.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,474 - INFO - API_query/clinical_trials_query.py - Executing the API response evaluation.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,474 - INFO - API_response_evaluation/main.py - Starting API response evaluation process
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,474 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,475 - INFO - API_response_evaluation/evaluate_trials.py - Configuration loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,475 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_config function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,475 - INFO - API_response_evaluation/main.py - Configuration loaded successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,475 - INFO - API_response_evaluation/evaluate_trials.py - Starting load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,488 - INFO - API_response_evaluation/evaluate_trials.py - Trial data loaded successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,488 - INFO - API_response_evaluation/evaluate_trials.py - Finished load_trials_data function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,488 - INFO - API_response_evaluation/main.py - Loaded 43 trials from the final output file.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,488 - INFO - API_response_evaluation/evaluate_trials.py - Starting evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,488 - INFO - API_response_evaluation/evaluate_trials.py - Evaluation result: Too many trials
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,488 - INFO - API_response_evaluation/evaluate_trials.py - Finished evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,488 - INFO - API_response_evaluation/main.py - Evaluation completed successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,488 - INFO - API_response_evaluation/main.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,489 - INFO - API_response_evaluation/main.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,490 - INFO - API_query/clinical_trials_query.py - Finished executing the API response evaluation.
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:33,492 - INFO - increase_radius_query/update_input_from_config.py - The API query is complete, and the files have been written successfully.
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:33,492 - INFO - increase_radius_query/update_input_from_config.py - API query executed successfully.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:33,492 - DEBUG - ai_switcher/event_system.py - > Listener on_no_trials_found handled event: NO_TRIALS_FOUND successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,492 - INFO - API_response_evaluation/evaluate_trials.py - Evaluation result: No trials
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,492 - INFO - API_response_evaluation/evaluate_trials.py - Finished evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,492 - INFO - API_response_evaluation/main.py - Evaluation completed successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,492 - INFO - API_response_evaluation/main.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,492 - INFO - API_response_evaluation/main.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,492 - INFO - API_query/clinical_trials_query.py - Finished executing the API response evaluation.
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:33,492 - INFO - increase_radius_query/update_input_from_config.py - The API query is complete, and the files have been written successfully.
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:33,493 - INFO - increase_radius_query/update_input_from_config.py - API query executed successfully.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:33,493 - DEBUG - ai_switcher/event_system.py - > Listener on_no_trials_found handled event: NO_TRIALS_FOUND successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/evaluate_trials.py - Evaluation result: No trials
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/evaluate_trials.py - Finished evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/main.py - Evaluation completed successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/main.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/main.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,493 - INFO - API_query/clinical_trials_query.py - Finished executing the API response evaluation.
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:33,493 - INFO - increase_radius_query/update_input_from_config.py - The API query is complete, and the files have been written successfully.
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:33,493 - INFO - increase_radius_query/update_input_from_config.py - API query executed successfully.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:33,493 - DEBUG - ai_switcher/event_system.py - > Listener on_no_trials_found handled event: NO_TRIALS_FOUND successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/evaluate_trials.py - Evaluation result: No trials
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/evaluate_trials.py - Finished evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/main.py - Evaluation completed successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,493 - INFO - API_response_evaluation/main.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,494 - INFO - API_response_evaluation/main.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,494 - INFO - API_query/clinical_trials_query.py - Finished executing the API response evaluation.
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:33,494 - INFO - increase_radius_query/update_input_from_config.py - The API query is complete, and the files have been written successfully.
+<span style='color:#33FF99'>[increase_radius_query]</span> 2024-08-15 10:38:33,494 - INFO - increase_radius_query/update_input_from_config.py - API query executed successfully.
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:33,494 - DEBUG - ai_switcher/event_system.py - > Listener on_no_trials_found handled event: NO_TRIALS_FOUND successfully
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,494 - INFO - API_response_evaluation/evaluate_trials.py - Evaluation result: No trials
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,494 - INFO - API_response_evaluation/evaluate_trials.py - Finished evaluate_number_of_trials function
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,494 - INFO - API_response_evaluation/main.py - Evaluation completed successfully.
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,494 - INFO - API_response_evaluation/main.py - Config state loaded from /Users/jtc/Documents/o-jobs/GPTs/clinical-trials-GPT/ai_switcher/API_response_evaluation/../config_state.json
+<span style='color:#FFB533'>[API_response_evaluation]</span> 2024-08-15 10:38:33,494 - INFO - API_response_evaluation/main.py - Config state updated successfully.
+<span style='color:#8D33FF'>[API_query]</span> 2024-08-15 10:38:33,495 - INFO - API_query/clinical_trials_query.py - Finished executing the API response evaluation.
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:33,495 - INFO - medical/medical_assistant.py - The API query is complete, and the files have been written successfully.
+<span style='color:#3357FF'>[medical]</span> 2024-08-15 10:38:33,495 - INFO - medical/medical_assistant.py - Modified super response: Great, I will now look for trials with these characteristics.
 
 - Age: 50
 - Gender: Female
 - Medical Condition: Triple-Negative Breast Cancer
-- Location: Los Angeles, CA
-- Debug Grid: [(34.0522, -118.2437)]
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
 I will now search for trials that match this profile.
-API query execut...
+API query ...
+<span style='color:#FFC733'>[router]</span> 2024-08-15 10:38:33,495 - INFO - router/conversation_router.py - Response from MedicalAssistant: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
+I will now search for trials that match this profile.
+API...
+<span style='color:#FFC733'>[router]</span> 2024-08-15 10:38:33,495 - INFO - router/conversation_router.py - Assistant response after routing: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
+I will now search for trials that match this profile.
+A...
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:33,495 - INFO - ai_switcher/main.py - User input: y
+<span style='color:#FF5733'>[ai_switcher]</span> 2024-08-15 10:38:33,495 - INFO - ai_switcher/main.py - Assistant response: Great, I will now look for trials with these characteristics.
+
+- Age: 50
+- Gender: Female
+- Medical Condition: Triple-Negative Breast Cancer
+- Location: New York, NY
+- Debug Grid: [(40.7128, -74.0060)]
+I will now search for trials that match this profile.
+API query executed s...
