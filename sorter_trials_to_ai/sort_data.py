@@ -5,10 +5,8 @@ import os
 import logging
 import subprocess
 
-# Add the project root directory to the system path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Configure logging with DEBUG level for more granular information
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def run_timespan_phase():

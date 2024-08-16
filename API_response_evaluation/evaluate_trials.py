@@ -5,7 +5,6 @@ from event_system import event_system
 
 logging.info('Starting evaluate_trials.py')
 
-# Import the sort_trials_data function
 from sorter_trials_to_ai.sort_data import sort_trials_data
 from display_in_terminal.main import run_main
 

@@ -1,4 +1,4 @@
-# ./API_response_processing/main.py
+# ./main.py
 import os
 import logging
 import sys
