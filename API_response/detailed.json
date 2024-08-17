@@ -1,10 +1,5 @@
 [
     {
-        "nctNumber": "NCT06022029",
-        "briefTitle": "A Dose Escalation and Dose Expansion Study of Intratumoral ONM-501 Alone and in Combination With Cemiplimab in Patients With Advanced Solid Tumors and Lymphomas.",
-        "briefSummary": "A phase 1, multicenter, open label, non-randomized dose escalation and dose expansion study to examine the maximum tolerated dose, (MTD), minimum effective dose (MED) and/or recommended dose for expansion (RDE) of intratumoral ONM-501 as monotherapy and in combination with a PD-1 checkpoint inhibitor in patients with advanced solid tumors and lymphomas."
-    },
-    {
         "nctNumber": "NCT05107674",
         "briefTitle": "A Study of NX-1607 in Adults With Advanced Malignancies",
         "briefSummary": "This is a first-in-human Phase 1a/1b multicenter, open-label oncology study designed to evaluate the safety and anti-cancer activity of NX-1607 in patients with advanced malignancies."
@@ -20,14 +15,14 @@
         "briefSummary": "This study will test the safety, including side effects, and determine the characteristics of a drug called PRO1184 in participants with solid tumors.\n\nParticipants will have solid tumor cancer that has spread through the body (metastatic) or cannot be removed with surgery (unresectable)."
     },
     {
-        "nctNumber": "NCT05453825",
-        "briefTitle": "A Study of Navicixizumab Monotherapy or in Combination in Patients With Select Advanced Solid Tumors",
-        "briefSummary": "This is a study of navicixizumab monotherapy or in combination with paclitaxel or irinotecan in patients with advanced cancer. Patients will be enrolled into one of the following cancer cohorts:\n\n* Cohort A: CRC\n* Cohort B: Gastric and GEJ cancer\n* Cohort C: TNBC\n* Cohort D: Platinum-resistant/refractory epithelial ovarian, primary peritoneal, or fallopian tube cancer (ovarian cancer)"
+        "nctNumber": "NCT05491226",
+        "briefTitle": "Reinvigorating TNBC Response to Immunotherapy With Combination Myeloid Inhibition and Radiation",
+        "briefSummary": "This is an open-label prospective, single institution, Phase II study of pembrolizumab in combination with radiation therapy and CSF-1R inhibition in patients with high-risk TNBC. The primary objective is to assess the pathologic complete response (pCR) rate where pCR is defined as the absence of invasive disease in the breast and lymph nodes at the time of standard of care (SOC) treatment. Secondary objectives include evaluating the change in tumor infiltrating lymphocytes (TILs), safety and tolerability of the combination, progression-free survival, event-free survival, overall survival, and node clearance."
     },
     {
-        "nctNumber": "NCT05848739",
-        "briefTitle": "A Phase 1-2 of ST316 With Selected Advanced Unresectable and Metastatic Solid Tumors",
-        "briefSummary": "This is an open-label, two-part, phase 1-2 study designed to determine the safety, tolerability, PK, pharmacodynamics (PD), and proof-of-concept efficacy of ST316 administered IV in subjects with selected advanced solid tumors likely to harbor abnormalities of the WNT/\u03b2-catenin signaling pathway. The study consists of two phases: a phase 1 dose escalation/regimen exploration phase and a phase 2 expansion phase."
+        "nctNumber": "NCT06112379",
+        "briefTitle": "A Phase III Randomised Study to Evaluate Dato-DXd and Durvalumab for Neoadjuvant/Adjuvant Treatment of Triple-Negative or Hormone Receptor-low/HER2-negative Breast Cancer",
+        "briefSummary": "This is a Phase III, 2-arm, randomised, open-label, multicentre, global study assessing the efficacy and safety of neoadjuvant Dato-DXd plus durvalumab followed by adjuvant durvalumab with or without chemotherapy compared with neoadjuvant pembrolizumab plus chemotherapy followed by adjuvant pembrolizumab with or without chemotherapy in participants with previously untreated TNBC or hormone receptor-low/HER2-negative breast cancer."
     },
     {
         "nctNumber": "NCT05852691",
@@ -35,19 +30,9 @@
         "briefSummary": "The purpose of this study is to assess the efficacy and safety of a novel immunotherapy candidate, tobemstomig, in combination with nab-paclitaxel, for patients with previously untreated, locally advanced, unresectable or metastatic (Stage IV) programmed death-ligand 1 (PD-L1)-positive triple-negative breast cancer (TNBC)."
     },
     {
-        "nctNumber": "NCT05929768",
-        "briefTitle": "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer",
-        "briefSummary": "This phase III trial compares the effects of shorter chemotherapy (chemo)-immunotherapy without anthracyclines to usual chemo-immunotherapy for the treatment of early-stage triple negative breast cancer. Paclitaxel is in a class of medications called anti-microtubule agents. It stops cancer cells from growing and dividing and may kill them. Carboplatin is in a class of medications known as platinum-containing compounds. It works in a way similar to the anticancer drug cisplatin, but may be better tolerated than cisplatin. Carboplatin works by killing, stopping or slowing the growth of cancer cells. Cyclophosphamide is in a class of medications called alkylating agents. It works by damaging the cell's deoxyribonucleic acid (DNA) and may kill cancer cells. It may also lower the body's immune response. Docetaxel is in a class of medications called taxanes. It stops cancer cells from growing and dividing and may kill them. Doxorubicin is an anthracycline chemotherapy drug that damages DNA and may kill cancer cells. Pembrolizumab may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Shorter treatment without anthracycline chemotherapy may work the same as the usual anthracycline chemotherapy treatment for early-stage triple negative breast cancer."
-    },
-    {
-        "nctNumber": "NCT05491226",
-        "briefTitle": "Reinvigorating TNBC Response to Immunotherapy With Combination Myeloid Inhibition and Radiation",
-        "briefSummary": "This is an open-label prospective, single institution, Phase II study of pembrolizumab in combination with radiation therapy and CSF-1R inhibition in patients with high-risk TNBC. The primary objective is to assess the pathologic complete response (pCR) rate where pCR is defined as the absence of invasive disease in the breast and lymph nodes at the time of standard of care (SOC) treatment. Secondary objectives include evaluating the change in tumor infiltrating lymphocytes (TILs), safety and tolerability of the combination, progression-free survival, event-free survival, overall survival, and node clearance."
-    },
-    {
-        "nctNumber": "NCT05318469",
-        "briefTitle": "Ivermectin and Balstilimab for the Treatment of Metastatic Triple Negative Breast Cancer",
-        "briefSummary": "This phase II trial studies the side effects and best dose of ivermectin in combination with balstilimab and to see how well they they work in shrinking tumors in patients with triple negative breast cancer that has spread to other places in the body (metastatic). Immunotherapy with monoclonal antibodies, such as balstilimab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Ivermectin may help block the formation of growths that may become cancer. Giving ivermectin with balstilimab may increase the effect of balstilimab in shrinking tumors in patients with triple negative breast cancer. The secondary objectives of the study include evaluating the following efficacy outcomes: objective response rate (ORR), progression free survival (PFS), overall survival (OS), duration of response (DOR), clinical benefit rate (CBR), and patients' quality of life (QOL) by European Organization for Research and Treatment of Cancer (EORTC) Quality of Life Questionnaire Core 30 (QLQ-C30)."
+        "nctNumber": "NCT06022029",
+        "briefTitle": "A Dose Escalation and Dose Expansion Study of Intratumoral ONM-501 Alone and in Combination With Cemiplimab in Patients With Advanced Solid Tumors and Lymphomas.",
+        "briefSummary": "A phase 1, multicenter, open label, non-randomized dose escalation and dose expansion study to examine the maximum tolerated dose, (MTD), minimum effective dose (MED) and/or recommended dose for expansion (RDE) of intratumoral ONM-501 as monotherapy and in combination with a PD-1 checkpoint inhibitor in patients with advanced solid tumors and lymphomas."
     },
     {
         "nctNumber": "NCT03546686",
@@ -60,29 +45,14 @@
         "briefSummary": "T Cell Receptor-engineered T-cell therapy (TCR T-cell therapy) offers a potentially transformative approach to treating cancer, but is currently limited by the lack of known targets (Maus and June, 2016; Ping et al., 2018). Arguably the most clinically meaningful way to discover new targets and TCRs for TCR T-cell therapy is to study the tumor-infiltrating lymphocytes of patients that are actively responding to immune checkpoint inhibitor (ICI) therapy. These T cells are clonally expanded as a result of checkpoint inhibition and are responsible for the patient's clinical response. The goal of this study is to acquire tumor and blood samples from up to 200 patients with solid tumor malignancies who respond to ICI therapy. T cells will be isolated from these samples and the targets of their TCRs determined using TScan's genome-wide, high-throughput target ID technology. The expected outcome of this study is the discovery of a collection of new targets for TCR T-cell therapy, along with associated TCRs that will then be developed as novel therapies for patients with similar malignancies."
     },
     {
-        "nctNumber": "NCT04225117",
-        "briefTitle": "A Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)",
-        "briefSummary": "The primary purpose of this study is to determine the antitumor activity of enfortumab vedotin as measured by confirmed objective response rate (ORR) per RECIST v1.1.\n\nThis study will also assess other measures of antitumor activity; overall survival (OS); as well as the safety and tolerability of enfortumab vedotin for cohorts 1 to 8 and enfortumab vedotin + pembrolizumab in cohort 9."
+        "nctNumber": "NCT05453825",
+        "briefTitle": "A Study of Navicixizumab Monotherapy or in Combination in Patients With Select Advanced Solid Tumors",
+        "briefSummary": "This is a study of navicixizumab monotherapy or in combination with paclitaxel or irinotecan in patients with advanced cancer. Patients will be enrolled into one of the following cancer cohorts:\n\n* Cohort A: CRC\n* Cohort B: Gastric and GEJ cancer\n* Cohort C: TNBC\n* Cohort D: Platinum-resistant/refractory epithelial ovarian, primary peritoneal, or fallopian tube cancer (ovarian cancer)"
     },
     {
-        "nctNumber": "NCT06112379",
-        "briefTitle": "A Phase III Randomised Study to Evaluate Dato-DXd and Durvalumab for Neoadjuvant/Adjuvant Treatment of Triple-Negative or Hormone Receptor-low/HER2-negative Breast Cancer",
-        "briefSummary": "This is a Phase III, 2-arm, randomised, open-label, multicentre, global study assessing the efficacy and safety of neoadjuvant Dato-DXd plus durvalumab followed by adjuvant durvalumab with or without chemotherapy compared with neoadjuvant pembrolizumab plus chemotherapy followed by adjuvant pembrolizumab with or without chemotherapy in participants with previously untreated TNBC or hormone receptor-low/HER2-negative breast cancer."
-    },
-    {
-        "nctNumber": "NCT06422455",
-        "briefTitle": "Access to Genetic Testing in Underserved Patients With Cancer",
-        "briefSummary": "This study compares the experiences of people who receive information about genetic testing from a computer-generated character to patients who receive information from a human genetics healthcare provider. Patients with cancer are increasingly recommended for genetic testing as standard of care. Multiple factors contribute to low usage of genetic testing but for many patients the lack of access to genetic counseling and testing is an important and flexible factor. Lack of access is especially relevant to racial/ethnic minority patients and those living in non-metropolitan rural settings who are frequently cared for at safety-net hospitals with limited genetics services. Alternative delivery models are necessary to improve rates of access to genetic testing in patients with cancer. Health information technology is under used by genetics providers. A patient-facing relational agent (PERLA) will provide pre-test genetics education in both English and Spanish across two clinical settings to facilitate more timely access to genetic testing. Using the PERLA intervention may help researchers learn different ways to provide education about genetic testing to patients with cancer compared to usual care."
-    },
-    {
-        "nctNumber": "NCT05082610",
-        "briefTitle": "A Study of HMBD-002, a Monoclonal Antibody Targeting VISTA, as Monotherapy and Combined With Pembrolizumab",
-        "briefSummary": "This is a phase 1/2, open-label, multi-center, first-in-human, two-stage (Part 1: dose escalation and Part 2: dose expansion) study evaluating multiple doses and schedules of intravenously (IV) administered HMBD-002, with or without pembrolizumab, in patients with advanced solid tumors (i.e., locally advanced and unresectable, or metastatic)."
-    },
-    {
-        "nctNumber": "NCT06299163",
-        "briefTitle": "NM32-2668 in Adult Patients With Selected Advanced Solid Tumors",
-        "briefSummary": "This is a first-in-human, open-label, multi-center, Phase 1, dose-escalation study with expansion cohorts to evaluate NM32-2668 for safety and immunogenicity, to determine the maximal tolerated dose and recommended Phase 2 dose, define the pharmacokinetics, to explore the pharmacodynamics, and to obtain preliminary evidence of the clinical activity in adult patients with selected advanced solid tumors."
+        "nctNumber": "NCT05848739",
+        "briefTitle": "A Phase 1-2 of ST316 With Selected Advanced Unresectable and Metastatic Solid Tumors",
+        "briefSummary": "This is an open-label, two-part, phase 1-2 study designed to determine the safety, tolerability, PK, pharmacodynamics (PD), and proof-of-concept efficacy of ST316 administered IV in subjects with selected advanced solid tumors likely to harbor abnormalities of the WNT/\u03b2-catenin signaling pathway. The study consists of two phases: a phase 1 dose escalation/regimen exploration phase and a phase 2 expansion phase."
     },
     {
         "nctNumber": "NCT05585034",
@@ -90,14 +60,24 @@
         "briefSummary": "The purpose of this study is to evaluate the safety, tolerability, and pharmacokinetics of intravenous (IV) administration of XmAb808 in combination with pembrolizumab in subjects with selected advanced solid tumors and to identify the minimum safe and biologically effective/recommended dose (RD) and schedule for XmAb808."
     },
     {
-        "nctNumber": "NCT04333706",
-        "briefTitle": "A Dose Finding Phase 1 of Sarilumab Plus Capecitabine in HER2/Neu-Negative Metastatic Breast Cancer and a Single-arm, Historically-controlled Phase 2 Study of Sarilumab Plus Capecitabine in Stage I-III Triple Negative Breast Cancer With High-Risk Residual Disease (EMPOWER)",
-        "briefSummary": "This study looks to advance a novel and potent strategy to eliminate minimal residual disease (MRD) in triple negative breast cancer (TNBC) present even after multimodal treatment, thereby improving survival and increasing cure rate in this aggressive cancer. Patients with locally advanced TNBC are at high risk of developing lethal metastatic disease within 2 years of diagnosis, especially for those without a pathologic complete response (pCR) after neoadjuvant chemotherapy. The high risk occurs despite surgical excision of the primary tumor and axillary lymph nodes to eliminate residual disease."
+        "nctNumber": "NCT04225117",
+        "briefTitle": "A Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)",
+        "briefSummary": "The primary purpose of this study is to determine the antitumor activity of enfortumab vedotin as measured by confirmed objective response rate (ORR) per RECIST v1.1.\n\nThis study will also assess other measures of antitumor activity; overall survival (OS); as well as the safety and tolerability of enfortumab vedotin for cohorts 1 to 8 and enfortumab vedotin + pembrolizumab in cohort 9."
     },
     {
-        "nctNumber": "NCT05629585",
-        "briefTitle": "A Study of Dato-DXd With or Without Durvalumab Versus Investigator's Choice of Therapy in Patients With Stage I-III Triple-negative Breast Cancer Without Pathological Complete Response Following Neoadjuvant Therapy (TROPION-Breast03)",
-        "briefSummary": "This is a Phase III, randomized, open-label, 3-arm, multicenter, international study assessing the efficacy and safety of Dato-DXd with or without durvalumab compared with ICT in participants with stage I to III TNBC with residual invasive disease in the breast and/or axillary lymph nodes at surgical resection following neoadjuvant systemic therapy."
+        "nctNumber": "NCT05318469",
+        "briefTitle": "Ivermectin and Balstilimab for the Treatment of Metastatic Triple Negative Breast Cancer",
+        "briefSummary": "This phase II trial studies the side effects and best dose of ivermectin in combination with balstilimab and to see how well they they work in shrinking tumors in patients with triple negative breast cancer that has spread to other places in the body (metastatic). Immunotherapy with monoclonal antibodies, such as balstilimab, may help the body's immune system attack the cancer, and may interfere with the ability of tumor cells to grow and spread. Ivermectin may help block the formation of growths that may become cancer. Giving ivermectin with balstilimab may increase the effect of balstilimab in shrinking tumors in patients with triple negative breast cancer. The secondary objectives of the study include evaluating the following efficacy outcomes: objective response rate (ORR), progression free survival (PFS), overall survival (OS), duration of response (DOR), clinical benefit rate (CBR), and patients' quality of life (QOL) by European Organization for Research and Treatment of Cancer (EORTC) Quality of Life Questionnaire Core 30 (QLQ-C30)."
+    },
+    {
+        "nctNumber": "NCT05929768",
+        "briefTitle": "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer",
+        "briefSummary": "This phase III trial compares the effects of shorter chemotherapy (chemo)-immunotherapy without anthracyclines to usual chemo-immunotherapy for the treatment of early-stage triple negative breast cancer. Paclitaxel is in a class of medications called anti-microtubule agents. It stops cancer cells from growing and dividing and may kill them. Carboplatin is in a class of medications known as platinum-containing compounds. It works in a way similar to the anticancer drug cisplatin, but may be better tolerated than cisplatin. Carboplatin works by killing, stopping or slowing the growth of cancer cells. Cyclophosphamide is in a class of medications called alkylating agents. It works by damaging the cell's deoxyribonucleic acid (DNA) and may kill cancer cells. It may also lower the body's immune response. Docetaxel is in a class of medications called taxanes. It stops cancer cells from growing and dividing and may kill them. Doxorubicin is an anthracycline chemotherapy drug that damages DNA and may kill cancer cells. Pembrolizumab may stop the growth of tumor cells by blocking some of the enzymes needed for cell growth. Shorter treatment without anthracycline chemotherapy may work the same as the usual anthracycline chemotherapy treatment for early-stage triple negative breast cancer."
+    },
+    {
+        "nctNumber": "NCT05082610",
+        "briefTitle": "A Study of HMBD-002, a Monoclonal Antibody Targeting VISTA, as Monotherapy and Combined With Pembrolizumab",
+        "briefSummary": "This is a phase 1/2, open-label, multi-center, first-in-human, two-stage (Part 1: dose escalation and Part 2: dose expansion) study evaluating multiple doses and schedules of intravenously (IV) administered HMBD-002, with or without pembrolizumab, in patients with advanced solid tumors (i.e., locally advanced and unresectable, or metastatic)."
     },
     {
         "nctNumber": "NCT05252390",
@@ -105,9 +85,34 @@
         "briefSummary": "NUV-868-01 is a first-in human, open- label, Phase 1/2 dose escalation and expansion study in patients with advanced solid tumors. The Phase 1 and 1b portions include patients with advanced solid tumors and are designed to determine the safety and the dose(s) of NUV-868 to be used as monotherapy and in combination with olaparib or enzalutamide for the Phase 2 portion. In Phase 2, NUV-868 in combination with olaparib or enzalutamide will be given to determine the safety and efficacy of these study treatments. One cohort of patients (with enzalutamide-na\u00efve metastatic castration-resistant prostate cancer) will be randomized to receive either NUV-868 monotherapy, enzalutamide monotherapy, or the combination of NUV-868 + enzalutamide. Patients will self-administer NUV-868 orally daily in 28-day cycles as monotherapy in Phases 1 and 2. In Phases 1b and 2, patients will self-administer NUV-868 orally daily in 28-day cycles in combination with olaparib or enzalutamide daily at standard prescribed doses (Phase 1b) or at the recommended Phase 2 combination dose (RP2cD) that is determined in Phase 1b. Patients will be treated until disease progression, toxicity, withdrawal of consent, or termination of the study."
     },
     {
+        "nctNumber": "NCT06422455",
+        "briefTitle": "Access to Genetic Testing in Underserved Patients With Cancer",
+        "briefSummary": "This study compares the experiences of people who receive information about genetic testing from a computer-generated character to patients who receive information from a human genetics healthcare provider. Patients with cancer are increasingly recommended for genetic testing as standard of care. Multiple factors contribute to low usage of genetic testing but for many patients the lack of access to genetic counseling and testing is an important and flexible factor. Lack of access is especially relevant to racial/ethnic minority patients and those living in non-metropolitan rural settings who are frequently cared for at safety-net hospitals with limited genetics services. Alternative delivery models are necessary to improve rates of access to genetic testing in patients with cancer. Health information technology is under used by genetics providers. A patient-facing relational agent (PERLA) will provide pre-test genetics education in both English and Spanish across two clinical settings to facilitate more timely access to genetic testing. Using the PERLA intervention may help researchers learn different ways to provide education about genetic testing to patients with cancer compared to usual care."
+    },
+    {
+        "nctNumber": "NCT04333706",
+        "briefTitle": "A Dose Finding Phase 1 of Sarilumab Plus Capecitabine in HER2/Neu-Negative Metastatic Breast Cancer and a Single-arm, Historically-controlled Phase 2 Study of Sarilumab Plus Capecitabine in Stage I-III Triple Negative Breast Cancer With High-Risk Residual Disease (EMPOWER)",
+        "briefSummary": "This study looks to advance a novel and potent strategy to eliminate minimal residual disease (MRD) in triple negative breast cancer (TNBC) present even after multimodal treatment, thereby improving survival and increasing cure rate in this aggressive cancer. Patients with locally advanced TNBC are at high risk of developing lethal metastatic disease within 2 years of diagnosis, especially for those without a pathologic complete response (pCR) after neoadjuvant chemotherapy. The high risk occurs despite surgical excision of the primary tumor and axillary lymph nodes to eliminate residual disease."
+    },
+    {
         "nctNumber": "NCT01042379",
         "briefTitle": "I-SPY TRIAL: Neoadjuvant and Personalized Adaptive Novel Agents to Treat Breast Cancer",
         "briefSummary": "The purpose of this study is to further advance the ability to practice personalized medicine by learning which new drug agents are most effective with which types of breast cancer tumors and by learning more about which early indicators of response (tumor analysis prior to surgery via magnetic resonance imaging (MRI) images along with tissue and blood samples) are predictors of treatment success."
+    },
+    {
+        "nctNumber": "NCT03401385",
+        "briefTitle": "First-in-human Study of DS-1062a for Advanced Solid Tumors (TROPION-PanTumor01)",
+        "briefSummary": "This study is one single group of participants with non-small cell lung cancer (NSCLC) who have not been cured by other treatments. It is the first time the drug has been used in humans. There will be two parts and a sub-study.\n\nThe primary purpose of the parts are:\n\n* Dose Escalation: To investigate the safety and tolerability and to determine the maximum tolerated dose (MTD) and the recommended dose for expansion (RDE) of DS-1062a\n* Dose Expansion: To investigate the safety and tolerability of DS-1062a in additional solid tumors\n\nThis study is expected to last approximately 6 years from the time the first participant is enrolled to the time the last subject is off the study. Study sites are located in both the United States and Japan.\n\nThe number of treatment cycles is not fixed in this study. Participants who continue to benefit from the study treatment may continue, unless:\n\n* they withdraw\n* their disease gets worse\n* they experience unacceptable side effects.\n\nThe primary purpose of the sub-study is to compare the effectiveness of steroid versus non-steroid mouthwash as prophylaxis against oral mucositis/stomatitis in participants receiving DS-1062a.\n\nThe sub-study is a randomized study that will include approximately 76 participants enrolling into the Dose Expansion part."
+    },
+    {
+        "nctNumber": "NCT05629585",
+        "briefTitle": "A Study of Dato-DXd With or Without Durvalumab Versus Investigator's Choice of Therapy in Patients With Stage I-III Triple-negative Breast Cancer Without Pathological Complete Response Following Neoadjuvant Therapy (TROPION-Breast03)",
+        "briefSummary": "This is a Phase III, randomized, open-label, 3-arm, multicenter, international study assessing the efficacy and safety of Dato-DXd with or without durvalumab compared with ICT in participants with stage I to III TNBC with residual invasive disease in the breast and/or axillary lymph nodes at surgical resection following neoadjuvant systemic therapy."
+    },
+    {
+        "nctNumber": "NCT03504488",
+        "briefTitle": "CAB-ROR2-ADC Safety and Efficacy Study in Patients With TNBC or Head & Neck Cancer (Ph1) and NSCLC or Melanoma (Ph2)",
+        "briefSummary": "The objective of this study is to assess safety and efficacy of CAB-ROR2-ADC in solid tumors"
     },
     {
         "nctNumber": "NCT05812807",
@@ -120,14 +125,9 @@
         "briefSummary": "The purpose of this study is to assess the safety, tolerability, and recommended dose(s) of BMS-986340 as monotherapy and in combination with nivolumab or docetaxel in participants with advanced solid tumors. This study is a first-in-human (FIH) study of BMS-986340 in participants with advanced solid tumors."
     },
     {
-        "nctNumber": "NCT03401385",
-        "briefTitle": "First-in-human Study of DS-1062a for Advanced Solid Tumors (TROPION-PanTumor01)",
-        "briefSummary": "This study is one single group of participants with non-small cell lung cancer (NSCLC) who have not been cured by other treatments. It is the first time the drug has been used in humans. There will be two parts and a sub-study.\n\nThe primary purpose of the parts are:\n\n* Dose Escalation: To investigate the safety and tolerability and to determine the maximum tolerated dose (MTD) and the recommended dose for expansion (RDE) of DS-1062a\n* Dose Expansion: To investigate the safety and tolerability of DS-1062a in additional solid tumors\n\nThis study is expected to last approximately 6 years from the time the first participant is enrolled to the time the last subject is off the study. Study sites are located in both the United States and Japan.\n\nThe number of treatment cycles is not fixed in this study. Participants who continue to benefit from the study treatment may continue, unless:\n\n* they withdraw\n* their disease gets worse\n* they experience unacceptable side effects.\n\nThe primary purpose of the sub-study is to compare the effectiveness of steroid versus non-steroid mouthwash as prophylaxis against oral mucositis/stomatitis in participants receiving DS-1062a.\n\nThe sub-study is a randomized study that will include approximately 76 participants enrolling into the Dose Expansion part."
-    },
-    {
-        "nctNumber": "NCT03504488",
-        "briefTitle": "CAB-ROR2-ADC Safety and Efficacy Study in Patients With TNBC or Head & Neck Cancer (Ph1) and NSCLC or Melanoma (Ph2)",
-        "briefSummary": "The objective of this study is to assess safety and efficacy of CAB-ROR2-ADC in solid tumors"
+        "nctNumber": "NCT06299163",
+        "briefTitle": "NM32-2668 in Adult Patients With Selected Advanced Solid Tumors",
+        "briefSummary": "This is a first-in-human, open-label, multi-center, Phase 1, dose-escalation study with expansion cohorts to evaluate NM32-2668 for safety and immunogenicity, to determine the maximal tolerated dose and recommended Phase 2 dose, define the pharmacokinetics, to explore the pharmacodynamics, and to obtain preliminary evidence of the clinical activity in adult patients with selected advanced solid tumors."
     },
     {
         "nctNumber": "NCT05989828",

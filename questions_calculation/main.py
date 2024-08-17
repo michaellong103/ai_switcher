@@ -1,67 +1,17 @@
+# ./main.py
 import json
-import numpy as np
+from utils import (
+    load_json,
+    find_best_group_in_times_json,
+    find_best_group_in_phase_json,
+    calculate_mad,
+    extract_nct_numbers_from_times,
+    extract_nct_numbers_from_phase,
+    find_duplicated_trials,
+    print_group_info  # Ensure this function is imported
+)
 
-def load_json(file_path):
-    """Load JSON data from a file."""
-    with open(file_path, 'r') as file:
-        return json.load(file)
-
-def find_best_group_in_times_json(times_data):
-    """Find the largest group in times_question_output.json that is closest to but does not exceed 10 trials."""
-    best_group = None
-    closest_count = 0
-    trial_counts = []
-    num_groups = 0
-
-    if isinstance(times_data, list):
-        for group in times_data:
-            trial_count = group['total']
-            trial_counts.append(trial_count)
-            num_groups += 1
-            print(f"Group '{group['trialGroup']}' has {trial_count} trials.")
-            if 0 < trial_count <= 10 and trial_count > closest_count:
-                closest_count = trial_count
-                best_group = group
-
-    print(f"Total number of groups in 'times_question_output.json': {num_groups}")
-    return best_group, closest_count, trial_counts
-
-def find_best_group_in_phase_json(phase_data):
-    """Find the largest group in phase_question_output.json that is closest to but does not exceed 10 trials."""
-    best_group = None
-    closest_count = 0
-    trial_counts = []
-    num_groups = 0
-
-    if 'options' in phase_data:
-        for option in phase_data['options']:
-            trial_counts.append(option['NCTCount'])
-            num_groups += 1
-            print(f"Group '{option['optionText']}' has {option['NCTCount']} trials.")
-            if 0 < option['NCTCount'] <= 10 and option['NCTCount'] > closest_count:
-                closest_count = option['NCTCount']
-                best_group = option
-
-    print(f"Total number of groups in 'phase_question_output.json': {num_groups}")
-    return best_group, closest_count, trial_counts
-
-def calculate_mad(trial_counts):
-    """Calculate the Mean Absolute Deviation (MAD) for a list of trial counts."""
-    if len(trial_counts) == 0:
-        return None, None
-    mean = np.mean(trial_counts)
-    deviations = [abs(x - mean) for x in trial_counts]
-    mad = np.mean(deviations)
-    return mad, mean
-
-def print_group_info(group, group_name, source_file, count):
-    """Print the group name, source file, and count in green."""
-    green_text = "\033[92m"  # ANSI escape code for green text
-    reset_text = "\033[0m"   # ANSI escape code to reset text color
-
-    print(f"{green_text}Group: {group_name} from {source_file} with {count} trials{reset_text}")
-
-def main():
+def print_results_and_generate_output():
     # Load JSON data
     times_data = load_json('../API_response/times_question_output.json')
     phase_data = load_json('../API_response/phase_question_output.json')
@@ -103,5 +53,45 @@ def main():
     else:
         print("Mean Absolute Deviation (MAD) for 'phase_question_output.json': No valid data")
 
+    # Calculate and print duplicated trials
+    times_ncts = extract_nct_numbers_from_times(times_data)
+    phase_ncts = extract_nct_numbers_from_phase(phase_data)
+    duplicates, num_duplicates = find_duplicated_trials(times_ncts, phase_ncts)
+
+    print(f"\nNumber of duplicated trials between phases: {num_duplicates}")
+    if num_duplicates > 0:
+        print("List of duplicated trials:")
+        print(duplicates)
+
+    # Generate the final JSON output
+    final_data = {
+        "questions": [
+            {
+                "question": "times_question_output.json",
+                "summary": {
+                    "total_trials": sum(times_trial_counts),
+                    "average": times_mean,
+                    "mad": times_mad
+                },
+                "data": times_data
+            },
+            {
+                "question": "phase_question_output.json",
+                "summary": {
+                    "total_trials": sum(phase_trial_counts),
+                    "average": phase_mean,
+                    "mad": phase_mad,
+                    "duplicated_trials": num_duplicates
+                },
+                "data": phase_data
+            }
+        ]
+    }
+
+    # Write final data to a JSON file
+    with open('final_question_output.json', 'w') as json_file:
+        json.dump(final_data, json_file, indent=4)
+    print("\nFinal JSON output generated: final_question_output.json")
+
 if __name__ == "__main__":
-    main()
+    print_results_and_generate_output()

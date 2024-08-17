@@ -1,9 +1,5 @@
 [
     {
-        "nctNumber": "NCT06022029",
-        "briefTitle": "A Dose Escalation and Dose Expansion Study of Intratumoral ONM-501 Alone and in Combination With Cemiplimab in Patients With Advanced Solid Tumors and Lymphomas."
-    },
-    {
         "nctNumber": "NCT05107674",
         "briefTitle": "A Study of NX-1607 in Adults With Advanced Malignancies"
     },
@@ -16,28 +12,20 @@
         "briefTitle": "PRO1184 for Advanced Solid Tumors"
     },
     {
-        "nctNumber": "NCT05453825",
-        "briefTitle": "A Study of Navicixizumab Monotherapy or in Combination in Patients With Select Advanced Solid Tumors"
+        "nctNumber": "NCT05491226",
+        "briefTitle": "Reinvigorating TNBC Response to Immunotherapy With Combination Myeloid Inhibition and Radiation"
     },
     {
-        "nctNumber": "NCT05848739",
-        "briefTitle": "A Phase 1-2 of ST316 With Selected Advanced Unresectable and Metastatic Solid Tumors"
+        "nctNumber": "NCT06112379",
+        "briefTitle": "A Phase III Randomised Study to Evaluate Dato-DXd and Durvalumab for Neoadjuvant/Adjuvant Treatment of Triple-Negative or Hormone Receptor-low/HER2-negative Breast Cancer"
     },
     {
         "nctNumber": "NCT05852691",
         "briefTitle": "A Study of Tobemstomig + Nab-Paclitaxel Compared With Pembrolizumab + Nab-Paclitaxel in Participants With Previously Untreated, PD-L1-Positive, Locally-Advanced Unresectable or Metastatic Triple-Negative Breast Cancer"
     },
     {
-        "nctNumber": "NCT05929768",
-        "briefTitle": "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer"
-    },
-    {
-        "nctNumber": "NCT05491226",
-        "briefTitle": "Reinvigorating TNBC Response to Immunotherapy With Combination Myeloid Inhibition and Radiation"
-    },
-    {
-        "nctNumber": "NCT05318469",
-        "briefTitle": "Ivermectin and Balstilimab for the Treatment of Metastatic Triple Negative Breast Cancer"
+        "nctNumber": "NCT06022029",
+        "briefTitle": "A Dose Escalation and Dose Expansion Study of Intratumoral ONM-501 Alone and in Combination With Cemiplimab in Patients With Advanced Solid Tumors and Lymphomas."
     },
     {
         "nctNumber": "NCT03546686",
@@ -48,44 +36,60 @@
         "briefTitle": "A Tissue Collection Study in Patients Who Respond to Immune Checkpoint Inhibitors to Identify Targets of Tumor-Reactive T Cells."
     },
     {
-        "nctNumber": "NCT04225117",
-        "briefTitle": "A Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)"
+        "nctNumber": "NCT05453825",
+        "briefTitle": "A Study of Navicixizumab Monotherapy or in Combination in Patients With Select Advanced Solid Tumors"
     },
     {
-        "nctNumber": "NCT06112379",
-        "briefTitle": "A Phase III Randomised Study to Evaluate Dato-DXd and Durvalumab for Neoadjuvant/Adjuvant Treatment of Triple-Negative or Hormone Receptor-low/HER2-negative Breast Cancer"
-    },
-    {
-        "nctNumber": "NCT06422455",
-        "briefTitle": "Access to Genetic Testing in Underserved Patients With Cancer"
-    },
-    {
-        "nctNumber": "NCT05082610",
-        "briefTitle": "A Study of HMBD-002, a Monoclonal Antibody Targeting VISTA, as Monotherapy and Combined With Pembrolizumab"
-    },
-    {
-        "nctNumber": "NCT06299163",
-        "briefTitle": "NM32-2668 in Adult Patients With Selected Advanced Solid Tumors"
+        "nctNumber": "NCT05848739",
+        "briefTitle": "A Phase 1-2 of ST316 With Selected Advanced Unresectable and Metastatic Solid Tumors"
     },
     {
         "nctNumber": "NCT05585034",
         "briefTitle": "Phase 1, First-in-human, Dose-finding and Expansion Study to Evaluate XmAb\u00ae808 in Combination With Pembrolizumab in Advanced Solid Tumors"
     },
     {
-        "nctNumber": "NCT04333706",
-        "briefTitle": "A Dose Finding Phase 1 of Sarilumab Plus Capecitabine in HER2/Neu-Negative Metastatic Breast Cancer and a Single-arm, Historically-controlled Phase 2 Study of Sarilumab Plus Capecitabine in Stage I-III Triple Negative Breast Cancer With High-Risk Residual Disease (EMPOWER)"
+        "nctNumber": "NCT04225117",
+        "briefTitle": "A Study to Evaluate Enfortumab Vedotin in Subjects With Locally Advanced or Metastatic Malignant Solid Tumors (EV-202)"
     },
     {
-        "nctNumber": "NCT05629585",
-        "briefTitle": "A Study of Dato-DXd With or Without Durvalumab Versus Investigator's Choice of Therapy in Patients With Stage I-III Triple-negative Breast Cancer Without Pathological Complete Response Following Neoadjuvant Therapy (TROPION-Breast03)"
+        "nctNumber": "NCT05318469",
+        "briefTitle": "Ivermectin and Balstilimab for the Treatment of Metastatic Triple Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT05929768",
+        "briefTitle": "Shorter Chemo-Immunotherapy Without Anthracycline Drugs for Early-Stage Triple Negative Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT05082610",
+        "briefTitle": "A Study of HMBD-002, a Monoclonal Antibody Targeting VISTA, as Monotherapy and Combined With Pembrolizumab"
     },
     {
         "nctNumber": "NCT05252390",
         "briefTitle": "NUV-868 as Monotherapy and in Combination With Olaparib or Enzalutamide in Adult Patients With Advanced Solid Tumors"
     },
     {
+        "nctNumber": "NCT06422455",
+        "briefTitle": "Access to Genetic Testing in Underserved Patients With Cancer"
+    },
+    {
+        "nctNumber": "NCT04333706",
+        "briefTitle": "A Dose Finding Phase 1 of Sarilumab Plus Capecitabine in HER2/Neu-Negative Metastatic Breast Cancer and a Single-arm, Historically-controlled Phase 2 Study of Sarilumab Plus Capecitabine in Stage I-III Triple Negative Breast Cancer With High-Risk Residual Disease (EMPOWER)"
+    },
+    {
         "nctNumber": "NCT01042379",
         "briefTitle": "I-SPY TRIAL: Neoadjuvant and Personalized Adaptive Novel Agents to Treat Breast Cancer"
+    },
+    {
+        "nctNumber": "NCT03401385",
+        "briefTitle": "First-in-human Study of DS-1062a for Advanced Solid Tumors (TROPION-PanTumor01)"
+    },
+    {
+        "nctNumber": "NCT05629585",
+        "briefTitle": "A Study of Dato-DXd With or Without Durvalumab Versus Investigator's Choice of Therapy in Patients With Stage I-III Triple-negative Breast Cancer Without Pathological Complete Response Following Neoadjuvant Therapy (TROPION-Breast03)"
+    },
+    {
+        "nctNumber": "NCT03504488",
+        "briefTitle": "CAB-ROR2-ADC Safety and Efficacy Study in Patients With TNBC or Head & Neck Cancer (Ph1) and NSCLC or Melanoma (Ph2)"
     },
     {
         "nctNumber": "NCT05812807",
@@ -96,12 +100,8 @@
         "briefTitle": "A Study of BMS-986340 as Monotherapy and in Combination With Nivolumab or Docetaxel in Participants With Advanced Solid Tumors"
     },
     {
-        "nctNumber": "NCT03401385",
-        "briefTitle": "First-in-human Study of DS-1062a for Advanced Solid Tumors (TROPION-PanTumor01)"
-    },
-    {
-        "nctNumber": "NCT03504488",
-        "briefTitle": "CAB-ROR2-ADC Safety and Efficacy Study in Patients With TNBC or Head & Neck Cancer (Ph1) and NSCLC or Melanoma (Ph2)"
+        "nctNumber": "NCT06299163",
+        "briefTitle": "NM32-2668 in Adult Patients With Selected Advanced Solid Tumors"
     },
     {
         "nctNumber": "NCT05989828",

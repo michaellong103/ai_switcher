@@ -4,21 +4,21 @@
         {
             "percentage": 51.724137931034484,
             "NCTNumbers": [
+                "NCT05318469",
+                "NCT05579366",
+                "NCT05848739",
+                "NCT05107674",
                 "NCT05585034",
                 "NCT04895709",
-                "NCT05848739",
-                "NCT05318469",
-                "NCT05082610",
-                "NCT04333706",
-                "NCT05579366",
                 "NCT05888831",
+                "NCT04333706",
+                "NCT06022029",
                 "NCT06299163",
                 "NCT03504488",
-                "NCT05989828",
-                "NCT05107674",
+                "NCT05252390",
                 "NCT03401385",
-                "NCT06022029",
-                "NCT05252390"
+                "NCT05082610",
+                "NCT05989828"
             ],
             "NCTCount": 15,
             "optionText": "Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.",
@@ -27,20 +27,20 @@
         {
             "percentage": 48.275862068965516,
             "NCTNumbers": [
-                "NCT06353997",
-                "NCT05453825",
                 "NCT05318469",
-                "NCT04333706",
                 "NCT05579366",
-                "NCT05888831",
-                "NCT03546686",
-                "NCT03504488",
-                "NCT04225117",
                 "NCT01042379",
-                "NCT05852691",
+                "NCT03546686",
+                "NCT05491226",
                 "NCT04895709",
+                "NCT05453825",
+                "NCT05888831",
+                "NCT03504488",
                 "NCT05252390",
-                "NCT05491226"
+                "NCT04225117",
+                "NCT06353997",
+                "NCT04333706",
+                "NCT05852691"
             ],
             "NCTCount": 14,
             "optionText": "Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.",
@@ -49,11 +49,11 @@
         {
             "percentage": 17.24137931034483,
             "NCTNumbers": [
-                "NCT05633654",
                 "NCT05629585",
-                "NCT05812807",
                 "NCT05929768",
-                "NCT06112379"
+                "NCT05633654",
+                "NCT06112379",
+                "NCT05812807"
             ],
             "NCTCount": 5,
             "optionText": "Phase 3 (lower risk): These trials compare the new treatment to the current standard.",
