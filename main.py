@@ -7,26 +7,29 @@ from assistants.assistant_factory import create_assistant
 from router.conversation_router import ConversationRouter
 from assistants.lunch.lunch_assistant import LunchAssistant
 from assistants.medical.medical_assistant import MedicalAssistant
+from assistants.filtering_questions.filter_questions_assistant import FilterQuestionsAssistant
 from assistants.concrete_assistant import ConcreteAssistant
 from logging_config import configure_logging, delete_logs, delete_items, reset_config_state
-
 from increase_radius_query.update_input_from_config import on_no_trials_found
-
-
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'assistants')))
 init(autoreset=True)
 
 def main(assistant_type):
     logging.info(f'Creating assistant of type: {assistant_type}')
+    
     medical_assistant = create_assistant(assistant_type='medical', model='gpt-3.5-turbo', temperature=1, top_p=1)
     lunch_assistant = create_assistant(assistant_type='lunch', model='gpt-3.5-turbo', temperature=1, top_p=1)
-    router = ConversationRouter([medical_assistant, lunch_assistant])
+    filter_questions_assistant = create_assistant(assistant_type='filter_questions', model='gpt-3.5-turbo', temperature=0.7, top_p=0.9)
+    
+    router = ConversationRouter([medical_assistant, lunch_assistant, filter_questions_assistant])
+    
     if hasattr(medical_assistant, 'get_initial_message'):
         initial_message = medical_assistant.get_initial_message()
         print(f'{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} {initial_message}')
     else:
         print(f"{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} Hello! How can I assist you today? (type 'exit' to end the conversation)")
+    
     while True:
         user_input = input(f'{Fore.LIGHTGREEN_EX}You: {Style.RESET_ALL}')
         if user_input.lower() == 'exit':

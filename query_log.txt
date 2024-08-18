@@ -2280,3 +2280,67 @@ API query executed successfully.
 2024-08-17 17:47:19,075 - INFO - Deleted file: API_response/dynamic_questions_input.json
 2024-08-17 17:47:19,075 - INFO - Deleted file: API_response/phase_question_output.json
 2024-08-17 17:47:19,076 - INFO - Config state reset successfully: config_state.json
+2024-08-18 09:32:10,923 - INFO - > Event system initialized
+2024-08-18 09:32:10,923 - INFO - Starting evaluate_trials.py
+2024-08-18 09:32:10,948 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-18 09:32:10,969 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-18 09:32:10,969 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-18 09:32:10,970 - INFO - Deleted log file: logs/app.log
+2024-08-18 09:32:10,970 - INFO - Cleaning up items in directory: API_response
+2024-08-18 09:32:10,971 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-18 09:32:10,972 - INFO - Deleted file: API_response/condensed.json
+2024-08-18 09:32:10,972 - INFO - Deleted file: API_response/detailed.json
+2024-08-18 09:32:10,975 - INFO - Deleted file: API_response/times_question_output.json
+2024-08-18 09:32:10,976 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-18 09:32:10,976 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-18 09:32:10,977 - INFO - Deleted file: API_response/SearchQuestion.json
+2024-08-18 09:32:10,977 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-18 09:32:10,977 - INFO - Deleted file: API_response/final_question_output.json
+2024-08-18 09:32:10,978 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-18 09:32:10,978 - INFO - Deleted file: API_response/dynamic_questions_input.json
+2024-08-18 09:32:10,978 - INFO - Deleted file: API_response/phase_question_output.json
+2024-08-18 09:32:10,980 - INFO - Config state reset successfully: config_state.json
+2024-08-18 10:12:59,011 - INFO - > Event system initialized
+2024-08-18 10:12:59,011 - INFO - Starting evaluate_trials.py
+2024-08-18 10:12:59,030 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-18 10:12:59,044 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-18 10:12:59,045 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-18 10:12:59,045 - INFO - Deleted log file: logs/app.log
+2024-08-18 10:12:59,045 - INFO - Cleaning up items in directory: API_response
+2024-08-18 10:12:59,046 - INFO - Deleted file: API_response/all_study_data.json
+2024-08-18 10:12:59,046 - INFO - Deleted file: API_response/condensed.json
+2024-08-18 10:12:59,046 - INFO - Deleted file: API_response/detailed.json
+2024-08-18 10:12:59,047 - INFO - Deleted file: API_response/times_question_output.json
+2024-08-18 10:12:59,047 - INFO - Deleted file: API_response/extracted_data.json
+2024-08-18 10:12:59,047 - INFO - Deleted file: API_response/filtered_exclusion_data.json
+2024-08-18 10:12:59,048 - INFO - Deleted file: API_response/SearchQuestion.json
+2024-08-18 10:12:59,048 - INFO - Deleted file: API_response/finaloutput.json
+2024-08-18 10:12:59,048 - INFO - Deleted file: API_response/final_question_output.json
+2024-08-18 10:12:59,049 - INFO - Deleted file: API_response/cleaned_data.json
+2024-08-18 10:12:59,049 - INFO - Deleted file: API_response/dynamic_questions_input.json
+2024-08-18 10:12:59,049 - INFO - Deleted file: API_response/phase_question_output.json
+2024-08-18 10:12:59,050 - INFO - Config state reset successfully: config_state.json
+2024-08-18 10:13:29,919 - INFO - > Event system initialized
+2024-08-18 10:13:29,920 - INFO - Starting evaluate_trials.py
+2024-08-18 10:13:29,932 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-18 10:13:29,935 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-18 10:13:29,935 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-18 10:13:29,936 - INFO - Deleted log file: logs/app.log
+2024-08-18 10:13:29,936 - INFO - Cleaning up items in directory: API_response
+2024-08-18 10:13:29,937 - INFO - Config state reset successfully: config_state.json
+2024-08-18 10:22:36,877 - INFO - > Event system initialized
+2024-08-18 10:22:36,877 - INFO - Starting evaluate_trials.py
+2024-08-18 10:22:36,897 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-18 10:22:36,922 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-18 10:22:36,922 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-18 10:22:36,922 - INFO - Deleted log file: logs/app.log
+2024-08-18 10:22:36,922 - INFO - Cleaning up items in directory: API_response
+2024-08-18 10:22:36,923 - INFO - Config state reset successfully: config_state.json
+2024-08-18 10:24:21,177 - INFO - > Event system initialized
+2024-08-18 10:24:21,178 - INFO - Starting evaluate_trials.py
+2024-08-18 10:24:21,189 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-18 10:24:21,193 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-18 10:24:21,193 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-18 10:24:21,193 - INFO - Deleted log file: logs/app.log
+2024-08-18 10:24:21,193 - INFO - Cleaning up items in directory: API_response
+2024-08-18 10:24:21,194 - INFO - Config state reset successfully: config_state.json

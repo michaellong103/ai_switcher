@@ -5,77 +5,77 @@
       {
         "NCT05453825": {
           "date": "2024-12-15",
-          "daysUntilEnd": 119,
+          "daysUntilEnd": 118,
           "humanReadableDate": "15 December 2024"
         }
       },
       {
         "NCT05230186": {
           "date": "2024-12-23",
-          "daysUntilEnd": 127,
+          "daysUntilEnd": 126,
           "humanReadableDate": "23 December 2024"
         }
       },
       {
         "NCT05082610": {
           "date": "2025-01",
-          "daysUntilEnd": 136,
+          "daysUntilEnd": 135,
           "humanReadableDate": "31 January 2025"
         }
       },
       {
         "NCT03401385": {
           "date": "2025-01-01",
-          "daysUntilEnd": 136,
+          "daysUntilEnd": 135,
           "humanReadableDate": "01 January 2025"
         }
       },
       {
         "NCT05491226": {
           "date": "2025-12-01",
-          "daysUntilEnd": 470,
+          "daysUntilEnd": 469,
           "humanReadableDate": "01 December 2025"
         }
       },
       {
         "NCT03504488": {
           "date": "2025-12-30",
-          "daysUntilEnd": 499,
+          "daysUntilEnd": 498,
           "humanReadableDate": "30 December 2025"
         }
       },
       {
         "NCT05852691": {
           "date": "2026-02-27",
-          "daysUntilEnd": 558,
+          "daysUntilEnd": 557,
           "humanReadableDate": "27 February 2026"
         }
       },
       {
         "NCT05107674": {
           "date": "2026-02-28",
-          "daysUntilEnd": 559,
+          "daysUntilEnd": 558,
           "humanReadableDate": "28 February 2026"
         }
       },
       {
         "NCT05579366": {
           "date": "2026-04",
-          "daysUntilEnd": 591,
+          "daysUntilEnd": 590,
           "humanReadableDate": "30 April 2026"
         }
       },
       {
         "NCT06022029": {
           "date": "2026-08-29",
-          "daysUntilEnd": 741,
+          "daysUntilEnd": 740,
           "humanReadableDate": "29 August 2026"
         }
       }
     ],
     "trialGroup": "Group 1",
     "dateSpan": 622,
-    "dateSpan2": "119 days to 741 days",
+    "dateSpan2": "118 days to 740 days",
     "earliestDate": "15 December 2024",
     "latestDate": "29 August 2026",
     "earliestDateFromToday": "5 months",
@@ -87,77 +87,77 @@
       {
         "NCT04225117": {
           "date": "2026-09-30",
-          "daysUntilEnd": 773,
+          "daysUntilEnd": 772,
           "humanReadableDate": "30 September 2026"
         }
       },
       {
         "NCT05318469": {
           "date": "2026-10",
-          "daysUntilEnd": 774,
+          "daysUntilEnd": 773,
           "humanReadableDate": "31 October 2026"
         }
       },
       {
         "NCT05252390": {
           "date": "2026-11",
-          "daysUntilEnd": 805,
+          "daysUntilEnd": 804,
           "humanReadableDate": "30 November 2026"
         }
       },
       {
         "NCT04333706": {
           "date": "2026-11-03",
-          "daysUntilEnd": 807,
+          "daysUntilEnd": 806,
           "humanReadableDate": "03 November 2026"
         }
       },
       {
         "NCT04895709": {
           "date": "2026-12-31",
-          "daysUntilEnd": 865,
+          "daysUntilEnd": 864,
           "humanReadableDate": "31 December 2026"
         }
       },
       {
         "NCT05848739": {
           "date": "2027-05-31",
-          "daysUntilEnd": 1016,
+          "daysUntilEnd": 1015,
           "humanReadableDate": "31 May 2027"
         }
       },
       {
         "NCT05888831": {
           "date": "2027-07-01",
-          "daysUntilEnd": 1047,
+          "daysUntilEnd": 1046,
           "humanReadableDate": "01 July 2027"
         }
       },
       {
         "NCT06422455": {
           "date": "2027-07-01",
-          "daysUntilEnd": 1047,
+          "daysUntilEnd": 1046,
           "humanReadableDate": "01 July 2027"
         }
       },
       {
         "NCT05989828": {
           "date": "2027-08-01",
-          "daysUntilEnd": 1078,
+          "daysUntilEnd": 1077,
           "humanReadableDate": "01 August 2027"
         }
       },
       {
         "NCT05585034": {
           "date": "2027-12",
-          "daysUntilEnd": 1200,
+          "daysUntilEnd": 1199,
           "humanReadableDate": "31 December 2027"
         }
       }
     ],
     "trialGroup": "Group 2",
     "dateSpan": 427,
-    "dateSpan2": "773 days to 1200 days",
+    "dateSpan2": "772 days to 1199 days",
     "earliestDate": "30 September 2026",
     "latestDate": "31 December 2027",
     "earliestDateFromToday": "2 years 2 months",
@@ -169,70 +169,70 @@
       {
         "NCT06299163": {
           "date": "2027-12-31",
-          "daysUntilEnd": 1230,
+          "daysUntilEnd": 1229,
           "humanReadableDate": "31 December 2027"
         }
       },
       {
         "NCT03546686": {
           "date": "2028-06",
-          "daysUntilEnd": 1383,
+          "daysUntilEnd": 1382,
           "humanReadableDate": "30 June 2028"
         }
       },
       {
         "NCT06353997": {
           "date": "2029-06",
-          "daysUntilEnd": 1748,
+          "daysUntilEnd": 1747,
           "humanReadableDate": "30 June 2029"
         }
       },
       {
         "NCT05629585": {
           "date": "2030-03-27",
-          "daysUntilEnd": 2047,
+          "daysUntilEnd": 2046,
           "humanReadableDate": "27 March 2030"
         }
       },
       {
         "NCT06112379": {
           "date": "2030-08-28",
-          "daysUntilEnd": 2201,
+          "daysUntilEnd": 2200,
           "humanReadableDate": "28 August 2030"
         }
       },
       {
         "NCT05633654": {
           "date": "2031-08",
-          "daysUntilEnd": 2539,
+          "daysUntilEnd": 2538,
           "humanReadableDate": "31 August 2031"
         }
       },
       {
         "NCT01042379": {
           "date": "2031-12",
-          "daysUntilEnd": 2661,
+          "daysUntilEnd": 2660,
           "humanReadableDate": "31 December 2031"
         }
       },
       {
         "NCT05929768": {
           "date": "2033-04",
-          "daysUntilEnd": 3148,
+          "daysUntilEnd": 3147,
           "humanReadableDate": "30 April 2033"
         }
       },
       {
         "NCT05812807": {
           "date": "2033-05-31",
-          "daysUntilEnd": 3208,
+          "daysUntilEnd": 3207,
           "humanReadableDate": "31 May 2033"
         }
       }
     ],
     "trialGroup": "Group 3",
     "dateSpan": 1978,
-    "dateSpan2": "1230 days to 3208 days",
+    "dateSpan2": "1229 days to 3207 days",
     "earliestDate": "31 December 2027",
     "latestDate": "31 May 2033",
     "earliestDateFromToday": "3 years 5 months",
