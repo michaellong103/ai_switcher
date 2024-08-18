@@ -82,7 +82,7 @@
                             }
                         }
                     ],
-                    "grp": "Short-term (120-742 days, approximately 4 months to 2 years)"
+                    "grp": "Group 1 (approximately 5 months to 2 years 1 month)"
                 },
                 {
                     "tot": 10,
@@ -158,7 +158,7 @@
                             }
                         }
                     ],
-                    "grp": "Medium-term (774-1201 days, approximately 2 to 3.5 years)"
+                    "grp": "Group 2 (approximately 2 years 2 months to 3 years 5 months)"
                 },
                 {
                     "tot": 9,
@@ -227,7 +227,7 @@
                             }
                         }
                     ],
-                    "grp": "Long-term (1231-3209 days, approximately 3.5 to 9 years)"
+                    "grp": "Group 3 (approximately 3 years 5 months to 9 years)"
                 }
             ]
         },

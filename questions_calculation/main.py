@@ -13,6 +13,10 @@ from utils import (
     print_group_info
 )
 
+def generate_description(group):
+    human_range = f"{group['earliestDateFromToday']} to {group['latestDateFromToday']}"
+    return f"{group['trialGroup']} (approximately {human_range})"
+
 def print_results_and_generate_output():
     # Determine the script directory
     script_dir = os.path.dirname(os.path.abspath(__file__))
@@ -45,7 +49,7 @@ def print_results_and_generate_output():
     phase_ncts = extract_nct_numbers_from_phase(phase_data)
     duplicates, num_duplicates = find_duplicated_trials(times_ncts, phase_ncts)
 
-    # Generate the final JSON output with shorter keys
+    # Generate the final JSON output with dynamically generated descriptions
     final_data = {
         "qs": [
             {
@@ -67,10 +71,8 @@ def print_results_and_generate_output():
                                 } for nct, details in nct_dict.items()
                             } for nct_dict in group["nctNumbers"]
                         ],
-                        "grp": "Short-term (120-742 days, approximately 4 months to 2 years)" if i == 0 else
-                                "Medium-term (774-1201 days, approximately 2 to 3.5 years)" if i == 1 else
-                                "Long-term (1231-3209 days, approximately 3.5 to 9 years)"
-                    } for i, group in enumerate(times_data)
+                        "grp": generate_description(group)  # Updated description without days range
+                    } for group in times_data
                 ]
             },
             {
