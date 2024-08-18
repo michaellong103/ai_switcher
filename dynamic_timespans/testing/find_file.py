@@ -1,6 +1,7 @@
 # ./dynamic_timespans/testing/find_file.py
 
 import os
+import logging  # New import
 
 def find_file(filename):
     """
@@ -20,9 +21,9 @@ def find_file(filename):
     ]
 
     for path, description in paths_to_check:
-        print(f"Checking path: {path} using {description}")
+        logging.info(f"Checking path: {path} using {description}")
         if os.path.isfile(path):
-            print(f"Found file at: {path} using {description}")
+            logging.info(f"Found file at: {path} using {description}")
             return path  # Return the first found path as a string
 
     raise FileNotFoundError(f"File {filename} not found in any of the expected locations.")

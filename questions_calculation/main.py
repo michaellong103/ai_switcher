@@ -1,4 +1,6 @@
-# ./main.py
+# Filename: print_results_and_generate_output.py
+
+import os
 import json
 from utils import (
     load_json,
@@ -8,13 +10,21 @@ from utils import (
     extract_nct_numbers_from_times,
     extract_nct_numbers_from_phase,
     find_duplicated_trials,
-    print_group_info  # Ensure this function is imported
+    print_group_info
 )
 
 def print_results_and_generate_output():
+    # Determine the script directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+
+    # Define file paths using os.path.join for platform independence
+    times_file_path = os.path.join(script_dir, '..', 'API_response', 'times_question_output.json')
+    phase_file_path = os.path.join(script_dir, '..', 'API_response', 'phase_question_output.json')
+    output_file_path = os.path.join(script_dir, '..', 'API_response', 'final_question_output.json')
+
     # Load JSON data
-    times_data = load_json('../API_response/times_question_output.json')
-    phase_data = load_json('../API_response/phase_question_output.json')
+    times_data = load_json(times_file_path)
+    phase_data = load_json(phase_file_path)
 
     # Find the best group in each JSON file and collect trial counts for calculations
     best_times_group, times_group_trials, times_trial_counts = find_best_group_in_times_json(times_data)
@@ -24,74 +34,70 @@ def print_results_and_generate_output():
     times_mad, times_mean = calculate_mad(times_trial_counts)
     phase_mad, phase_mean = calculate_mad(phase_trial_counts)
 
-    # Determine which group is the best overall and print it
-    if best_times_group and best_phase_group:
-        if times_group_trials >= phase_group_trials:
-            print_group_info(best_times_group, best_times_group['trialGroup'], "times_question_output.json", times_group_trials)
-        else:
-            print_group_info(best_phase_group, best_phase_group['optionText'], "phase_question_output.json", phase_group_trials)
-    elif best_times_group:
-        print_group_info(best_times_group, best_times_group['trialGroup'], "times_question_output.json", times_group_trials)
-    elif best_phase_group:
-        print_group_info(best_phase_group, best_phase_group['optionText'], "phase_question_output.json", phase_group_trials)
-    else:
-        print("No valid group found in either file.")
-
-    # Print the detailed statistics for 'times_question_output.json'
-    if times_mad is not None:
-        print(f"\nTotal Trials in Calculation: {sum(times_trial_counts)}")
-        print(f"Average: {times_mean:.2f}")
-        print(f"Mean Absolute Deviation (MAD) for 'times_question_output.json': {times_mad:.2f}")
-    else:
-        print("\nMean Absolute Deviation (MAD) for 'times_question_output.json': No valid data")
-
-    # Print the detailed statistics for 'phase_question_output.json'
-    if phase_mad is not None:
-        print(f"\nTotal Trials in Calculation: {sum(phase_trial_counts)}")
-        print(f"Average: {phase_mean:.2f}")
-        print(f"Mean Absolute Deviation (MAD) for 'phase_question_output.json': {phase_mad:.2f}")
-    else:
-        print("Mean Absolute Deviation (MAD) for 'phase_question_output.json': No valid data")
+    # Round MAD and average values to one decimal place
+    times_mad = round(times_mad, 1)
+    times_mean = round(times_mean, 1)
+    phase_mad = round(phase_mad, 1)
+    phase_mean = round(phase_mean, 1)
 
     # Calculate and print duplicated trials
     times_ncts = extract_nct_numbers_from_times(times_data)
     phase_ncts = extract_nct_numbers_from_phase(phase_data)
     duplicates, num_duplicates = find_duplicated_trials(times_ncts, phase_ncts)
 
-    print(f"\nNumber of duplicated trials between phases: {num_duplicates}")
-    if num_duplicates > 0:
-        print("List of duplicated trials:")
-        print(duplicates)
-
-    # Generate the final JSON output
+    # Generate the final JSON output with shorter keys
     final_data = {
-        "questions": [
+        "qs": [
             {
-                "question": "times_question_output.json",
-                "summary": {
-                    "total_trials": sum(times_trial_counts),
-                    "average": times_mean,
+                "q": "How long are you willing to commit to a clinical trial? ({} Trials Available)".format(sum(times_trial_counts)),
+                "sum": {
+                    "tot_trials": sum(times_trial_counts),
+                    "avg": times_mean,
                     "mad": times_mad
                 },
-                "data": times_data
+                "data": [
+                    {
+                        "tot": group["total"],
+                        "NCTn": [
+                            {
+                                nct: {
+                                    "d": details["date"],
+                                    "dEnd": details["daysUntilEnd"],
+                                    "hDate": details["humanReadableDate"]
+                                } for nct, details in nct_dict.items()
+                            } for nct_dict in group["nctNumbers"]
+                        ],
+                        "grp": "Short-term (120-742 days, approximately 4 months to 2 years)" if i == 0 else
+                                "Medium-term (774-1201 days, approximately 2 to 3.5 years)" if i == 1 else
+                                "Long-term (1231-3209 days, approximately 3.5 to 9 years)"
+                    } for i, group in enumerate(times_data)
+                ]
             },
             {
-                "question": "phase_question_output.json",
-                "summary": {
-                    "total_trials": sum(phase_trial_counts),
-                    "average": phase_mean,
+                "q": "Which phase of clinical trials are you comfortable participating in? ({} Trials Available)".format(sum(phase_trial_counts)),
+                "sum": {
+                    "tot_trials": sum(phase_trial_counts),
+                    "avg": phase_mean,
                     "mad": phase_mad,
-                    "duplicated_trials": num_duplicates
+                    "dup_trials": num_duplicates
                 },
-                "data": phase_data
+                "data": {
+                    "opts": [
+                        {
+                            "NCTc": option["NCTCount"],
+                            "opt_txt": option["optionText"] + ": " + option.get("description", ""),
+                            "NCTn": option["NCTNumbers"]
+                        } for option in phase_data.get("options", [])
+                    ]
+                }
             }
         ]
     }
 
-    # Write final data to a JSON file
-    with open('final_question_output.json', 'w') as json_file:
+    # Write final data to a JSON file in the specified output path
+    with open(output_file_path, 'w') as json_file:
         json.dump(final_data, json_file, indent=4)
-    print("\nFinal JSON output generated: final_question_output.json")
+    print(f"\nFinal JSON output generated: {output_file_path}")
 
 if __name__ == "__main__":
     print_results_and_generate_output()

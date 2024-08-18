@@ -36,6 +36,7 @@ def run_phases_phase():
 def calculate_questions_phase():
     """Phase 3: Calculate which questions to run."""
     logging.info("Starting Phase 3: Calculating which questions to run (Placeholder)")
+    subprocess.run(['python', 'questions_calculation/main.py'], check=True)
     # Debug placeholder logic for future implementation
     logging.debug("No questions logic implemented yet")
     logging.info("Completed Phase 3: Question calculations finished.")

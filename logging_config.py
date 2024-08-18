@@ -42,9 +42,9 @@ def delete_logs(log_directory='logs'):
             try:
                 if os.path.isfile(file_path):
                     os.unlink(file_path)
-                    print(f'Deleted log file: {file_path}')
+                    logging.info(f'Deleted log file: {file_path}')
             except Exception as e:
-                print(f'Failed to delete {file_path}. Reason: {e}')
+                logging.error(f'Failed to delete {file_path}. Reason: {e}')
 
 def delete_items(target_directory='API_response', delete_dirs=False):
     logging.info(f'Cleaning up items in directory: {target_directory}')

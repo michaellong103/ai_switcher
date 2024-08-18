@@ -15,7 +15,7 @@ from generate_answers_json import read_output_data as read_output_data_json, gen
 from generate_answers import read_output_data as read_output_data_txt, generate_answers, write_answers_to_file as write_answers_to_file_txt
 from update_search_crit import main as update_search_crit_main
 
-logging.basicConfig(level=logging.INFO)
+
 
 def main():
     # Define the path to the input data

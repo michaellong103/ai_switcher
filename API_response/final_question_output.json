@@ -4,8 +4,8 @@
             "q": "How long are you willing to commit to a clinical trial? (29 Trials Available)",
             "sum": {
                 "tot_trials": 29,
-                "avg": 9.666666666666666,
-                "mad": 0.44444444444444464
+                "avg": 9.7,
+                "mad": 0.4
             },
             "data": [
                 {
@@ -13,72 +13,72 @@
                     "NCTn": [
                         {
                             "NCT05453825": {
-                                "date": "2024-12-15",
-                                "daysUntilEnd": 120,
-                                "humanReadableDate": "15 December 2024"
+                                "d": "2024-12-15",
+                                "dEnd": 119,
+                                "hDate": "15 December 2024"
                             }
                         },
                         {
                             "NCT05230186": {
-                                "date": "2024-12-23",
-                                "daysUntilEnd": 128,
-                                "humanReadableDate": "23 December 2024"
+                                "d": "2024-12-23",
+                                "dEnd": 127,
+                                "hDate": "23 December 2024"
                             }
                         },
                         {
                             "NCT05082610": {
-                                "date": "2025-01",
-                                "daysUntilEnd": 137,
-                                "humanReadableDate": "31 January 2025"
+                                "d": "2025-01",
+                                "dEnd": 136,
+                                "hDate": "31 January 2025"
                             }
                         },
                         {
                             "NCT03401385": {
-                                "date": "2025-01-01",
-                                "daysUntilEnd": 137,
-                                "humanReadableDate": "01 January 2025"
+                                "d": "2025-01-01",
+                                "dEnd": 136,
+                                "hDate": "01 January 2025"
                             }
                         },
                         {
                             "NCT05491226": {
-                                "date": "2025-12-01",
-                                "daysUntilEnd": 471,
-                                "humanReadableDate": "01 December 2025"
+                                "d": "2025-12-01",
+                                "dEnd": 470,
+                                "hDate": "01 December 2025"
                             }
                         },
                         {
                             "NCT03504488": {
-                                "date": "2025-12-30",
-                                "daysUntilEnd": 500,
-                                "humanReadableDate": "30 December 2025"
+                                "d": "2025-12-30",
+                                "dEnd": 499,
+                                "hDate": "30 December 2025"
                             }
                         },
                         {
                             "NCT05852691": {
-                                "date": "2026-02-27",
-                                "daysUntilEnd": 559,
-                                "humanReadableDate": "27 February 2026"
+                                "d": "2026-02-27",
+                                "dEnd": 558,
+                                "hDate": "27 February 2026"
                             }
                         },
                         {
                             "NCT05107674": {
-                                "date": "2026-02-28",
-                                "daysUntilEnd": 560,
-                                "humanReadableDate": "28 February 2026"
+                                "d": "2026-02-28",
+                                "dEnd": 559,
+                                "hDate": "28 February 2026"
                             }
                         },
                         {
                             "NCT05579366": {
-                                "date": "2026-04",
-                                "daysUntilEnd": 592,
-                                "humanReadableDate": "30 April 2026"
+                                "d": "2026-04",
+                                "dEnd": 591,
+                                "hDate": "30 April 2026"
                             }
                         },
                         {
                             "NCT06022029": {
-                                "date": "2026-08-29",
-                                "daysUntilEnd": 742,
-                                "humanReadableDate": "29 August 2026"
+                                "d": "2026-08-29",
+                                "dEnd": 741,
+                                "hDate": "29 August 2026"
                             }
                         }
                     ],
@@ -89,72 +89,72 @@
                     "NCTn": [
                         {
                             "NCT04225117": {
-                                "date": "2026-09-30",
-                                "daysUntilEnd": 774,
-                                "humanReadableDate": "30 September 2026"
+                                "d": "2026-09-30",
+                                "dEnd": 773,
+                                "hDate": "30 September 2026"
                             }
                         },
                         {
                             "NCT05318469": {
-                                "date": "2026-10",
-                                "daysUntilEnd": 775,
-                                "humanReadableDate": "31 October 2026"
+                                "d": "2026-10",
+                                "dEnd": 774,
+                                "hDate": "31 October 2026"
                             }
                         },
                         {
                             "NCT05252390": {
-                                "date": "2026-11",
-                                "daysUntilEnd": 806,
-                                "humanReadableDate": "30 November 2026"
+                                "d": "2026-11",
+                                "dEnd": 805,
+                                "hDate": "30 November 2026"
                             }
                         },
                         {
                             "NCT04333706": {
-                                "date": "2026-11-03",
-                                "daysUntilEnd": 808,
-                                "humanReadableDate": "03 November 2026"
+                                "d": "2026-11-03",
+                                "dEnd": 807,
+                                "hDate": "03 November 2026"
                             }
                         },
                         {
                             "NCT04895709": {
-                                "date": "2026-12-31",
-                                "daysUntilEnd": 866,
-                                "humanReadableDate": "31 December 2026"
+                                "d": "2026-12-31",
+                                "dEnd": 865,
+                                "hDate": "31 December 2026"
                             }
                         },
                         {
                             "NCT05848739": {
-                                "date": "2027-05-31",
-                                "daysUntilEnd": 1017,
-                                "humanReadableDate": "31 May 2027"
+                                "d": "2027-05-31",
+                                "dEnd": 1016,
+                                "hDate": "31 May 2027"
                             }
                         },
                         {
                             "NCT05888831": {
-                                "date": "2027-07-01",
-                                "daysUntilEnd": 1048,
-                                "humanReadableDate": "01 July 2027"
+                                "d": "2027-07-01",
+                                "dEnd": 1047,
+                                "hDate": "01 July 2027"
                             }
                         },
                         {
                             "NCT06422455": {
-                                "date": "2027-07-01",
-                                "daysUntilEnd": 1048,
-                                "humanReadableDate": "01 July 2027"
+                                "d": "2027-07-01",
+                                "dEnd": 1047,
+                                "hDate": "01 July 2027"
                             }
                         },
                         {
                             "NCT05989828": {
-                                "date": "2027-08-01",
-                                "daysUntilEnd": 1079,
-                                "humanReadableDate": "01 August 2027"
+                                "d": "2027-08-01",
+                                "dEnd": 1078,
+                                "hDate": "01 August 2027"
                             }
                         },
                         {
                             "NCT05585034": {
-                                "date": "2027-12",
-                                "daysUntilEnd": 1201,
-                                "humanReadableDate": "31 December 2027"
+                                "d": "2027-12",
+                                "dEnd": 1200,
+                                "hDate": "31 December 2027"
                             }
                         }
                     ],
@@ -165,65 +165,65 @@
                     "NCTn": [
                         {
                             "NCT06299163": {
-                                "date": "2027-12-31",
-                                "daysUntilEnd": 1231,
-                                "humanReadableDate": "31 December 2027"
+                                "d": "2027-12-31",
+                                "dEnd": 1230,
+                                "hDate": "31 December 2027"
                             }
                         },
                         {
                             "NCT03546686": {
-                                "date": "2028-06",
-                                "daysUntilEnd": 1384,
-                                "humanReadableDate": "30 June 2028"
+                                "d": "2028-06",
+                                "dEnd": 1383,
+                                "hDate": "30 June 2028"
                             }
                         },
                         {
                             "NCT06353997": {
-                                "date": "2029-06",
-                                "daysUntilEnd": 1749,
-                                "humanReadableDate": "30 June 2029"
+                                "d": "2029-06",
+                                "dEnd": 1748,
+                                "hDate": "30 June 2029"
                             }
                         },
                         {
                             "NCT05629585": {
-                                "date": "2030-03-27",
-                                "daysUntilEnd": 2048,
-                                "humanReadableDate": "27 March 2030"
+                                "d": "2030-03-27",
+                                "dEnd": 2047,
+                                "hDate": "27 March 2030"
                             }
                         },
                         {
                             "NCT06112379": {
-                                "date": "2030-08-28",
-                                "daysUntilEnd": 2202,
-                                "humanReadableDate": "28 August 2030"
+                                "d": "2030-08-28",
+                                "dEnd": 2201,
+                                "hDate": "28 August 2030"
                             }
                         },
                         {
                             "NCT05633654": {
-                                "date": "2031-08",
-                                "daysUntilEnd": 2540,
-                                "humanReadableDate": "31 August 2031"
+                                "d": "2031-08",
+                                "dEnd": 2539,
+                                "hDate": "31 August 2031"
                             }
                         },
                         {
                             "NCT01042379": {
-                                "date": "2031-12",
-                                "daysUntilEnd": 2662,
-                                "humanReadableDate": "31 December 2031"
+                                "d": "2031-12",
+                                "dEnd": 2661,
+                                "hDate": "31 December 2031"
                             }
                         },
                         {
                             "NCT05929768": {
-                                "date": "2033-04",
-                                "daysUntilEnd": 3149,
-                                "humanReadableDate": "30 April 2033"
+                                "d": "2033-04",
+                                "dEnd": 3148,
+                                "hDate": "30 April 2033"
                             }
                         },
                         {
                             "NCT05812807": {
-                                "date": "2033-05-31",
-                                "daysUntilEnd": 3209,
-                                "humanReadableDate": "31 May 2033"
+                                "d": "2033-05-31",
+                                "dEnd": 3208,
+                                "hDate": "31 May 2033"
                             }
                         }
                     ],
@@ -235,8 +235,8 @@
             "q": "Which phase of clinical trials are you comfortable participating in? (35 Trials Available)",
             "sum": {
                 "tot_trials": 35,
-                "avg": 8.75,
-                "mad": 5.75,
+                "avg": 8.8,
+                "mad": 5.8,
                 "dup_trials": 28
             },
             "data": {
@@ -245,52 +245,52 @@
                         "NCTc": 15,
                         "opt_txt": "Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.: ",
                         "NCTn": [
-                            "NCT05318469",
-                            "NCT05579366",
-                            "NCT05848739",
-                            "NCT05107674",
-                            "NCT05585034",
-                            "NCT04895709",
-                            "NCT05888831",
-                            "NCT04333706",
-                            "NCT06022029",
                             "NCT06299163",
-                            "NCT03504488",
+                            "NCT05888831",
+                            "NCT06022029",
+                            "NCT05579366",
+                            "NCT05989828",
+                            "NCT05318469",
                             "NCT05252390",
+                            "NCT05848739",
+                            "NCT04333706",
                             "NCT03401385",
                             "NCT05082610",
-                            "NCT05989828"
+                            "NCT05107674",
+                            "NCT04895709",
+                            "NCT03504488",
+                            "NCT05585034"
                         ]
                     },
                     {
                         "NCTc": 14,
                         "opt_txt": "Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.: ",
                         "NCTn": [
-                            "NCT05318469",
+                            "NCT05888831",
                             "NCT05579366",
                             "NCT01042379",
-                            "NCT03546686",
-                            "NCT05491226",
-                            "NCT04895709",
                             "NCT05453825",
-                            "NCT05888831",
-                            "NCT03504488",
+                            "NCT05491226",
+                            "NCT05318469",
                             "NCT05252390",
-                            "NCT04225117",
-                            "NCT06353997",
                             "NCT04333706",
-                            "NCT05852691"
+                            "NCT03504488",
+                            "NCT04225117",
+                            "NCT04895709",
+                            "NCT03546686",
+                            "NCT05852691",
+                            "NCT06353997"
                         ]
                     },
                     {
                         "NCTc": 5,
                         "opt_txt": "Phase 3 (lower risk): These trials compare the new treatment to the current standard.: ",
                         "NCTn": [
-                            "NCT05629585",
                             "NCT05929768",
-                            "NCT05633654",
+                            "NCT05812807",
                             "NCT06112379",
-                            "NCT05812807"
+                            "NCT05633654",
+                            "NCT05629585"
                         ]
                     },
                     {
