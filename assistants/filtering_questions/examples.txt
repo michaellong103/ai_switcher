@@ -1,0 +1,136 @@
+EXAMPLE 1:
+
+Assistant: (Question 1) How long are you willing to commit to a clinical trial? There are 36 trials available based on your answer.
+
+(1) Approximately 1 month to 6 months (12 trials available)
+(2) Approximately 7 months to 1 year 6 months (14 trials available)
+(3) Approximately 1 year 7 months to 3 years (10 trials available)
+
+Please choose the option that best suits your availability by selecting the corresponding number.
+
+You: 1
+
+Assistant: (Question 1) Please confirm (y/n): Approximately 1 month to 6 months (12 trials available)
+
+Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 39 trials available based on your answer.
+
+(1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (15 trials available)
+(2) Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (12 trials available)
+(3) Phase 3 (lower risk): These trials compare the new treatment to the current standard. (8 trials available)
+(4) Trials where the phase is listed as N/A. (4 trials available)
+
+Please select the phase you are most comfortable with by choosing the corresponding number.
+
+You: 2
+
+Assistant: (Question 2) Please confirm (y/n): Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (12 trials available)
+
+EXAMPLE 2:
+
+Assistant: (Question 1) How long are you willing to commit to a clinical trial? There are 20 trials available based on your answer.
+
+(1) Approximately 6 months to 1 year (8 trials available)
+(2) Approximately 1 year 1 month to 3 years (7 trials available)
+(3) Approximately 3 years 1 month to 6 years (5 trials available)
+
+Please choose the option that best suits your availability by selecting the corresponding number.
+
+You: 3
+
+Assistant: (Question 1) Please confirm (y/n): Approximately 3 years 1 month to 6 years (5 trials available)
+
+Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 26 trials available based on your answer.
+
+(1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (10 trials available)
+(2) Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (9 trials available)
+(3) Phase 3 (lower risk): These trials compare the new treatment to the current standard. (5 trials available)
+(4) Trials where the phase is listed as N/A. (2 trials available)
+
+Please select the phase you are most comfortable with by choosing the corresponding number.
+
+You: 4
+
+Assistant: (Question 2) Please confirm (y/n): Trials where the phase is listed as N/A. (2 trials available)
+
+EXAMPLE 3:
+
+Assistant: (Question 1) How long are you willing to commit to a clinical trial? There are 12 trials available based on your answer.
+
+(1) Approximately 3 months to 9 months (4 trials available)
+(2) Approximately 10 months to 2 years (5 trials available)
+(3) Approximately 2 years 1 month to 4 years (3 trials available)
+
+Please choose the option that best suits your availability by selecting the corresponding number.
+
+You: 2
+
+Assistant: (Question 1) Please confirm (y/n): Approximately 10 months to 2 years (5 trials available)
+
+Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 12 trials available based on your answer.
+
+(1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (5 trials available)
+(2) Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (4 trials available)
+(3) Phase 3 (lower risk): These trials compare the new treatment to the current standard. (3 trials available)
+
+Please select the phase you are most comfortable with by choosing the corresponding number.
+
+You: 3
+
+Assistant: (Question 2) Please confirm (y/n): Phase 3 (lower risk): These trials compare the new treatment to the current standard. (3 trials available)
+
+EXAMPLE 4:
+
+Assistant: (Question 1) How long are you willing to commit to a clinical trial? There are 18 trials available based on your answer.
+
+(1) Approximately 6 months to 1 year (8 trials available)
+(2) Approximately 1 year to 3 years (10 trials available)
+
+Please choose the option that best suits your availability by selecting the corresponding number.
+
+You: 2
+
+Assistant: (Question 1) Please confirm (y/n): Approximately 1 year to 3 years (10 trials available)
+
+Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 21 trials available based on your answer.
+
+(1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (5 trials available)
+(2) Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (6 trials available)
+(3) Phase 3 (lower risk): These trials compare the new treatment to the current standard. (4 trials available)
+(4) Phase 4 (post-marketing surveillance): These trials monitor long-term effects and effectiveness after the treatment is on the market. (3 trials available)
+(5) Trials where the phase is listed as N/A. (3 trials available)
+
+Please select the phase you are most comfortable with by choosing the corresponding number.
+
+You: 3
+
+Assistant: (Question 2) Please confirm (y/n): Phase 3 (lower risk): These trials compare the new treatment to the current standard. (4 trials available)
+
+EXAMPLE 5:
+
+Assistant: (Question 1) How long are you willing to commit to a clinical trial? There are 60 trials available based on your answer.
+
+(1) Less than 6 months (10 trials available)
+(2) 6 months to 1 year (12 trials available)
+(3) 1 year to 2 years (14 trials available)
+(4) 2 years to 3 years (12 trials available)
+(5) More than 3 years (12 trials available)
+
+Please choose the option that best suits your availability by selecting the corresponding number.
+
+You: 3
+
+Assistant: (Question 1) Please confirm (y/n): 1 year to 2 years (14 trials available)
+
+Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 68 trials available based on your answer.
+
+(1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (15 trials available)
+(2) Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (18 trials available)
+(3) Phase 3 (lower risk): These trials compare the new treatment to the current standard. (14 trials available)
+(4) Phase 4 (post-marketing surveillance): These trials monitor long-term effects and effectiveness after the treatment is on the market. (11 trials available)
+(5) Trials where the phase is listed as N/A. (10 trials available)
+
+Please select the phase you are most comfortable with by choosing the corresponding number.
+
+You: 2
+
+Assistant: (Question 2) Please confirm (y/n): Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (18 trials available)

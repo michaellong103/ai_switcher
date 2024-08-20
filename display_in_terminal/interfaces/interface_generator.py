@@ -1,4 +1,4 @@
-# ./interfaces/interface_generator.py
+# ./display_in_terminal/interfaces/interface_generator.py
 
 import json
 import logging

@@ -18,18 +18,22 @@ init(autoreset=True)
 def main(assistant_type):
     logging.info(f'Creating assistant of type: {assistant_type}')
     
+    # Create assistants
     medical_assistant = create_assistant(assistant_type='medical', model='gpt-3.5-turbo', temperature=1, top_p=1)
-    lunch_assistant = create_assistant(assistant_type='lunch', model='gpt-3.5-turbo', temperature=1, top_p=1)
     filter_questions_assistant = create_assistant(assistant_type='filter_questions', model='gpt-3.5-turbo', temperature=0.7, top_p=0.9)
+    lunch_assistant = create_assistant(assistant_type='lunch', model='gpt-3.5-turbo', temperature=1, top_p=1)
     
-    router = ConversationRouter([medical_assistant, lunch_assistant, filter_questions_assistant])
+    # Initialize the router with assistants
+    router = ConversationRouter([medical_assistant, filter_questions_assistant, lunch_assistant])
     
+    # Display the initial message from the medical assistant
     if hasattr(medical_assistant, 'get_initial_message'):
         initial_message = medical_assistant.get_initial_message()
         print(f'{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} {initial_message}')
     else:
         print(f"{Fore.LIGHTBLUE_EX}Assistant:{Style.RESET_ALL} Hello! How can I assist you today? (type 'exit' to end the conversation)")
     
+    # Main interaction loop
     while True:
         user_input = input(f'{Fore.LIGHTGREEN_EX}You: {Style.RESET_ALL}')
         if user_input.lower() == 'exit':
