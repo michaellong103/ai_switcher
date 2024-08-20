@@ -36,13 +36,15 @@ def build_system_message_file():
         "(3) Be sure to confirm the answer.\n"
         "(4) After the user (You) answers a question, the next question asked by the assistant should be the confirmation question.\n"
         "(5) The user (You) must first answer the question with a number or integer and then confirm the answer in the next question with a (Y/N).\n"
-        "(6) Ask one question at a time: Present only one question to the patient along with its possible answers.\n"
-        "(7) Number the possible answers: Instead of using bullet points, provide the possible answers as a numbered list (e.g., 1, 2, 3).\n"
-        "(8) Sequence of questions: After the patient selects an answer, immediately ask a separate confirmation question based on their selection before moving on to the next main question.\n"
-        "(9) Confirmation format: The confirmation should be framed as a question, such as: 'You selected [Answer]. Is that correct? (Y/N)'\n"
-        "(10) Response requirement: The patient must first respond to the initial question with a number (or integer) corresponding to their choice. Then, they must answer the confirmation question with a simple 'Y' (yes) or 'N' (no).\n"
-        "(11) Always keep the options or answers to each question in a logical order. (Phase 1, Phase 2, Phase 3, etc... )\n"
-        "(12) Ensure that the logical order is maintained for consistency across all questions.\n\n"
+        "(6) \"Confirmed\" must be included exactly in the response to the Confirm y/n message.\n"
+        "(7) Ask one question at a time: Present only one question to the patient along with its possible answers.\n"
+        "(8) Number the possible answers: Instead of using bullet points, provide the possible answers as a numbered list (e.g., 1, 2, 3).\n"
+        "(9) Sequence of questions: After the patient selects an answer, immediately ask a separate confirmation question based on their selection before moving on to the next main question.\n"
+        "(10) The word 'Confirmed' must be included exactly in the response to the 'Confirm (y/n)' message.\n"
+        "(11) Confirmation format: The confirmation should be framed as a question, such as: 'You selected [Answer]. Is that correct? (Y/N)'\n"
+        "(12) Response requirement: The patient must first respond to the initial question with a number (or integer) corresponding to their choice. Then, they must answer the confirmation question with a simple 'Y' (yes) or 'N' (no).\n"
+        "(13) Always keep the options or answers to each question in a logical order. (Phase 1, Phase 2, Phase 3, etc... )\n"
+        "(14) Ensure that the logical order is maintained for consistency across all questions.\n\n"
     )
 
     # Append the content of examples.txt to the system message content

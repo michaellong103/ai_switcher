@@ -7,13 +7,15 @@ Requirement:
 (3) Be sure to confirm the answer.
 (4) After the user (You) answers a question, the next question asked by the assistant should be the confirmation question.
 (5) The user (You) must first answer the question with a number or integer and then confirm the answer in the next question with a (Y/N).
-(6) Ask one question at a time: Present only one question to the patient along with its possible answers.
-(7) Number the possible answers: Instead of using bullet points, provide the possible answers as a numbered list (e.g., 1, 2, 3).
-(8) Sequence of questions: After the patient selects an answer, immediately ask a separate confirmation question based on their selection before moving on to the next main question.
-(9) Confirmation format: The confirmation should be framed as a question, such as: 'You selected [Answer]. Is that correct? (Y/N)'
-(10) Response requirement: The patient must first respond to the initial question with a number (or integer) corresponding to their choice. Then, they must answer the confirmation question with a simple 'Y' (yes) or 'N' (no).
-(11) Always keep the options or answers to each question in a logical order. (Phase 1, Phase 2, Phase 3, etc... )
-(12) Ensure that the logical order is maintained for consistency across all questions.
+(6) "Confirmed" must be included exactly in the response to the Confirm y/n message.
+(7) Ask one question at a time: Present only one question to the patient along with its possible answers.
+(8) Number the possible answers: Instead of using bullet points, provide the possible answers as a numbered list (e.g., 1, 2, 3).
+(9) Sequence of questions: After the patient selects an answer, immediately ask a separate confirmation question based on their selection before moving on to the next main question.
+(10) The word 'Confirmed' must be included exactly in the response to the 'Confirm (y/n)' message.
+(11) Confirmation format: The confirmation should be framed as a question, such as: 'You selected [Answer]. Is that correct? (Y/N)'
+(12) Response requirement: The patient must first respond to the initial question with a number (or integer) corresponding to their choice. Then, they must answer the confirmation question with a simple 'Y' (yes) or 'N' (no).
+(13) Always keep the options or answers to each question in a logical order. (Phase 1, Phase 2, Phase 3, etc... )
+(14) Ensure that the logical order is maintained for consistency across all questions.
 
 EXAMPLE 1:
 
@@ -29,6 +31,8 @@ You: 1
 
 Assistant: (Question 1) Please confirm (y/n): Approximately 1 month to 6 months (12 trials available)
 
+Assistant: Confirmed, I am now searching for trials by Time.
+
 Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 39 trials available based on your answer.
 
 (1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (15 trials available)
@@ -41,6 +45,8 @@ Please select the phase you are most comfortable with by choosing the correspond
 You: 2
 
 Assistant: (Question 2) Please confirm (y/n): Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (12 trials available)
+
+Assistant: Confirmed, I am now searching for trials by Phase.
 
 EXAMPLE 2:
 
@@ -56,6 +62,8 @@ You: 3
 
 Assistant: (Question 1) Please confirm (y/n): Approximately 3 years 1 month to 6 years (5 trials available)
 
+Assistant: Confirmed, I am now searching for trials by Time.
+
 Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 26 trials available based on your answer.
 
 (1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (10 trials available)
@@ -68,6 +76,8 @@ Please select the phase you are most comfortable with by choosing the correspond
 You: 4
 
 Assistant: (Question 2) Please confirm (y/n): Trials where the phase is listed as N/A. (2 trials available)
+
+Assistant: Confirmed, I am now searching for trials by Phase.
 
 EXAMPLE 3:
 
@@ -83,6 +93,8 @@ You: 2
 
 Assistant: (Question 1) Please confirm (y/n): Approximately 10 months to 2 years (5 trials available)
 
+Assistant: Confirmed, I am now searching for trials by Time.
+
 Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 12 trials available based on your answer.
 
 (1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (5 trials available)
@@ -94,6 +106,8 @@ Please select the phase you are most comfortable with by choosing the correspond
 You: 3
 
 Assistant: (Question 2) Please confirm (y/n): Phase 3 (lower risk): These trials compare the new treatment to the current standard. (3 trials available)
+
+Assistant: Confirmed, I am now searching for trials by Phase.
 
 EXAMPLE 4:
 
@@ -108,6 +122,8 @@ You: 2
 
 Assistant: (Question 1) Please confirm (y/n): Approximately 1 year to 3 years (10 trials available)
 
+Assistant: Confirmed, I am now searching for trials by Time.
+
 Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 21 trials available based on your answer.
 
 (1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (5 trials available)
@@ -121,6 +137,8 @@ Please select the phase you are most comfortable with by choosing the correspond
 You: 3
 
 Assistant: (Question 2) Please confirm (y/n): Phase 3 (lower risk): These trials compare the new treatment to the current standard. (4 trials available)
+
+Assistant: Confirmed, I am now searching for trials by Phase.
 
 EXAMPLE 5:
 
@@ -138,6 +156,8 @@ You: 3
 
 Assistant: (Question 1) Please confirm (y/n): 1 year to 2 years (14 trials available)
 
+Assistant: Confirmed, I am now searching for trials by Time.
+
 Assistant: (Question 2) Which phase of clinical trials are you comfortable participating in? There are 68 trials available based on your answer.
 
 (1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment. (15 trials available)
@@ -151,6 +171,10 @@ Please select the phase you are most comfortable with by choosing the correspond
 You: 2
 
 Assistant: (Question 2) Please confirm (y/n): Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment. (18 trials available)
+
+Assistant: Confirmed, I am now searching for trials by Phase.
+
+
 """}
 
 initial_message = """Found 43 Trials for Triple-Negative Breast Cancer within 203 Miles of New York, NY—Let’s Narrow the Results with a few questions."""

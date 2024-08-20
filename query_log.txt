@@ -2995,3 +2995,88 @@ API query executed successfully.
 2024-08-20 10:00:03,071 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
 2024-08-20 10:00:03,179 - INFO - > Registered new event: NO_TRIALS_FOUND
 2024-08-20 10:00:03,179 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 10:44:58,661 - INFO - > Event system initialized
+2024-08-20 10:44:58,661 - INFO - Starting evaluate_trials.py
+2024-08-20 10:44:58,674 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 10:44:58,791 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 10:44:58,791 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:02:21,492 - INFO - > Event system initialized
+2024-08-20 11:02:21,493 - INFO - Starting evaluate_trials.py
+2024-08-20 11:02:21,505 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:02:21,626 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:02:21,626 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:05:59,591 - INFO - > Event system initialized
+2024-08-20 11:05:59,591 - INFO - Starting evaluate_trials.py
+2024-08-20 11:05:59,602 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:05:59,720 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:05:59,721 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:12:53,436 - INFO - > Event system initialized
+2024-08-20 11:12:53,436 - INFO - Starting evaluate_trials.py
+2024-08-20 11:12:53,449 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:12:53,572 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:12:53,573 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:13:40,253 - INFO - > Event system initialized
+2024-08-20 11:13:40,253 - INFO - Starting evaluate_trials.py
+2024-08-20 11:13:40,260 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:13:40,371 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:13:40,371 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:22:41,212 - INFO - > Event system initialized
+2024-08-20 11:22:41,212 - INFO - Starting evaluate_trials.py
+2024-08-20 11:22:41,222 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:22:41,342 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:22:41,342 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:29:29,678 - INFO - > Event system initialized
+2024-08-20 11:29:29,679 - INFO - Starting evaluate_trials.py
+2024-08-20 11:29:29,690 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:29:29,810 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:29:29,810 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:36:16,839 - INFO - > Event system initialized
+2024-08-20 11:36:16,839 - INFO - Starting evaluate_trials.py
+2024-08-20 11:36:16,848 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:36:16,967 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:36:16,967 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:40:20,450 - INFO - > Event system initialized
+2024-08-20 11:40:20,450 - INFO - Starting evaluate_trials.py
+2024-08-20 11:40:20,459 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:40:20,579 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:40:20,579 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:43:26,042 - INFO - > Event system initialized
+2024-08-20 11:43:26,043 - INFO - Starting evaluate_trials.py
+2024-08-20 11:43:26,055 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:43:26,174 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:43:26,174 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:44:49,884 - INFO - > Event system initialized
+2024-08-20 11:44:49,885 - INFO - Starting evaluate_trials.py
+2024-08-20 11:44:49,908 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:44:50,032 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:44:50,032 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:48:03,451 - INFO - > Event system initialized
+2024-08-20 11:48:03,452 - INFO - Starting evaluate_trials.py
+2024-08-20 11:48:03,462 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:48:03,579 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:48:03,579 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:50:23,126 - INFO - > Event system initialized
+2024-08-20 11:50:23,126 - INFO - Starting evaluate_trials.py
+2024-08-20 11:50:23,138 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:50:23,257 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:50:23,257 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:50:45,061 - INFO - > Event system initialized
+2024-08-20 11:50:45,061 - INFO - Starting evaluate_trials.py
+2024-08-20 11:50:45,068 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:50:45,181 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:50:45,181 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:53:01,759 - INFO - > Event system initialized
+2024-08-20 11:53:01,760 - INFO - Starting evaluate_trials.py
+2024-08-20 11:53:01,772 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:53:01,891 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:53:01,891 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:57:27,030 - INFO - > Event system initialized
+2024-08-20 11:57:27,030 - INFO - Starting evaluate_trials.py
+2024-08-20 11:57:27,040 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:57:27,158 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:57:27,158 - INFO - > Added listener to event: NO_TRIALS_FOUND
+2024-08-20 11:58:03,733 - INFO - > Event system initialized
+2024-08-20 11:58:03,733 - INFO - Starting evaluate_trials.py
+2024-08-20 11:58:03,741 - INFO - Successfully imported 'evaluate_trials' functions using relative import.
+2024-08-20 11:58:03,855 - INFO - > Registered new event: NO_TRIALS_FOUND
+2024-08-20 11:58:03,855 - INFO - > Added listener to event: NO_TRIALS_FOUND
