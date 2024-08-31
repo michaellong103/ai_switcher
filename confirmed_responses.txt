@@ -1,0 +1,70 @@
+Confirmed. I am now searching for trials within the specified duration. 
+
+(Question 2) Which phase of clinical trials are you comfortable participating in? (49 Trials Available)
+
+(1) Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.
+(2) Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.
+(3) Phase 3 (lower risk): These trials compare the new treatment to the current standard.
+
+Please select the phase you are most comfortable with by choosing the corresponding number. - Please provide more details regarding the timeframe.
+(Question) Please confirm (y/n): Group 2 (approximately 1 year 5 months to 2 years 2 months)
+
+Assistant: Confirmed, I am now searching for trials based on your selection. 
+
+Next question: 
+
+Which phase of clinical trials are you comfortable participating in?
+
+1. Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.
+2. Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.
+3. Phase 3 (lower risk): These trials compare the new treatment to the current standard.
+Confirmed. I am now searching for trials based on a commitment of approximately 2 years 2 months to 3 years.
+
+Next question:
+
+(Question 2) Which phase of clinical trials are you comfortable participating in? (49 Trials Available)
+
+Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.
+Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.
+Phase 3 (lower risk): These trials compare the new treatment to the current standard.
+
+Please select the phase you are most comfortable with by choosing the corresponding number.
+Confirmed. I will now search for trials in the Group 2 duration range.
+
+(Question 2) Which phase of clinical trials are you comfortable participating in? (49 Trials Available)
+
+Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.
+1. Phase 1 (highest risk)
+
+Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.
+2. Phase 2 (moderate risk)
+
+Phase 3 (lower risk): These trials compare the new treatment to the current standard.
+3. Phase 3 (lower risk)
+
+Please select the phase you are most comfortable with by choosing the corresponding number.
+(Question 1) Please confirm (y/n): Group 2 (approximately 1 year 5 months to 2 years 2 months)
+
+Assistant: Confirmed. Let's move on to the next question.
+
+(Question 2) Which phase of clinical trials are you comfortable participating in? We have a total of 49 trials available based on your selection.
+
+1. Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.
+2. Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.
+3. Phase 3 (lower risk): These trials compare the new treatment to the current standard.
+
+Please select the phase you are most comfortable with by choosing the corresponding number.
+(Question 1) Please confirm (y/n): Group 3 (approximately 2 years 2 months to 3 years)
+
+Assistant: Confirmed, I am now searching for trials by Time.
+
+(Question 2) Which phase of clinical trials are you comfortable participating in? There are 49 Trials Available based on your answer.
+
+Phase 1 (highest risk): These trials focus on assessing the safety of a new treatment.
+Phase 2 (moderate risk): These trials evaluate the effectiveness of the treatment.
+Phase 3 (lower risk): These trials compare the new treatment to the current standard.
+
+Please select the phase you are most comfortable with by choosing the corresponding number:
+1. Phase 1
+2. Phase 2
+3. Phase 3
